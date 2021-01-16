@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup as Soup
 from discord.ext import commands
 from itertools import islice
 from math import floor
-from pprint import pprint
+# from pprint import pprint
 
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)
@@ -18,7 +18,7 @@ handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(me
 logger.addHandler(handler)
 
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Scraper
