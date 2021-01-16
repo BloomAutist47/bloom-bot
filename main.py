@@ -135,11 +135,11 @@ DataBase.read()
 # for i in os.environ:
 #     print(i)
 
-with open('./config.json', 'r', encoding='utf-8') as f:
-    DISCORD_TOKEN = json.load(f)["DISCORD_TOKEN"]
+# with open('./config.json', 'r', encoding='utf-8') as f:
+#     DISCORD_TOKEN = json.load(f)["DISCORD_TOKEN"]
     
 
-# DISCORD_TOKEN = os.environ['DISCORD_TOKEN']
+DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
 
 # GUILD = getenv('DISCORD_GUILD')
 
