@@ -151,10 +151,10 @@ There are a number of utility commands being showcased here.'''
 bloom_bot = commands.Bot(command_prefix='?', description=description)
 
 
-@bloom_bot.event
-async def on_ready():
-    print("STarting Bloom Bot")
-    await bloom_bot.get_channel(799668639128485918).send('hello')
+# @bloom_bot.event
+# async def on_ready():
+#     print("STarting Bloom Bot")
+#     await bloom_bot.get_channel(799668639128485918).send('hello')
 
 @bloom_bot.command()
 async def boat(ctx, *, bot_name: str):
