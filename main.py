@@ -18,7 +18,7 @@ handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(me
 logger.addHandler(handler)
 
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Scraper
@@ -129,14 +129,18 @@ DataBase.read()
 
 
 # Discord bot
-load_dotenv()
+# load_dotenv()
 
 # pprint(os.environ)
 # for i in os.environ:
 #     print(i)
 
+with open('./config.json', 'r', encoding='utf-8') as f:
+    DISCORD_TOKEN = json.load(f)["DISCORD_TOKEN"]
+    
+
 # DISCORD_TOKEN = os.environ['DISCORD_TOKEN']
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+
 # GUILD = getenv('DISCORD_GUILD')
 
 
