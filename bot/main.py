@@ -129,9 +129,8 @@ DataBase.read()
 
 # Discord bot
 load_dotenv()
-DISCORD_TOKEN = "Nzk5NjM5NjkwMTc2NDk1NjM3.YAGgfg.Boy1lsK-tll1Jt0ixLer-thKIXo"
-# DISCORD_TOKEN = getenv("DISCORD_TOKEN")
-# GUILD = getenv('DISCORD_GUILD')
+DISCORD_TOKEN = getenv("DISCORD_TOKEN")
+GUILD = getenv('DISCORD_GUILD')
 
 
 description = '''An example bot to showcase the discord.ext.commands extension
