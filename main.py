@@ -2,13 +2,14 @@
 import discord
 import json
 import logging
+import os
 
-from os import chdir, path, getenv
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
 from discord.ext import commands
 from itertools import islice
 from math import floor
+from pprint import pprint
 
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)
@@ -17,7 +18,7 @@ handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(me
 logger.addHandler(handler)
 
 
-# chdir(path.dirname(path.abspath(__file__)))
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Scraper
@@ -129,7 +130,13 @@ DataBase.read()
 
 # Discord bot
 load_dotenv()
-DISCORD_TOKEN = getenv("DISCORD_TOKEN")
+
+# pprint(os.environ)
+# for i in os.environ:
+#     print(i)
+
+# DISCORD_TOKEN = os.environ['DISCORD_TOKEN']
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 # GUILD = getenv('DISCORD_GUILD')
 
 
@@ -146,14 +153,14 @@ async def on_ready():
     await bloom_bot.get_channel(799668639128485918).send('hello')
 
 @bloom_bot.command()
-async def bots(ctx, *, bot_name: str):
+async def boat(ctx, *, bot_name: str):
     bot_find = DataBase.find_bot_by_name(bot_name)
     if not bot_find:
         embedVar = discord.Embed(title="Bots Result", description="We're sorry, nothing come up. Please try a different search word.", color=0x00ff00)
         await ctx.send(embed=embedVar)
         return
     if type(bot_find) != list:
-        embedVar = discord.Embed(title="Bots Result", description="Enjoy your bot!", color=0x00ff00)
+        embedVar = discord.Embed(title="Bot Result", description="Enjoy your bot!", color=0x00ff00)
         embedVar.add_field(name="Link", value='[{}]({} "Created by {}")'.format(bot_name, bot_find[0]["url"], bot_find[1]), inline=True)
         await ctx.send(embed=embedVar)
     else:
