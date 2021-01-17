@@ -1,0 +1,9 @@
+{
+    "priveleged_roles": {
+        "Helper": 1,
+        "Trial Helper": 1,
+        "Staff": 1,
+        "Member": 0,
+        "@everyone": 0
+    }
+}

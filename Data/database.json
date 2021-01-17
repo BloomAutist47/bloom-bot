@@ -356,10 +356,6 @@
             "url": "https://adventurequest.life/bots/Arts_SpellCraftingREP_Bot.gbot",
             "file_type": "gbot"
         },
-        "SpinCrag Bot": {
-            "url": "https://adventurequest.life/bots/Arts_SpinCrag_Bot.gbot",
-            "file_type": "gbot"
-        },
         "StarLightStarBright Bot": {
             "url": "https://adventurequest.life/bots/Arts_StarLightStarBright_Bot.gbot",
             "file_type": "gbot"
@@ -605,6 +601,12 @@
             "file_type": "gbot"
         }
     },
+    "fortune": {
+        "Ticket Buyer": {
+            "url": "https://adventurequest.life/bots/Fortune_Ticket_Buyer.gbot",
+            "file_type": "gbot"
+        }
+    },
     "freshsoul": {
         "Ninjatov 3": {
             "url": "https://adventurequest.life/bots/FreshSoul_Ninjatov_3.8PP.gbot",
@@ -717,6 +719,16 @@
             "file_type": "gbot"
         }
     },
+    "kaos": {
+        "Cragglerock Voidstone Bot": {
+            "url": "https://adventurequest.life/bots/Kaos_Cragglerock_Voidstone_Bot.gbot",
+            "file_type": "gbot"
+        },
+        "FiendEmblem pro": {
+            "url": "https://adventurequest.life/bots/Kaos_FiendEmblem_pro.gbot",
+            "file_type": "gbot"
+        }
+    },
     "kingnecroticcollection.zip": {
         "": {
             "url": "https://adventurequest.life/bots/KingNecroticCollection.zip",
@@ -811,9 +823,9 @@
             "file_type": "gbot"
         }
     },
-    "loo": {
-        "RED1KING": {
-            "url": "https://adventurequest.life/bots/LoO_RED1KING.rar",
+    "minaaaaaa": {
+        "Full Lord of Order Bot": {
+            "url": "https://adventurequest.life/bots/Minaaaaaa_Full_Lord_of_Order_Bot.rar",
             "file_type": "rar"
         }
     },
@@ -1058,6 +1070,10 @@
             "url": "https://adventurequest.life/bots/Weeb_BLoD_Weapon_Kits.rar",
             "file_type": "rar"
         },
+        "Bright Paragon Pet pro": {
+            "url": "https://adventurequest.life/bots/Weeb_Bright_Paragon_Pet_pro.gbot",
+            "file_type": "gbot"
+        },
         "Commanding Shadow Essences": {
             "url": "https://adventurequest.life/bots/Weeb_Commanding_Shadow_Essences.gbot",
             "file_type": "gbot"
@@ -1068,6 +1084,10 @@
         },
         "Cube Reagent": {
             "url": "https://adventurequest.life/bots/Weeb_Cube_Reagent.gbot",
+            "file_type": "gbot"
+        },
+        "Dark Spirit Orb": {
+            "url": "https://adventurequest.life/bots/Weeb_Dark_Spirit_Orb.gbot",
             "file_type": "gbot"
         },
         "Dark Token": {
@@ -1183,8 +1203,8 @@
             "file_type": "gbot"
         },
         "Ultimate Necrotic Sword of Doom Bot pro": {
-            "url": "https://adventurequest.life/bots/Weeb_Ultimate_Necrotic_Sword_of_Doom_Bot_pro.zip",
-            "file_type": "zip"
+            "url": "https://adventurequest.life/bots/Weeb_Ultimate_Necrotic_Sword_of_Doom_Bot_pro.rar",
+            "file_type": "rar"
         },
         "Void Destroyer": {
             "url": "https://adventurequest.life/bots/Weeb_Void_Destroyer.gbot",
