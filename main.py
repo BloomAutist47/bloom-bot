@@ -406,12 +406,18 @@ async def b(ctx, command_code, *, value: str=""):
     # Bot command search
     if command_code == "boat" or command_code == "b":
         if value.lower() == "all":
-            bot_results = DataBase.return_all_bots()
-            target = chunks_list(bot_results, 48)
-            desc = "The following are all of the bots"
-            for bot_chunk in target:
-                await ctx.send(embed=embed_multi_link("Bot Results", desc, bot_chunk))
-            return
+            priveleged = privilege_check(ctx)
+            if priveleged:
+                bot_results = DataBase.return_all_bots()
+                target = chunks_list(bot_results, 48)
+                desc = "The following are all of the bots"
+                for bot_chunk in target:
+                    await ctx.send(embed=embed_multi_link("Bot Results", desc, bot_chunk))
+                return
+            else:
+                desc = f"\> User {ctx.author} does not have permissions for `$b update` command.\n"
+                await ctx.send(desc)
+                return
         else:
             bot_name = value
             if bot_name == "":
