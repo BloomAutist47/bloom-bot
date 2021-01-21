@@ -36,10 +36,10 @@ Sets are a list or group of manually added bots.
 3. `$b set overwrite set_name=[bot_name, bot_name, etc...]`  - Overwrites a set.
 4. `$b set delete set_name` - Deletes a set.
 
-> **Note**:
-> - set_names should be single word
-> - bot_name can be found by using the search commands
-> - bot_name **MUST BE EXACTLY** the same name as the results.                                               
+**Note**:
+- set_names should be single word
+- bot_name can be found by using the search commands
+- bot_name **MUST BE EXACTLY** the same name as the results.                                               
 
 
 
@@ -60,24 +60,25 @@ Sets are a list or group of manually added bots.
 
 # Examples
 
-Please read the following carefully. If you complain to me and it turns out you didn't read the instructions, I'm going to fuck you up.
-
 **Search**
 
 - `$b b rep` 
 - `$b b legion` 
 - `$b a bluu`
-- ``$b a @BloomAutist47`
-- $b -vhl`
-  
+- `$b a @BloomAutist47`
+- `$b -vhl`
+
+
 
 **Set** 
 
 - `$b set create vhl=[Void Highlord Roentgenium of Nulgath Bot.gbot, Void Highlord.gbot]`
-- ``$b set append vhl=[RoentgeniumOfNulgath.gbot]` 
+- `$b set append vhl=[RoentgeniumOfNulgath.gbot]` 
 - `$b set overwrite vhl=[some bot name, someother_name]`   
-- `$b set delete vhl`                                                                     
+- `$b set delete vhl` 
+
 
 
 **Settings**
-`$b verify bloom @BloomAutist47`
+
+- `$b verify bloom @BloomAutist47`
