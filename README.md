@@ -3,19 +3,21 @@ A discord bot that takes bots from the AutoQuestWorld's [portal site](http://adv
 
 Join [AutoQuestWorlds](https://discord.gg/NQBemdbnyW).
 
-## Bloom Bot Instructions
+
+
+# Bloom Bot Instructions
 
 Please read the following carefully. If you complain to me and it turns out you didn't read the instructions, I'm going to fuck you up.
 
 
 
-## 【Bot commands】
-1. `$b command command_value,...`  
+#### 【Bot commands】
+1. `$b command command_value,...` 
 
 
 
 
-## 【Search】
+#### 【Search】
 1. `$b b bot_name`  - Search for boats. Also accepts `boat`  as command.
 2. `$b b all`  - Summons all bots. This is a long list. Is this a good idea?
 3. `$b a author_name` - Finds a specific author. Also accepts `author`  as command. 
@@ -25,7 +27,7 @@ Please read the following carefully. If you complain to me and it turns out you 
 
 
 
-## 【Set】For Privileged roles only
+#### 【Set】For Privileged roles only
 
 Sets are a list or group of manually added bots.
 
@@ -34,22 +36,48 @@ Sets are a list or group of manually added bots.
 3. `$b set overwrite set_name=[bot_name, bot_name, etc...]`  - Overwrites a set.
 4. `$b set delete set_name` - Deletes a set.
 
-**Note**:
-
-- set_names should be single word
-
-- bot_name can be found by using the search commands
-- bot_name **MUST BE EXACTLY** the same name as the results.                                               
+> **Note**:
+> - set_names should be single word
+> - bot_name can be found by using the search commands
+> - bot_name **MUST BE EXACTLY** the same name as the results.                                               
 
 
 
-## 【Settings】For Privileged roles only
+#### 【Settings】For Privileged roles only
 
 1. `$b u`  - Updates database
 2. `$b verify author @author` - Adds author to the settings. This way, their name will be recognized by the algorithm. If they are not recognized, their bot will be added under the **Unknown** author. (Use this if a new author appears)
 
 
 
-## 【 **Privileged Roles** 】
+#### 【 **Privileged Roles** 】
 
 `roles:` Staff, Helper, Trial helper, Bot Maker
+
+
+
+
+
+# Examples
+
+Please read the following carefully. If you complain to me and it turns out you didn't read the instructions, I'm going to fuck you up.
+
+**Search**
+
+- `$b b rep` 
+- `$b b legion` 
+- `$b a bluu`
+- ``$b a @BloomAutist47`
+- $b -vhl`
+  
+
+**Set** 
+
+- `$b set create vhl=[Void Highlord Roentgenium of Nulgath Bot.gbot, Void Highlord.gbot]`
+- ``$b set append vhl=[RoentgeniumOfNulgath.gbot]` 
+- `$b set overwrite vhl=[some bot name, someother_name]`   
+- `$b set delete vhl`                                                                     
+
+
+**Settings**
+`$b verify bloom @BloomAutist47`
