@@ -1,4 +1,4 @@
-# bloom-bot
+# Bloom Bot
 A discord bot that takes bots from the AutoQuestWorld's portal site and sends them to the Discord Server.
 
 # Bloom Bot Instructions
@@ -6,6 +6,7 @@ Please read the following carefully. If you complain to me and it turns out you 
 
 ## 【**Bot commands**】
 `$b command command_value,...`  
+
 
 ## 【**Search**】
 `$b b bot_name`         # Search for boats. Also accepts `boat`  as command.
@@ -17,7 +18,7 @@ Please read the following carefully. If you complain to me and it turns out you 
 
 
 ## 【**Set**】  For Privileged roles only
-`$b set create set_name=[bot_name, bot_name, etc...]`         # Creates a set
+`$b set create set_name=[bot_name, bot_name, etc...]`         # Creates a set\n
 `$b set append set_name=[bot_name, bot_name, etc...]`         # Adds bot to set
 `$b set overwrite set_name=[bot_name, bot_name, etc...]`   # Overwrites a set
 `$b set delete set_name`                                                                      # Deletes a set
