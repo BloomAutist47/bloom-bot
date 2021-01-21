@@ -1,15 +1,15 @@
 
+# Imports
 import discord
 import json
 import logging
 import os
+import re
+import copy
 
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
 from discord.ext import commands
-from itertools import islice
-from math import floor
-
 
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)
@@ -23,12 +23,11 @@ if os.name == "nt": # PC Mode
     load_dotenv()
     # DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN') # officia bot token
     DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN2') # test bot token
-else:               # github
+else:              # Github
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
 
-
-"""GIT Mode"""
-
+class BreakProgram(Exception):
+    pass
 
 # Scraper
 class BloomScraper:
@@ -38,6 +37,8 @@ class BloomScraper:
         self.settings = {}
         self.data = {}
         self.priveleged_roles = []
+        self.sets = {}
+
 
     # System handling
     def database_update(self):
@@ -45,28 +46,75 @@ class BloomScraper:
         # A workwaround because I couldn't figure out how to bypass the fucking Cloudflare shit protection
         # If I can find a way to bypass cloudflare or be whitelisted or direct access to the website...
         # this can become updated dynamically.
+        # try:
+        self.clear_database()
         self.read()
+        # except:
+        #     pass
+        self.data["sort_by_bot_name"] = {}
+        self.data["sort_by_bot_authors"] = {}
+
         soup = Soup(open("./Data/html/aqw.html", encoding="utf8"), "html.parser")
         body = soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
         row = body.find_all("tr")
+
         for i in row:
             link = i.find("td").find("a")["href"]
-            data_name = link.split("/")[-1].split("_")
-            file_type = link.split(".")[-1]
+            item_name = link.split("/")[-1]
+            raw_author = item_name
 
-            bot_author = data_name[0].lower()
-            bot_name = (("".join(" ".join(data_name[1:]).split(".")[0])).replace("- ", "")).replace('%', " ")
+            # Code for finding the bot author. This didn't work easily.
+            try:
+                raw_data = re.match("(^[a-zA-Z0-9]+[_|-])", item_name)
+                raw_author = (re.sub("_|-", "", raw_data[0])).lower()
+            except: pass
+            if raw_author in self.settings["confirmed_authors"]:
+                bot_author = raw_author
+            else:
+                raw_author = item_name
+                try:
+                    for verified_author in self.settings["confirmed_authors"]:
+                        for alias in self.settings["confirmed_authors"][verified_author]["alias"]:
+                            if alias in raw_author:
+                                bot_author = verified_author
+                                raise BreakProgram
+                            else:   # inefficient shit. but it works
+                                bot_author = "Unknown"
+                except:
+                    pass
 
-            if bot_author not in self.data:
-	            self.data[bot_author] = {}
-            self.data[bot_author][bot_name] = {}
-            self.data[bot_author][bot_name]["url"] = link
-            self.data[bot_author][bot_name]["file_type"] = file_type
+            # Code for refining bot name.
+            if bot_author != "Unknown":
+                bot_name = item_name
+                alias = [alias for alias in DataBase.settings["confirmed_authors"][bot_author]["alias"]]
+                for author_nickname in alias:
+                    bot_name = bot_name.replace(author_nickname, "")
+            else:
+                bot_name = item_name
+            bot_name = re.sub(r"_|-", " ", bot_name).lstrip().replace("%", "")  # replaces "_" & "-" with spaces
+            bot_name = re.sub(r"\s\s\.|\s\.", ".", bot_name)# removes space between file format
+            bot_name = re.sub(r"\s\s", " ", bot_name)       # replaces "  " double spaces into single space
+            bot_name = re.sub(r"^[s\s]", "", bot_name)      # removes "s " from the name.
+            bot_name = re.sub("Non\s|NON\s", "Non-", bot_name)  # replaces "non mem" to "non-mem"
+            bot_name = bot_name.lstrip().rstrip()
+            bot_author = bot_author.lower()
+            self.data["sort_by_bot_name"][bot_name] = {}
+            self.data["sort_by_bot_name"][bot_name]["url"] = link
+            self.data["sort_by_bot_name"][bot_name]["author"] = bot_author
 
-        # pprint(self.data)
+            # Sort by Author
+
+            if bot_author not in self.data["sort_by_bot_authors"]:
+                self.data["sort_by_bot_authors"][bot_author] = {}
+                
+            self.data["sort_by_bot_authors"][bot_author][bot_name] = {}
+            self.data["sort_by_bot_authors"][bot_author][bot_name]["url"] = link
+
         self.save()
 
-
+    def clear_database(self):
+        with open('./Data/database.json', 'w', encoding='utf-8') as f:
+            json.dump({}, f, ensure_ascii=False, indent=4)
 
     def save(self):
         with open('./Data/database.json', 'w', encoding='utf-8') as f:
@@ -74,9 +122,15 @@ class BloomScraper:
         with open('./Data/settings.json', 'w', encoding='utf-8') as f:
             json.dump(self.settings, f, ensure_ascii=False, indent=4)
 
+    def save_set(self):
+        with open('./Data/sets.json', 'w', encoding='utf-8') as f:
+            json.dump(self.sets, f, ensure_ascii=False, indent=4)
+
     def read(self):
         with open('./Data/database.json', 'r', encoding='utf-8') as f:
             self.data = json.load(f)
+        with open('./Data/sets.json', 'r', encoding='utf-8') as f:
+            self.sets = json.load(f)
         with open('./Data/settings.json', 'r', encoding='utf-8') as f:
             self.settings = json.load(f)
         self.priveleged_roles = []
@@ -85,39 +139,126 @@ class BloomScraper:
                 self.priveleged_roles.append(role)
 
     # Search Methods
-    def list_bot_names(self):
-        return [name for name in self.data.keys()]
+    def find_bot_by_name(self, bot_name_value):
+        # If bot_name_value is exact bot value
+        if bot_name_value in self.data["sort_by_bot_name"]:
+            link = self.data["sort_by_bot_name"][bot_name_value]["url"]
+            author = self.data["sort_by_bot_name"][bot_name_value]["author"]
+            return [[bot_name_value, author, link]]
 
-    def find_bot_by_name(self, bot_name):
-            list_of_possible_bots = []
-            for author in self.data:
-                for bot in self.data[author]:
-                    selected_bot = bot_name.lower()
-                    current_bot = bot.lower()
+        # Else, divides the bot between words and searches 
+        # for bots with those words in them.
+        list_of_possible_bots = []
+        done_searching = []
 
-                    if selected_bot == current_bot:
-                        return [(bot_name, self.data[author][bot], author)]
-                    if selected_bot in current_bot:
-                        list_of_possible_bots.append([bot, self.data[author][bot], author])
-            return list_of_possible_bots
+        for author in self.data["sort_by_bot_authors"]:
+            for bot in self.data["sort_by_bot_authors"][author]:
+                search_name = bot_name_value.lower()
+                bot_by_author = bot.lower()
 
-    def find_bot_by_author(self, bot_author):
-        if bot_author in self.data:
+                if search_name == bot_by_author:
+                    link = self.data["sort_by_bot_authors"][author][bot]["url"]
+                    return [(bot_name_value, author, link)]
+
+                if (search_name in bot_by_author) and (bot_by_author not in done_searching):
+                    done_searching.append(bot_by_author)
+                    link = self.data["sort_by_bot_authors"][author][bot]["url"]
+                    list_of_possible_bots.append([bot, author, link])
+        if not list_of_possible_bots:
+            done_searching = []
+            bot_name_value = bot_name_value.split(" ")
+            for bot_name in bot_name_value:
+                for author in self.data["sort_by_bot_authors"]:
+                    for bot in self.data["sort_by_bot_authors"][author]:
+                        search_name = bot_name.lower()
+                        bot_by_author = bot.lower()
+
+                        if search_name == bot_by_author:
+                            link = self.data["sort_by_bot_authors"][author][bot]["url"]
+                            return [(bot_name, author, link)]
+
+                        if (search_name in bot_by_author) and (bot_by_author not in done_searching):
+                            done_searching.append(bot_by_author)
+                            link = self.data["sort_by_bot_authors"][author][bot]["url"]
+                            list_of_possible_bots.append([bot, author, link])
+        return list_of_possible_bots
+
+    def find_bot_by_author(self, author):
+        author = author.lower()
+        if author in self.data["sort_by_bot_authors"]:
             list_of_bots = []
-            for bot in self.data[bot_author]:
-                list_of_bots.append([bot, self.data[bot_author][bot], bot_author])
+            for bot in self.data["sort_by_bot_authors"][author]:
+                link = self.data["sort_by_bot_authors"][author][bot]["url"]
+                list_of_bots.append([bot, author, link])
             return (True, list_of_bots)
-        else:		
+        else:
             list_of_possible_authors = []
-            for author in self.data:
-                if bot_author in author:
-                    list_of_possible_authors.append(author)
+
+            for verified_author in DataBase.settings["confirmed_authors"]:
+                alias = [alias.lower() for alias in DataBase.settings["confirmed_authors"][verified_author]["alias"]]
+                for author_nickname in alias:
+                    if author in author_nickname:
+                        list_of_possible_authors.append(alias[0])
+                        print(alias[0])
+                        break
             return (False, list_of_possible_authors)
 
+    def find_author_id(self, value):
+        test_id = re.sub("<|>|!|@","", value)
+        for author in self.settings["confirmed_authors"]:
+            if test_id == self.settings["confirmed_authors"][author]["id"]:
+                return author.lower()
+        return None
 
+    def return_all_bots(self):
+        all_bots = []
+        for bot in self.data["sort_by_bot_name"]:
+            bot_name = bot
+            bot_link = self.data["sort_by_bot_name"][bot]["url"]
+            bot_author = self.data["sort_by_bot_name"][bot]["author"]
+            all_bots.append([bot_name, bot_author, bot_link])
+        return all_bots
+
+
+    def verified_author_check(self, author):
+        if author == "":
+            return ""
+        author = author.lower()
+        for verified_author in DataBase.settings["confirmed_authors"]:
+            alias = [alias.lower() for alias in DataBase.settings["confirmed_authors"][verified_author]["alias"]]
+            if author in alias:
+                return alias[0]
+        return "empty_value"
+
+    def set_creation(self, set_name, set_value):
+        not_addded_bot = []
+        for bot in set_value:
+            bot_name = bot.lstrip().rstrip()
+            if bot_name in self.data["sort_by_bot_name"]:
+                self.sets[set_name][bot_name] = self.data["sort_by_bot_name"][bot_name]
+            else:
+                not_addded_bot.append(bot_name)
+        return not_addded_bot
+
+    def set_validator(self, command_title, set_name):
+        if self.sets[set_name] == {}:
+            self.sets.pop(set_name, None)
+            return embed_single(command_title, "None of what you entered were valid.")
+        else:
+            return None
+            
 # Sets up Database
 DataBase = BloomScraper()
 DataBase.database_update()
+# block_color = 0x00ff00
+block_color = 3066993
+
+set_creation_commands = [
+                "create", "cre", "c",
+                "append", "app", "a",
+                "overwrite", "over", "o",
+                "all"
+                ]
 
 # the problem though, is that cloudflare is too strong. Cloudscraper won't work. I need 
 description = '''An example bot to showcase the discord.ext.commands extension
@@ -126,111 +267,392 @@ module.\nThere are a number of utility commands being showcased here.'''
 bloom_bot = commands.Bot(command_prefix='$', description=description)
 
 # Tools
-def embed_multi(title, list_var, *args):
-    add_field_title = "\u200b"
-    description = ""
+def embed_multi_link(title, embed_description, list_var):
+    # block_title = "⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛"
+    # block_title = "\> ◼️ ◼️ ◼️ ◼️ ◼️ ◼️ ◼️"
+    # Properties
+    st = "\u200b" # Spacer title
+    block_title = "Link:"
+    bot_list = ""
     inline = True
-    field_count = 0
+    counts = {"field": 0, "item": 0}
 
-    embedVar = discord.Embed(title=title, description="The following matches your keyword: `{}`".format(args[0]), color=0x00ff00)
+    embedVar = discord.Embed(title=title, description=embed_description, color=block_color)
+
     for items in list_var:
-        if field_count == 2:
-            embedVar.add_field(name=add_field_title, value=add_field_title, inline=inline)
-            field_count = 0
-        if len(description) > 900:
-            embedVar.add_field(name=add_field_title, value=description, inline=inline)
-            field_count += 1
-            description = ""
-        # if len(items[0]) > 20:
-        #     name = items[0][:21] + "\n" + "\u2000" + "\u2005"+ items[0][21:]
-        #     print(name)
-        description += '\> [{}]({} "by {}")\n'.format(items[0], items[1]["url"], items[2])
-    if field_count == 1:
-        embedVar.add_field(name=add_field_title, value=add_field_title, inline=inline)
-        embedVar.add_field(name=add_field_title, value=add_field_title, inline=inline)
-    embedVar.add_field(name=add_field_title, value=description, inline=inline)
+        if counts["field"] == 2:
+            embedVar.add_field(name=st, value=st, inline=inline)
+            counts["field"] = 0
+        if counts["item"] == 8:
+            embedVar.add_field(name=block_title, value=bot_list, inline=inline)
+            counts["field"] += 1
+            counts["item"] = 0
+            bot_list = ""
+        counts["item"]+=1                            # Bot Name, # Link, # Author
+        bot_list += '\> [{}]({} "by {}")\n'.format(items[0], items[2], items[1])
+
+    if counts["field"] == 2:
+        embedVar.add_field(name=st, value=st, inline=inline)
+    if counts["field"] == 1:
+        embedVar.add_field(name=st, value=st, inline=inline)
+        embedVar.add_field(name=st, value=st, inline=inline)
+    embedVar.add_field(name=block_title, value=bot_list, inline=inline)
 
     return embedVar
 
+def embed_multi_text(title, field_name, description, value_list, block_count, two_collumn):
+    st = "\u200b"
+    counts = {"field": 0, "item": 0}
+    text_item = "```css\n"
+
+    embedVar = discord.Embed(title=title, description=description, color=block_color)
+    for text in value_list:
+        if counts["field"] == 2 and two_collumn:
+            embedVar.add_field(name=st, value=st, inline=True)
+            counts["field"] = 0
+
+        if counts["item"] == block_count:
+            embedVar.add_field(name=field_name, value=text_item+ "```", inline=True)
+            text_item = "```css\n"
+            counts["item"] = 0
+            counts["field"]+=1
+
+        text_item += text + "\n"
+        counts["item"] += 1
+    if two_collumn:
+        if counts["field"] == 2:
+            embedVar.add_field(name=st, value=st, inline=True)
+            embedVar.add_field(name=st, value=st, inline=True)
+        embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
+
+        if counts["field"] == 0:
+            embedVar.add_field(name=st, value=st, inline=True)
+            embedVar.add_field(name=st, value=st, inline=True)
+        if counts["field"] == 1:
+            embedVar.add_field(name=st, value=st, inline=True)
+    if not two_collumn:
+        embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
+    return embedVar
+
 def embed_single(title, description):
-     return discord.Embed(title=title, description=description, color=0x00ff00)
+     return discord.Embed(title=title, description=description, color=block_color)
 
 def chunks_list(lst, n):
-    """Yield successive n-sized chunks from lst."""
+    # Yield successive n-sized chunks from lst.
     for i in range(0, len(lst), n):
         yield lst[i:i + n]
+
+def privilege_check(ctx):
+    try:
+        roles = [role.name for role in ctx.author.roles]
+        for role in roles:
+            if role in DataBase.priveleged_roles:
+                return True
+                break
+    except: False
+
 
 # Checks if on PC. Otherwise on heroku
 if os.name == "nt":
     @bloom_bot.event
     async def on_ready():
-        print("STarting Bloom Bot")
+        print("Starting Bloom Bot")
         await bloom_bot.get_channel(799238286539227136).send('hello')
 
 # Start of Commands
 @bloom_bot.command()
 async def b(ctx, command_code, *, value: str=""):
-    if command_code == "u" or command_code == "update":
-        priveleged = False
-        roles = [role.name for role in ctx.author.roles]
-        for role in roles:
-            if role in DataBase.priveleged_roles:
-                priveleged = True
-                break
+    command_code = command_code.lower()
+
+    if command_code == "verify":
+        priveleged = privilege_check(ctx)
         if priveleged:
-            await ctx.send("**[**System**]** Updating Bloom Bot")
+            value_data = value.split(" ")
+            author_name = value_data[0]
+            author_id = re.sub("<|>|!|@","", value_data[1])
+            
+            DataBase.settings["confirmed_authors"][author_name] = {}
+            try:
+                DataBase.settings["confirmed_authors"][author_name]["alias"].append(author_name)
+            except:
+                DataBase.settings["confirmed_authors"][author_name]["alias"] = []
+                DataBase.settings["confirmed_authors"][author_name]["alias"].append(author_name)
+            DataBase.settings["confirmed_authors"][author_name]["id"] = author_id
+            await ctx.send(r"\> Saving Bloom Bot")
+            DataBase.save()
+            await ctx.send(r"\> Updating Bloom Bot")
             DataBase.database_update()
-            await ctx.send("**[**System**]** Bloom Bot updated!")
+            await ctx.send(r"\> Bloom Bot updated!")
+            return
         else:
-            await ctx.send("**[**System**]** User {} does not have permissions for `$b update` command.".format(ctx.author))
+            desc = f"\> User {ctx.author} does not have permissions for `$b verify author @author` command.\n"
+            await ctx.send(desc)
+            return
 
+    # Bot command update
+    if command_code == "u" or command_code == "update":
+        priveleged = privilege_check(ctx)
+        if priveleged:
+            await ctx.send(r"\> Updating Bloom Bot")
+            DataBase.database_update()
+            await ctx.send(r"\> Bloom Bot updated!")
+            return
+        else:
+            desc = f"\> User {ctx.author} does not have permissions for `$b update` command.\n"\
+                    "> Please make sure you're in a server to use this command."
+            await ctx.send(desc)
+            return
+
+    # Bot command search
     if command_code == "boat" or command_code == "b":
-        bot_name = value
-        if bot_name == "":
-            embedVar = embed_single("Bloom Bot", "Nigga, did you just give me an empty value?")
-            await ctx.send(embed=embedVar)
+        if value.lower() == "all":
+            bot_results = DataBase.return_all_bots()
+            target = chunks_list(bot_results, 48)
+            desc = "The following are all of the bots"
+            for bot_chunk in target:
+                await ctx.send(embed=embed_multi_link("Bot Results", desc, bot_chunk))
             return
-        if len(bot_name) < 3:
-            embedVar = embed_single("Bloom Bot", "Keyword `{}` too small. Must be at least 3 letters.".format(value))
-            await ctx.send(embed=embedVar)
-            return
-        bot_find = DataBase.find_bot_by_name(bot_name)
-
-        if not bot_find:
-            embedVar = embed_single("Bots Result.", "We're sorry. No boat came up with your search word: `{}`".format(bot_name))
-            await ctx.send(embed=embedVar)
-            return
-        target = chunks_list(bot_find, 48)
-        for bots in target:
-            embeded_object = embed_multi("Bot Results", bots, bot_name)
-            await ctx.send(embed=embeded_object)
-
-    if command_code == "author" or command_code == "a":
-        bot_author = value
-        result = DataBase.find_bot_by_author(bot_author)
-        bot_find = result[1]
-        found_author = result[0]
-        if found_author:
-            target = chunks_list(bot_find, 49)
-            for bot_set in target:
-                embeded_object = embed_multi("Bot Author Result", bot_set, bot_author)
-                await ctx.send(embed=embeded_object)
         else:
-            if not bot_find:
-                embedVar = embed_single("Bot Author Result", "We're sorry. No author name came up with your search word: `{}`".format(bot_author))
-                await ctx.send(embed=embedVar)
+            bot_name = value
+            if bot_name == "":
+                # If keyword is empty
+                await ctx.send(embed=embed_single("Warning", "Nigga, did you just give me an empty value?")) 
                 return
-            embedVar = discord.Embed(title="Bot Author Result", color=0x00ff00)
-            description = "None of the authors matched your search key. Maybe one of these is what you're looking for?\n\n"
-            to_be_added_author = ""
-            for author in bot_find:
-                if len(to_be_added_author) > 40:
-                    description += to_be_added_author + "\n"
-                    to_be_added_author = ""
-                to_be_added_author += "【 {} 】\u2004".format(author)
-            embedVar.description = description + to_be_added_author
+            if len(bot_name) < 3:
+                # if keyword is too short
+                desc = f"Keyword `{value}` too small. Must be at least 3 letters."
+                await ctx.send(embed=embed_single("Warning", desc))
+                return
+
+            bot_results = DataBase.find_bot_by_name(bot_name)
+            if not bot_results:
+                desc = f"We're sorry. No boat came up with your search word: `{bot_name}`"
+                await ctx.send(embed=embed_single("Bot Result", desc))
+                return
+            
+            # Actual Searching of boats
+            target = chunks_list(bot_results, 48)
+            desc = "The following matches your keyword: `{}`".format(bot_name)
+            for bot_chunk in target:
+                await ctx.send(embed=embed_multi_link("Bot Results", desc, bot_chunk))
+            return
+
+    # Author command search
+    if command_code == "author" or command_code == "a":
+        value = value.lower()
+        if "<@!" in value:
+            author_id_name = DataBase.find_author_id(value)
+            if author_id_name:
+                bot_author = author_id_name
+                print(bot_author)
+            else:
+                await ctx.send(embed=embed_single("Bot Author Result", "No verified author of that name."))
+                return
+        else:
+            if value=="unknown" or value=="u":
+                bot_author = "Unknown"
+            else:
+                bot_author = value
+
+        result = DataBase.find_bot_by_author(bot_author)
+        found_author = result[0]    # Returns a bool if an exact author is found
+        bot_list = result[1]        # List of found bots or possible authors
+        if found_author:
+            # Actual Author bots sending
+            target = chunks_list(bot_list, 49)
+            for bot_set in target:
+                desc = f"The following are bots created by `{bot_author}`."
+                await ctx.send(embed=embed_multi_link("Bot Author Result", desc, bot_set))
+            return
+        else:
+            # if no exact author appeared
+            if not bot_list:
+                desc = f"We're sorry. No author name came up with your search word: `{value}`"
+                await ctx.send(embed=embed_single("Bot Author Result", desc))
+                return
+
+            if value:
+                desc = f"Nothing came up with search key `{bot_author}`.\nMaybe one of these authors?."
+                embedVar = embed_multi_text("Bot Author Result", "Author", desc, bot_list, 7, False)
+            else:
+                # Sends a list of possible authors
+                desc ='List of all verified bot authors.'
+                embedVar = embed_multi_text("Bot Author Result", "Author", desc, bot_list, 7, False)
+                note_desc = "Some bots have unknown authors or were still not \nmanually listed in the confirmed list. To check bots with \nunknown authors, use command `$b a u`."
+                embedVar.add_field(name="Note:", value=note_desc, inline=True)
             await ctx.send(embed=embedVar)
+            return
+
+    # Bot command set creation
+    if command_code == "set" or command_code == "s":
+        priveleged = privilege_check(ctx)
+        if priveleged:
+            set_command = value.split(" ")[0].lower()
+            # Test if command is part of creation commands
+            if set_command in set_creation_commands and set_command != "all":
+                set_name = value.split(" ")[1].split("=")[0].lower()
+                set_value = re.sub(r"\[|\]", "", value.split("=")[1]).split(",")
+                set_value = [value.rstrip().lstrip() for value in set_value]
+
+                # Return if "[]" is empty
+                try:
+                    if set_value == ['']:
+                        await ctx.send(embed=embed_single("Bot Set", "Please add at least one bot name between `[ ]`"))
+                        return
+                except: pass
+
+                # Create command
+                if set_command == "create" or set_command == "c":
+                    command_title = "Bot Set - Create"
+                    if set_name in DataBase.sets:
+                        desc = f"Set `{set_name}` already exists. Please pick a different set name.\n"\
+                               f"> Use `$b set append {set_name}=[]` to add bots to this set.\n"\
+                               f"> Use `$b set overwite {set_name}=[]` to overwrite current set."
+                        await ctx.send(embed=embed_single("Bot Set - Create", desc))
+                        return
+                    
+                    DataBase.sets[set_name] = {}
+                    not_addded_bot = DataBase.set_creation(set_name, set_value)
+
+                    # Checks if set is empty
+                    invalid = DataBase.set_validator(command_title, set_name)
+                    if invalid:
+                        await ctx.send(embed=invalid)
+                        return
+
+                    # Saves the set
+                    DataBase.save_set()
+                    desc = f"Set `{set_name}` was Created Successfully!"\
+                           f"\nPlease use `$b -{set_name}` to summon the set."
+                    embedVar = embed_single(command_title, desc)
+                    await ctx.send(embed=embedVar)
+
+                    # If there are invalid bot names
+                    if not_addded_bot:
+                        desc = "Some of these bots weren't added. "\
+                               "Either you mistyped the\nbot name, the database is not updated, or they don't exists."
+                        embedVar = embed_multi_text("Note", "Not added bots", desc, not_addded_bot, 10, True)
+                        await ctx.send(embed=embedVar)
+                    return
+
+                # Append command
+                if set_command == "append" or set_command == "app" or set_command == "a":
+                    command_title = "Bot Set - Append"
+                    if set_name not in DataBase.sets:
+                        desc = f"Set `{set_name}` does not exists."\
+                               f"\nUse `$b set create {set_name}=[]` to create the set."
+                        await ctx.send(embed=embed_single(command_title, desc))
+                        return
+
+                    # Actual append
+                    old_set = copy.copy(DataBase.sets[set_name])
+                    not_addded_bot = DataBase.set_creation(set_name, set_value)
+
+                    if DataBase.sets[set_name] == old_set:
+                        desc = "None of what you entered were valid.\n"\
+                               "Either they're already part of the set or you mistyped them."
+                        await ctx.send(embed=embed_single(command_title, desc))
+                        return
+
+                    DataBase.save_set()
+                    desc = f"Set `{set_name}` was Appended Successfully!"\
+                           f"\nPlease use `$b -{set_name}` to summon the set."
+                    embedVar = embed_single(command_title, desc)
+                    await ctx.send(embed=embedVar)
+
+                    if not_addded_bot:
+                        desc = "Some of these bots weren't added. "\
+                               "Either you mistyped the\nbot name, the database is not updated, or they don't exists."
+                        embedVar = embed_multi_text("Note", "Not added bots", desc, not_addded_bot, 10, True)
+                        await ctx.send(embed=embedVar)
+                    return
+
+                # Overwrite command
+                if set_command == "overwrite" or set_command == "over" or set_command == "o":
+                    command_title = "Bot Set - Overwrite"
+                    if set_name not in DataBase.sets:
+                        desc = f"Set `{set_name}` does not exists."\
+                               f"\nUse `$b set create {set_name}=[]` to create the set."
+                        await ctx.send(embed=embed_single(command_title, desc))
+                        return
+                    
+
+                    DataBase.sets[set_name] = {}
+                    not_addded_bot = DataBase.set_creation(set_name, set_value)
+
+                    # Checks if set is empty
+                    invalid = DataBase.set_validator(command_title, set_name)
+                    if invalid:
+                        await ctx.send(embed=invalid)
+                        return
+
+                    # Saves the set
+                    DataBase.save_set()
+                    desc = f"Set `{set_name}` was Overwritten Successfully!"\
+                           f"\nPlease use `$b -{set_name}` to summon the set."
+                    await ctx.send(embed=embed_single(command_title, desc))
+
+                    # If there are invalid bot names
+                    if not_addded_bot:
+                        desc = "Some of these bots weren't added. "\
+                               "Either you mistyped the\nbot name, the database is not updated, or they don't exists."
+                        embedVar = embed_multi_text("Note", "Not added bots", desc, not_addded_bot, 10, True)
+                        await ctx.send(embed=embedVar)
+                    return
+
+            if set_command == "delete" or set_command == "del" or set_command == "d":
+                command_title = "Bot Set - Delete"
+                set_name = value.split(" ")[1].lower()
+                if set_name in DataBase.sets:
+                    DataBase.sets.pop(set_name, None)
+                    DataBase.save_set()
+                    await ctx.send(embed=embed_single(command_title, f"Set `{set_name}` set was deleted Successfully!"))
+                else:
+                    await ctx.send(embed=embed_single(command_title, f"Set `{set_name}` does not exists."))
+
+            if set_command == "all":
+            # for set_name in DataBase.sets:
+                if DataBase.sets:
+                    set_list = [set_name for set_name in DataBase.sets]
+                    target = chunks_list(set_list, 48)
+                    for sets in target:
+                        desc = "The following is a list of all sets.\n"\
+                               "Please use `$b -name` to summon the set."
+                        embedVar = embed_multi_text("Bot Set - All", "Sets", desc, sets, 10, True)
+                        await ctx.send(embed=embedVar)
+                    return
+                else: 
+                    # sets are empty
+                    await ctx.send(embed=embed_single("Bot Set", "No set exists"))
+        else:
+            desc = f"\> User {ctx.author} does not have permissions for `$b set command value` command.\n"
+            await ctx.send(desc)
+            return
+
+    if command_code[0] == "-":
+        set_name = command_code[1:]
+        if set_name in DataBase.sets:
+            sets = DataBase.sets[set_name]
+            set_data = []
+            for bot in sets:
+                url = sets[bot]["url"]
+                author = sets[bot]["author"]
+                set_data.append([bot, author, url])
+
+            target = chunks_list(set_data, 48)
+            for bots in target:
+                desc = f"The following are the bots under `{command_code}` set."
+                embeded_object = embed_multi_link("Bot Set", desc, bots)
+                await ctx.send(embed=embeded_object)
+            return
+        else:
+            await ctx.send(embed=embed_single("Bot Set", f"Set `{set_name}` does not exists."))
+            return
+
 
 
 
 bloom_bot.run(DISCORD_TOKEN)
+
+
+

@@ -4,6 +4,144 @@
         "Trial Helper": 1,
         "Staff": 1,
         "Member": 0,
-        "@everyone": 0
+        "@everyone": 0,
+        "Bot Maker": 1
+    },
+    "confirmed_authors": {
+        "Archon": {
+            "alias": [
+                "Archon",
+                "Archons"
+            ],
+            "id": ""
+        },
+        "Arts": {
+            "alias": [
+                "Arts",
+                "ARTS",
+                "Art"
+            ],
+            "id": "151841888649871360"
+        },
+        "Azmatullahs": {
+            "alias": [
+                "Azmatullahs"
+            ],
+            "id": ""
+        },
+        "Bluu": {
+            "alias": [
+                "Bluu"
+            ],
+            "id": "554514705960534054"
+        },
+        "Bloom": {
+            "alias": [
+                "Bloom"
+            ],
+            "id": "252363724894109700"
+        },
+        "Chroma": {
+            "alias": [
+                "Chroma",
+                "chroma"
+            ],
+            "id": ""
+        },
+        "Desolates": {
+            "alias": [
+                "Desolates",
+                "Desolate",
+                "Deso",
+                "deso"
+            ],
+            "id": "266844763649605632"
+        },
+        "Ganku": {
+            "alias": [
+                "Ganku"
+            ],
+            "id": "395853382331662336"
+        },
+        "Kaos": {
+            "alias": [
+                "Kaos",
+                "Kaosreepjou",
+                "kaosreepjou",
+                "kaos"
+            ],
+            "id": "494589656579571714"
+        },
+        "Taryth": {
+            "alias": [
+                "Taryth"
+            ],
+            "id": "267858079868125185"
+        },
+        "King": {
+            "alias": [
+                "King"
+            ],
+            "id": ""
+        },
+        "Minaaaaaa": {
+            "alias": [
+                "Minaaaaaa"
+            ],
+            "id": "380437317933858837"
+        },
+        "Qwack": {
+            "alias": [
+                "Qwack"
+            ],
+            "id": "221271832500764674"
+        },
+        "Rascam": {
+            "alias": [
+                "Rascam"
+            ],
+            "id": ""
+        },
+        "NinjaSneaks": {
+            "alias": [
+                "NinjaSneaks"
+            ],
+            "id": ""
+        },
+        "Ninjatov": {
+            "alias": [
+                "Ninjatov"
+            ],
+            "id": ""
+        },
+        "satan": {
+            "alias": [
+                "Satan",
+                "Satanics",
+                "satans",
+                "Satans"
+            ],
+            "id": "212913871466266624"
+        },
+        "Raze": {
+            "alias": [
+                "Raze"
+            ],
+            "id": "201432181350858753"
+        },
+        "Weebluurts": {
+            "alias": [
+                "Weebluurts"
+            ],
+            "id": ""
+        },
+        "Weeb": {
+            "alias": [
+                "Weeb",
+                "weebly",
+                "weeby"
+            ],
+            "id": "368804586955341824"
+        }
     }
 }
