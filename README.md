@@ -18,7 +18,7 @@ Please read the following carefully. If you complain to me and it turns out you 
 
 
 ## 【**Set**】  For Privileged roles only
-`$b set create set_name=[bot_name, bot_name, etc...]`         # Creates a set\n
+`$b set create set_name=[bot_name, bot_name, etc...]`         # Creates a set
 `$b set append set_name=[bot_name, bot_name, etc...]`         # Adds bot to set
 `$b set overwrite set_name=[bot_name, bot_name, etc...]`   # Overwrites a set
 `$b set delete set_name`                                                                      # Deletes a set
