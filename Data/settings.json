@@ -6,7 +6,8 @@
         "Staff": 1,
         "Member": 0,
         "@everyone": 0,
-        "Verified Bot Makers": 1
+        "Verified Bot Makers": 1,
+        "Verified Bot Maker": 1
     },
     "confirmed_authors": {
         "Archon": {
