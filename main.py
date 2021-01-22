@@ -1,4 +1,3 @@
-
 # Imports
 import discord
 import json
@@ -6,6 +5,7 @@ import logging
 import os
 import re
 import copy
+import requests
 
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
@@ -53,16 +53,34 @@ class BloomScraper:
         #     pass
         self.data["sort_by_bot_name"] = {}
         self.data["sort_by_bot_authors"] = {}
+        self.mode = ""
 
-        soup = Soup(open("./Data/html/aqw.html", encoding="utf8"), "html.parser")
-        body = soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
-        row = body.find_all("tr")
+        try:
+            row = []
+            url = "https://adventurequest.life/"
+            html = requests.get(url).text
+            page_soup = Soup(html, "lxml")
 
+            body = page_soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
+            row_links = body.find_all("input", {"class":"rainbow"})
+
+            for value in row_links:
+                link = url + "bots/" + value["value"]
+                row.append(link)
+            self.mode = "web"
+        except:
+            soup = Soup(open("./Data/html/aqw.html", encoding="utf8"), "html.parser")
+            body = soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
+            row = body.find_all("tr")
+            self.mode = "html"
+        
         for i in row:
-            link = i.find("td").find("a")["href"]
+            if self.mode == "web":
+                link = i
+            elif self.mode == "html":
+                link = i.find("td").find("a")["href"]
             item_name = link.split("/")[-1]
             raw_author = item_name
-
             # Code for finding the bot author. This didn't work easily.
             try:
                 raw_data = re.match("(^[a-zA-Z0-9]+[_|-])", item_name)
@@ -396,6 +414,7 @@ async def b(ctx, command_code, *, value: str=""):
             await ctx.send(r"\> Updating Bloom Bot")
             DataBase.database_update()
             await ctx.send(r"\> Bloom Bot updated!")
+            await ctx.send(f"\> Update method: `{DataBase.mode}`")
             return
         else:
             desc = f"\> User {ctx.author} does not have permissions for `$b update` command.\n"\
