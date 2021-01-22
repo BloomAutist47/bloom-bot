@@ -1,0 +1,1992 @@
+{
+    "sort_by_bot_name": {
+        "AQW Questline Bots.zip": {
+            "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip",
+            "author": "unknown"
+        },
+        "AQW Quest IDs.txt": {
+            "url": "https://adventurequest.life/bots/AQW_Quest_IDs.txt",
+            "author": "unknown"
+        },
+        "FirstReceipt.gbot": {
+            "url": "https://adventurequest.life/bots/Archons_FirstReceipt.gbot",
+            "author": "archon"
+        },
+        "Legion Fealty Collection.zip": {
+            "url": "https://adventurequest.life/bots/Archons_Legion_Fealty_Collection.zip",
+            "author": "archon"
+        },
+        "HBContract.gbot": {
+            "url": "https://adventurequest.life/bots/Archon_HBContract.gbot",
+            "author": "archon"
+        },
+        "HBPaladin.gbot": {
+            "url": "https://adventurequest.life/bots/Archon_HBPaladin.gbot",
+            "author": "archon"
+        },
+        "ArchPaladin MEMBER ONLY.rar": {
+            "url": "https://adventurequest.life/bots/Weeb_ArchPaladin_MEMBER-ONLY.rar",
+            "author": "weeb"
+        },
+        "AegisREP QL P Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_AegisREP_QL_P_Bot.gbot",
+            "author": "arts"
+        },
+        "AFK Aggro Healer.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_AFK_Aggro_Healer.gbot",
+            "author": "arts"
+        },
+        "AlchemyREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_AlchemyREP_Bot.gbot",
+            "author": "arts"
+        },
+        "AprilFoolsWarMerge Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_AprilFoolsWarMerge_Bot.gbot",
+            "author": "arts"
+        },
+        "Archfiend Favor27s.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_Archfiend_Favor%27s.gbot",
+            "author": "arts"
+        },
+        "ASecondFirstMate Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_ASecondFirstMate_Bot.gbot",
+            "author": "arts"
+        },
+        "AspiringNecromancer Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_AspiringNecromancer_Bot.gbot",
+            "author": "arts"
+        },
+        "BaconCatREP QL Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_BaconCatREP_QL_Bot.gbot",
+            "author": "arts"
+        },
+        "BeastMaster QL REP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_BeastMaster_QL_REP_Bot.gbot",
+            "author": "arts"
+        },
+        "BidosMerge Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_BidosMerge_Bot.gbot",
+            "author": "arts"
+        },
+        "BladeOfAweREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_BladeOfAweREP_Bot.gbot",
+            "author": "arts"
+        },
+        "BloodMoonTokens MEM Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_BloodMoonTokens_MEM_Bot.gbot",
+            "author": "arts"
+        },
+        "BoneCastleMerge bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_BoneCastleMerge_bot.gbot",
+            "author": "arts"
+        },
+        "CelestialPirateCaptain Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_CelestialPirateCaptain_Bot.gbot",
+            "author": "arts"
+        },
+        "ChaosMilitiaREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_ChaosMilitiaREP_Bot.gbot",
+            "author": "arts"
+        },
+        "ChaosREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_ChaosREP_Bot.gbot",
+            "author": "arts"
+        },
+        "ChronoAssassin Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_ChronoAssassin_Bot.gbot",
+            "author": "arts"
+        },
+        "CommandingShadowEssences VA Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_CommandingShadowEssences_VA_Bot.gbot",
+            "author": "arts"
+        },
+        "CragSpin Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_CragSpin_Bot.gbot",
+            "author": "arts"
+        },
+        "CruxMogloweenMerge Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_CruxMogloweenMerge_Bot.gbot",
+            "author": "arts"
+        },
+        "DailyGold MEM Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DailyGold_MEM_Bot.gbot",
+            "author": "arts"
+        },
+        "Darkon27s Receipt Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_Darkon%27s_Receipt_Bot.gbot",
+            "author": "arts"
+        },
+        "DarkRangerCorps Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DarkRangerCorps_Bot.gbot",
+            "author": "arts"
+        },
+        "DeathPitArenaREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DeathPitArenaREP_Bot.gbot",
+            "author": "arts"
+        },
+        "DoomWoodREP QL Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DoomWoodREP_QL_Bot.gbot",
+            "author": "arts"
+        },
+        "DreadFireREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DreadFireREP_Bot.gbot",
+            "author": "arts"
+        },
+        "Drops Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_Drops_Bot.gbot",
+            "author": "arts"
+        },
+        "DTOD Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DTOD_Bot.gbot",
+            "author": "arts"
+        },
+        "DwarfHoldREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DwarfHoldREP_Bot.gbot",
+            "author": "arts"
+        },
+        "DwarfHoldREP QL Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DwarfHoldREP_QL_Bot.gbot",
+            "author": "arts"
+        },
+        "DwoboCoins Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DwoboCoins_Bot.gbot",
+            "author": "arts"
+        },
+        "DwoboCoins Bot MEM.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DwoboCoins_Bot_MEM.gbot",
+            "author": "arts"
+        },
+        "DwoboCoins Bot Non-MEM.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_DwoboCoins_Bot_NON-MEM.gbot",
+            "author": "arts"
+        },
+        "EldersBlood Daily Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_EldersBlood_Daily_Bot.gbot",
+            "author": "arts"
+        },
+        "EmberseaREP QL PS Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_EmberseaREP_QL_PS_Bot.gbot",
+            "author": "arts"
+        },
+        "EvolvedLegacyofNulgath Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_EvolvedLegacyofNulgath_Bot.gbot",
+            "author": "arts"
+        },
+        "EvolvedLegacyofNulgath Bot pro.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_EvolvedLegacyofNulgath_Bot_pro.gbot",
+            "author": "arts"
+        },
+        "FavorApproval Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_FavorApproval_Bot.gbot",
+            "author": "arts"
+        },
+        "FiendOfLightSet Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_FiendOfLightSet_Bot.gbot",
+            "author": "arts"
+        },
+        "FishingREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_FishingREP_Bot.gbot",
+            "author": "arts"
+        },
+        "FrostvaleBarbarian Bot pro.zip": {
+            "url": "https://adventurequest.life/bots/Arts_FrostvaleBarbarian_Bot_pro.zip",
+            "author": "arts"
+        },
+        "GlaceraREP QL Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_GlaceraREP_QL_Bot.gbot",
+            "author": "arts"
+        },
+        "HorcREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_HorcREP_Bot.gbot",
+            "author": "arts"
+        },
+        "HypeFiend Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_HypeFiend_Bot.gbot",
+            "author": "arts"
+        },
+        "IceStormArena Agro.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_IceStormArena_Agro.gbot",
+            "author": "arts"
+        },
+        "InfernalArmyREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_InfernalArmyREP_Bot.gbot",
+            "author": "arts"
+        },
+        "JuggernautItemsofNulgath Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_JuggernautItemsofNulgath_Bot.gbot",
+            "author": "arts"
+        },
+        "Level100 Provoke Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_Level100_Provoke_Bot.gbot",
+            "author": "arts"
+        },
+        "LightCaster Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_LightCaster_Bot.gbot",
+            "author": "arts"
+        },
+        "LoreMasterREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_LoreMasterREP_Bot.gbot",
+            "author": "arts"
+        },
+        "LoreMasterREP Strength Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_LoreMasterREP_Strength_Bot.gbot",
+            "author": "arts"
+        },
+        "LycanRep Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_LycanRep_Bot.gbot",
+            "author": "arts"
+        },
+        "Mind BreakingItInREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_Mind-BreakingItInREP_Bot.gbot",
+            "author": "arts"
+        },
+        "Mind BreakingItIn Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_Mind-BreakingItIn_Bot.gbot",
+            "author": "arts"
+        },
+        "MonsterHunterREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_MonsterHunterREP_Bot.gbot",
+            "author": "arts"
+        },
+        "MonsterHunterREP QL Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_MonsterHunterREP_QL_Bot.gbot",
+            "author": "arts"
+        },
+        "MountDoomSkull Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_MountDoomSkull_Bot.gbot",
+            "author": "arts"
+        },
+        "MysteriousDungeonREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_MysteriousDungeonREP_Bot.gbot",
+            "author": "arts"
+        },
+        "NecroCryptREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_NecroCryptREP_Bot.gbot",
+            "author": "arts"
+        },
+        "NorthPointeREP Bot QL.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_NorthPointeREP_Bot_QL.gbot",
+            "author": "arts"
+        },
+        "NWNO HunterDrone Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_NWNO_HunterDrone_Bot.gbot",
+            "author": "arts"
+        },
+        "NWNO NulgathBirthday Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_NWNO_NulgathBirthday_Bot.gbot",
+            "author": "arts"
+        },
+        "PetTamerREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_PetTamerREP_Bot.gbot",
+            "author": "arts"
+        },
+        "PirateMageToken Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_PirateMageToken_Bot.gbot",
+            "author": "arts"
+        },
+        "PlunderMe Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_PlunderMe_Bot.gbot",
+            "author": "arts"
+        },
+        "RangdaMerge FULL Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_RangdaMerge_FULL_Bot.gbot",
+            "author": "arts"
+        },
+        "RangdaMerge NO MASK Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_RangdaMerge__NO-MASK_Bot.gbot",
+            "author": "arts"
+        },
+        "RavenLossREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_RavenLossREP_Bot.gbot",
+            "author": "arts"
+        },
+        "RegentsForZifwin Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_RegentsForZifwin_Bot.gbot",
+            "author": "arts"
+        },
+        "SandSeaREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_SandSeaREP_Bot.gbot",
+            "author": "arts"
+        },
+        "Scarlet Sorceress.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_Scarlet_Sorceress.gbot",
+            "author": "arts"
+        },
+        "SDKA Req Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_SDKA_Req_Bot.gbot",
+            "author": "arts"
+        },
+        "ShadowShield Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_ShadowShield_Bot.gbot",
+            "author": "arts"
+        },
+        "ShadowShroud Daily Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_ShadowShroud_Daily_Bot.gbot",
+            "author": "arts"
+        },
+        "ShardOfAnOrb Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_ShardOfAnOrb_Bot.gbot",
+            "author": "arts"
+        },
+        "SkyGuardREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_SkyGuardREP_Bot.gbot",
+            "author": "arts"
+        },
+        "SkyGuard TH Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_SkyGuard_TH_Bot.gbot",
+            "author": "arts"
+        },
+        "SlothMerge Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_SlothMerge_Bot.gbot",
+            "author": "arts"
+        },
+        "SomniaREP QL Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_SomniaREP_QL_Bot.gbot",
+            "author": "arts"
+        },
+        "SpellCraftingREP V2 Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_SpellCraftingREP_V2_Bot.gbot",
+            "author": "arts"
+        },
+        "StarLightStarBright Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_StarLightStarBright_Bot.gbot",
+            "author": "arts"
+        },
+        "SunkenTreasure Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_SunkenTreasure_Bot.gbot",
+            "author": "arts"
+        },
+        "SweetDreams Are Made Of Teeth.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_SweetDreams_Are_Made_Of_Teeth.gbot",
+            "author": "arts"
+        },
+        "SwordhavenREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_SwordhavenREP_Bot.gbot",
+            "author": "arts"
+        },
+        "ThunderForgeREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_ThunderForgeREP_Bot.gbot",
+            "author": "arts"
+        },
+        "TotemOfNulgath Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_TotemOfNulgath_Bot.gbot",
+            "author": "arts"
+        },
+        "TreasureHunterREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_TreasureHunterREP_Bot.gbot",
+            "author": "arts"
+        },
+        "TreasureHunter NC Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_TreasureHunter_NC_Bot.gbot",
+            "author": "arts"
+        },
+        "TrickstersGiftsMerge Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_TrickstersGiftsMerge_Bot.gbot",
+            "author": "arts"
+        },
+        "TrollREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_TrollREP_Bot.gbot",
+            "author": "arts"
+        },
+        "TwistedTrust Daily Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_TwistedTrust_Daily_Bot.gbot",
+            "author": "arts"
+        },
+        "VampireREP Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_VampireREP_Bot.gbot",
+            "author": "arts"
+        },
+        "ZealousBadge Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_ZealousBadge_Bot.gbot",
+            "author": "arts"
+        },
+        "ZorbakBirthdayMerge Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_ZorbakBirthdayMerge_Bot.gbot",
+            "author": "arts"
+        },
+        "Attacking Mule Non-Mem SC.gbot": {
+            "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC.gbot",
+            "author": "unknown"
+        },
+        "Attacking Mule Non-Mem SC P.gbot": {
+            "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC_P.gbot",
+            "author": "unknown"
+        },
+        "Legion Fealty 1 1.gbot": {
+            "url": "https://adventurequest.life/bots/Azmatullahs_Legion_Fealty_1_1.gbot",
+            "author": "azmatullahs"
+        },
+        "BattlegroundE Gold.gbot": {
+            "url": "https://adventurequest.life/bots/BattlegroundE_Gold_Ninjatov.gbot",
+            "author": "ninjatov"
+        },
+        "Battlegrounde X Assistant.gbot": {
+            "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot",
+            "author": "unknown"
+        },
+        "SpoiledDragonQuest EliteVoidSet.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot",
+            "author": "bloom"
+        },
+        "RoentgeniumOfNulgath.gbot": {
+            "url": "https://adventurequest.life/bots/BluuRoentgeniumOfNulgath.gbot",
+            "author": "bluu"
+        },
+        "ArcangroveIndexQL.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_ArcangroveIndexQL.gbot",
+            "author": "bluu"
+        },
+        "ArcangroveRep Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_ArcangroveRep_Bot.gbot",
+            "author": "bluu"
+        },
+        "Aspiring Necromancer Items and Resources.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_Aspiring_Necromancer_Items_and_Resources.gbot",
+            "author": "bluu"
+        },
+        "Finding Fragments with Blinding Weapons.rar": {
+            "url": "https://adventurequest.life/bots/Bluu_Finding_Fragments_with_Blinding_Weapons.rar",
+            "author": "bluu"
+        },
+        "Hollowborn Rep Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_Hollowborn_Rep_Bot.gbot",
+            "author": "bluu"
+        },
+        "ShadowChaos Mote.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_ShadowChaos_Mote.gbot",
+            "author": "bluu"
+        },
+        "ShadowFlame Armor Scrap.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_ShadowFlame_Armor_Scrap.gbot",
+            "author": "bluu"
+        },
+        "ShadowFlame War Medal.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_ShadowFlame_War_Medal.gbot",
+            "author": "bluu"
+        },
+        "Shadow Dragon Shinobi Class and Merge Items pro.zip": {
+            "url": "https://adventurequest.life/bots/Bluu_Shadow_Dragon_Shinobi_Class_and_Merge_Items_pro.zip",
+            "author": "bluu"
+        },
+        "Skillsets pro.zip": {
+            "url": "https://adventurequest.life/bots/Bluu_Skillsets_pro.zip",
+            "author": "bluu"
+        },
+        "Sweet Dreams are made of Teeth.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_Sweet_Dreams_are_made_of_Teeth.gbot",
+            "author": "bluu"
+        },
+        "Void Highlord Roentgenium of Nulgath Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_Void_Highlord_Roentgenium_of_Nulgath_Bot.gbot",
+            "author": "bluu"
+        },
+        "WinterHorrorMergeShop GriefMedal All in one pro.zip": {
+            "url": "https://adventurequest.life/bots/Bluu_WinterHorrorMergeShop_GriefMedal_All_in_one_pro.zip",
+            "author": "bluu"
+        },
+        "YokaiRep Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_YokaiRep_Bot.gbot",
+            "author": "bluu"
+        },
+        "BoneDust TaintedGems 3.8Pro.gbot": {
+            "url": "https://adventurequest.life/bots/BoneDust_TaintedGems_Ninjatov_3.8Pro.gbot",
+            "author": "ninjatov"
+        },
+        "BrightParagon 3.8PP.gbot": {
+            "url": "https://adventurequest.life/bots/BrightParagon_Ninjatov_3.8PP.gbot",
+            "author": "ninjatov"
+        },
+        "bunny gold bot.gbot": {
+            "url": "https://adventurequest.life/bots/bunny_gold_bot.gbot",
+            "author": "unknown"
+        },
+        "Flame Forged Metal.gbot": {
+            "url": "https://adventurequest.life/bots/Chroma_Flame-Forged_Metal.gbot",
+            "author": "chroma"
+        },
+        "yokai rep member.gbot": {
+            "url": "https://adventurequest.life/bots/chroma_yokai_rep_member.gbot",
+            "author": "chroma"
+        },
+        "CombatTrophyBB.gbot": {
+            "url": "https://adventurequest.life/bots/CombatTrophyBB-Taryth.gbot",
+            "author": "taryth"
+        },
+        "Combat Trophies.gbot": {
+            "url": "https://adventurequest.life/bots/Combat_Trophies_Raze.gbot",
+            "author": "raze"
+        },
+        "AssistingOBoN Quest SkillCommand.gbot": {
+            "url": "https://adventurequest.life/bots/Desolates_AssistingOBoN_Quest_SkillCommand.gbot",
+            "author": "desolates"
+        },
+        "BloodGemsKTV X TotemsGems.gbot": {
+            "url": "https://adventurequest.life/bots/Desolates_BloodGemsKTV_X_TotemsGems.gbot",
+            "author": "desolates"
+        },
+        "CombatTrophies.gbot": {
+            "url": "https://adventurequest.life/bots/Desolates_CombatTrophies.gbot",
+            "author": "desolates"
+        },
+        "Crag X Drudgen BloodGems.gbot": {
+            "url": "https://adventurequest.life/bots/Desolates_Crag_X_Drudgen_BloodGems.gbot",
+            "author": "desolates"
+        },
+        "DiamondTokensOfDage.gbot": {
+            "url": "https://adventurequest.life/bots/Desolates_DiamondTokensOfDage.gbot",
+            "author": "desolates"
+        },
+        "FiendTokens.gbot": {
+            "url": "https://adventurequest.life/bots/Desolates_FiendTokens.gbot",
+            "author": "desolates"
+        },
+        "SpinWheel Bots.zip": {
+            "url": "https://adventurequest.life/bots/Desolates_SpinWheel_Bots.zip",
+            "author": "desolates"
+        },
+        "Supplies To Spin The Wheel Of Chance Bots.zip": {
+            "url": "https://adventurequest.life/bots/Desolates_Supplies_To_Spin_The_Wheel_Of_Chance_Bots.zip",
+            "author": "desolates"
+        },
+        "Zoomin Larvae X TheAssistant.gbot": {
+            "url": "https://adventurequest.life/bots/Desolates_Zoomin_Larvae_X_TheAssistant.gbot",
+            "author": "desolates"
+        },
+        "Dual Wield Forge.gbot": {
+            "url": "https://adventurequest.life/bots/Dual_Wield_Forge.gbot",
+            "author": "unknown"
+        },
+        "EmblemNulgath 3.8PP.gbot": {
+            "url": "https://adventurequest.life/bots/EmblemNulgath_Ninjatov_3.8PP.gbot",
+            "author": "ninjatov"
+        },
+        "EmblemsOfNulAz.gbot": {
+            "url": "https://adventurequest.life/bots/EmblemsOfNulAz.gbot",
+            "author": "unknown"
+        },
+        "EZCHAOSREPLOL UwU Bot.gbot": {
+            "url": "https://adventurequest.life/bots/EZCHAOSREPLOL_UwU_ARTS_Bot.gbot",
+            "author": "arts"
+        },
+        "Fortune Ticket Buyer.gbot": {
+            "url": "https://adventurequest.life/bots/Fortune_Ticket_Buyer.gbot",
+            "author": "unknown"
+        },
+        "FreshSoul 3.8PP.gbot": {
+            "url": "https://adventurequest.life/bots/FreshSoul_Ninjatov_3.8PP.gbot",
+            "author": "ninjatov"
+        },
+        "Fresh Soul SC.gbot": {
+            "url": "https://adventurequest.life/bots/Fresh_Soul_SC_Ninjatov.gbot",
+            "author": "ninjatov"
+        },
+        "ArchFiend DoomLord Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_ArchFiend_DoomLord_Bot.gbot",
+            "author": "ganku"
+        },
+        "ArchPaladin Class Non-Member.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_ArchPaladin_Class_Non-Member.gbot",
+            "author": "ganku"
+        },
+        "Arch DoomKnight Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Arch_DoomKnight_Bot.gbot",
+            "author": "ganku"
+        },
+        "Attack Mule 5BALT5D.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Attack_Mule_%5BALT%5D.gbot",
+            "author": "ganku"
+        },
+        "Corrupted Touch.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Corrupted_Touch.gbot",
+            "author": "ganku"
+        },
+        "Dark Spirit Orb.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Dark_Spirit_Orb.gbot",
+            "author": "weeb"
+        },
+        "Essence of Defeat Reagent DCS.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Essence_of_Defeat_Reagent_DCS.gbot",
+            "author": "ganku"
+        },
+        "M Gathering Unstable Essences.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_M_Gathering_Unstable_Essences.gbot",
+            "author": "ganku"
+        },
+        "NM VA Item Merge and Merge.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_NM_VA_Item_Merge_and_Merge.gbot",
+            "author": "ganku"
+        },
+        "NM VA Merge Items.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_NM_VA__Merge_Items.gbot",
+            "author": "ganku"
+        },
+        "Roentgenium of Nulgath.gbot": {
+            "url": "https://adventurequest.life/bots/Roentgenium_of_Nulgath.gbot",
+            "author": "unknown"
+        },
+        "Void Destroyer Diamond Quest.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Void_Destroyer_Diamond_Quest.gbot",
+            "author": "ganku"
+        },
+        "Void Highlord.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Void_Highlord.gbot",
+            "author": "ganku"
+        },
+        "Void Knight Sword Quest.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Void_Knight_Sword_Quest.gbot",
+            "author": "ganku"
+        },
+        "Willpower Extraction UNIDENTIFIED 34.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Willpower_Extraction_UNIDENTIFIED_34.gbot",
+            "author": "ganku"
+        },
+        "Yami no Ronin Non-LEGION.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Yami_no_Ronin_NON-LEGION.gbot",
+            "author": "ganku"
+        },
+        "5BNECROTIC BOW5D Pinpoint the Pieces.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_%5BNECROTIC_BOW%5D_Pinpoint_the_Pieces.gbot",
+            "author": "ganku"
+        },
+        "GemTotem ofnul 1 prov g3.8plus only.gbot": {
+            "url": "https://adventurequest.life/bots/GemTotem_ofnul_1_prov_g3.8plus_only.gbot",
+            "author": "unknown"
+        },
+        "hollowborn blade.gbot": {
+            "url": "https://adventurequest.life/bots/hollowborn_blade.gbot",
+            "author": "unknown"
+        },
+        "Join Legion.gbot": {
+            "url": "https://adventurequest.life/bots/Join_Legion.gbot",
+            "author": "unknown"
+        },
+        "JuggernautItems 3.8PP.gbot": {
+            "url": "https://adventurequest.life/bots/JuggernautItems_Ninjatov_3.8PP.gbot",
+            "author": "ninjatov"
+        },
+        "Brightoak Rep PacketSpam.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_Brightoak_Rep_PacketSpam.gbot",
+            "author": "kaos"
+        },
+        "Cragglerock Voidstone Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_Cragglerock_Voidstone_Bot.gbot",
+            "author": "kaos"
+        },
+        "FiendEmblem pro.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_FiendEmblem_pro.gbot",
+            "author": "kaos"
+        },
+        "SeksSlaveCoomFollower v2.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_SeksSlaveCoomFollower_v2.gbot",
+            "author": "kaos"
+        },
+        "NecroticCollection.zip": {
+            "url": "https://adventurequest.life/bots/KingNecroticCollection.zip",
+            "author": "king"
+        },
+        "BlindingCollection.zip": {
+            "url": "https://adventurequest.life/bots/King_BlindingCollection.zip",
+            "author": "king"
+        },
+        "DiamondofNully.gbot": {
+            "url": "https://adventurequest.life/bots/King_DiamondofNully.gbot",
+            "author": "king"
+        },
+        "DiamondofNullyNONMEM.gbot": {
+            "url": "https://adventurequest.life/bots/King_DiamondofNullyNONMEM.gbot",
+            "author": "king"
+        },
+        "DreamersEvent.gbot": {
+            "url": "https://adventurequest.life/bots/King_DreamersEvent.gbot",
+            "author": "king"
+        },
+        "DreamersEventBoss.gbot": {
+            "url": "https://adventurequest.life/bots/King_DreamersEventBoss.gbot",
+            "author": "king"
+        },
+        "DreamsNacht.gbot": {
+            "url": "https://adventurequest.life/bots/King_DreamsNacht.gbot",
+            "author": "king"
+        },
+        "EmblemofDage.gbot": {
+            "url": "https://adventurequest.life/bots/King_EmblemofDage.gbot",
+            "author": "king"
+        },
+        "EmblemOfNully.gbot": {
+            "url": "https://adventurequest.life/bots/King_EmblemOfNully.gbot",
+            "author": "king"
+        },
+        "FavorApproval.gbot": {
+            "url": "https://adventurequest.life/bots/King_FavorApproval.gbot",
+            "author": "king"
+        },
+        "FirstClassEntertainment LegionTokens.gbot": {
+            "url": "https://adventurequest.life/bots/King_FirstClassEntertainment_LegionTokens.gbot",
+            "author": "king"
+        },
+        "FreshSoul.gbot": {
+            "url": "https://adventurequest.life/bots/King_FreshSoul.gbot",
+            "author": "king"
+        },
+        "GemTotem.gbot": {
+            "url": "https://adventurequest.life/bots/King_GemTotem.gbot",
+            "author": "king"
+        },
+        "HollowbornBoss.gbot": {
+            "url": "https://adventurequest.life/bots/King_HollowbornBoss.gbot",
+            "author": "king"
+        },
+        "HollowbornEvent.gbot": {
+            "url": "https://adventurequest.life/bots/King_HollowbornEvent.gbot",
+            "author": "king"
+        },
+        "ShogunParagon LegionTokens.gbot": {
+            "url": "https://adventurequest.life/bots/King_ShogunParagon_LegionTokens.gbot",
+            "author": "king"
+        },
+        "Tainted Gem.gbot": {
+            "url": "https://adventurequest.life/bots/King_Tainted_Gem.gbot",
+            "author": "king"
+        },
+        "KTV .gbot": {
+            "url": "https://adventurequest.life/bots/KTV_-_Taryth.gbot",
+            "author": "taryth"
+        },
+        "LeeryContractAssistant.gbot": {
+            "url": "https://adventurequest.life/bots/LeeryContractAssistant_Ninjatov.gbot",
+            "author": "ninjatov"
+        },
+        "LeeryContract Asistant.gbot": {
+            "url": "https://adventurequest.life/bots/LeeryContract_Asistant.gbot",
+            "author": "unknown"
+        },
+        "LeeryContract.gbot": {
+            "url": "https://adventurequest.life/bots/LeeryContract_Ninjatov.gbot",
+            "author": "ninjatov"
+        },
+        "Full Lord of Order Bot.rar": {
+            "url": "https://adventurequest.life/bots/Minaaaaaa_Full_Lord_of_Order_Bot.rar",
+            "author": "minaaaaaa"
+        },
+        "New Worlds New Opportunities.gbot": {
+            "url": "https://adventurequest.life/bots/New_Worlds_New_Opportunities.gbot",
+            "author": "unknown"
+        },
+        "Non-mem VA SkCmd.gbot": {
+            "url": "https://adventurequest.life/bots/Non_mem_VA_SkCmd.gbot",
+            "author": "unknown"
+        },
+        "NWNO RoomHop .gbot": {
+            "url": "https://adventurequest.life/bots/NWNO_RoomHop_-_Taryth.gbot",
+            "author": "taryth"
+        },
+        "Blood Ancient.gbot": {
+            "url": "https://adventurequest.life/bots/Qwack-Blood_Ancient.gbot",
+            "author": "qwack"
+        },
+        "Chrono Assassin.gbot": {
+            "url": "https://adventurequest.life/bots/Qwack-Chrono_Assassin.gbot",
+            "author": "qwack"
+        },
+        "Daily Quest.gbot": {
+            "url": "https://adventurequest.life/bots/Qwack-Daily_Quest.gbot",
+            "author": "qwack"
+        },
+        "Fiend Token.gbot": {
+            "url": "https://adventurequest.life/bots/Qwack-Fiend_Token.gbot",
+            "author": "qwack"
+        },
+        "Gathering Unstable Essences.gbot": {
+            "url": "https://adventurequest.life/bots/Qwack-Gathering_Unstable_Essences.gbot",
+            "author": "qwack"
+        },
+        "The Game of Gemstones.gbot": {
+            "url": "https://adventurequest.life/bots/Qwack-The_Game_of_Gemstones.gbot",
+            "author": "qwack"
+        },
+        "BlightEssence.gbot": {
+            "url": "https://adventurequest.life/bots/Rascam_BlightEssence.gbot",
+            "author": "rascam"
+        },
+        "Retrieve the Void Auras.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Retrieve_the_Void_Auras.gbot",
+            "author": "weeb"
+        },
+        "ics Fastest Larvae bot 3.8plusplus.gbot": {
+            "url": "https://adventurequest.life/bots/Satanics_Fastest_Larvae_bot_3.8plusplus.gbot",
+            "author": "satan"
+        },
+        "blood moon token vampire class.gbot": {
+            "url": "https://adventurequest.life/bots/satans_blood_moon_token_vampire_class.gbot",
+            "author": "satan"
+        },
+        "Crag Bamboozle spin bot.gbot": {
+            "url": "https://adventurequest.life/bots/Satans_Crag__Bamboozle_spin_bot.gbot",
+            "author": "satan"
+        },
+        "Endurance Quest Gold.gbot": {
+            "url": "https://adventurequest.life/bots/Satans_Endurance_Quest_Gold.gbot",
+            "author": "satan"
+        },
+        "Legion Tokens r5.gbot": {
+            "url": "https://adventurequest.life/bots/Satans_Legion_Tokens_r5.gbot",
+            "author": "satan"
+        },
+        "wep kits.rar": {
+            "url": "https://adventurequest.life/bots/satans_wep_kits.rar",
+            "author": "satan"
+        },
+        "ZOOMIN NWNO.gbot": {
+            "url": "https://adventurequest.life/bots/satans_ZOOMIN_NWNO.gbot",
+            "author": "satan"
+        },
+        "atan deso ingredients.gbot": {
+            "url": "https://adventurequest.life/bots/satan_deso_ingredients.gbot",
+            "author": "satan"
+        },
+        "atan super simple borgars questline bot.gbot": {
+            "url": "https://adventurequest.life/bots/satan_super_simple_borgars_questline_bot.gbot",
+            "author": "satan"
+        },
+        "atan super simple CC bot.gbot": {
+            "url": "https://adventurequest.life/bots/satan_super_simple_CC_bot.gbot",
+            "author": "satan"
+        },
+        "atan twilly battlefowl farm.gbot": {
+            "url": "https://adventurequest.life/bots/satan_twilly_battlefowl_farm.gbot",
+            "author": "satan"
+        },
+        "atan yami no ronin bot.gbot": {
+            "url": "https://adventurequest.life/bots/satan_yami_no_ronin_bot.gbot",
+            "author": "satan"
+        },
+        "SDKA Bot.zip": {
+            "url": "https://adventurequest.life/bots/SDKA_Bot_NinjaSneaks.zip",
+            "author": "ninjasneaks"
+        },
+        "Shogun Paragon LT BB LR EI.gbot": {
+            "url": "https://adventurequest.life/bots/Shogun_Paragon_LT_Raze_BB_LR_EI.gbot",
+            "author": "raze"
+        },
+        "Shop ID List.xlsx": {
+            "url": "https://adventurequest.life/bots/Shop_ID_List.xlsx",
+            "author": "unknown"
+        },
+        "Spirit Orbs.gbot": {
+            "url": "https://adventurequest.life/bots/Spirit_Orbs.gbot",
+            "author": "unknown"
+        },
+        "test bot do not download.txt": {
+            "url": "https://adventurequest.life/bots/test_bot_do_not_download.txt",
+            "author": "unknown"
+        },
+        "Token Of Collection Member.gbot": {
+            "url": "https://adventurequest.life/bots/Token_Of_Collection_Member.gbot",
+            "author": "unknown"
+        },
+        "Token of Collection Non-Member.gbot": {
+            "url": "https://adventurequest.life/bots/Token_of_Collection_Non-Member.gbot",
+            "author": "unknown"
+        },
+        "TotemGem ofnul 2 prov g3.8plus only.gbot": {
+            "url": "https://adventurequest.life/bots/TotemGem_ofnul_2_prov_g3.8plus_only.gbot",
+            "author": "unknown"
+        },
+        "VoidAura SDKA 3.8PP.gbot": {
+            "url": "https://adventurequest.life/bots/VoidAura_SDKA_Ninjatov_3.8PP.gbot",
+            "author": "ninjatov"
+        },
+        "VoidCrystalA.gbot": {
+            "url": "https://adventurequest.life/bots/VoidCrystalA.gbot",
+            "author": "unknown"
+        },
+        "VoidCrystalB.gbot": {
+            "url": "https://adventurequest.life/bots/VoidCrystalB.gbot",
+            "author": "unknown"
+        },
+        "VoidShogun.gbot": {
+            "url": "https://adventurequest.life/bots/VoidShogun_Ninjatov.gbot",
+            "author": "ninjatov"
+        },
+        "VoidSpartanFARM.gbot": {
+            "url": "https://adventurequest.life/bots/VoidSpartanFARM.gbot",
+            "author": "unknown"
+        },
+        "Archfiend Doomlord Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Weebluurts_Archfiend_Doomlord_Bot.gbot",
+            "author": "weebluurts"
+        },
+        "Ultimate Legion Revenant Bot pro.zip": {
+            "url": "https://adventurequest.life/bots/Weebluurts_Ultimate_Legion_Revenant_Bot_pro.zip",
+            "author": "weebluurts"
+        },
+        "Astral Orb Quest MEM.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Astral_Orb_Quest_MEM.gbot",
+            "author": "weeb"
+        },
+        "Astral Orb Quest Non-MEM.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Astral_Orb_Quest_NON-MEM.gbot",
+            "author": "weeb"
+        },
+        "A Penny for your Foughts.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_A_Penny_for_your_Foughts.gbot",
+            "author": "weeb"
+        },
+        "A Penny for your Foughts X Dark Spirit Orb.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_A_Penny_for_your_Foughts_X_Dark_Spirit_Orb.gbot",
+            "author": "weeb"
+        },
+        "Blade of Awe.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Blade_of_Awe.gbot",
+            "author": "weeb"
+        },
+        "Blade of Awe REP.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Blade_of_Awe_REP.gbot",
+            "author": "weeb"
+        },
+        "BLoD Weapon Kits.rar": {
+            "url": "https://adventurequest.life/bots/Weeb_BLoD_Weapon_Kits.rar",
+            "author": "weeb"
+        },
+        "Bright Paragon Pet pro.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Bright_Paragon_Pet_pro.gbot",
+            "author": "weeb"
+        },
+        "Commanding Shadow Essences.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Commanding_Shadow_Essences.gbot",
+            "author": "weeb"
+        },
+        "Crag X Drudgen the Salesman.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Crag_X_Drudgen_the_Salesman.gbot",
+            "author": "weeb"
+        },
+        "Cube Reagent.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Cube_Reagent.gbot",
+            "author": "weeb"
+        },
+        "Dark Token.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Dark_Token.gbot",
+            "author": "weeb"
+        },
+        "Deadtech War Medals.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Deadtech_War_Medals.gbot",
+            "author": "weeb"
+        },
+        "Dreadrock LTs.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Dreadrock_LTs.gbot",
+            "author": "weeb"
+        },
+        "Emblem of Dage.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Emblem_of_Dage.gbot",
+            "author": "weeb"
+        },
+        "Essence of Defeat Reagent.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Essence_of_Defeat_Reagent.gbot",
+            "author": "weeb"
+        },
+        "FB X Dreadrock LTs.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_FB_X_Dreadrock_LTs.gbot",
+            "author": "weeb"
+        },
+        "Finding Fragments.rar": {
+            "url": "https://adventurequest.life/bots/Weeb_Finding_Fragments.rar",
+            "author": "weeb"
+        },
+        "GrimDark.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_GrimDark.gbot",
+            "author": "weeb"
+        },
+        "Hollowborn Oblivion Blade.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Hollowborn_Oblivion_Blade.gbot",
+            "author": "weeb"
+        },
+        "Investigate the Tech.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Investigate_the_Tech.gbot",
+            "author": "weeb"
+        },
+        "Kiss the Void.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Kiss_the_Void.gbot",
+            "author": "weeb"
+        },
+        "Lycan Rep.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Lycan_Rep.gbot",
+            "author": "weeb"
+        },
+        "MEMBER Good.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_MEMBER_Good.gbot",
+            "author": "weeb"
+        },
+        "Mysterious Chest 7DD.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Mysterious_Chest_7DD.gbot",
+            "author": "weeb"
+        },
+        "Ninja Challenge.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Ninja_Challenge.gbot",
+            "author": "weeb"
+        },
+        "Non-MEMBER Good.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_NON-MEMBER_Good.gbot",
+            "author": "weeb"
+        },
+        "NWNO.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_NWNO.gbot",
+            "author": "weeb"
+        },
+        "NWNO X Drudgen the Salesman.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_NWNO_X_Drudgen_the_Salesman.gbot",
+            "author": "weeb"
+        },
+        "Paragon Fiend Legion Tokens.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Paragon_Fiend_Legion_Tokens.gbot",
+            "author": "weeb"
+        },
+        "SDKA Weapon Kits.rar": {
+            "url": "https://adventurequest.life/bots/Weeb_SDKA_Weapon_Kits.rar",
+            "author": "weeb"
+        },
+        "Sepulchure27sDoomKnightArmor WeaponKits.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Sepulchure%27sDoomKnightArmor_WeaponKits.gbot",
+            "author": "weeb"
+        },
+        "ShadowFlame War Medals.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_ShadowFlame_War_Medals.gbot",
+            "author": "weeb"
+        },
+        "Shogunwar.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Shogunwar.gbot",
+            "author": "weeb"
+        },
+        "Sigrid Murder.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Sigrid_Murder.gbot",
+            "author": "weeb"
+        },
+        "Swindle Bulk.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Swindle_Bulk.gbot",
+            "author": "weeb"
+        },
+        "ToN2BGoN.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_ToN%2BGoN.gbot",
+            "author": "weeb"
+        },
+        "Tools for the Job.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Tools_for_the_Job.gbot",
+            "author": "weeb"
+        },
+        "Ultimate Necrotic Sword of Doom Bot pro.rar": {
+            "url": "https://adventurequest.life/bots/Weeb_Ultimate_Necrotic_Sword_of_Doom_Bot_pro.rar",
+            "author": "weeb"
+        },
+        "Void Destroyer.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Void_Destroyer.gbot",
+            "author": "weeb"
+        },
+        "Void Paladin.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Void_Paladin.gbot",
+            "author": "weeb"
+        },
+        "Void Shogun.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Void_Shogun.gbot",
+            "author": "weeb"
+        },
+        "Void Spartan.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Void_Spartan.gbot",
+            "author": "weeb"
+        },
+        "Youthanize.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Youthanize.gbot",
+            "author": "weeb"
+        },
+        "YokaiSwordScrollBot 28NEW29.gbot": {
+            "url": "https://adventurequest.life/bots/YokaiSwordScrollBot_Ninjatov%28NEW%29.gbot",
+            "author": "ninjatov"
+        },
+        "YokaiSwordScrollBot.gbot": {
+            "url": "https://adventurequest.life/bots/YokaiSwordScrollBot_Ninjatov.gbot",
+            "author": "ninjatov"
+        }
+    },
+    "sort_by_bot_authors": {
+        "unknown": {
+            "AQW Questline Bots.zip": {
+                "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip"
+            },
+            "AQW Quest IDs.txt": {
+                "url": "https://adventurequest.life/bots/AQW_Quest_IDs.txt"
+            },
+            "ArchPaladin MEMBER ONLY.rar": {
+                "url": "https://adventurequest.life/bots/ArchPaladin_MEMBER-ONLY.rar"
+            },
+            "Attacking Mule Non-Mem SC.gbot": {
+                "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC.gbot"
+            },
+            "Attacking Mule Non-Mem SC P.gbot": {
+                "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC_P.gbot"
+            },
+            "Battlegrounde X Assistant.gbot": {
+                "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot"
+            },
+            "bunny gold bot.gbot": {
+                "url": "https://adventurequest.life/bots/bunny_gold_bot.gbot"
+            },
+            "Dual Wield Forge.gbot": {
+                "url": "https://adventurequest.life/bots/Dual_Wield_Forge.gbot"
+            },
+            "EmblemsOfNulAz.gbot": {
+                "url": "https://adventurequest.life/bots/EmblemsOfNulAz.gbot"
+            },
+            "Fortune Ticket Buyer.gbot": {
+                "url": "https://adventurequest.life/bots/Fortune_Ticket_Buyer.gbot"
+            },
+            "GemTotem ofnul 1 prov g3.8plus only.gbot": {
+                "url": "https://adventurequest.life/bots/GemTotem_ofnul_1_prov_g3.8plus_only.gbot"
+            },
+            "hollowborn blade.gbot": {
+                "url": "https://adventurequest.life/bots/hollowborn_blade.gbot"
+            },
+            "Join Legion.gbot": {
+                "url": "https://adventurequest.life/bots/Join_Legion.gbot"
+            },
+            "LeeryContract Asistant.gbot": {
+                "url": "https://adventurequest.life/bots/LeeryContract_Asistant.gbot"
+            },
+            "New Worlds New Opportunities.gbot": {
+                "url": "https://adventurequest.life/bots/New_Worlds_New_Opportunities.gbot"
+            },
+            "Non-mem VA SkCmd.gbot": {
+                "url": "https://adventurequest.life/bots/Non_mem_VA_SkCmd.gbot"
+            },
+            "Retrieve the Void Auras.gbot": {
+                "url": "https://adventurequest.life/bots/Retrieve_the_Void_Auras.gbot"
+            },
+            "Roentgenium of Nulgath.gbot": {
+                "url": "https://adventurequest.life/bots/Roentgenium_of_Nulgath.gbot"
+            },
+            "Shop ID List.xlsx": {
+                "url": "https://adventurequest.life/bots/Shop_ID_List.xlsx"
+            },
+            "Spirit Orbs.gbot": {
+                "url": "https://adventurequest.life/bots/Spirit_Orbs.gbot"
+            },
+            "test bot do not download.txt": {
+                "url": "https://adventurequest.life/bots/test_bot_do_not_download.txt"
+            },
+            "Token Of Collection Member.gbot": {
+                "url": "https://adventurequest.life/bots/Token_Of_Collection_Member.gbot"
+            },
+            "Token of Collection Non-Member.gbot": {
+                "url": "https://adventurequest.life/bots/Token_of_Collection_Non-Member.gbot"
+            },
+            "TotemGem ofnul 2 prov g3.8plus only.gbot": {
+                "url": "https://adventurequest.life/bots/TotemGem_ofnul_2_prov_g3.8plus_only.gbot"
+            },
+            "VoidCrystalA.gbot": {
+                "url": "https://adventurequest.life/bots/VoidCrystalA.gbot"
+            },
+            "VoidCrystalB.gbot": {
+                "url": "https://adventurequest.life/bots/VoidCrystalB.gbot"
+            },
+            "VoidSpartanFARM.gbot": {
+                "url": "https://adventurequest.life/bots/VoidSpartanFARM.gbot"
+            }
+        },
+        "archon": {
+            "FirstReceipt.gbot": {
+                "url": "https://adventurequest.life/bots/Archons_FirstReceipt.gbot"
+            },
+            "Legion Fealty Collection.zip": {
+                "url": "https://adventurequest.life/bots/Archons_Legion_Fealty_Collection.zip"
+            },
+            "HBContract.gbot": {
+                "url": "https://adventurequest.life/bots/Archon_HBContract.gbot"
+            },
+            "HBPaladin.gbot": {
+                "url": "https://adventurequest.life/bots/Archon_HBPaladin.gbot"
+            }
+        },
+        "arts": {
+            "AegisREP QL P Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_AegisREP_QL_P_Bot.gbot"
+            },
+            "AFK Aggro Healer.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_AFK_Aggro_Healer.gbot"
+            },
+            "AlchemyREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_AlchemyREP_Bot.gbot"
+            },
+            "AprilFoolsWarMerge Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_AprilFoolsWarMerge_Bot.gbot"
+            },
+            "Archfiend Favor27s.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_Archfiend_Favor%27s.gbot"
+            },
+            "ASecondFirstMate Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_ASecondFirstMate_Bot.gbot"
+            },
+            "AspiringNecromancer Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_AspiringNecromancer_Bot.gbot"
+            },
+            "BaconCatREP QL Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_BaconCatREP_QL_Bot.gbot"
+            },
+            "BeastMaster QL REP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_BeastMaster_QL_REP_Bot.gbot"
+            },
+            "BidosMerge Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_BidosMerge_Bot.gbot"
+            },
+            "BladeOfAweREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_BladeOfAweREP_Bot.gbot"
+            },
+            "BloodMoonTokens MEM Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_BloodMoonTokens_MEM_Bot.gbot"
+            },
+            "BoneCastleMerge bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_BoneCastleMerge_bot.gbot"
+            },
+            "CelestialPirateCaptain Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_CelestialPirateCaptain_Bot.gbot"
+            },
+            "ChaosMilitiaREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_ChaosMilitiaREP_Bot.gbot"
+            },
+            "ChaosREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_ChaosREP_Bot.gbot"
+            },
+            "ChronoAssassin Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_ChronoAssassin_Bot.gbot"
+            },
+            "CommandingShadowEssences VA Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_CommandingShadowEssences_VA_Bot.gbot"
+            },
+            "CragSpin Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_CragSpin_Bot.gbot"
+            },
+            "CruxMogloweenMerge Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_CruxMogloweenMerge_Bot.gbot"
+            },
+            "DailyGold MEM Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DailyGold_MEM_Bot.gbot"
+            },
+            "Darkon27s Receipt Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_Darkon%27s_Receipt_Bot.gbot"
+            },
+            "DarkRangerCorps Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DarkRangerCorps_Bot.gbot"
+            },
+            "DeathPitArenaREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DeathPitArenaREP_Bot.gbot"
+            },
+            "DoomWoodREP QL Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DoomWoodREP_QL_Bot.gbot"
+            },
+            "DreadFireREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DreadFireREP_Bot.gbot"
+            },
+            "Drops Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_Drops_Bot.gbot"
+            },
+            "DTOD Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DTOD_Bot.gbot"
+            },
+            "DwarfHoldREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DwarfHoldREP_Bot.gbot"
+            },
+            "DwarfHoldREP QL Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DwarfHoldREP_QL_Bot.gbot"
+            },
+            "DwoboCoins Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DwoboCoins_Bot.gbot"
+            },
+            "DwoboCoins Bot MEM.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DwoboCoins_Bot_MEM.gbot"
+            },
+            "DwoboCoins Bot Non-MEM.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_DwoboCoins_Bot_NON-MEM.gbot"
+            },
+            "EldersBlood Daily Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_EldersBlood_Daily_Bot.gbot"
+            },
+            "EmberseaREP QL PS Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_EmberseaREP_QL_PS_Bot.gbot"
+            },
+            "EvolvedLegacyofNulgath Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_EvolvedLegacyofNulgath_Bot.gbot"
+            },
+            "EvolvedLegacyofNulgath Bot pro.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_EvolvedLegacyofNulgath_Bot_pro.gbot"
+            },
+            "FavorApproval Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_FavorApproval_Bot.gbot"
+            },
+            "FiendOfLightSet Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_FiendOfLightSet_Bot.gbot"
+            },
+            "FishingREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_FishingREP_Bot.gbot"
+            },
+            "FrostvaleBarbarian Bot pro.zip": {
+                "url": "https://adventurequest.life/bots/Arts_FrostvaleBarbarian_Bot_pro.zip"
+            },
+            "GlaceraREP QL Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_GlaceraREP_QL_Bot.gbot"
+            },
+            "HorcREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_HorcREP_Bot.gbot"
+            },
+            "HypeFiend Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_HypeFiend_Bot.gbot"
+            },
+            "IceStormArena Agro.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_IceStormArena_Agro.gbot"
+            },
+            "InfernalArmyREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_InfernalArmyREP_Bot.gbot"
+            },
+            "JuggernautItemsofNulgath Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_JuggernautItemsofNulgath_Bot.gbot"
+            },
+            "Level100 Provoke Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_Level100_Provoke_Bot.gbot"
+            },
+            "LightCaster Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_LightCaster_Bot.gbot"
+            },
+            "LoreMasterREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_LoreMasterREP_Bot.gbot"
+            },
+            "LoreMasterREP Strength Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_LoreMasterREP_Strength_Bot.gbot"
+            },
+            "LycanRep Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_LycanRep_Bot.gbot"
+            },
+            "Mind BreakingItInREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_Mind-BreakingItInREP_Bot.gbot"
+            },
+            "Mind BreakingItIn Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_Mind-BreakingItIn_Bot.gbot"
+            },
+            "MonsterHunterREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_MonsterHunterREP_Bot.gbot"
+            },
+            "MonsterHunterREP QL Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_MonsterHunterREP_QL_Bot.gbot"
+            },
+            "MountDoomSkull Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_MountDoomSkull_Bot.gbot"
+            },
+            "MysteriousDungeonREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_MysteriousDungeonREP_Bot.gbot"
+            },
+            "NecroCryptREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_NecroCryptREP_Bot.gbot"
+            },
+            "NorthPointeREP Bot QL.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_NorthPointeREP_Bot_QL.gbot"
+            },
+            "NWNO HunterDrone Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_NWNO_HunterDrone_Bot.gbot"
+            },
+            "NWNO NulgathBirthday Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_NWNO_NulgathBirthday_Bot.gbot"
+            },
+            "PetTamerREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_PetTamerREP_Bot.gbot"
+            },
+            "PirateMageToken Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_PirateMageToken_Bot.gbot"
+            },
+            "PlunderMe Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_PlunderMe_Bot.gbot"
+            },
+            "RangdaMerge FULL Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_RangdaMerge_FULL_Bot.gbot"
+            },
+            "RangdaMerge NO MASK Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_RangdaMerge__NO-MASK_Bot.gbot"
+            },
+            "RavenLossREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_RavenLossREP_Bot.gbot"
+            },
+            "RegentsForZifwin Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_RegentsForZifwin_Bot.gbot"
+            },
+            "SandSeaREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_SandSeaREP_Bot.gbot"
+            },
+            "Scarlet Sorceress.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_Scarlet_Sorceress.gbot"
+            },
+            "SDKA Req Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_SDKA_Req_Bot.gbot"
+            },
+            "ShadowShield Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_ShadowShield_Bot.gbot"
+            },
+            "ShadowShroud Daily Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_ShadowShroud_Daily_Bot.gbot"
+            },
+            "ShardOfAnOrb Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_ShardOfAnOrb_Bot.gbot"
+            },
+            "SkyGuardREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_SkyGuardREP_Bot.gbot"
+            },
+            "SkyGuard TH Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_SkyGuard_TH_Bot.gbot"
+            },
+            "SlothMerge Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_SlothMerge_Bot.gbot"
+            },
+            "SomniaREP QL Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_SomniaREP_QL_Bot.gbot"
+            },
+            "SpellCraftingREP V2 Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_SpellCraftingREP_V2_Bot.gbot"
+            },
+            "StarLightStarBright Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_StarLightStarBright_Bot.gbot"
+            },
+            "SunkenTreasure Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_SunkenTreasure_Bot.gbot"
+            },
+            "SweetDreams Are Made Of Teeth.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_SweetDreams_Are_Made_Of_Teeth.gbot"
+            },
+            "SwordhavenREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_SwordhavenREP_Bot.gbot"
+            },
+            "ThunderForgeREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_ThunderForgeREP_Bot.gbot"
+            },
+            "TotemOfNulgath Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_TotemOfNulgath_Bot.gbot"
+            },
+            "TreasureHunterREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_TreasureHunterREP_Bot.gbot"
+            },
+            "TreasureHunter NC Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_TreasureHunter_NC_Bot.gbot"
+            },
+            "TrickstersGiftsMerge Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_TrickstersGiftsMerge_Bot.gbot"
+            },
+            "TrollREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_TrollREP_Bot.gbot"
+            },
+            "TwistedTrust Daily Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_TwistedTrust_Daily_Bot.gbot"
+            },
+            "VampireREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_VampireREP_Bot.gbot"
+            },
+            "ZealousBadge Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_ZealousBadge_Bot.gbot"
+            },
+            "ZorbakBirthdayMerge Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_ZorbakBirthdayMerge_Bot.gbot"
+            },
+            "EZCHAOSREPLOL UwU Bot.gbot": {
+                "url": "https://adventurequest.life/bots/EZCHAOSREPLOL_UwU_ARTS_Bot.gbot"
+            }
+        },
+        "azmatullahs": {
+            "Legion Fealty 1 1.gbot": {
+                "url": "https://adventurequest.life/bots/Azmatullahs_Legion_Fealty_1_1.gbot"
+            }
+        },
+        "ninjatov": {
+            "BattlegroundE Gold.gbot": {
+                "url": "https://adventurequest.life/bots/BattlegroundE_Gold_Ninjatov.gbot"
+            },
+            "BoneDust TaintedGems 3.8Pro.gbot": {
+                "url": "https://adventurequest.life/bots/BoneDust_TaintedGems_Ninjatov_3.8Pro.gbot"
+            },
+            "BrightParagon 3.8PP.gbot": {
+                "url": "https://adventurequest.life/bots/BrightParagon_Ninjatov_3.8PP.gbot"
+            },
+            "EmblemNulgath 3.8PP.gbot": {
+                "url": "https://adventurequest.life/bots/EmblemNulgath_Ninjatov_3.8PP.gbot"
+            },
+            "FreshSoul 3.8PP.gbot": {
+                "url": "https://adventurequest.life/bots/FreshSoul_Ninjatov_3.8PP.gbot"
+            },
+            "Fresh Soul SC.gbot": {
+                "url": "https://adventurequest.life/bots/Fresh_Soul_SC_Ninjatov.gbot"
+            },
+            "JuggernautItems 3.8PP.gbot": {
+                "url": "https://adventurequest.life/bots/JuggernautItems_Ninjatov_3.8PP.gbot"
+            },
+            "LeeryContractAssistant.gbot": {
+                "url": "https://adventurequest.life/bots/LeeryContractAssistant_Ninjatov.gbot"
+            },
+            "LeeryContract.gbot": {
+                "url": "https://adventurequest.life/bots/LeeryContract_Ninjatov.gbot"
+            },
+            "VoidAura SDKA 3.8PP.gbot": {
+                "url": "https://adventurequest.life/bots/VoidAura_SDKA_Ninjatov_3.8PP.gbot"
+            },
+            "VoidShogun.gbot": {
+                "url": "https://adventurequest.life/bots/VoidShogun_Ninjatov.gbot"
+            },
+            "YokaiSwordScrollBot 28NEW29.gbot": {
+                "url": "https://adventurequest.life/bots/YokaiSwordScrollBot_Ninjatov%28NEW%29.gbot"
+            },
+            "YokaiSwordScrollBot.gbot": {
+                "url": "https://adventurequest.life/bots/YokaiSwordScrollBot_Ninjatov.gbot"
+            }
+        },
+        "bloom": {
+            "SpoiledDragonQuest EliteVoidSet.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
+            }
+        },
+        "bluu": {
+            "RoentgeniumOfNulgath.gbot": {
+                "url": "https://adventurequest.life/bots/BluuRoentgeniumOfNulgath.gbot"
+            },
+            "ArcangroveIndexQL.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_ArcangroveIndexQL.gbot"
+            },
+            "ArcangroveRep Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_ArcangroveRep_Bot.gbot"
+            },
+            "Aspiring Necromancer Items and Resources.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_Aspiring_Necromancer_Items_and_Resources.gbot"
+            },
+            "Finding Fragments with Blinding Weapons.rar": {
+                "url": "https://adventurequest.life/bots/Bluu_Finding_Fragments_with_Blinding_Weapons.rar"
+            },
+            "Hollowborn Rep Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_Hollowborn_Rep_Bot.gbot"
+            },
+            "ShadowChaos Mote.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_ShadowChaos_Mote.gbot"
+            },
+            "ShadowFlame Armor Scrap.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_ShadowFlame_Armor_Scrap.gbot"
+            },
+            "ShadowFlame War Medal.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_ShadowFlame_War_Medal.gbot"
+            },
+            "Shadow Dragon Shinobi Class and Merge Items pro.zip": {
+                "url": "https://adventurequest.life/bots/Bluu_Shadow_Dragon_Shinobi_Class_and_Merge_Items_pro.zip"
+            },
+            "Skillsets pro.zip": {
+                "url": "https://adventurequest.life/bots/Bluu_Skillsets_pro.zip"
+            },
+            "Sweet Dreams are made of Teeth.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_Sweet_Dreams_are_made_of_Teeth.gbot"
+            },
+            "Void Highlord Roentgenium of Nulgath Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_Void_Highlord_Roentgenium_of_Nulgath_Bot.gbot"
+            },
+            "WinterHorrorMergeShop GriefMedal All in one pro.zip": {
+                "url": "https://adventurequest.life/bots/Bluu_WinterHorrorMergeShop_GriefMedal_All_in_one_pro.zip"
+            },
+            "YokaiRep Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_YokaiRep_Bot.gbot"
+            }
+        },
+        "chroma": {
+            "Flame Forged Metal.gbot": {
+                "url": "https://adventurequest.life/bots/Chroma_Flame-Forged_Metal.gbot"
+            },
+            "yokai rep member.gbot": {
+                "url": "https://adventurequest.life/bots/chroma_yokai_rep_member.gbot"
+            }
+        },
+        "taryth": {
+            "CombatTrophyBB.gbot": {
+                "url": "https://adventurequest.life/bots/CombatTrophyBB-Taryth.gbot"
+            },
+            "KTV .gbot": {
+                "url": "https://adventurequest.life/bots/KTV_-_Taryth.gbot"
+            },
+            "NWNO RoomHop .gbot": {
+                "url": "https://adventurequest.life/bots/NWNO_RoomHop_-_Taryth.gbot"
+            }
+        },
+        "raze": {
+            "Combat Trophies.gbot": {
+                "url": "https://adventurequest.life/bots/Combat_Trophies_Raze.gbot"
+            },
+            "Shogun Paragon LT BB LR EI.gbot": {
+                "url": "https://adventurequest.life/bots/Shogun_Paragon_LT_Raze_BB_LR_EI.gbot"
+            }
+        },
+        "desolates": {
+            "AssistingOBoN Quest SkillCommand.gbot": {
+                "url": "https://adventurequest.life/bots/Desolates_AssistingOBoN_Quest_SkillCommand.gbot"
+            },
+            "BloodGemsKTV X TotemsGems.gbot": {
+                "url": "https://adventurequest.life/bots/Desolates_BloodGemsKTV_X_TotemsGems.gbot"
+            },
+            "CombatTrophies.gbot": {
+                "url": "https://adventurequest.life/bots/Desolates_CombatTrophies.gbot"
+            },
+            "Crag X Drudgen BloodGems.gbot": {
+                "url": "https://adventurequest.life/bots/Desolates_Crag_X_Drudgen_BloodGems.gbot"
+            },
+            "DiamondTokensOfDage.gbot": {
+                "url": "https://adventurequest.life/bots/Desolates_DiamondTokensOfDage.gbot"
+            },
+            "FiendTokens.gbot": {
+                "url": "https://adventurequest.life/bots/Desolates_FiendTokens.gbot"
+            },
+            "SpinWheel Bots.zip": {
+                "url": "https://adventurequest.life/bots/Desolates_SpinWheel_Bots.zip"
+            },
+            "Supplies To Spin The Wheel Of Chance Bots.zip": {
+                "url": "https://adventurequest.life/bots/Desolates_Supplies_To_Spin_The_Wheel_Of_Chance_Bots.zip"
+            },
+            "Zoomin Larvae X TheAssistant.gbot": {
+                "url": "https://adventurequest.life/bots/Desolates_Zoomin_Larvae_X_TheAssistant.gbot"
+            }
+        },
+        "ganku": {
+            "ArchFiend DoomLord Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_ArchFiend_DoomLord_Bot.gbot"
+            },
+            "ArchPaladin Class Non-Member.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_ArchPaladin_Class_Non-Member.gbot"
+            },
+            "Arch DoomKnight Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Arch_DoomKnight_Bot.gbot"
+            },
+            "Attack Mule 5BALT5D.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Attack_Mule_%5BALT%5D.gbot"
+            },
+            "Corrupted Touch.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Corrupted_Touch.gbot"
+            },
+            "Dark Spirit Orb.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Dark_Spirit_Orb.gbot"
+            },
+            "Essence of Defeat Reagent DCS.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Essence_of_Defeat_Reagent_DCS.gbot"
+            },
+            "M Gathering Unstable Essences.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_M_Gathering_Unstable_Essences.gbot"
+            },
+            "NM VA Item Merge and Merge.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_NM_VA_Item_Merge_and_Merge.gbot"
+            },
+            "NM VA Merge Items.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_NM_VA__Merge_Items.gbot"
+            },
+            "Roentgenium of Nulgath.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Roentgenium_of_Nulgath.gbot"
+            },
+            "Void Destroyer Diamond Quest.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Void_Destroyer_Diamond_Quest.gbot"
+            },
+            "Void Highlord.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Void_Highlord.gbot"
+            },
+            "Void Knight Sword Quest.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Void_Knight_Sword_Quest.gbot"
+            },
+            "Willpower Extraction UNIDENTIFIED 34.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Willpower_Extraction_UNIDENTIFIED_34.gbot"
+            },
+            "Yami no Ronin Non-LEGION.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_Yami_no_Ronin_NON-LEGION.gbot"
+            },
+            "5BNECROTIC BOW5D Pinpoint the Pieces.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_%5BNECROTIC_BOW%5D_Pinpoint_the_Pieces.gbot"
+            }
+        },
+        "kaos": {
+            "Brightoak Rep PacketSpam.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_Brightoak_Rep_PacketSpam.gbot"
+            },
+            "Cragglerock Voidstone Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_Cragglerock_Voidstone_Bot.gbot"
+            },
+            "FiendEmblem pro.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_FiendEmblem_pro.gbot"
+            },
+            "SeksSlaveCoomFollower v2.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_SeksSlaveCoomFollower_v2.gbot"
+            }
+        },
+        "king": {
+            "NecroticCollection.zip": {
+                "url": "https://adventurequest.life/bots/KingNecroticCollection.zip"
+            },
+            "BlindingCollection.zip": {
+                "url": "https://adventurequest.life/bots/King_BlindingCollection.zip"
+            },
+            "DiamondofNully.gbot": {
+                "url": "https://adventurequest.life/bots/King_DiamondofNully.gbot"
+            },
+            "DiamondofNullyNONMEM.gbot": {
+                "url": "https://adventurequest.life/bots/King_DiamondofNullyNONMEM.gbot"
+            },
+            "DreamersEvent.gbot": {
+                "url": "https://adventurequest.life/bots/King_DreamersEvent.gbot"
+            },
+            "DreamersEventBoss.gbot": {
+                "url": "https://adventurequest.life/bots/King_DreamersEventBoss.gbot"
+            },
+            "DreamsNacht.gbot": {
+                "url": "https://adventurequest.life/bots/King_DreamsNacht.gbot"
+            },
+            "EmblemofDage.gbot": {
+                "url": "https://adventurequest.life/bots/King_EmblemofDage.gbot"
+            },
+            "EmblemOfNully.gbot": {
+                "url": "https://adventurequest.life/bots/King_EmblemOfNully.gbot"
+            },
+            "FavorApproval.gbot": {
+                "url": "https://adventurequest.life/bots/King_FavorApproval.gbot"
+            },
+            "FirstClassEntertainment LegionTokens.gbot": {
+                "url": "https://adventurequest.life/bots/King_FirstClassEntertainment_LegionTokens.gbot"
+            },
+            "FreshSoul.gbot": {
+                "url": "https://adventurequest.life/bots/King_FreshSoul.gbot"
+            },
+            "GemTotem.gbot": {
+                "url": "https://adventurequest.life/bots/King_GemTotem.gbot"
+            },
+            "HollowbornBoss.gbot": {
+                "url": "https://adventurequest.life/bots/King_HollowbornBoss.gbot"
+            },
+            "HollowbornEvent.gbot": {
+                "url": "https://adventurequest.life/bots/King_HollowbornEvent.gbot"
+            },
+            "ShogunParagon LegionTokens.gbot": {
+                "url": "https://adventurequest.life/bots/King_ShogunParagon_LegionTokens.gbot"
+            },
+            "Tainted Gem.gbot": {
+                "url": "https://adventurequest.life/bots/King_Tainted_Gem.gbot"
+            }
+        },
+        "minaaaaaa": {
+            "Full Lord of Order Bot.rar": {
+                "url": "https://adventurequest.life/bots/Minaaaaaa_Full_Lord_of_Order_Bot.rar"
+            }
+        },
+        "qwack": {
+            "Blood Ancient.gbot": {
+                "url": "https://adventurequest.life/bots/Qwack-Blood_Ancient.gbot"
+            },
+            "Chrono Assassin.gbot": {
+                "url": "https://adventurequest.life/bots/Qwack-Chrono_Assassin.gbot"
+            },
+            "Daily Quest.gbot": {
+                "url": "https://adventurequest.life/bots/Qwack-Daily_Quest.gbot"
+            },
+            "Fiend Token.gbot": {
+                "url": "https://adventurequest.life/bots/Qwack-Fiend_Token.gbot"
+            },
+            "Gathering Unstable Essences.gbot": {
+                "url": "https://adventurequest.life/bots/Qwack-Gathering_Unstable_Essences.gbot"
+            },
+            "The Game of Gemstones.gbot": {
+                "url": "https://adventurequest.life/bots/Qwack-The_Game_of_Gemstones.gbot"
+            }
+        },
+        "rascam": {
+            "BlightEssence.gbot": {
+                "url": "https://adventurequest.life/bots/Rascam_BlightEssence.gbot"
+            }
+        },
+        "satan": {
+            "ics Fastest Larvae bot 3.8plusplus.gbot": {
+                "url": "https://adventurequest.life/bots/Satanics_Fastest_Larvae_bot_3.8plusplus.gbot"
+            },
+            "blood moon token vampire class.gbot": {
+                "url": "https://adventurequest.life/bots/satans_blood_moon_token_vampire_class.gbot"
+            },
+            "Crag Bamboozle spin bot.gbot": {
+                "url": "https://adventurequest.life/bots/Satans_Crag__Bamboozle_spin_bot.gbot"
+            },
+            "Endurance Quest Gold.gbot": {
+                "url": "https://adventurequest.life/bots/Satans_Endurance_Quest_Gold.gbot"
+            },
+            "Legion Tokens r5.gbot": {
+                "url": "https://adventurequest.life/bots/Satans_Legion_Tokens_r5.gbot"
+            },
+            "wep kits.rar": {
+                "url": "https://adventurequest.life/bots/satans_wep_kits.rar"
+            },
+            "ZOOMIN NWNO.gbot": {
+                "url": "https://adventurequest.life/bots/satans_ZOOMIN_NWNO.gbot"
+            },
+            "atan deso ingredients.gbot": {
+                "url": "https://adventurequest.life/bots/satan_deso_ingredients.gbot"
+            },
+            "atan super simple borgars questline bot.gbot": {
+                "url": "https://adventurequest.life/bots/satan_super_simple_borgars_questline_bot.gbot"
+            },
+            "atan super simple CC bot.gbot": {
+                "url": "https://adventurequest.life/bots/satan_super_simple_CC_bot.gbot"
+            },
+            "atan twilly battlefowl farm.gbot": {
+                "url": "https://adventurequest.life/bots/satan_twilly_battlefowl_farm.gbot"
+            },
+            "atan yami no ronin bot.gbot": {
+                "url": "https://adventurequest.life/bots/satan_yami_no_ronin_bot.gbot"
+            }
+        },
+        "ninjasneaks": {
+            "SDKA Bot.zip": {
+                "url": "https://adventurequest.life/bots/SDKA_Bot_NinjaSneaks.zip"
+            }
+        },
+        "weebluurts": {
+            "Archfiend Doomlord Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Weebluurts_Archfiend_Doomlord_Bot.gbot"
+            },
+            "Ultimate Legion Revenant Bot pro.zip": {
+                "url": "https://adventurequest.life/bots/Weebluurts_Ultimate_Legion_Revenant_Bot_pro.zip"
+            }
+        },
+        "weeb": {
+            "ArchPaladin MEMBER ONLY.rar": {
+                "url": "https://adventurequest.life/bots/Weeb_ArchPaladin_MEMBER-ONLY.rar"
+            },
+            "Astral Orb Quest MEM.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Astral_Orb_Quest_MEM.gbot"
+            },
+            "Astral Orb Quest Non-MEM.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Astral_Orb_Quest_NON-MEM.gbot"
+            },
+            "A Penny for your Foughts.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_A_Penny_for_your_Foughts.gbot"
+            },
+            "A Penny for your Foughts X Dark Spirit Orb.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_A_Penny_for_your_Foughts_X_Dark_Spirit_Orb.gbot"
+            },
+            "Blade of Awe.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Blade_of_Awe.gbot"
+            },
+            "Blade of Awe REP.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Blade_of_Awe_REP.gbot"
+            },
+            "BLoD Weapon Kits.rar": {
+                "url": "https://adventurequest.life/bots/Weeb_BLoD_Weapon_Kits.rar"
+            },
+            "Bright Paragon Pet pro.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Bright_Paragon_Pet_pro.gbot"
+            },
+            "Commanding Shadow Essences.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Commanding_Shadow_Essences.gbot"
+            },
+            "Crag X Drudgen the Salesman.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Crag_X_Drudgen_the_Salesman.gbot"
+            },
+            "Cube Reagent.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Cube_Reagent.gbot"
+            },
+            "Dark Spirit Orb.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Dark_Spirit_Orb.gbot"
+            },
+            "Dark Token.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Dark_Token.gbot"
+            },
+            "Deadtech War Medals.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Deadtech_War_Medals.gbot"
+            },
+            "Dreadrock LTs.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Dreadrock_LTs.gbot"
+            },
+            "Emblem of Dage.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Emblem_of_Dage.gbot"
+            },
+            "Essence of Defeat Reagent.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Essence_of_Defeat_Reagent.gbot"
+            },
+            "FB X Dreadrock LTs.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_FB_X_Dreadrock_LTs.gbot"
+            },
+            "Finding Fragments.rar": {
+                "url": "https://adventurequest.life/bots/Weeb_Finding_Fragments.rar"
+            },
+            "GrimDark.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_GrimDark.gbot"
+            },
+            "Hollowborn Oblivion Blade.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Hollowborn_Oblivion_Blade.gbot"
+            },
+            "Investigate the Tech.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Investigate_the_Tech.gbot"
+            },
+            "Kiss the Void.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Kiss_the_Void.gbot"
+            },
+            "Lycan Rep.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Lycan_Rep.gbot"
+            },
+            "MEMBER Good.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_MEMBER_Good.gbot"
+            },
+            "Mysterious Chest 7DD.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Mysterious_Chest_7DD.gbot"
+            },
+            "Ninja Challenge.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Ninja_Challenge.gbot"
+            },
+            "Non-MEMBER Good.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_NON-MEMBER_Good.gbot"
+            },
+            "NWNO.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_NWNO.gbot"
+            },
+            "NWNO X Drudgen the Salesman.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_NWNO_X_Drudgen_the_Salesman.gbot"
+            },
+            "Paragon Fiend Legion Tokens.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Paragon_Fiend_Legion_Tokens.gbot"
+            },
+            "Retrieve the Void Auras.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Retrieve_the_Void_Auras.gbot"
+            },
+            "SDKA Weapon Kits.rar": {
+                "url": "https://adventurequest.life/bots/Weeb_SDKA_Weapon_Kits.rar"
+            },
+            "Sepulchure27sDoomKnightArmor WeaponKits.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Sepulchure%27sDoomKnightArmor_WeaponKits.gbot"
+            },
+            "ShadowFlame War Medals.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_ShadowFlame_War_Medals.gbot"
+            },
+            "Shogunwar.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Shogunwar.gbot"
+            },
+            "Sigrid Murder.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Sigrid_Murder.gbot"
+            },
+            "Swindle Bulk.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Swindle_Bulk.gbot"
+            },
+            "ToN2BGoN.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_ToN%2BGoN.gbot"
+            },
+            "Tools for the Job.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Tools_for_the_Job.gbot"
+            },
+            "Ultimate Necrotic Sword of Doom Bot pro.rar": {
+                "url": "https://adventurequest.life/bots/Weeb_Ultimate_Necrotic_Sword_of_Doom_Bot_pro.rar"
+            },
+            "Void Destroyer.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Void_Destroyer.gbot"
+            },
+            "Void Paladin.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Void_Paladin.gbot"
+            },
+            "Void Shogun.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Void_Shogun.gbot"
+            },
+            "Void Spartan.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Void_Spartan.gbot"
+            },
+            "Youthanize.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Youthanize.gbot"
+            }
+        }
+    }
+}
