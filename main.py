@@ -41,7 +41,7 @@ class BloomScraper:
 
 
     # System handling
-    def database_update(self):
+    def database_update(self, value=None):
         # Loads locallly saved .html portal site.
         # A workwaround because I couldn't figure out how to bypass the fucking Cloudflare shit protection
         # If I can find a way to bypass cloudflare or be whitelisted or direct access to the website...
@@ -55,7 +55,7 @@ class BloomScraper:
         self.data["sort_by_bot_authors"] = {}
         self.mode = ""
 
-        try:
+        if value == "FUCK":
             row = []
             url = "https://adventurequest.life/"
             html = requests.get(url).text
@@ -68,7 +68,7 @@ class BloomScraper:
                 link = url + "bots/" + value["value"]
                 row.append(link)
             self.mode = "web"
-        except:
+        else:
             soup = Soup(open("./Data/html/aqw.html", encoding="utf8"), "html.parser")
             body = soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
             row = body.find_all("tr")
@@ -414,6 +414,22 @@ async def u(ctx, *, value: str=""):
     if priveleged:
         await ctx.send(r"\> Updating Bloom Bot")
         DataBase.database_update()
+        await ctx.send(r"\> Bloom Bot updated!")
+        await ctx.send(f"\> Update method: `{DataBase.mode}`")
+        return
+    else:
+        desc = f"\> User {ctx.author} does not have permissions for `;u` command.\n"\
+                "> Please make sure you're in a server to use this command."
+        await ctx.send(desc)
+        return
+
+# Start of Commands
+@bloom_bot.command()
+async def dick(ctx, *, value: str=""):
+    priveleged = privilege_check(ctx)
+    if priveleged:
+        await ctx.send(r"\> Updating Bloom Bot")
+        DataBase.database_update("FUCK")
         await ctx.send(r"\> Bloom Bot updated!")
         await ctx.send(f"\> Update method: `{DataBase.mode}`")
         return
