@@ -1,4 +1,75 @@
 {
-    "name": "dinesh",
-    "code": "dr-01"
+    "gg": {
+        "NM VA Item Merge and Merge.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_NM_VA_Item_Merge_and_Merge.gbot",
+            "author": "ganku"
+        },
+        "Willpower Extraction UNIDENTIFIED 34.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Willpower_Extraction_UNIDENTIFIED_34.gbot",
+            "author": "ganku"
+        }
+    },
+    "lrg": {},
+    "rag": {
+        "CragSpin Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_CragSpin_Bot.gbot",
+            "author": "arts"
+        },
+        "Crag X Drudgen BloodGems.gbot": {
+            "url": "https://adventurequest.life/bots/Desolates_Crag_X_Drudgen_BloodGems.gbot",
+            "author": "desolates"
+        },
+        "Cragglerock Voidstone Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_Cragglerock_Voidstone_Bot.gbot",
+            "author": "kaos"
+        },
+        "Crag Bamboozle spin bot.gbot": {
+            "url": "https://adventurequest.life/bots/Satans_Crag__Bamboozle_spin_bot.gbot",
+            "author": "satan"
+        },
+        "Void Highlord Roentgenium of Nulgath Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_Void_Highlord_Roentgenium_of_Nulgath_Bot.gbot",
+            "author": "bluu"
+        },
+        "Void Highlord.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Void_Highlord.gbot",
+            "author": "ganku"
+        },
+        "Join Legion.gbot": {
+            "url": "https://adventurequest.life/bots/Join_Legion.gbot",
+            "author": "unknown"
+        },
+        "Legion Fealty Collection.zip": {
+            "url": "https://adventurequest.life/bots/Archons_Legion_Fealty_Collection.zip",
+            "author": "archon"
+        },
+        "Legion Fealty 1 1.gbot": {
+            "url": "https://adventurequest.life/bots/Azmatullahs_Legion_Fealty_1_1.gbot",
+            "author": "azmatullahs"
+        },
+        "Yami no Ronin Non-LEGION.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Yami_no_Ronin_NON-LEGION.gbot",
+            "author": "ganku"
+        }
+    },
+    "vhl": {
+        "Void Highlord Roentgenium of Nulgath Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_Void_Highlord_Roentgenium_of_Nulgath_Bot.gbot",
+            "author": "bluu"
+        },
+        "Void Highlord.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Void_Highlord.gbot",
+            "author": "ganku"
+        }
+    },
+    "crag": {
+        "hollowborn blade.gbot": {
+            "url": "https://adventurequest.life/bots/hollowborn_blade.gbot",
+            "author": "unknown"
+        },
+        "HollowbornBoss.gbot": {
+            "url": "https://adventurequest.life/bots/King_HollowbornBoss.gbot",
+            "author": "king"
+        }
+    }
 }
