@@ -217,7 +217,6 @@ class BloomScraper:
                 for author_nickname in alias:
                     if author in author_nickname:
                         list_of_possible_authors.append(alias[0])
-                        print(alias[0])
                         break
             return (False, list_of_possible_authors)
 
@@ -282,7 +281,7 @@ set_creation_commands = [
 description = '''An example bot to showcase the discord.ext.commands extension
 module.\nThere are a number of utility commands being showcased here.'''
 
-bloom_bot = commands.Bot(command_prefix='$', description=description)
+bloom_bot = commands.Bot(command_prefix=';', description=description)
 
 # Tools
 def embed_multi_link(title, embed_description, list_var):
@@ -376,54 +375,64 @@ if os.name == "nt":
     async def on_ready():
         print("Starting Bloom Bot")
         await bloom_bot.get_channel(799238286539227136).send('hello')
+else:
+    try:
+        print(os.name)
+    except:
+        print("DIDN'T WORKING BITCH")
+# Start of Commands
+@bloom_bot.command()
+async def verify(ctx, *, value: str=""):
+    priveleged = privilege_check(ctx)
+    if priveleged:
+        value_data = value.split(" ")
+        author_name = value_data[0]
+        author_id = re.sub("<|>|!|@","", value_data[1])
+        
+        DataBase.settings["confirmed_authors"][author_name] = {}
+        try:
+            DataBase.settings["confirmed_authors"][author_name]["alias"].append(author_name)
+        except:
+            DataBase.settings["confirmed_authors"][author_name]["alias"] = []
+            DataBase.settings["confirmed_authors"][author_name]["alias"].append(author_name)
+        DataBase.settings["confirmed_authors"][author_name]["id"] = author_id
+        await ctx.send(r"\> Saving Bloom Bot.")
+        DataBase.save()
+        await ctx.send(r"\> Updating Bloom Bot")
+        DataBase.database_update()
+        await ctx.send(r"\> Bloom Bot updated. Author Successfully added!")
+        return
+    else:
+        desc = f"\> User {ctx.author} does not have permissions for `;verify author @author` command.\n"
+        await ctx.send(desc)
+        return
 
 # Start of Commands
 @bloom_bot.command()
-async def b(ctx, command_code, *, value: str=""):
-    command_code = command_code.lower()
+async def u(ctx, *, value: str=""):
+    priveleged = privilege_check(ctx)
+    if priveleged:
+        await ctx.send(r"\> Updating Bloom Bot")
+        DataBase.database_update()
+        await ctx.send(r"\> Bloom Bot updated!")
+        await ctx.send(f"\> Update method: `{DataBase.mode}`")
+        return
+    else:
+        desc = f"\> User {ctx.author} does not have permissions for `;u` command.\n"\
+                "> Please make sure you're in a server to use this command."
+        await ctx.send(desc)
+        return
 
-    if command_code == "verify":
-        priveleged = privilege_check(ctx)
-        if priveleged:
-            value_data = value.split(" ")
-            author_name = value_data[0]
-            author_id = re.sub("<|>|!|@","", value_data[1])
-            
-            DataBase.settings["confirmed_authors"][author_name] = {}
-            try:
-                DataBase.settings["confirmed_authors"][author_name]["alias"].append(author_name)
-            except:
-                DataBase.settings["confirmed_authors"][author_name]["alias"] = []
-                DataBase.settings["confirmed_authors"][author_name]["alias"].append(author_name)
-            DataBase.settings["confirmed_authors"][author_name]["id"] = author_id
-            await ctx.send(r"\> Saving Bloom Bot")
-            DataBase.save()
-            await ctx.send(r"\> Updating Bloom Bot")
-            DataBase.database_update()
-            await ctx.send(r"\> Bloom Bot updated!")
-            return
-        else:
-            desc = f"\> User {ctx.author} does not have permissions for `$b verify author @author` command.\n"
-            await ctx.send(desc)
-            return
-
-    # Bot command update
-    if command_code == "u" or command_code == "update":
-        priveleged = privilege_check(ctx)
-        if priveleged:
-            await ctx.send(r"\> Updating Bloom Bot")
-            DataBase.database_update()
-            await ctx.send(r"\> Bloom Bot updated!")
-            await ctx.send(f"\> Update method: `{DataBase.mode}`")
-            return
-        else:
-            desc = f"\> User {ctx.author} does not have permissions for `$b update` command.\n"\
-                    "> Please make sure you're in a server to use this command."
-            await ctx.send(desc)
-            return
-
-    # Bot command search
-    if command_code == "boat" or command_code == "b":
+@bloom_bot.command()
+async def b(ctx, *, value: str=""):
+    check = value.split()
+    allowed = True
+    for i in check:
+        if len(i) < 3:
+            allowed = False
+            break
+    if allowed:
+        # Bot command search
         if value.lower() == "all":
             priveleged = privilege_check(ctx)
             if priveleged:
@@ -434,14 +443,14 @@ async def b(ctx, command_code, *, value: str=""):
                     await ctx.send(embed=embed_multi_link("Bot Results", desc, bot_chunk))
                 return
             else:
-                desc = f"\> User {ctx.author} does not have permissions for `$b update` command.\n"
+                desc = f"\> User {ctx.author} does not have permissions for `;u` command.\n"
                 await ctx.send(desc)
                 return
         else:
             bot_name = value
             if bot_name == "":
                 # If keyword is empty
-                await ctx.send(embed=embed_single("Warning", "Nigga, did you just give me an empty value?")) 
+                await ctx.send(embed=embed_single("Warning", "O-Oniichan...please... Give me something to fill me up...")) 
                 return
             if len(bot_name) < 3:
                 # if keyword is too short
@@ -456,223 +465,228 @@ async def b(ctx, command_code, *, value: str=""):
                 return
             
             # Actual Searching of boats
-            target = chunks_list(bot_results, 48)
+            target = chunks_list(bot_results, 45)
             desc = "The following matches your keyword: `{}`".format(bot_name)
             for bot_chunk in target:
                 await ctx.send(embed=embed_multi_link("Bot Results", desc, bot_chunk))
             return
+    else:
+        await ctx.send(embed=embed_single("Warning", "Your search entries must have at least 3 letters.")) 
+        return
 
+@bloom_bot.command()
+async def a(ctx, *, value: str=""):
     # Author command search
-    if command_code == "author" or command_code == "a":
-        value = value.lower()
-        if "<@!" in value:
-            author_id_name = DataBase.find_author_id(value)
-            if author_id_name:
-                bot_author = author_id_name
-                print(bot_author)
-            else:
-                await ctx.send(embed=embed_single("Bot Author Result", "No verified author of that name."))
-                return
+    value = value.lower()
+    if "<@!" in value:
+        author_id_name = DataBase.find_author_id(value)
+        if author_id_name:
+            bot_author = author_id_name
         else:
-            if value=="unknown" or value=="u":
-                bot_author = "Unknown"
-            else:
-                bot_author = value
-
-        result = DataBase.find_bot_by_author(bot_author)
-        found_author = result[0]    # Returns a bool if an exact author is found
-        bot_list = result[1]        # List of found bots or possible authors
-        if found_author:
-            # Actual Author bots sending
-            target = chunks_list(bot_list, 49)
-            for bot_set in target:
-                desc = f"The following are bots created by `{bot_author}`."
-                await ctx.send(embed=embed_multi_link("Bot Author Result", desc, bot_set))
+            await ctx.send(embed=embed_single("Bot Author Result", "No verified author of that name."))
             return
+    else:
+        if value=="unknown" or value=="u":
+            bot_author = "Unknown"
         else:
-            # if no exact author appeared
-            if not bot_list:
-                desc = f"We're sorry. No author name came up with your search word: `{value}`"
-                await ctx.send(embed=embed_single("Bot Author Result", desc))
-                return
+            bot_author = value
 
-            if value:
-                desc = f"Nothing came up with search key `{bot_author}`.\nMaybe one of these authors?."
-                embedVar = embed_multi_text("Bot Author Result", "Author", desc, bot_list, 7, False)
-            else:
-                # Sends a list of possible authors
-                desc ='List of all verified bot authors.'
-                embedVar = embed_multi_text("Bot Author Result", "Author", desc, bot_list, 7, False)
-                note_desc = "Some bots have unknown authors or were still not \nmanually listed in the confirmed list. To check bots with \nunknown authors, use command `$b a u`."
-                embedVar.add_field(name="Note:", value=note_desc, inline=True)
-            await ctx.send(embed=embedVar)
+    result = DataBase.find_bot_by_author(bot_author)
+    found_author = result[0]    # Returns a bool if an exact author is found
+    bot_list = result[1]        # List of found bots or possible authors
+    if found_author:
+        # Actual Author bots sending
+        target = chunks_list(bot_list, 49)
+        for bot_set in target:
+            desc = f"The following are bots created by `{bot_author}`."
+            await ctx.send(embed=embed_multi_link("Bot Author Result", desc, bot_set))
+        return
+    else:
+        # if no exact author appeared
+        if not bot_list:
+            desc = f"We're sorry. No author name came up with your search word: `{value}`"
+            await ctx.send(embed=embed_single("Bot Author Result", desc))
             return
 
+        if value:
+            desc = f"Nothing came up with search key `{bot_author}`.\nMaybe one of these authors?."
+            embedVar = embed_multi_text("Bot Author Result", "Author", desc, bot_list, 7, False)
+        else:
+            # Sends a list of possible authors
+            desc ='List of all verified bot authors.'
+            embedVar = embed_multi_text("Bot Author Result", "Author", desc, bot_list, 7, False)
+            note_desc = "Some bots have unknown authors or were still not \nmanually listed in the confirmed list. To check bots with \nunknown authors, use command `;a u`."
+            embedVar.add_field(name="Note:", value=note_desc, inline=True)
+        await ctx.send(embed=embedVar)
+        return
+
+@bloom_bot.command()
+async def set(ctx, *, value: str=""):
     # Bot command set creation
-    if command_code == "set" or command_code == "s":
-        priveleged = privilege_check(ctx)
-        if priveleged:
-            set_command = value.split(" ")[0].lower()
-            # Test if command is part of creation commands
-            if set_command in set_creation_commands and set_command != "all":
-                set_name = value.split(" ")[1].split("=")[0].lower()
-                set_value = re.sub(r"\[|\]", "", value.split("=")[1]).split(",")
-                set_value = [value.rstrip().lstrip() for value in set_value]
+    priveleged = privilege_check(ctx)
+    if priveleged:
+        set_command = value.split(" ")[0].lower()
+        # Test if command is part of creation commands
+        if set_command in set_creation_commands and set_command != "all":
+            set_name = value.split(" ")[1].split("=")[0].lower()
+            set_value = re.sub(r"\[|\]", "", value.split("=")[1]).split(",")
+            set_value = [value.rstrip().lstrip() for value in set_value]
 
-                # Return if "[]" is empty
-                try:
-                    if set_value == ['']:
-                        await ctx.send(embed=embed_single("Bot Set", "Please add at least one bot name between `[ ]`"))
-                        return
-                except: pass
-
-                # Create command
-                if set_command == "create" or set_command == "c":
-                    command_title = "Bot Set - Create"
-                    if set_name in DataBase.sets:
-                        desc = f"Set `{set_name}` already exists. Please pick a different set name.\n"\
-                               f"> Use `$b set append {set_name}=[]` to add bots to this set.\n"\
-                               f"> Use `$b set overwite {set_name}=[]` to overwrite current set."
-                        await ctx.send(embed=embed_single("Bot Set - Create", desc))
-                        return
-                    
-                    DataBase.sets[set_name] = {}
-                    not_addded_bot = DataBase.set_creation(set_name, set_value)
-
-                    # Checks if set is empty
-                    invalid = DataBase.set_validator(command_title, set_name)
-                    if invalid:
-                        await ctx.send(embed=invalid)
-                        return
-
-                    # Saves the set
-                    DataBase.save_set()
-                    desc = f"Set `{set_name}` was Created Successfully!"\
-                           f"\nPlease use `$b -{set_name}` to summon the set."
-                    embedVar = embed_single(command_title, desc)
-                    await ctx.send(embed=embedVar)
-
-                    # If there are invalid bot names
-                    if not_addded_bot:
-                        desc = "Some of these bots weren't added. "\
-                               "Either you mistyped the\nbot name, the database is not updated, or they don't exists."
-                        embedVar = embed_multi_text("Note", "Not added bots", desc, not_addded_bot, 10, True)
-                        await ctx.send(embed=embedVar)
+            # Return if "[]" is empty
+            try:
+                if set_value == ['']:
+                    await ctx.send(embed=embed_single("Bot Set", "Please add at least one bot name between `[ ]`"))
                     return
+            except: pass
 
-                # Append command
-                if set_command == "append" or set_command == "app" or set_command == "a":
-                    command_title = "Bot Set - Append"
-                    if set_name not in DataBase.sets:
-                        desc = f"Set `{set_name}` does not exists."\
-                               f"\nUse `$b set create {set_name}=[]` to create the set."
-                        await ctx.send(embed=embed_single(command_title, desc))
-                        return
-
-                    # Actual append
-                    old_set = copy.copy(DataBase.sets[set_name])
-                    not_addded_bot = DataBase.set_creation(set_name, set_value)
-
-                    if DataBase.sets[set_name] == old_set:
-                        desc = "None of what you entered were valid.\n"\
-                               "Either they're already part of the set or you mistyped them."
-                        await ctx.send(embed=embed_single(command_title, desc))
-                        return
-
-                    DataBase.save_set()
-                    desc = f"Set `{set_name}` was Appended Successfully!"\
-                           f"\nPlease use `$b -{set_name}` to summon the set."
-                    embedVar = embed_single(command_title, desc)
-                    await ctx.send(embed=embedVar)
-
-                    if not_addded_bot:
-                        desc = "Some of these bots weren't added. "\
-                               "Either you mistyped the\nbot name, the database is not updated, or they don't exists."
-                        embedVar = embed_multi_text("Note", "Not added bots", desc, not_addded_bot, 10, True)
-                        await ctx.send(embed=embedVar)
-                    return
-
-                # Overwrite command
-                if set_command == "overwrite" or set_command == "over" or set_command == "o":
-                    command_title = "Bot Set - Overwrite"
-                    if set_name not in DataBase.sets:
-                        desc = f"Set `{set_name}` does not exists."\
-                               f"\nUse `$b set create {set_name}=[]` to create the set."
-                        await ctx.send(embed=embed_single(command_title, desc))
-                        return
-                    
-
-                    DataBase.sets[set_name] = {}
-                    not_addded_bot = DataBase.set_creation(set_name, set_value)
-
-                    # Checks if set is empty
-                    invalid = DataBase.set_validator(command_title, set_name)
-                    if invalid:
-                        await ctx.send(embed=invalid)
-                        return
-
-                    # Saves the set
-                    DataBase.save_set()
-                    desc = f"Set `{set_name}` was Overwritten Successfully!"\
-                           f"\nPlease use `$b -{set_name}` to summon the set."
-                    await ctx.send(embed=embed_single(command_title, desc))
-
-                    # If there are invalid bot names
-                    if not_addded_bot:
-                        desc = "Some of these bots weren't added. "\
-                               "Either you mistyped the\nbot name, the database is not updated, or they don't exists."
-                        embedVar = embed_multi_text("Note", "Not added bots", desc, not_addded_bot, 10, True)
-                        await ctx.send(embed=embedVar)
-                    return
-
-            if set_command == "delete" or set_command == "del" or set_command == "d":
-                command_title = "Bot Set - Delete"
-                set_name = value.split(" ")[1].lower()
+            # Create command
+            if set_command == "create" or set_command == "c":
+                command_title = "Bot Set - Create"
                 if set_name in DataBase.sets:
-                    DataBase.sets.pop(set_name, None)
-                    DataBase.save_set()
-                    await ctx.send(embed=embed_single(command_title, f"Set `{set_name}` set was deleted Successfully!"))
-                else:
-                    await ctx.send(embed=embed_single(command_title, f"Set `{set_name}` does not exists."))
-
-            if set_command == "all":
-            # for set_name in DataBase.sets:
-                if DataBase.sets:
-                    set_list = [set_name for set_name in DataBase.sets]
-                    target = chunks_list(set_list, 48)
-                    for sets in target:
-                        desc = "The following is a list of all sets.\n"\
-                               "Please use `$b -name` to summon the set."
-                        embedVar = embed_multi_text("Bot Set - All", "Sets", desc, sets, 10, True)
-                        await ctx.send(embed=embedVar)
+                    desc = f"Set `{set_name}` already exists. Please pick a different set name.\n"\
+                           f"> Use `;set append {set_name}=[]` to add bots to this set.\n"\
+                           f"> Use `;set overwite {set_name}=[]` to overwrite current set."
+                    await ctx.send(embed=embed_single("Bot Set - Create", desc))
                     return
-                else: 
-                    # sets are empty
-                    await ctx.send(embed=embed_single("Bot Set", "No set exists"))
-        else:
-            desc = f"\> User {ctx.author} does not have permissions for `$b set command value` command.\n"
-            await ctx.send(desc)
-            return
+                
+                DataBase.sets[set_name] = {}
+                not_addded_bot = DataBase.set_creation(set_name, set_value)
 
-    if command_code[0] == "-":
-        set_name = command_code[1:]
-        if set_name in DataBase.sets:
-            sets = DataBase.sets[set_name]
-            set_data = []
-            for bot in sets:
-                url = sets[bot]["url"]
-                author = sets[bot]["author"]
-                set_data.append([bot, author, url])
+                # Checks if set is empty
+                invalid = DataBase.set_validator(command_title, set_name)
+                if invalid:
+                    await ctx.send(embed=invalid)
+                    return
 
-            target = chunks_list(set_data, 48)
-            for bots in target:
-                desc = f"The following are the bots under `{command_code}` set."
-                embeded_object = embed_multi_link("Bot Set", desc, bots)
-                await ctx.send(embed=embeded_object)
-            return
-        else:
-            await ctx.send(embed=embed_single("Bot Set", f"Set `{set_name}` does not exists."))
-            return
+                # Saves the set
+                DataBase.save_set()
+                desc = f"Set `{set_name}` was Created Successfully!"\
+                       f"\nPlease use `;s {set_name}` to summon the set."
+                embedVar = embed_single(command_title, desc)
+                await ctx.send(embed=embedVar)
+
+                # If there are invalid bot names
+                if not_addded_bot:
+                    desc = "Some of these bots weren't added. "\
+                           "Either you mistyped the\nbot name, the database is not updated, or they don't exists."
+                    embedVar = embed_multi_text("Note", "Not added bots", desc, not_addded_bot, 10, True)
+                    await ctx.send(embed=embedVar)
+                return
+
+            # Append command
+            if set_command == "append" or set_command == "app" or set_command == "a":
+                command_title = "Bot Set - Append"
+                if set_name not in DataBase.sets:
+                    desc = f"Set `{set_name}` does not exists."\
+                           f"\nUse `;set create {set_name}=[]` to create the set."
+                    await ctx.send(embed=embed_single(command_title, desc))
+                    return
+
+                # Actual append
+                old_set = copy.copy(DataBase.sets[set_name])
+                not_addded_bot = DataBase.set_creation(set_name, set_value)
+
+                if DataBase.sets[set_name] == old_set:
+                    desc = "None of what you entered were valid.\n"\
+                           "Either they're already part of the set or you mistyped them."
+                    await ctx.send(embed=embed_single(command_title, desc))
+                    return
+
+                DataBase.save_set()
+                desc = f"Set `{set_name}` was Appended Successfully!"\
+                       f"\nPlease use `;s {set_name}` to summon the set."
+                embedVar = embed_single(command_title, desc)
+                await ctx.send(embed=embedVar)
+
+                if not_addded_bot:
+                    desc = "Some of these bots weren't added. "\
+                           "Either you mistyped the\nbot name, the database is not updated, or they don't exists."
+                    embedVar = embed_multi_text("Note", "Not added bots", desc, not_addded_bot, 10, True)
+                    await ctx.send(embed=embedVar)
+                return
+
+            # Overwrite command
+            if set_command == "overwrite" or set_command == "over" or set_command == "o":
+                command_title = "Bot Set - Overwrite"
+                if set_name not in DataBase.sets:
+                    desc = f"Set `{set_name}` does not exists."\
+                           f"\nUse `;set create {set_name}=[]` to create the set."
+                    await ctx.send(embed=embed_single(command_title, desc))
+                    return
+                
+
+                DataBase.sets[set_name] = {}
+                not_addded_bot = DataBase.set_creation(set_name, set_value)
+
+                # Checks if set is empty
+                invalid = DataBase.set_validator(command_title, set_name)
+                if invalid:
+                    await ctx.send(embed=invalid)
+                    return
+
+                # Saves the set
+                DataBase.save_set()
+                desc = f"Set `{set_name}` was Overwritten Successfully!"\
+                       f"\nPlease use `;s {set_name}` to summon the set."
+                await ctx.send(embed=embed_single(command_title, desc))
+
+                # If there are invalid bot names
+                if not_addded_bot:
+                    desc = "Some of these bots weren't added. "\
+                           "Either you mistyped the\nbot name, the database is not updated, or they don't exists."
+                    embedVar = embed_multi_text("Note", "Not added bots", desc, not_addded_bot, 10, True)
+                    await ctx.send(embed=embedVar)
+                return
+
+        if set_command == "delete" or set_command == "del" or set_command == "d":
+            command_title = "Bot Set - Delete"
+            set_name = value.split(" ")[1].lower()
+            if set_name in DataBase.sets:
+                DataBase.sets.pop(set_name, None)
+                DataBase.save_set()
+                await ctx.send(embed=embed_single(command_title, f"Set `{set_name}` set was deleted Successfully!"))
+            else:
+                await ctx.send(embed=embed_single(command_title, f"Set `{set_name}` does not exists."))
+
+        if set_command == "all":
+        # for set_name in DataBase.sets:
+            if DataBase.sets:
+                set_list = [set_name for set_name in DataBase.sets]
+                target = chunks_list(set_list, 48)
+                for sets in target:
+                    desc = "The following is a list of all sets.\n"\
+                           "Please use `;s set_name` to summon the set."
+                    embedVar = embed_multi_text("Bot Set - All", "Sets", desc, sets, 10, True)
+                    await ctx.send(embed=embedVar)
+                return
+            else: 
+                # sets are empty
+                await ctx.send(embed=embed_single("Bot Set", "No set exists"))
+    else:
+        desc = f"\> User {ctx.author} does not have permissions for `;set command value` command.\n"
+        await ctx.send(desc)
+        return
+
+@bloom_bot.command()
+async def s(ctx, *, value: str=""):
+    set_name = value
+    if set_name in DataBase.sets:
+        sets = DataBase.sets[set_name]
+        set_data = []
+        for bot in sets:
+            url = sets[bot]["url"]
+            author = sets[bot]["author"]
+            set_data.append([bot, author, url])
+
+        target = chunks_list(set_data, 48)
+        for bots in target:
+            desc = f"The following are the bots under `{set_name}` set."
+            embeded_object = embed_multi_link("Bot Set", desc, bots)
+            await ctx.send(embed=embeded_object)
+        return
+    else:
+        await ctx.send(embed=embed_single("Bot Set", f"Set `{set_name}` does not exists."))
+        return
 
 
 
