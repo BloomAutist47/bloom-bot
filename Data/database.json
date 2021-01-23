@@ -424,6 +424,10 @@
             "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot",
             "author": "unknown"
         },
+        "Makai Fan.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_Makai_Fan.gbot",
+            "author": "bloom"
+        },
         "SpoiledDragonQuest EliteVoidSet.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot",
             "author": "bloom"
@@ -678,6 +682,10 @@
         },
         "SeksSlaveCoomFollower v2.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_SeksSlaveCoomFollower_v2.gbot",
+            "author": "kaos"
+        },
+        "Weebluurts Uni34 NoDrone NoCrag NoOBoN.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_Weebluurts_Uni34__NoDrone_NoCrag_NoOBoN.gbot",
             "author": "kaos"
         },
         "NecroticCollection.zip": {
@@ -988,8 +996,8 @@
             "url": "https://adventurequest.life/bots/Weeb_FB_X_Dreadrock_LTs.gbot",
             "author": "weeb"
         },
-        "Finding Fragments.rar": {
-            "url": "https://adventurequest.life/bots/Weeb_Finding_Fragments.rar",
+        "Finding Fragments pro.rar": {
+            "url": "https://adventurequest.life/bots/Weeb_Finding_Fragments_pro.rar",
             "author": "weeb"
         },
         "GrimDark.gbot": {
@@ -1040,6 +1048,10 @@
             "url": "https://adventurequest.life/bots/Weeb_Paragon_Fiend_Legion_Tokens.gbot",
             "author": "weeb"
         },
+        "Pinpoint with Necrotic pro.rar": {
+            "url": "https://adventurequest.life/bots/Weeb_Pinpoint_with_Necrotic_pro.rar",
+            "author": "weeb"
+        },
         "SDKA Weapon Kits.rar": {
             "url": "https://adventurequest.life/bots/Weeb_SDKA_Weapon_Kits.rar",
             "author": "weeb"
@@ -1058,6 +1070,10 @@
         },
         "Sigrid Murder.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Sigrid_Murder.gbot",
+            "author": "weeb"
+        },
+        "Super Simple Soul Searching.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Super_Simple_Soul_Searching.gbot",
             "author": "weeb"
         },
         "Swindle Bulk.gbot": {
@@ -1537,6 +1553,9 @@
             }
         },
         "bloom": {
+            "Makai Fan.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Makai_Fan.gbot"
+            },
             "SpoiledDragonQuest EliteVoidSet.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
             }
@@ -1709,6 +1728,9 @@
             },
             "SeksSlaveCoomFollower v2.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_SeksSlaveCoomFollower_v2.gbot"
+            },
+            "Weebluurts Uni34 NoDrone NoCrag NoOBoN.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_Weebluurts_Uni34__NoDrone_NoCrag_NoOBoN.gbot"
             }
         },
         "king": {
@@ -1903,8 +1925,8 @@
             "FB X Dreadrock LTs.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_FB_X_Dreadrock_LTs.gbot"
             },
-            "Finding Fragments.rar": {
-                "url": "https://adventurequest.life/bots/Weeb_Finding_Fragments.rar"
+            "Finding Fragments pro.rar": {
+                "url": "https://adventurequest.life/bots/Weeb_Finding_Fragments_pro.rar"
             },
             "GrimDark.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_GrimDark.gbot"
@@ -1942,6 +1964,9 @@
             "Paragon Fiend Legion Tokens.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Paragon_Fiend_Legion_Tokens.gbot"
             },
+            "Pinpoint with Necrotic pro.rar": {
+                "url": "https://adventurequest.life/bots/Weeb_Pinpoint_with_Necrotic_pro.rar"
+            },
             "Retrieve the Void Auras.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Retrieve_the_Void_Auras.gbot"
             },
@@ -1959,6 +1984,9 @@
             },
             "Sigrid Murder.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Sigrid_Murder.gbot"
+            },
+            "Super Simple Soul Searching.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Super_Simple_Soul_Searching.gbot"
             },
             "Swindle Bulk.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Swindle_Bulk.gbot"
