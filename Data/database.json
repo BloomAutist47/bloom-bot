@@ -672,6 +672,10 @@
             "url": "https://adventurequest.life/bots/JuggernautItems_Ninjatov_3.8PP.gbot",
             "author": "ninjatov"
         },
+        "BloodyChaos.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_BloodyChaos.gbot",
+            "author": "kaos"
+        },
         "Brightoak Rep PacketSpam.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_Brightoak_Rep_PacketSpam.gbot",
             "author": "kaos"
@@ -1724,6 +1728,9 @@
             }
         },
         "kaos": {
+            "BloodyChaos.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_BloodyChaos.gbot"
+            },
             "Brightoak Rep PacketSpam.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Brightoak_Rep_PacketSpam.gbot"
             },
