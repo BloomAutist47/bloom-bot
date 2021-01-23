@@ -79,6 +79,14 @@
         "Makai Fan.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Makai_Fan.gbot",
             "author": "bloom"
+        },
+        "Void Highlord Roentgenium of Nulgath Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_Void_Highlord_Roentgenium_of_Nulgath_Bot.gbot",
+            "author": "bluu"
+        },
+        "Void Highlord.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_Void_Highlord.gbot",
+            "author": "ganku"
         }
     }
 }
