@@ -6,6 +6,7 @@ import os
 import re
 import copy
 import requests
+import github3
 
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
@@ -23,8 +24,15 @@ if os.name == "nt": # PC Mode
     load_dotenv()
     # DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN') # officia bot token
     DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN2') # test bot token
-else:              # Github
+    GITHUB_REPOS = os.getenv('GITHUB_REPOS')
+    GITHUB_USER = os.getenv('GITHUB_USERNAME')
+    GITHUB_BLOOM_BOT_TOKEN = os.getenv('GITHUB_BLOOMBOT_TOKEN')
+else:              # Heroku
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
+    GITHUB_REPOS = os.environ.get('GITHUB_REPOS')
+    GITHUB_USER = os.environ.get('GITHUB_USERNAME')
+    GITHUB_BLOOM_BOT_TOKEN = oos.environ.get('GITHUB_BLOOMBOT_TOKEN')
+
 
 class BreakProgram(Exception):
     pass
@@ -33,29 +41,34 @@ class BreakProgram(Exception):
 class BloomScraper:
 
     def __init__(self):
+        global GITHUB_BLOOM_BOT_TOKEN
+        global GITHUB_USER
+        global GITHUB_REPOS
         self.url = "https://adventurequest.life/"
         self.settings = {}
         self.data = {}
         self.priveleged_roles = []
         self.sets = {}
 
+        self.github = github3.login(token=GITHUB_BLOOM_BOT_TOKEN)
+        self.repository = self.github.repository(GITHUB_USER, GITHUB_REPOS)
 
     # System handling
-    def database_update(self, value=None):
+    def database_update(self):
         # Loads locallly saved .html portal site.
         # A workwaround because I couldn't figure out how to bypass the fucking Cloudflare shit protection
         # If I can find a way to bypass cloudflare or be whitelisted or direct access to the website...
         # this can become updated dynamically.
         # try:
         self.clear_database()
-        self.read()
+        self.git_read()
         # except:
         #     pass
         self.data["sort_by_bot_name"] = {}
         self.data["sort_by_bot_authors"] = {}
         self.mode = ""
 
-        if value == "FUCK":
+        try:
             row = []
             url = "https://adventurequest.life/"
             html = requests.get(url).text
@@ -68,7 +81,9 @@ class BloomScraper:
                 link = url + "bots/" + value["value"]
                 row.append(link)
             self.mode = "web"
-        else:
+        except:
+            return False
+
             soup = Soup(open("./Data/html/aqw.html", encoding="utf8"), "html.parser")
             body = soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
             row = body.find_all("tr")
@@ -128,7 +143,8 @@ class BloomScraper:
             self.data["sort_by_bot_authors"][bot_author][bot_name] = {}
             self.data["sort_by_bot_authors"][bot_author][bot_name]["url"] = link
 
-        self.save()
+        self.git_save()
+        return True
 
     def clear_database(self):
         with open('./Data/database.json', 'w', encoding='utf-8') as f:
@@ -155,6 +171,37 @@ class BloomScraper:
         for role in self.settings["priveleged_roles"]:
             if self.settings["priveleged_roles"][role] == 1:
                 self.priveleged_roles.append(role)
+
+    def git_save(self):
+        git_data = json.dumps(self.data, indent=4).encode('utf-8')
+        contents_object = self.repository.file_contents("./Data/database.json")
+        contents_object.update("update", git_data)
+
+        git_sets = json.dumps(self.sets, indent=4).encode('utf-8')
+        contents_object = self.repository.file_contents("./Data/sets.json")
+        contents_object.update("update", git_sets)
+
+        git_settings = json.dumps(self.settings, indent=4).encode('utf-8')
+        contents_object = self.repository.file_contents("./Data/settings.json")
+        contents_object.update("update", git_settings)
+
+
+    def git_read(self):
+        git_data = self.repository.file_contents("./Data/database.json").decoded
+        self.data = json.loads(git_data.decode('utf-8'))
+
+        git_sets = self.repository.file_contents("./Data/sets.json").decoded
+        self.sets = json.loads(git_sets.decode('utf-8'))
+
+        git_settings = self.repository.file_contents("./Data/settings.json").decoded
+        self.settings = json.loads(git_settings.decode('utf-8'))
+        self.priveleged_roles = []
+        for role in self.settings["priveleged_roles"]:
+            if self.settings["priveleged_roles"][role] == 1:
+                self.priveleged_roles.append(role)
+
+        self.save()
+        self.save_set()
 
     # Search Methods
     def find_bot_by_name(self, bot_name_value):
@@ -266,10 +313,10 @@ class BloomScraper:
             
 # Sets up Database
 DataBase = BloomScraper()
-DataBase.database_update()
+x = DataBase.database_update()
 # block_color = 0x00ff00
 block_color = 3066993
-
+database_updating = False
 set_creation_commands = [
                 "create", "cre", "c",
                 "append", "app", "a",
@@ -383,25 +430,32 @@ else:
 # Start of Commands
 @bloom_bot.command()
 async def verify(ctx, *, value: str=""):
+    global database_updating
     priveleged = privilege_check(ctx)
     if priveleged:
-        value_data = value.split(" ")
-        author_name = value_data[0]
-        author_id = re.sub("<|>|!|@","", value_data[1])
-        
-        DataBase.settings["confirmed_authors"][author_name] = {}
-        try:
-            DataBase.settings["confirmed_authors"][author_name]["alias"].append(author_name)
-        except:
-            DataBase.settings["confirmed_authors"][author_name]["alias"] = []
-            DataBase.settings["confirmed_authors"][author_name]["alias"].append(author_name)
-        DataBase.settings["confirmed_authors"][author_name]["id"] = author_id
-        await ctx.send(r"\> Saving Bloom Bot.")
-        DataBase.save()
-        await ctx.send(r"\> Updating Bloom Bot")
-        DataBase.database_update()
-        await ctx.send(r"\> Bloom Bot updated. Author Successfully added!")
-        return
+        if not database_updating:
+            database_updating = True
+            value_data = value.split(" ")
+            author_name = value_data[0]
+            author_id = re.sub("<|>|!|@","", value_data[1])
+            
+            DataBase.settings["confirmed_authors"][author_name] = {}
+            try:
+                DataBase.settings["confirmed_authors"][author_name]["alias"].append(author_name)
+            except:
+                DataBase.settings["confirmed_authors"][author_name]["alias"] = []
+                DataBase.settings["confirmed_authors"][author_name]["alias"].append(author_name)
+            DataBase.settings["confirmed_authors"][author_name]["id"] = author_id
+            await ctx.send(r"\> Saving Bloom Bot.")
+            DataBase.git_save()
+            await ctx.send(r"\> Updating Bloom Bot")
+            DataBase.database_update()
+            await ctx.send(r"\> Bloom Bot updated. Author Successfully added!")
+            database_updating = False
+            return
+        else:
+            await ctx.send(r"\> Bloom Bot update in progress.")
+
     else:
         desc = f"\> User {ctx.author} does not have permissions for `;verify author @author` command.\n"
         await ctx.send(desc)
@@ -409,35 +463,29 @@ async def verify(ctx, *, value: str=""):
 
 # Start of Commands
 @bloom_bot.command()
-async def u(ctx, *, value: str=""):
+async def update(ctx, *, value: str=""):
+    global database_updating
     priveleged = privilege_check(ctx)
     if priveleged:
-        await ctx.send(r"\> Updating Bloom Bot")
-        DataBase.database_update()
-        await ctx.send(r"\> Bloom Bot updated!")
-        await ctx.send(f"\> Update method: `{DataBase.mode}`")
-        return
+        if not database_updating:
+            database_updating = True
+            await ctx.send(r"\> Updating Bloom Bot")
+            result = DataBase.database_update()
+            if result:
+                await ctx.send(r"\> Bloom Bot updated!")
+                await ctx.send(f"\> Update method: `{DataBase.mode}`")
+            else:
+                await ctx.send("\> Something's wrong. Ping the Autistic Chungus.\n`Error 69: Web method is fucked.`")
+            database_updating = False
+            return
+        else:
+            await ctx.send(r"\> Bloom Bot update in progress.")
     else:
         desc = f"\> User {ctx.author} does not have permissions for `;u` command.\n"\
                 "> Please make sure you're in a server to use this command."
         await ctx.send(desc)
         return
 
-# Start of Commands
-@bloom_bot.command()
-async def dick(ctx, *, value: str=""):
-    priveleged = privilege_check(ctx)
-    if priveleged:
-        await ctx.send(r"\> Updating Bloom Bot")
-        DataBase.database_update("FUCK")
-        await ctx.send(r"\> Bloom Bot updated!")
-        await ctx.send(f"\> Update method: `{DataBase.mode}`")
-        return
-    else:
-        desc = f"\> User {ctx.author} does not have permissions for `;u` command.\n"\
-                "> Please make sure you're in a server to use this command."
-        await ctx.send(desc)
-        return
 
 @bloom_bot.command()
 async def b(ctx, *, value: str=""):
@@ -544,10 +592,12 @@ async def set(ctx, *, value: str=""):
         set_command = value.split(" ")[0].lower()
         # Test if command is part of creation commands
         if set_command in set_creation_commands and set_command != "all":
-            set_name = value.split(" ")[1].split("=")[0].lower()
-            set_value = re.sub(r"\[|\]", "", value.split("=")[1]).split(",")
-            set_value = [value.rstrip().lstrip() for value in set_value]
-
+            try:
+                set_name = value.split(" ")[1].split("=")[0].lower()
+                set_value = re.sub(r"\[|\]", "", value.split("=")[1]).split(",")
+                set_value = [value.rstrip().lstrip() for value in set_value]
+            except:
+                await ctx.send(embed=embed_single("Bot Set", "Please input valid value"))
             # Return if "[]" is empty
             try:
                 if set_value == ['']:
@@ -558,6 +608,7 @@ async def set(ctx, *, value: str=""):
             # Create command
             if set_command == "create" or set_command == "c":
                 command_title = "Bot Set - Create"
+                await ctx.send(embed=embed_single(command_title, "Starting"))
                 if set_name in DataBase.sets:
                     desc = f"Set `{set_name}` already exists. Please pick a different set name.\n"\
                            f"> Use `;set append {set_name}=[]` to add bots to this set.\n"\
@@ -575,7 +626,7 @@ async def set(ctx, *, value: str=""):
                     return
 
                 # Saves the set
-                DataBase.save_set()
+                DataBase.git_save()
                 desc = f"Set `{set_name}` was Created Successfully!"\
                        f"\nPlease use `;s {set_name}` to summon the set."
                 embedVar = embed_single(command_title, desc)
@@ -592,6 +643,7 @@ async def set(ctx, *, value: str=""):
             # Append command
             if set_command == "append" or set_command == "app" or set_command == "a":
                 command_title = "Bot Set - Append"
+                await ctx.send(embed=embed_single(command_title, "Starting"))
                 if set_name not in DataBase.sets:
                     desc = f"Set `{set_name}` does not exists."\
                            f"\nUse `;set create {set_name}=[]` to create the set."
@@ -608,7 +660,7 @@ async def set(ctx, *, value: str=""):
                     await ctx.send(embed=embed_single(command_title, desc))
                     return
 
-                DataBase.save_set()
+                DataBase.git_save()
                 desc = f"Set `{set_name}` was Appended Successfully!"\
                        f"\nPlease use `;s {set_name}` to summon the set."
                 embedVar = embed_single(command_title, desc)
@@ -623,7 +675,9 @@ async def set(ctx, *, value: str=""):
 
             # Overwrite command
             if set_command == "overwrite" or set_command == "over" or set_command == "o":
+
                 command_title = "Bot Set - Overwrite"
+                await ctx.send(embed=embed_single(command_title, "Starting"))
                 if set_name not in DataBase.sets:
                     desc = f"Set `{set_name}` does not exists."\
                            f"\nUse `;set create {set_name}=[]` to create the set."
@@ -641,7 +695,7 @@ async def set(ctx, *, value: str=""):
                     return
 
                 # Saves the set
-                DataBase.save_set()
+                DataBase.git_save()
                 desc = f"Set `{set_name}` was Overwritten Successfully!"\
                        f"\nPlease use `;s {set_name}` to summon the set."
                 await ctx.send(embed=embed_single(command_title, desc))
@@ -656,28 +710,16 @@ async def set(ctx, *, value: str=""):
 
         if set_command == "delete" or set_command == "del" or set_command == "d":
             command_title = "Bot Set - Delete"
+            await ctx.send(embed=embed_single(command_title, "Starting"))
             set_name = value.split(" ")[1].lower()
             if set_name in DataBase.sets:
                 DataBase.sets.pop(set_name, None)
-                DataBase.save_set()
+                DataBase.git_save()
                 await ctx.send(embed=embed_single(command_title, f"Set `{set_name}` set was deleted Successfully!"))
             else:
                 await ctx.send(embed=embed_single(command_title, f"Set `{set_name}` does not exists."))
 
-        if set_command == "all":
-        # for set_name in DataBase.sets:
-            if DataBase.sets:
-                set_list = [set_name for set_name in DataBase.sets]
-                target = chunks_list(set_list, 48)
-                for sets in target:
-                    desc = "The following is a list of all sets.\n"\
-                           "Please use `;s set_name` to summon the set."
-                    embedVar = embed_multi_text("Bot Set - All", "Sets", desc, sets, 10, True)
-                    await ctx.send(embed=embedVar)
-                return
-            else: 
-                # sets are empty
-                await ctx.send(embed=embed_single("Bot Set", "No set exists"))
+
     else:
         desc = f"\> User {ctx.author} does not have permissions for `;set command value` command.\n"
         await ctx.send(desc)
@@ -686,23 +728,37 @@ async def set(ctx, *, value: str=""):
 @bloom_bot.command()
 async def s(ctx, *, value: str=""):
     set_name = value
-    if set_name in DataBase.sets:
-        sets = DataBase.sets[set_name]
-        set_data = []
-        for bot in sets:
-            url = sets[bot]["url"]
-            author = sets[bot]["author"]
-            set_data.append([bot, author, url])
-
-        target = chunks_list(set_data, 48)
-        for bots in target:
-            desc = f"The following are the bots under `{set_name}` set."
-            embeded_object = embed_multi_link("Bot Set", desc, bots)
-            await ctx.send(embed=embeded_object)
-        return
+    if set_name == "":
+        if DataBase.sets:
+            set_list = [set_name for set_name in DataBase.sets]
+            target = chunks_list(set_list, 48)
+            for sets in target:
+                desc = "The following is a list of all sets.\n"\
+                       "Please use `;s set_name` to summon a set."
+                embedVar = embed_multi_text("Bot Set - All", "Sets", desc, sets, 10, True)
+                await ctx.send(embed=embedVar)
+            return
+        else: 
+            # sets are empty
+            await ctx.send(embed=embed_single("Bot Set", "No set currently exists"))
     else:
-        await ctx.send(embed=embed_single("Bot Set", f"Set `{set_name}` does not exists."))
-        return
+        if set_name in DataBase.sets:
+            sets = DataBase.sets[set_name]
+            set_data = []
+            for bot in sets:
+                url = sets[bot]["url"]
+                author = sets[bot]["author"]
+                set_data.append([bot, author, url])
+
+            target = chunks_list(set_data, 48)
+            for bots in target:
+                desc = f"The following are the bots under `{set_name}` set."
+                embeded_object = embed_multi_link("Bot Set", desc, bots)
+                await ctx.send(embed=embeded_object)
+            return
+        else:
+            await ctx.send(embed=embed_single("Bot Set", f"Set `{set_name}` does not exists."))
+            return
 
 
 
