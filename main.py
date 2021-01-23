@@ -31,7 +31,7 @@ else:              # Heroku
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
     GITHUB_REPOS = os.environ.get('GITHUB_REPOS')
     GITHUB_USER = os.environ.get('GITHUB_USERNAME')
-    GITHUB_BLOOM_BOT_TOKEN = oos.environ.get('GITHUB_BLOOMBOT_TOKEN')
+    GITHUB_BLOOM_BOT_TOKEN = os.environ.get('GITHUB_BLOOMBOT_TOKEN')
 
 
 class BreakProgram(Exception):
