@@ -70,5 +70,15 @@
             "url": "https://adventurequest.life/bots/King_HollowbornBoss.gbot",
             "author": "king"
         }
+    },
+    "test": {
+        "SpoiledDragonQuest EliteVoidSet.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot",
+            "author": "bloom"
+        },
+        "Makai Fan.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_Makai_Fan.gbot",
+            "author": "bloom"
+        }
     }
 }
