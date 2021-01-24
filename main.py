@@ -507,7 +507,7 @@ async def b(ctx, *, value: str=""):
                     await ctx.send(embed=embed_multi_link("Bot Results", desc, bot_chunk))
                 return
             else:
-                desc = f"\> User {ctx.author} does not have permissions for `;u` command.\n"
+                desc = f"\> User {ctx.author} does not have permissions for `;b all` command.\n"
                 await ctx.send(desc)
                 return
         else:
@@ -557,6 +557,7 @@ async def a(ctx, *, value: str=""):
 
     result = DataBase.find_bot_by_author(bot_author)
     found_author = result[0]    # Returns a bool if an exact author is found
+    print(result)
     bot_list = result[1]        # List of found bots or possible authors
     if found_author:
         # Actual Author bots sending
@@ -567,6 +568,11 @@ async def a(ctx, *, value: str=""):
         return
     else:
         # if no exact author appeared
+        if len(bot_list) == 1:
+            if bot_list[0] not in DataBase.data["sort_by_bot_authors"].keys():
+                desc = f"Author `{value}` has not created any boats yet. "
+                await ctx.send(embed=embed_single("Bot Author Result", desc))
+                return
         if not bot_list:
             desc = f"We're sorry. No author name came up with your search word: `{value}`"
             await ctx.send(embed=embed_single("Bot Author Result", desc))
@@ -760,7 +766,10 @@ async def s(ctx, *, value: str=""):
             await ctx.send(embed=embed_single("Bot Set", f"Set `{set_name}` does not exists."))
             return
 
-
+@bloom_bot.command()
+async def git(ctx):
+    await ctx.send("https://github.com/BloomAutist47/bloom-bot/")
+    return
 
 
 bloom_bot.run(DISCORD_TOKEN)
