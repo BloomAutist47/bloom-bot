@@ -61,16 +61,6 @@
             "author": "ganku"
         }
     },
-    "crag": {
-        "hollowborn blade.gbot": {
-            "url": "https://adventurequest.life/bots/hollowborn_blade.gbot",
-            "author": "unknown"
-        },
-        "HollowbornBoss.gbot": {
-            "url": "https://adventurequest.life/bots/King_HollowbornBoss.gbot",
-            "author": "king"
-        }
-    },
     "test": {
         "Void Highlord Roentgenium of Nulgath Bot.gbot": {
             "url": "https://adventurequest.life/bots/Bluu_Void_Highlord_Roentgenium_of_Nulgath_Bot.gbot",
