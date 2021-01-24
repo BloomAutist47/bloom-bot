@@ -436,6 +436,10 @@
             "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot",
             "author": "bloom"
         },
+        "Makai Fan Limited.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_Makai_Fan_Limited.gbot",
+            "author": "bloom"
+        },
         "SpoiledDragonQuest EliteVoidSet.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot",
             "author": "bloom"
@@ -1581,6 +1585,9 @@
             },
             "Icestormarena r3c Frost Spirit.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot"
+            },
+            "Makai Fan Limited.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Makai_Fan_Limited.gbot"
             },
             "SpoiledDragonQuest EliteVoidSet.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
