@@ -27,11 +27,13 @@ if os.name == "nt": # PC Mode
     GITHUB_REPOS = os.getenv('GITHUB_REPOS')
     GITHUB_USER = os.getenv('GITHUB_USERNAME')
     GITHUB_BLOOM_BOT_TOKEN = os.getenv('GITHUB_BLOOMBOT_TOKEN')
+    PERMISSIONS = os.getenv("PRIVILEGED_ROLE").split(',')
 else:              # Heroku
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
     GITHUB_REPOS = os.environ.get('GITHUB_REPOS')
     GITHUB_USER = os.environ.get('GITHUB_USERNAME')
     GITHUB_BLOOM_BOT_TOKEN = os.environ.get('GITHUB_BLOOMBOT_TOKEN')
+    PERMISSIONS = os.environ.get("PRIVILEGED_ROLE").split(',')
 
 
 class BreakProgram(Exception):
@@ -464,6 +466,13 @@ async def verify(ctx, *, value: str=""):
 # Start of Commands
 @bloom_bot.command()
 async def update(ctx, *, value: str=""):
+    if str(ctx.author.id) not in PERMISSIONS:
+        pass
+    else:
+        desc = f"\> User {ctx.author} does not have permissions for `;update` command.\n"
+        await ctx.send(desc)
+        return
+
     global database_updating
     priveleged = privilege_check(ctx)
     if priveleged:
@@ -489,6 +498,14 @@ async def update(ctx, *, value: str=""):
 
 @bloom_bot.command()
 async def b(ctx, *, value: str=""):
+    if str(ctx.author.id) not in PERMISSIONS:
+        pass
+    else:
+        desc = f"\> User {ctx.author} does not have permissions for `;b bot_value` command.\n"
+        await ctx.send(desc)
+        return
+
+
     check = value.split()
     allowed = True
     for i in check:
@@ -514,7 +531,7 @@ async def b(ctx, *, value: str=""):
             bot_name = value
             if bot_name == "":
                 # If keyword is empty
-                await ctx.send(embed=embed_single("Warning", "O-Oniichan...please... Give me something to fill me up...")) 
+                await ctx.send(embed=embed_single("Warning", "Please input a value to search.")) 
                 return
             if len(bot_name) < 3:
                 # if keyword is too short
@@ -540,6 +557,13 @@ async def b(ctx, *, value: str=""):
 
 @bloom_bot.command()
 async def a(ctx, *, value: str=""):
+    if str(ctx.author.id) not in PERMISSIONS:
+        pass
+    else:
+        desc = f"\> User {ctx.author} does not have permissions for `;a bot_author` command.\n"
+        await ctx.send(desc)
+        return
+
     # Author command search
     value = value.lower()
     if "<@!" in value:
@@ -557,7 +581,6 @@ async def a(ctx, *, value: str=""):
 
     result = DataBase.find_bot_by_author(bot_author)
     found_author = result[0]    # Returns a bool if an exact author is found
-    print(result)
     bot_list = result[1]        # List of found bots or possible authors
     if found_author:
         # Actual Author bots sending
@@ -592,6 +615,13 @@ async def a(ctx, *, value: str=""):
 
 @bloom_bot.command()
 async def set(ctx, *, value: str=""):
+    if str(ctx.author.id) not in PERMISSIONS:
+        pass
+    else:
+        desc = f"\> User {ctx.author} does not have permissions for `;set mode set_value` command.\n"
+        await ctx.send(desc)
+        return
+
     # Bot command set creation
     priveleged = privilege_check(ctx)
     if priveleged:
@@ -733,6 +763,13 @@ async def set(ctx, *, value: str=""):
 
 @bloom_bot.command()
 async def s(ctx, *, value: str=""):
+    if str(ctx.author.id) not in PERMISSIONS:
+        pass
+    else:
+        desc = f"\> User {ctx.author} does not have permissions for `;s set_name` command.\n"
+        await ctx.send(desc)
+        return
+
     set_name = value
     if set_name == "":
         if DataBase.sets:
@@ -768,6 +805,13 @@ async def s(ctx, *, value: str=""):
 
 @bloom_bot.command()
 async def git(ctx):
+    if str(ctx.author.id) not in PERMISSIONS:
+        pass
+    else:
+        desc = f"\> User {ctx.author} does not have permissions for `;git` command.\n"
+        await ctx.send(desc)
+        return
+
     await ctx.send("https://github.com/BloomAutist47/bloom-bot/")
     return
 
