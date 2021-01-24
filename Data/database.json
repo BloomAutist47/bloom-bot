@@ -576,6 +576,10 @@
             "url": "https://adventurequest.life/bots/EZCHAOSREPLOL_UwU_ARTS_Bot.gbot",
             "author": "arts"
         },
+        "Food SSOT Skill Set.gbot": {
+            "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot",
+            "author": "unknown"
+        },
         "Fortune Ticket Buyer.gbot": {
             "url": "https://adventurequest.life/bots/Fortune_Ticket_Buyer.gbot",
             "author": "unknown"
@@ -1157,6 +1161,9 @@
             },
             "EmblemsOfNulAz.gbot": {
                 "url": "https://adventurequest.life/bots/EmblemsOfNulAz.gbot"
+            },
+            "Food SSOT Skill Set.gbot": {
+                "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot"
             },
             "Fortune Ticket Buyer.gbot": {
                 "url": "https://adventurequest.life/bots/Fortune_Ticket_Buyer.gbot"
