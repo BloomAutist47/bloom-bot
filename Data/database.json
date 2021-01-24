@@ -424,6 +424,10 @@
             "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot",
             "author": "unknown"
         },
+        "Dragonslayer General ClassBot.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot.gbot",
+            "author": "bloom"
+        },
         "Icestormarena r3c Frost Spirit.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot",
             "author": "bloom"
@@ -575,6 +579,10 @@
         "EZCHAOSREPLOL UwU Bot.gbot": {
             "url": "https://adventurequest.life/bots/EZCHAOSREPLOL_UwU_ARTS_Bot.gbot",
             "author": "arts"
+        },
+        "Food Bunny Gold.gbot": {
+            "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot",
+            "author": "unknown"
         },
         "Food SSOT Skill Set.gbot": {
             "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot",
@@ -1162,6 +1170,9 @@
             "EmblemsOfNulAz.gbot": {
                 "url": "https://adventurequest.life/bots/EmblemsOfNulAz.gbot"
             },
+            "Food Bunny Gold.gbot": {
+                "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot"
+            },
             "Food SSOT Skill Set.gbot": {
                 "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot"
             },
@@ -1568,6 +1579,9 @@
             }
         },
         "bloom": {
+            "Dragonslayer General ClassBot.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot.gbot"
+            },
             "Icestormarena r3c Frost Spirit.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot"
             },
