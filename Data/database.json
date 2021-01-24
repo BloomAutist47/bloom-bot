@@ -588,6 +588,10 @@
             "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot",
             "author": "food"
         },
+        "Food NWNO NulgathBirthday FB.gbot": {
+            "url": "https://adventurequest.life/bots/Food_NWNO_NulgathBirthday_FB.gbot",
+            "author": "food"
+        },
         "Food SSOT Skill Set.gbot": {
             "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot",
             "author": "food"
@@ -1699,6 +1703,9 @@
         "food": {
             "Food Bunny Gold.gbot": {
                 "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot"
+            },
+            "Food NWNO NulgathBirthday FB.gbot": {
+                "url": "https://adventurequest.life/bots/Food_NWNO_NulgathBirthday_FB.gbot"
             },
             "Food SSOT Skill Set.gbot": {
                 "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot"
