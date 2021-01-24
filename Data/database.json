@@ -424,8 +424,8 @@
             "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot",
             "author": "unknown"
         },
-        "Dragonslayer General ClassBot.gbot": {
-            "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot.gbot",
+        "Dragonslayer General ClassBot PRO.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot",
             "author": "bloom"
         },
         "Icestormarena r3c Frost Spirit.gbot": {
@@ -1573,8 +1573,8 @@
             }
         },
         "bloom": {
-            "Dragonslayer General ClassBot.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot.gbot"
+            "Dragonslayer General ClassBot PRO.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot"
             },
             "Icestormarena r3c Frost Spirit.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot"
