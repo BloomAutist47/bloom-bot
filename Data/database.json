@@ -428,6 +428,10 @@
             "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot",
             "author": "bloom"
         },
+        "EtherStorm Rep Balmblossom.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot",
+            "author": "bloom"
+        },
         "Icestormarena r3c Frost Spirit.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot",
             "author": "bloom"
@@ -1575,6 +1579,9 @@
         "bloom": {
             "Dragonslayer General ClassBot PRO.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot"
+            },
+            "EtherStorm Rep Balmblossom.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
             },
             "Icestormarena r3c Frost Spirit.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot"
