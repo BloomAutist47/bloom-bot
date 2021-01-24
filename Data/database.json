@@ -582,11 +582,11 @@
         },
         "Food Bunny Gold.gbot": {
             "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot",
-            "author": "unknown"
+            "author": "food"
         },
         "Food SSOT Skill Set.gbot": {
             "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot",
-            "author": "unknown"
+            "author": "food"
         },
         "Fortune Ticket Buyer.gbot": {
             "url": "https://adventurequest.life/bots/Fortune_Ticket_Buyer.gbot",
@@ -1170,12 +1170,6 @@
             "EmblemsOfNulAz.gbot": {
                 "url": "https://adventurequest.life/bots/EmblemsOfNulAz.gbot"
             },
-            "Food Bunny Gold.gbot": {
-                "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot"
-            },
-            "Food SSOT Skill Set.gbot": {
-                "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot"
-            },
             "Fortune Ticket Buyer.gbot": {
                 "url": "https://adventurequest.life/bots/Fortune_Ticket_Buyer.gbot"
             },
@@ -1693,6 +1687,14 @@
             },
             "Zoomin Larvae X TheAssistant.gbot": {
                 "url": "https://adventurequest.life/bots/Desolates_Zoomin_Larvae_X_TheAssistant.gbot"
+            }
+        },
+        "food": {
+            "Food Bunny Gold.gbot": {
+                "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot"
+            },
+            "Food SSOT Skill Set.gbot": {
+                "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot"
             }
         },
         "ganku": {
