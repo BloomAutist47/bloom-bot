@@ -84,6 +84,7 @@ class BloomScraper:
                 row.append(link)
             self.mode = "web"
         except:
+            self.git_read()
             return False
 
             soup = Soup(open("./Data/html/aqw.html", encoding="utf8"), "html.parser")
@@ -315,10 +316,8 @@ class BloomScraper:
             
 # Sets up Database
 DataBase = BloomScraper()
-try:
-    x = DataBase.database_update()
-except:
-    x = DataBase.git_read()
+x = DataBase.database_update()
+
 
 # block_color = 0x00ff00
 block_color = 3066993
@@ -611,7 +610,7 @@ async def a(ctx, *, value: str=""):
         else:
             # Sends a list of possible authors
             desc ='List of all verified bot authors.'
-            embedVar = embed_multi_text("Bot Author Result", "Author", desc, bot_list, 7, False)
+            embedVar = embed_multi_text("Bot Author Result", "Author", desc, bot_list, 10, False)
             note_desc = "Some bots have unknown authors or were still not \nmanually listed in the confirmed list. To check bots with \nunknown authors, use command `;a u`."
             embedVar.add_field(name="Note:", value=note_desc, inline=True)
         await ctx.send(embed=embedVar)
