@@ -315,7 +315,11 @@ class BloomScraper:
             
 # Sets up Database
 DataBase = BloomScraper()
-x = DataBase.database_update()
+try:
+    x = DataBase.database_update()
+except:
+    x = DataBase.git_read()
+
 # block_color = 0x00ff00
 block_color = 3066993
 database_updating = False
