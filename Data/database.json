@@ -1004,6 +1004,10 @@
             "url": "https://adventurequest.life/bots/Weeb_Essence_of_Defeat_Reagent.gbot",
             "author": "weeb"
         },
+        "EvilRep Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_EvilRep_Bot.gbot",
+            "author": "weeb"
+        },
         "FB X Dreadrock LTs.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_FB_X_Dreadrock_LTs.gbot",
             "author": "weeb"
@@ -1953,6 +1957,9 @@
             },
             "Essence of Defeat Reagent.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Essence_of_Defeat_Reagent.gbot"
+            },
+            "EvilRep Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_EvilRep_Bot.gbot"
             },
             "FB X Dreadrock LTs.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_FB_X_Dreadrock_LTs.gbot"
