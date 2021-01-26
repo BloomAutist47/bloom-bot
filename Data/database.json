@@ -456,6 +456,10 @@
             "url": "https://adventurequest.life/bots/Bluu_Aspiring_Necromancer_Items_and_Resources.gbot",
             "author": "bluu"
         },
+        "Blight Essence Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Bluu_Blight_Essence_Bot.gbot",
+            "author": "bluu"
+        },
         "Finding Fragments with Blinding Weapons.rar": {
             "url": "https://adventurequest.life/bots/Bluu_Finding_Fragments_with_Blinding_Weapons.rar",
             "author": "bluu"
@@ -1574,6 +1578,9 @@
             },
             "Aspiring Necromancer Items and Resources.gbot": {
                 "url": "https://adventurequest.life/bots/Bluu_Aspiring_Necromancer_Items_and_Resources.gbot"
+            },
+            "Blight Essence Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Bluu_Blight_Essence_Bot.gbot"
             },
             "Finding Fragments with Blinding Weapons.rar": {
                 "url": "https://adventurequest.life/bots/Bluu_Finding_Fragments_with_Blinding_Weapons.rar"
