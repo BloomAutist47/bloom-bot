@@ -29,7 +29,7 @@ class BloomBot(commands.Cog):
     def __init__(self, bot):
         self.setup()
         self.command_description_lists()
-        self.database_update("web")
+        # self.database_update("web")
         self.bot = bot
         self.block_color = 3066993
         self.database_updating = False
@@ -40,6 +40,7 @@ class BloomBot(commands.Cog):
 
         self.url = "https://adventurequest.life/"
         self.settings = {}
+        self.classes = {}
         self.data = {}
         self.sets = {}
         self.priveleged_roles = []
@@ -202,6 +203,8 @@ class BloomBot(commands.Cog):
             self.sets = json.load(f)
         with open('./Data/settings.json', 'r', encoding='utf-8') as f:
             self.settings = json.load(f)
+        with open('./Data/classes.json', 'r', encoding='utf-8') as f:
+            self.classes = json.load(f)
         self.priveleged_roles = []
         for role in self.settings["priveleged_roles"]:
             if self.settings["priveleged_roles"][role] == 1:
@@ -315,6 +318,41 @@ class BloomBot(commands.Cog):
             if test_id == self.settings["confirmed_authors"][author]["id"]:
                 return author.lower()
         return None
+
+    def find_class(self, class_name):
+        possible_classes = []
+        for class_name_ in self.classes:
+            # Search if exact name
+            if class_name == class_name_.lower():
+                return (True, (class_name_, self.classes[class_name_]))
+            duplicates = [dn.lower() for dn in self.classes[class_name_]["duplicates"]]
+
+            # Search duplicate classes
+            if class_name in duplicates:
+                ind = duplicates.index(class_name)
+                return (True, (self.classes[class_name_]["duplicates"][ind], self.classes[class_name_]))
+
+            # if class_name_ in class_name_.lower():
+            #     possible_classes.append(class_name_)
+            # for duplicate in duplicates:
+            #     if class_name_ in duplicate:
+            #         possible_classes.append(duplicate)
+
+            #Search keyword likeness
+            class_words = class_name.split(" ")
+            for words in class_words:
+                if words in class_name_.lower():
+                    possible_classes.append(class_name_)
+                for duplicate in duplicates:
+                    if words in duplicate:
+                        ind = duplicates.index(duplicate)
+                        possible_classes.append(self.classes[class_name_]["duplicates"][ind])
+        if possible_classes:
+            return (False, possible_classes)
+        else:
+            return (False, [])
+
+
 
 
     def command_description_lists(self):
@@ -510,6 +548,43 @@ class BloomBot(commands.Cog):
                 embedVar = self.embed_multi_text("Bot Author Result", "Author", desc, bot_list, 7, False)
                 await ctx.send(embed=embedVar)
             return
+
+    @commands.command()
+    async def c(self, ctx, *, class_name: str=""):
+        # Conditional Checks
+        permissions_check = await self.check_permissions(ctx, "a author")
+        if not permissions_check:
+            return
+
+        command_title = "Class Search"
+
+        result = self.find_class(class_name.lower())
+        found_class = result[0]
+        found_data = result[1]
+
+        if not found_class and not found_data:
+            desc = f"No class matches your search word `{class_name}`. Please type exact class names. "
+            await ctx.send(embed=self.embed_single("Class Search Result", desc))
+            return False
+        if found_class and found_data:
+            enh = found_data[1]["enh"].capitalize()
+            awe = found_data[1]["awe_enh"].capitalize()
+            wiki = found_data[1]["wiki"].capitalize()
+            note = found_data[1]["note"].capitalize()
+
+            desc = f"```autohotkey\n[Enchancement]: {enh}\n[Awe Enchant]: {awe}\n"
+            if note != "":
+                desc += f"[Note]: {note}\n"
+            desc += "```"
+            desc += f"\> [Check the Wiki]({wiki})"
+
+            await ctx.send(embed=self.embed_single(found_data[0] + " Class", desc))
+        if not found_class and found_data:
+            desc = f'Sorry, nothing came up with your search word {class_name}. Maybe one of these?'
+            embedVar = self.embed_multi_text(command_title, "Classes", desc, found_data, 10, False)
+            await ctx.send(embed=embedVar)
+            return
+
 
     def embed_single(self, title, description):
          return discord.Embed(title=title, description=description, color=self.block_color)
