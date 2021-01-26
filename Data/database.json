@@ -584,19 +584,19 @@
             "url": "https://adventurequest.life/bots/EZCHAOSREPLOL_UwU_ARTS_Bot.gbot",
             "author": "unknown"
         },
-        "Food Bunny Gold.gbot": {
+        "Bunny Gold.gbot": {
             "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot",
             "author": "food"
         },
-        "Food Combat Trophy Kill Everything Followers Sorting.gbot": {
+        "Combat Trophy Kill Everything Followers Sorting.gbot": {
             "url": "https://adventurequest.life/bots/Food_Combat_Trophy_Kill_Everything_Followers_Sorting.gbot",
             "author": "food"
         },
-        "Food NWNO NulgathBirthday FB.gbot": {
+        "NWNO NulgathBirthday FB.gbot": {
             "url": "https://adventurequest.life/bots/Food_NWNO_NulgathBirthday_FB.gbot",
             "author": "food"
         },
-        "Food SSOT Skill Set.gbot": {
+        "SSOT Skill Set.gbot": {
             "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot",
             "author": "food"
         },
@@ -688,15 +688,15 @@
             "url": "https://adventurequest.life/bots/hollowborn_blade.gbot",
             "author": "unknown"
         },
-        "Jex BdNWNO.gbot": {
+        "BdNWNO.gbot": {
             "url": "https://adventurequest.life/bots/Jex_BdNWNO.gbot",
             "author": "jex"
         },
-        "Jex DroneNWNO.gbot": {
+        "DroneNWNO.gbot": {
             "url": "https://adventurequest.life/bots/Jex_DroneNWNO.gbot",
             "author": "jex"
         },
-        "Jex ICskillset.rar": {
+        "ICskillset.rar": {
             "url": "https://adventurequest.life/bots/Jex_ICskillset.rar",
             "author": "jex"
         },
@@ -888,23 +888,23 @@
             "url": "https://adventurequest.life/bots/satans_ZOOMIN_NWNO.gbot",
             "author": "satan"
         },
-        "atan deso ingredients.gbot": {
+        "deso ingredients.gbot": {
             "url": "https://adventurequest.life/bots/satan_deso_ingredients.gbot",
             "author": "satan"
         },
-        "atan super simple borgars questline bot.gbot": {
+        "uper simple borgars questline bot.gbot": {
             "url": "https://adventurequest.life/bots/satan_super_simple_borgars_questline_bot.gbot",
             "author": "satan"
         },
-        "atan super simple CC bot.gbot": {
+        "uper simple CC bot.gbot": {
             "url": "https://adventurequest.life/bots/satan_super_simple_CC_bot.gbot",
             "author": "satan"
         },
-        "atan twilly battlefowl farm.gbot": {
+        "twilly battlefowl farm.gbot": {
             "url": "https://adventurequest.life/bots/satan_twilly_battlefowl_farm.gbot",
             "author": "satan"
         },
-        "atan yami no ronin bot.gbot": {
+        "yami no ronin bot.gbot": {
             "url": "https://adventurequest.life/bots/satan_yami_no_ronin_bot.gbot",
             "author": "satan"
         },
@@ -2001,27 +2001,27 @@
             }
         },
         "food": {
-            "Food Bunny Gold.gbot": {
+            "Bunny Gold.gbot": {
                 "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot"
             },
-            "Food Combat Trophy Kill Everything Followers Sorting.gbot": {
+            "Combat Trophy Kill Everything Followers Sorting.gbot": {
                 "url": "https://adventurequest.life/bots/Food_Combat_Trophy_Kill_Everything_Followers_Sorting.gbot"
             },
-            "Food NWNO NulgathBirthday FB.gbot": {
+            "NWNO NulgathBirthday FB.gbot": {
                 "url": "https://adventurequest.life/bots/Food_NWNO_NulgathBirthday_FB.gbot"
             },
-            "Food SSOT Skill Set.gbot": {
+            "SSOT Skill Set.gbot": {
                 "url": "https://adventurequest.life/bots/Food_SSOT_Skill_Set.gbot"
             }
         },
         "jex": {
-            "Jex BdNWNO.gbot": {
+            "BdNWNO.gbot": {
                 "url": "https://adventurequest.life/bots/Jex_BdNWNO.gbot"
             },
-            "Jex DroneNWNO.gbot": {
+            "DroneNWNO.gbot": {
                 "url": "https://adventurequest.life/bots/Jex_DroneNWNO.gbot"
             },
-            "Jex ICskillset.rar": {
+            "ICskillset.rar": {
                 "url": "https://adventurequest.life/bots/Jex_ICskillset.rar"
             }
         },
@@ -2069,19 +2069,19 @@
             "ZOOMIN NWNO.gbot": {
                 "url": "https://adventurequest.life/bots/satans_ZOOMIN_NWNO.gbot"
             },
-            "atan deso ingredients.gbot": {
+            "deso ingredients.gbot": {
                 "url": "https://adventurequest.life/bots/satan_deso_ingredients.gbot"
             },
-            "atan super simple borgars questline bot.gbot": {
+            "uper simple borgars questline bot.gbot": {
                 "url": "https://adventurequest.life/bots/satan_super_simple_borgars_questline_bot.gbot"
             },
-            "atan super simple CC bot.gbot": {
+            "uper simple CC bot.gbot": {
                 "url": "https://adventurequest.life/bots/satan_super_simple_CC_bot.gbot"
             },
-            "atan twilly battlefowl farm.gbot": {
+            "twilly battlefowl farm.gbot": {
                 "url": "https://adventurequest.life/bots/satan_twilly_battlefowl_farm.gbot"
             },
-            "atan yami no ronin bot.gbot": {
+            "yami no ronin bot.gbot": {
                 "url": "https://adventurequest.life/bots/satan_yami_no_ronin_bot.gbot"
             }
         }
