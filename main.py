@@ -578,14 +578,16 @@ class BloomBot(commands.Cog):
             except: pass
 
             desc = f"```autohotkey\n[Enchancement]: {enh}\n[Awe Enchant]: {awe}\n"
-            if note != "":
-                desc += f"[Note]: {note}\n"
+            try:
+                if note != "":
+                    desc += f"[Note]: {note}\n"
+            except: pass
             desc += "```"
             desc += f"\> [Check the Wiki]({wiki})"
 
             await ctx.send(embed=self.embed_single(found_data[0] + " Class", desc))
         if not found_class and found_data:
-            desc = f'Sorry, nothing came up with your search word {class_name}. Maybe one of these?'
+            desc = f'Sorry, nothing came up with your search word {class_name}.\nMaybe one of these?'
             embedVar = self.embed_multi_text(command_title, "Classes", desc, found_data, 10, False)
             await ctx.send(embed=embedVar)
             return
