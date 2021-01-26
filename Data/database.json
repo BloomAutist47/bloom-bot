@@ -572,8 +572,16 @@
             "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot",
             "author": "food"
         },
+        "Combat Trophy Followers Sorting Captain Brawler.gbot": {
+            "url": "https://adventurequest.life/bots/Food_Combat_Trophy_Followers_Sorting_Captain_Brawler.gbot",
+            "author": "food"
+        },
         "Combat Trophy Kill Everything Followers Sorting.gbot": {
             "url": "https://adventurequest.life/bots/Food_Combat_Trophy_Kill_Everything_Followers_Sorting.gbot",
+            "author": "food"
+        },
+        "Fishing Rep.gbot": {
+            "url": "https://adventurequest.life/bots/Food_Fishing_Rep.gbot",
             "author": "food"
         },
         "NWNO NulgathBirthday FB.gbot": {
@@ -1665,8 +1673,14 @@
             "Bunny Gold.gbot": {
                 "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot"
             },
+            "Combat Trophy Followers Sorting Captain Brawler.gbot": {
+                "url": "https://adventurequest.life/bots/Food_Combat_Trophy_Followers_Sorting_Captain_Brawler.gbot"
+            },
             "Combat Trophy Kill Everything Followers Sorting.gbot": {
                 "url": "https://adventurequest.life/bots/Food_Combat_Trophy_Kill_Everything_Followers_Sorting.gbot"
+            },
+            "Fishing Rep.gbot": {
+                "url": "https://adventurequest.life/bots/Food_Fishing_Rep.gbot"
             },
             "NWNO NulgathBirthday FB.gbot": {
                 "url": "https://adventurequest.life/bots/Food_NWNO_NulgathBirthday_FB.gbot"
