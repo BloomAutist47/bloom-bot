@@ -672,12 +672,12 @@
             "url": "https://adventurequest.life/bots/hollowborn_blade.gbot",
             "author": "unknown"
         },
-        "BdNWNO.gbot": {
-            "url": "https://adventurequest.life/bots/Jex_BdNWNO.gbot",
+        "BdNWNOVHL.gbot": {
+            "url": "https://adventurequest.life/bots/Jex_BdNWNOVHL.gbot",
             "author": "jex"
         },
-        "DroneNWNO.gbot": {
-            "url": "https://adventurequest.life/bots/Jex_DroneNWNO.gbot",
+        "DroneNWNOVHL.gbot": {
+            "url": "https://adventurequest.life/bots/Jex_DroneNWNOVHL.gbot",
             "author": "jex"
         },
         "ICskillset.rar": {
@@ -1729,11 +1729,11 @@
             }
         },
         "jex": {
-            "BdNWNO.gbot": {
-                "url": "https://adventurequest.life/bots/Jex_BdNWNO.gbot"
+            "BdNWNOVHL.gbot": {
+                "url": "https://adventurequest.life/bots/Jex_BdNWNOVHL.gbot"
             },
-            "DroneNWNO.gbot": {
-                "url": "https://adventurequest.life/bots/Jex_DroneNWNO.gbot"
+            "DroneNWNOVHL.gbot": {
+                "url": "https://adventurequest.life/bots/Jex_DroneNWNOVHL.gbot"
             },
             "ICskillset.rar": {
                 "url": "https://adventurequest.life/bots/Jex_ICskillset.rar"
