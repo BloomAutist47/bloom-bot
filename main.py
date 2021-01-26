@@ -241,6 +241,9 @@ class BloomBot(commands.Cog):
         git_sets = self.repository.file_contents("./Data/sets.json").decoded
         self.sets = json.loads(git_sets.decode('utf-8'))
 
+        git_classes = self.repository.file_contents("./Data/classes.json").decoded
+        self.classes = json.loads(git_classes.decode('utf-8'))
+
         git_settings = self.repository.file_contents("./Data/settings.json").decoded
         self.settings = json.loads(git_settings.decode('utf-8'))
         self.priveleged_roles = []
@@ -570,7 +573,9 @@ class BloomBot(commands.Cog):
             enh = found_data[1]["enh"].capitalize()
             awe = found_data[1]["awe_enh"].capitalize()
             wiki = found_data[1]["wiki"].capitalize()
-            note = found_data[1]["note"].capitalize()
+            try:
+                note = found_data[1]["note"].capitalize()
+            except: pass
 
             desc = f"```autohotkey\n[Enchancement]: {enh}\n[Awe Enchant]: {awe}\n"
             if note != "":
