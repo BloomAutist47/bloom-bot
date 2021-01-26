@@ -29,7 +29,7 @@ class BloomBot(commands.Cog):
     def __init__(self, bot):
         self.setup()
         self.command_description_lists()
-        # self.database_update("web")
+        self.database_update("web")
         self.bot = bot
         self.block_color = 3066993
         self.database_updating = False
