@@ -508,14 +508,6 @@
             "url": "https://adventurequest.life/bots/BrightParagon_Ninjatov_3.8PP.gbot",
             "author": "ninjatov"
         },
-        "Flame Forged Metal.gbot": {
-            "url": "https://adventurequest.life/bots/Chroma_Flame-Forged_Metal.gbot",
-            "author": "chroma"
-        },
-        "yokai rep member.gbot": {
-            "url": "https://adventurequest.life/bots/chroma_yokai_rep_member.gbot",
-            "author": "chroma"
-        },
         "CombatTrophyBB.gbot": {
             "url": "https://adventurequest.life/bots/CombatTrophyBB-Taryth.gbot",
             "author": "taryth"
@@ -1034,6 +1026,10 @@
         },
         "MEMBER Good.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_MEMBER_Good.gbot",
+            "author": "weeb"
+        },
+        "MEM Yokai REP.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_MEM_Yokai_REP.gbot",
             "author": "weeb"
         },
         "Mysterious Chest 7DD.gbot": {
@@ -1616,14 +1612,6 @@
                 "url": "https://adventurequest.life/bots/Bluu_YokaiRep_Bot.gbot"
             }
         },
-        "chroma": {
-            "Flame Forged Metal.gbot": {
-                "url": "https://adventurequest.life/bots/Chroma_Flame-Forged_Metal.gbot"
-            },
-            "yokai rep member.gbot": {
-                "url": "https://adventurequest.life/bots/chroma_yokai_rep_member.gbot"
-            }
-        },
         "taryth": {
             "CombatTrophyBB.gbot": {
                 "url": "https://adventurequest.life/bots/CombatTrophyBB-Taryth.gbot"
@@ -1979,6 +1967,9 @@
             },
             "MEMBER Good.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_MEMBER_Good.gbot"
+            },
+            "MEM Yokai REP.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_MEM_Yokai_REP.gbot"
             },
             "Mysterious Chest 7DD.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Mysterious_Chest_7DD.gbot"
