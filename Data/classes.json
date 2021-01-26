@@ -6,6 +6,7 @@
             "Abyssal Angel's Shadow"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/abyssal-angel-ac"
     },
     "Alpha Omega":{
@@ -15,6 +16,7 @@
             "Alpha DOOMmega"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/alpha-omega-non-legend"
     },
     "Alpha Pirate":{
@@ -24,6 +26,7 @@
             "Pirate"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/alpha-pirate-class"
     },
     "Arachnomancer":{
@@ -33,6 +36,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/arachnomancer-non-ac"
     },
     "ArchPaladin":{
@@ -42,6 +46,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/archpaladin-class-0-ac"
     },
     "Archfiend":{
@@ -51,6 +56,7 @@
             "Legendary ArchFiend"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/archfiend"
     },
     "Artifact Hunter":{
@@ -60,6 +66,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/artifact-hunter-class-ac"
     },
     "Barber":{
@@ -69,6 +76,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/barber"
     },
     "Bard":{
@@ -78,6 +86,7 @@
             "Troubador of Love"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/bard-class"
     },
     "BattleMage":{
@@ -89,6 +98,7 @@
             "Royal BattleMage"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/battlemage-class"
     },
     "BeastMaster":{
@@ -98,6 +108,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/beastmaster-non-ac"
     },
     "Berserker":{
@@ -107,6 +118,7 @@
             "Beta Berserker"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/berserker"
     },
     "BladeMaster":{
@@ -116,7 +128,7 @@
             "SwordMaster"
         ],
         "enh":"luck",
-        "note":"Thief for Dodge",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/blademaster-ac"
     },
     "BladeMaster Assassin":{
@@ -126,6 +138,7 @@
             "SwordMaster Assassin"
         ],
         "enh":"luck",
+        "note":"To reach full Evasion, use Thief and a Potion of Evasion.",
         "wiki":"http://aqwwiki.wikidot.com/blademaster-assassin-class"
     },
     "Blaze Binder":{
@@ -135,6 +148,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":""
     },
     "Blood Ancient":{
@@ -144,6 +158,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/blood-ancient-merge"
     },
     "Blood Sorceresss":{
@@ -153,6 +168,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/blood-sorceress"
     },
     "Blood Titan":{
@@ -162,6 +178,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/blood-titan-legend"
     },
     "CardClasher":{
@@ -171,6 +188,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/cardclasher-class"
     },
     "Chaos Shaper":{
@@ -180,6 +198,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/chaos-shaper-class"
     },
     "Chaos Slayer":{
@@ -194,6 +213,7 @@
             "Dark Chaos Berserker"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/chaos-slayer-berserker-non-ac"
     },
     "Chrono Assassin":{
@@ -203,8 +223,18 @@
             
         ],
         "enh":"luck",
-        "note":"Cape should  Thief",
+        "note":"To maximize evasion, use thief enhancements to increase Evasion to 34.05%",
         "wiki":"http://aqwwiki.wikidot.com/chrono-assassin-merge"
+    },
+    "Chrono DragonKnight":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "note":"",
+        "wiki":"http://aqwwiki.wikidot.com/chrono-dragonknight-class"
     },
     "ChronoCommander":{
         "acronym":"",
@@ -213,6 +243,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/chronocommander"
     },
     "ChronoCorruptor":{
@@ -222,16 +253,8 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/chronocorruptor"
-    },
-    "Chrono DragonKnight":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "wiki":"http://aqwwiki.wikidot.com/chrono-dragonknight-class"
     },
     "Chunin":{
         "acronym":"",
@@ -240,6 +263,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/chunin-merge"
     },
     "Classic Alpha Pirate":{
@@ -249,6 +273,7 @@
             "Classic Pirate"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/classic-alpha-pirate"
     },
     "Classic Barber":{
@@ -258,6 +283,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/classic-barber"
     },
     "Classic Defender":{
@@ -267,6 +293,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/classic-defender-1"
     },
     "Classic DoomKnight":{
@@ -276,6 +303,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/classic-doomknight-non-ac"
     },
     "Classic DragonLord":{
@@ -285,6 +313,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/classic-dragonlord"
     },
     "Classic Guardian":{
@@ -294,6 +323,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/classic-guardian"
     },
     "Classic Legion DoomKnight":{
@@ -303,6 +333,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/classic-legion-doomknight-ac"
     },
     "Classic Paladin":{
@@ -312,6 +343,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/classic-paladin-class"
     },
     "Classic Soul Cleaver":{
@@ -321,6 +353,7 @@
             "Classic Exalted Soul Cleaver"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/classic-soul-cleaver"
     },
     "ClawSuit":{
@@ -330,6 +363,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/clawsuit"
     },
     "Corrupted Chronomancer":{
@@ -339,6 +373,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/corrupted-chronomancer-class"
     },
     "Cryomancer":{
@@ -349,6 +384,7 @@
             "Sakura Cryomancer"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/cryomancer-merge"
     },
     "Daimon":{
@@ -371,6 +407,7 @@
             "Unchained Rockstar"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/dark-metal-necro"
     },
     "Darkblood StormKing":{
@@ -380,6 +417,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/darkblood-stormking-non-ac"
     },
     "Darkside":{
@@ -389,6 +427,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/darkside"
     },
     "DeathKnight":{
@@ -398,6 +437,7 @@
             
         ],
         "enh":"fighter",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/deathknight-class-non-ac"
     },
     "DeathKnight Lord":{
@@ -407,6 +447,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/deathknight-lord-class-ac-1"
     },
     "Defender":{
@@ -416,6 +457,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/defender-1"
     },
     "DoomKnight Overlord":{
@@ -425,6 +467,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/doomknight-overlord"
     },
     "Doomknight":{
@@ -434,6 +477,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/doomknight-non-ac"
     },
     "Dragon Knight":{
@@ -443,6 +487,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/dragon-knight-class"
     },
     "Dragon Shinobi":{
@@ -452,6 +497,7 @@
             "Shadow Dragon Shinobi"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/dragon-shinobi-class-ac"
     },
     "Dragon of Time":{
@@ -461,6 +507,7 @@
             
         ],
         "enh":"healer",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/dragon-of-time-class"
     },
     "DragonLord":{
@@ -470,6 +517,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/dragonlord-class"
     },
     "Dragonslayer":{
@@ -479,6 +527,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/dragonslayer-class"
     },
     "Dragonslayer General":{
@@ -488,6 +537,7 @@
             "ShadowFlame DragonLord"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/dragonslayer-general-class-merge"
     },
     "Drakel Warlord":{
@@ -497,6 +547,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/drakel-warlord-legend"
     },
     "Elemental Dracomancer":{
@@ -506,6 +557,7 @@
             "Love Caster"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/elemental-dracomancer-non-ac"
     },
     "Eternal Inversionist":{
@@ -515,6 +567,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/eternal-inversionist-class-non-ac"
     },
     "Evolved ClawSuit":{
@@ -524,6 +577,7 @@
             "Prismatic ClawSuit"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/evolved-clawsuit"
     },
     "Evolved Leprechaun":{
@@ -533,6 +587,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/evolved-leprechaun-merge"
     },
     "Evolved Pumpkin Lord":{
@@ -542,6 +597,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend"
     },
     "Evolved Shaman":{
@@ -551,6 +607,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/evolved-shaman-non-ac"
     },
     "Exalted Harbinger":{
@@ -562,6 +619,7 @@
             "Dark Harbinger"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/exalted-harbinger"
     },
     "Flame Dragon Warrior":{
@@ -571,6 +629,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/flame-dragon-warrior-class"
     },
     "Frostval Barbarian":{
@@ -590,6 +649,7 @@
             "Glacial Berserker Test"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/glacial-berserker-class-non-ac"
     },
     "Glacial Warlord":{
@@ -599,6 +659,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/glacial-warlord-class"
     },
     "Great Thief":{
@@ -608,6 +669,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/great-thief"
     },
     "Grim Necromancer":{
@@ -617,17 +679,18 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/grim-necromancer-class"
     },
     "Guardian":{
         "acronym":"",
-        "awe_enh":"Spiral Carve ir Awe Blast",
+        "awe_enh":"Spiral Carve or Awe Blast",
         "duplicates":[
             
         ],
         "enh":"luck",
         "note":"Use Awe Blast for Soloing",
-        "wiki":""
+        "wiki":"http://aqwwiki.wikidot.com/guardian-class"
     },
     "Healer":{
         "acronym":"",
@@ -638,6 +701,7 @@
             "Witch"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/healer"
     },
     "HighSeas Commander":{
@@ -647,6 +711,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/highseas-commander"
     },
     "Horc Evader":{
@@ -656,7 +721,7 @@
             
         ],
         "enh":"luck",
-        "note":"Thief for Dodge",
+        "note":"To maximize evasion, use thief enhancements to increase Evasion to 31.05%",
         "wiki":"http://aqwwiki.wikidot.com/horc-evader-non-ac"
     },
     "Immortal Chronomancer":{
@@ -666,6 +731,7 @@
             "Eternal Chronomancer"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/immortal-chronomancer-class-ac"
     },
     "Immortal Dark Caster":{
@@ -675,6 +741,7 @@
             "Dark Caster"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/immortal-dark-caster-class-0-ac"
     },
     "Infinite Dark Caster":{
@@ -686,6 +753,7 @@
             "Legion Evolved Dark Caster"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/infinite-dark-caster-ac"
     },
     "Infinity Knight":{
@@ -695,6 +763,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/infinity-knight"
     },
     "Legendary Hero":{
@@ -704,6 +773,7 @@
             "Dark Legendary Hero"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/legendary-hero-class"
     },
     "Legion BladeMaster Assassin":{
@@ -713,6 +783,7 @@
             "Legion SwordMaster Assassin"
         ],
         "enh":"luck",
+        "note":"To reach full Evasion, use Thief and a Potion of Evasion.",
         "wiki":"http://aqwwiki.wikidot.com/legion-blademaster-assassin"
     },
     "Legion DoomKnight":{
@@ -722,6 +793,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/legion-doomknight-class-ac"
     },
     "Legion Revenant":{
@@ -731,6 +803,7 @@
             "Legion Revenant Member Test"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/legion-revenant-class"
     },
     "Leprechaun":{
@@ -740,6 +813,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/leprechaun"
     },
     "LightCaster":{
@@ -749,6 +823,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/lightcaster-class"
     },
     "LightMage":{
@@ -758,6 +833,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/lightmage"
     },
     "Lord of Order":{
@@ -767,6 +843,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/lord-of-order-quest"
     },
     "Lycan":{
@@ -776,6 +853,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/lycan-class-non-ac"
     },
     "Mage":{
@@ -787,6 +865,7 @@
             "Sorcerer"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/mage"
     },
     "Master Ranger":{
@@ -796,6 +875,7 @@
             "Ranger"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/master-ranger"
     },
     "Master of Moglins":{
@@ -805,6 +885,7 @@
             "Dark Master of Moglins"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/master-of-moglins-class-2"
     },
     "Mechajouster":{
@@ -814,6 +895,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/mechajouster"
     },
     "MindBreaker":{
@@ -823,6 +905,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/mindbreaker"
     },
     "NOT A MOD":{
@@ -832,6 +915,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/not-a-mod"
     },
     "Naval Commander":{
@@ -842,6 +926,7 @@
             "Legendary Naval Commander"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/naval-commander-class"
     },
     "Necromancer":{
@@ -851,6 +936,7 @@
             "Pinkomancer"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/necromancer-merge"
     },
     "No Class":{
@@ -861,6 +947,7 @@
             "Hobo Highlord"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/no-class"
     },
     "Northlands Monk":{
@@ -870,6 +957,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/northlands-monk-class-free-player"
     },
     "Nu Metal Necro":{
@@ -881,6 +969,7 @@
             "Unchained Rocker"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/nu-metal-necro-1"
     },
     "Oracle":{
@@ -890,6 +979,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/oracle"
     },
     "Paladin":{
@@ -899,6 +989,7 @@
             "Silver Paladin"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/paladin-class"
     },
     "Paladin High Lord":{
@@ -908,6 +999,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/paladin-high-lord"
     },
     "PaladinSlayer":{
@@ -917,6 +1009,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/paladinslayer"
     },
     "Pirate":{
@@ -926,6 +1019,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/pirate"
     },
     "Pumpkin Lord":{
@@ -935,6 +1029,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/pumpkin-lord"
     },
     "Pyromancer":{
@@ -944,6 +1039,7 @@
             "Pink Romancer"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/pyromancer-class-ac"
     },
     "Rogue":{
@@ -954,6 +1050,7 @@
             "Rogue (Rare)"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/rogue"
     },
     "Rustbucket":{
@@ -964,6 +1061,7 @@
             "ProtoSartorium"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/rustbucket"
     },
     "Scarlet Sorceress":{
@@ -973,6 +1071,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/scarlet-sorceress-class-ac"
     },
     "Sentinel":{
@@ -982,6 +1081,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/sentinel"
     },
     "ShadowScythe General":{
@@ -991,6 +1091,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/shadowscythe-general-class-merge"
     },
     "ShadowStalker of Time":{
@@ -1000,6 +1101,7 @@
             "ShadowWalker of Time"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/shadowstalker-of-time-class"
     },
     "Shaman":{
@@ -1009,6 +1111,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/shaman"
     },
     "SkyCharged Grenadier":{
@@ -1018,6 +1121,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/skycharged-grenadier"
     },
     "SkyGuard Grenadier":{
@@ -1027,6 +1131,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/skyguard-grenadier-ac"
     },
     "Star Captain":{
@@ -1036,6 +1141,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/star-captain"
     },
     "StarLord":{
@@ -1045,6 +1151,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/starlord"
     },
     "StoneCrusher":{
@@ -1054,6 +1161,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/stonecrusher-merge"
     },
     "The Collector":{
@@ -1063,6 +1171,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/the-collector-class-0-ac"
     },
     "Thief of Hours":{
@@ -1072,6 +1181,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/thief-of-hours-non-ac"
     },
     "TimeKiller":{
@@ -1081,6 +1191,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/timekiller"
     },
     "Timeless Dark Caster":{
@@ -1091,6 +1202,7 @@
             "Mystical Dark Caster"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/timeless-dark-caster-ac"
     },
     "Troll Spellsmith":{
@@ -1100,6 +1212,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/troll-spellsmith-non-ac"
     },
     "Ultra Elemental Warrior":{
@@ -1109,6 +1222,7 @@
             "Legendary Elemental Warrior"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/ultra-elemental-warrior"
     },
     "Ultra OmniKnight":{
@@ -1118,6 +1232,7 @@
             "Dark Ultra OmniNight"
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/ultra-omniknight-merge"
     },
     "Undead Goat":{
@@ -1127,6 +1242,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/undead-goat"
     },
     "UndeadSlayer":{
@@ -1136,6 +1252,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/undeadslayer-ac"
     },
     "Unlucky Leprechaun":{
@@ -1145,6 +1262,7 @@
             "Undead Leperchaun"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/unlucky-leperchaun-ac"
     },
     "Vampire Lord":{
@@ -1156,6 +1274,7 @@
             "Vampire"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/vampire-lord-class-ac"
     },
     "Vindicator of They":{
@@ -1165,6 +1284,7 @@
             
         ],
         "enh":"wizard",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/vindicator-of-they-merge"
     },
     "Void Highlord":{
@@ -1174,6 +1294,7 @@
             
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/void-highlord-class-1"
     },
     "Warrior":{
@@ -1188,15 +1309,17 @@
             "Void Highlord Tester"
         ],
         "enh":"luck",
+        "note":"",
         "wiki":"http://aqwwiki.wikidot.com/warrior-class"
     },
     "Yami no Ronin":{
-        "acronym":"",
+        "acronym":"YnR",
         "awe_enh":"Spiral Carve",
         "duplicates":[
             
         ],
         "enh":"luck",
+        "note":"To play defensively, use thief enhancements to increase Evasion to 32.05%",
         "wiki":"http://aqwwiki.wikidot.com/yami-no-ronin-class"
     }
 }
