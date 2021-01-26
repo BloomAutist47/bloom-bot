@@ -1064,6 +1064,10 @@
             "url": "https://adventurequest.life/bots/Weeb_Mysterious_Chest_7DD.gbot",
             "author": "weeb"
         },
+        "MythsongREP.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_MythsongREP.gbot",
+            "author": "weeb"
+        },
         "Ninja Challenge.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Ninja_Challenge.gbot",
             "author": "weeb"
@@ -2023,6 +2027,9 @@
             },
             "Mysterious Chest 7DD.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Mysterious_Chest_7DD.gbot"
+            },
+            "MythsongREP.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_MythsongREP.gbot"
             },
             "Ninja Challenge.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Ninja_Challenge.gbot"
