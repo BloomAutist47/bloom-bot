@@ -408,10 +408,6 @@
             "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC_P.gbot",
             "author": "unknown"
         },
-        "Legion Fealty 1 1.gbot": {
-            "url": "https://adventurequest.life/bots/Azmatullahs_Legion_Fealty_1_1.gbot",
-            "author": "azmatullahs"
-        },
         "BattlegroundE Gold.gbot": {
             "url": "https://adventurequest.life/bots/BattlegroundE_Gold_Ninjatov.gbot",
             "author": "ninjatov"
@@ -840,9 +836,9 @@
             "url": "https://adventurequest.life/bots/Qwack-The_Game_of_Gemstones.gbot",
             "author": "qwack"
         },
-        "BlightEssence.gbot": {
+        "Rascam BlightEssence.gbot": {
             "url": "https://adventurequest.life/bots/Rascam_BlightEssence.gbot",
-            "author": "rascam"
+            "author": "unknown"
         },
         "Retrieve the Void Auras.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Retrieve_the_Void_Auras.gbot",
@@ -1186,6 +1182,9 @@
             "Non-mem VA SkCmd.gbot": {
                 "url": "https://adventurequest.life/bots/Non_mem_VA_SkCmd.gbot"
             },
+            "Rascam BlightEssence.gbot": {
+                "url": "https://adventurequest.life/bots/Rascam_BlightEssence.gbot"
+            },
             "Retrieve the Void Auras.gbot": {
                 "url": "https://adventurequest.life/bots/Retrieve_the_Void_Auras.gbot"
             },
@@ -1504,11 +1503,6 @@
             },
             "EZCHAOSREPLOL UwU ARTS Bot.gbot": {
                 "url": "https://adventurequest.life/bots/EZCHAOSREPLOL_UwU_ARTS_Bot.gbot"
-            }
-        },
-        "azmatullahs": {
-            "Legion Fealty 1 1.gbot": {
-                "url": "https://adventurequest.life/bots/Azmatullahs_Legion_Fealty_1_1.gbot"
             }
         },
         "ninjatov": {
@@ -1843,11 +1837,6 @@
             },
             "The Game of Gemstones.gbot": {
                 "url": "https://adventurequest.life/bots/Qwack-The_Game_of_Gemstones.gbot"
-            }
-        },
-        "rascam": {
-            "BlightEssence.gbot": {
-                "url": "https://adventurequest.life/bots/Rascam_BlightEssence.gbot"
             }
         },
         "satan": {
