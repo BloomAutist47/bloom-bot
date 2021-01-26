@@ -804,6 +804,10 @@
             "url": "https://adventurequest.life/bots/Minaaaaaa_Full_Lord_of_Order_Bot.rar",
             "author": "minaaaaaa"
         },
+        "NinjaSneaks SDKA Bot.zip": {
+            "url": "https://adventurequest.life/bots/NinjaSneaks_SDKA_Bot.zip",
+            "author": "ninjasneaks"
+        },
         "Non-mem VA SkCmd.gbot": {
             "url": "https://adventurequest.life/bots/Non_mem_VA_SkCmd.gbot",
             "author": "unknown"
@@ -891,10 +895,6 @@
         "yami no ronin bot.gbot": {
             "url": "https://adventurequest.life/bots/satan_yami_no_ronin_bot.gbot",
             "author": "satan"
-        },
-        "SDKA Bot NinjaSneaks.zip": {
-            "url": "https://adventurequest.life/bots/SDKA_Bot_NinjaSneaks.zip",
-            "author": "ninjasneaks"
         },
         "Shogun Paragon LT BB LR EI.gbot": {
             "url": "https://adventurequest.life/bots/Shogun_Paragon_LT_Raze_BB_LR_EI.gbot",
@@ -1820,6 +1820,11 @@
                 "url": "https://adventurequest.life/bots/Minaaaaaa_Full_Lord_of_Order_Bot.rar"
             }
         },
+        "ninjasneaks": {
+            "NinjaSneaks SDKA Bot.zip": {
+                "url": "https://adventurequest.life/bots/NinjaSneaks_SDKA_Bot.zip"
+            }
+        },
         "qwack": {
             "Blood Ancient.gbot": {
                 "url": "https://adventurequest.life/bots/Qwack-Blood_Ancient.gbot"
@@ -1881,11 +1886,6 @@
             },
             "yami no ronin bot.gbot": {
                 "url": "https://adventurequest.life/bots/satan_yami_no_ronin_bot.gbot"
-            }
-        },
-        "ninjasneaks": {
-            "SDKA Bot NinjaSneaks.zip": {
-                "url": "https://adventurequest.life/bots/SDKA_Bot_NinjaSneaks.zip"
             }
         },
         "weebluurts": {
