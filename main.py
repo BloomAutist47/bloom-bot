@@ -435,7 +435,7 @@ class BloomBot(commands.Cog):
                 result = self.database_update("web")
             elif value == "html":
                 result = self.database_update("html")
-
+            self.git_read()
             if result:
                 await ctx.send(r"\> Bloom Bot updated!")
                 await ctx.send(f"\> Update method: `{self.mode}`")
