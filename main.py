@@ -628,7 +628,7 @@ class BloomBot(commands.Cog):
             embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
         return embedVar
 
-Bot = commands.Bot(command_prefix=";", description='Bloom Bot Revamped')
+Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
 
 @Bot.event
 async def on_ready():
