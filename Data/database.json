@@ -508,10 +508,6 @@
             "url": "https://adventurequest.life/bots/Bluu_YokaiRep_Bot.gbot",
             "author": "unknown"
         },
-        "BoneDust TaintedGems Ninjatov 3.8Pro.gbot": {
-            "url": "https://adventurequest.life/bots/BoneDust_TaintedGems_Ninjatov_3.8Pro.gbot",
-            "author": "unknown"
-        },
         "BrightParagon Ninjatov 3.8PP.gbot": {
             "url": "https://adventurequest.life/bots/BrightParagon_Ninjatov_3.8PP.gbot",
             "author": "unknown"
@@ -590,6 +586,10 @@
         },
         "Food Bunny Gold.gbot": {
             "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot",
+            "author": "food"
+        },
+        "Food Combat Trophy Kill Everything Followers Sorting.gbot": {
+            "url": "https://adventurequest.life/bots/Food_Combat_Trophy_Kill_Everything_Followers_Sorting.gbot",
             "author": "food"
         },
         "Food NWNO NulgathBirthday FB.gbot": {
@@ -687,6 +687,14 @@
         "hollowborn blade.gbot": {
             "url": "https://adventurequest.life/bots/hollowborn_blade.gbot",
             "author": "unknown"
+        },
+        "Jex BdNWNO.gbot": {
+            "url": "https://adventurequest.life/bots/Jex_BdNWNO.gbot",
+            "author": "jex"
+        },
+        "Jex DroneNWNO.gbot": {
+            "url": "https://adventurequest.life/bots/Jex_DroneNWNO.gbot",
+            "author": "jex"
         },
         "Jex ICskillset.rar": {
             "url": "https://adventurequest.life/bots/Jex_ICskillset.rar",
@@ -786,10 +794,6 @@
         },
         "King ShogunParagon LegionTokens.gbot": {
             "url": "https://adventurequest.life/bots/King_ShogunParagon_LegionTokens.gbot",
-            "author": "unknown"
-        },
-        "King Tainted Gem.gbot": {
-            "url": "https://adventurequest.life/bots/King_Tainted_Gem.gbot",
             "author": "unknown"
         },
         "KTV  Taryth.gbot": {
@@ -1130,6 +1134,10 @@
         },
         "Weeb Swindle Bulk.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Swindle_Bulk.gbot",
+            "author": "unknown"
+        },
+        "Weeb Swindle Bulk Fastest Tainted Gems.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Swindle_Bulk_Fastest_Tainted_Gems.gbot",
             "author": "unknown"
         },
         "Weeb ToN2BGoN.gbot": {
@@ -1553,9 +1561,6 @@
             "Bluu YokaiRep Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Bluu_YokaiRep_Bot.gbot"
             },
-            "BoneDust TaintedGems Ninjatov 3.8Pro.gbot": {
-                "url": "https://adventurequest.life/bots/BoneDust_TaintedGems_Ninjatov_3.8Pro.gbot"
-            },
             "BrightParagon Ninjatov 3.8PP.gbot": {
                 "url": "https://adventurequest.life/bots/BrightParagon_Ninjatov_3.8PP.gbot"
             },
@@ -1696,9 +1701,6 @@
             },
             "King ShogunParagon LegionTokens.gbot": {
                 "url": "https://adventurequest.life/bots/King_ShogunParagon_LegionTokens.gbot"
-            },
-            "King Tainted Gem.gbot": {
-                "url": "https://adventurequest.life/bots/King_Tainted_Gem.gbot"
             },
             "KTV  Taryth.gbot": {
                 "url": "https://adventurequest.life/bots/KTV_-_Taryth.gbot"
@@ -1922,6 +1924,9 @@
             "Weeb Swindle Bulk.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Swindle_Bulk.gbot"
             },
+            "Weeb Swindle Bulk Fastest Tainted Gems.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Swindle_Bulk_Fastest_Tainted_Gems.gbot"
+            },
             "Weeb ToN2BGoN.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_ToN%2BGoN.gbot"
             },
@@ -1999,6 +2004,9 @@
             "Food Bunny Gold.gbot": {
                 "url": "https://adventurequest.life/bots/Food_Bunny_Gold.gbot"
             },
+            "Food Combat Trophy Kill Everything Followers Sorting.gbot": {
+                "url": "https://adventurequest.life/bots/Food_Combat_Trophy_Kill_Everything_Followers_Sorting.gbot"
+            },
             "Food NWNO NulgathBirthday FB.gbot": {
                 "url": "https://adventurequest.life/bots/Food_NWNO_NulgathBirthday_FB.gbot"
             },
@@ -2007,6 +2015,12 @@
             }
         },
         "jex": {
+            "Jex BdNWNO.gbot": {
+                "url": "https://adventurequest.life/bots/Jex_BdNWNO.gbot"
+            },
+            "Jex DroneNWNO.gbot": {
+                "url": "https://adventurequest.life/bots/Jex_DroneNWNO.gbot"
+            },
             "Jex ICskillset.rar": {
                 "url": "https://adventurequest.life/bots/Jex_ICskillset.rar"
             }
