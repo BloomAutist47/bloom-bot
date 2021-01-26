@@ -1,0 +1,1202 @@
+{
+    "Abyssal Angel":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Abyssal Angel's Shadow"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/abyssal-angel-ac"
+    },
+    "Alpha Omega":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Alpha DOOMmega"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/alpha-omega-non-legend"
+    },
+    "Alpha Pirate":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Pirate"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/alpha-pirate-class"
+    },
+    "Arachnomancer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/arachnomancer-non-ac"
+    },
+    "ArchPaladin":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/archpaladin-class-0-ac"
+    },
+    "Archfiend":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Legendary ArchFiend"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/archfiend"
+    },
+    "Artifact Hunter":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/artifact-hunter-class-ac"
+    },
+    "Barber":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/barber"
+    },
+    "Bard":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Troubador of Love"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/bard-class"
+    },
+    "BattleMage":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "BattleMage of Love",
+            "Dark BattleMage",
+            "Royal BattleMage"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/battlemage-class"
+    },
+    "BeastMaster":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/beastmaster-non-ac"
+    },
+    "Berserker":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Beta Berserker"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/berserker"
+    },
+    "BladeMaster":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "SwordMaster"
+        ],
+        "enh":"luck",
+        "note":"Thief for Dodge",
+        "wiki":"http://aqwwiki.wikidot.com/blademaster-ac"
+    },
+    "BladeMaster Assassin":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "SwordMaster Assassin"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/blademaster-assassin-class"
+    },
+    "Blaze Binder":{
+        "acronym":"http://aqwwiki.wikidot.com/blaze-binder-merge",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":""
+    },
+    "Blood Ancient":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/blood-ancient-merge"
+    },
+    "Blood Sorceresss":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/blood-sorceress"
+    },
+    "Blood Titan":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/blood-titan-legend"
+    },
+    "CardClasher":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/cardclasher-class"
+    },
+    "Chaos Shaper":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/chaos-shaper-class"
+    },
+    "Chaos Slayer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Chaos Champion Prime",
+            "Chaos Slayer Berserker",
+            "Chaos Slayer Cleric",
+            "Chaos Slayer Mystic",
+            "Chaos Slayer Thief",
+            "Dark Chaos Berserker"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/chaos-slayer-berserker-non-ac"
+    },
+    "Chrono Assassin":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "note":"Cape should  Thief",
+        "wiki":"http://aqwwiki.wikidot.com/chrono-assassin-merge"
+    },
+    "ChronoCommander":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/chronocommander"
+    },
+    "ChronoCorruptor":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/chronocorruptor"
+    },
+    "Chrono DragonKnight":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/chrono-dragonknight-class"
+    },
+    "Chunin":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/chunin-merge"
+    },
+    "Classic Alpha Pirate":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Classic Pirate"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/classic-alpha-pirate"
+    },
+    "Classic Barber":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/classic-barber"
+    },
+    "Classic Defender":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/classic-defender-1"
+    },
+    "Classic DoomKnight":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/classic-doomknight-non-ac"
+    },
+    "Classic DragonLord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/classic-dragonlord"
+    },
+    "Classic Guardian":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/classic-guardian"
+    },
+    "Classic Legion DoomKnight":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/classic-legion-doomknight-ac"
+    },
+    "Classic Paladin":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/classic-paladin-class"
+    },
+    "Classic Soul Cleaver":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Classic Exalted Soul Cleaver"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/classic-soul-cleaver"
+    },
+    "ClawSuit":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/clawsuit"
+    },
+    "Corrupted Chronomancer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/corrupted-chronomancer-class"
+    },
+    "Cryomancer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Dark Cryomancer",
+            "Sakura Cryomancer"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/cryomancer-merge"
+    },
+    "Daimon":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve or Mana Vamp",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "note":"Use Mana Vamp if in need of Mana.",
+        "wiki":"http://aqwwiki.wikidot.com/daimon-legend"
+    },
+    "Dark Metal Necro":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Heavy Metal Necro",
+            "Heavy Metal Rockstar",
+            "Shadow Ripper",
+            "Unchained Rockstar"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/dark-metal-necro"
+    },
+    "Darkblood StormKing":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/darkblood-stormking-non-ac"
+    },
+    "Darkside":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/darkside"
+    },
+    "DeathKnight":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"fighter",
+        "wiki":"http://aqwwiki.wikidot.com/deathknight-class-non-ac"
+    },
+    "DeathKnight Lord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/deathknight-lord-class-ac-1"
+    },
+    "Defender":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/defender-1"
+    },
+    "DoomKnight Overlord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/doomknight-overlord"
+    },
+    "Doomknight":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/doomknight-non-ac"
+    },
+    "Dragon Knight":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/dragon-knight-class"
+    },
+    "Dragon Shinobi":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Shadow Dragon Shinobi"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/dragon-shinobi-class-ac"
+    },
+    "Dragon of Time":{
+        "acronym":"DoT",
+        "awe_enh":"Health Vamp",
+        "duplicates":[
+            
+        ],
+        "enh":"healer",
+        "wiki":"http://aqwwiki.wikidot.com/dragon-of-time-class"
+    },
+    "DragonLord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/dragonlord-class"
+    },
+    "Dragonslayer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/dragonslayer-class"
+    },
+    "Dragonslayer General":{
+        "acronym":"DSG",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "ShadowFlame DragonLord"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/dragonslayer-general-class-merge"
+    },
+    "Drakel Warlord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/drakel-warlord-legend"
+    },
+    "Elemental Dracomancer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Love Caster"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/elemental-dracomancer-non-ac"
+    },
+    "Eternal Inversionist":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/eternal-inversionist-class-non-ac"
+    },
+    "Evolved ClawSuit":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Prismatic ClawSuit"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/evolved-clawsuit"
+    },
+    "Evolved Leprechaun":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/evolved-leprechaun-merge"
+    },
+    "Evolved Pumpkin Lord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend"
+    },
+    "Evolved Shaman":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/evolved-shaman-non-ac"
+    },
+    "Exalted Harbinger":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Soul Cleaver",
+            "Exalted Soul Cleaver",
+            "Dark Harbinger"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/exalted-harbinger"
+    },
+    "Flame Dragon Warrior":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/flame-dragon-warrior-class"
+    },
+    "Frostval Barbarian":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve or Awe Blast",
+        "duplicates":[
+            
+        ],
+        "enh":"fighter",
+        "note":"Use Awe Blast for Supporting",
+        "wiki":"http://aqwwiki.wikidot.com/frostval-barbarian-0-ac"
+    },
+    "Glacial Berserker":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Glacial Berserker Test"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/glacial-berserker-class-non-ac"
+    },
+    "Glacial Warlord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/glacial-warlord-class"
+    },
+    "Great Thief":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/great-thief"
+    },
+    "Grim Necromancer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/grim-necromancer-class"
+    },
+    "Guardian":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve ir Awe Blast",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "note":"Use Awe Blast for Soloing",
+        "wiki":""
+    },
+    "Healer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Acolyte",
+            "Healer (Rare)",
+            "Witch"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/healer"
+    },
+    "HighSeas Commander":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/highseas-commander"
+    },
+    "Horc Evader":{
+        "acronym":"",
+        "awe_enh":"Mana Vamp",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "note":"Thief for Dodge",
+        "wiki":"http://aqwwiki.wikidot.com/horc-evader-non-ac"
+    },
+    "Immortal Chronomancer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Eternal Chronomancer"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/immortal-chronomancer-class-ac"
+    },
+    "Immortal Dark Caster":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Dark Caster"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/immortal-dark-caster-class-0-ac"
+    },
+    "Infinite Dark Caster":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Evolved Dark Caster",
+            "Infinite Legion Dark Caster",
+            "Legion Evolved Dark Caster"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/infinite-dark-caster-ac"
+    },
+    "Infinity Knight":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/infinity-knight"
+    },
+    "Legendary Hero":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Dark Legendary Hero"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/legendary-hero-class"
+    },
+    "Legion BladeMaster Assassin":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Legion SwordMaster Assassin"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/legion-blademaster-assassin"
+    },
+    "Legion DoomKnight":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/legion-doomknight-class-ac"
+    },
+    "Legion Revenant":{
+        "acronym":"LR",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Legion Revenant Member Test"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/legion-revenant-class"
+    },
+    "Leprechaun":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/leprechaun"
+    },
+    "LightCaster":{
+        "acronym":"LC",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/lightcaster-class"
+    },
+    "LightMage":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/lightmage"
+    },
+    "Lord of Order":{
+        "acronym":"LoO",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/lord-of-order-quest"
+    },
+    "Lycan":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/lycan-class-non-ac"
+    },
+    "Mage":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Mage (Rare)",
+            "LightCaster Test",
+            "Sorcerer"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/mage"
+    },
+    "Master Ranger":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Ranger"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/master-ranger"
+    },
+    "Master of Moglins":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Dark Master of Moglins"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/master-of-moglins-class-2"
+    },
+    "Mechajouster":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/mechajouster"
+    },
+    "MindBreaker":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/mindbreaker"
+    },
+    "NOT A MOD":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/not-a-mod"
+    },
+    "Naval Commander":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Heroic Naval Commander",
+            "Legendary Naval Commander"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/naval-commander-class"
+    },
+    "Necromancer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Pinkomancer"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/necromancer-merge"
+    },
+    "No Class":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Obsidian No Class",
+            "Hobo Highlord"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/no-class"
+    },
+    "Northlands Monk":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/northlands-monk-class-free-player"
+    },
+    "Nu Metal Necro":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Grunge Rocker",
+            "Shadow Rocker",
+            "Unchained Rocker"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/nu-metal-necro-1"
+    },
+    "Oracle":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/oracle"
+    },
+    "Paladin":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Silver Paladin"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/paladin-class"
+    },
+    "Paladin High Lord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/paladin-high-lord"
+    },
+    "PaladinSlayer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/paladinslayer"
+    },
+    "Pirate":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/pirate"
+    },
+    "Pumpkin Lord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/pumpkin-lord"
+    },
+    "Pyromancer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Pink Romancer"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/pyromancer-class-ac"
+    },
+    "Rogue":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Renegade",
+            "Rogue (Rare)"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/rogue"
+    },
+    "Rustbucket":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Enforcer",
+            "ProtoSartorium"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/rustbucket"
+    },
+    "Scarlet Sorceress":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/scarlet-sorceress-class-ac"
+    },
+    "Sentinel":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/sentinel"
+    },
+    "ShadowScythe General":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/shadowscythe-general-class-merge"
+    },
+    "ShadowStalker of Time":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "ShadowWalker of Time"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/shadowstalker-of-time-class"
+    },
+    "Shaman":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve or Mana Vamp",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/shaman"
+    },
+    "SkyCharged Grenadier":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/skycharged-grenadier"
+    },
+    "SkyGuard Grenadier":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/skyguard-grenadier-ac"
+    },
+    "Star Captain":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/star-captain"
+    },
+    "StarLord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/starlord"
+    },
+    "StoneCrusher":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/stonecrusher-merge"
+    },
+    "The Collector":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/the-collector-class-0-ac"
+    },
+    "Thief of Hours":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/thief-of-hours-non-ac"
+    },
+    "TimeKiller":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/timekiller"
+    },
+    "Timeless Dark Caster":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Arcane Dark Caster",
+            "Mystical Dark Caster"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/timeless-dark-caster-ac"
+    },
+    "Troll Spellsmith":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/troll-spellsmith-non-ac"
+    },
+    "Ultra Elemental Warrior":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Legendary Elemental Warrior"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/ultra-elemental-warrior"
+    },
+    "Ultra OmniKnight":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Dark Ultra OmniNight"
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/ultra-omniknight-merge"
+    },
+    "Undead Goat":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/undead-goat"
+    },
+    "UndeadSlayer":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/undeadslayer-ac"
+    },
+    "Unlucky Leprechaun":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Undead Leperchaun"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/unlucky-leperchaun-ac"
+    },
+    "Vampire Lord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Enchanted Vampire Lord",
+            "Royal Vampire Lord",
+            "Vampire"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/vampire-lord-class-ac"
+    },
+    "Vindicator of They":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"wizard",
+        "wiki":"http://aqwwiki.wikidot.com/vindicator-of-they-merge"
+    },
+    "Void Highlord":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/void-highlord-class-1"
+    },
+    "Warrior":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            "Warlord",
+            "Warrior (Rare)",
+            "Beast Warrior",
+            "WarriorScythe General",
+            "Cryomancer Mini Pet Coming Soon",
+            "Void Highlord Tester"
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/warrior-class"
+    },
+    "Yami no Ronin":{
+        "acronym":"",
+        "awe_enh":"Spiral Carve",
+        "duplicates":[
+            
+        ],
+        "enh":"luck",
+        "wiki":"http://aqwwiki.wikidot.com/yami-no-ronin-class"
+    }
+}
