@@ -62,12 +62,14 @@ class BloomBot(commands.Cog):
             self.GIT_USER = os.getenv('GITHUB_USERNAME')
             self.GIT_BLOOM_TOKEN = os.getenv('GITHUB_BLOOMBOT_TOKEN')
             self.PERMISSIONS = os.getenv("PRIVILEGED_ROLE").split(',')
+            self.PORTAL_AGENT = os.getenv('PORTAL_AGENT')
         else:              # Heroku
             self.DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
             self.GIT_REPOS = os.environ.get('GITHUB_REPOS')
             self.GIT_USER = os.environ.get('GITHUB_USERNAME')
             self.GIT_BLOOM_TOKEN = os.environ.get('GITHUB_BLOOMBOT_TOKEN')
             self.PERMISSIONS = os.environ.get("PRIVILEGED_ROLE").split(',')
+            self.PORTAL_AGENT = os.environ.get("PORTAL_AGENT")
 
     def database_update(self, mode: str):
         """Description: Updates the database.json
@@ -85,7 +87,7 @@ class BloomBot(commands.Cog):
             try:
 
                 headers = {
-                    'User-Agent': 'BYPASSED_UAM_PLEASE_ARTIX_DONT_FIGURE_THIS_OUT',
+                    'User-Agent': self.PORTAL_AGENT
                 }
                 row = []
                 html = requests.get(self.url, headers=headers).text
@@ -573,9 +575,8 @@ class BloomBot(commands.Cog):
             enh = found_data[1]["enh"].capitalize()
             awe = found_data[1]["awe_enh"].capitalize()
             wiki = found_data[1]["wiki"].capitalize()
-            try:
+            if "note" in found_data[1]:
                 note = found_data[1]["note"].capitalize()
-            except: pass
 
             desc = f"```autohotkey\n[Enchancement]: {enh}\n[Awe Enchant]: {awe}\n"
             try:
