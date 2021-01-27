@@ -558,8 +558,8 @@ class BloomBot(commands.Cog):
 
         if not author_removed:
             await ctx.send(f"\> No author of name `{author_name}` found in the confirmed list.")
+            self.database_updating = False
             return
-        pprint(self.settings["confirmed_authors"])
         await ctx.send(r"\> Saving Bloom Bot.")
         self.git_save()
         await ctx.send(r"\> Updating Bloom Bot")
@@ -753,11 +753,9 @@ class BloomBot(commands.Cog):
         done = []
         for author in bot_results:
             target = self.chunks_list(bot_results[author], 45)
-            # print("Author:", author)
             counts["item"] = 0
             for bot_chunk in target:
                 bot_list = ""
-                # pprint(bot_chunk)
                 for items in bot_chunk:
                     if counts["total"] == 40:
                         counts["total"] = 0
