@@ -164,6 +164,10 @@
             "url": "https://adventurequest.life/bots/Arts_EmberseaREP_QL_PS_Bot.gbot",
             "author": "arts"
         },
+        "Eternal REP QL Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_Eternal_REP_QL_Bot.gbot",
+            "author": "arts"
+        },
         "EvolvedLegacyofNulgath Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_EvolvedLegacyofNulgath_Bot.gbot",
             "author": "arts"
@@ -1044,6 +1048,10 @@
             "url": "https://adventurequest.life/bots/Weeb_MEM_Yokai_REP.gbot",
             "author": "weeb"
         },
+        "Mounted Paragon Pet.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Mounted_Paragon_Pet.gbot",
+            "author": "weeb"
+        },
         "Mysterious Chest 7DD.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Mysterious_Chest_7DD.gbot",
             "author": "weeb"
@@ -1389,6 +1397,9 @@
             },
             "EmberseaREP QL PS Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_EmberseaREP_QL_PS_Bot.gbot"
+            },
+            "Eternal REP QL Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_Eternal_REP_QL_Bot.gbot"
             },
             "EvolvedLegacyofNulgath Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_EvolvedLegacyofNulgath_Bot.gbot"
@@ -1985,6 +1996,9 @@
             },
             "MEM Yokai REP.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_MEM_Yokai_REP.gbot"
+            },
+            "Mounted Paragon Pet.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Mounted_Paragon_Pet.gbot"
             },
             "Mysterious Chest 7DD.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Mysterious_Chest_7DD.gbot"
