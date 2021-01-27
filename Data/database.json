@@ -232,13 +232,13 @@
             "url": "https://adventurequest.life/bots/Arts_LycanRep_Bot.gbot",
             "author": "arts"
         },
-        "Mind BreakingItInREP Bot.gbot": {
+        "Arts Mind BreaItInREP Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_Mind-BreakingItInREP_Bot.gbot",
-            "author": "arts"
+            "author": "archon"
         },
-        "Mind BreakingItIn Bot.gbot": {
+        "Arts Mind BreaItIn Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_Mind-BreakingItIn_Bot.gbot",
-            "author": "arts"
+            "author": "archon"
         },
         "MonsterHunterREP Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_MonsterHunterREP_Bot.gbot",
@@ -400,13 +400,13 @@
             "url": "https://adventurequest.life/bots/Arts_ZorbakBirthdayMerge_Bot.gbot",
             "author": "arts"
         },
-        "Attacking Mule Non-Mem SC.gbot": {
+        "Attac Mule Non-Mem SC.gbot": {
             "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC.gbot",
-            "author": "unknown"
+            "author": "archon"
         },
-        "Attacking Mule Non-Mem SC P.gbot": {
+        "Attac Mule Non-Mem SC P.gbot": {
             "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC_P.gbot",
-            "author": "unknown"
+            "author": "archon"
         },
         "BattlegroundE Gold.gbot": {
             "url": "https://adventurequest.life/bots/BattlegroundE_Gold_Ninjatov.gbot",
@@ -726,67 +726,67 @@
         },
         "NecroticCollection.zip": {
             "url": "https://adventurequest.life/bots/KingNecroticCollection.zip",
-            "author": "king"
+            "author": "archon"
         },
         "BlindingCollection.zip": {
             "url": "https://adventurequest.life/bots/King_BlindingCollection.zip",
-            "author": "king"
+            "author": "archon"
         },
         "DiamondofNully.gbot": {
             "url": "https://adventurequest.life/bots/King_DiamondofNully.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "DiamondofNullyNONMEM.gbot": {
             "url": "https://adventurequest.life/bots/King_DiamondofNullyNONMEM.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "DreamersEvent.gbot": {
             "url": "https://adventurequest.life/bots/King_DreamersEvent.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "DreamersEventBoss.gbot": {
             "url": "https://adventurequest.life/bots/King_DreamersEventBoss.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "DreamsNacht.gbot": {
             "url": "https://adventurequest.life/bots/King_DreamsNacht.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "EmblemofDage.gbot": {
             "url": "https://adventurequest.life/bots/King_EmblemofDage.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "EmblemOfNully.gbot": {
             "url": "https://adventurequest.life/bots/King_EmblemOfNully.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "FavorApproval.gbot": {
             "url": "https://adventurequest.life/bots/King_FavorApproval.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "FirstClassEntertainment LegionTokens.gbot": {
             "url": "https://adventurequest.life/bots/King_FirstClassEntertainment_LegionTokens.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "FreshSoul.gbot": {
             "url": "https://adventurequest.life/bots/King_FreshSoul.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "GemTotem.gbot": {
             "url": "https://adventurequest.life/bots/King_GemTotem.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "HollowbornBoss.gbot": {
             "url": "https://adventurequest.life/bots/King_HollowbornBoss.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "HollowbornEvent.gbot": {
             "url": "https://adventurequest.life/bots/King_HollowbornEvent.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "ShogunParagon LegionTokens.gbot": {
             "url": "https://adventurequest.life/bots/King_ShogunParagon_LegionTokens.gbot",
-            "author": "king"
+            "author": "archon"
         },
         "KTV .gbot": {
             "url": "https://adventurequest.life/bots/KTV_-_Taryth.gbot",
@@ -1161,12 +1161,6 @@
             "ArchPaladin MEMBER ONLY.rar": {
                 "url": "https://adventurequest.life/bots/ArchPaladin_MEMBER-ONLY.rar"
             },
-            "Attacking Mule Non-Mem SC.gbot": {
-                "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC.gbot"
-            },
-            "Attacking Mule Non-Mem SC P.gbot": {
-                "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC_P.gbot"
-            },
             "Battlegrounde X Assistant.gbot": {
                 "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot"
             },
@@ -1228,6 +1222,66 @@
             },
             "HBPaladin.gbot": {
                 "url": "https://adventurequest.life/bots/Archon_HBPaladin.gbot"
+            },
+            "Arts Mind BreaItInREP Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_Mind-BreakingItInREP_Bot.gbot"
+            },
+            "Arts Mind BreaItIn Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_Mind-BreakingItIn_Bot.gbot"
+            },
+            "Attac Mule Non-Mem SC.gbot": {
+                "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC.gbot"
+            },
+            "Attac Mule Non-Mem SC P.gbot": {
+                "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC_P.gbot"
+            },
+            "NecroticCollection.zip": {
+                "url": "https://adventurequest.life/bots/KingNecroticCollection.zip"
+            },
+            "BlindingCollection.zip": {
+                "url": "https://adventurequest.life/bots/King_BlindingCollection.zip"
+            },
+            "DiamondofNully.gbot": {
+                "url": "https://adventurequest.life/bots/King_DiamondofNully.gbot"
+            },
+            "DiamondofNullyNONMEM.gbot": {
+                "url": "https://adventurequest.life/bots/King_DiamondofNullyNONMEM.gbot"
+            },
+            "DreamersEvent.gbot": {
+                "url": "https://adventurequest.life/bots/King_DreamersEvent.gbot"
+            },
+            "DreamersEventBoss.gbot": {
+                "url": "https://adventurequest.life/bots/King_DreamersEventBoss.gbot"
+            },
+            "DreamsNacht.gbot": {
+                "url": "https://adventurequest.life/bots/King_DreamsNacht.gbot"
+            },
+            "EmblemofDage.gbot": {
+                "url": "https://adventurequest.life/bots/King_EmblemofDage.gbot"
+            },
+            "EmblemOfNully.gbot": {
+                "url": "https://adventurequest.life/bots/King_EmblemOfNully.gbot"
+            },
+            "FavorApproval.gbot": {
+                "url": "https://adventurequest.life/bots/King_FavorApproval.gbot"
+            },
+            "FirstClassEntertainment LegionTokens.gbot": {
+                "url": "https://adventurequest.life/bots/King_FirstClassEntertainment_LegionTokens.gbot"
+            },
+            "FreshSoul.gbot": {
+                "url": "https://adventurequest.life/bots/King_FreshSoul.gbot"
+            },
+            "GemTotem.gbot": {
+                "url": "https://adventurequest.life/bots/King_GemTotem.gbot"
+            },
+            "HollowbornBoss.gbot": {
+                "url": "https://adventurequest.life/bots/King_HollowbornBoss.gbot"
+            },
+            "HollowbornEvent.gbot": {
+                "url": "https://adventurequest.life/bots/King_HollowbornEvent.gbot"
+            },
+            "ShogunParagon LegionTokens.gbot": {
+                "url": "https://adventurequest.life/bots/King_ShogunParagon_LegionTokens.gbot"
             }
         },
         "arts": {
@@ -1386,12 +1440,6 @@
             },
             "LycanRep Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_LycanRep_Bot.gbot"
-            },
-            "Mind BreakingItInREP Bot.gbot": {
-                "url": "https://adventurequest.life/bots/Arts_Mind-BreakingItInREP_Bot.gbot"
-            },
-            "Mind BreakingItIn Bot.gbot": {
-                "url": "https://adventurequest.life/bots/Arts_Mind-BreakingItIn_Bot.gbot"
             },
             "MonsterHunterREP Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_MonsterHunterREP_Bot.gbot"
@@ -1775,56 +1823,6 @@
             },
             "Weebluurts Uni34 NoDrone NoCrag NoOBoN.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Weebluurts_Uni34__NoDrone_NoCrag_NoOBoN.gbot"
-            }
-        },
-        "king": {
-            "NecroticCollection.zip": {
-                "url": "https://adventurequest.life/bots/KingNecroticCollection.zip"
-            },
-            "BlindingCollection.zip": {
-                "url": "https://adventurequest.life/bots/King_BlindingCollection.zip"
-            },
-            "DiamondofNully.gbot": {
-                "url": "https://adventurequest.life/bots/King_DiamondofNully.gbot"
-            },
-            "DiamondofNullyNONMEM.gbot": {
-                "url": "https://adventurequest.life/bots/King_DiamondofNullyNONMEM.gbot"
-            },
-            "DreamersEvent.gbot": {
-                "url": "https://adventurequest.life/bots/King_DreamersEvent.gbot"
-            },
-            "DreamersEventBoss.gbot": {
-                "url": "https://adventurequest.life/bots/King_DreamersEventBoss.gbot"
-            },
-            "DreamsNacht.gbot": {
-                "url": "https://adventurequest.life/bots/King_DreamsNacht.gbot"
-            },
-            "EmblemofDage.gbot": {
-                "url": "https://adventurequest.life/bots/King_EmblemofDage.gbot"
-            },
-            "EmblemOfNully.gbot": {
-                "url": "https://adventurequest.life/bots/King_EmblemOfNully.gbot"
-            },
-            "FavorApproval.gbot": {
-                "url": "https://adventurequest.life/bots/King_FavorApproval.gbot"
-            },
-            "FirstClassEntertainment LegionTokens.gbot": {
-                "url": "https://adventurequest.life/bots/King_FirstClassEntertainment_LegionTokens.gbot"
-            },
-            "FreshSoul.gbot": {
-                "url": "https://adventurequest.life/bots/King_FreshSoul.gbot"
-            },
-            "GemTotem.gbot": {
-                "url": "https://adventurequest.life/bots/King_GemTotem.gbot"
-            },
-            "HollowbornBoss.gbot": {
-                "url": "https://adventurequest.life/bots/King_HollowbornBoss.gbot"
-            },
-            "HollowbornEvent.gbot": {
-                "url": "https://adventurequest.life/bots/King_HollowbornEvent.gbot"
-            },
-            "ShogunParagon LegionTokens.gbot": {
-                "url": "https://adventurequest.life/bots/King_ShogunParagon_LegionTokens.gbot"
             }
         },
         "minaaaaaa": {
