@@ -569,10 +569,15 @@ class BloomBot(commands.Cog):
         found_class = result[0]
         found_data = result[1]
 
+        if class_name=="":
+            desc = f"Please input a valid class name. "
+            await ctx.send(embed=self.embed_single("Class Search Result", desc))
+            return
+
         if not found_class and not found_data:
             desc = f"No class matches your search word `{class_name}`. Please type exact class names. "
             await ctx.send(embed=self.embed_single("Class Search Result", desc))
-            return False
+            return
         if found_class and found_data:
             enh = found_data[1]["enh"].capitalize()
             awe = found_data[1]["awe_enh"].capitalize()
