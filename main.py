@@ -500,7 +500,7 @@ class BloomBot(commands.Cog):
 
         # All bot_author var is empty. Sends list of all authors.
         if bot_author == "":
-            author_count = round((len(self.settings["confirmed_authors"].keys())/3))
+            author_count = m.ceil((len(self.settings["confirmed_authors"].keys())/3))
             bot_list = [author.lower() for author in self.settings["confirmed_authors"]]
             desc ='List of all verified bot authors.'
             embedVar = self.embed_multi_text("Bot Author Result", "Author", desc, bot_list, author_count, False)
