@@ -15,7 +15,7 @@ import re
 import copy
 import requests
 import github3
-import time
+import math as m
 
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
@@ -500,9 +500,10 @@ class BloomBot(commands.Cog):
 
         # All bot_author var is empty. Sends list of all authors.
         if bot_author == "":
+            author_count = round((len(self.settings["confirmed_authors"].keys())/3))
             bot_list = [author.lower() for author in self.settings["confirmed_authors"]]
             desc ='List of all verified bot authors.'
-            embedVar = self.embed_multi_text("Bot Author Result", "Author", desc, bot_list, 10, False)
+            embedVar = self.embed_multi_text("Bot Author Result", "Author", desc, bot_list, author_count, False)
             note_desc = "Some bots have unknown authors or were still not \nmanually listed in the "\
                         "confirmed list. To check bots with \nunknown authors, use command `;a u`."
             embedVar.add_field(name="Note:", value=note_desc, inline=True)
@@ -550,7 +551,8 @@ class BloomBot(commands.Cog):
             # No exact author found but gives suggestions.
             if bot_list and not found_author:
                 desc = f"Nothing came up with search key `{bot_author}`.\nMaybe one of these authors?."
-                embedVar = self.embed_multi_text("Bot Author Result", "Author", desc, bot_list, 7, False)
+                author_count = round((len(self.settings["confirmed_authors"].keys())/3))
+                embedVar = self.embed_multi_text("Bot Author Result", "Author", desc, bot_list, author_count, False)
                 await ctx.send(embed=embedVar)
             return
 
