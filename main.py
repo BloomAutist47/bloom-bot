@@ -45,6 +45,7 @@ class BloomBot(commands.Cog):
         self.sets = {}
         self.priveleged_roles = []
         self.mode = ""
+        self.author_list_lowercase = []
 
         self.github = github3.login(token=self.GIT_BLOOM_TOKEN)
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
@@ -212,6 +213,12 @@ class BloomBot(commands.Cog):
             if self.settings["priveleged_roles"][role] == 1:
                 self.priveleged_roles.append(role)
 
+        self.author_list_lowercase = []
+        for author in self.settings["confirmed_authors"]:
+            self.author_list_lowercase.append(author.lower())
+            for alias in self.settings["confirmed_authors"][author]["alias"]:
+                self.author_list_lowercase.append(alias.lower())
+
     def file_save(self):
         """Description: Saves data to pre-saved .json files"""
         with open('./Data/database.json', 'w', encoding='utf-8') as f:
@@ -252,6 +259,13 @@ class BloomBot(commands.Cog):
         for role in self.settings["priveleged_roles"]:
             if self.settings["priveleged_roles"][role] == 1:
                 self.priveleged_roles.append(role)
+
+        self.author_list_lowercase = []
+        for author in self.settings["confirmed_authors"]:
+            self.author_list_lowercase.append(author.lower())
+            for alias in self.settings["confirmed_authors"][author]["alias"]:
+                self.author_list_lowercase.append(alias.lower())
+                
 
         # Saving
         self.file_save()
@@ -457,7 +471,7 @@ class BloomBot(commands.Cog):
         
 
     @commands.command()
-    async def verify(self, ctx, author_name, author_id, brief='Author Verification command'):
+    async def verify(self, ctx, author_name="", author_id="", brief='Author Verification command'):
         permissions_check = await self.check_permissions(ctx, "verify author")
         if not permissions_check:
             return
@@ -467,20 +481,38 @@ class BloomBot(commands.Cog):
             await ctx.send(f"\> User {ctx.author} does not have permissions for `;verify author @author` command.\n")
             return
 
+        if not author_name:
+            await ctx.send(f"\> Please input valid author name to verify.")
+            return
+
+        if author_name.lower() in self.author_list_lowercase:
+            await ctx.send(f"\> Author `{author_name}` already verified.")
+            return
+
         if self.database_updating:
             await ctx.send(r"\> Bloom Bot update in progress.")
             return
 
         self.database_updating = True
-        author_id = re.sub("<|>|!|@","", author_id)
+        if author_id != "":
+            try:
+                author_id = re.sub("<|>|!|@","", author_id)
+            except:
+                await ctx.send(r"\> Please input valid author ID.")
+                return
         
+
+        author_name = author_name.capitalize()
         self.settings["confirmed_authors"][author_name] = {}
         try:
             self.settings["confirmed_authors"][author_name]["alias"].append(author_name)
         except:
             self.settings["confirmed_authors"][author_name]["alias"] = []
             self.settings["confirmed_authors"][author_name]["alias"].append(author_name)
-        self.settings["confirmed_authors"][author_name]["id"] = author_id
+        if x:
+            self.settings["confirmed_authors"][author_name]["id"] = author_id
+        else:
+            self.settings["confirmed_authors"][author_name]["id"] = ""
         await ctx.send(r"\> Saving Bloom Bot.")
         self.git_save()
         await ctx.send(r"\> Updating Bloom Bot")
@@ -491,7 +523,7 @@ class BloomBot(commands.Cog):
                 
 
     @commands.command()
-    async def unverify(self, ctx, author_name, brief='Author Removal command'):
+    async def unverify(self, ctx, author_name="", brief='Author Removal command'):
         permissions_check = await self.check_permissions(ctx, "verify author")
         if not permissions_check:
             return
@@ -499,6 +531,10 @@ class BloomBot(commands.Cog):
         priveleged = await self.check_privilege(ctx, "unverify author")
         if not priveleged:
             await ctx.send(f"\> User {ctx.author} does not have permissions for `;unverify author` command.\n")
+            return
+
+        if not author_name:
+            await ctx.send(f"\> Please input valid author name to unverify.")
             return
 
         if self.database_updating:
@@ -521,7 +557,7 @@ class BloomBot(commands.Cog):
                 break
 
         if not author_removed:
-            await ctx.send(f"\> No author of name {author_name} found in the confirmed list.")
+            await ctx.send(f"\> No author of name `{author_name}` found in the confirmed list.")
             return
         pprint(self.settings["confirmed_authors"])
         await ctx.send(r"\> Saving Bloom Bot.")
@@ -530,6 +566,15 @@ class BloomBot(commands.Cog):
         self.database_update("web")
         await ctx.send(r"\> Bloom Bot updated. Author Successfully removed!")
         self.database_updating = False
+        return
+
+    @commands.command()
+    async def git(self, ctx):
+        permissions_check = await self.check_permissions(ctx, "git")
+        if not permissions_check:
+            return
+
+        await ctx.send("https://github.com/BloomAutist47/bloom-bot/")
         return
 
     @commands.command()
@@ -581,7 +626,7 @@ class BloomBot(commands.Cog):
         # All bot_author var is empty. Sends list of all authors.
         if bot_author == "":
             author_count = m.ceil((len(self.settings["confirmed_authors"].keys())/3))
-            bot_list = [author.lower() for author in self.settings["confirmed_authors"]]
+            bot_list = sorted([author.lower() for author in self.settings["confirmed_authors"]])
             desc ='List of all verified bot authors.'
             embedVar = self.embed_multi_text("Bot Author Result", "Author", desc, bot_list, author_count, False)
             note_desc = "Some bots have unknown authors or were still not \nmanually listed in the "\
@@ -593,7 +638,9 @@ class BloomBot(commands.Cog):
         # Checks if using author id
         if "<@!" in bot_author:
             bot_author = await self.check_author_id(ctx, bot_author)
-            if not check_author:
+            if not bot_author:
+                desc = f"No author with id `{bot_list[0]}`."
+                await ctx.send(embed=self.embed_single("Bot Author Result", desc))
                 return
 
         # Checks if author is unknown
