@@ -521,7 +521,7 @@ class BloomBot(commands.Cog):
         
 
     @commands.command()
-    async def bloom_verify(self, ctx, author_name="", brief='Author Verification command'):
+    async def bverify(self, ctx, author_name="", brief='Author Verification command'):
         permissions_check = await self.check_permissions(ctx, "verify author")
         if not permissions_check:
             return
@@ -577,7 +577,7 @@ class BloomBot(commands.Cog):
                 
 
     @commands.command()
-    async def bloom_unverify(self, ctx, author_name="", brief='Author Removal command'):
+    async def bunverify(self, ctx, author_name="", brief='Author Removal command'):
         permissions_check = await self.check_permissions(ctx, "verify author")
         if not permissions_check:
             return
