@@ -32,11 +32,11 @@ class BloomBot(commands.Cog):
     def __init__(self, bot):
         self.setup()
         self.command_description_lists()
-        self.database_update("web")
+        # self.database_update("web")
         self.bot = bot
         self.block_color = 3066993
         self.database_updating = False
-        
+        self.bot.remove_command("help")
 
     def setup(self):
         self.env_variables()
@@ -447,6 +447,41 @@ class BloomBot(commands.Cog):
             return None
 
     @commands.command()
+    async def bhelp(self, ctx):
+        embedVar = discord.Embed(title="Bloom Help", color=self.block_color,
+            description="The following are a list of all commands and "\
+                        "how to use them. These commands must be used "\
+                        "in the #bot-search channel."\
+                        "Please ping @Bloom Bot Developer if something goes wrong with @Bloom Bot.")
+        embedVar.add_field(name="\u200b", inline=False,
+            value="————————  Commands For Everyone  ————————")
+        embedVar.add_field(name="`;bhelp`", inline=False,
+            value="Reveals the help embed, showing all commands")
+        embedVar.add_field(name="`;b bot_name`", inline=False,
+            value="Searches a bot. Keywords must be letters with atleast 3 characters "\
+                  "or numbers with at least 2 digits.")
+        embedVar.add_field(name="`;b author`", inline=False,
+            value="Searches the bots made by a particular author.")
+        embedVar.add_field(name="`;c class_name`", inline=False,
+            value="Returns the class and awe enhancement of searched class name.")
+        embedVar.add_field(name="\u200b", inline=False,
+            value="————————  Commands For Priviledge  ————————")
+        embedVar.add_field(name="`;bverify author`", inline=False,
+            value="Verifies an author name so the Bloom Command ;b author can "\
+                  "recognize their bots.")
+        embedVar.add_field(name="`;bunverify author`", inline=False,
+            value="Unverifies an author name, removing their bot name recognition")
+
+        embedVar.add_field(name="**Lists of Priviledged Roles**", inline=False,
+            value="Admin, Staff, Helper, Trial Helper, Verified Bot Makers")
+        embedVar.add_field(name="**Note:**", inline=False,
+            value="\"Heil Gravelyn!\" -Bloom Autist")
+        embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/802986034538610708/804373863650558022/Gravelyn.png")
+
+        await ctx.send(embed=embedVar)
+        return
+
+    @commands.command()
     async def update(self, ctx, value: str=""):
         permissions_check = await self.check_permissions(ctx, "update")
         if not permissions_check:
@@ -486,7 +521,7 @@ class BloomBot(commands.Cog):
         
 
     @commands.command()
-    async def verify(self, ctx, author_name="", author_id="", brief='Author Verification command'):
+    async def bloom_verify(self, ctx, author_name="", brief='Author Verification command'):
         permissions_check = await self.check_permissions(ctx, "verify author")
         if not permissions_check:
             return
@@ -498,6 +533,10 @@ class BloomBot(commands.Cog):
 
         if not author_name:
             await ctx.send(f"\> Please input valid author name to verify.")
+            return
+
+        if "<@!" in author_name:
+            await ctx.send(f"\> Please input author name and not id.\ni.e. don't use the fucking \"@author\"")
             return
 
         if author_name.lower() in self.author_list_lowercase:
@@ -538,7 +577,7 @@ class BloomBot(commands.Cog):
                 
 
     @commands.command()
-    async def unverify(self, ctx, author_name="", brief='Author Removal command'):
+    async def bloom_unverify(self, ctx, author_name="", brief='Author Removal command'):
         permissions_check = await self.check_permissions(ctx, "verify author")
         if not permissions_check:
             return
@@ -741,6 +780,7 @@ class BloomBot(commands.Cog):
             embedVar = self.embed_multi_text(command_title, "Classes", desc, found_data, 10, False)
             await ctx.send(embed=embedVar)
             return
+
 
 
     def embed_single(self, title, description):
