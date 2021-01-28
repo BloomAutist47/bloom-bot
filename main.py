@@ -403,12 +403,17 @@ class BloomBot(commands.Cog):
 
         word_value = value.split(" ")
         for word in word_value:
-            if word.isdigit():
+            if word.isdigit() and len(word) != 1:
                 return True
+            if word.isdigit() and len(word) == 1:
+                desc = "Your search entries must have `at least 3 letters`. \n"\
+                       "Or it must be a number of `length greater than 1`."
+                await ctx.send(embed=self.embed_single("Warning", desc)) 
+                return False
         for word in word_value:
             if len(word) < 3:
-                desc = "Your search entries must have at least 3 letters. \n"\
-                       "Or it must be a number of any length."
+                desc = "Your search entries must have `at least 3 letters`. \n"\
+                       "Or it must be a number of `length greater than 1`."
                 await ctx.send(embed=self.embed_single("Warning", desc)) 
                 return False
         return True
