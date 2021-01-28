@@ -12,7 +12,9 @@
     "latest_update": "web",
     "banned_words": [
         "bot",
-        "gbot"
+        "gbot",
+        ".gbot",
+        "gbo"
     ],
     "confirmed_authors": {
         "Archon": {
