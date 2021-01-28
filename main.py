@@ -456,12 +456,16 @@ class BloomBot(commands.Cog):
         embedVar.add_field(name="\u200b", inline=False,
             value="————————  Commands For Everyone  ————————")
         embedVar.add_field(name="`;bhelp`", inline=False,
-            value="Reveals the help embed, showing all commands")
+            value="Reveals the help embed, showing all commands.")
         embedVar.add_field(name="`;b bot_name`", inline=False,
             value="Searches a bot. Keywords must be letters with atleast 3 characters "\
                   "or numbers with at least 2 digits.")
-        embedVar.add_field(name="`;b author`", inline=False,
+        embedVar.add_field(name="`;a author`", inline=False,
             value="Searches the bots made by a particular author.")
+        embedVar.add_field(name="`;a`", inline=False,
+            value="Shows a list of all bot authors.")
+        embedVar.add_field(name="`;a u`", inline=False,
+            value="Shows a list of all bots with unidentified authors.")
         embedVar.add_field(name="`;c class_name`", inline=False,
             value="Returns the class and awe enhancement of searched class name.")
         embedVar.add_field(name="\u200b", inline=False,
