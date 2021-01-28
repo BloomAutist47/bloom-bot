@@ -535,9 +535,9 @@ class BloomBot(commands.Cog):
             await ctx.send(f"\> Please input valid author name to verify.")
             return
 
-        if "<@!" in author_name:
-            await ctx.send(f"\> Please input author name and not id.\ni.e. don't use the fucking \"@author\"")
-            return
+        # if "<@!" in author_name:
+        #     await ctx.send(f"\> Please input author name and not id.\ni.e. don't use the fucking \"@author\"")
+        #     return
 
         if author_name.lower() in self.author_list_lowercase:
             await ctx.send(f"\> Author `{author_name}` already verified.")
@@ -548,12 +548,12 @@ class BloomBot(commands.Cog):
             return
 
         self.database_updating = True
-        if author_id != "":
-            try:
-                author_id = re.sub("<|>|!|@","", author_id)
-            except:
-                await ctx.send(r"\> Please input valid author ID.")
-                return
+        # if author_id != "":
+        #     try:
+        #         author_id = re.sub("<|>|!|@","", author_id)
+        #     except:
+        #         await ctx.send(r"\> Please input valid author ID.")
+        #         return
         
 
         author_name = author_name.capitalize()
@@ -563,10 +563,10 @@ class BloomBot(commands.Cog):
         except:
             self.settings["confirmed_authors"][author_name]["alias"] = []
             self.settings["confirmed_authors"][author_name]["alias"].append(author_name)
-        if x:
-            self.settings["confirmed_authors"][author_name]["id"] = author_id
-        else:
-            self.settings["confirmed_authors"][author_name]["id"] = ""
+        # if x:
+        #     self.settings["confirmed_authors"][author_name]["id"] = author_id
+        # else:
+        #     self.settings["confirmed_authors"][author_name]["id"] = ""
         await ctx.send(r"\> Saving Bloom Bot.")
         self.git_save()
         await ctx.send(r"\> Updating Bloom Bot")
