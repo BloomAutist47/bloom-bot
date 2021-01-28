@@ -451,8 +451,8 @@ class BloomBot(commands.Cog):
         embedVar = discord.Embed(title="Bloom Help", color=self.block_color,
             description="The following are a list of all commands and "\
                         "how to use them. These commands must be used "\
-                        "in the #bot-search channel."\
-                        "Please ping @Bloom Bot Developer if something goes wrong with @Bloom Bot.")
+                        "in the <#802082388451655691> channel. "\
+                        "Please ping <@&802475195226390589> if something goes wrong with Bloom Bot.")
         embedVar.add_field(name="\u200b", inline=False,
             value="————————  Commands For Everyone  ————————")
         embedVar.add_field(name="`;bhelp`", inline=False,
