@@ -394,9 +394,10 @@ class BloomBot(commands.Cog):
             await ctx.send(embed=self.embed_single("Warning", "Please input a value to search.")) 
             return False
 
-        if value.lower() in self.settings["banned_words"]:
-            await ctx.send(embed=self.embed_single("Warning", f"The term `{value}` is nerfed.\nIt does not give productive results.")) 
-            return False
+        for banned in self.settings["banned_words"]:
+            if value.lower() in banned:
+                await ctx.send(embed=self.embed_single("Warning", f"The term `{value}` is nerfed.\nIt does not give productive results.")) 
+                return False
 
         word_value = value.split(" ")
         for word in word_value:
