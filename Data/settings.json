@@ -11,6 +11,8 @@
     },
     "latest_update": "web",
     "banned_words": [
+        "gb",
+        ".",
         "bot",
         "gbot",
         ".gbot",
