@@ -20,9 +20,9 @@ import math as m
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
 from discord.ext import commands
-from discord_slash import cog_ext
-from discord_slash import SlashCommand
-from discord_slash import SlashContext
+# from discord_slash import cog_ext
+# from discord_slash import SlashCommand
+# from discord_slash import SlashContext
 from pprint import pprint
 
 class BreakProgram(Exception):
@@ -850,30 +850,29 @@ class BloomBot(commands.Cog):
             embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
         return embedVar
 
-class Slash(commands.Cog):
-    def __init__(self, bot):
-        if not hasattr(bot, "slash"):
-            # Creates new SlashCommand instance to bot if bot doesn't have.
-            bot.slash = SlashCommand(bot, override_type=True)
-        self.bot = bot
-        self.bot.slash.get_cog_commands(self)
+# class Slash(commands.Cog):
+#     def __init__(self, bot):
+#         if not hasattr(bot, "slash"):
+#             # Creates new SlashCommand instance to bot if bot doesn't have.
+#             bot.slash = SlashCommand(bot, override_type=True)
+#         self.bot = bot
+#         self.bot.slash.get_cog_commands(self)
 
-    def cog_unload(self):
-        self.bot.slash.remove_cog_commands(self)
+#     def cog_unload(self):
+#         self.bot.slash.remove_cog_commands(self)
 
-    # @cog_ext.cog_slash(name="test")
-    # async def _test(self, ctx: SlashContext):
-    #     embed = discord.Embed(title="embed test")
-    #     await ctx.send(content="test", embeds=[embed])
+#     # @cog_ext.cog_slash(name="test")
+#     # async def _test(self, ctx: SlashContext):
+#     #     embed = discord.Embed(title="embed test")
+#     #     await ctx.send(content="test", embeds=[embed])
 
-    @cog_ext.cog_slash(name="pingpong")
-    async def _ping(self, ctx): # Defines a new "context" (ctx) command called "ping."
-        await ctx.send(content=f"HOLA NIGGERS")
+#     @cog_ext.cog_slash(name="pingpong")
+#     async def _ping(self, ctx): # Defines a new "context" (ctx) command called "ping."
+#         await ctx.send(content=f"HOLA NIGGERS")
 
 
 
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
-slash = SlashCommand(Bot, auto_register=True) # Declares slash commands through the client.
 
 @Bot.event
 async def on_ready():
@@ -893,7 +892,7 @@ else:              # Heroku
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
 
 Bot.add_cog(BloomBot(Bot))
-Bot.add_cog(Slash(Bot))
+# Bot.add_cog(Slash(Bot))
 
 
 Bot.run(DISCORD_TOKEN)
