@@ -95,7 +95,8 @@
             "fast_obtain_difficulty": "D"
         },
         "type": "available",
-        "location": "Quest, /icedungeon"
+        "location": "Quest, /icedungeon",
+        "discord_url": "https://cdn.discordapp.com/attachments/805367955923533845/805424261559877643/Frost_SpiritReaver_Class_Chart.png"
     },
     "Arachnomancer": {
         "acronym": "Arach",
