@@ -1,210 +1,564 @@
 {
-    "Abyssal Angel":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Abyssal Angel's Shadow"
+    "Abyssal Angel's Shadow": {
+        "acronym": "Aba, AAS, AA",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Abyssal Angel"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/abyssal-angel-ac"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/abyssal-angel-ac",
+        "stats": [
+            4,
+            5,
+            0,
+            0,
+            4,
+            4,
+            3
+        ],
+        "tags": [
+            "acs_only"
+        ],
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "seasonal",
+        "location": "Shop, Seasonal, Black Friday, 2k AC"
     },
-    "Alpha Omega":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Alpha Omega": {
+        "acronym": "AO",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Alpha DOOMmega"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/alpha-omega-non-legend"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/alpha-omega-non-legend",
+        "stats": [
+            0,
+            2,
+            0,
+            0,
+            3,
+            0,
+            0
+        ],
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Merge, 300 PvP trophies, mem"
     },
-    "Alpha Pirate":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Alpha Pirate": {
+        "acronym": "",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Pirate"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/alpha-pirate-class"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/alpha-pirate-class"
     },
-    "Arachnomancer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Arachnomancer": {
+        "acronym": "Arach",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/arachnomancer-non-ac",
+        "stats": [
+            1,
+            1,
+            4,
+            4,
+            0,
+            0,
+            1
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/arachnomancer-non-ac"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Rep, r10 Ravenloss"
     },
-    "ArchPaladin":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "ArchPaladin": {
+        "acronym": "AP, Arch",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/archpaladin-class-0-ac",
+        "stats": [
+            4,
+            6,
+            4,
+            3,
+            4,
+            3,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/archpaladin-class-0-ac"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "S",
+            "fast_obtain_method": "1 2 3 4",
+            "fast_obtain_difficulty": "C"
+        },
+        "type": "available",
+        "location": "Questline - from Artix in /darkthronehub"
     },
-    "Archfiend":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Legendary ArchFiend"
+    "Legendary Archfiend": {
+        "acronym": "AF, Arch",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "ArchFiend"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/archfiend"
-    },
-    "Artifact Hunter":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/archfiend",
+        "stats": [
+            2,
+            2,
+            4,
+            4,
+            0,
+            2,
+            2
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/artifact-hunter-class-ac"
-    },
-    "Barber":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/barber"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "available",
+        "location": "Merge, 30 Fiend Tokens, via /tercessuinotlim"
     },
-    "Bard":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Artifact Hunter": {
+        "acronym": "AH",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+        "stats": [
+            3,
+            4,
+            0,
+            0,
+            4,
+            0,
+            4
+        ],
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "Barber": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/barber",
+        "stats": [
+            2,
+            2,
+            3,
+            0,
+            2,
+            0,
+            2
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Shop, 20k gold"
+    },
+    "Bard": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Troubador of Love"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/bard-class"
+        "enh": "luck",
+        "tags": [
+            "member_only"
+        ],
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/bard-class",
+        "stats": [
+            0,
+            2,
+            4,
+            3,
+            "00",
+            0,
+            0
+        ],
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Rep, r4 Mythsong"
     },
-    "BattleMage":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Royal BattleMage": {
+        "acronym": "RBM, BM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "BattleMage of Love",
             "Dark BattleMage",
-            "Royal BattleMage"
+            "BattleMage"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/battlemage-class"
-    },
-    "BeastMaster":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/battlemage-class",
+        "stats": [
+            2,
+            3,
+            2,
+            0,
+            2,
+            3,
+            2
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/beastmaster-non-ac"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Rep, r10 Swordhaven"
     },
-    "Berserker":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "BeastMaster": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/beastmaster-non-ac",
+        "stats": [
+            2,
+            2,
+            1,
+            0,
+            2,
+            0,
+            2
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Rep, r10 Beastmaster"
+    },
+    "Berserker": {
+        "acronym": "Zerker",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Beta Berserker"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/berserker"
-    },
-    "BladeMaster":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "SwordMaster"
+        "enh": "luck",
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/blademaster-ac"
-    },
-    "BladeMaster Assassin":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "SwordMaster Assassin"
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/berserker",
+        "stats": [
+            1,
+            2,
+            0,
+            0,
+            "00",
+            0,
+            1
         ],
-        "enh":"luck",
-        "note":"To reach full Evasion, use Thief and a Potion of Evasion.",
-        "wiki":"http://aqwwiki.wikidot.com/blademaster-assassin-class"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Shop, 5k gold, mem"
     },
-    "Blaze Binder":{
-        "acronym":"http://aqwwiki.wikidot.com/blaze-binder-merge",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "SwordMaster": {
+        "acronym": "BM, SM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "BladeMaster"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":""
-    },
-    "Blood Ancient":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/blademaster-ac",
+        "stats": [
+            4,
+            5,
+            2,
+            0,
+            4,
+            0,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/blood-ancient-merge"
-    },
-    "Blood Sorceresss":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "acs_only"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/blood-sorceress"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Merge, Seasonal, Legion, 2k LT"
     },
-    "Blood Titan":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "SwordMaster Assassin": {
+        "acronym": "BMA, SMA",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "BladeMaster Assassin"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/blood-titan-legend"
-    },
-    "CardClasher":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "To reach full Evasion, use Thief and a Potion of Evasion.",
+        "wiki": "http://aqwwiki.wikidot.com/blademaster-assassin-class",
+        "stats": [
+            3,
+            4,
+            0,
+            0,
+            4,
+            4,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/cardclasher-class"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "seasonal",
+        "location": "Shop, Seasonal, Dage Bday, 2k AC"
     },
-    "Chaos Shaper":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Blaze Binder": {
+        "acronym": "BB",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "",
+        "stats": [
+            0,
+            3,
+            0,
+            0,
+            4,
+            4,
+            0
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chaos-shaper-class"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "1 2",
+            "fast_obtain_difficulty": "C"
+        },
+        "type": "available",
+        "location": "Rep - r10 Embersea, r10 Doomwood, Pyro"
     },
-    "Chaos Slayer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Blood Ancient": {
+        "acronym": "BA",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "tags": [
+            "member_only"
+        ],
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/blood-ancient-merge",
+        "stats": [
+            1,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Merge, 25 Ancient Vitae, mem"
+    },
+    "Blood Sorceress": {
+        "acronym": "BS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/blood-sorceress",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Drop in /towerofmirrors"
+    },
+    "Blood Titan": {
+        "acronym": "BT",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "tags": [
+            "member_only"
+        ],
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/blood-titan-legend",
+        "stats": [
+            2,
+            3,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "available",
+        "location": "Merge, 450 Blood Titan Tokens, mem"
+    },
+    "CardClasher": {
+        "acronym": "CC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/cardclasher-class",
+        "stats": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            3
+        ],
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "Heromart Reward"
+    },
+    "Chaos Shaper": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chaos-shaper-class",
+        "stats": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        "tags": [
+            "member_only"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, 15 month member bonus"
+    },
+    "Chaos Slayer": {
+        "acronym": "CS, CSlayer",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Chaos Champion Prime",
             "Chaos Slayer Berserker",
             "Chaos Slayer Cleric",
@@ -212,1095 +566,3083 @@
             "Chaos Slayer Thief",
             "Dark Chaos Berserker"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chaos-slayer-berserker-non-ac"
-    },
-    "Chrono Assassin":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chaos-slayer-berserker-non-ac",
+        "stats": [
+            5,
+            4,
+            4,
+            5,
+            4,
+            4,
+            5
         ],
-        "enh":"luck",
-        "note":"To maximize evasion, use thief enhancements to increase Evasion to 34.05%",
-        "wiki":"http://aqwwiki.wikidot.com/chrono-assassin-merge"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
+        },
+        "type": "available",
+        "location": "Rep, r10 Chaos + Comeplete Chaos Saga"
     },
-    "Chrono DragonKnight":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Chronomancer": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chronomancer",
+        "stats": [
+            1,
+            1,
+            0,
+            4,
+            2,
+            0,
+            3
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chrono-dragonknight-class"
-    },
-    "ChronoCommander":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "heromart"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chronocommander"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
     },
-    "ChronoCorruptor":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Chrono Assassin": {
+        "acronym": "CA",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "To maximize evasion, use thief enhancements to increase Evasion to 34.05%",
+        "wiki": "http://aqwwiki.wikidot.com/chrono-assassin-merge",
+        "stats": [
+            4,
+            4,
+            0,
+            0,
+            4,
+            2,
+            4
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chronocorruptor"
-    },
-    "Chunin":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chunin-merge"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "C"
+        },
+        "type": "available",
+        "location": "Merge, /tachyon, mem"
     },
-    "Classic Alpha Pirate":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Chrono DragonKnight": {
+        "acronym": "CDK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chrono-dragonknight-class",
+        "stats": [
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            3
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "ChronoCommander": {
+        "acronym": "CC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chronocommander",
+        "stats": [
+            1,
+            3,
+            0,
+            4,
+            2,
+            0,
+            1
+        ],
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "ChronoCorruptor": {
+        "acronym": "CC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chronocorruptor",
+        "stats": [
+            1,
+            1,
+            0,
+            3,
+            2,
+            0,
+            3
+        ],
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "Chunin": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chunin-merge",
+        "stats": [
+            3,
+            4,
+            2,
+            0,
+            3,
+            3,
+            2
+        ],
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "Classic Alpha Pirate": {
+        "acronym": "",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Classic Pirate"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-alpha-pirate"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-alpha-pirate"
     },
-    "Classic Barber":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Classic Barber": {
+        "acronym": "",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-barber"
+    },
+    "Classic Defender": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-defender-1",
+        "stats": [
+            0,
+            0,
+            1,
+            0,
+            "00",
+            0,
+            0
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-barber"
-    },
-    "Classic Defender":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-defender-1"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, /tower, verification"
     },
-    "Classic DoomKnight":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Classic DoomKnight": {
+        "acronym": "Classic DmK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-doomknight-non-ac",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            "00",
+            0,
+            1
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-doomknight-non-ac"
-    },
-    "Classic DragonLord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-dragonlord"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Quest, r10 Warrior, r10 Healer, mem"
     },
-    "Classic Guardian":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Classic DragonLord": {
+        "acronym": "Classic DL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-dragonlord",
+        "stats": [
+            2,
+            3,
+            1,
+            0,
+            "00",
+            1,
+            2
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-guardian"
-    },
-    "Classic Legion DoomKnight":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-legion-doomknight-ac"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, /tower, verification"
     },
-    "Classic Paladin":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Classic Guardian": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-guardian",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            "00",
+            0,
+            1
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-paladin-class"
-    },
-    "Classic Soul Cleaver":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Classic Exalted Soul Cleaver"
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-soul-cleaver"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, /tower, verification"
     },
-    "ClawSuit":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Classic Legion DoomKnight": {
+        "acronym": "CLDK, CLDmK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-legion-doomknight-ac",
+        "stats": [
+            4,
+            4,
+            3,
+            4,
+            4,
+            3,
+            4
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/clawsuit"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "rare",
+        "location": "(RARE)"
     },
-    "Corrupted Chronomancer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Classic Paladin": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-paladin-class",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            "00",
+            0,
+            1
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/corrupted-chronomancer-class"
+        "tags": [
+            "member_only"
+        ],
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Quest, r10 Warrior, r10 Healer, mem"
     },
-    "Cryomancer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Classic Exalted Soul Cleaver": {
+        "acronym": "CESC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Classic Soul Cleaver"
+        ],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-soul-cleaver",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "ClawSuit": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/clawsuit",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            "00",
+            0,
+            1
+        ],
+        "tags": [
+            "member_only"
+        ],
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "Underworld Chronomancer": {
+        "acronym": "UCM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/underworld-chronomancer-class",
+        "stats": [
+            5,
+            5,
+            2,
+            6,
+            3,
+            0,
+            6
+        ],
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "Heromart, 2020 Calendar"
+    },
+    "Corrupted Chronomancer": {
+        "acronym": "CCM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+        "stats": [
+            5,
+            5,
+            0,
+            6,
+            2,
+            0,
+            6
+        ],
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "Heromart, 2019 Calendar"
+    },
+    "Cryomancer": {
+        "acronym": "Cryo",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Dark Cryomancer",
             "Sakura Cryomancer"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/cryomancer-merge"
-    },
-    "Daimon":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve or Mana Vamp",
-        "duplicates":[
-            
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/cryomancer-merge",
+        "stats": [
+            2,
+            2,
+            0,
+            0,
+            3,
+            0,
+            3
         ],
-        "enh":"wizard",
-        "note":"Use Mana Vamp if in need of Mana.",
-        "wiki":"http://aqwwiki.wikidot.com/daimon-legend"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
+        },
+        "type": "available",
+        "location": "Merge, Daily"
     },
-    "Dark Metal Necro":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Daimon": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve or Mana Vamp",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "Use Mana Vamp if in need of Mana.",
+        "wiki": "http://aqwwiki.wikidot.com/daimon-legend",
+        "stats": [
+            3,
+            3,
+            3,
+            0,
+            4,
+            4,
+            3
+        ],
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Shop, 100k gold, mem"
+    },
+    "Dark Metal Necro": {
+        "acronym": "DMN, HMN, UR, SR",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Heavy Metal Necro",
             "Heavy Metal Rockstar",
             "Shadow Ripper",
             "Unchained Rockstar"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dark-metal-necro"
-    },
-    "Darkblood StormKing":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dark-metal-necro",
+        "stats": [
+            5,
+            4,
+            0,
+            4,
+            3,
+            0,
+            5
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/darkblood-stormking-non-ac"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "seasonal",
+        "location": "Merge"
     },
-    "Darkside":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Darkblood StormKing": {
+        "acronym": "DBSK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/darkblood-stormking-non-ac",
+        "stats": [
+            2,
+            2,
+            0,
+            0,
+            2,
+            3,
+            2
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/darkside"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1 4",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "available",
+        "location": "Rep, r10 Thunderforge"
     },
-    "DeathKnight":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Darkside": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/darkside",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
         ],
-        "enh":"fighter",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/deathknight-class-non-ac"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "rare",
+        "location": "(RARE)"
     },
-    "DeathKnight Lord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "DeathKnight": {
+        "acronym": "DK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "fighter",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/deathknight-class-non-ac",
+        "stats": [
+            4,
+            4,
+            0,
+            0,
+            3,
+            0,
+            4
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/deathknight-lord-class-ac-1"
-    },
-    "Defender":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/defender-1"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "available",
+        "location": "Rep, r10 Doomwood, mem"
     },
-    "DoomKnight Overlord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "DeathKnight Lord": {
+        "acronym": "DKL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/deathknight-lord-class-ac-1",
+        "stats": [
+            2,
+            3,
+            0,
+            0,
+            0,
+            1,
+            0
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/doomknight-overlord"
-    },
-    "Doomknight":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/doomknight-non-ac"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "B",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Merge, Daily, mem"
     },
-    "Dragon Knight":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Defender": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/defender-1",
+        "stats": [
+            3,
+            3,
+            3,
+            0,
+            0,
+            0,
+            3
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragon-knight-class"
-    },
-    "Dragon Shinobi":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Shadow Dragon Shinobi"
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragon-shinobi-class-ac"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, /tower, verification"
     },
-    "Dragon of Time":{
-        "acronym":"DoT",
-        "awe_enh":"Health Vamp",
-        "duplicates":[
-            
+    "DoomKnight Overlord": {
+        "acronym": "DKO",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/doomknight-overlord",
+        "stats": [
+            3,
+            3,
+            2,
+            4,
+            2,
+            4,
+            4
         ],
-        "enh":"healer",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragon-of-time-class"
-    },
-    "DragonLord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "heromart"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragonlord-class"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
     },
-    "Dragonslayer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Doomknight": {
+        "acronym": "DmK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/doomknight-non-ac",
+        "stats": [
+            3,
+            2,
+            3,
+            3,
+            3,
+            0,
+            4
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragonslayer-class"
+        "tags": [
+            "member_only"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Quest, r10 Warrior, r10 Healer, mem"
     },
-    "Dragonslayer General":{
-        "acronym":"DSG",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Dragon Knight": {
+        "acronym": "DK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragon-knight-class",
+        "stats": [
+            2,
+            2,
+            3,
+            0,
+            3,
+            0,
+            3
+        ],
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "Shadow Dragon Shinobi": {
+        "acronym": "DS, DShinobi, SDS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Dragon Shinobi"
+        ],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragon-shinobi-class-ac",
+        "stats": [
+            4,
+            5,
+            0,
+            3,
+            4,
+            0,
+            4
+        ],
+        "tags": [
+            "acs_only"
+        ],
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "seasonal",
+        "location": "Merge, Seasonal"
+    },
+    "Dragon of Time": {
+        "acronym": "EDoT, DT",
+        "awe_enh": "Health Vamp",
+        "duplicates": [],
+        "enh": "healer",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragon-of-time-class",
+        "stats": [
+            5,
+            5,
+            2,
+            4,
+            4,
+            4,
+            5
+        ],
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "S",
+            "fast_obtain_method": "3 4",
+            "fast_obtain_difficulty": "B"
+        },
+        "type": "available",
+        "location": "Quest, /yulgar"
+    },
+    "DragonLord": {
+        "acronym": "DL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragonlord-class",
+        "stats": [
+            2,
+            4,
+            2,
+            0,
+            3,
+            4,
+            2
+        ],
+        "tags": [
+            "member_only"
+        ],
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, /tower, verification"
+    },
+    "Dragonslayer": {
+        "acronym": "DS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragonslayer-class",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            "00",
+            0,
+            1
+        ],
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Quest in /lair"
+    },
+    "Dragonslayer General": {
+        "acronym": "DSG",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "ShadowFlame DragonLord"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragonslayer-general-class-merge"
-    },
-    "Drakel Warlord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragonslayer-general-class-merge",
+        "stats": [
+            3,
+            3,
+            0,
+            3,
+            3,
+            0,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/drakel-warlord-legend"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Merge, /dragontown and r10 Dragonslayer"
     },
-    "Elemental Dracomancer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Drakel Warlord": {
+        "acronym": "DW",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/drakel-warlord-legend",
+        "stats": [
+            2,
+            4,
+            0,
+            0,
+            3,
+            0,
+            2
+        ],
+        "tags": [
+            "member_only"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Shop, 100k gold, mem"
+    },
+    "Elemental Dracomancer": {
+        "acronym": "ED",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Love Caster"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/elemental-dracomancer-non-ac"
-    },
-    "Eternal Inversionist":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/elemental-dracomancer-non-ac",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            2
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/eternal-inversionist-class-non-ac"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Rep, r10 Etherstorm"
     },
-    "Evolved ClawSuit":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Prismatic ClawSuit"
+    "Eternal Inversionist": {
+        "acronym": "EI",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/eternal-inversionist-class-non-ac",
+        "stats": [
+            0,
+            2,
+            2,
+            0,
+            3,
+            2,
+            0
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/evolved-clawsuit"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Rep, r10 Eternal"
     },
-    "Evolved Leprechaun":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Prismatic ClawSuit": {
+        "acronym": "PCS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Evolved ClawSuit"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/evolved-leprechaun-merge"
-    },
-    "Evolved Pumpkin Lord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/evolved-clawsuit",
+        "stats": [
+            2,
+            2,
+            0,
+            4,
+            0,
+            0,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend"
-    },
-    "Evolved Shaman":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/evolved-shaman-non-ac"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "seasonal",
+        "location": "Shop, Seasonal, Free, mem"
     },
-    "Exalted Harbinger":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Soul Cleaver",
+    "Evolved Leprechaun": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/evolved-leprechaun-merge",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            0,
+            1
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "seasonal",
+        "location": "Merge, Seasonal, Daily quest"
+    },
+    "Evolved Pumpkin Lord": {
+        "acronym": "EPL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend",
+        "stats": [
+            3,
+            2,
+            0,
+            0,
+            4,
+            0,
+            4
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Merge (Seasonal) / Drop, Mogloween"
+    },
+    "Evolved Shaman": {
+        "acronym": "ES, EShaman",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/evolved-shaman-non-ac",
+        "stats": [
+            2,
+            3,
+            2,
+            0,
+            5,
+            3,
+            2
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Rep, r10 Arcangrove"
+    },
+    "Soul Cleaver": {
+        "acronym": "SC, ESC, Harb",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Exalted Harbinger",
             "Exalted Soul Cleaver",
             "Dark Harbinger"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/exalted-harbinger"
-    },
-    "Flame Dragon Warrior":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/exalted-harbinger",
+        "stats": [
+            3,
+            2,
+            2,
+            4,
+            4,
+            0,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/flame-dragon-warrior-class"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Merge, Legion, 2k LT"
     },
-    "Frostval Barbarian":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve or Awe Blast",
-        "duplicates":[
-            
+    "Flame Dragon Warrior": {
+        "acronym": "FDW",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/flame-dragon-warrior-class",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
         ],
-        "enh":"fighter",
-        "note":"Use Awe Blast for Supporting",
-        "wiki":"http://aqwwiki.wikidot.com/frostval-barbarian-0-ac"
+        "tags": [
+            "acs_only"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, AQ:Dragons package, $10"
     },
-    "Glacial Berserker":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Frostval Barbarian": {
+        "acronym": "FB, Barb",
+        "awe_enh": "Spiral Carve or Awe Blast",
+        "duplicates": [],
+        "enh": "fighter",
+        "note": "Use Awe Blast for Supporting",
+        "wiki": "http://aqwwiki.wikidot.com/frostval-barbarian-0-ac",
+        "stats": [
+            0,
+            4,
+            4,
+            4,
+            0,
+            3,
+            0
+        ],
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "seasonal",
+        "location": "Quest, 5 dailies, complete Frostvale storylines"
+    },
+    "Glacial Berserker": {
+        "acronym": "GB",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Glacial Berserker Test"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/glacial-berserker-class-non-ac"
-    },
-    "Glacial Warlord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/glacial-berserker-class-non-ac",
+        "stats": [
+            4,
+            4,
+            3,
+            3,
+            4,
+            0,
+            4
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/glacial-warlord-class"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "seasonal",
+        "location": "Rep, r10 Glacial"
     },
-    "Great Thief":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Glacial Warlord": {
+        "acronym": "GW",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/glacial-warlord-class",
+        "stats": [
+            2,
+            3,
+            1,
+            0,
+            0,
+            0,
+            1
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/great-thief"
-    },
-    "Grim Necromancer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/grim-necromancer-class"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
     },
-    "Guardian":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve or Awe Blast",
-        "duplicates":[
-            
+    "Great Thief": {
+        "acronym": "GT",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/great-thief",
+        "stats": [
+            5,
+            6,
+            2,
+            4,
+            5,
+            0,
+            4
         ],
-        "enh":"luck",
-        "note":"Use Awe Blast for Soloing",
-        "wiki":"http://aqwwiki.wikidot.com/guardian-class"
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
     },
-    "Healer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Grim Necromancer": {
+        "acronym": "GN",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/grim-necromancer-class",
+        "stats": [
+            4,
+            4,
+            0,
+            4,
+            4,
+            0,
+            4
+        ],
+        "tags": [
+            "acs_only"
+        ],
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, 600k AC purchased badge"
+    },
+    "Guardian": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve or Awe Blast",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "Use Awe Blast for Soloing",
+        "wiki": "http://aqwwiki.wikidot.com/guardian-class",
+        "stats": [
+            3,
+            3,
+            0,
+            5,
+            4,
+            0,
+            4
+        ],
+        "tags": [
+            "member_only"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, /tower, verification"
+    },
+    "Healer": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Acolyte",
             "Healer (Rare)",
             "Witch"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/healer"
-    },
-    "HighSeas Commander":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/healer",
+        "stats": [
+            0,
+            4,
+            3,
+            0,
+            "00",
+            0,
+            0
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/highseas-commander"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Starter / Shop"
     },
-    "Horc Evader":{
-        "acronym":"",
-        "awe_enh":"Mana Vamp",
-        "duplicates":[
-            
+    "HighSeas Commander": {
+        "acronym": "HSC, Highseas",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/highseas-commander",
+        "stats": [
+            4,
+            4,
+            0,
+            0,
+            4,
+            2,
+            4
         ],
-        "enh":"luck",
-        "note":"To maximize evasion, use thief enhancements to increase Evasion to 31.05%",
-        "wiki":"http://aqwwiki.wikidot.com/horc-evader-non-ac"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Shop, 10 years played badge"
     },
-    "Immortal Chronomancer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Eternal Chronomancer"
+    "Horc Evader": {
+        "acronym": "HE, Horc",
+        "awe_enh": "Mana Vamp",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "To maximize evasion, use thief enhancements to increase Evasion to 31.05%",
+        "wiki": "http://aqwwiki.wikidot.com/horc-evader-non-ac",
+        "stats": [
+            3,
+            2,
+            0,
+            0,
+            4,
+            0,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/immortal-chronomancer-class-ac"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Rep, r10 Horc"
     },
-    "Immortal Dark Caster":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Eternal Chronomancer": {
+        "acronym": "EC, IC, ECM, ICM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Immortal Chronomancer"
+        ],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/immortal-chronomancer-class-ac",
+        "stats": [
+            5,
+            4,
+            0,
+            6,
+            0,
+            0,
+            6
+        ],
+        "tags": [
+            "acs_only",
+            "heromart"
+        ],
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "Heromart, 2018 Calendar"
+    },
+    "Immortal Dark Caster": {
+        "acronym": "IDC, Immo DC, DC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Dark Caster"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/immortal-dark-caster-class-0-ac"
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/immortal-dark-caster-class-0-ac",
+        "stats": [
+            4,
+            5,
+            2,
+            4,
+            3,
+            4,
+            4
+        ],
+        "tags": [
+            "acs_only"
+        ],
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 2k AC"
     },
-    "Infinite Dark Caster":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Infinite Dark Caster": {
+        "acronym": "IDC, ILDC, EDC, ELDC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Evolved Dark Caster",
             "Infinite Legion Dark Caster",
             "Legion Evolved Dark Caster"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/infinite-dark-caster-ac"
-    },
-    "Infinity Knight":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/infinite-dark-caster-ac",
+        "stats": [
+            3,
+            3,
+            2,
+            0,
+            4,
+            3,
+            3
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/infinity-knight"
+        "tags": [
+            "acs_only"
+        ],
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Merge, Legion, 2k LT"
     },
-    "Legendary Hero":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Infinity Knight": {
+        "acronym": "IK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/infinity-knight",
+        "stats": [
+            2,
+            2,
+            0,
+            4,
+            4,
+            0,
+            3
+        ],
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "Heromart, 2016 Calendar"
+    },
+    "Legendary Hero": {
+        "acronym": "LH",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Dark Legendary Hero"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/legendary-hero-class"
-    },
-    "Legion BladeMaster Assassin":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Legion SwordMaster Assassin"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/legendary-hero-class",
+        "stats": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
         ],
-        "enh":"luck",
-        "note":"To reach full Evasion, use Thief and a Potion of Evasion.",
-        "wiki":"http://aqwwiki.wikidot.com/legion-blademaster-assassin"
-    },
-    "Legion DoomKnight":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/legion-doomknight-class-ac"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, mem"
     },
-    "Legion Revenant":{
-        "acronym":"LR",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Legion SwordMaster Assassin": {
+        "acronym": "LBMA, LSMA",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Legion BladeMaster Assassin"
+        ],
+        "enh": "luck",
+        "note": "To reach full Evasion, use Thief and a Potion of Evasion.",
+        "wiki": "http://aqwwiki.wikidot.com/legion-blademaster-assassin",
+        "stats": [
+            3,
+            3,
+            0,
+            0,
+            5,
+            3,
+            3
+        ],
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "seasonal",
+        "location": "Merge, Seasonal, Legion, 5k LT + 300 rocks"
+    },
+    "Legion DoomKnight": {
+        "acronym": "LDK, LDmK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/legion-doomknight-class-ac",
+        "stats": [
+            5,
+            4,
+            3,
+            4,
+            4,
+            3,
+            5
+        ],
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "seasonal",
+        "location": "Merge, Seasonal, Legion, 2k LT"
+    },
+    "Legion Paladin": {
+        "acronym": "LP",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/legion-paladin-class",
+        "stats": [
+            2,
+            1,
+            0,
+            3,
+            3,
+            0,
+            2
+        ],
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "Legion Revenant": {
+        "acronym": "LR",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Legion Revenant Member Test"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/legion-revenant-class"
-    },
-    "Leprechaun":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/legion-revenant-class",
+        "stats": [
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/leprechaun"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "S",
+            "fast_obtain_method": "2 4",
+            "fast_obtain_difficulty": "S"
+        },
+        "type": "available",
+        "location": "Questline - need at least one Dark Caster type"
     },
-    "LightCaster":{
-        "acronym":"LC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Leprechaun": {
+        "acronym": "Lep, Leppy",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/leprechaun",
+        "stats": [
+            3,
+            4,
+            0,
+            0,
+            3,
+            0,
+            2
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/lightcaster-class"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "rare",
+        "location": "(RARE)"
     },
-    "LightMage":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "LightCaster": {
+        "acronym": "LC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/lightcaster-class",
+        "stats": [
+            5,
+            4,
+            5,
+            5,
+            4,
+            3,
+            5
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/lightmage"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Quest - need LightMage"
     },
-    "Lord of Order":{
-        "acronym":"LoO",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "LightMage": {
+        "acronym": "LM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/lightmage",
+        "stats": [
+            3,
+            3,
+            4,
+            3,
+            3,
+            3,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/lord-of-order-quest"
-    },
-    "Lycan":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "acs_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/lycan-class-non-ac"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, Buy 1k AC armor"
     },
-    "Mage":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Lord of Order": {
+        "acronym": "LoO, Lorder",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/lord-of-order-quest",
+        "stats": [
+            4,
+            5,
+            6,
+            6,
+            4,
+            0,
+            3
+        ],
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "3 4",
+            "fast_obtain_difficulty": "A"
+        },
+        "type": "available",
+        "location": "Questline - from /Battleoff"
+    },
+    "Lycan": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/lycan-class-non-ac",
+        "stats": [
+            4,
+            4,
+            0,
+            3,
+            5,
+            2,
+            4
+        ],
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Rep, r10 Lycan"
+    },
+    "Mage": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Mage (Rare)",
             "LightCaster Test",
             "Sorcerer"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/mage"
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/mage",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Starter / Shop"
     },
-    "Master Ranger":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Master Ranger": {
+        "acronym": "MR",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Ranger"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/master-ranger"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/master-ranger",
+        "stats": [
+            2,
+            3,
+            0,
+            0,
+            0,
+            3,
+            2
+        ],
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "available",
+        "location": "Rep, r10 Sandsea rep"
     },
-    "Master of Moglins":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Master of Moglins": {
+        "acronym": "MoM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Dark Master of Moglins"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/master-of-moglins-class-2"
-    },
-    "Mechajouster":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/master-of-moglins-class-2",
+        "stats": [
+            3,
+            4,
+            4,
+            4,
+            3,
+            5,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/mechajouster"
-    },
-    "MindBreaker":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "heromart"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/mindbreaker"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Heromart or Kickstarter reward"
     },
-    "NOT A MOD":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "MechaJouster": {
+        "acronym": "MJ, Jouster",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/mechajouster",
+        "stats": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            0,
+            2
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/not-a-mod"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "S",
+            "fast_obtain_method": "1 2",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "available",
+        "location": "Merge"
     },
-    "Naval Commander":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "MindBreaker": {
+        "acronym": "MB",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/mindbreaker",
+        "stats": [
+            3,
+            3,
+            1,
+            3,
+            3,
+            3,
+            3
+        ],
+        "tags": [
+            "acs_only"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, 12k AC bonus shop"
+    },
+    "NOT A MOD": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/not-a-mod",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "Naval Commander": {
+        "acronym": "NC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Heroic Naval Commander",
             "Legendary Naval Commander"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/naval-commander-class"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/naval-commander-class",
+        "stats": [
+            0,
+            3,
+            2,
+            0,
+            0,
+            4,
+            0
+        ],
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 100k gold, mem"
     },
-    "Necromancer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Necromancer": {
+        "acronym": "Necro",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Pinkomancer"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/necromancer-merge"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/necromancer-merge",
+        "stats": [
+            3,
+            3,
+            0,
+            3,
+            3,
+            0,
+            3
+        ],
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "1 4",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "available",
+        "location": "Rep, r10 Doomwood"
     },
-    "No Class":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Ninja": {
+        "acronym": "Sin",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Assassin",
+            "Ninja Warrior"
+        ],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/ninja-class",
+        "stats": [
+            1,
+            1,
+            2,
+            0,
+            "00",
+            0,
+            1
+        ],
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Shop, 15k gold"
+    },
+    "No Class": {
+        "acronym": "HHL",
+        "awe_enh": "Powerword Die",
+        "duplicates": [
             "Obsidian No Class",
             "Hobo Highlord"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/no-class"
-    },
-    "Northlands Monk":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "Spitfire",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/no-class",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            "00",
+            0,
+            0
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/northlands-monk-class-free-player"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 1 gold"
     },
-    "Nu Metal Necro":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Northlands Monk": {
+        "acronym": "NM, Monk",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/northlands-monk-class-free-player",
+        "stats": [
+            3,
+            3,
+            3,
+            0,
+            3,
+            0,
+            3
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "seasonal",
+        "location": "Drop from /frozensoul"
+    },
+    "Nu Metal Necro": {
+        "acronym": "NMN",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Grunge Rocker",
             "Shadow Rocker",
             "Unchained Rocker"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/nu-metal-necro-1"
-    },
-    "Oracle":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/nu-metal-necro-1",
+        "stats": [
+            2,
+            2,
+            0,
+            0,
+            2,
+            0,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/oracle"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "seasonal",
+        "location": "Merge"
     },
-    "Paladin":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Oracle": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/oracle",
+        "stats": [
+            2,
+            4,
+            3,
+            0,
+            3,
+            0,
+            0
+        ],
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Shop- Class shop, free"
+    },
+    "Paladin": {
+        "acronym": "Pal",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Silver Paladin"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/paladin-class"
-    },
-    "Paladin High Lord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/paladin-class",
+        "stats": [
+            4,
+            5,
+            2,
+            0,
+            4,
+            3,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/paladin-high-lord"
-    },
-    "PaladinSlayer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/paladinslayer"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "r10 Warrior, r10 Healer, mem"
     },
-    "Pirate":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Paladin High Lord": {
+        "acronym": "PHL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/paladin-high-lord",
+        "stats": [
+            3,
+            4,
+            3,
+            0,
+            0,
+            3,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/pirate"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
     },
-    "Pumpkin Lord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "PaladinSlayer": {
+        "acronym": "PS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/paladinslayer",
+        "stats": [
+            1,
+            0,
+            2,
+            0,
+            3,
+            0,
+            1
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/pumpkin-lord"
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
     },
-    "Pyromancer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Pirate": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/pirate",
+        "stats": [
+            2,
+            2,
+            0,
+            0,
+            3,
+            0,
+            2
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "seasonal",
+        "location": "Quest, Seasonal, TLaPD, Classic Pirate"
+    },
+    "Pumpkin Lord": {
+        "acronym": "",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/pumpkin-lord"
+    },
+    "Pyromancer": {
+        "acronym": "Pyro",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Pink Romancer"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/pyromancer-class-ac"
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/pyromancer-class-ac",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            1,
+            1
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
+        },
+        "type": "available",
+        "location": "Merge, Daily"
     },
-    "Rogue":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Rogue": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Renegade",
             "Rogue (Rare)"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/rogue"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/rogue",
+        "stats": [
+            2,
+            2,
+            0,
+            0,
+            3,
+            0,
+            2
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Starter / Shop"
     },
-    "Rustbucket":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Rustbucket": {
+        "acronym": "RB, Proto",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Enforcer",
             "ProtoSartorium"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/rustbucket"
-    },
-    "Scarlet Sorceress":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/rustbucket",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            "00",
+            1,
+            1
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/scarlet-sorceress-class-ac"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Quest in /crashsite"
     },
-    "Sentinel":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Scarlet Sorceress": {
+        "acronym": "SS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/scarlet-sorceress-class-ac",
+        "stats": [
+            3,
+            5,
+            0,
+            0,
+            3,
+            4,
+            2
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/sentinel"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Quest, Level 50, Blood Sorc, and /towerofmirrors"
     },
-    "ShadowScythe General":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Sentinel": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/sentinel",
+        "stats": [
+            4,
+            3,
+            0,
+            0,
+            3,
+            0,
+            4
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/shadowscythe-general-class-merge"
-    },
-    "ShadowStalker of Time":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "ShadowWalker of Time"
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/shadowstalker-of-time-class"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "seasonal",
+        "location": "Shop, Upholder"
     },
-    "Shaman":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve or Mana Vamp",
-        "duplicates":[
-            
+    "ShadowScythe General": {
+        "acronym": "SSG",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/shadowscythe-general-class-merge",
+        "stats": [
+            2,
+            5,
+            0,
+            0,
+            5,
+            3,
+            0
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/shaman"
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
+        },
+        "type": "available",
+        "location": "Merge, Daily"
     },
-    "SkyCharged Grenadier":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "ShadowWalker of Time": {
+        "acronym": "SWoT, SSoT",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "ShadowStalker of Time"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/skycharged-grenadier"
-    },
-    "SkyGuard Grenadier":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+        "stats": [
+            5,
+            5,
+            2,
+            6,
+            4,
+            3,
+            6
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/skyguard-grenadier-ac"
-    },
-    "Star Captain":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "acs_only",
+            "heromart"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/star-captain"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "Heromart, 2017 Calendar"
     },
-    "StarLord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Shaman": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve or Mana Vamp",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/shaman",
+        "stats": [
+            3,
+            2,
+            0,
+            4,
+            4,
+            4,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/starlord"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Rep, r10 Arcangrove"
     },
-    "StoneCrusher":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "SkyCharged Grenadier": {
+        "acronym": "SCG",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/skycharged-grenadier",
+        "stats": [
+            4,
+            4,
+            2,
+            3,
+            4,
+            0,
+            4
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/stonecrusher-merge"
-    },
-    "The Collector":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "tags": [
+            "member_only"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/the-collector-class-0-ac"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop, 9 years membership badge"
     },
-    "Thief of Hours":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "SkyGuard Grenadier": {
+        "acronym": "SGG",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/skyguard-grenadier-ac",
+        "stats": [
+            3,
+            4,
+            2,
+            0,
+            4,
+            0,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/thief-of-hours-non-ac"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "available",
+        "location": "Rep, r10 Skyguard, mem"
     },
-    "TimeKiller":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Star Captain": {
+        "acronym": "StC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/star-captain",
+        "stats": [
+            4,
+            5,
+            0,
+            4,
+            2,
+            0,
+            4
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/timekiller"
+        "tags": [
+            "member_only"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop/tower, verification"
     },
-    "Timeless Dark Caster":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "StarLord": {
+        "acronym": "SL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/starlord",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            "00",
+            1,
+            0
+        ],
+        "tags": [
+            "member_only"
+        ],
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "Shop/tower, verification"
+    },
+    "StoneCrusher": {
+        "acronym": "SC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/stonecrusher-merge",
+        "stats": [
+            4,
+            4,
+            6,
+            6,
+            3,
+            0,
+            3
+        ],
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
+        },
+        "type": "available",
+        "location": "Rep, r10 Brightoak, r10 Mythsong, r10 Arcangrove"
+    },
+    "The Collector": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/the-collector-class-0-ac",
+        "stats": [
+            3,
+            3,
+            2,
+            0,
+            4,
+            0,
+            3
+        ],
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
+        },
+        "type": "available",
+        "location": "Merge, Daily"
+    },
+    "Thief of Hours": {
+        "acronym": "ToH",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/thief-of-hours-non-ac",
+        "stats": [
+            3,
+            3,
+            0,
+            0,
+            2,
+            0,
+            3
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "available",
+        "location": "Rep, r10 Chronospan"
+    },
+    "TimeKiller": {
+        "acronym": "TK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/timekiller",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            3,
+            0,
+            1
+        ],
+        "tags": [
+            "heromart"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "Timeless Dark Caster": {
+        "acronym": "TDC, Timeless, ADC, MDC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Arcane Dark Caster",
             "Mystical Dark Caster"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/timeless-dark-caster-ac"
-    },
-    "Troll Spellsmith":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/timeless-dark-caster-ac",
+        "stats": [
+            5,
+            4,
+            0,
+            0,
+            3,
+            0,
+            5
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/troll-spellsmith-non-ac"
-    },
-    "Ultra Elemental Warrior":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Legendary Elemental Warrior"
+        "tags": [
+            "acs_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/ultra-elemental-warrior"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 2k AC"
     },
-    "Ultra OmniKnight":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Dark Ultra OmniNight"
+    "Troll Spellsmith": {
+        "acronym": "TSS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/troll-spellsmith-non-ac",
+        "stats": [
+            3,
+            3,
+            1,
+            0,
+            2,
+            3,
+            3
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/ultra-omniknight-merge"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Rep, r10 Troll"
     },
-    "Undead Goat":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Legendary Elemental Warrior": {
+        "acronym": "LEW, UEW, EW",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Ultra Elemental Warrior"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/undead-goat"
-    },
-    "UndeadSlayer":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/ultra-elemental-warrior",
+        "stats": [
+            2,
+            1,
+            2,
+            4,
+            3,
+            0,
+            3
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/undeadslayer-ac"
-    },
-    "Unlucky Leprechaun":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            "Undead Leperchaun"
+        "tags": [
+            "member_only"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/unlucky-leperchaun-ac"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "available",
+        "location": "Rep, r6 Elemental Master, mem"
     },
-    "Vampire Lord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Dark Ultra OmniNight": {
+        "acronym": "DUON, UOK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Ultra OmniKnight"
+        ],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/ultra-omniknight-merge",
+        "stats": [
+            4,
+            4,
+            0,
+            4,
+            4,
+            0,
+            5
+        ],
+        "tags": [
+            "acs_only"
+        ],
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 2k AC"
+    },
+    "Undead Goat": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/undead-goat",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "rare",
+        "location": "(RARE)"
+    },
+    "UndeadSlayer": {
+        "acronym": "US",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/undeadslayer-ac",
+        "stats": [
+            2,
+            2,
+            0,
+            0,
+            "00",
+            0,
+            2
+        ],
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "E"
+        },
+        "type": "available",
+        "location": "Rep, r10 Doomwood"
+    },
+    "Undead Leperchaun": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
+            "Unlucky Leprechaun"
+        ],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/unlucky-leperchaun-ac",
+        "stats": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            0,
+            1
+        ],
+        "tags": [
+            "member_only"
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 100k gold, mem"
+    },
+    "Vampire Lord": {
+        "acronym": "VL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Enchanted Vampire Lord",
             "Royal Vampire Lord",
             "Vampire"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/vampire-lord-class-ac"
-    },
-    "Vindicator of They":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/vampire-lord-class-ac",
+        "stats": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            4,
+            0
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/vindicator-of-they-merge"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1 4",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "seasonal",
+        "location": "Merge, Seasonal, B-day class, 300 Blood Moon Tokens"
     },
-    "Void Highlord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+    "Vindicator of They": {
+        "acronym": "VoT",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/vindicator-of-they-merge",
+        "stats": [
+            1,
+            3,
+            2,
+            0,
+            4,
+            0,
+            1
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/void-highlord-class-1"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
+        },
+        "type": "rare",
+        "location": "(RARE)"
     },
-    "Warrior":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Void Highlord": {
+        "acronym": "VHL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/void-highlord-class-1",
+        "stats": [
+            5,
+            6,
+            2,
+            5,
+            5,
+            4,
+            5
+        ],
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "S",
+            "fast_obtain_method": "1 2",
+            "fast_obtain_difficulty": "S"
+        },
+        "type": "available",
+        "location": "Merge"
+    },
+    "Warrior": {
+        "acronym": "War",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Warlord",
             "Warrior (Rare)",
             "Beast Warrior",
@@ -1308,18 +3650,52 @@
             "Cryomancer Mini Pet Coming Soon",
             "Void Highlord Tester"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/warrior-class"
-    },
-    "Yami no Ronin":{
-        "acronym":"YnR",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/warrior-class",
+        "stats": [
+            1,
+            2,
+            0,
+            0,
+            "00",
+            0,
+            2
         ],
-        "enh":"luck",
-        "note":"To play defensively, use thief enhancements to increase Evasion to 32.05%",
-        "wiki":"http://aqwwiki.wikidot.com/yami-no-ronin-class"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
+        },
+        "type": "available",
+        "location": "Starter / Shop"
+    },
+    "Yami no Ronin": {
+        "acronym": "YnR",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "To play defensively, use thief enhancements to increase Evasion to 32.05%",
+        "wiki": "http://aqwwiki.wikidot.com/yami-no-ronin-class",
+        "stats": [
+            5,
+            5,
+            0,
+            3,
+            5,
+            4,
+            5
+        ],
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "1 2 3 4",
+            "fast_obtain_difficulty": "A"
+        },
+        "type": "available",
+        "location": "Quest, /darkally"
     }
 }
