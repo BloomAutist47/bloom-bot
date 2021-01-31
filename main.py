@@ -355,10 +355,10 @@ class BloomBot(commands.Cog):
             if class_name == class_name_.lower():
                 if "discord_url" in self.classes[class_name_]:
                     return [
-                        ("Authentic", ""), (class_name_, self.classes[class_name_]["discord_url"])
+                        ("Authentic", ""), (class_name_, self.classes[class_name_]["discord_url"], self.classes[class_name_]["wiki"])
                         ]
                 else:
-                    return [("Basic"), (self.classes[class_name_]["duplicates"][ind], self.classes[class_name_])]
+                    return [("Basic", ""), (class_name, self.classes[class_name_])]
 
             duplicates = [dn.lower() for dn in self.classes[class_name_]["duplicates"]]
 
@@ -368,7 +368,7 @@ class BloomBot(commands.Cog):
                 if "discord_url" in self.classes[class_name_]:
                     return [
                         ("Duplicate", self.classes[class_name_]["duplicates"][ind]) ,
-                        (class_name_, self.classes[class_name_]["discord_url"])
+                        (class_name_, self.classes[class_name_]["discord_url"], self.classes[class_name_]["wiki"])
                         ]
                 else:
                     return [("Basic", ""), (self.classes[class_name_]["duplicates"][ind], self.classes[class_name_])]
@@ -856,10 +856,10 @@ class BloomBot(commands.Cog):
         found_class = result[0]
         found_data = result[1]
         if found_class[0] == "Authentic":
-            await self.embed_image(ctx, found_data[1], found_data[0])
+            await self.embed_image(ctx, found_data[1], found_data[2], found_data[0])
             return
         if found_class[0] == "Duplicate":
-            await self.embed_image(ctx, found_data[1], found_data[0], [found_class[1], found_data[0]])
+            await self.embed_image(ctx, found_data[1], found_data[2], found_data[0], [found_class[1], found_data[0]])
             return
         if found_class[0] == "Basic":
             enh = found_data[1]["enh"].capitalize()
@@ -897,7 +897,7 @@ class BloomBot(commands.Cog):
         for i in range(0, len(lst), n):
             yield lst[i:i + n]
 
-    async def embed_image(self, ctx, url, class_name, duplicate_name=""):
+    async def embed_image(self, ctx, discord_url, wiki_url, class_name, duplicate_name=""):
         credit_text2 = "Credits: Bloom Bot and Class Charts made by Bloom Autist.\n"\
             "\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
             "to the AuQW Community!\nType ;credits to see their links!"
@@ -907,8 +907,8 @@ class BloomBot(commands.Cog):
             await ctx.send(embed=dupliVar)
 
         embedVar = discord.Embed(title="Class Result", color=self.block_color, 
-            description=f"Data chart for the `{class_name}` Class.\nPlease use `;legends` to understand the chart.")
-        embedVar.set_image(url=url)
+            description=f"\> Check [{class_name}]({wiki_url}) Class on the wiki.\n\> Please use `;legends` to understand the chart.")
+        embedVar.set_image(url=discord_url)
         embedVar.set_footer(text=credit_text2)
 
         await ctx.send(embed=embedVar)
