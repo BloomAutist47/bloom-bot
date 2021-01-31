@@ -463,9 +463,10 @@ class BloomBot(commands.Cog):
 
     @commands.command()
     async def credits(self, ctx):
-        credit_text = "Thanks to [Shiminuki](https://www.youtube.com/channel/UCyQ5AocDVVDznIslRuGUS3g) and [Molevolent](https://twitter.com/molevolent) for "\
+        credit_text = "Bloom Bot and Class Charts made by Bloom Autist.\n"\
+            "Thanks to [Shiminuki](https://www.youtube.com/channel/UCyQ5AocDVVDznIslRuGUS3g) and [Molevolent](https://twitter.com/molevolent) for "\
             "creating the [Class Tier List](https://docs.google.com/spreadsheets/d/1Ywl9GcfySXodGA_MtqU4YMEQaGmr4eMAozrM4r00KwI/edit?usp=sharing)."\
-            "\Lastly, thanks to the AutoQuest Worlds Community!"
+            "\nLastly, thanks to the AutoQuest Worlds Community!"
         await ctx.send(embed=self.embed_single("Credits", credit_text))
 
     @commands.command()
@@ -517,8 +518,8 @@ class BloomBot(commands.Cog):
             embedVar = discord.Embed(title="Bloom Help", color=self.block_color,
                     description="The following are a list of all commands and "\
                                 "how to use them. These commands must be used "\
-                                "in the <#802082388451655691> channel. "\
-                                "Please ping <@&802475195226390589> if something goes wrong with Bloom Bot.")
+                                "in the <#805413618719260712> channel. "\
+                                "Please ping <@&802968357623300107> if something goes wrong with Bloom Bot.")
             embedVar.add_field(name="\u200b", inline=False,
                 value="————————  Commands For Everyone  ————————")
             embedVar.add_field(name="`;bhelp`", inline=False,
@@ -825,7 +826,8 @@ class BloomBot(commands.Cog):
 
     @commands.command()
     async def legends(self, ctx):
-        credit_text2 = "Credits:\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
+        credit_text2 = "Credits: Bloom Bot and Class Charts made by Bloom Autist.\n"\
+            "\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
             "to the AuQW Community!\nType ;credits to see their links!"
 
         embedVar = discord.Embed(title="Legends", color=self.block_color, 
@@ -896,7 +898,8 @@ class BloomBot(commands.Cog):
             yield lst[i:i + n]
 
     async def embed_image(self, ctx, url, class_name, duplicate_name=""):
-        credit_text2 = "Credits:\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
+        credit_text2 = "Credits: Bloom Bot and Class Charts made by Bloom Autist.\n"\
+            "\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
             "to the AuQW Community!\nType ;credits to see their links!"
         if duplicate_name:
             dupliVar = discord.Embed(title="Duplicate", color=self.block_color, 

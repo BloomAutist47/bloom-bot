@@ -70,6 +70,33 @@
         "note": "",
         "wiki": "http://aqwwiki.wikidot.com/alpha-pirate-class"
     },
+    "Frost SpiritReaver": {
+        "acronym": "FSR",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/frost-spiritreaver-class",
+        "stats": [
+            4,
+            4,
+            2,
+            4,
+            5,
+            3,
+            4
+        ],
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "3 4",
+            "fast_obtain_difficulty": "D"
+        },
+        "type": "available",
+        "location": "Quest, /icedungeon"
+    },
     "Arachnomancer": {
         "acronym": "Arach",
         "awe_enh": "Spiral Carve",
@@ -171,7 +198,7 @@
             4,
             0,
             0,
-            4,
+            5,
             0,
             4
         ],
@@ -237,7 +264,7 @@
         "bludrut": "00",
         "acquire": {
             "ac_version": "No",
-            "irl_money": true,
+            "irl_money": false,
             "obtain_difficulty": "E",
             "fast_obtain_difficulty": "N/A",
             "fast_obtain_method": "N/A"
@@ -361,7 +388,7 @@
         "bludrut": 3,
         "acquire": {
             "ac_version": "Yes",
-            "irl_money": true,
+            "irl_money": false,
             "obtain_difficulty": "A",
             "fast_obtain_method": "2",
             "fast_obtain_difficulty": "D"
@@ -660,7 +687,7 @@
         "bludrut": 3,
         "acquire": {
             "ac_version": "No",
-            "irl_money": true,
+            "irl_money": false,
             "obtain_difficulty": "B",
             "fast_obtain_method": "4",
             "fast_obtain_difficulty": "C"
@@ -1311,7 +1338,7 @@
             3,
             3,
             0,
-            0,
+            3,
             0,
             3
         ],
@@ -1321,7 +1348,7 @@
         "bludrut": 0,
         "acquire": {
             "ac_version": "Prem",
-            "irl_money": true,
+            "irl_money": false,
             "obtain_difficulty": "Premium"
         },
         "type": "available",
@@ -2562,11 +2589,11 @@
         "location": "Rep, r10 Sandsea rep",
         "discord_url": "https://cdn.discordapp.com/attachments/805367955923533845/805368900291395614/Master_Ranger_Class_Chart.png"
     },
-    "Master of Moglins": {
+    "Dark Master of Moglins": {
         "acronym": "MoM",
         "awe_enh": "Spiral Carve",
         "duplicates": [
-            "Dark Master of Moglins"
+            "Master of Moglins"
         ],
         "enh": "wizard",
         "note": "",
@@ -3133,12 +3160,12 @@
         "wiki": "http://aqwwiki.wikidot.com/sentinel",
         "stats": [
             4,
-            3,
+            4,
             0,
             0,
             3,
             0,
-            4
+            3
         ],
         "tags": [
             "member_only"
@@ -3638,7 +3665,7 @@
         "bludrut": "00",
         "acquire": {
             "ac_version": "Yes",
-            "irl_money": true,
+            "irl_money": false,
             "obtain_difficulty": "D",
             "fast_obtain_method": "4",
             "fast_obtain_difficulty": "E"
@@ -3804,7 +3831,7 @@
         "awe_enh": "Spiral Carve",
         "duplicates": [],
         "enh": "luck",
-        "note": "To play defensively, use thief enhancements to increase Evasion to 32.05%",
+        "note": "",
         "wiki": "http://aqwwiki.wikidot.com/yami-no-ronin-class",
         "stats": [
             5,
