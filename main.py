@@ -16,14 +16,14 @@ import copy
 import requests
 import github3
 import math as m
+import glob
+import io
 
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
 from discord.ext import commands
-# from discord_slash import cog_ext
-# from discord_slash import SlashCommand
-# from discord_slash import SlashContext
 from pprint import pprint
+from PIL import Image
 
 class BreakProgram(Exception):
     pass
@@ -228,6 +228,8 @@ class BloomBot(commands.Cog):
             json.dump(self.data, f, ensure_ascii=False, indent=4)
         with open('./Data/settings.json', 'w', encoding='utf-8') as f:
             json.dump(self.settings, f, ensure_ascii=False, indent=4)
+        with open('./Data/classes.json', 'w', encoding='utf-8') as f:
+            json.dump(self.classes, f, ensure_ascii=False, indent=4)
 
     def git_save(self):
         """Description: Saves data to github .json files"""
@@ -245,6 +247,7 @@ class BloomBot(commands.Cog):
 
         self.file_save()
 
+    
     def git_read(self):
         """Description: Reads data from github .json files"""
         git_data = self.repository.file_contents("./Data/database.json").decoded
@@ -350,19 +353,25 @@ class BloomBot(commands.Cog):
         for class_name_ in self.classes:
             # Search if exact name
             if class_name == class_name_.lower():
-                return (True, (class_name_, self.classes[class_name_]))
+                if "discord_url" in self.classes[class_name_]:
+                    return [
+                        ("Authentic", ""), (class_name_, self.classes[class_name_]["discord_url"])
+                        ]
+                else:
+                    return [("Basic"), (self.classes[class_name_]["duplicates"][ind], self.classes[class_name_])]
+
             duplicates = [dn.lower() for dn in self.classes[class_name_]["duplicates"]]
 
             # Search duplicate classes
             if class_name in duplicates:
                 ind = duplicates.index(class_name)
-                return (True, (self.classes[class_name_]["duplicates"][ind], self.classes[class_name_]))
-
-            # if class_name_ in class_name_.lower():
-            #     possible_classes.append(class_name_)
-            # for duplicate in duplicates:
-            #     if class_name_ in duplicate:
-            #         possible_classes.append(duplicate)
+                if "discord_url" in self.classes[class_name_]:
+                    return [
+                        ("Duplicate", self.classes[class_name_]["duplicates"][ind]) ,
+                        (class_name_, self.classes[class_name_]["discord_url"])
+                        ]
+                else:
+                    return [("Basic", ""), (self.classes[class_name_]["duplicates"][ind], self.classes[class_name_])]
 
             #Search keyword likeness
             class_words = class_name.split(" ")
@@ -374,9 +383,9 @@ class BloomBot(commands.Cog):
                         ind = duplicates.index(duplicate)
                         possible_classes.append(self.classes[class_name_]["duplicates"][ind])
         if possible_classes:
-            return (False, possible_classes)
+            return [(False, ""), (possible_classes)]
         else:
-            return (False, [])
+            return [(False, ""), ([])]
 
 
 
@@ -446,47 +455,92 @@ class BloomBot(commands.Cog):
             await ctx.send(embed=self.embed_single("Bot Author Result", "No verified author of that name."))
             return None
 
+    async def check_guild(self, guild_name):
+        if guild_name in self.settings["priveleged_servers"]:
+            return True
+        else:
+            return False
+
+    @commands.command()
+    async def credits(self, ctx):
+        credit_text = "Thanks to [Shiminuki](https://www.youtube.com/channel/UCyQ5AocDVVDznIslRuGUS3g) and [Molevolent](https://twitter.com/molevolent) for "\
+            "creating the [Class Tier List](https://docs.google.com/spreadsheets/d/1Ywl9GcfySXodGA_MtqU4YMEQaGmr4eMAozrM4r00KwI/edit?usp=sharing)."\
+            "\Lastly, thanks to the AutoQuest Worlds Community!"
+        await ctx.send(embed=self.embed_single("Credits", credit_text))
+
     @commands.command()
     async def bhelp(self, ctx):
-        embedVar = discord.Embed(title="Bloom Help", color=self.block_color,
-            description="The following are a list of all commands and "\
-                        "how to use them. These commands must be used "\
-                        "in the <#802082388451655691> channel. "\
-                        "Please ping <@&802475195226390589> if something goes wrong with Bloom Bot.")
-        embedVar.add_field(name="\u200b", inline=False,
-            value="————————  Commands For Everyone  ————————")
-        embedVar.add_field(name="`;bhelp`", inline=False,
-            value="Reveals the help embed, showing all commands.")
-        embedVar.add_field(name="`;b bot_name`", inline=False,
-            value="Searches a bot. Keywords must be letters with atleast 3 characters "\
-                  "or numbers with at least 2 digits.")
-        embedVar.add_field(name="`;a author`", inline=False,
-            value="Searches the bots made by a particular author.")
-        embedVar.add_field(name="`;a`", inline=False,
-            value="Shows a list of all bot authors.")
-        embedVar.add_field(name="`;a u`", inline=False,
-            value="Shows a list of all bots with unidentified authors.")
-        embedVar.add_field(name="`;c class_name`", inline=False,
-            value="Returns the class and awe enhancement of searched class name.")
-        embedVar.add_field(name="\u200b", inline=False,
-            value="————————  Commands For Priviledge  ————————")
-        embedVar.add_field(name="`;bverify author`", inline=False,
-            value="Verifies an author name so the Bloom Command ;b author can "\
-                  "recognize their bots.")
-        embedVar.add_field(name="`;bunverify author`", inline=False,
-            value="Unverifies an author name, removing their bot name recognition")
+        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        if guild_allowed:
+            embedVar = discord.Embed(title="Bloom Help", color=self.block_color,
+                description="The following are a list of all commands and "\
+                            "how to use them. These commands must be used "\
+                            "in the <#802082388451655691> channel. "\
+                            "Please ping <@&802475195226390589> if something goes wrong with Bloom Bot.")
+            embedVar.add_field(name="\u200b", inline=False,
+                value="————————  Commands For Everyone  ————————")
+            embedVar.add_field(name="`;bhelp`", inline=False,
+                value="Reveals the help embed, showing all commands.")
+            embedVar.add_field(name="`;b bot_name`", inline=False,
+                value="Searches a bot. Keywords must be letters with atleast 3 characters "\
+                      "or numbers with at least 2 digits.")
+            embedVar.add_field(name="`;a author`", inline=False,
+                value="Searches the bots made by a particular author.")
+            embedVar.add_field(name="`;a`", inline=False,
+                value="Shows a list of all bot authors.")
+            embedVar.add_field(name="`;a u`", inline=False,
+                value="Shows a list of all bots with unidentified authors.")
+            embedVar.add_field(name="`;c class_name`", inline=False,
+                value="Shows the data chart of the searched class.")
+            embedVar.add_field(name="`;legends`", inline=False,
+                value="Shows the legends for the class data charts.")
+            embedVar.add_field(name="`;credits`", inline=False,
+                value="Shows the Credits.")
 
-        embedVar.add_field(name="**Lists of Priviledged Roles**", inline=False,
-            value="Admin, Staff, Helper, Trial Helper, Verified Bot Makers")
-        embedVar.add_field(name="**Note:**", inline=False,
-            value="\"Heil Gravelyn!\" -Bloom Autist")
-        embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/802986034538610708/804373863650558022/Gravelyn.png")
+            embedVar.add_field(name="\u200b", inline=False,
+                value="————————  Commands For Priviledge  ————————")
+            embedVar.add_field(name="`;bverify author`", inline=False,
+                value="Verifies an author name so the Bloom Command ;b author can "\
+                      "recognize their bots.")
+            embedVar.add_field(name="`;bunverify author`", inline=False,
+                value="Unverifies an author name, removing their bot name recognition")
 
-        await ctx.send(embed=embedVar)
-        return
+            embedVar.add_field(name="**Lists of Priviledged Roles**", inline=False,
+                value="Admin, Staff, Helper, Trial Helper, Verified Bot Makers")
+            embedVar.add_field(name="**Note:**", inline=False,
+                value="\"Heil Gravelyn!\" -Bloom Autist")
+            embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/802986034538610708/804373863650558022/Gravelyn.png")
+
+            await ctx.send(embed=embedVar)
+            return
+        if not guild_allowed:
+            embedVar = discord.Embed(title="Bloom Help", color=self.block_color,
+                    description="The following are a list of all commands and "\
+                                "how to use them. These commands must be used "\
+                                "in the <#802082388451655691> channel. "\
+                                "Please ping <@&802475195226390589> if something goes wrong with Bloom Bot.")
+            embedVar.add_field(name="\u200b", inline=False,
+                value="————————  Commands For Everyone  ————————")
+            embedVar.add_field(name="`;bhelp`", inline=False,
+                value="Reveals the help embed, showing all commands.")
+            embedVar.add_field(name="`;c class_name`", inline=False,
+                value="Shows the data chart of the searched class.")
+            embedVar.add_field(name="`;legends`", inline=False,
+                value="Shows the legends for the class data charts.")
+            embedVar.add_field(name="`;credits`", inline=False,
+                value="Shows the Credits.")
+            embedVar.add_field(name="**Note:**", inline=False,
+                value="\"Heil Gravelyn!\" -Bloom Autist")
+            embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/802986034538610708/804373863650558022/Gravelyn.png")
+            await ctx.send(embed=embedVar)
+            return
 
     @commands.command()
     async def update(self, ctx, value: str=""):
+        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        if not guild_allowed:
+            return
+
         permissions_check = await self.check_permissions(ctx, "update")
         if not permissions_check:
             return
@@ -526,6 +580,9 @@ class BloomBot(commands.Cog):
 
     @commands.command()
     async def bverify(self, ctx, author_name="", brief='Author Verification command'):
+        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        if not guild_allowed:
+            return
         permissions_check = await self.check_permissions(ctx, "verify author")
         if not permissions_check:
             return
@@ -582,6 +639,9 @@ class BloomBot(commands.Cog):
 
     @commands.command()
     async def bunverify(self, ctx, author_name="", brief='Author Removal command'):
+        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        if not guild_allowed:
+            return
         permissions_check = await self.check_permissions(ctx, "verify author")
         if not permissions_check:
             return
@@ -628,6 +688,10 @@ class BloomBot(commands.Cog):
 
     @commands.command()
     async def git(self, ctx):
+        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        if not guild_allowed:
+            return
+
         permissions_check = await self.check_permissions(ctx, "git")
         if not permissions_check:
             return
@@ -636,9 +700,22 @@ class BloomBot(commands.Cog):
         return
 
     @commands.command()
-    async def b(self, ctx, *, bot_name: str="",
-        brief='Bot Searching command'):
+    async def tag(self, tag_name, *, bots, ctx):
+        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        if not guild_allowed:
+            return
+        permissions_check = await self.check_permissions(ctx, "git")
+        if not permissions_check:
+            return
 
+        await ctx.send("https://github.com/BloomAutist47/bloom-bot/")
+        return
+
+    @commands.command()
+    async def b(self, ctx, *, bot_name: str=""):
+        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        if not guild_allowed:
+            return
         # Conditional Checks
         bot_name = bot_name.lower()
         permissions_check = await self.check_permissions(ctx, "b bot_name")
@@ -674,6 +751,10 @@ class BloomBot(commands.Cog):
 
     @commands.command()
     async def a(self, ctx, *, bot_author: str=""):
+        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        if not guild_allowed:
+            return
+
         # Conditional Checks
         permissions_check = await self.check_permissions(ctx, "a author")
         if not permissions_check:
@@ -741,6 +822,19 @@ class BloomBot(commands.Cog):
                 await ctx.send(embed=embedVar)
             return
 
+
+    @commands.command()
+    async def legends(self, ctx):
+        credit_text2 = "Credits:\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
+            "to the AuQW Community!\nType ;credits to see their links!"
+
+        embedVar = discord.Embed(title="Legends", color=self.block_color, 
+            description=f"Please read the following Carefully.")
+        embedVar.set_image(url="https://cdn.discordapp.com/attachments/802986034538610708/805406565866799124/intructions.png")
+        embedVar.set_footer(text=credit_text2)
+        await ctx.send(embed=embedVar)
+        return
+
     @commands.command()
     async def c(self, ctx, *, class_name: str=""):
         # Conditional Checks
@@ -748,22 +842,24 @@ class BloomBot(commands.Cog):
         if not permissions_check:
             return
 
+        if class_name=="":
+            desc = f"Please input a valid class name. "
+            await ctx.send(embed=self.embed_single("Class Result", desc))
+            return
+
+        # Boat Searching
         command_title = "Class Search"
 
         result = self.find_class(class_name.lower())
         found_class = result[0]
         found_data = result[1]
-
-        if class_name=="":
-            desc = f"Please input a valid class name. "
-            await ctx.send(embed=self.embed_single("Class Search Result", desc))
+        if found_class[0] == "Authentic":
+            await self.embed_image(ctx, found_data[1], found_data[0])
             return
-
-        if not found_class and not found_data:
-            desc = f"No class matches your search word `{class_name}`. Please type exact class names. "
-            await ctx.send(embed=self.embed_single("Class Search Result", desc))
+        if found_class[0] == "Duplicate":
+            await self.embed_image(ctx, found_data[1], found_data[0], [found_class[1], found_data[0]])
             return
-        if found_class and found_data:
+        if found_class[0] == "Basic":
             enh = found_data[1]["enh"].capitalize()
             awe = found_data[1]["awe_enh"].capitalize()
             wiki = found_data[1]["wiki"].capitalize()
@@ -779,12 +875,16 @@ class BloomBot(commands.Cog):
             desc += f"\> [Check the Wiki]({wiki})"
 
             await ctx.send(embed=self.embed_single(found_data[0] + " Class", desc))
-        if not found_class and found_data:
+            return
+        if not found_class[0] and found_data:
             desc = f'Sorry, nothing came up with your search word {class_name}.\nMaybe one of these?'
             embedVar = self.embed_multi_text(command_title, "Classes", desc, found_data, 10, False)
             await ctx.send(embed=embedVar)
             return
-
+        if not found_class[0] and not found_data: 
+            desc = f"No class matches your search word `{class_name}`. Please type exact class names."
+            await ctx.send(embed=self.embed_single("Class Search Result", desc))
+            return
 
 
     def embed_single(self, title, description):
@@ -794,6 +894,22 @@ class BloomBot(commands.Cog):
         # Yield successive n-sized chunks from lst.
         for i in range(0, len(lst), n):
             yield lst[i:i + n]
+
+    async def embed_image(self, ctx, url, class_name, duplicate_name=""):
+        credit_text2 = "Credits:\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
+            "to the AuQW Community!\nType ;credits to see their links!"
+        if duplicate_name:
+            dupliVar = discord.Embed(title="Duplicate", color=self.block_color, 
+                description=f"`{duplicate_name[0]}` is a duplicate of the {duplicate_name[1]} Class")
+            await ctx.send(embed=dupliVar)
+
+        embedVar = discord.Embed(title="Class Result", color=self.block_color, 
+            description=f"Data chart for the `{class_name}` Class.\nPlease use `;legends` to understand the chart.")
+        embedVar.set_image(url=url)
+        embedVar.set_footer(text=credit_text2)
+
+        await ctx.send(embed=embedVar)
+
 
     async def embed_multiple_links(self, ctx, bot_name, bot_results):
         # Properties
@@ -930,8 +1046,8 @@ Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
 async def on_ready():
     # Bot.BloomBot.database_update("web")
     print('Starting Bloom bot 2')
-    if os.name == "nt":
-        await Bot.get_channel(799238286539227136).send('hello')
+    # if os.name == "nt":
+    #     await Bot.get_channel(799238286539227136).send('hello')
     name = "A bot Created by Bloom Autist. Currently Beta V.1.4.0."
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
