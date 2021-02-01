@@ -420,9 +420,9 @@
             "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot",
             "author": "unknown"
         },
-        "Beneficence FrostSpiritReaver class.gbot": {
+        "FrostSpiritReaver class.gbot": {
             "url": "https://adventurequest.life/bots/Beneficence_FrostSpiritReaver_class.gbot",
-            "author": "unknown"
+            "author": "beneficence"
         },
         "Beneficience2B Frost Spirit Reaver Class and Items Bot pro.zip": {
             "url": "https://adventurequest.life/bots/Beneficience%2BBluu_Frost_Spirit_Reaver_Class_and_Items_Bot_pro.zip",
@@ -1188,9 +1188,6 @@
             "Battlegrounde X Assistant.gbot": {
                 "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot"
             },
-            "Beneficence FrostSpiritReaver class.gbot": {
-                "url": "https://adventurequest.life/bots/Beneficence_FrostSpiritReaver_class.gbot"
-            },
             "Dual Wield Forge.gbot": {
                 "url": "https://adventurequest.life/bots/Dual_Wield_Forge.gbot"
             },
@@ -1634,6 +1631,11 @@
             },
             "YokaiSwordScrollBot.gbot": {
                 "url": "https://adventurequest.life/bots/YokaiSwordScrollBot_Ninjatov.gbot"
+            }
+        },
+        "beneficence": {
+            "FrostSpiritReaver class.gbot": {
+                "url": "https://adventurequest.life/bots/Beneficence_FrostSpiritReaver_class.gbot"
             }
         },
         "bluu": {
