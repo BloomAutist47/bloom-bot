@@ -238,7 +238,10 @@ class BaseProgram:
 
         self.file_save()
 
-    
+    def git_read_class(self):
+        git_classes = self.repository.file_contents("./Data/classes.json").decoded
+        self.classes = json.loads(git_classes.decode('utf-8'))
+
     def git_read(self):
         """Description: Reads data from github .json files"""
         git_data = self.repository.file_contents("./Data/database.json").decoded
@@ -949,6 +952,7 @@ class BloomBotCog_2(BaseTools, commands.Cog):
         self.block_color = 3066993
         self.bot = bot
         self.bot.remove_command("help")
+        self.database_updating = False
 
     @commands.command()
     async def credits(self, ctx):
@@ -969,6 +973,27 @@ class BloomBotCog_2(BaseTools, commands.Cog):
         embedVar.set_footer(text=credit_text2)
         await ctx.send(embed=embedVar)
         return
+
+    @commands.command()
+    async def class_update(self, ctx):
+        permissions_check = await self.check_permissions(ctx, "update")
+        if not permissions_check:
+            return
+
+        priveleged = await self.check_privilege(ctx, "update")
+        if not priveleged:
+            return
+
+        if self.database_updating:
+            await ctx.send(r"\> Bloom Bot update in progress.")
+            return
+        if not self.database_updating:
+            self.database_updating = True
+            await ctx.send(r"\> Updating Class Database")
+            self.git_read_class()
+            await ctx.send(r"\> Bloom Bot Class Database updated!")
+            self.database_updating = False
+            return
 
 
     @commands.command()
