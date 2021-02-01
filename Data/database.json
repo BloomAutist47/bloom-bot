@@ -420,6 +420,14 @@
             "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot",
             "author": "unknown"
         },
+        "Beneficence FrostSpiritReaver class.gbot": {
+            "url": "https://adventurequest.life/bots/Beneficence_FrostSpiritReaver_class.gbot",
+            "author": "unknown"
+        },
+        "Beneficience2B Frost Spirit Reaver Class and Items Bot pro.zip": {
+            "url": "https://adventurequest.life/bots/Beneficience%2BBluu_Frost_Spirit_Reaver_Class_and_Items_Bot_pro.zip",
+            "author": "bluu"
+        },
         "ChronoSpan Rep Boat.zip": {
             "url": "https://adventurequest.life/bots/Bloom_ChronoSpan_Rep_Boat.zip",
             "author": "bloom"
@@ -608,10 +616,6 @@
             "url": "https://adventurequest.life/bots/Fresh_Soul_SC_Ninjatov.gbot",
             "author": "ninjatov"
         },
-        "ArchFiend DoomLord Bot.gbot": {
-            "url": "https://adventurequest.life/bots/Ganku_-_ArchFiend_DoomLord_Bot.gbot",
-            "author": "ganku"
-        },
         "ArchPaladin Class Non-Member.gbot": {
             "url": "https://adventurequest.life/bots/Ganku_-_ArchPaladin_Class_Non-Member.gbot",
             "author": "ganku"
@@ -686,6 +690,10 @@
         },
         "BdNWNOVHL.gbot": {
             "url": "https://adventurequest.life/bots/Jex_BdNWNOVHL.gbot",
+            "author": "jex"
+        },
+        "BeleenDyesNoMeM.gbot": {
+            "url": "https://adventurequest.life/bots/Jex_BeleenDyesNoMeM.gbot",
             "author": "jex"
         },
         "DroneNWNOVHL.gbot": {
@@ -815,6 +823,10 @@
         "Full Lord of Order Bot.rar": {
             "url": "https://adventurequest.life/bots/Minaaaaaa_Full_Lord_of_Order_Bot.rar",
             "author": "minaaaaaa"
+        },
+        "NewPlayerStarterPack.zip": {
+            "url": "https://adventurequest.life/bots/NewPlayerStarterPack.zip",
+            "author": "unknown"
         },
         "NinjaSneaks SDKA Bot.zip": {
             "url": "https://adventurequest.life/bots/NinjaSneaks_SDKA_Bot.zip",
@@ -1176,6 +1188,9 @@
             "Battlegrounde X Assistant.gbot": {
                 "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot"
             },
+            "Beneficence FrostSpiritReaver class.gbot": {
+                "url": "https://adventurequest.life/bots/Beneficence_FrostSpiritReaver_class.gbot"
+            },
             "Dual Wield Forge.gbot": {
                 "url": "https://adventurequest.life/bots/Dual_Wield_Forge.gbot"
             },
@@ -1196,6 +1211,9 @@
             },
             "LeeryContract Asistant.gbot": {
                 "url": "https://adventurequest.life/bots/LeeryContract_Asistant.gbot"
+            },
+            "NewPlayerStarterPack.zip": {
+                "url": "https://adventurequest.life/bots/NewPlayerStarterPack.zip"
             },
             "Non-mem VA SkCmd.gbot": {
                 "url": "https://adventurequest.life/bots/Non_mem_VA_SkCmd.gbot"
@@ -1618,27 +1636,10 @@
                 "url": "https://adventurequest.life/bots/YokaiSwordScrollBot_Ninjatov.gbot"
             }
         },
-        "bloom": {
-            "ChronoSpan Rep Boat.zip": {
-                "url": "https://adventurequest.life/bots/Bloom_ChronoSpan_Rep_Boat.zip"
-            },
-            "Dragonslayer General ClassBot PRO.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot"
-            },
-            "EtherStorm Rep Balmblossom.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
-            },
-            "Icestormarena r3c Frost Spirit.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot"
-            },
-            "Makai Fan Limited.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_Makai_Fan_Limited.gbot"
-            },
-            "SpoiledDragonQuest EliteVoidSet.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
-            }
-        },
         "bluu": {
+            "Beneficience2B Frost Spirit Reaver Class and Items Bot pro.zip": {
+                "url": "https://adventurequest.life/bots/Beneficience%2BBluu_Frost_Spirit_Reaver_Class_and_Items_Bot_pro.zip"
+            },
             "ArcangroveIndexQL.gbot": {
                 "url": "https://adventurequest.life/bots/Bluu_ArcangroveIndexQL.gbot"
             },
@@ -1686,6 +1687,26 @@
             },
             "YokaiRep Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Bluu_YokaiRep_Bot.gbot"
+            }
+        },
+        "bloom": {
+            "ChronoSpan Rep Boat.zip": {
+                "url": "https://adventurequest.life/bots/Bloom_ChronoSpan_Rep_Boat.zip"
+            },
+            "Dragonslayer General ClassBot PRO.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot"
+            },
+            "EtherStorm Rep Balmblossom.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
+            },
+            "Icestormarena r3c Frost Spirit.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot"
+            },
+            "Makai Fan Limited.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Makai_Fan_Limited.gbot"
+            },
+            "SpoiledDragonQuest EliteVoidSet.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
             }
         },
         "taryth": {
@@ -1757,9 +1778,6 @@
             }
         },
         "ganku": {
-            "ArchFiend DoomLord Bot.gbot": {
-                "url": "https://adventurequest.life/bots/Ganku_-_ArchFiend_DoomLord_Bot.gbot"
-            },
             "ArchPaladin Class Non-Member.gbot": {
                 "url": "https://adventurequest.life/bots/Ganku_-_ArchPaladin_Class_Non-Member.gbot"
             },
@@ -1812,6 +1830,9 @@
         "jex": {
             "BdNWNOVHL.gbot": {
                 "url": "https://adventurequest.life/bots/Jex_BdNWNOVHL.gbot"
+            },
+            "BeleenDyesNoMeM.gbot": {
+                "url": "https://adventurequest.life/bots/Jex_BeleenDyesNoMeM.gbot"
             },
             "DroneNWNOVHL.gbot": {
                 "url": "https://adventurequest.life/bots/Jex_DroneNWNOVHL.gbot"
