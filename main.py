@@ -28,15 +28,7 @@ from PIL import Image
 class BreakProgram(Exception):
     pass
 
-class BloomBot(commands.Cog):
-    def __init__(self, bot):
-        self.setup()
-        self.command_description_lists()
-        # self.database_update("web")
-        self.bot = bot
-        self.block_color = 3066993
-        self.database_updating = False
-        self.bot.remove_command("help")
+class BaseProgram:
 
     def setup(self):
         self.env_variables()
@@ -96,7 +88,6 @@ class BloomBot(commands.Cog):
                 row = []
                 html = requests.get(self.url, headers=headers).text
                 page_soup = Soup(html, "lxml")
-
                 body = page_soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
                 row_links = body.find_all("input", {"class":"rainbow"})
 
@@ -388,15 +379,7 @@ class BloomBot(commands.Cog):
             return [(False, ""), ([])]
 
 
-
-
-    def command_description_lists(self):
-        self.desc_dict = {"boat":
-            "A command for searching boats. Cannot accept keywords whose length are less than 3 chars, "\
-            "however, accepts numerical keywords of any length.",
-            }
-
-        
+class BaseTools(BaseProgram):
 
     async def check_word_count(self, ctx, value):
         if value == "":
@@ -461,13 +444,148 @@ class BloomBot(commands.Cog):
         else:
             return False
 
-    @commands.command()
-    async def credits(self, ctx):
-        credit_text = "Bloom Bot and Class Charts made by Bloom Autist.\n"\
-            "Thanks to [Shiminuki](https://www.youtube.com/channel/UCyQ5AocDVVDznIslRuGUS3g) and [Molevolent](https://twitter.com/molevolent) for "\
-            "creating the [Class Tier List](https://docs.google.com/spreadsheets/d/1Ywl9GcfySXodGA_MtqU4YMEQaGmr4eMAozrM4r00KwI/edit?usp=sharing)."\
-            "\nLastly, thanks to the AutoQuest Worlds Community!"
-        await ctx.send(embed=self.embed_single("Credits", credit_text))
+    async def embed_image(self, ctx, discord_url, wiki_url, class_name, duplicate_name=""):
+        credit_text2 = "Credits:"\
+            "\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
+            "to the AuQW Community!\nType ;credits to see their links!"
+        if duplicate_name:
+            dupliVar = discord.Embed(title="Duplicate", color=self.block_color, 
+                description=f"`{duplicate_name[0]}` is a duplicate of the {duplicate_name[1]} Class")
+            await ctx.send(embed=dupliVar)
+
+        embedVar = discord.Embed(title="Class Result", color=self.block_color, 
+            description=f"\> Check [{class_name}]({wiki_url}) Class on the wiki.\n\> Please use `;legends` to understand the chart.")
+        embedVar.set_image(url=discord_url)
+        embedVar.set_footer(text=credit_text2)
+
+        await ctx.send(embed=embedVar)
+
+
+    async def embed_multiple_links(self, ctx, bot_name, bot_results):
+        # Properties
+        st = "\u200b"
+        bot_list = ""
+        inline = False
+        counts = {"field": 0, "item": 0, "total":0}
+        title = "Bot Results"
+        desc = "The following matches your keyword: `{}`".format(bot_name)
+
+                    # if counts["field"] == 2:
+                    #     embedVar.add_field(name=st, value=st, inline=inline)
+                    #     counts["field"] = 0
+
+        embedVar = discord.Embed(title=title, description=desc, color=self.block_color)
+        done = []
+        for author in bot_results:
+            target = self.chunks_list(bot_results[author], 45)
+            counts["item"] = 0
+            for bot_chunk in target:
+                bot_list = ""
+                for items in bot_chunk:
+                    if counts["total"] == 40:
+                        counts["total"] = 0
+                        counts["item"] = 0
+                        await ctx.send(embed=embedVar)
+                        bot_list = ""
+                        embedVar = discord.Embed(title=title, description=desc, color=self.block_color)
+
+                    if counts["item"] == 9:
+                        embedVar.add_field(name=author.capitalize(), value=bot_list, inline=inline)
+                        # counts["field"] += 1
+                        counts["item"] = 0
+                        bot_list = ""
+                    counts["item"]+=1
+                    counts["total"] += 1
+                    bot_list += '\> [{}]({})\n'.format(items[0], items[1])
+                embedVar.add_field(name=author.capitalize(), value=bot_list, inline=inline)
+        await ctx.send(embed=embedVar)
+        return
+
+    # Tools
+    def embed_multi_link(self, title, block_title, embed_description, list_var):
+        # Properties
+        st = "\u200b" # Spacer title
+        bot_list = ""
+        inline = True
+        counts = {"field": 0, "item": 0}
+
+        embedVar = discord.Embed(title=title, description=embed_description, color=self.block_color)
+
+        for items in list_var:
+            if counts["field"] == 2:
+                embedVar.add_field(name=st, value=st, inline=inline)
+                counts["field"] = 0
+            if counts["item"] == 8:
+                embedVar.add_field(name=block_title, value=bot_list, inline=inline)
+                counts["field"] += 1
+                counts["item"] = 0
+                bot_list = ""
+            counts["item"]+=1
+            if title == "Bot Author Result":
+                bot_list += '\> [{}]({})\n'.format(items[0], items[2])
+            else:
+                bot_list += '\> [{}]({})\n'.format(items[0], items[1])
+        if counts["field"] == 2:
+            embedVar.add_field(name=st, value=st, inline=inline)
+        if counts["field"] == 1:
+            embedVar.add_field(name=st, value=st, inline=inline)
+            embedVar.add_field(name=st, value=st, inline=inline)
+        embedVar.add_field(name=block_title, value=bot_list, inline=inline)
+
+        return embedVar
+
+    def embed_multi_text(self, title, field_name, description, value_list, block_count, two_collumn):
+        st = "\u200b"
+        counts = {"field": 0, "item": 0}
+        text_item = "```css\n"
+
+        embedVar = discord.Embed(title=title, description=description, color=self.block_color)
+        for text in value_list:
+            if counts["field"] == 2 and two_collumn:
+                embedVar.add_field(name=st, value=st, inline=True)
+                counts["field"] = 0
+
+            if counts["item"] == block_count:
+                embedVar.add_field(name=field_name, value=text_item+ "```", inline=True)
+                text_item = "```css\n"
+                counts["item"] = 0
+                counts["field"]+=1
+
+            text_item += text + "\n"
+            counts["item"] += 1
+        if two_collumn:
+            if counts["field"] == 2:
+                embedVar.add_field(name=st, value=st, inline=True)
+                embedVar.add_field(name=st, value=st, inline=True)
+            embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
+
+            if counts["field"] == 0:
+                embedVar.add_field(name=st, value=st, inline=True)
+                embedVar.add_field(name=st, value=st, inline=True)
+            if counts["field"] == 1:
+                embedVar.add_field(name=st, value=st, inline=True)
+        if not two_collumn:
+            embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
+        return embedVar
+
+    def embed_single(self, title, description):
+         return discord.Embed(title=title, description=description, color=self.block_color)
+
+    def chunks_list(self, lst, n):
+        # Yield successive n-sized chunks from lst.
+        for i in range(0, len(lst), n):
+            yield lst[i:i + n]
+
+
+# Illegal Cog lol
+class BloomBotCog_1(commands.Cog, BaseTools):
+    def __init__(self, bot):
+        self.setup()
+        # self.database_update("web")
+        self.block_color = 3066993
+        self.database_updating = False
+        self.bot = bot
+        self.bot.remove_command("help")
 
     @commands.command()
     async def bhelp(self, ctx):
@@ -477,7 +595,7 @@ class BloomBot(commands.Cog):
                 description="The following are a list of all commands and "\
                             "how to use them. These commands must be used "\
                             "in the <#802082388451655691> channel. "\
-                            "Please ping <@&802475195226390589> if something goes wrong with Bloom Bot.")
+                            "Please ping <@!252363724894109700> if something goes wrong with Bloom Bot.")
             embedVar.add_field(name="\u200b", inline=False,
                 value="————————  Commands For Everyone  ————————")
             embedVar.add_field(name="`;bhelp`", inline=False,
@@ -824,18 +942,34 @@ class BloomBot(commands.Cog):
             return
 
 
+class BloomBotCog_2(BaseTools, commands.Cog):
+
+    def __init__(self, bot):
+        self.setup()
+        self.block_color = 3066993
+        self.bot = bot
+        self.bot.remove_command("help")
+
+    @commands.command()
+    async def credits(self, ctx):
+        credit_text = "Bloom Bot and Class Charts made by Bloom Autist.\n"\
+            "Thanks to [Shiminuki](https://www.youtube.com/channel/UCyQ5AocDVVDznIslRuGUS3g) and [Molevolent](https://twitter.com/molevolent) for "\
+            "creating the [Class Tier List](https://docs.google.com/spreadsheets/d/1Ywl9GcfySXodGA_MtqU4YMEQaGmr4eMAozrM4r00KwI/edit?usp=sharing)."\
+            "\nLastly, thanks to the @Satan and to the AutoQuest Worlds Community!"
+        await ctx.send(embed=self.embed_single("Credits", credit_text))
+
     @commands.command()
     async def legends(self, ctx):
-        credit_text2 = "Credits: Bloom Bot and Class Charts made by Bloom Autist.\n"\
-            "\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
+        credit_text2 = "\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
             "to the AuQW Community!\nType ;credits to see their links!"
 
         embedVar = discord.Embed(title="Legends", color=self.block_color, 
             description=f"Please read the following Carefully.")
-        embedVar.set_image(url="https://cdn.discordapp.com/attachments/802986034538610708/805406565866799124/intructions.png")
+        embedVar.set_image(url="https://cdn.discordapp.com/attachments/805367955923533845/805704888129814588/intructions.png")
         embedVar.set_footer(text=credit_text2)
         await ctx.send(embed=embedVar)
         return
+
 
     @commands.command()
     async def c(self, ctx, *, class_name: str=""):
@@ -889,168 +1023,13 @@ class BloomBot(commands.Cog):
             return
 
 
-    def embed_single(self, title, description):
-         return discord.Embed(title=title, description=description, color=self.block_color)
-
-    def chunks_list(self, lst, n):
-        # Yield successive n-sized chunks from lst.
-        for i in range(0, len(lst), n):
-            yield lst[i:i + n]
-
-    async def embed_image(self, ctx, discord_url, wiki_url, class_name, duplicate_name=""):
-        credit_text2 = "Credits: Bloom Bot and Class Charts made by Bloom Autist.\n"\
-            "\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
-            "to the AuQW Community!\nType ;credits to see their links!"
-        if duplicate_name:
-            dupliVar = discord.Embed(title="Duplicate", color=self.block_color, 
-                description=f"`{duplicate_name[0]}` is a duplicate of the {duplicate_name[1]} Class")
-            await ctx.send(embed=dupliVar)
-
-        embedVar = discord.Embed(title="Class Result", color=self.block_color, 
-            description=f"\> Check [{class_name}]({wiki_url}) Class on the wiki.\n\> Please use `;legends` to understand the chart.")
-        embedVar.set_image(url=discord_url)
-        embedVar.set_footer(text=credit_text2)
-
-        await ctx.send(embed=embedVar)
-
-
-    async def embed_multiple_links(self, ctx, bot_name, bot_results):
-        # Properties
-        st = "\u200b"
-        bot_list = ""
-        inline = False
-        counts = {"field": 0, "item": 0, "total":0}
-        title = "Bot Results"
-        desc = "The following matches your keyword: `{}`".format(bot_name)
-
-                    # if counts["field"] == 2:
-                    #     embedVar.add_field(name=st, value=st, inline=inline)
-                    #     counts["field"] = 0
-
-        embedVar = discord.Embed(title=title, description=desc, color=self.block_color)
-        done = []
-        for author in bot_results:
-            target = self.chunks_list(bot_results[author], 45)
-            counts["item"] = 0
-            for bot_chunk in target:
-                bot_list = ""
-                for items in bot_chunk:
-                    if counts["total"] == 40:
-                        counts["total"] = 0
-                        counts["item"] = 0
-                        await ctx.send(embed=embedVar)
-                        bot_list = ""
-                        embedVar = discord.Embed(title=title, description=desc, color=self.block_color)
-
-                    if counts["item"] == 9:
-                        embedVar.add_field(name=author.capitalize(), value=bot_list, inline=inline)
-                        # counts["field"] += 1
-                        counts["item"] = 0
-                        bot_list = ""
-                    counts["item"]+=1
-                    counts["total"] += 1
-                    bot_list += '\> [{}]({})\n'.format(items[0], items[1])
-                embedVar.add_field(name=author.capitalize(), value=bot_list, inline=inline)
-        await ctx.send(embed=embedVar)
-        return
-
-    # Tools
-    def embed_multi_link(self, title, block_title, embed_description, list_var):
-        # Properties
-        st = "\u200b" # Spacer title
-        bot_list = ""
-        inline = True
-        counts = {"field": 0, "item": 0}
-
-        embedVar = discord.Embed(title=title, description=embed_description, color=self.block_color)
-
-        for items in list_var:
-            if counts["field"] == 2:
-                embedVar.add_field(name=st, value=st, inline=inline)
-                counts["field"] = 0
-            if counts["item"] == 8:
-                embedVar.add_field(name=block_title, value=bot_list, inline=inline)
-                counts["field"] += 1
-                counts["item"] = 0
-                bot_list = ""
-            counts["item"]+=1
-            if title == "Bot Author Result":
-                bot_list += '\> [{}]({})\n'.format(items[0], items[2])
-            else:
-                bot_list += '\> [{}]({})\n'.format(items[0], items[1])
-        if counts["field"] == 2:
-            embedVar.add_field(name=st, value=st, inline=inline)
-        if counts["field"] == 1:
-            embedVar.add_field(name=st, value=st, inline=inline)
-            embedVar.add_field(name=st, value=st, inline=inline)
-        embedVar.add_field(name=block_title, value=bot_list, inline=inline)
-
-        return embedVar
-
-    def embed_multi_text(self, title, field_name, description, value_list, block_count, two_collumn):
-        st = "\u200b"
-        counts = {"field": 0, "item": 0}
-        text_item = "```css\n"
-
-        embedVar = discord.Embed(title=title, description=description, color=self.block_color)
-        for text in value_list:
-            if counts["field"] == 2 and two_collumn:
-                embedVar.add_field(name=st, value=st, inline=True)
-                counts["field"] = 0
-
-            if counts["item"] == block_count:
-                embedVar.add_field(name=field_name, value=text_item+ "```", inline=True)
-                text_item = "```css\n"
-                counts["item"] = 0
-                counts["field"]+=1
-
-            text_item += text + "\n"
-            counts["item"] += 1
-        if two_collumn:
-            if counts["field"] == 2:
-                embedVar.add_field(name=st, value=st, inline=True)
-                embedVar.add_field(name=st, value=st, inline=True)
-            embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
-
-            if counts["field"] == 0:
-                embedVar.add_field(name=st, value=st, inline=True)
-                embedVar.add_field(name=st, value=st, inline=True)
-            if counts["field"] == 1:
-                embedVar.add_field(name=st, value=st, inline=True)
-        if not two_collumn:
-            embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
-        return embedVar
-
-# class Slash(commands.Cog):
-#     def __init__(self, bot):
-#         if not hasattr(bot, "slash"):
-#             # Creates new SlashCommand instance to bot if bot doesn't have.
-#             bot.slash = SlashCommand(bot, override_type=True)
-#         self.bot = bot
-#         self.bot.slash.get_cog_commands(self)
-
-#     def cog_unload(self):
-#         self.bot.slash.remove_cog_commands(self)
-
-#     # @cog_ext.cog_slash(name="test")
-#     # async def _test(self, ctx: SlashContext):
-#     #     embed = discord.Embed(title="embed test")
-#     #     await ctx.send(content="test", embeds=[embed])
-
-#     @cog_ext.cog_slash(name="pingpong")
-#     async def _ping(self, ctx): # Defines a new "context" (ctx) command called "ping."
-#         await ctx.send(content=f"HOLA NIGGERS")
-
 
 
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
 
 @Bot.event
 async def on_ready():
-    # Bot.BloomBot.database_update("web")
     print('Starting Bloom bot 2')
-    # if os.name == "nt":
-    #     await Bot.get_channel(799238286539227136).send('hello')
     name = "A bot Created by Bloom Autist. Currently Beta V.1.4.0."
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
@@ -1062,8 +1041,7 @@ if os.name == "nt": # PC Mode
 else:              # Heroku
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
 
-Bot.add_cog(BloomBot(Bot))
-# Bot.add_cog(Slash(Bot))
-
+Bot.add_cog(BloomBotCog_1(Bot))
+Bot.add_cog(BloomBotCog_2(Bot))
 
 Bot.run(DISCORD_TOKEN)
