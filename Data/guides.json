@@ -1,28 +1,32 @@
 {
     "blod": {
+    	"title":"♦️ Blinding Light of Destiny Guide ♦️",
         "link": "https://aqwg.weebly.com/blinding-light-of-destiny.html",
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806405085856530462/5-25-2019-435892_orig.png",
+        "update": "3 Feb 2021",
         "header": {
             "1": "This is a shorter version of the guide for players that wish to take the beeline to BLoD with no hesitation.",
-            "2": "Ignore this if you have already completed this saga."
+            "2": "*Ignore this if you have already completed this saga.*"
         },
         "content": {
-            "1": "Complete the [DoomWood storyline](http://aqwwiki.wikidot.com/story:doomwood) and obtained the [Reinforced badge](http://aqwwiki.wikidot.com/bolbadge:20) to do the first three quests.",
-            "2": "The next two quests are self explanatory.\n**Requirement**:\n > \\> 40 Bone Dust \n > \\> 25 Undead Essences. \nRepeat one of these quests until you get **100 Spirit Orbs**.",
-            "3": "Once you get 100 Spirit Orbs, you may turn them in for your first Loyal Spirit Orb through the quest.",
-            "4": "Now you've made it to the longest part of getting BLoD. You will need to farm at least 10,500 Spirit Orbs. The recommended way is to do the Soul Searching quest from BattleUnderC; stack them to 1000 Undead Essences and then turn them in for Spirit Orbs at Necropolis.",
-            "5": "While farming the 10,500 Spirit Orbs, you should complete the Mine Crafting daily quest every day until you posses these metals: Copper, Barium, and Silver.",
-            "6": "Once you have the 10,500 orbs and the three metals, you may start the Destiny Weapon Construction.",
-            "7": "Get Celestial Copper and merge your 10,500 Spirit Orbs into 2 Bright Auras and 5 Loyal Spirit Orbs.",
-            "8": "/join Dwarfhold and head to Geopetal. Merge for the Celestial Copper of Destiny.",
-            "9": "Turn in at Necropolis and re-accept it. (This just checks that you have completed the of Destiny and you are required to complete one of these quests once)",
-            "10": "Complete the Weapon Kit quests. You will need one of each Kit per Blinding Weapon (3 Basic, Advanced but 4 Ultimate's as you require one for BLoD).",
-            "11": "Merge the Mace of Destiny -> Bright Mace of Destiny -> Blinding Mace of Destiny. You may need to do Ultimate Weapon Kit a few more times to obtain any required Bright Auras, Loyal Spirit Orbs and Spirit Orbs.",
-            "12": "Repeat steps 7, 8, and 11 for Blade of Destiny and Bow of Destiny. Now you may use your Mace of Destiny for Finding Fragments with the Mace for Brilliant Auras as you require them for the Blade and Bow.",
-            "13": "You're almost done! Use the Finding Fragments* quests from each of your Blinding Weapons until you get all the requirements you need for BLoD. The Blinding Aura on the other hand is a low % drop from any of the Finding Fragment quests.",
-            "14": "Complete the quest for BLoD!"
+            "1": "\\> Complete the [DoomWood storyline](http://aqwwiki.wikidot.com/story:doomwood).\n\\> Obtain the [Reinforced badge](http://aqwwiki.wikidot.com/bolbadge:20) to do the first three quests.",
+            "2": "\\> The next two quests are self explanatory.\n\\> Get `40 Bone Dust` and `25 Undead Essences`.\n\\> **Repeat** one of these quests until you get `100 Spirit Orbs`.",
+            "3": "\\> Get `100 Spirit Orbs`\n\\> Turn them in for your first `Loyal Spirit Orb`.",
+            "4": "\\> You're now at the longest part of getting BLoD.\n\\> Farm at least `10,500 Spirit Orbs`.\n\\> **Recommendation**: Do the [**Soul Searching quest**](http://aqwwiki.wikidot.com/yara-s-quests#3) from /BattleUnderC.\n\\> Stack them to `1000 Undead Essences`.\n\\> Turn them in for `Spirit Orbs` at /Necropolis.",
+            "5": "\\> While farming the 10,500 Spirit Orbs...\n\\> Complete the [**Mine Crafting daily quest**](http://aqwwiki.wikidot.com/artix-s-quests#27) every day.\n\\> Do the quests until you have these metals: `Copper`, `Barium`, and `Silver`.",
+            "6": "\\> Once you have the `10,500 Spirit Orbs` and the `three metals`...\n\\> Start the [**Destiny Weapon Construction.**](http://aqwwiki.wikidot.com/artix-s-quests#29)",
+            "7": "\\> Get [Celestial Copper](http://aqwwiki.wikidot.com/celestial-copper).\n\\> Merge `10,500 Spirit Orbs` into `2 Bright Auras` and `5 Loyal Spirit Orbs`.",
+            "8": "\\> Goto /Dwarfhold and head to [**Geopetal**](http://aqwwiki.wikidot.com/geopetal).\n\\> Merge for the `Celestial Copper of Destiny`.",
+            "9": "\\> Turn in the Celestial Copper of Destiny Quest at Necropolis.\n\\> *This just checks that you have created the `Celestial Copper of Destiny`. You are required to complete one of one these quests once only*.",
+            "10": "\\> Complete the [**Weapon Kit quests**](http://aqwwiki.wikidot.com/artix-s-quests#29).\n\\> Each destiny Weapon allows you to quickly farm certain types of ingredients.\n\\> You will need one of each Kit per Blinding Weapon.\n\\> (`3 Basic`, `3 Advanced`, and `4 Ultimate's` as you require one for BLoD).",
+            "11": "\\> Merge the `Mace of Destiny` -> `Bright Mace of Destiny` -> `Blinding Mace of Destiny`.\n\\> You may need to do Ultimate Weapon Kit a few more times to obtain any required Bright Auras, Loyal Spirit Orbs and Spirit Orbs.",
+            "12": "\\> Repeat steps 7, 8, and 11 for `Blade of Destiny` and `Bow of Destiny`. This time you will need different metals to obtain different destiny weapons.\n\\> Use your `Mace of Destiny` for [**Finding Fragments with the Mace**](http://aqwwiki.wikidot.com/artix-s-quests#30) to get `Brilliant Auras` as you need them for the Blade and Bow.",
+            "13": "\\> You're almost done! Use the [**Finding Fragments Quests**](http://aqwwiki.wikidot.com/artix-s-quests#30) from each of your Blinding Weapons until you get all requirements needed for BLoD.\n\\> The `Blinding Aura` on the other hand is a low % drop from any of the Finding Fragment quests.",
+            "14": "\\> Complete the quest for `Blinding of Light Destiny`!",
+            "15": "\\> Accept the `Get Your Blinding Light of Destiny` item and open your Book of Lore badges and find the [**Destiny is Blinding Badge**](http://aqwwiki.wikidot.com/bolbadge:82) to open the BLoD shop.\n\\> Buy the [Blinding Light of Destiny](http://aqwwiki.wikidot.com/blinding-light-of-destiny-axe)"
         }
     },
-        "blod2": {
+    "blod2": {
         "link": "https://aqwg.weebly.com/blinding-light-of-destiny.html",
         "header": {
             "1": "This is a shorter version of the guide for players that wish to take the beeline to BLoD with no hesitation.",
