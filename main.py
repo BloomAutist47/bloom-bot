@@ -1109,13 +1109,19 @@ class BloomBotCog_3(commands.Cog, BaseTools):
     @commands.command()
     async def g(self, ctx, guide):
         if guide.lower() == "r":
+            priveleged = await self.check_privilege(ctx, "verify author")
+            if not priveleged:
+                await ctx.send(f"\> User {ctx.author} does not have permissions for `;g r` command.\n")
+                return
+
             self.file_read_guides()
             await ctx.send("Updated Stuff")
             return
 
         g_name = guide.lower()
         if g_name in self.guides:
-            self.file_read_guides() 
+            if os.name == "nt": # PC Mode
+                self.file_read_guides() 
             guide_data = self.guides[g_name]
 
             embedVar = discord.Embed(title=guide_data["title"], color=self.block_color)
