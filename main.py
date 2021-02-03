@@ -38,11 +38,11 @@ class BaseProgram:
         self.settings = {}
         self.classes = {}
         self.data = {}
-        self.sets = {}
         self.priveleged_roles = []
         self.mode = ""
         self.author_list_lowercase = []
         self.class_acronyms = {}
+        self.guides = {}
 
         self.github = github3.login(token=self.GIT_BLOOM_TOKEN)
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
@@ -188,18 +188,12 @@ class BaseProgram:
         with open('./Data/database.json', 'w', encoding='utf-8') as f:
             json.dump({}, f, ensure_ascii=False, indent=4)
 
-    def file_set_save(self):
-        """Description: Saves self.Sets on pre-saved sets.json"""
-        with open('./Data/sets.json', 'w', encoding='utf-8') as f:
-            json.dump(self.sets, f, ensure_ascii=False, indent=4)
-
-
     def file_read(self):
         """Description: Reads pre-saved .json files"""
         with open('./Data/database.json', 'r', encoding='utf-8') as f:
             self.data = json.load(f)
-        with open('./Data/sets.json', 'r', encoding='utf-8') as f:
-            self.sets = json.load(f)
+        with open('./Data/guides.json', 'r', encoding='utf-8') as f:
+            self.guides = json.load(f)
         with open('./Data/settings.json', 'r', encoding='utf-8') as f:
             self.settings = json.load(f)
         with open('./Data/classes.json', 'r', encoding='utf-8') as f:
@@ -223,6 +217,17 @@ class BaseProgram:
             json.dump(self.settings, f, ensure_ascii=False, indent=4)
         with open('./Data/classes.json', 'w', encoding='utf-8') as f:
             json.dump(self.classes, f, ensure_ascii=False, indent=4)
+        with open('./Data/guides.json', 'w', encoding='utf-8') as f:
+            json.dump(self.guides, f, ensure_ascii=False, indent=4)
+
+        for class_name in self.classes:
+            if "acronym" in self.classes[class_name]:
+                list_of_acronyms = self.classes[class_name]["acronym"].split(",")
+                acronyms = [acr.replace(" ", "").lower() for acr in list_of_acronyms if acr != "(None)"]
+                if acronyms != ['']:
+                    for acr in acronyms:
+                        self.class_acronyms[acr] = class_name
+
 
     def git_save(self):
         """Description: Saves data to github .json files"""
@@ -230,9 +235,9 @@ class BaseProgram:
         contents_object = self.repository.file_contents("./Data/database.json")
         contents_object.update("update", git_data)
 
-        git_sets = json.dumps(self.sets, indent=4).encode('utf-8')
-        contents_object = self.repository.file_contents("./Data/sets.json")
-        contents_object.update("update", git_sets)
+        git_guides = json.dumps(self.guides, indent=4).encode('utf-8')
+        contents_object = self.repository.file_contents("./Data/guides.json")
+        contents_object.update("update", git_guides)
 
         git_settings = json.dumps(self.settings, indent=4).encode('utf-8')
         contents_object = self.repository.file_contents("./Data/settings.json")
@@ -257,8 +262,8 @@ class BaseProgram:
         git_data = self.repository.file_contents("./Data/database.json").decoded
         self.data = json.loads(git_data.decode('utf-8'))
 
-        git_sets = self.repository.file_contents("./Data/sets.json").decoded
-        self.sets = json.loads(git_sets.decode('utf-8'))
+        git_guides = self.repository.file_contents("./Data/guides.json").decoded
+        self.guides = json.loads(git_guides.decode('utf-8'))
 
         git_classes = self.repository.file_contents("./Data/classes.json").decoded
         self.classes = json.loads(git_classes.decode('utf-8'))
@@ -286,7 +291,6 @@ class BaseProgram:
 
         # Saving
         self.file_save()
-        self.file_set_save()
 
     """ SEARCH METHODS SECTION """
     def find_bot_by_name(self, bot_name_value):
@@ -474,8 +478,13 @@ class BaseTools(BaseProgram):
             await ctx.send(embed=self.embed_single("Bot Author Result", "No verified author of that name."))
             return None
 
-    async def check_guild(self, guild_name):
-        if guild_name in self.settings["priveleged_servers"]:
+    async def check_guild(self, ctx):
+        guild_id = ctx.message.guild.id
+        try:
+            guild_id = ctx.message.guild.id
+        except:
+            return False
+        if guild_id in self.settings["priveleged_servers"]:
             return True
         else:
             return False
@@ -625,7 +634,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
 
     @commands.command()
     async def bhelp(self, ctx):
-        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        guild_allowed = await self.check_guild(ctx)
         if guild_allowed:
             embedVar = discord.Embed(title="Bloom Help", color=self.block_color,
                 description="The following are a list of all commands and "\
@@ -679,7 +688,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
             embedVar.add_field(name="`;bhelp`", inline=False,
                 value="Reveals the help embed, showing all commands.")
             embedVar.add_field(name="`;c class_name`", inline=False,
-                value="Shows the data chart of the searched class.")
+                value="Shows the data chart of the searched class. Can use whole class name or acronym.")
             embedVar.add_field(name="`;legends`", inline=False,
                 value="Shows the legends for the class data charts.")
             embedVar.add_field(name="`;credits`", inline=False,
@@ -692,7 +701,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
 
     @commands.command()
     async def update(self, ctx, value: str=""):
-        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        guild_allowed = await self.check_guild(ctx)
         if not guild_allowed:
             return
 
@@ -735,7 +744,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
 
     @commands.command()
     async def bverify(self, ctx, author_name="", brief='Author Verification command'):
-        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        guild_allowed = await self.check_guild(ctx)
         if not guild_allowed:
             return
         permissions_check = await self.check_permissions(ctx, "verify author")
@@ -794,7 +803,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
 
     @commands.command()
     async def bunverify(self, ctx, author_name="", brief='Author Removal command'):
-        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        guild_allowed = await self.check_guild(ctx)
         if not guild_allowed:
             return
         permissions_check = await self.check_permissions(ctx, "verify author")
@@ -843,7 +852,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
 
     @commands.command()
     async def git(self, ctx):
-        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        guild_allowed = await self.check_guild(ctx)
         if not guild_allowed:
             return
 
@@ -856,7 +865,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
 
     @commands.command()
     async def tag(self, tag_name, *, bots, ctx):
-        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        guild_allowed = await self.check_guild(ctx)
         if not guild_allowed:
             return
         permissions_check = await self.check_permissions(ctx, "git")
@@ -868,7 +877,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
 
     @commands.command()
     async def b(self, ctx, *, bot_name: str=""):
-        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        guild_allowed = await self.check_guild(ctx)
         if not guild_allowed:
             return
         # Conditional Checks
@@ -906,7 +915,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
 
     @commands.command()
     async def a(self, ctx, *, bot_author: str=""):
-        guild_allowed = await self.check_guild(ctx.message.guild.id)
+        guild_allowed = await self.check_guild(ctx)
         if not guild_allowed:
             return
 
@@ -1041,6 +1050,11 @@ class BloomBotCog_2(BaseTools, commands.Cog):
             await ctx.send(embed=self.embed_single("Class Result", desc))
             return
 
+        if len(class_name) == 1:
+            desc = f"Please input a search word of atleast two character length. "
+            await ctx.send(embed=self.embed_single("Class Result", desc))
+            return
+
         # Boat Searching
         command_title = "Class Search"
 
@@ -1081,6 +1095,29 @@ class BloomBotCog_2(BaseTools, commands.Cog):
             return
 
 
+class BloomBotCog_3(commands.Cog, BaseTools):
+    def __init__(self, bot):
+        self.setup()
+        self.bot = bot
+        # self.bot.remove_command("help")
+        self.block_color = 3066993
+
+    @commands.command()
+    async def g(self, ctx, guide):
+        if guide.lower() == "blod":
+            embedVar = discord.Embed(title="Blinding Light of Destiny Guide", color=self.block_color)
+            note = self.guides["blod"]["header"]
+            description = ""
+            for steps in note:
+                description += note[steps] + "\n"
+            embedVar.description = description
+
+            content = self.guides["blod"]["content"]
+            for steps in content:
+                embedVar.add_field(name="`Step " + steps.capitalize() + "`", value=content[steps], inline=False)
+            embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/806405085856530462/5-25-2019-435892_orig.png")
+            await ctx.send(embed=embedVar)
+            return
 
 
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
@@ -1108,5 +1145,5 @@ else:              # Heroku
 
 Bot.add_cog(BloomBotCog_1(Bot))
 Bot.add_cog(BloomBotCog_2(Bot))
-
+# Bot.add_cog(BloomBotCog_3(Bot))
 Bot.run(DISCORD_TOKEN)
