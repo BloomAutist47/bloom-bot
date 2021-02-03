@@ -209,6 +209,10 @@ class BaseProgram:
             for alias in self.settings["confirmed_authors"][author]["alias"]:
                 self.author_list_lowercase.append(alias.lower())
 
+    def file_read_guides(self):
+        with open('./Data/guides.json', 'r', encoding='utf-8') as f:
+            self.guides = json.load(f)
+
     def file_save(self):
         """Description: Saves data to pre-saved .json files"""
         with open('./Data/database.json', 'w', encoding='utf-8') as f:
@@ -1104,20 +1108,33 @@ class BloomBotCog_3(commands.Cog, BaseTools):
 
     @commands.command()
     async def g(self, ctx, guide):
-        if guide.lower() == "blod":
-            embedVar = discord.Embed(title="Blinding Light of Destiny Guide", color=self.block_color)
-            note = self.guides["blod"]["header"]
-            description = ""
+        if guide.lower() == "r":
+            self.file_read_guides()
+            await ctx.send("Updated Stuff")
+            return
+
+        g_name = guide.lower()
+        if g_name in self.guides:
+            self.file_read_guides() 
+            guide_data = self.guides[g_name]
+
+            embedVar = discord.Embed(title=guide_data["title"], color=self.block_color)
+
+            note = guide_data["header"]
+            description = "**Full guide**: [here](%s)\n**Description**: "%(guide_data["link"])
+
             for steps in note:
-                description += note[steps] + "\n"
+                description += f"{note[steps]}\n"
+            description += "\n\u200b"
             embedVar.description = description
 
-            content = self.guides["blod"]["content"]
-            for steps in content:
-                embedVar.add_field(name="`Step " + steps.capitalize() + "`", value=content[steps], inline=False)
-            embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/806405085856530462/5-25-2019-435892_orig.png")
+            for steps in guide_data["content"]:
+                embedVar.add_field(name=f"📌 Step {steps.capitalize()}", value=guide_data["content"][steps] + "\n\u200b", inline=False)
+            embedVar.set_thumbnail(url=guide_data["thumbnail"])
+            embedVar.set_footer(text="This short guide is updated as of %s"%(guide_data["update"]))
             await ctx.send(embed=embedVar)
             return
+
 
 
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
@@ -1145,5 +1162,5 @@ else:              # Heroku
 
 Bot.add_cog(BloomBotCog_1(Bot))
 Bot.add_cog(BloomBotCog_2(Bot))
-# Bot.add_cog(BloomBotCog_3(Bot))
+Bot.add_cog(BloomBotCog_3(Bot))
 Bot.run(DISCORD_TOKEN)
