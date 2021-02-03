@@ -22,6 +22,7 @@ import io
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
 from discord.ext import commands
+from discord.ext.commands import CommandNotFound
 from pprint import pprint
 from PIL import Image
 
@@ -41,6 +42,7 @@ class BaseProgram:
         self.priveleged_roles = []
         self.mode = ""
         self.author_list_lowercase = []
+        self.class_acronyms = {}
 
         self.github = github3.login(token=self.GIT_BLOOM_TOKEN)
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
@@ -80,26 +82,26 @@ class BaseProgram:
         self.data["sort_by_bot_authors"] = {}
 
         if mode == "web":
-            try:
+            # try:
 
-                headers = {
-                    'User-Agent': self.PORTAL_AGENT
-                }
-                row = []
-                html = requests.get(self.url, headers=headers).text
-                page_soup = Soup(html, "lxml")
-                body = page_soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
-                row_links = body.find_all("input", {"class":"rainbow"})
+            headers = {
+                'User-Agent': self.PORTAL_AGENT
+            }
+            row = []
+            html = requests.get(self.url, headers=headers).text
+            page_soup = Soup(html, "lxml")
+            body = page_soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
+            row_links = body.find_all("input", {"class":"rainbow"})
 
-                for value in row_links:
-                    link = self.url + "bots/" + value["value"]
-                    row.append(link)
+            for value in row_links:
+                link = self.url + "bots/" + value["value"]
+                row.append(link)
 
-                self.settings["latest_update"] = "web"
-                self.mode = "web"
-            except:
-                self.git_read()
-                return False
+            self.settings["latest_update"] = "web"
+            self.mode = "web"
+            # except:
+            #     self.git_read()
+            #     return False
 
         elif mode == "html":
             if self.settings["latest_update"] == "web":
@@ -242,6 +244,14 @@ class BaseProgram:
         git_classes = self.repository.file_contents("./Data/classes.json").decoded
         self.classes = json.loads(git_classes.decode('utf-8'))
 
+        for class_name in self.classes:
+            if "acronym" in self.classes[class_name]:
+                list_of_acronyms = self.classes[class_name]["acronym"].split(",")
+                acronyms = [acr.replace(" ", "").lower() for acr in list_of_acronyms if acr != "(None)"]
+                if acronyms != ['']:
+                    for acr in acronyms:
+                        self.class_acronyms[acr] = class_name
+
     def git_read(self):
         """Description: Reads data from github .json files"""
         git_data = self.repository.file_contents("./Data/database.json").decoded
@@ -265,7 +275,14 @@ class BaseProgram:
             self.author_list_lowercase.append(author.lower())
             for alias in self.settings["confirmed_authors"][author]["alias"]:
                 self.author_list_lowercase.append(alias.lower())
-                
+
+        for class_name in self.classes:
+            if "acronym" in self.classes[class_name]:
+                list_of_acronyms = self.classes[class_name]["acronym"].split(",")
+                acronyms = [acr.replace(" ", "").lower() for acr in list_of_acronyms if acr != "(None)"]
+                if acronyms != ['']:
+                    for acr in acronyms:
+                        self.class_acronyms[acr] = class_name
 
         # Saving
         self.file_save()
@@ -344,6 +361,15 @@ class BaseProgram:
 
     def find_class(self, class_name):
         possible_classes = []
+
+        if len(class_name) <= 4:
+            if class_name.lower() in self.class_acronyms:
+                class_name_ = self.class_acronyms[class_name.lower()]
+                return [
+                    ("Authentic", ""), (class_name_, self.classes[class_name_]["discord_url"], self.classes[class_name_]["wiki"])
+                    ]
+
+
         for class_name_ in self.classes:
             # Search if exact name
             if class_name == class_name_.lower():
@@ -367,6 +393,13 @@ class BaseProgram:
                 else:
                     return [("Basic", ""), (self.classes[class_name_]["duplicates"][ind], self.classes[class_name_])]
 
+        if class_name.lower() in self.class_acronyms:
+            class_name_ = self.class_acronyms[class_name.lower()]
+            return [
+                ("Authentic", ""), (class_name_, self.classes[class_name_]["discord_url"], self.classes[class_name_]["wiki"])
+                ]
+
+        for class_name_ in self.classes:
             #Search keyword likeness
             class_words = class_name.split(" ")
             for words in class_words:
@@ -1051,6 +1084,13 @@ class BloomBotCog_2(BaseTools, commands.Cog):
 
 
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
+
+@Bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, CommandNotFound):
+        print("System: lmao a nigger used", error)
+        return
+    raise error
 
 @Bot.event
 async def on_ready():
