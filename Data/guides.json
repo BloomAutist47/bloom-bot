@@ -1,6 +1,75 @@
 {
     "blod": {
-    	"title":"♦️ Blinding Light of Destiny Guide ♦️",
+        "type": "guide",
+        "title": "Blinding Light of Destiny Guide",
+        "short_link": "https://cdn.discordapp.com/attachments/805367955923533845/806909891175514202/bload.png",
+        "full_guide": "https://aqwg.weebly.com/blinding-light-of-destiny.html",
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806405085856530462/5-25-2019-435892_orig.png"
+    },
+    "sdka": {
+        "type": "guide",
+        "title": "Sepulchure's DoomKnight Armor Guide",
+        "short_link": "https://cdn.discordapp.com/attachments/805367955923533845/806914199187226721/sadak.png",
+        "full_guide": "https://aqwg.weebly.com/sepulchures-doomknight-armour.html",
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806914605397966849/profile-axell5-14.png"
+    },
+    "nsod": {
+        "type": "guide_links",
+        "title": "Necrotic Sword of Doom Guide",
+        "content": [
+            ["AQWG by Vero", "https://aqwg.weebly.com/necrotic-sword-of-doom.html"],
+            ["AQW World by AQWTipsTricks", "https://www.aqwworld.com/2017/02/how-to-get-necrotic-sword-of-doom-guide.html"]
+        ],
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
+    },
+    "op":{
+        "type": "text",
+        "title": "Optimized Gear Combinations",
+        "content": [
+                "The best possible combination of gear to equip against each monster type for maximum optimization:",
+                "",
+                "• `Non-race-tagged`: NSoD (x1.51 or 51%)",
+                "• `Chaos`: CPC + NSoD (x1.963 or 96.3%)",
+                "• `Dragon`: CPC + NSoD (x1.963 or 96.3%)",
+                "• `Elemental`: CPC + NSoD (x1.963 or 96.3%)",
+                "• `Human`: SDKA + NSoD (x2.2801 or 128.01%)",
+                "• `Undead`: AFDL + BLoD (x2.3625 or 136.25%)",
+                "",
+                "\\> **NSoD** = Necrotic Sword of Doom; Burning Blade of Abezeth can be used instead if you don't have it, though it's slightly weaker.",
+                "\\> **CPC** = Celestial Pirate Commander and all its items; Archfiend Deathlord (AFDL2) and its items can be used instead, they're exactly the same.",
+                "\\> **SDKA** = Sepulchure's DoomKnight Armor; Arch DoomKnight can be used instead if you don't have it, though it's slightly weaker.",
+                "\\> **AFDL** =  Archfiend Doomlord, armor only; its other items can be used instead if you don't have the armor, though they're weaker.",
+                "\\> **BLoD** = Blinding Light of Destiny and its variants. Nothing can be used instead. How do you not fucking have this."
+            ]
+    },
+    "boost": {
+        "type": "image",
+        "title": "Guide for in-game Boosts",
+        "description": "Please read the following carefully.",
+        "content": "https://cdn.discordapp.com/attachments/805367955923533845/806920849801216030/2CBomK5.png"
+    },
+    "fdgraph": {
+        "type": "image",
+        "title": "DPS over time Graph",
+        "description": "Note: The green is CCM and the Purple is IC.",
+        "content": "https://cdn.discordapp.com/attachments/805367955923533845/807042152714076190/unknown.png"
+    },
+    "darkmode": {
+        "type": "single_link",
+        "title": "Dark mode for Grimoire Guide",
+        "description": "For those who wanna use Dark Mode for Grimoire,\nhere are the steps in order to get the mode (in the video):",
+        "content": "https://m.youtube.com/watch?v=b8qJB8rJHaU",
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806926635907022848/unknown.png"
+    },
+    "guides": {
+        "type": "single_link",
+        "title": "Compedium of Guides",
+        "description": "Guides related to farming, membership, reputation,\netc..., can be found here:",
+        "content": "https://m.youtube.com/watch?v=b8qJB8rJHaU",
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806927386997293077/unknown.png"
+    },
+    "blod2": {
+        "title": "♦️ Blinding Light of Destiny Guide ♦️",
         "link": "https://aqwg.weebly.com/blinding-light-of-destiny.html",
         "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806405085856530462/5-25-2019-435892_orig.png",
         "update": "3 Feb 2021",
@@ -24,29 +93,6 @@
             "13": "\\> You're almost done! Use the [**Finding Fragments Quests**](http://aqwwiki.wikidot.com/artix-s-quests#30) from each of your Blinding Weapons until you get all requirements needed for BLoD.\n\\> The `Blinding Aura` on the other hand is a low % drop from any of the Finding Fragment quests.",
             "14": "\\> Complete the quest for `Blinding of Light Destiny`!",
             "15": "\\> Accept the `Get Your Blinding Light of Destiny` item and open your Book of Lore badges and find the [**Destiny is Blinding Badge**](http://aqwwiki.wikidot.com/bolbadge:82) to open the BLoD shop.\n\\> Buy the [Blinding Light of Destiny](http://aqwwiki.wikidot.com/blinding-light-of-destiny-axe)"
-        }
-    },
-    "blod2": {
-        "link": "https://aqwg.weebly.com/blinding-light-of-destiny.html",
-        "header": {
-            "1": "This is a shorter version of the guide for players that wish to take the beeline to BLoD with no hesitation.",
-            "2": "Ignore this if you have already completed this saga."
-        },
-        "content": {
-            "1": "The first three quests are fairly self explanatory. In order to do them, you must have completed the DoomWood storyline and obtained the Reinforced badge.",
-            "2": "The next two quests are also self explanatory. You will need 40 Bone Dust and 25 Undead Essences. Afterwards, you will need to repeat one of these quests until you get 100 Spirit Orbs.",
-            "3": "Once you get 100 Spirit Orbs, you may turn them in for your first Loyal Spirit Orb through the quest.",
-            "4": "Now you've made it to the longest part of getting BLoD. You will need to farm at least 10,500 Spirit Orbs. The recommended way is to do the Soul Searching quest from BattleUnderC; stack them to 1000 Undead Essences and then turn them in for Spirit Orbs at Necropolis.",
-            "5": "While farming the 10,500 Spirit Orbs, you should complete the Mine Crafting daily quest every day until you posses these metals: Copper, Barium, and Silver.",
-            "6": "Once you have the 10,500 orbs and the three metals, you may start the Destiny Weapon Construction.",
-            "7": "Get Celestial Copper and merge your 10,500 Spirit Orbs into 2 Bright Auras and 5 Loyal Spirit Orbs.",
-            "8": "/join Dwarfhold and head to Geopetal. Merge for the Celestial Copper of Destiny.",
-            "9": "Turn in at Necropolis and re-accept it. (This just checks that you have completed the of Destiny and you are required to complete one of these quests once)",
-            "10": "Complete the Weapon Kit quests. You will need one of each Kit per Blinding Weapon (3 Basic, Advanced but 4 Ultimate's as you require one for BLoD).",
-            "11": "Merge the Mace of Destiny -> Bright Mace of Destiny -> Blinding Mace of Destiny. You may need to do Ultimate Weapon Kit a few more times to obtain any required Bright Auras, Loyal Spirit Orbs and Spirit Orbs.",
-            "12": "Repeat steps 7, 8, and 11 for Blade of Destiny and Bow of Destiny. Now you may use your Mace of Destiny for Finding Fragments with the Mace for Brilliant Auras as you require them for the Blade and Bow.",
-            "13": "You're almost done! Use the Finding Fragments* quests from each of your Blinding Weapons until you get all the requirements you need for BLoD. The Blinding Aura on the other hand is a low % drop from any of the Finding Fragment quests.",
-            "14": "Complete the quest for BLoD!"
         }
     }
 }
