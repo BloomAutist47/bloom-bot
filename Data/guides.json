@@ -17,31 +17,68 @@
         "type": "guide_links",
         "title": "Necrotic Sword of Doom Guide",
         "content": [
-            ["AQWG by Vero", "https://aqwg.weebly.com/necrotic-sword-of-doom.html"],
-            ["AQW World by AQWTipsTricks", "https://www.aqwworld.com/2017/02/how-to-get-necrotic-sword-of-doom-guide.html"]
+            [
+                "AQWG by Vero",
+                "https://aqwg.weebly.com/necrotic-sword-of-doom.html"
+            ],
+            [
+                "AQW World by AQWTipsTricks",
+                "https://www.aqwworld.com/2017/02/how-to-get-necrotic-sword-of-doom-guide.html"
+            ]
         ],
         "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
     },
-    "op":{
+    "op": {
         "type": "text",
         "title": "Optimized Gear Combinations",
+        "description": "The best possible combination of gear to equip against each monster type for maximum optimization:",
         "content": [
-                "The best possible combination of gear to equip against each monster type for maximum optimization:",
-                "",
-                "• `Non-race-tagged`: NSoD (x1.51 or 51%)",
-                "• `Chaos`: CPC + NSoD (x1.963 or 96.3%)",
-                "• `Dragon`: CPC + NSoD (x1.963 or 96.3%)",
-                "• `Elemental`: CPC + NSoD (x1.963 or 96.3%)",
-                "• `Human`: SDKA + NSoD (x2.2801 or 128.01%)",
-                "• `Undead`: AFDL + BLoD (x2.3625 or 136.25%)",
-                "",
-                "\\> **NSoD** = Necrotic Sword of Doom; Burning Blade of Abezeth can be used instead if you don't have it, though it's slightly weaker.",
-                "\\> **CPC** = Celestial Pirate Commander and all its items; Archfiend Deathlord (AFDL2) and its items can be used instead, they're exactly the same.",
-                "\\> **SDKA** = Sepulchure's DoomKnight Armor; Arch DoomKnight can be used instead if you don't have it, though it's slightly weaker.",
-                "\\> **AFDL** =  Archfiend Doomlord, armor only; its other items can be used instead if you don't have the armor, though they're weaker.",
-                "\\> **BLoD** = Blinding Light of Destiny and its variants. Nothing can be used instead. How do you not fucking have this."
-            ]
+            "• `Non-race-tagged`: NSoD (x1.51 or 51%)",
+            "• `Chaos`: CPC + NSoD (x1.963 or 96.3%)",
+            "• `Dragon`: CPC + NSoD (x1.963 or 96.3%)",
+            "• `Elemental`: CPC + NSoD (x1.963 or 96.3%)",
+            "• `Human`: SDKA + NSoD (x2.2801 or 128.01%)",
+            "• `Undead`: AFDL + BLoD (x2.3625 or 136.25%)",
+            "",
+            "\\> **NSoD** = Necrotic Sword of Doom; Burning Blade of Abezeth can be used instead if you don't have it, though it's slightly weaker.",
+            "\\> **CPC** = Celestial Pirate Commander and all its items; Archfiend Deathlord (AFDL2) and its items can be used instead, they're exactly the same.",
+            "\\> **SDKA** = Sepulchure's DoomKnight Armor; Arch DoomKnight can be used instead if you don't have it, though it's slightly weaker.",
+            "\\> **AFDL** =  Archfiend Doomlord, armor only; its other items can be used instead if you don't have the armor, though they're weaker.",
+            "\\> **BLoD** = Blinding Light of Destiny and its variants. Nothing can be used instead. How do you not fucking have this."
+        ]
     },
+    "ioda": {
+        "type": "text",
+        "title": "Ioda Guide",
+        "bullet": ":arrow_right:",
+        "description": "__**List of popular functional IoDA choices, by Molevolent**__",
+        "content": [
+            "__Oblivion Blade of Nulgath (Rare) pet__ - few farming items, bunch of cosmetics and has one of the best Nulgath reagen farming quests through Tendurr. If you are struggling to pick your first item, OBoN is a very good first choice to pick.",
+            "__Dragon King Naval 10k chest__ - like 120 cosmetics, everything has a 15% damage boost",
+            "__VoT (Vindicator of They)__ - class + full set",
+            "__Rare classes and classes__ that cannot be obtained, for example: Artifact Hunter",
+            "__Chaos Champion Prime Orb__ - class + full set",
+            "__Necrotic Sword of Doom__ - longest farm in the game, weapon that does +51% damage to everything. If you're bitting however, ignore this choice completely because it's much more convenient to save your IoDA for something else rather than using it for something that takes no effort due to bots",
+            "__Nulgath Challenge pet__ - some of the easiest nulgath reagent farming, notably blood gems",
+            "__Arcane Paragon pet__ - best lt's for an endgame player",
+            "__Bright Paragon pet__ - best lt's for most people",
+            "__Any other rare 10k AC’s chest__",
+            "__Dark Caster__ - class + full set"
+        ]
+    },
+    "alchem": {
+        "type": "text",
+        "title": "Alchemy Minigame Guide",
+        "description": "__**How to Play the Alchemy Minigame:**__",
+        "content": [
+            "In the minigame, you need to fill up the empty potion bottle. To be efficient, balance the heat of your potion so it maintains a strong output of 3 green circles, or 2 at the least. I find this can be done best by keeping the mixture temperature at about 70-80 degrees. Use the red button to increase the heat or the blue button to freeze the runestone and stop it from overheating. The harder the rune, the easier it is for it to overheat. Sometimes, a fireball will not hit the runestone and instead set the room on fire, putting the meter at 100 - you cannot avoid this. Similarly, the ice may not cool down the runestone and could actually put your meter at -30. If this happens, you may as well restart because you won't lose any reagents for it.",
+            "\\> [Click this link for the Full Guide by Vero](https://aqwg.weebly.com/alchemy--spellcrafting.html)"
+        ],
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/807060789663760465/h54ejuc_orig.png"
+    },
+
+
+
     "boost": {
         "type": "image",
         "title": "Guide for in-game Boosts",
@@ -54,6 +91,8 @@
         "description": "Note: The green is CCM and the Purple is IC.",
         "content": "https://cdn.discordapp.com/attachments/805367955923533845/807042152714076190/unknown.png"
     },
+
+
     "darkmode": {
         "type": "single_link",
         "title": "Dark mode for Grimoire Guide",
@@ -65,34 +104,21 @@
         "type": "single_link",
         "title": "Compedium of Guides",
         "description": "Guides related to farming, membership, reputation,\netc..., can be found here:",
-        "content": "https://m.youtube.com/watch?v=b8qJB8rJHaU",
+        "content": "https://aqwg.weebly.com/",
         "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806927386997293077/unknown.png"
     },
-    "blod2": {
-        "title": "♦️ Blinding Light of Destiny Guide ♦️",
-        "link": "https://aqwg.weebly.com/blinding-light-of-destiny.html",
-        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806405085856530462/5-25-2019-435892_orig.png",
-        "update": "3 Feb 2021",
-        "header": {
-            "1": "This is a shorter version of the guide for players that wish to take the beeline to BLoD with no hesitation.",
-            "2": "*Ignore this if you have already completed this saga.*"
-        },
-        "content": {
-            "1": "\\> Complete the [DoomWood storyline](http://aqwwiki.wikidot.com/story:doomwood).\n\\> Obtain the [Reinforced badge](http://aqwwiki.wikidot.com/bolbadge:20) to do the first three quests.",
-            "2": "\\> The next two quests are self explanatory.\n\\> Get `40 Bone Dust` and `25 Undead Essences`.\n\\> **Repeat** one of these quests until you get `100 Spirit Orbs`.",
-            "3": "\\> Get `100 Spirit Orbs`\n\\> Turn them in for your first `Loyal Spirit Orb`.",
-            "4": "\\> You're now at the longest part of getting BLoD.\n\\> Farm at least `10,500 Spirit Orbs`.\n\\> **Recommendation**: Do the [**Soul Searching quest**](http://aqwwiki.wikidot.com/yara-s-quests#3) from /BattleUnderC.\n\\> Stack them to `1000 Undead Essences`.\n\\> Turn them in for `Spirit Orbs` at /Necropolis.",
-            "5": "\\> While farming the 10,500 Spirit Orbs...\n\\> Complete the [**Mine Crafting daily quest**](http://aqwwiki.wikidot.com/artix-s-quests#27) every day.\n\\> Do the quests until you have these metals: `Copper`, `Barium`, and `Silver`.",
-            "6": "\\> Once you have the `10,500 Spirit Orbs` and the `three metals`...\n\\> Start the [**Destiny Weapon Construction.**](http://aqwwiki.wikidot.com/artix-s-quests#29)",
-            "7": "\\> Get [Celestial Copper](http://aqwwiki.wikidot.com/celestial-copper).\n\\> Merge `10,500 Spirit Orbs` into `2 Bright Auras` and `5 Loyal Spirit Orbs`.",
-            "8": "\\> Goto /Dwarfhold and head to [**Geopetal**](http://aqwwiki.wikidot.com/geopetal).\n\\> Merge for the `Celestial Copper of Destiny`.",
-            "9": "\\> Turn in the Celestial Copper of Destiny Quest at Necropolis.\n\\> *This just checks that you have created the `Celestial Copper of Destiny`. You are required to complete one of one these quests once only*.",
-            "10": "\\> Complete the [**Weapon Kit quests**](http://aqwwiki.wikidot.com/artix-s-quests#29).\n\\> Each destiny Weapon allows you to quickly farm certain types of ingredients.\n\\> You will need one of each Kit per Blinding Weapon.\n\\> (`3 Basic`, `3 Advanced`, and `4 Ultimate's` as you require one for BLoD).",
-            "11": "\\> Merge the `Mace of Destiny` -> `Bright Mace of Destiny` -> `Blinding Mace of Destiny`.\n\\> You may need to do Ultimate Weapon Kit a few more times to obtain any required Bright Auras, Loyal Spirit Orbs and Spirit Orbs.",
-            "12": "\\> Repeat steps 7, 8, and 11 for `Blade of Destiny` and `Bow of Destiny`. This time you will need different metals to obtain different destiny weapons.\n\\> Use your `Mace of Destiny` for [**Finding Fragments with the Mace**](http://aqwwiki.wikidot.com/artix-s-quests#30) to get `Brilliant Auras` as you need them for the Blade and Bow.",
-            "13": "\\> You're almost done! Use the [**Finding Fragments Quests**](http://aqwwiki.wikidot.com/artix-s-quests#30) from each of your Blinding Weapons until you get all requirements needed for BLoD.\n\\> The `Blinding Aura` on the other hand is a low % drop from any of the Finding Fragment quests.",
-            "14": "\\> Complete the quest for `Blinding of Light Destiny`!",
-            "15": "\\> Accept the `Get Your Blinding Light of Destiny` item and open your Book of Lore badges and find the [**Destiny is Blinding Badge**](http://aqwwiki.wikidot.com/bolbadge:82) to open the BLoD shop.\n\\> Buy the [Blinding Light of Destiny](http://aqwwiki.wikidot.com/blinding-light-of-destiny-axe)"
-        }
+    "mem": {
+        "type": "single_link",
+        "title": "Guide for Newly Made Members/Legends",
+        "description": "Please read the following carefully.",
+        "content": "https://docs.google.com/document/d/1R_tkHiC6gCE0EKF8nvPOGY35_wM_4mimbdAJQDMbtXg/edit",
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/807057211053572156/hnB2u7-T9DI_COu6U6bLOh5ALjGjMPX6QZGZx5hfKVD2zJP-UubeEryFXL6dYV5wbybreHshcgw1200-h630-p.png"
+    },
+    "gg": {
+        "type": "single_link",
+        "title": "Grimoire Guide 101",
+        "description": "Botting has become very common in AQW for a variety of reasons: a combination of being a flash game, game designers doubling down on harder grinds to combat botting (never understood this idea), and lack of gameplay interactivity all contribute to this problem, but we aren’t here to talk about that...",
+        "content": "https://docs.google.com/document/d/1feo9uke1qa0pzjAOTMUkasGR7Rqsz0fdOwdV0BaEzz0/edit?usp=sharing",
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/807058396326920202/fBCWljGbFIlO8hVm3MnfJki8CFSN0jSeaZ7hbqa0_fx0pO6rCtjVWczDh9rZc2OkuKzviNH77ww1200-h630-p.png"
     }
 }

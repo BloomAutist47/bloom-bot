@@ -1237,7 +1237,7 @@ class BloomBotCog_4(commands.Cog, BaseTools):
         self.msg_count = 0
 
     @commands.command()
-    async def g(self, ctx, guide):
+    async def g(self, ctx, guide=""):
         if guide.lower() == "r":
             priveleged = await self.check_privilege(ctx, "verify author")
             if not priveleged:
@@ -1247,12 +1247,24 @@ class BloomBotCog_4(commands.Cog, BaseTools):
             self.file_read_guides()
             await ctx.send("Updated Stuff")
             return
+        if os.name == "nt": # PC Mode
+            self.file_read_guides() 
+
+        if guide == "":
+            embedVar = discord.Embed(title="♦️ List of Guide Commands ♦️", color=self.block_color)
+            desc = "Please read the following carefully.\n\n"
+            for guide_name in self.guides:
+                guide_data = self.guides[guide_name]
+                desc += "`;g {}` - {}\n".format(guide_name, guide_data["title"])
+            embedVar.description = desc
+            await ctx.send(embed=embedVar)
+            return
+
 
         g_name = guide.lower()
         if g_name in self.guides:
             guide_data = self.guides[g_name]
-            if os.name == "nt": # PC Mode
-                self.file_read_guides() 
+
 
             if guide_data["type"] == "guide":
                 
@@ -1277,13 +1289,18 @@ class BloomBotCog_4(commands.Cog, BaseTools):
 
             if guide_data["type"] == "text":
                 embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
-                desc = ""
+                desc = guide_data["description"] + "\n\n"
+                bullet = ""
+                if "bullet" in guide_data:
+                    bullet = "%s "%(guide_data["bullet"])
                 if type(guide_data["content"]) is list:
                     for sentence in guide_data["content"]:
-                        desc += sentence + "\n"
+                        desc += bullet + sentence + "\n"
                 else:
                     desc = guide_data["content"]
                 embedVar.description = desc
+                if "thumbnail" in guide_data:
+                    embedVar.set_thumbnail(url=guide_data["thumbnail"])
                 await ctx.send(embed=embedVar)
                 return
 
@@ -1294,16 +1311,11 @@ class BloomBotCog_4(commands.Cog, BaseTools):
                 await ctx.send(embed=embedVar)
                 return
 
-            # if guide_data["type"] == "single_link":
-            #     msg = guide_data["description"] + "\n"
-            #     msg += guide_data["content"]
-            #     await ctx.send(msg)
-            #     return
 
             if guide_data["type"] == "single_link":
                 embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
                 desc = guide_data["description"] + "\n"
-                desc += "\> [[Click this link]({})]".format(guide_data["content"])
+                desc += "\> [Click this link]({})".format(guide_data["content"])
                 embedVar.description = desc
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
