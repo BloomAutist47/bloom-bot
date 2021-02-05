@@ -725,11 +725,15 @@ class BloomBotCog_1(commands.Cog, BaseTools):
                     description="The following are a list of all commands and "\
                                 "how to use them. These commands must be used "\
                                 "in the <#805413618719260712> channel. "\
-                                "Please ping <@&802968357623300107> if something goes wrong with Bloom Bot.")
+                                "Please ping <@!252363724894109700> if something goes wrong with Bloom Bot.")
             embedVar.add_field(name="\u200b", inline=False,
                 value="————————  Commands For Everyone  ————————")
             embedVar.add_field(name="`;bhelp`", inline=False,
                 value="Reveals the help embed, showing all commands.")
+            embedVar.add_field(name="`;g`", inline=False,
+                value="Summons a list of all guides.")
+            embedVar.add_field(name="`;g guide_name`", inline=False,
+                value="Returns a specific guide. Use ;g to get a guide name.")
             embedVar.add_field(name="`;c class_name`", inline=False,
                 value="Shows the data chart of the searched class. Can use whole class name or acronym.")
             embedVar.add_field(name="`;legends`", inline=False,
