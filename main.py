@@ -26,6 +26,17 @@ from discord.ext.commands import CommandNotFound
 from pprint import pprint
 from PIL import Image
 
+from collections import OrderedDict
+from requests import Session
+import socket
+import certifi
+import urllib3
+import urllib.request
+import cloudscraper
+
+class AppURLopener(urllib.request.FancyURLopener):
+    version = "Mozilla/5.0"
+
 class BreakProgram(Exception):
     pass
 
@@ -83,25 +94,50 @@ class BaseProgram:
 
         if mode == "web":
             # try:
-
             headers = {
                 'User-Agent': self.PORTAL_AGENT
             }
             row = []
-            html = requests.get(self.url, headers=headers).text
-            page_soup = Soup(html, "lxml")
-            body = page_soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
-            row_links = body.find_all("input", {"class":"rainbow"})
+            # scraper = cloudscraper.create_scraper()
+            # html = scraper.get(self.url, headers=headers).text
+            # html = requests.get(self.url, headers=headers).text
 
-            for value in row_links:
-                link = self.url + "bots/" + value["value"]
-                row.append(link)
 
-            self.settings["latest_update"] = "web"
-            self.mode = "web"
-            # except:
-            #     self.git_read()
-            #     return False
+            # headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0'}
+            # request = urllib.request.Request(self.url, headers=headers)
+
+            # r = urllib.request.urlopen(request).read()
+
+            # http = urllib3.PoolManager(
+            #     cert_reqs='CERT_REQUIRED',
+            #     ca_certs=certifi.where()
+            # )
+
+            # html = http.request('GET', self.url, headers=headers).text
+            # s = Session()
+            # headers = OrderedDict({
+            #     'Accept-Encoding': 'gzip, deflate, br',
+            #     # 'Host': "grimaldis.myguestaccount.com",
+            #     'User-Agent': self.PORTAL_AGENT
+            # })
+            # s.headers = headers
+            # html = s.get(self.url, headers=headers, verify=False).text
+            # print(html)
+            try:
+                html = requests.get(self.url, headers=headers).text
+                page_soup = Soup(html, "lxml")
+                body = page_soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
+                row_links = body.find_all("input", {"class":"rainbow"})
+
+                for value in row_links:
+                    link = self.url + "bots/" + value["value"]
+                    row.append(link)
+
+                self.settings["latest_update"] = "web"
+                self.mode = "web"
+            except:
+                self.git_read()
+                return False
 
         elif mode == "html":
             if self.settings["latest_update"] == "web":
@@ -409,8 +445,10 @@ class BaseProgram:
 
         for class_name_ in self.classes:
             #Search keyword likeness
-            class_words = class_name.split(" ")
+            class_words = class_name.replace("  ", " ").split(" ")
             for words in class_words:
+                if words == "" or len(words) == 1:
+                    continue
                 if words in class_name_.lower():
                     possible_classes.append(class_name_)
                 for duplicate in duplicates:
@@ -635,6 +673,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
         self.database_updating = False
         self.bot = bot
         self.bot.remove_command("help")
+
 
     @commands.command()
     async def bhelp(self, ctx):
@@ -1000,6 +1039,7 @@ class BloomBotCog_2(BaseTools, commands.Cog):
         self.bot.remove_command("help")
         self.database_updating = False
 
+
     @commands.command()
     async def credits(self, ctx):
         credit_text = "Bloom Bot and Class Charts made by Bloom Autist.\n"\
@@ -1105,6 +1145,8 @@ class BloomBotCog_3(commands.Cog, BaseTools):
         self.bot = bot
         # self.bot.remove_command("help")
         self.block_color = 3066993
+        self.message_objects = {}
+        self.msg_count = 0
 
     @commands.command()
     async def g(self, ctx, guide):
@@ -1122,6 +1164,8 @@ class BloomBotCog_3(commands.Cog, BaseTools):
         if g_name in self.guides:
             if os.name == "nt": # PC Mode
                 self.file_read_guides() 
+
+            # sent = False
             guide_data = self.guides[g_name]
 
             embedVar = discord.Embed(title=guide_data["title"], color=self.block_color)
@@ -1131,17 +1175,140 @@ class BloomBotCog_3(commands.Cog, BaseTools):
 
             for steps in note:
                 description += f"{note[steps]}\n"
-            description += "\n\u200b"
+            # description += "\n\u200b"
             embedVar.description = description
+
+            embedVar.add_field(name="Instructions", value="Click \"🔻\" to go down and \"🔺\" to go up the list.", inline=False)
+            embedVar.set_thumbnail(url=guide_data["thumbnail"])
+            embedVar.set_footer(text="This short guide is updated as of %s."%(guide_data["update"]))
+
+            embed_object = await ctx.send(embed=embedVar)
+
+            self.message_objects[embed_object.id] = {}
+            self.message_objects[embed_object.id]["guide"] = g_name
+            self.message_objects[embed_object.id]["n"] = 0
+            self.message_objects[embed_object.id]["lim"] = len()
+
+            await embed_object.add_reaction(emoji = "\U0001F53A")
+            await embed_object.add_reaction(emoji = "\U0001F53B")
+
+            embedVar.set_field_at(-1, name="\u200b", value="\u200b", inline=False)
+            self.msg_count += 1
 
             for steps in guide_data["content"]:
                 embedVar.add_field(name=f"📌 Step {steps.capitalize()}", value=guide_data["content"][steps] + "\n\u200b", inline=False)
-            embedVar.set_thumbnail(url=guide_data["thumbnail"])
-            embedVar.set_footer(text="This short guide is updated as of %s"%(guide_data["update"]))
-            await ctx.send(embed=embedVar)
+            await ctx.author.send(embed=embedVar)
             return
 
+    @commands.Cog.listener()
+    async def on_reaction_add(self, reaction, user):
+        if int(user.id) != 761955273342320691:
+            if reaction.message.id in self.message_objects:
+                embedVar = discord.Embed(title="dick", description="pusyy", color=self.block_color)
+                obj = reaction.message
+                embed = obj.embeds[0]
 
+                msg = self.message_objects[obj.id]
+                g_name = msg["guide"]
+                if reaction.emoji == "🔻":
+                    if msg["n"] == 0:
+                        await obj.remove_reaction("🔻", user)
+                        return
+                    msg["n"] -= 1
+                    await obj.remove_reaction("🔻", user)
+                if reaction.emoji == "🔺": 
+                    msg["n"] += 1
+                    await obj.remove_reaction("🔺", user)
+                index = msg["n"]
+                if index == 0:
+                    embed.set_field_at(-1, name="Instructions", value="Click \"🔻\" to go down and \"🔺\" to go up the list.", inline=False)
+                else:
+                    embed.set_field_at(-1, name=f"📌 Step {index}", value=self.guides[g_name]["content"][str(index)], inline=False)
+                await reaction.message.edit(embed=embed)
+
+
+class BloomBotCog_4(commands.Cog, BaseTools):
+    def __init__(self, bot):
+        self.setup()
+        self.bot = bot
+        # self.bot.remove_command("help")
+        self.block_color = 3066993
+        self.message_objects = {}
+        self.msg_count = 0
+
+    @commands.command()
+    async def g(self, ctx, guide):
+        if guide.lower() == "r":
+            priveleged = await self.check_privilege(ctx, "verify author")
+            if not priveleged:
+                await ctx.send(f"\> User {ctx.author} does not have permissions for `;g r` command.\n")
+                return
+
+            self.file_read_guides()
+            await ctx.send("Updated Stuff")
+            return
+
+        g_name = guide.lower()
+        if g_name in self.guides:
+            guide_data = self.guides[g_name]
+            if os.name == "nt": # PC Mode
+                self.file_read_guides() 
+
+            if guide_data["type"] == "guide":
+                
+                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color,
+                    description="The following is a short guide of %s. "\
+                                "For the [Full Guide click this](%s)."%(guide_data["title"], guide_data["full_guide"]))
+                embedVar.set_image(url=guide_data["short_link"])
+                embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                await ctx.send(embed=embedVar)
+                return
+
+            if guide_data["type"] == "guide_links":
+
+                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
+                desc = "Choose from the following guides:\n"
+                for text in guide_data["content"]:
+                    desc += "\> [{}]({}).\n".format(text[0], text[1])
+                embedVar.description = desc
+                embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                await ctx.send(embed=embedVar)
+                return
+
+            if guide_data["type"] == "text":
+                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
+                desc = ""
+                if type(guide_data["content"]) is list:
+                    for sentence in guide_data["content"]:
+                        desc += sentence + "\n"
+                else:
+                    desc = guide_data["content"]
+                embedVar.description = desc
+                await ctx.send(embed=embedVar)
+                return
+
+            if guide_data["type"] == "image":
+                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
+                embedVar.description = guide_data["description"]
+                embedVar.set_image(url=guide_data["content"])
+                await ctx.send(embed=embedVar)
+                return
+
+            # if guide_data["type"] == "single_link":
+            #     msg = guide_data["description"] + "\n"
+            #     msg += guide_data["content"]
+            #     await ctx.send(msg)
+            #     return
+
+            if guide_data["type"] == "single_link":
+                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
+                desc = guide_data["description"] + "\n"
+                desc += "\> [[Click this link]({})]".format(guide_data["content"])
+                embedVar.description = desc
+                if "thumbnail" in guide_data:
+                    embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                await ctx.send(embed=embedVar)
+                return
 
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
 
@@ -1155,7 +1322,10 @@ async def on_command_error(ctx, error):
 @Bot.event
 async def on_ready():
     print('Starting Bloom bot 2')
-    name = "A bot Created by Bloom Autist. Currently Beta V.1.4.0."
+    if os.name == "nt":
+        channel = Bot.get_channel(799238286539227136)
+        await channel.send("HOLA")
+    name = "A bot Created by Bloom Autist. Currently Beta V.1.4.8.01"
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
 
@@ -1168,5 +1338,6 @@ else:              # Heroku
 
 Bot.add_cog(BloomBotCog_1(Bot))
 Bot.add_cog(BloomBotCog_2(Bot))
-Bot.add_cog(BloomBotCog_3(Bot))
+# Bot.add_cog(BloomBotCog_3(Bot))
+Bot.add_cog(BloomBotCog_4(Bot))
 Bot.run(DISCORD_TOKEN)
