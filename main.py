@@ -297,6 +297,10 @@ class BaseProgram:
                     for acr in acronyms:
                         self.class_acronyms[acr] = class_name
 
+    def git_read_guide(self):
+        git_guides = self.repository.file_contents("./Data/guides.json").decoded
+        self.guides = json.loads(git_guides.decode('utf-8'))
+        return
     def git_read(self):
         """Description: Reads data from github .json files"""
         git_data = self.repository.file_contents("./Data/database.json").decoded
@@ -1247,8 +1251,10 @@ class BloomBotCog_4(commands.Cog, BaseTools):
             if not priveleged:
                 await ctx.send(f"\> User {ctx.author} does not have permissions for `;g r` command.\n")
                 return
-
-            self.file_read_guides()
+            if os.name == "nt": # PC Mode
+                self.file_read_guides()
+            else:
+                self.git_read_guide()
             await ctx.send("Updated Stuff")
             return
         if os.name == "nt": # PC Mode
@@ -1264,7 +1270,7 @@ class BloomBotCog_4(commands.Cog, BaseTools):
             embedVar.description = desc
             await ctx.send(embed=embedVar)
             return
-# `
+
 
         g_name = guide.lower()
         if g_name in self.guides:
