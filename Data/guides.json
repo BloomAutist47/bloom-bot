@@ -67,6 +67,25 @@
             "__Dark Caster__ - class + full set"
         ]
     },
+    "xp": {
+        "type": "text",
+        "title": "Leveling-up Guide",
+        "description": "__**Don't know how to level up? Read this:**__",
+        "content": [
+            "__**For Members:**__",
+            "-> Level up to 75 using [/nightmare](http://aqwwiki.wikidot.com/nightmare-location) or Aggro Icestormarena Bot",
+            "-> After you've reached level 75, use [/icestormarena](http://aqwwiki.wikidot.com/icestorm-arena), r3c, Top and run skill commands + provoke",
+            "",
+            "__**For non-members:**__",
+            "-> Level up to 75 using Aggro Icestormarena Bot",
+            "-> After you've reached level 75, use [/icestormarena](http://aqwwiki.wikidot.com/icestorm-arena), r3c, Top and run skill commands + provoke",
+            "",
+            "Starting from fresh? Use [Healer class](http://aqwwiki.wikidot.com/healer) and insert a \"**Skill 2**\" command in an icestormarena aggro bot so you won't die and heal when needed."
+        ]
+
+    },
+
+
     "alchem": {
         "type": "text",
         "title": "Alchemy Minigame Guide",
