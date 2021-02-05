@@ -34,12 +34,12 @@
         "title": "Optimized Gear Combinations",
         "description": "The best possible combination of gear to equip against each monster type for maximum optimization:",
         "content": [
-            "• `Non-race-tagged`: NSoD (x1.51 or 51%)",
-            "• `Chaos`: CPC + NSoD (x1.963 or 96.3%)",
-            "• `Dragon`: CPC + NSoD (x1.963 or 96.3%)",
-            "• `Elemental`: CPC + NSoD (x1.963 or 96.3%)",
-            "• `Human`: SDKA + NSoD (x2.2801 or 128.01%)",
-            "• `Undead`: AFDL + BLoD (x2.3625 or 136.25%)",
+            "\u2022 `Non-race-tagged`: NSoD (x1.51 or 51%)",
+            "\u2022 `Chaos`: CPC + NSoD (x1.963 or 96.3%)",
+            "\u2022 `Dragon`: CPC + NSoD (x1.963 or 96.3%)",
+            "\u2022 `Elemental`: CPC + NSoD (x1.963 or 96.3%)",
+            "\u2022 `Human`: SDKA + NSoD (x2.2801 or 128.01%)",
+            "\u2022 `Undead`: AFDL + BLoD (x2.3625 or 136.25%)",
             "",
             "\\> **NSoD** = Necrotic Sword of Doom; Burning Blade of Abezeth can be used instead if you don't have it, though it's slightly weaker.",
             "\\> **CPC** = Celestial Pirate Commander and all its items; Archfiend Deathlord (AFDL2) and its items can be used instead, they're exactly the same.",
@@ -63,7 +63,7 @@
             "__Nulgath Challenge pet__ - some of the easiest nulgath reagent farming, notably blood gems",
             "__Arcane Paragon pet__ - best lt's for an endgame player",
             "__Bright Paragon pet__ - best lt's for most people",
-            "__Any other rare 10k AC’s chest__",
+            "__Any other rare 10k AC\u2019s chest__",
             "__Dark Caster__ - class + full set"
         ]
     },
@@ -113,7 +113,7 @@
     "gg": {
         "type": "single_link",
         "title": "Grimoire Guide 101",
-        "description": "Botting has become very common in AQW for a variety of reasons: a combination of being a flash game, game designers doubling down on harder grinds to combat botting (never understood this idea), and lack of gameplay interactivity all contribute to this problem, but we aren’t here to talk about that...",
+        "description": "Botting has become very common in AQW for a variety of reasons: a combination of being a flash game, game designers doubling down on harder grinds to combat botting (never understood this idea), and lack of gameplay interactivity all contribute to this problem, but we aren\u2019t here to talk about that...",
         "content": "https://docs.google.com/document/d/1feo9uke1qa0pzjAOTMUkasGR7Rqsz0fdOwdV0BaEzz0/edit?usp=sharing",
         "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/807058396326920202/fBCWljGbFIlO8hVm3MnfJki8CFSN0jSeaZ7hbqa0_fx0pO6rCtjVWczDh9rZc2OkuKzviNH77ww1200-h630-p.png"
     },
