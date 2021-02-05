@@ -59,7 +59,7 @@ class BaseProgram:
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
 
         self.file_read()
-        self.git_read()
+        # self.git_read()
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -1288,7 +1288,7 @@ class BloomBotCog_4(commands.Cog, BaseTools):
             if guide_data["type"] == "guide_links":
 
                 embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
-                desc = "Choose from the following guides:\n"
+                desc = guide_data["description"]
                 for text in guide_data["content"]:
                     desc += "\> [{}]({}).\n".format(text[0], text[1])
                 embedVar.description = desc
