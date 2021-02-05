@@ -440,6 +440,10 @@
             "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot",
             "author": "bloom"
         },
+        "FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_FuchsiaDye_MagentaDye_MEMBER_ONLY_DyeingForAChallenge.gbot",
+            "author": "bloom"
+        },
         "Icestormarena r3c Frost Spirit.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot",
             "author": "bloom"
@@ -1080,6 +1084,10 @@
             "url": "https://adventurequest.life/bots/Weeb_Ninja_Challenge.gbot",
             "author": "weeb"
         },
+        "NON2BMEM Dyes.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_NON%2BMEM_Dyes.gbot",
+            "author": "weeb"
+        },
         "Non-MEMBER Good.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_NON-MEMBER_Good.gbot",
             "author": "weeb"
@@ -1122,6 +1130,10 @@
         },
         "Sigrid Murder.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Sigrid_Murder.gbot",
+            "author": "weeb"
+        },
+        "Skyguard UtraExos REP.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Skyguard_UtraExos_REP.gbot",
             "author": "weeb"
         },
         "Super Simple Soul Searching.gbot": {
@@ -1701,6 +1713,9 @@
             "EtherStorm Rep Balmblossom.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
             },
+            "FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_FuchsiaDye_MagentaDye_MEMBER_ONLY_DyeingForAChallenge.gbot"
+            },
             "Icestormarena r3c Frost Spirit.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot"
             },
@@ -2039,6 +2054,9 @@
             "Ninja Challenge.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Ninja_Challenge.gbot"
             },
+            "NON2BMEM Dyes.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_NON%2BMEM_Dyes.gbot"
+            },
             "Non-MEMBER Good.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_NON-MEMBER_Good.gbot"
             },
@@ -2074,6 +2092,9 @@
             },
             "Sigrid Murder.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Sigrid_Murder.gbot"
+            },
+            "Skyguard UtraExos REP.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Skyguard_UtraExos_REP.gbot"
             },
             "Super Simple Soul Searching.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Super_Simple_Soul_Searching.gbot"
