@@ -26,16 +26,16 @@ from discord.ext.commands import CommandNotFound
 from pprint import pprint
 from PIL import Image
 
-from collections import OrderedDict
-from requests import Session
-import socket
-import certifi
-import urllib3
-import urllib.request
-import cloudscraper
+# from collections import OrderedDict
+# from requests import Session
+# import socket
+# import certifi
+# import urllib3
+# import urllib.request
+# import cloudscraper
 
-class AppURLopener(urllib.request.FancyURLopener):
-    version = "Mozilla/5.0"
+# class AppURLopener(urllib.request.FancyURLopener):
+#     version = "Mozilla/5.0"
 
 class BreakProgram(Exception):
     pass
