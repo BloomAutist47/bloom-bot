@@ -1,22 +1,22 @@
 {
-    "blod": {
-        "type": "guide",
-        "title": "Blinding Light of Destiny Guide",
-        "short_link": "https://cdn.discordapp.com/attachments/805367955923533845/806909891175514202/bload.png",
-        "full_guide": "https://aqwg.weebly.com/blinding-light-of-destiny.html",
-        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806405085856530462/5-25-2019-435892_orig.png"
+    "blod":{
+        "type":"guide",
+        "title":"Blinding Light of Destiny Guide",
+        "short_link":"https://cdn.discordapp.com/attachments/805367955923533845/806909891175514202/bload.png",
+        "full_guide":"https://aqwg.weebly.com/blinding-light-of-destiny.html",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806405085856530462/5-25-2019-435892_orig.png"
     },
-    "sdka": {
-        "type": "guide",
-        "title": "Sepulchure's DoomKnight Armor Guide",
-        "short_link": "https://cdn.discordapp.com/attachments/805367955923533845/806914199187226721/sadak.png",
-        "full_guide": "https://aqwg.weebly.com/sepulchures-doomknight-armour.html",
-        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806914605397966849/profile-axell5-14.png"
+    "sdka":{
+        "type":"guide",
+        "title":"Sepulchure's DoomKnight Armor Guide",
+        "short_link":"https://cdn.discordapp.com/attachments/805367955923533845/806914199187226721/sadak.png",
+        "full_guide":"https://aqwg.weebly.com/sepulchures-doomknight-armour.html",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806914605397966849/profile-axell5-14.png"
     },
-    "nsod": {
-        "type": "guide_links",
-        "title": "Necrotic Sword of Doom Guide",
-        "content": [
+    "nsod":{
+        "type":"guide_links",
+        "title":"Necrotic Sword of Doom Guide",
+        "content":[
             [
                 "AQWG by Vero",
                 "https://aqwg.weebly.com/necrotic-sword-of-doom.html"
@@ -26,13 +26,13 @@
                 "https://www.aqwworld.com/2017/02/how-to-get-necrotic-sword-of-doom-guide.html"
             ]
         ],
-        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
     },
-    "op": {
-        "type": "text",
-        "title": "Optimized Gear Combinations",
-        "description": "The best possible combination of gear to equip against each monster type for maximum optimization:",
-        "content": [
+    "op":{
+        "type":"text",
+        "title":"Optimized Gear Combinations",
+        "description":"The best possible combination of gear to equip against each monster type for maximum optimization:",
+        "content":[
             "• `Non-race-tagged`: NSoD (x1.51 or 51%)",
             "• `Chaos`: CPC + NSoD (x1.963 or 96.3%)",
             "• `Dragon`: CPC + NSoD (x1.963 or 96.3%)",
@@ -47,12 +47,12 @@
             "\\> **BLoD** = Blinding Light of Destiny and its variants. Nothing can be used instead. How do you not fucking have this."
         ]
     },
-    "ioda": {
-        "type": "text",
-        "title": "Ioda Guide",
-        "bullet": ":arrow_right:",
-        "description": "__**List of popular functional IoDA choices, by Molevolent**__",
-        "content": [
+    "ioda":{
+        "type":"text",
+        "title":"Ioda Guide",
+        "bullet":":arrow_right:",
+        "description":"__**List of popular functional IoDA choices, by Molevolent**__",
+        "content":[
             "__Oblivion Blade of Nulgath (Rare) pet__ - few farming items, bunch of cosmetics and has one of the best Nulgath reagen farming quests through Tendurr. If you are struggling to pick your first item, OBoN is a very good first choice to pick.",
             "__Dragon King Naval 10k chest__ - like 120 cosmetics, everything has a 15% damage boost",
             "__VoT (Vindicator of They)__ - class + full set",
@@ -66,59 +66,165 @@
             "__Dark Caster__ - class + full set"
         ]
     },
-    "alchem": {
-        "type": "text",
-        "title": "Alchemy Minigame Guide",
-        "description": "__**How to Play the Alchemy Minigame:**__",
-        "content": [
+    "alchem":{
+        "type":"text",
+        "title":"Alchemy Minigame Guide",
+        "description":"__**How to Play the Alchemy Minigame:**__",
+        "content":[
             "In the minigame, you need to fill up the empty potion bottle. To be efficient, balance the heat of your potion so it maintains a strong output of 3 green circles, or 2 at the least. I find this can be done best by keeping the mixture temperature at about 70-80 degrees. Use the red button to increase the heat or the blue button to freeze the runestone and stop it from overheating. The harder the rune, the easier it is for it to overheat. Sometimes, a fireball will not hit the runestone and instead set the room on fire, putting the meter at 100 - you cannot avoid this. Similarly, the ice may not cool down the runestone and could actually put your meter at -30. If this happens, you may as well restart because you won't lose any reagents for it.",
             "\\> [Click this link for the Full Guide by Vero](https://aqwg.weebly.com/alchemy--spellcrafting.html)"
         ],
-        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/807060789663760465/h54ejuc_orig.png"
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807060789663760465/h54ejuc_orig.png"
     },
-
-
-
-    "boost": {
-        "type": "image",
-        "title": "Guide for in-game Boosts",
-        "description": "Please read the following carefully.",
-        "content": "https://cdn.discordapp.com/attachments/805367955923533845/806920849801216030/2CBomK5.png"
+    "boost":{
+        "type":"image",
+        "title":"Guide for in-game Boosts",
+        "description":"Please read the following carefully.",
+        "content":"https://cdn.discordapp.com/attachments/805367955923533845/806920849801216030/2CBomK5.png"
     },
-    "fdgraph": {
-        "type": "image",
-        "title": "DPS over time Graph",
-        "description": "Note: The green is CCM and the Purple is IC.",
-        "content": "https://cdn.discordapp.com/attachments/805367955923533845/807042152714076190/unknown.png"
+    "fdgraph":{
+        "type":"image",
+        "title":"DPS over time Graph",
+        "description":"Note: The green is CCM and the Purple is IC.",
+        "content":"https://cdn.discordapp.com/attachments/805367955923533845/807042152714076190/unknown.png"
     },
-
-
-    "darkmode": {
-        "type": "single_link",
-        "title": "Dark mode for Grimoire Guide",
-        "description": "For those who wanna use Dark Mode for Grimoire,\nhere are the steps in order to get the mode (in the video):",
-        "content": "https://m.youtube.com/watch?v=b8qJB8rJHaU",
-        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806926635907022848/unknown.png"
+    "darkmode":{
+        "type":"single_link",
+        "title":"Dark mode for Grimoire Guide",
+        "description":"For those who wanna use Dark Mode for Grimoire,\nhere are the steps in order to get the mode (in the video):",
+        "content":"https://m.youtube.com/watch?v=b8qJB8rJHaU",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806926635907022848/unknown.png"
     },
-    "guides": {
-        "type": "single_link",
-        "title": "Compedium of Guides",
-        "description": "Guides related to farming, membership, reputation,\netc..., can be found here:",
-        "content": "https://aqwg.weebly.com/",
-        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/806927386997293077/unknown.png"
+    "guides":{
+        "type":"single_link",
+        "title":"Compedium of Guides",
+        "description":"Guides related to farming, membership, reputation,\netc..., can be found here:",
+        "content":"https://aqwg.weebly.com/",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806927386997293077/unknown.png"
     },
-    "mem": {
-        "type": "single_link",
-        "title": "Guide for Newly Made Members/Legends",
-        "description": "Please read the following carefully.",
-        "content": "https://docs.google.com/document/d/1R_tkHiC6gCE0EKF8nvPOGY35_wM_4mimbdAJQDMbtXg/edit",
-        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/807057211053572156/hnB2u7-T9DI_COu6U6bLOh5ALjGjMPX6QZGZx5hfKVD2zJP-UubeEryFXL6dYV5wbybreHshcgw1200-h630-p.png"
+    "mem":{
+        "type":"single_link",
+        "title":"Guide for Newly Made Members/Legends",
+        "description":"Please read the following carefully.",
+        "content":"https://docs.google.com/document/d/1R_tkHiC6gCE0EKF8nvPOGY35_wM_4mimbdAJQDMbtXg/edit",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807057211053572156/hnB2u7-T9DI_COu6U6bLOh5ALjGjMPX6QZGZx5hfKVD2zJP-UubeEryFXL6dYV5wbybreHshcgw1200-h630-p.png"
     },
-    "gg": {
-        "type": "single_link",
-        "title": "Grimoire Guide 101",
-        "description": "Botting has become very common in AQW for a variety of reasons: a combination of being a flash game, game designers doubling down on harder grinds to combat botting (never understood this idea), and lack of gameplay interactivity all contribute to this problem, but we aren’t here to talk about that...",
-        "content": "https://docs.google.com/document/d/1feo9uke1qa0pzjAOTMUkasGR7Rqsz0fdOwdV0BaEzz0/edit?usp=sharing",
-        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/807058396326920202/fBCWljGbFIlO8hVm3MnfJki8CFSN0jSeaZ7hbqa0_fx0pO6rCtjVWczDh9rZc2OkuKzviNH77ww1200-h630-p.png"
+    "gg":{
+        "type":"single_link",
+        "title":"Grimoire Guide 101",
+        "description":"Botting has become very common in AQW for a variety of reasons: a combination of being a flash game, game designers doubling down on harder grinds to combat botting (never understood this idea), and lack of gameplay interactivity all contribute to this problem, but we aren’t here to talk about that...",
+        "content":"https://docs.google.com/document/d/1feo9uke1qa0pzjAOTMUkasGR7Rqsz0fdOwdV0BaEzz0/edit?usp=sharing",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807058396326920202/fBCWljGbFIlO8hVm3MnfJki8CFSN0jSeaZ7hbqa0_fx0pO6rCtjVWczDh9rZc2OkuKzviNH77ww1200-h630-p.png"
+    },
+    "vhlskills":{
+        "type":"single_link",
+        "title":"Void Highlord Skillset Guide",
+        "description":[
+            "There are 4 combos, read them carefully to see which ones you need to use for what you want to do.",
+            "",
+            "For a full guide, follow the link below: "
+        ],
+        "content":"https://www.reddit.com/r/AQW/comments/btz2ol/void_highlord_skill_guide/",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807165264352772106/5-27-2019-1127659_88.png"
+    },
+    "ynrskills":{
+        "type":"single_link",
+        "title":"Yami no Ronin Skillset Guide",
+        "description":[
+            "**Offensive**: 4-3-4-4-2-4-2-4-2-4-5",
+            "**Note**: Begin the battle with 5 if the enemy died to 5 in the previous battle and you need to survive, wait for the *San effect* to fade before repeating this rotation.",
+            "",
+            "**Dodge** (100%): 5-3-2-5-2-2-5-2-2",
+            "**Note**: Replace 3 with 2 if low mana.",
+            "",
+            "For a full guide, follow the link below: "
+        ],
+        "content":"https://www.reddit.com/r/AQW/comments/g5d02x/what_are_the_best_combos_for_yami_no_ronin/fo3gytu?utm_source=share&utm_medium=web2x&context=3",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807167295960907777/ynr.png"
+    },
+    "ssotskills":{
+        "type":"single_link",
+        "title":"ShadowStalker of Time Skillset Guide",
+        "description":[
+            "The Following is a short guide to use SSoT.",
+            "",
+            "**Buildup**: 2-3-5-2-4-2-3",
+            "**Single Nuke**: 5-4-(2)-3",
+            "**Double Nuke**: 5-3-4-(2)-3",
+            "",
+            "For a full guide, follow the link below: "
+        ],
+        "content":"https://www.reddit.com/r/AQW/comments/gsscy3/bossfight_god_ssot_the_reckoning/",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807167817946234880/male-18.png"
+    },
+    "ucmskills":{
+        "common_key":"ucmskills/ccmskills/tcmskills"
+    },
+    "ccmskills":{
+        "common_key":"ucmskills/ccmskills/tcmskills"
+    },
+    "tcmskills":{
+        "common_key":"ucmskills/ccmskills/tcmskills"
+    },
+    "ucmskills/ccmskills/tcmskills":{
+        "type":"single_link",
+        "title":"Corrupted Chronomancer",
+        "description":[
+            "**Skillset Guide** By SLGMA (/u/Nickcagenado)",
+            "Variants of CCM are Underworld Chronomancer and Timeless Chronomancer.",
+            "For the full guide, follow the link below:"
+        ],
+        "content":"https://docs.google.com/document/d/1pHEYDB5JM2qSBFYwVs6Hkj17x24TElB1mtuQUyidv18/edit",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807173105457823744/Untitled-1.png"
+    },
+    "ec":{
+        "common_key":"ec/ic"
+    },
+    "ic":{
+        "common_key":"ec/ic"
+    },
+    "ec/ic":{
+        "type":"text",
+        "title":"Eternal/Immortal Chronomancer Skillset Guide",
+        "description":"__**Taryth's breakdown of IC/EC skill rotation, and what auras are applied at each cast.**__",
+        "content":[
+            "**tl;dr**: 52525252525234, then repeat 52525252534, make sure you're actually hitting or you'll get erectile dysfunction and go cry on reddit about the class being nerfed",
+            "",
+            "**Going down the line**:",
+            "(optional 3s prestacked)",
+            "3- 10% dr",
+            "3- 20% dr",
+            "3- 30% dr",
+            "Setup Phase",
+            "5- Deadlock 1",
+            "2- Deadlock 2",
+            "5- Deadlock 3",
+            "2- Deadlock 4 > Enter Infinity > Deadlock 1 + Infinity Rift 1",
+            "5- Deadlock 2",
+            "2- Deadlock 3 + Infinity Rift 2",
+            "5- Deadlock 4 > 4th Dimension > Deadlock 1 + Temporal Rift 1",
+            "2- Deadlock 2 + Infinity Rift 3",
+            "5- Deadlock 3 + Temporal Rift 2",
+            "2- Deadlock 4 + Infinity Rift 4 > Deadlock 1",
+            "5- Deadlock 2 + Temporal Rift 3",
+            "2- Deadlock 3, Infinity Rift 4",
+            "3- Infinite Dmg (30% All out with Infinity Rift 4), -Enter Infinity, -4th Dimension",
+            "4- Nuke + Infinite Hit, -Temporal Rift",
+            "",
+            "**Set up is over, you now have 30% All out forever, the enemy cannot dodge, and you have 3 Deadlocks.**",
+            "5- Deadlock 4 > 4th Dimension > Deadlock 1 + Temporal Rift 1",
+            "2- Deadlock 2",
+            "5- Deadlock 3 + Temporal Rift 2",
+            "2- Deadlock 4 > Enter Infinity > Deadlock 1 + Infinity Rift 1",
+            "5- Deadlock 2 + Temporal Rift 3",
+            "2- Deadlock 3 + Infinity Rift 2",
+            "5- Deadlock 4 + Temporal Rift 4 > Deadlock 1",
+            "2- Deadlock 2 + Infinity Rift 3",
+            "5- Deadlock 3 + Temporal Rift 5",
+            "3- Refresh All out buff, give healing, -Enter Infinity, -4th Dimension",
+            "4- Nuke, -Temporal Rift",
+            "Repeat"
+        ],
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807176800643317760/Untitled-2.png"
     }
 }

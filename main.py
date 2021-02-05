@@ -1252,18 +1252,23 @@ class BloomBotCog_4(commands.Cog, BaseTools):
 
         if guide == "":
             embedVar = discord.Embed(title="♦️ List of Guide Commands ♦️", color=self.block_color)
-            desc = "Please read the following carefully.\n\n"
+            desc = "To summon this list, use `;g`. Please read the following carefully.\n\n"
             for guide_name in self.guides:
                 guide_data = self.guides[guide_name]
-                desc += "`;g {}` - {}\n".format(guide_name, guide_data["title"])
+                if "title" in guide_data:
+                    desc += "`;g {}` - {}.\n".format(guide_name, guide_data["title"])
             embedVar.description = desc
             await ctx.send(embed=embedVar)
             return
-
+# `
 
         g_name = guide.lower()
         if g_name in self.guides:
-            guide_data = self.guides[g_name]
+            if "common_key" in self.guides[g_name]:
+                key = self.guides[g_name]["common_key"]
+                guide_data = self.guides[key]
+            else:
+                guide_data = self.guides[g_name]
 
 
             if guide_data["type"] == "guide":
@@ -1312,10 +1317,16 @@ class BloomBotCog_4(commands.Cog, BaseTools):
                 return
 
 
+
             if guide_data["type"] == "single_link":
                 embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
-                desc = guide_data["description"] + "\n"
-                desc += "\> [Click this link]({})".format(guide_data["content"])
+                if type(guide_data["description"]) is list:
+                    desc = ""
+                    for sentence in guide_data["description"]:
+                        desc += sentence + "\n"
+                else:
+                    desc = guide_data["description"] + "\n"
+                desc += "\> [Click this link]({}).".format(guide_data["content"])
                 embedVar.description = desc
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
