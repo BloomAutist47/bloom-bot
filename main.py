@@ -1613,12 +1613,13 @@ class EventCalendarCog(commands.Cog, BaseTools):
     @tasks.loop(seconds=2.0)
     async def printer(self):
         self.current_day = self.est_dt.strftime("%d")
-        print("Checked")
+        print("Checked", self.current_day)
         if self.current_day != self.settings["EventCalendarCogSettings"]["current_day"]:
             self.settings["EventCalendarCogSettings"]["current_day"] = self.current_day
             self.file_save_settings()
             self.git_save_settings()
             for guild in self.bot.guilds:
+                print(f"Guild: {guild}\tID: {guild.id}")
                 if os.name == "nt":
                     # Testing
                     channel = await self.bot.fetch_channel(799238286539227136)
