@@ -21,7 +21,7 @@ import io
 
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
-from discord.ext import commands
+from discord.ext import commands, tasks
 from discord.ext.commands import CommandNotFound
 from pprint import pprint
 from PIL import Image
@@ -32,6 +32,10 @@ import aiohttp
 import html5lib
 import ast
 import aiosonic
+
+from datetime import datetime
+from pytz import timezone
+import unicodedata
 
 
 # __import__('IPython').embed()
@@ -277,6 +281,10 @@ class BaseProgram:
                     for acr in acronyms:
                         self.class_acronyms[acr] = class_name
 
+    def file_save_settings(self):
+        with open('./Data/settings.json', 'w', encoding='utf-8') as f:
+            json.dump(self.settings, f, ensure_ascii=False, indent=4)
+        return
 
     def git_save(self):
         """Description: Saves data to github .json files"""
@@ -293,6 +301,13 @@ class BaseProgram:
         contents_object.update("update", git_settings)
 
         self.file_save()
+        return
+
+    def git_save_settings(self):
+        git_settings = json.dumps(self.settings, indent=4).encode('utf-8')
+        contents_object = self.repository.file_contents("./Data/settings.json")
+        contents_object.update("update", git_settings)
+        return
 
     def git_read_class(self):
         git_classes = self.repository.file_contents("./Data/classes.json").decoded
@@ -305,11 +320,13 @@ class BaseProgram:
                 if acronyms != ['']:
                     for acr in acronyms:
                         self.class_acronyms[acr] = class_name
+        return
 
     def git_read_guide(self):
         git_guides = self.repository.file_contents("./Data/guides.json").decoded
         self.guides = json.loads(git_guides.decode('utf-8'))
         return
+
     def git_read(self):
         """Description: Reads data from github .json files"""
         git_data = self.repository.file_contents("./Data/database.json").decoded
@@ -678,7 +695,7 @@ class BaseTools(BaseProgram):
 
 
 # Illegal Cog lol
-class BloomBotCog_1(commands.Cog, BaseTools):
+class IllegalBoatSearchCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
         # self.database_update("web")
@@ -1051,7 +1068,7 @@ class BloomBotCog_1(commands.Cog, BaseTools):
             return
 
 
-class BloomBotCog_2(BaseTools, commands.Cog):
+class ClassSearchCog(BaseTools, commands.Cog):
 
     def __init__(self, bot):
         self.setup()
@@ -1376,7 +1393,7 @@ class GuideCog(commands.Cog, BaseTools):
                 await ctx.send(embed=embedVar)
                 return
 
-class BloomBotCog_5(commands.Cog, BaseTools):
+class CharacterCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
         self.bot = bot
@@ -1468,7 +1485,7 @@ class BloomBotCog_5(commands.Cog, BaseTools):
 
         embedVar.add_field(name="__**Infos**__", value=panel_1, inline=True)
         embedVar.add_field(name="__**Equips**__", value=panel_2, inline=True)
-        embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/807573382404767774/auquest.gif")
+        embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/807570293501591572/logo-lg-AQW.png")
 
         embed_object = await ctx.send(embed=embedVar)
         return
@@ -1515,6 +1532,125 @@ class BloomBotCog_5(commands.Cog, BaseTools):
     #     await ctx.send(embed=embedVar)
     #     return
 
+# class EventCalendarCog(commands.Cog):
+#     def __init__(self, bot, *args, **kwargs):
+#         self.bot = bot
+#         self.block_color = 3066993
+
+#         self.counter = 0
+#         self.my_background_task.start()
+
+#     @tasks.loop(seconds=10.0)
+#     async def my_background_task(self):
+
+            
+class EventCalendarCog(commands.Cog, BaseTools):
+    def __init__(self, Bot):
+        self.setup()
+        self.bot = Bot
+        self.block_color = 3066993
+
+        self.est_dt = datetime.now(timezone('est'))
+        self.current_day = self.est_dt.strftime("%d")
+        self.current_month = self.est_dt.strftime("%B")
+
+        self.events = self.settings["EventCalendarCogSettings"]["events"]
+        self.check_current_month()
+
+        self.printer.start()
+
+
+    async def get_site_content(self, SELECTED_URL):
+        client = aiosonic.HTTPClient()
+        response = await client.get(SELECTED_URL)
+        text_ = await response.content()
+        return Soup(text_.decode('utf-8'), 'html5lib')
+
+    def check_current_month(self):
+        self.current_month = self.est_dt.strftime("%B")
+        if self.current_month != self.settings["EventCalendarCogSettings"]["latest_update"]:
+            self.settings["EventCalendarCogSettings"]["latest_update"] = self.current_month
+            self.check_calendar()
+            self.file_save_settings()
+            self.git_save_settings()
+            print("System: Updated month EventCalendarCogSettings[\"events\"].")
+        else:
+            print("System: Not updating month EventCalendarCogSettings[\"events\"].")
+        return
+
+    def check_calendar(self):
+        url = "https://www.aq.com/aq.com/lore/calendar"
+        loop = asyncio.get_event_loop()
+        sites_soup = loop.run_until_complete(self.get_site_content(url))
+        body = sites_soup.find("section", {"id":"main-content"}).find("div", class_="container").find("div", class_="row").find_all("div", class_="col-xs-12 col-sm-12 col-md-12 col-lg-12")[1]
+        list_of_events_raw = body.find_all("p")[2:]
+
+        for i in list_of_events_raw:
+            data = unicodedata.normalize("NFKD", i.text)
+            data = re.split(r"([\w]+\s[\d]+\s)", data)[1:]
+            date = data[0].strip().split(" ")
+            info = data[1].split("                  ")
+            day = date[1].zfill(2)
+            # self.events = {}
+            self.events[day] = {}
+            self.events[day]["month"] = date[0]
+            self.events[day]["info"] = info
+        self.settings["EventCalendarCogSettings"]["events"] = self.events
+        self.file_save_settings()
+        self.git_save_settings()
+        return
+
+    async def check_event_today(self):
+
+        if self.current_day in self.events:
+            if self.events[self.current_day]["month"] == self.current_month:
+                info = self.events[self.current_day]["info"]
+                return info
+        else:
+            return None
+
+
+    @tasks.loop(seconds=2.0)
+    async def printer(self):
+        self.current_day = self.est_dt.strftime("%d")
+        print("Checked")
+        if self.current_day != self.settings["EventCalendarCogSettings"]["current_day"]:
+            self.settings["EventCalendarCogSettings"]["current_day"] = self.current_day
+            self.file_save_settings()
+            self.git_save_settings()
+            for guild in self.bot.guilds:
+                if os.name == "nt":
+                    # Testing
+                    channel = await self.bot.fetch_channel(799238286539227136)
+                else:
+                    guild_id = str(guild.id)
+                    try:
+                        guild_set = self.settings["server_settings"][guild_id]
+                        channel = await self.bot.fetch_channel(guild_set["event_channel_id"])
+                    except:
+                        self.printer.cancel()
+                        self.cog_unload()
+                        return 
+                    
+                result = await self.check_event_today()
+                if not result:
+                    return
+                if result:
+                    if os.name == "nt":
+                        desc = "\> <@&807655230467604510>\n"
+                    else:
+                        desc = f"\> <@&{str(guild_set['server_noice_role'])}>\n"
+                    for text in result:
+                        desc += f"\> {text.strip()}"
+                    await channel.send(embed=self.embed_single("Event Today", desc))
+                    return
+
+
+    @printer.before_loop
+    async def before_printer(self):
+        print('waiting...')
+        await self.bot.wait_until_ready()
+
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
 
 @Bot.event
@@ -1541,9 +1677,10 @@ if os.name == "nt": # PC Mode
 else:              # Heroku
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
 
-Bot.add_cog(BloomBotCog_1(Bot))
-Bot.add_cog(BloomBotCog_2(Bot))
+Bot.add_cog(IllegalBoatSearchCog(Bot))
+Bot.add_cog(ClassSearchCog(Bot))
 # Bot.add_cog(BloomBotCog_3(Bot)) # Do not fucking use
 Bot.add_cog(GuideCog(Bot)) 
-Bot.add_cog(BloomBotCog_5(Bot))
+Bot.add_cog(CharacterCog(Bot))
+Bot.add_cog(EventCalendarCog(Bot))
 Bot.run(DISCORD_TOKEN)
