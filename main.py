@@ -1610,7 +1610,7 @@ class EventCalendarCog(commands.Cog, BaseTools):
             return None
 
 
-    @tasks.loop(seconds=5.0)
+    @tasks.loop(seconds=3600)
     async def printer(self):
         self.current_day = self.est_dt.strftime("%d")
         print("Checked", self.current_day)
