@@ -782,7 +782,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/805367955923533845/805703078091030528/ChronoCorruptor_Class_Chart.png"
     },
     "Imperial Chunin": {
-        "acronym": "(None)",
+        "acronym": "IC",
         "awe_enh": "Spiral Carve",
         "duplicates": [
             "Chunin"
@@ -801,14 +801,14 @@
         ],
         "bludrut": 2,
         "acquire": {
-            "ac_version": "Rare",
+            "ac_version": "No",
             "irl_money": false,
             "obtain_difficulty": "C",
             "fast_obtain_method": "1",
             "fast_obtain_difficulty": "D"
         },
-        "type": "rare",
-        "location": "(RARE)",
+        "type": "available",
+        "location": "Rep, r10 Yokai, /dragonkoiz",
         "discord_url": "https://cdn.discordapp.com/attachments/805367955923533845/805703093596454942/Chunin_Class_Chart.png"
     },
     "Classic Alpha Pirate": {
@@ -1448,7 +1448,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/805367955923533845/805703254687219723/Dragon_Knight_Class_Chart.png"
     },
     "DragonSoul Shinobi": {
-        "acronym": "DS, DShinobi, SDS", 
+        "acronym": "DS, DShinobi, SDS, DSS",
         "awe_enh": "Spiral Carve",
         "duplicates": [
             "Dragon Shinobi",
@@ -1471,18 +1471,18 @@
         ],
         "bludrut": 3,
         "acquire": {
-            "ac_version": "Rare",
+            "ac_version": "No",
             "irl_money": false,
             "obtain_difficulty": "C",
-            "fast_obtain_method": "1",
+            "fast_obtain_method": "4",
             "fast_obtain_difficulty": "D"
         },
-        "type": "seasonal",
-        "location": "Merge, Seasonal",
+        "type": "available",
+        "location": "Merge, r10 Yokai, completion of Shadow Shogun saga",
         "discord_url": "https://cdn.discordapp.com/attachments/805367955923533845/805703704425922560/Shadow_Dragon_Shinobi_Class_Chart.png"
     },
     "Dragon of Time": {
-        "acronym": "EDoT, DT, DoT",
+        "acronym": "EDoT, DT",
         "awe_enh": "Health Vamp",
         "duplicates": [],
         "enh": "healer",
