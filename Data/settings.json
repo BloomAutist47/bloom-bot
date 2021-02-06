@@ -9,11 +9,86 @@
         "Verified Bot Makers": 1,
         "Verified Bot Maker": 1
     },
-    "latest_update": "html",
+    "EventCalendarCogSettings": {
+        "latest_update": "February",
+        "events": {
+            "01": {
+                "month": "February",
+                "info": [
+                    "Obsidian Samurai Seasonal Set returns    "
+                ]
+            },
+            "02": {
+                "month": "February",
+                "info": [
+                    "Groundhorc's Day returns"
+                ]
+            },
+            "05": {
+                "month": "February",
+                "info": [
+                    "Class Variants: Chunin and Dragon Shinobi (new art, same great skills!)",
+                    "Akiban BladeMaster boss battle + reward gear",
+                    "New upgrade bonus set: Akiban Street Gear",
+                    "Seasonal Yokai New Year events return"
+                ]
+            },
+            "07": {
+                "month": "February",
+                "info": [
+                    "LoreBowl LV gear + the /punt map returns"
+                ]
+            },
+            "12": {
+                "month": "February",
+                "info": [
+                    "Hero's Heart "
+                ]
+            },
+            "16": {
+                "month": "February",
+                "info": [
+                    "Pancake Day"
+                ]
+            },
+            "19": {
+                "month": "February",
+                "info": [
+                    "Kotobuki Yokai Hunt (Year of the Minotaur) + Event Rare gear"
+                ]
+            },
+            "26": {
+                "month": "February",
+                "info": [
+                    ""
+                ]
+            },
+            "28": {
+                "month": "February",
+                "info": [
+                    "Obsidian Samurai Seasonal Set + Beleen's seasonal pink gear leave"
+                ]
+            }
+        }
+    },
     "priveleged_servers": [
         761956630606250005,
         766627412179550228
     ],
+    "current_month": "",
+    "server_settings": {
+        "802968357623300106": {
+            "server_name": "AuQW",
+            "server_privilage": "Homie",
+            "event_channel_id": 807587012471029760
+        },
+        "Basic": {
+            "banned_guides": [
+                "darkmode",
+                "gg"
+            ]
+        }
+    },
     "banned_words": [
         "gb",
         ".",
