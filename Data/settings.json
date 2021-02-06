@@ -10,9 +10,16 @@
         "Verified Bot Maker": 1
     },
     "EventCalendarCogSettings": {
-        "latest_update": "February",
+        "latest_update": "sdd",
+        "current_day": "06",
         "events": {
             "01": {
+                "month": "February",
+                "info": [
+                    "Obsidian Samurai Seasonal Set returns    "
+                ]
+            },
+            "06": {
                 "month": "February",
                 "info": [
                     "Obsidian Samurai Seasonal Set returns    "
