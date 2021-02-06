@@ -10,8 +10,8 @@
         "Verified Bot Maker": 1
     },
     "EventCalendarCogSettings": {
-        "latest_update": "February",
-        "current_day": "06",
+        "latest_update": "2222",
+        "current_day": "333",
         "events": {
             "01": {
                 "month": "February",
@@ -22,7 +22,7 @@
             "06": {
                 "month": "February",
                 "info": [
-                    "Obsidian Samurai Seasonal Set returns    "
+                    "Test notice humans asdasd asd asd "
                 ]
             },
             "02": {
@@ -87,6 +87,7 @@
         "802968357623300106": {
             "server_name": "AuQW",
             "server_privilage": "Homie",
+            "server_noice_role": 807586780324954123,
             "event_channel_id": 807587012471029760
         },
         "Basic": {
