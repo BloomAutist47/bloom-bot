@@ -1622,11 +1622,14 @@ class EventCalendarCog(commands.Cog, BaseTools):
                     channel = await self.bot.fetch_channel(799238286539227136)
                 else:
                     guild_id = str(guild.id)
-                    try:
-                        guild_set = self.settings["server_settings"][guild_id]
-                        channel = await self.bot.fetch_channel(guild_set["event_channel_id"])
-                    except:
-                        return 
+                    if guild_id not in self.settings["server_settings"]:
+                        continue
+                    else:
+                        try:
+                            guild_set = self.settings["server_settings"][guild_id]
+                            channel = await self.bot.fetch_channel(guild_set["event_channel_id"])
+                        except:
+                            continue 
 
                 self.settings["EventCalendarCogSettings"]["current_day"] = self.current_day
                 self.file_save_settings()
@@ -1643,7 +1646,7 @@ class EventCalendarCog(commands.Cog, BaseTools):
                         desc += f"\> {text.strip()}"
                     await channel.send(embed=self.embed_single("Event Today", desc))
                     return
-
+            return
 
     @printer.before_loop
     async def before_printer(self):
