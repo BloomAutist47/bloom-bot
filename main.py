@@ -68,7 +68,7 @@ class BaseProgram:
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
 
         self.file_read()
-        # self.git_read()
+        self.git_read()
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
