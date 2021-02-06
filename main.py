@@ -26,6 +26,15 @@ from discord.ext.commands import CommandNotFound
 from pprint import pprint
 from PIL import Image
 
+import asyncio
+import nest_asyncio
+import aiohttp
+import html5lib
+import ast
+import aiosonic
+
+
+# __import__('IPython').embed()
 # from collections import OrderedDict
 # from requests import Session
 # import socket
@@ -59,7 +68,7 @@ class BaseProgram:
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
 
         self.file_read()
-        self.git_read()
+        # self.git_read()
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -1235,7 +1244,7 @@ class BloomBotCog_3(commands.Cog, BaseTools):
                 await reaction.message.edit(embed=embed)
 
 
-class BloomBotCog_4(commands.Cog, BaseTools):
+class GuideCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
         self.bot = bot
@@ -1243,6 +1252,7 @@ class BloomBotCog_4(commands.Cog, BaseTools):
         self.block_color = 3066993
         self.message_objects = {}
         self.msg_count = 0
+        self.fotter = "Tip: Use \";g\" to summon a list of all guides."
 
     @commands.command()
     async def g(self, ctx, guide=""):
@@ -1288,6 +1298,7 @@ class BloomBotCog_4(commands.Cog, BaseTools):
                                 "For the [Full Guide click this](%s)."%(guide_data["title"], guide_data["full_guide"]))
                 embedVar.set_image(url=guide_data["short_link"])
                 embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                embedVar.set_footer(text=self.fotter)
                 await ctx.send(embed=embedVar)
                 return
 
@@ -1299,6 +1310,7 @@ class BloomBotCog_4(commands.Cog, BaseTools):
                     desc += "\> [{}]({}).\n".format(text[0], text[1])
                 embedVar.description = desc
                 embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                embedVar.set_footer(text=self.fotter)
                 await ctx.send(embed=embedVar)
                 return
 
@@ -1316,6 +1328,22 @@ class BloomBotCog_4(commands.Cog, BaseTools):
                 embedVar.description = desc
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                embedVar.set_footer(text=self.fotter)
+                await ctx.send(embed=embedVar)
+                return
+
+            if guide_data["type"] == "text_dict":
+                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color,
+                description=guide_data["description"] + "\n\n")
+                for item in guide_data["content"]:
+                    desc = ""
+                    for sentence in guide_data["content"][item]:
+                        desc += sentence + "\n"
+                    embedVar.add_field(name=item, value=desc, inline=False)
+                    # embedVar.add_field(name=, value="\u200b", inline=False)
+                if "thumbnail" in guide_data:
+                    embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                embedVar.set_footer(text=self.fotter)
                 await ctx.send(embed=embedVar)
                 return
 
@@ -1323,9 +1351,9 @@ class BloomBotCog_4(commands.Cog, BaseTools):
                 embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
                 embedVar.description = guide_data["description"]
                 embedVar.set_image(url=guide_data["content"])
+                embedVar.set_footer(text=self.fotter)
                 await ctx.send(embed=embedVar)
                 return
-
 
 
             if guide_data["type"] == "single_link":
@@ -1340,8 +1368,181 @@ class BloomBotCog_4(commands.Cog, BaseTools):
                 embedVar.description = desc
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                embedVar.set_footer(text=self.fotter)
                 await ctx.send(embed=embedVar)
                 return
+
+class BloomBotCog_5(commands.Cog, BaseTools):
+    def __init__(self, bot):
+        self.setup()
+        self.bot = bot
+        self.block_color = 3066993
+        self.message_objects = {}
+        self.msg_count = 0
+        self.char_url = "https://account.aq.com/CharPage?id="
+        self.loop = asyncio.get_event_loop()
+        self.message_objects = {}
+        self.msg_count = 0
+        nest_asyncio.apply(self.loop)
+
+    # async def get_site_content(self, SELECTED_URL):
+    #     async with aiosonic.HTTPClient() as session:
+    #         async with session.get(SELECTED_URL) as resp:
+    #             text = await resp.content()
+
+    #     return Soup(text.decode('utf-8'), 'html5lib')
+
+    async def loop_get_content(self, url):
+        return self.loop.run_until_complete(self.get_site_content(url))
+
+    async def get_site_content(self, SELECTED_URL):
+        client = aiosonic.HTTPClient()
+        response = await client.get(SELECTED_URL)
+        text_ = await response.content()
+        return Soup(text_.decode('utf-8'), 'html5lib')
+
+    async def multiple_reactions(self, embed_object):
+        await embed_object.add_reaction(emoji = "\U0001F9D8") # Classes
+        await embed_object.add_reaction(emoji = "\U00002694") # Swords
+        await embed_object.add_reaction(emoji = "\U0001F6E1") # Armors
+        await embed_object.add_reaction(emoji = "\U0001FA96") # Helm
+        await embed_object.add_reaction(emoji = "\U0001F3F4") # Cape
+        await embed_object.add_reaction(emoji = "\U0001F415") # Pet
+        await embed_object.add_reaction(emoji = "\U0001F392") # Misc Items
+        await embed_object.add_reaction(emoji = "\U0001F3C6") # Misc Items
+        return
+
+
+    @commands.command()
+    async def char(self, ctx, *, char_name=""):
+        url = self.char_url + char_name.replace(" ", "+")
+        sites_soup = await self.loop_get_content(url)
+        try:
+            ccid = re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
+        except:
+            try:
+                result = sites_soup.find("div", {"class": "card-body"}).find("p").text
+                result += f" [Click Here]({url}) to go to their Character Page."
+                await ctx.send(embed=self.embed_single("Character Profile Result", result))
+                return
+            except:
+                await ctx.send(embed=self.embed_single("Character Profile Result", "No Character of that name"))
+        # print(ccid)
+
+        body = sites_soup.find("div", {"class":"text-dark"})
+        char_full_name = body.find("div", {"class":"card-header"}).find("h1").text
+
+        # Character Details
+        body_details = body.find("div", {"class": "card-body"}).find("div", {"class":"row"})
+        defaults = {
+            "Level": "", "Class": "", "Weapon": "", "Armor": "", "Helm": "", "Cape": "",
+            "Pet": "", "Faction": "", "Guild": ""
+        }
+
+        char_details_raw = [x.text for x in body_details.select("div.col-12.col-md-6")]
+        # print(char_details_raw)
+        char_details = {}
+        for i in char_details_raw:
+            item = [x.lstrip() for x in i.split("\n")[1:-1]]
+            for cat in item:
+                x = cat.split(":")
+                char_details[x[0]] = x[1]
+
+
+        for i in defaults:
+            if i not in char_details:
+                char_details[i] = ""
+
+
+        # # Get Badges
+        # char_badge_url = "https://account.aq.com/CharPage/Badges?ccid="+ccid
+        # char_badges = self.loop_get_content(char_badge_url).find("body").text[1:-1]
+        # char_badges = ast.literal_eval(char_badges)
+
+        # # Get Inventory
+        # char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
+        # char_inv = self.loop_get_content(char_inv_url).find("body").text[1:-1].replace("false", "False").replace("true", "True")
+        # char_inv = ast.literal_eval(char_inv)
+
+        # # Categorize the items
+        # items = {}
+        # for item in char_inv:
+        #     item_type = item["strType"]
+        #     if item_type not in items:
+        #         items[item_type] = []
+        #     items[item_type].append(item)
+
+        embedVar = discord.Embed(title=f"Character Profile of {char_full_name}", color=self.block_color, description="\u200b")
+
+
+        embedVar.description = f"\>[Click here](https://account.aq.com/CharPage?id={char_full_name.replace(' ', '+')}) to open the character page."
+
+        panel_1 = f"**Level**: {char_details['Level']}\n"\
+                f"**Class**: {char_details['Class']}\n"\
+                f"**Faction**: {char_details['Faction']}\n"\
+                f"**Guild**: {char_details['Guild']}\n"\
+                "\u200b"
+
+        panel_2 = f"**Weapon**: {char_details['Weapon']}\n"\
+                f"**Armor**: {char_details['Armor']}\n"\
+                f"**Helm**: {char_details['Helm']}\n"\
+                f"**Cape**: {char_details['Cape']}\n"\
+                f"**Pet**: {char_details['Pet']}\n"
+
+        embedVar.add_field(name="__**Infos**__", value=panel_1, inline=True)
+        embedVar.add_field(name="__**Equips**__", value=panel_2, inline=True)
+        embedVar.add_field(name="Achievements", inline=False,
+            value=f"Type `charbadge {char_name}`")
+        embedVar.add_field(name="Inventory", inline=true,
+            value=f"Type `charinv {char_name}`")
+
+
+
+        embed_object = await ctx.send(embed=embedVar)
+
+
+        # await self.multiple_reactions(embed_object)
+        return
+
+    # @commands.command()
+    # async def charinv(self, ctx):
+    #     embedVar = discord.Embed(title="Character Profile Help", color=self.block_color,
+    #         description="Please read the following carefully.")
+    #     embedVar.add_field(name="Emoji Commands:", inline=False,
+    #         value=  "Clicking these will load their respective items.\n\n"
+    #                 ":person_in_lotus_position: - Classes\n"\
+    #                 ":crossed_swords: - Weapons\n"\
+    #                 ":shield: - Armors\n"\
+    #                 ":military_helmet: - Helmet\n"\
+    #                 ":triangular_flag_on_post: - Cape\n"\
+    #                 ":dog2: - Pet\n\n"
+
+    #                 ":school_satchel: - Items\n"\
+    #                 ":trophy: - Quest Items"
+    #         )
+    #     await ctx.send(embed=embedVar)
+    #     return
+
+
+    # @commands.command()
+    # async def charhelp(self, ctx):
+    #     embedVar = discord.Embed(title="Character Profile Help", color=self.block_color,
+    #         description="Please read the following carefully.")
+    #     embedVar.add_field(name="Emoji Commands:", inline=False,
+    #         value=  "Clicking these will load their respective items.\n\n"
+    #                 ":person_in_lotus_position: - Classes\n"\
+    #                 ":crossed_swords: - Weapons\n"\
+    #                 ":shield: - Armors\n"\
+    #                 ":military_helmet: - Helmet\n"\
+    #                 ":triangular_flag_on_post: - Cape\n"\
+    #                 ":dog2: - Pet\n\n"
+
+    #                 ":school_satchel: - Items\n"\
+    #                 ":trophy: - Quest Items"
+    #         )
+    #     await ctx.send(embed=embedVar)
+    #     return
+
 
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
 
@@ -1371,6 +1572,7 @@ else:              # Heroku
 
 Bot.add_cog(BloomBotCog_1(Bot))
 Bot.add_cog(BloomBotCog_2(Bot))
-# Bot.add_cog(BloomBotCog_3(Bot))
-Bot.add_cog(BloomBotCog_4(Bot))
+# Bot.add_cog(BloomBotCog_3(Bot)) # Do not fucking use
+Bot.add_cog(GuideCog(Bot)) 
+Bot.add_cog(BloomBotCog_5(Bot))
 Bot.run(DISCORD_TOKEN)
