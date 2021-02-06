@@ -781,10 +781,12 @@
         "location": "(RARE)",
         "discord_url": "https://cdn.discordapp.com/attachments/805367955923533845/805703078091030528/ChronoCorruptor_Class_Chart.png"
     },
-    "Chunin": {
+    "Imperial Chunin": {
         "acronym": "(None)",
         "awe_enh": "Spiral Carve",
-        "duplicates": [],
+        "duplicates": [
+            "Chunin"
+        ],
         "enh": "luck",
         "note": "",
         "wiki": "http://aqwwiki.wikidot.com/chunin-merge",
@@ -1445,11 +1447,12 @@
         "location": "(RARE)",
         "discord_url": "https://cdn.discordapp.com/attachments/805367955923533845/805703254687219723/Dragon_Knight_Class_Chart.png"
     },
-    "Shadow Dragon Shinobi": {
-        "acronym": "DS, DShinobi, SDS",
+    "DragonSoul Shinobi": {
+        "acronym": "DS, DShinobi, SDS", 
         "awe_enh": "Spiral Carve",
         "duplicates": [
-            "Dragon Shinobi"
+            "Dragon Shinobi",
+            "Shadow Dragon Shinobi"
         ],
         "enh": "luck",
         "note": "",
