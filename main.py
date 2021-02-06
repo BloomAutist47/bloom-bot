@@ -714,6 +714,8 @@ class BloomBotCog_1(commands.Cog, BaseTools):
                 value="Shows the data chart of the searched class.")
             embedVar.add_field(name="`;legends`", inline=False,
                 value="Shows the legends for the class data charts.")
+            embedVar.add_field(name="`;char character_name`", inline=False,
+                value="Pulls up basic player info from the Character page.")
             embedVar.add_field(name="`;credits`", inline=False,
                 value="Shows the Credits.")
 
@@ -751,6 +753,8 @@ class BloomBotCog_1(commands.Cog, BaseTools):
                 value="Shows the data chart of the searched class. Can use whole class name or acronym.")
             embedVar.add_field(name="`;legends`", inline=False,
                 value="Shows the legends for the class data charts.")
+            embedVar.add_field(name="`;char character_name`", inline=False,
+                value="Pulls up basic player info from the Character page.")
             embedVar.add_field(name="`;credits`", inline=False,
                 value="Shows the Credits.")
             embedVar.add_field(name="**Note:**", inline=False,
@@ -1380,17 +1384,11 @@ class BloomBotCog_5(commands.Cog, BaseTools):
         self.message_objects = {}
         self.msg_count = 0
         self.char_url = "https://account.aq.com/CharPage?id="
+        self.wiki_url = "http://aqwwiki.wikidot.com/"
         self.loop = asyncio.get_event_loop()
         self.message_objects = {}
         self.msg_count = 0
         nest_asyncio.apply(self.loop)
-
-    # async def get_site_content(self, SELECTED_URL):
-    #     async with aiosonic.HTTPClient() as session:
-    #         async with session.get(SELECTED_URL) as resp:
-    #             text = await resp.content()
-
-    #     return Soup(text.decode('utf-8'), 'html5lib')
 
     async def loop_get_content(self, url):
         return self.loop.run_until_complete(self.get_site_content(url))
@@ -1422,12 +1420,12 @@ class BloomBotCog_5(commands.Cog, BaseTools):
         except:
             try:
                 result = sites_soup.find("div", {"class": "card-body"}).find("p").text
+                result = result.replace("Disabled", "**Disabled**").replace("wandering", "**wandering**")
                 result += f" [Click Here]({url}) to go to their Character Page."
                 await ctx.send(embed=self.embed_single("Character Profile Result", result))
                 return
             except:
                 await ctx.send(embed=self.embed_single("Character Profile Result", "No Character of that name"))
-        # print(ccid)
 
         body = sites_soup.find("div", {"class":"text-dark"})
         char_full_name = body.find("div", {"class":"card-header"}).find("h1").text
@@ -1440,7 +1438,6 @@ class BloomBotCog_5(commands.Cog, BaseTools):
         }
 
         char_details_raw = [x.text for x in body_details.select("div.col-12.col-md-6")]
-        # print(char_details_raw)
         char_details = {}
         for i in char_details_raw:
             item = [x.lstrip() for x in i.split("\n")[1:-1]]
@@ -1453,96 +1450,70 @@ class BloomBotCog_5(commands.Cog, BaseTools):
             if i not in char_details:
                 char_details[i] = ""
 
-
-        # # Get Badges
-        # char_badge_url = "https://account.aq.com/CharPage/Badges?ccid="+ccid
-        # char_badges = self.loop_get_content(char_badge_url).find("body").text[1:-1]
-        # char_badges = ast.literal_eval(char_badges)
-
-        # # Get Inventory
-        # char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
-        # char_inv = self.loop_get_content(char_inv_url).find("body").text[1:-1].replace("false", "False").replace("true", "True")
-        # char_inv = ast.literal_eval(char_inv)
-
-        # # Categorize the items
-        # items = {}
-        # for item in char_inv:
-        #     item_type = item["strType"]
-        #     if item_type not in items:
-        #         items[item_type] = []
-        #     items[item_type].append(item)
-
-        embedVar = discord.Embed(title=f"Character Profile of {char_full_name}", color=self.block_color, description="\u200b")
-
-
-        embedVar.description = f"\>[Click here](https://account.aq.com/CharPage?id={char_full_name.replace(' ', '+')}) to open the character page."
-
+        # Inserts stuffs
+        embedVar = discord.Embed(title=f"Character Profile - __{char_full_name}__", color=self.block_color, description="\u200b")
+        embedVar.description = f"\> [Character Page](https://account.aq.com/CharPage?id={char_full_name.replace(' ', '+')})."
+        li = self.wiki_url
         panel_1 = f"**Level**: {char_details['Level']}\n"\
-                f"**Class**: {char_details['Class']}\n"\
+                f"**Class**: [{char_details['Class']}]({li + char_details['Class'].replace(' ', '-')})\n"\
                 f"**Faction**: {char_details['Faction']}\n"\
                 f"**Guild**: {char_details['Guild']}\n"\
                 "\u200b"
 
-        panel_2 = f"**Weapon**: {char_details['Weapon']}\n"\
-                f"**Armor**: {char_details['Armor']}\n"\
-                f"**Helm**: {char_details['Helm']}\n"\
-                f"**Cape**: {char_details['Cape']}\n"\
-                f"**Pet**: {char_details['Pet']}\n"
+        panel_2 = f"**Weapon**: [{char_details['Weapon']}]({li+char_details['Weapon'].replace(' ', '-')})\n"\
+                f"**Armor**: [{char_details['Armor']}]({li+char_details['Armor'].replace(' ', '-')})\n"\
+                f"**Helm**: [{char_details['Helm']}]({li+char_details['Helm'].replace(' ', '-')})\n"\
+                f"**Cape**: [{char_details['Cape']}]({li+char_details['Cape'].replace(' ', '-')})\n"\
+                f"**Pet**: [{char_details['Pet']}]({li+char_details['Pet'].replace(' ', '-')})\n"
 
         embedVar.add_field(name="__**Infos**__", value=panel_1, inline=True)
         embedVar.add_field(name="__**Equips**__", value=panel_2, inline=True)
-        embedVar.add_field(name="Achievements", inline=False,
-            value=f"Type `charbadge {char_name}`")
-        embedVar.add_field(name="Inventory", inline=true,
-            value=f"Type `charinv {char_name}`")
-
-
+        embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/807573382404767774/auquest.gif")
 
         embed_object = await ctx.send(embed=embedVar)
-
-
-        # await self.multiple_reactions(embed_object)
         return
 
     # @commands.command()
     # async def charinv(self, ctx):
-    #     embedVar = discord.Embed(title="Character Profile Help", color=self.block_color,
-    #         description="Please read the following carefully.")
-    #     embedVar.add_field(name="Emoji Commands:", inline=False,
-    #         value=  "Clicking these will load their respective items.\n\n"
-    #                 ":person_in_lotus_position: - Classes\n"\
-    #                 ":crossed_swords: - Weapons\n"\
-    #                 ":shield: - Armors\n"\
-    #                 ":military_helmet: - Helmet\n"\
-    #                 ":triangular_flag_on_post: - Cape\n"\
-    #                 ":dog2: - Pet\n\n"
+    #     url = self.char_url + char_name.replace(" ", "+")
+    #     sites_soup = await self.loop_get_content(url)
+    #     try:
+    #         ccid = re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
+    #     except:
+    #         try:
+    #             result = sites_soup.find("div", {"class": "card-body"}).find("p").text
+    #             result = result.replace("Disabled", "**Disabled**").replace("wandering", "**wandering**")
+    #             result += f" [Click Here]({url}) to go to their Character Page."
+    #             await ctx.send(embed=self.embed_single("Character Profile Result", result))
+    #             return
+    #         except:
+    #             await ctx.send(embed=self.embed_single("Character Profile Result", "No Character of that name"))
 
-    #                 ":school_satchel: - Items\n"\
-    #                 ":trophy: - Quest Items"
-    #         )
+    #     embedVar = discord.Embed(title="Character Profile Help", color=self.block_color)
+
+    #     # Get Badges
+    #     char_badge_url = "https://account.aq.com/CharPage/Badges?ccid="+ccid
+    #     char_badges = self.loop_get_content(char_badge_url).find("body").text[1:-1]
+    #     char_badges = ast.literal_eval(char_badges)
+
+    #     # Get Inventory
+    #     char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
+    #     char_inv_raw = await self.loop_get_content(char_inv_url)
+    #     char_inv = char_inv_raw.find("body").text[1:-1].replace("false", "False").replace("true", "True")
+    #     char_inv = ast.literal_eval(char_inv)
+
+    #     # Categorize the items
+    #     items = {}
+    #     for item in char_inv:
+    #         item_type = item["strType"]
+    #         if item_type not in items:
+    #             items[item_type] = []
+    #         items[item_type].append(item)
+
+    #     
+
     #     await ctx.send(embed=embedVar)
     #     return
-
-
-    # @commands.command()
-    # async def charhelp(self, ctx):
-    #     embedVar = discord.Embed(title="Character Profile Help", color=self.block_color,
-    #         description="Please read the following carefully.")
-    #     embedVar.add_field(name="Emoji Commands:", inline=False,
-    #         value=  "Clicking these will load their respective items.\n\n"
-    #                 ":person_in_lotus_position: - Classes\n"\
-    #                 ":crossed_swords: - Weapons\n"\
-    #                 ":shield: - Armors\n"\
-    #                 ":military_helmet: - Helmet\n"\
-    #                 ":triangular_flag_on_post: - Cape\n"\
-    #                 ":dog2: - Pet\n\n"
-
-    #                 ":school_satchel: - Items\n"\
-    #                 ":trophy: - Quest Items"
-    #         )
-    #     await ctx.send(embed=embedVar)
-    #     return
-
 
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
 
