@@ -3390,7 +3390,9 @@
     "StoneCrusher": {
         "acronym": "SC",
         "awe_enh": "Spiral Carve",
-        "duplicates": [],
+        "duplicates": [
+            "Infinity Titan"
+        ],
         "enh": "luck",
         "note": "",
         "wiki": "http://aqwwiki.wikidot.com/stonecrusher-merge",
