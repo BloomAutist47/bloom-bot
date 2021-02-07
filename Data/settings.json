@@ -1,13 +1,19 @@
 {
-    "priveleged_roles": {
-        "Admin": 1,
-        "Helper": 1,
-        "Trial Helper": 1,
-        "Staff": 1,
-        "Member": 0,
-        "@everyone": 0,
-        "Verified Bot Makers": 1,
-        "Verified Bot Maker": 1
+    "EvaluatorSettings": {
+        "role_privilege": {
+            "Admin": 1,
+            "Helper": 1,
+            "Trial Helper": 1,
+            "Staff": 1,
+            "Member": 0,
+            "@everyone": 0,
+            "Verified Bot Makers": 1,
+            "Verified Bot Maker": 1
+        },
+        "guild_privilege": [
+            761956630606250005,
+            766627412179550228
+        ]
     },
     "ClassSearchCogSettings": {
         "legends_link": "https://cdn.discordapp.com/attachments/805367955923533845/807913899314774066/intructions.png"
@@ -76,10 +82,6 @@
             }
         }
     },
-    "priveleged_servers": [
-        761956630606250005,
-        766627412179550228
-    ],
     "current_month": "",
     "server_settings": {
         "802968357623300106": {
@@ -260,11 +262,6 @@
                 "jex"
             ],
             "id": "783044176547020800"
-        },
-        "Bloom": {
-            "alias": [
-                "Bloom"
-            ]
         },
         "Beneficence": {
             "alias": [
