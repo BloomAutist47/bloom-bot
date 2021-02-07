@@ -9,9 +9,12 @@
         "Verified Bot Makers": 1,
         "Verified Bot Maker": 1
     },
+    "ClassSearchCogSettings": {
+        "legends_link": "https://cdn.discordapp.com/attachments/805367955923533845/807913899314774066/intructions.png"
+    },
     "EventCalendarCogSettings": {
         "latest_update": "February",
-        "current_day": "07",
+        "current_day": "06",
         "events": {
             "01": {
                 "month": "February",
