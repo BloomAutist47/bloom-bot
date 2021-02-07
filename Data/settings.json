@@ -12,9 +12,10 @@
     "ClassSearchCogSettings": {
         "legends_link": "https://cdn.discordapp.com/attachments/805367955923533845/807913899314774066/intructions.png"
     },
+    "latest_update": "html",
     "EventCalendarCogSettings": {
         "latest_update": "February",
-        "current_day": "06",
+        "current_day": "07",
         "events": {
             "01": {
                 "month": "February",
