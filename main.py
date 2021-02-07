@@ -1534,7 +1534,13 @@ class CharacterCog(commands.Cog, BaseTools):
                 item_count[item_type] = 0
             item_count[item_type] += 1
 
-        pprint(item_count)
+        item_default = ['Armor', 'Cape', 'Class', 'Floor Item', 'Helm',
+            'House', 'House Item', 'Misc', 'Necklace', 'Pet',
+            'Wall Item', 'Weapon']
+
+        for item in item_default:
+            if item not in item_count:
+                item_count[item] = 0
 
         # Inserts stuffs
         embedVar = discord.Embed(title=f"Character Profile - __{char_full_name}__", color=self.block_color, description="\u200b")
