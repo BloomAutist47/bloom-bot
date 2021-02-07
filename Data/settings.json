@@ -1,103 +1,103 @@
 {
-    "priveleged_roles": {
-        "Admin": 1,
-        "Helper": 1,
-        "Trial Helper": 1,
-        "Staff": 1,
-        "Member": 0,
-        "@everyone": 0,
-        "Verified Bot Makers": 1,
-        "Verified Bot Maker": 1
+    "priveleged_roles":{
+        "Admin":1,
+        "Helper":1,
+        "Trial Helper":1,
+        "Staff":1,
+        "Member":0,
+        "@everyone":0,
+        "Verified Bot Makers":1,
+        "Verified Bot Maker":1
     },
-    "EventCalendarCogSettings": {
-        "latest_update": "February",
-        "current_day": "06",
-        "events": {
-            "01": {
-                "month": "February",
-                "info": [
+    "EventCalendarCogSettings":{
+        "latest_update":"February",
+        "current_day":"06",
+        "events":{
+            "01":{
+                "month":"February",
+                "info":[
                     "Obsidian Samurai Seasonal Set returns    "
                 ]
             },
-            "06": {
-                "month": "February",
-                "info": [
-                    "Test notice humans asdasd asd asd "
-                ]
-            },
-            "02": {
-                "month": "February",
-                "info": [
+            "02":{
+                "month":"February",
+                "info":[
                     "Groundhorc's Day returns"
                 ]
             },
-            "05": {
-                "month": "February",
-                "info": [
+            "05":{
+                "month":"February",
+                "info":[
                     "Class Variants: Chunin and Dragon Shinobi (new art, same great skills!)",
                     "Akiban BladeMaster boss battle + reward gear",
                     "New upgrade bonus set: Akiban Street Gear",
                     "Seasonal Yokai New Year events return"
                 ]
             },
-            "07": {
-                "month": "February",
-                "info": [
+            "07":{
+                "month":"February",
+                "info":[
                     "LoreBowl LV gear + the /punt map returns"
                 ]
             },
-            "12": {
-                "month": "February",
-                "info": [
+            "12":{
+                "month":"February",
+                "info":[
                     "Hero's Heart "
                 ]
             },
-            "16": {
-                "month": "February",
-                "info": [
+            "16":{
+                "month":"February",
+                "info":[
                     "Pancake Day"
                 ]
             },
-            "19": {
-                "month": "February",
-                "info": [
+            "19":{
+                "month":"February",
+                "info":[
                     "Kotobuki Yokai Hunt (Year of the Minotaur) + Event Rare gear"
                 ]
             },
-            "26": {
-                "month": "February",
-                "info": [
+            "26":{
+                "month":"February",
+                "info":[
                     ""
                 ]
             },
-            "28": {
-                "month": "February",
-                "info": [
+            "28":{
+                "month":"February",
+                "info":[
                     "Obsidian Samurai Seasonal Set + Beleen's seasonal pink gear leave"
                 ]
             }
         }
     },
-    "priveleged_servers": [
+    "priveleged_servers":[
         761956630606250005,
         766627412179550228
     ],
-    "current_month": "",
-    "server_settings": {
-        "802968357623300106": {
-            "server_name": "AuQW",
-            "server_privilage": "Homie",
-            "server_noice_role": 807586780324954123,
-            "event_channel_id": 807587012471029760
+    "current_month":"",
+    "server_settings":{
+        "802968357623300106":{
+            "server_name":"AuQW",
+            "server_privilage":"Homie",
+            "server_noice_role":807586780324954123,
+            "event_channel_id":807587012471029760
         },
-        "Basic": {
-            "banned_guides": [
+        "761956630606250005":{
+            "server_name":"BloomFactory",
+            "server_privilage":"Homie",
+            "server_noice_role":807586780324954123,
+            "event_channel_id":807587012471029760
+        },
+        "Basic":{
+            "banned_guides":[
                 "darkmode",
                 "gg"
             ]
         }
     },
-    "banned_words": [
+    "banned_words":[
         "gb",
         ".",
         "bot",
@@ -131,139 +131,139 @@
         "y.gbot",
         "z.gbot"
     ],
-    "confirmed_authors": {
-        "Archon": {
-            "alias": [
+    "confirmed_authors":{
+        "Archon":{
+            "alias":[
                 "Archon",
                 "Archons",
                 "King",
                 "king"
             ],
-            "id": ""
+            "id":""
         },
-        "Arts": {
-            "alias": [
+        "Arts":{
+            "alias":[
                 "Arts",
                 "ARTS",
                 "Art"
             ],
-            "id": "151841888649871360"
+            "id":"151841888649871360"
         },
-        "Bluu": {
-            "alias": [
+        "Bluu":{
+            "alias":[
                 "Bluu"
             ],
-            "id": "554514705960534054"
+            "id":"554514705960534054"
         },
-        "Desolates": {
-            "alias": [
+        "Desolates":{
+            "alias":[
                 "Desolates",
                 "Desolate",
                 "Deso",
                 "deso"
             ],
-            "id": "266844763649605632"
+            "id":"266844763649605632"
         },
-        "Ganku": {
-            "alias": [
+        "Ganku":{
+            "alias":[
                 "Ganku"
             ],
-            "id": "395853382331662336"
+            "id":"395853382331662336"
         },
-        "Kaos": {
-            "alias": [
+        "Kaos":{
+            "alias":[
                 "Kaos",
                 "Kaosreepjou",
                 "kaosreepjou",
                 "kaos"
             ],
-            "id": "494589656579571714"
+            "id":"494589656579571714"
         },
-        "Taryth": {
-            "alias": [
+        "Taryth":{
+            "alias":[
                 "Taryth"
             ],
-            "id": "267858079868125185"
+            "id":"267858079868125185"
         },
-        "Minaaaaaa": {
-            "alias": [
+        "Minaaaaaa":{
+            "alias":[
                 "Minaaaaaa"
             ],
-            "id": "380437317933858837"
+            "id":"380437317933858837"
         },
-        "Qwack": {
-            "alias": [
+        "Qwack":{
+            "alias":[
                 "Qwack"
             ],
-            "id": "221271832500764674"
+            "id":"221271832500764674"
         },
-        "NinjaSneaks": {
-            "alias": [
+        "NinjaSneaks":{
+            "alias":[
                 "NinjaSneaks"
             ],
-            "id": ""
+            "id":""
         },
-        "Ninjatov": {
-            "alias": [
+        "Ninjatov":{
+            "alias":[
                 "Ninjatov"
             ],
-            "id": ""
+            "id":""
         },
-        "satan": {
-            "alias": [
+        "satan":{
+            "alias":[
                 "Satan",
                 "Satanics",
                 "satans",
                 "Satans"
             ],
-            "id": "212913871466266624"
+            "id":"212913871466266624"
         },
-        "Raze": {
-            "alias": [
+        "Raze":{
+            "alias":[
                 "Raze"
             ],
-            "id": "201432181350858753"
+            "id":"201432181350858753"
         },
-        "Weebluurts": {
-            "alias": [
+        "Weebluurts":{
+            "alias":[
                 "Weebluurts"
             ],
-            "id": ""
+            "id":""
         },
-        "Weeb": {
-            "alias": [
+        "Weeb":{
+            "alias":[
                 "Weeb",
                 "weebly",
                 "weeby"
             ],
-            "id": "368804586955341824"
+            "id":"368804586955341824"
         },
-        "Sunny": {
-            "alias": [
+        "Sunny":{
+            "alias":[
                 "Sunny",
                 "Sunnyjd"
             ],
-            "id": "402349023538970625"
+            "id":"402349023538970625"
         },
-        "food": {
-            "alias": [
+        "food":{
+            "alias":[
                 "food"
             ],
-            "id": "308782870892380161"
+            "id":"308782870892380161"
         },
-        "jex": {
-            "alias": [
+        "jex":{
+            "alias":[
                 "jex"
             ],
-            "id": "783044176547020800"
+            "id":"783044176547020800"
         },
-        "Bloom": {
-            "alias": [
+        "Bloom":{
+            "alias":[
                 "Bloom"
             ]
         },
-        "Beneficence": {
-            "alias": [
+        "Beneficence":{
+            "alias":[
                 "Beneficence"
             ]
         }
