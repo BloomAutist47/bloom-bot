@@ -728,6 +728,14 @@
             "url": "https://adventurequest.life/bots/Kaos_Cragglerock_Voidstone_Bot.gbot",
             "author": "kaos"
         },
+        "DragonShinobi Token.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_DragonShinobi_Token.gbot",
+            "author": "kaos"
+        },
+        "FiendEmblem.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_FiendEmblem.gbot",
+            "author": "kaos"
+        },
         "FiendEmblem pro.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_FiendEmblem_pro.gbot",
             "author": "kaos"
@@ -1050,6 +1058,10 @@
         },
         "Investigate the Tech.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Investigate_the_Tech.gbot",
+            "author": "weeb"
+        },
+        "Keep Soul Searching21.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Keep_Soul_Searching%21.gbot",
             "author": "weeb"
         },
         "Kiss the Void.gbot": {
@@ -1868,6 +1880,12 @@
             "Cragglerock Voidstone Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Cragglerock_Voidstone_Bot.gbot"
             },
+            "DragonShinobi Token.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_DragonShinobi_Token.gbot"
+            },
+            "FiendEmblem.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_FiendEmblem.gbot"
+            },
             "FiendEmblem pro.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_FiendEmblem_pro.gbot"
             },
@@ -2029,6 +2047,9 @@
             },
             "Investigate the Tech.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Investigate_the_Tech.gbot"
+            },
+            "Keep Soul Searching21.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Keep_Soul_Searching%21.gbot"
             },
             "Kiss the Void.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Kiss_the_Void.gbot"
