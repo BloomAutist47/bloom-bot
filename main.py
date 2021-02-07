@@ -561,6 +561,14 @@ class BaseTools(BaseProgram):
         else:
             return False
 
+    async def check_guild_guide(self, ctx):
+        guild_id = str(ctx.guild.id)
+        if guild_id in self.settings["server_settings"]:
+            if self.settings["server_settings"][guild_id]["server_privilage"] == "Homie":
+                return True
+        if guild_id not in self.settings["server_settings"]:
+            return False
+
     async def embed_image(self, ctx, discord_url, wiki_url, class_name, duplicate_name=""):
         credit_text2 = "Credits:"\
             "\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
@@ -1294,16 +1302,31 @@ class GuideCog(commands.Cog, BaseTools):
         if guide == "":
             embedVar = discord.Embed(title="♦️ List of Guide Commands ♦️", color=self.block_color)
             desc = "To summon this list, use `;g`. Please read the following carefully.\n\n"
-            for guide_name in self.guides:
-                guide_data = self.guides[guide_name]
-                if "title" in guide_data:
-                    desc += "`;g {}` - {}.\n".format(guide_name, guide_data["title"])
+            guild_id = str(ctx.guild.id)
+            if guild_id in self.settings["server_settings"]:
+                if self.settings["server_settings"][guild_id]["server_privilage"] == "Homie":
+                    for guide_name in self.guides:
+                        guide_data = self.guides[guide_name]
+                        if "title" in guide_data:
+                            desc += "`;g {}` - {}.\n".format(guide_name, guide_data["title"])
+            if guild_id not in self.settings["server_settings"]:
+
+                for guide_name in self.guides:
+                    if guide_name not in self.settings["server_settings"]["Basic"]["banned_guides"]:
+                        guide_data = self.guides[guide_name]
+                        if "title" in guide_data:
+                            desc += "`;g {}` - {}.\n".format(guide_name, guide_data["title"])
             embedVar.description = desc
             await ctx.send(embed=embedVar)
             return
 
 
         g_name = guide.lower()
+        guide_mode = await self.check_guild_guide(ctx)
+        if not guide_mode:
+            if g_name in self.settings["server_settings"]["Basic"]["banned_guides"]:
+                return
+
         if g_name in self.guides:
             if "common_key" in self.guides[g_name]:
                 key = self.guides[g_name]["common_key"]
