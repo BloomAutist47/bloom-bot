@@ -428,33 +428,33 @@
             "url": "https://adventurequest.life/bots/Beneficience%2BBluu_Frost_Spirit_Reaver_Class_and_Items_Bot_pro.zip",
             "author": "bluu"
         },
-        "ChronoSpan Rep Boat.zip": {
+        "Bloom ChronoSpan Rep Boat.zip": {
             "url": "https://adventurequest.life/bots/Bloom_ChronoSpan_Rep_Boat.zip",
-            "author": "bloom"
+            "author": "unknown"
         },
-        "Dragonslayer General ClassBot PRO.gbot": {
+        "Bloom Dragonslayer General ClassBot PRO.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot",
-            "author": "bloom"
+            "author": "unknown"
         },
-        "EtherStorm Rep Balmblossom.gbot": {
+        "Bloom EtherStorm Rep Balmblossom.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot",
-            "author": "bloom"
+            "author": "unknown"
         },
-        "FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
+        "Bloom FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_FuchsiaDye_MagentaDye_MEMBER_ONLY_DyeingForAChallenge.gbot",
-            "author": "bloom"
+            "author": "unknown"
         },
-        "Icestormarena r3c Frost Spirit.gbot": {
+        "Bloom Icestormarena r3c Frost Spirit.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot",
-            "author": "bloom"
+            "author": "unknown"
         },
-        "Makai Fan Limited.gbot": {
+        "Bloom Makai Fan Limited.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Makai_Fan_Limited.gbot",
-            "author": "bloom"
+            "author": "unknown"
         },
-        "SpoiledDragonQuest EliteVoidSet.gbot": {
+        "Bloom SpoiledDragonQuest EliteVoidSet.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot",
-            "author": "bloom"
+            "author": "unknown"
         },
         "ArcangroveIndexQL.gbot": {
             "url": "https://adventurequest.life/bots/Bluu_ArcangroveIndexQL.gbot",
@@ -1212,6 +1212,27 @@
             "Battlegrounde X Assistant.gbot": {
                 "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot"
             },
+            "Bloom ChronoSpan Rep Boat.zip": {
+                "url": "https://adventurequest.life/bots/Bloom_ChronoSpan_Rep_Boat.zip"
+            },
+            "Bloom Dragonslayer General ClassBot PRO.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot"
+            },
+            "Bloom EtherStorm Rep Balmblossom.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
+            },
+            "Bloom FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_FuchsiaDye_MagentaDye_MEMBER_ONLY_DyeingForAChallenge.gbot"
+            },
+            "Bloom Icestormarena r3c Frost Spirit.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot"
+            },
+            "Bloom Makai Fan Limited.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Makai_Fan_Limited.gbot"
+            },
+            "Bloom SpoiledDragonQuest EliteVoidSet.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
+            },
             "Dual Wield Forge.gbot": {
                 "url": "https://adventurequest.life/bots/Dual_Wield_Forge.gbot"
             },
@@ -1713,29 +1734,6 @@
             },
             "YokaiRep Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Bluu_YokaiRep_Bot.gbot"
-            }
-        },
-        "bloom": {
-            "ChronoSpan Rep Boat.zip": {
-                "url": "https://adventurequest.life/bots/Bloom_ChronoSpan_Rep_Boat.zip"
-            },
-            "Dragonslayer General ClassBot PRO.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot"
-            },
-            "EtherStorm Rep Balmblossom.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
-            },
-            "FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_FuchsiaDye_MagentaDye_MEMBER_ONLY_DyeingForAChallenge.gbot"
-            },
-            "Icestormarena r3c Frost Spirit.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_Icestormarena_r3c_Frost_Spirit.gbot"
-            },
-            "Makai Fan Limited.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_Makai_Fan_Limited.gbot"
-            },
-            "SpoiledDragonQuest EliteVoidSet.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
             }
         },
         "taryth": {
