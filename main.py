@@ -1789,9 +1789,9 @@ else:              # Heroku
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-# Bot.add_cog(IllegalBoatSearchCog(Bot))
-# Bot.add_cog(ClassSearchCog(Bot))
-# Bot.add_cog(GuideCog(Bot)) 
+Bot.add_cog(IllegalBoatSearchCog(Bot))
+Bot.add_cog(ClassSearchCog(Bot))
+Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(CharacterCog(Bot))
-# Bot.add_cog(EventCalendarCog(Bot))
+Bot.add_cog(EventCalendarCog(Bot))
 Bot.run(DISCORD_TOKEN)
