@@ -68,7 +68,13 @@
 
 > - Created this update log. kek.
 
+##### **Update, v.1.4.10.06**
 
+> - Refactored the permission check functions
+> - Separated essential update commands from the cogs. Wrote its own cogs
+> - Changed the Farming Difficulty grading from Letters to words such as easy, normal, etc.. based off of Satan's suggestions.
+> - Rewrote some parts in the settings.json for better organization.
+> - Fixed class repeatedly showing when searching for classes.
 
 
 

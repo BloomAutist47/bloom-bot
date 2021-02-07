@@ -16,7 +16,7 @@
         ]
     },
     "ClassSearchCogSettings": {
-        "legends_link": "https://cdn.discordapp.com/attachments/805367955923533845/807913899314774066/intructions.png"
+        "legends_link": "https://cdn.discordapp.com/attachments/805367955923533845/807995288483921920/intructions.png"
     },
     "latest_update": "html",
     "EventCalendarCogSettings": {
@@ -266,6 +266,11 @@
         "Beneficence": {
             "alias": [
                 "Beneficence"
+            ]
+        },
+        "Bloom": {
+            "alias": [
+                "Bloom"
             ]
         }
     }
