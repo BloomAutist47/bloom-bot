@@ -38,18 +38,6 @@ from pytz import timezone
 import unicodedata
 
 
-# __import__('IPython').embed()
-# from collections import OrderedDict
-# from requests import Session
-# import socket
-# import certifi
-# import urllib3
-# import urllib.request
-# import cloudscraper
-
-# class AppURLopener(urllib.request.FancyURLopener):
-#     version = "Mozilla/5.0"
-
 class BreakProgram(Exception):
     pass
 
@@ -71,8 +59,8 @@ class BaseProgram:
         self.github = github3.login(token=self.GIT_BLOOM_TOKEN)
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
 
-        self.file_read()
-        self.git_read()
+        self.file_read("all")
+        self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -94,13 +82,14 @@ class BaseProgram:
             self.PORTAL_AGENT = os.environ.get("PORTAL_AGENT")
 
     def database_update(self, mode: str):
-        """Description: Updates the database.json
-           Arguments:
-           [mode] accepts 'web', 'html'
+        """ Description: Updates the database.json
+            Arguments:
+            [mode] accepts 'web', 'html'
                 - 'web': scrapes directly from the self.url
                 - 'html': uses pre-downloaded html of self.url
+            Return: Bool
         """
-        self.git_read()
+        self.git_read("database-settings")
         self.file_clear_database()
         self.data["sort_by_bot_name"] = {}
         self.data["sort_by_bot_authors"] = {}
@@ -149,7 +138,7 @@ class BaseProgram:
                 self.settings["latest_update"] = "web"
                 self.mode = "web"
             except:
-                self.git_read()
+                self.git_read("database-settings")
                 return False
 
         elif mode == "html":
@@ -157,7 +146,7 @@ class BaseProgram:
                 # Checks if the latest update method is web, i.e. the latest most way
                 # of updating this.
                 print("Didn't update. latest update is Web")
-                self.git_read()
+                self.git_read("database-settings")
                 return False
             else:
                 self.settings["latest_update"] = "html"
@@ -167,7 +156,7 @@ class BaseProgram:
                 body = soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
                 row = body.find_all("tr")
             except:
-                self.git_read()
+                self.git_read("database-settings")
                 return False
         
         for raw_link in row:
@@ -227,8 +216,8 @@ class BaseProgram:
 
 
         # Saving
-        self.file_save()
-        self.git_save()
+        self.file_save("database-settings")
+        self.git_save("database-settings")
         print("lmao")
         return True
 
@@ -237,133 +226,184 @@ class BaseProgram:
         with open('./Data/database.json', 'w', encoding='utf-8') as f:
             json.dump({}, f, ensure_ascii=False, indent=4)
 
-    def file_read(self):
-        """Description: Reads pre-saved .json files"""
-        with open('./Data/database.json', 'r', encoding='utf-8') as f:
-            self.data = json.load(f)
-        with open('./Data/guides.json', 'r', encoding='utf-8') as f:
-            self.guides = json.load(f)
-        with open('./Data/settings.json', 'r', encoding='utf-8') as f:
-            self.settings = json.load(f)
-        with open('./Data/classes.json', 'r', encoding='utf-8') as f:
-            self.classes = json.load(f)
-        self.priveleged_roles = []
-        for role in self.settings["priveleged_roles"]:
-            if self.settings["priveleged_roles"][role] == 1:
-                self.priveleged_roles.append(role)
+    def file_read(self, mode):
+        """ Description: Reads data from local .json files
+            Arguments:
+                [mode] - checks to do. accepts: database, guides, settings, classes
+                         or any of the their combination delimited by "-"
+                    - 'database'> self.data
+                    - 'guides'> self.guides
+                    - 'settings'> self.settings
+                    - 'classes'> self.classes
+        """
+        mode = mode.split("-")
+        if mode == ["all"]:
+            mode = ["database", "guides", "classes", "settings"]
 
-        self.author_list_lowercase = []
-        for author in self.settings["confirmed_authors"]:
-            self.author_list_lowercase.append(author.lower())
-            for alias in self.settings["confirmed_authors"][author]["alias"]:
-                self.author_list_lowercase.append(alias.lower())
+        if "database" in mode:
+            with open('./Data/database.json', 'r', encoding='utf-8') as f:
+                self.data = json.load(f)
+        if "guides" in mode:
+            with open('./Data/guides.json', 'r', encoding='utf-8') as f:
+                self.guides = json.load(f)
+        if "classes" in mode:   
+            with open('./Data/classes.json', 'r', encoding='utf-8') as f:
+                self.classes = json.load(f)
+            self.sort_classes_acronym()
 
-    def file_read_guides(self):
-        with open('./Data/guides.json', 'r', encoding='utf-8') as f:
-            self.guides = json.load(f)
+        if "settings" in mode:
+            with open('./Data/settings.json', 'r', encoding='utf-8') as f:
+                self.settings = json.load(f)
 
-    def file_save(self):
-        """Description: Saves data to pre-saved .json files"""
-        with open('./Data/database.json', 'w', encoding='utf-8') as f:
-            json.dump(self.data, f, ensure_ascii=False, indent=4)
-        with open('./Data/settings.json', 'w', encoding='utf-8') as f:
-            json.dump(self.settings, f, ensure_ascii=False, indent=4)
-        with open('./Data/classes.json', 'w', encoding='utf-8') as f:
-            json.dump(self.classes, f, ensure_ascii=False, indent=4)
-        with open('./Data/guides.json', 'w', encoding='utf-8') as f:
-            json.dump(self.guides, f, ensure_ascii=False, indent=4)
+            self.sort_privileged_roles()
+            self.sort_author_list_lowercase()
 
-        for class_name in self.classes:
-            if "acronym" in self.classes[class_name]:
-                list_of_acronyms = self.classes[class_name]["acronym"].split(",")
-                acronyms = [acr.replace(" ", "").lower() for acr in list_of_acronyms if acr != "(None)"]
-                if acronyms != ['']:
-                    for acr in acronyms:
-                        self.class_acronyms[acr] = class_name
+    def file_save(self, mode:str):
+        """ Description: Saves data to local .json files
+            Arguments:
+                [mode] - checks to do. accepts: database, guides, settings, classes
+                         or any of the their combination delimited by "-"
+                    - 'database'> self.data
+                    - 'guides'> self.guides
+                    - 'settings'> self.settings
+                    - 'classes'> self.classes
+        """
+        mode = mode.split("-")
+        if mode == ["all"]:
+            mode = ["database", "guides", "classes", "settings"]
 
-    def file_save_settings(self):
-        with open('./Data/settings.json', 'w', encoding='utf-8') as f:
-            json.dump(self.settings, f, ensure_ascii=False, indent=4)
+        if "database" in mode:
+            with open('./Data/database.json', 'w', encoding='utf-8') as f:
+                json.dump(self.data, f, ensure_ascii=False, indent=4)
+        if "guides" in mode:
+            with open('./Data/guides.json', 'w', encoding='utf-8') as f:
+                json.dump(self.guides, f, ensure_ascii=False, indent=4)
+        if "classes" in mode:
+            with open('./Data/classes.json', 'w', encoding='utf-8') as f:
+                json.dump(self.classes, f, ensure_ascii=False, indent=4)
+            self.sort_classes_acronym()
+        if "settings" in mode:
+            with open('./Data/settings.json', 'w', encoding='utf-8') as f:
+                json.dump(self.settings, f, ensure_ascii=False, indent=4)
+
+
+    def git_save(self, mode:str):
+        """ Description: Saves data to github .json files
+            Arguments:
+                [mode] - checks to do. accepts: database, guides, settings, classes
+                         or any of the their combination delimited by "-"
+                    - 'database'> self.data
+                    - 'guides'> self.guides
+                    - 'settings'> self.settings
+                    - 'classes'> self.classes
+        """
+        mode = mode.split("-")
+        if mode == ["all"]:
+            mode = ["database", "guides", "classes", "settings"]
+
+        if "database" in mode:
+            git_data = json.dumps(self.data, indent=4).encode('utf-8')
+            contents_object = self.repository.file_contents("./Data/database.json")
+            contents_object.update("update", git_data)
+            print("Git-database called")
+
+        if "guides" in mode:
+            git_guides = json.dumps(self.guides, indent=4).encode('utf-8')
+            contents_object = self.repository.file_contents("./Data/guides.json")
+            contents_object.update("update", git_guides)
+
+        if "settings" in mode:
+            git_settings = json.dumps(self.settings, indent=4).encode('utf-8')
+            contents_object = self.repository.file_contents("./Data/settings.json")
+            contents_object.update("update", git_settings)
+            print("Git-Settings called")
+
+        if "classes" in mode:
+            git_classes = json.dumps(self.classes, indent=4).encode('utf-8')
+            contents_object = self.repository.file_contents("./Data/classes.json")
+            contents_object.update("update", git_classes)
+
+        self.file_save("all")
         return
 
-    def git_save(self):
-        """Description: Saves data to github .json files"""
-        git_data = json.dumps(self.data, indent=4).encode('utf-8')
-        contents_object = self.repository.file_contents("./Data/database.json")
-        contents_object.update("update", git_data)
+    def git_read(self, mode:str):
+        """ Description: Reads data from github .json files
+            Arguments:
+                [mode] - checks to do. accepts: database, guides, settings, classes
+                         or any of the their combination delimited by "-"
+                    - 'database'> self.data
+                    - 'guides'> self.guides
+                    - 'settings'> self.settings
+                    - 'classes'> self.classes
+        """
+        mode = mode.split("-")
+        if mode == ["all"]:
+            mode = ["database", "guides", "classes", "settings"]
 
-        git_guides = json.dumps(self.guides, indent=4).encode('utf-8')
-        contents_object = self.repository.file_contents("./Data/guides.json")
-        contents_object.update("update", git_guides)
+        if "database" in mode:
+            git_data = self.repository.file_contents("./Data/database.json").decoded
+            self.data = json.loads(git_data.decode('utf-8'))
 
-        git_settings = json.dumps(self.settings, indent=4).encode('utf-8')
-        contents_object = self.repository.file_contents("./Data/settings.json")
-        contents_object.update("update", git_settings)
+        if "guides" in mode:
+            git_guides = self.repository.file_contents("./Data/guides.json").decoded
+            self.guides = json.loads(git_guides.decode('utf-8'))
 
-        self.file_save()
-        return
+        if "classes" in mode:
+            git_classes = self.repository.file_contents("./Data/classes.json").decoded
+            self.classes = json.loads(git_classes.decode('utf-8'))
+            self.sort_classes_acronym()
 
-    def git_save_settings(self):
-        git_settings = json.dumps(self.settings, indent=4).encode('utf-8')
-        contents_object = self.repository.file_contents("./Data/settings.json")
-        contents_object.update("update", git_settings)
-        return
+        if "settings" in mode:
+            git_settings = self.repository.file_contents("./Data/settings.json").decoded
+            self.settings = json.loads(git_settings.decode('utf-8'))
 
-    def git_read_class(self):
-        git_classes = self.repository.file_contents("./Data/classes.json").decoded
-        self.classes = json.loads(git_classes.decode('utf-8'))
+            self.sort_privileged_roles()
+            self.sort_author_list_lowercase()
 
-        for class_name in self.classes:
-            if "acronym" in self.classes[class_name]:
-                list_of_acronyms = self.classes[class_name]["acronym"].split(",")
-                acronyms = [acr.replace(" ", "").lower() for acr in list_of_acronyms if acr != "(None)"]
-                if acronyms != ['']:
-                    for acr in acronyms:
-                        self.class_acronyms[acr] = class_name
-        return
-
-    def git_read_guide(self):
-        git_guides = self.repository.file_contents("./Data/guides.json").decoded
-        self.guides = json.loads(git_guides.decode('utf-8'))
-        return
-
-    def git_read(self):
-        """Description: Reads data from github .json files"""
-        git_data = self.repository.file_contents("./Data/database.json").decoded
-        self.data = json.loads(git_data.decode('utf-8'))
-
-        git_guides = self.repository.file_contents("./Data/guides.json").decoded
-        self.guides = json.loads(git_guides.decode('utf-8'))
-
-        git_classes = self.repository.file_contents("./Data/classes.json").decoded
-        self.classes = json.loads(git_classes.decode('utf-8'))
-
-        git_settings = self.repository.file_contents("./Data/settings.json").decoded
-        self.settings = json.loads(git_settings.decode('utf-8'))
-        self.priveleged_roles = []
-        for role in self.settings["priveleged_roles"]:
-            if self.settings["priveleged_roles"][role] == 1:
-                self.priveleged_roles.append(role)
-
-        self.author_list_lowercase = []
-        for author in self.settings["confirmed_authors"]:
-            self.author_list_lowercase.append(author.lower())
-            for alias in self.settings["confirmed_authors"][author]["alias"]:
-                self.author_list_lowercase.append(alias.lower())
-
-        for class_name in self.classes:
-            if "acronym" in self.classes[class_name]:
-                list_of_acronyms = self.classes[class_name]["acronym"].split(",")
-                acronyms = [acr.replace(" ", "").lower() for acr in list_of_acronyms if acr != "(None)"]
-                if acronyms != ['']:
-                    for acr in acronyms:
-                        self.class_acronyms[acr] = class_name
 
         # Saving
-        self.file_save()
+        self.file_save("all")
+        return
+
+    def sort_classes_acronym(self):
+        """ Description: sort classes acronyms into one dictionary
+                and assigns each acronym as a key and their class name as value.
+                Method created for much more efficient class acronym search.
+        """
+
+        for class_name in self.classes:
+            if "acronym" in self.classes[class_name]:
+                list_of_acronyms = self.classes[class_name]["acronym"].split(",")
+                acronyms = [acr.replace(" ", "").lower() for acr in list_of_acronyms if acr != "(None)"]
+                if acronyms != ['']:
+                    for acr in acronyms:
+                        self.class_acronyms[acr] = class_name
+        return
+
+    def sort_author_list_lowercase(self):
+        """ Description: sort author aliases into one dictionary
+                and assigns each alias as a key and their author name as value.
+                Method created for much more efficient class author alias search.
+        """
+        self.author_list_lowercase = []
+        for author in self.settings["confirmed_authors"]:
+            self.author_list_lowercase.append(author.lower())
+            for alias in self.settings["confirmed_authors"][author]["alias"]:
+                self.author_list_lowercase.append(alias.lower())
+        return
+
+    def sort_privileged_roles(self):
+        """ Description: Creates a list of privileged roles from self.settings
+        """
+        self.priveleged_roles = []
+        for role in self.settings["EvaluatorSettings"]["role_privilege"]:
+            if self.settings["EvaluatorSettings"]["role_privilege"][role] == 1:
+                self.priveleged_roles.append(role)
+        return
+
 
     """ SEARCH METHODS SECTION """
-    def find_bot_by_name(self, bot_name_value):
+    def find_bot_by_name(self, bot_name_value:str):
         """Description: Finds boats by name
            Arguments:
                [bot_name_value] - search word
@@ -479,7 +519,7 @@ class BaseProgram:
             for words in class_words:
                 if words == "" or len(words) == 1:
                     continue
-                if words in class_name_.lower():
+                if words in class_name_.lower() and class_name_ not in possible_classes:
                     possible_classes.append(class_name_)
                 for duplicate in duplicates:
                     if words in duplicate:
@@ -492,8 +532,14 @@ class BaseProgram:
 
 
 class BaseTools(BaseProgram):
-
-    async def check_word_count(self, ctx, value):
+    description = "Sets of tool functions to be used by other Cogs"
+    async def check_word_count(self, ctx, value:str):
+        """ Description: Checks word is allowed for searching
+            Arguments:
+                [ctx] - context
+                [value] - word to be evaluated
+            Return: Bool.
+        """
         if value == "":
             await ctx.send(embed=self.embed_single("Warning", "Please input a value to search.")) 
             return False
@@ -522,15 +568,72 @@ class BaseTools(BaseProgram):
                 return False
         return True
 
-    async def check_permissions(self, ctx, command_name):
-        if str(ctx.author.id) not in self.PERMISSIONS:
+    async def allow_evaluator(self, ctx, mode:str, command_name:str=""):
+        """ Description: An Encapsulated function. Checks if permission checks are passed
+                         before proceeding.
+            Arguments:
+                [ctx] - context
+                [mode] - checks to do. 
+                    accepts: guild_privilege, user_permissions, role_privilege, all, update
+                             note: or any of the their combination delimited by "-".
+                    - 'all'> checks all mode below except for 'update'
+                    - 'guild_privilege'> if server can use full functionalities.
+                    - 'role_privilege'> if the user is allowed to use privileged commands.
+                    - 'user_permissions'> if user has permissions. niglist
+                    - 'update'> checks if self.database_updating is set to True.
+            Return: Bool.
+            Example:
+                allow_ = await self.allow_evaluator(ctx, mode="all-update", command_name="git")
+                if not allow_:
+                    return
+        """
+        mode = mode.split("-")
+        if "all" in mode:
+            mode.extend(["guild_privilege", "user_permissions", "role_privilege"])
+
+        if "update" in mode:
+            if self.database_updating:
+                await ctx.send(r"\> Bloom Bot update in progress.")
+                return False
+
+        if "guild_privilege" in mode:
+            guild_allowed = await self.check_guild_privilege(ctx)
+            if not guild_allowed:
+                return False
+
+        if "role_privilege" in mode:
+            priveleged = await self.check_role_privilege(ctx, command_name)
+            if not priveleged:
+                return False
+
+        if "user_permissions" in mode:
+            permissions_check = await self.check_user_permissions(ctx, command_name)
+            if not permissions_check:
+                print("WHYA")
+                return False
+        return True
+
+    async def check_guild_privilege(self, ctx):
+        """ Description: Checks if guild is a privileged server that has
+                         access to full functionalities
+            Arguments:
+                [ctx] - context
+        """
+        try:
+            guild_id = ctx.guild.id
+        except:
+            return False
+        if guild_id in self.settings["EvaluatorSettings"]["guild_privilege"]:
             return True
         else:
-            desc = f"\> User {ctx.author} does not have permissions for `;{command_name}` command.\n"
-            await ctx.send(desc)
             return False
 
-    async def check_privilege(self, ctx, command_name):
+    async def check_role_privilege(self, ctx, command_name:str):
+        """ Description: Checks if the user is allowed to use privileged commands.
+            Arguments:
+                [ctx] - context
+                [command_name] - command name that is being evaluated
+        """
         try:
             roles = [role.name for role in ctx.author.roles]
             for role in roles:
@@ -542,26 +645,25 @@ class BaseTools(BaseProgram):
             await ctx.send(desc)
             return False
 
-    async def check_author_id(self, ctx, bot_author):
-        author_id_name = self.find_author_id(bot_author)
-        if author_id_name:
-            return author_id_name
-        else:
-            await ctx.send(embed=self.embed_single("Bot Author Result", "No verified author of that name."))
-            return None
-
-    async def check_guild(self, ctx):
-        guild_id = ctx.message.guild.id
-        try:
-            guild_id = ctx.message.guild.id
-        except:
-            return False
-        if guild_id in self.settings["priveleged_servers"]:
+    async def check_user_permissions(self, ctx, command_name:str):
+        """ Description: Checks if the user has permissions to use certain functionalities
+                         niglist.
+            Arguments:
+                [ctx] - context
+                [command_name] - command name that is being evaluated
+        """
+        if str(ctx.author.id) not in self.PERMISSIONS:
             return True
         else:
+            desc = f"\> User {ctx.author} does not have permissions for `;{command_name}` command.\n"
+            await ctx.send(desc)
             return False
 
     async def check_guild_guide(self, ctx):
+        """ Description: Checks whatever some guides are allowed to a server
+            Arguments:
+                [ctx] - context
+        """
         guild_id = str(ctx.guild.id)
         if guild_id in self.settings["server_settings"]:
             if self.settings["server_settings"][guild_id]["server_privilage"] == "Homie":
@@ -569,7 +671,15 @@ class BaseTools(BaseProgram):
         if guild_id not in self.settings["server_settings"]:
             return False
 
-    async def embed_image(self, ctx, discord_url, wiki_url, class_name, duplicate_name=""):
+    async def embed_image(self, ctx, discord_url:str, wiki_url:str, class_name:str, duplicate_name:str=""):
+        """ Description: Sends an Image embed for the ;c class_name command
+            Arguments:
+                [ctx] - context
+                [discord_url] - str. the url link of the class chart
+                [wiki_url] - str. the url link for the class wiki
+                [class_name] - str. name of the class
+                [duplicate_name] - str. sends an embed stating that the class is a duplicate
+        """
         credit_text2 = "Credits:"\
             "\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
             "to the AuQW Community!\nType ;credits to see their links!"
@@ -586,7 +696,13 @@ class BaseTools(BaseProgram):
         await ctx.send(embed=embedVar)
 
 
-    async def embed_multiple_links(self, ctx, bot_name, bot_results):
+    async def embed_multiple_links(self, ctx, bot_name: str, bot_results: str):
+        """ Description: Embeds multiple links sorted by AUTHOR
+            Arguments:
+                [ctx] - context
+                [bot_name] - search command
+                [bot_results] - the info chunck containing the boats
+        """
         # Properties
         st = "\u200b"
         bot_list = ""
@@ -594,10 +710,6 @@ class BaseTools(BaseProgram):
         counts = {"field": 0, "item": 0, "total":0}
         title = "Bot Results"
         desc = "The following matches your keyword: `{}`".format(bot_name)
-
-                    # if counts["field"] == 2:
-                    #     embedVar.add_field(name=st, value=st, inline=inline)
-                    #     counts["field"] = 0
 
         embedVar = discord.Embed(title=title, description=desc, color=self.block_color)
         done = []
@@ -613,10 +725,8 @@ class BaseTools(BaseProgram):
                         await ctx.send(embed=embedVar)
                         bot_list = ""
                         embedVar = discord.Embed(title=title, description=desc, color=self.block_color)
-
                     if counts["item"] == 9:
                         embedVar.add_field(name=author.capitalize(), value=bot_list, inline=inline)
-                        # counts["field"] += 1
                         counts["item"] = 0
                         bot_list = ""
                     counts["item"]+=1
@@ -628,6 +738,14 @@ class BaseTools(BaseProgram):
 
     # Tools
     def embed_multi_link(self, title, block_title, embed_description, list_var):
+        """ Description: Embeds multiple links not sorted by anything.
+            Arguments:
+                [title] - title
+                [block_title] - title of the addfields
+                [embed_description] - embed description
+                [list_var] - the info chunk of boats
+        """
+
         # Properties
         st = "\u200b" # Spacer title
         bot_list = ""
@@ -659,7 +777,18 @@ class BaseTools(BaseProgram):
 
         return embedVar
 
-    def embed_multi_text(self, title, field_name, description, value_list, block_count, two_collumn):
+    def embed_multi_text(self, title:str, field_name:str, description:str,
+            value_list, block_count:int, two_collumn:bool):
+        """ Description: Embeds multiple links not sorted by anything.
+            Arguments:
+                [title] - title
+                [field_name] - title of the fields
+                [description] - embed description
+                [value_list] - the info chunk of text
+                [block_count] - how may items per fields
+                [two_collumn] - if the chunks are presented in two column or three column
+            Return: Discord embed object
+        """
         st = "\u200b"
         counts = {"field": 0, "item": 0}
         text_item = "```css\n"
@@ -694,28 +823,34 @@ class BaseTools(BaseProgram):
         return embedVar
 
     def embed_single(self, title, description):
-         return discord.Embed(title=title, description=description, color=self.block_color)
+        """ Description: Single item embed
+            Arguments:
+                [title] - title
+                [description] - embed description
+            Return: Discord embed object
+        """
+        return discord.Embed(title=title, description=description, color=self.block_color)
 
     def chunks_list(self, lst, n):
-        # Yield successive n-sized chunks from lst.
+        """ Description: Yield successive n-sized chunks from lst.
+            Arguments:
+                [lst] - list to be sliced into n parts
+                [n] - amount of each sliced parts
+            Return: Iterator generator
+        """
         for i in range(0, len(lst), n):
             yield lst[i:i + n]
 
-
-# Illegal Cog lol
-class IllegalBoatSearchCog(commands.Cog, BaseTools):
+class BaseCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
-        # self.database_update("web")
         self.block_color = 3066993
         self.database_updating = False
         self.bot = bot
-        self.bot.remove_command("help")
-
 
     @commands.command()
     async def bhelp(self, ctx):
-        guild_allowed = await self.check_guild(ctx)
+        guild_allowed = await self.allow_evaluator(ctx, "guild_privilege")
         if guild_allowed:
             embedVar = discord.Embed(title="Bloom Help", color=self.block_color,
                 description="The following are a list of all commands and "\
@@ -789,87 +924,121 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
             return
 
     @commands.command()
-    async def update(self, ctx, value: str=""):
-        guild_allowed = await self.check_guild(ctx)
-        if not guild_allowed:
+    async def git(self, ctx):
+        """ Description: shows the git link
+            Arguments:
+                [ctx] - context
+                [author_name] - author to be unverified
+            Return: None
+        """
+        allow_ = await self.allow_evaluator(ctx, mode="all", command_name="git")
+        if not allow_:
             return
 
-        permissions_check = await self.check_permissions(ctx, "update")
-        if not permissions_check:
-            return
-
-        priveleged = await self.check_privilege(ctx, "update")
-        if not priveleged:
-            return
-
-        if value not in ["web", "html", ""]:
-            await ctx.send(r"\> Please input valid value")
-            return
-
-        if self.database_updating:
-            await ctx.send(r"\> Bloom Bot update in progress.")
-            return
-        if not self.database_updating:
-            self.database_updating = True
-            await ctx.send(r"\> Updating Bloom Bot")
-            if value == "web" or value == "":
-                result = self.database_update("web")
-            elif value == "html":
-                result = self.database_update("html")
-            self.git_read()
-            if result:
-                await ctx.send(r"\> Bloom Bot updated!")
-                await ctx.send(f"\> Update method: `{self.mode}`")
-            else:
-                if self.settings["latest_update"] == "web":
-                    await ctx.send("\> Nope. Latest method is web. Not gonna use locally saved .html\n"\
-                                  "`Error 14: Already up to date`")
-                else:
-                    await ctx.send("\> Something's wrong. Ping the Autistic Chungus.\n"\
-                                  "`Error 69: Web method.`")
-            self.database_updating = False
-            return
-        
+        await ctx.send("https://github.com/BloomAutist47/bloom-bot/")
+        return
 
     @commands.command()
-    async def bverify(self, ctx, author_name="", brief='Author Verification command'):
-        guild_allowed = await self.check_guild(ctx)
-        if not guild_allowed:
-            return
-        permissions_check = await self.check_permissions(ctx, "verify author")
-        if not permissions_check:
-            return
+    async def credits(self, ctx):
+        credit_text = "Bloom Bot and Class Charts made by Bloom Autist.\n"\
+            "Thanks to [Shiminuki](https://www.youtube.com/channel/UCyQ5AocDVVDznIslRuGUS3g) and [Molevolent](https://twitter.com/molevolent) for "\
+            "creating the [Class Tier List](https://docs.google.com/spreadsheets/d/1Ywl9GcfySXodGA_MtqU4YMEQaGmr4eMAozrM4r00KwI/edit?usp=sharing)."\
+            "\nLastly, thanks to the @Satan and to the AutoQuest Worlds Community!"
+        await ctx.send(embed=self.embed_single("Credits", credit_text))
 
-        priveleged = await self.check_privilege(ctx, "verify author")
-        if not priveleged:
-            await ctx.send(f"\> User {ctx.author} does not have permissions for `;verify author @author` command.\n")
+    # @commands.command()
+    # async def update(self, ctx, mode:str, *, value: str=""):
+    #     """ Description: Updates essential variables and read/saves them from github.
+    #         Arguments:
+    #             [ctx] - discord context
+    #             [mode]  accepts: all, database, guides, settings, classes
+    #                 - 'all'> updates all of the variables
+    #                 - 'database'> self.data
+    #                 - 'guides'> self.guides
+    #                 - 'settings'> self.settings
+    #                 - 'classes'> self.classes
+    #             [value] - if certain updates require their own modes.
+    #         Return: None
+    #     """
+    #     allow_ = await self.allow_evaluator(ctx, mode="user_permissions",
+    #             command_name="update")
+    #     if not allow_:
+    #         return
+
+    #     if mode == "database":
+    #         if self.database_updating:
+    #             await ctx.send(r"\> Bloom Bot update in progress.")
+    #             return
+    #         if not self.database_updating:
+    #             self.database_updating = True
+    #             await ctx.send(r"\> Updating Bloom Bot")
+    #             if value == "web" or value == "":
+    #                 result = self.database_update("web")
+    #             elif value == "html":
+    #                 result = self.database_update("html")
+    #             self.git_read("all")
+    #             if result:
+    #                 await ctx.send(r"\> Bloom Bot updated!")
+    #                 await ctx.send(f"\> Update method: `{self.mode}`")
+    #             else:
+    #                 if self.settings["latest_update"] == "web":
+    #                     await ctx.send("\> Nope. Latest method is web. Not gonna use locally saved .html\n"\
+    #                                   "`Error 14: Already up to date`")
+    #                 else:
+    #                     await ctx.send("\> Something's wrong. Ping the Autistic Chungus.\n"\
+    #                                   "`Error 69: Web method.`")
+    #             self.database_updating = False
+    #             return
+
+    # @commands.command()
+    # async def class_update(self, ctx):
+    #     allow_ = await self.allow_evaluator(ctx, mode="role_privilege-user_permissions",
+    #             command_name="update")
+    #     if not allow_:
+    #         return
+
+    #     if self.database_updating:
+    #         await ctx.send(r"\> Bloom Bot update in progress.")
+    #         return
+    #     if not self.database_updating:
+    #         self.database_updating = True
+    #         await ctx.send(r"\> Updating Class Database")
+    #         self.git_read("classes")
+    #         await ctx.send(r"\> Bloom Bot Class Database updated!")
+    #         self.database_updating = False
+    #         return
+
+# Illegal Cog lol
+class IllegalBoatSearchCog(commands.Cog, BaseTools):
+    def __init__(self, bot):
+        self.setup()
+        # self.database_update("web")
+        self.block_color = 3066993
+        self.database_updating = False
+        self.bot = bot
+        self.bot.remove_command("help")
+
+    @commands.command()
+    async def bverify(self, ctx, author_name:str=""):
+        """ Description: Verifies an author and adds them to the settings
+                         So that bloom bot can identify their name
+            Arguments:
+                [ctx] - context
+                [author_name] - author to be verified
+        """
+        allow_ = await self.allow_evaluator(ctx, mode="all-update", command_name="bverify")
+        if not allow_:
             return
 
         if not author_name:
             await ctx.send(f"\> Please input valid author name to verify.")
             return
 
-        # if "<@!" in author_name:
-        #     await ctx.send(f"\> Please input author name and not id.\ni.e. don't use the fucking \"@author\"")
-        #     return
-
         if author_name.lower() in self.author_list_lowercase:
             await ctx.send(f"\> Author `{author_name}` already verified.")
             return
 
-        if self.database_updating:
-            await ctx.send(r"\> Bloom Bot update in progress.")
-            return
-
         self.database_updating = True
-        # if author_id != "":
-        #     try:
-        #         author_id = re.sub("<|>|!|@","", author_id)
-        #     except:
-        #         await ctx.send(r"\> Please input valid author ID.")
-        #         return
-        
-
         author_name = author_name.capitalize()
         self.settings["confirmed_authors"][author_name] = {}
         try:
@@ -877,39 +1046,32 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
         except:
             self.settings["confirmed_authors"][author_name]["alias"] = []
             self.settings["confirmed_authors"][author_name]["alias"].append(author_name)
-        # if x:
-        #     self.settings["confirmed_authors"][author_name]["id"] = author_id
-        # else:
-        #     self.settings["confirmed_authors"][author_name]["id"] = ""
+
         await ctx.send(r"\> Saving Bloom Bot.")
-        self.git_save()
+        self.file_save("settings-database")
+        self.git_save("settings-database")
         await ctx.send(r"\> Updating Bloom Bot")
-        self.database_update("web")
+        self.database_update("html")
+
         await ctx.send(r"\> Bloom Bot updated. Author Successfully added!")
         self.database_updating = False
         return
                 
 
     @commands.command()
-    async def bunverify(self, ctx, author_name="", brief='Author Removal command'):
-        guild_allowed = await self.check_guild(ctx)
-        if not guild_allowed:
-            return
-        permissions_check = await self.check_permissions(ctx, "verify author")
-        if not permissions_check:
-            return
-
-        priveleged = await self.check_privilege(ctx, "unverify author")
-        if not priveleged:
-            await ctx.send(f"\> User {ctx.author} does not have permissions for `;unverify author` command.\n")
+    async def bunverify(self, ctx, author_name:str=""):
+        """ Description: Removes an author from the settings
+                         So that bloom bot cannot identify their name
+            Arguments:
+                [ctx] - context
+                [author_name] - author to be unverified
+        """
+        allow_ = await self.allow_evaluator(ctx, mode="all-update", command_name="bunverify")
+        if not allow_:
             return
 
         if not author_name:
             await ctx.send(f"\> Please input valid author name to unverify.")
-            return
-
-        if self.database_updating:
-            await ctx.send(r"\> Bloom Bot update in progress.")
             return
 
         author_removed = False
@@ -931,57 +1093,39 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
             await ctx.send(f"\> No author of name `{author_name}` found in the confirmed list.")
             self.database_updating = False
             return
+
         await ctx.send(r"\> Saving Bloom Bot.")
-        self.git_save()
+        self.file_save("settings-database")
+        self.git_save("settings-database")
         await ctx.send(r"\> Updating Bloom Bot")
-        self.database_update("web")
+        self.file_clear_database()
+        self.database_update("html")
         await ctx.send(r"\> Bloom Bot updated. Author Successfully removed!")
         self.database_updating = False
         return
 
     @commands.command()
-    async def git(self, ctx):
-        guild_allowed = await self.check_guild(ctx)
-        if not guild_allowed:
-            return
+    async def b(self, ctx, *, bot_name:str=""):
+        """ Description: Searches the database for a boat
+            Arguments:
+                [ctx] - context
+                [bot_name] - bot search keyword
+        """
 
-        permissions_check = await self.check_permissions(ctx, "git")
-        if not permissions_check:
-            return
-
-        await ctx.send("https://github.com/BloomAutist47/bloom-bot/")
-        return
-
-    @commands.command()
-    async def tag(self, tag_name, *, bots, ctx):
-        guild_allowed = await self.check_guild(ctx)
-        if not guild_allowed:
-            return
-        permissions_check = await self.check_permissions(ctx, "git")
-        if not permissions_check:
-            return
-
-        await ctx.send("https://github.com/BloomAutist47/bloom-bot/")
-        return
-
-    @commands.command()
-    async def b(self, ctx, *, bot_name: str=""):
-        guild_allowed = await self.check_guild(ctx)
-        if not guild_allowed:
-            return
         # Conditional Checks
-        bot_name = bot_name.lower()
-        permissions_check = await self.check_permissions(ctx, "b bot_name")
-        if not permissions_check:
+        allow_ = await self.allow_evaluator(ctx, mode="guild_privilege-user_permissions",
+                command_name="b")
+        if not allow_:
             return
 
+        bot_name = bot_name.lower()
         allowed_word = await self.check_word_count(ctx, bot_name)
         if not allowed_word:
             return
 
         # Bot command search
         if bot_name == "all": # Checks if using all command
-            priveleged = self.check_privilege(ctx, "b all")
+            priveleged = self.check_role_privilege(ctx, "b all")
             if not priveleged:
                 return
             if priveleged:
@@ -1001,16 +1145,20 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
             return
 
         await self.embed_multiple_links(ctx, bot_name, bot_results)
+        return
 
     @commands.command()
     async def a(self, ctx, *, bot_author: str=""):
-        guild_allowed = await self.check_guild(ctx)
-        if not guild_allowed:
-            return
+        """ Description: Searches for boats by by an author
+            Arguments:
+                [ctx] - context
+                [bot_author] - author search keyword
+        """
 
         # Conditional Checks
-        permissions_check = await self.check_permissions(ctx, "a author")
-        if not permissions_check:
+        allow_ = await self.allow_evaluator(ctx, mode="guild_privilege-user_permissions",
+                command_name="b")
+        if not allow_:
             return
 
         bot_author = bot_author.lower()
@@ -1029,8 +1177,11 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
 
         # Checks if using author id
         if "<@!" in bot_author:
-            bot_author = await self.check_author_id(ctx, bot_author)
-            if not bot_author:
+            author_id_name = self.find_author_id(bot_author)
+            if author_id_name:
+                bot_author = author_id_name
+            else:
+                bot_author = None
                 desc = f"No author with id `{bot_list[0]}`."
                 await ctx.send(embed=self.embed_single("Bot Author Result", desc))
                 return
@@ -1085,15 +1236,6 @@ class ClassSearchCog(BaseTools, commands.Cog):
         self.bot.remove_command("help")
         self.database_updating = False
 
-
-    @commands.command()
-    async def credits(self, ctx):
-        credit_text = "Bloom Bot and Class Charts made by Bloom Autist.\n"\
-            "Thanks to [Shiminuki](https://www.youtube.com/channel/UCyQ5AocDVVDznIslRuGUS3g) and [Molevolent](https://twitter.com/molevolent) for "\
-            "creating the [Class Tier List](https://docs.google.com/spreadsheets/d/1Ywl9GcfySXodGA_MtqU4YMEQaGmr4eMAozrM4r00KwI/edit?usp=sharing)."\
-            "\nLastly, thanks to the @Satan and to the AutoQuest Worlds Community!"
-        await ctx.send(embed=self.embed_single("Credits", credit_text))
-
     @commands.command()
     async def legends(self, ctx):
         credit_text2 = "\nThanks to Shiminuki and Molevolent for creating the\nClass Tier List and "\
@@ -1101,38 +1243,16 @@ class ClassSearchCog(BaseTools, commands.Cog):
 
         embedVar = discord.Embed(title="Legends", color=self.block_color, 
             description=f"Please read the following Carefully.")
-        embedVar.set_image(url="https://cdn.discordapp.com/attachments/805367955923533845/805704888129814588/intructions.png")
+        embedVar.set_image(url=self.settings["ClassSearchCogSettings"]["legends_link"])
         embedVar.set_footer(text=credit_text2)
         await ctx.send(embed=embedVar)
         return
 
-    @commands.command()
-    async def class_update(self, ctx):
-        permissions_check = await self.check_permissions(ctx, "update")
-        if not permissions_check:
-            return
-
-        priveleged = await self.check_privilege(ctx, "update")
-        if not priveleged:
-            return
-
-        if self.database_updating:
-            await ctx.send(r"\> Bloom Bot update in progress.")
-            return
-        if not self.database_updating:
-            self.database_updating = True
-            await ctx.send(r"\> Updating Class Database")
-            self.git_read_class()
-            await ctx.send(r"\> Bloom Bot Class Database updated!")
-            self.database_updating = False
-            return
-
 
     @commands.command()
     async def c(self, ctx, *, class_name: str=""):
-        # Conditional Checks
-        permissions_check = await self.check_permissions(ctx, "a author")
-        if not permissions_check:
+        allow_ = await self.allow_evaluator(ctx, mode="user_permissions", command_name="c")
+        if not allow_:
             return
 
         if class_name=="":
@@ -1185,93 +1305,6 @@ class ClassSearchCog(BaseTools, commands.Cog):
             return
 
 
-class BloomBotCog_3(commands.Cog, BaseTools):
-    def __init__(self, bot):
-        self.setup()
-        self.bot = bot
-        # self.bot.remove_command("help")
-        self.block_color = 3066993
-        self.message_objects = {}
-        self.msg_count = 0
-
-    @commands.command()
-    async def g(self, ctx, guide):
-        if guide.lower() == "r":
-            priveleged = await self.check_privilege(ctx, "verify author")
-            if not priveleged:
-                await ctx.send(f"\> User {ctx.author} does not have permissions for `;g r` command.\n")
-                return
-
-            self.file_read_guides()
-            await ctx.send("Updated Stuff")
-            return
-
-        g_name = guide.lower()
-        if g_name in self.guides:
-            if os.name == "nt": # PC Mode
-                self.file_read_guides() 
-
-            # sent = False
-            guide_data = self.guides[g_name]
-
-            embedVar = discord.Embed(title=guide_data["title"], color=self.block_color)
-
-            note = guide_data["header"]
-            description = "**Full guide**: [here](%s)\n**Description**: "%(guide_data["link"])
-
-            for steps in note:
-                description += f"{note[steps]}\n"
-            # description += "\n\u200b"
-            embedVar.description = description
-
-            embedVar.add_field(name="Instructions", value="Click \"🔻\" to go down and \"🔺\" to go up the list.", inline=False)
-            embedVar.set_thumbnail(url=guide_data["thumbnail"])
-            embedVar.set_footer(text="This short guide is updated as of %s."%(guide_data["update"]))
-
-            embed_object = await ctx.send(embed=embedVar)
-
-            self.message_objects[embed_object.id] = {}
-            self.message_objects[embed_object.id]["guide"] = g_name
-            self.message_objects[embed_object.id]["n"] = 0
-            self.message_objects[embed_object.id]["lim"] = len()
-
-            await embed_object.add_reaction(emoji = "\U0001F53A")
-            await embed_object.add_reaction(emoji = "\U0001F53B")
-
-            embedVar.set_field_at(-1, name="\u200b", value="\u200b", inline=False)
-            self.msg_count += 1
-
-            for steps in guide_data["content"]:
-                embedVar.add_field(name=f"📌 Step {steps.capitalize()}", value=guide_data["content"][steps] + "\n\u200b", inline=False)
-            await ctx.author.send(embed=embedVar)
-            return
-
-    @commands.Cog.listener()
-    async def on_reaction_add(self, reaction, user):
-        if int(user.id) != 761955273342320691:
-            if reaction.message.id in self.message_objects:
-                embedVar = discord.Embed(title="dick", description="pusyy", color=self.block_color)
-                obj = reaction.message
-                embed = obj.embeds[0]
-
-                msg = self.message_objects[obj.id]
-                g_name = msg["guide"]
-                if reaction.emoji == "🔻":
-                    if msg["n"] == 0:
-                        await obj.remove_reaction("🔻", user)
-                        return
-                    msg["n"] -= 1
-                    await obj.remove_reaction("🔻", user)
-                if reaction.emoji == "🔺": 
-                    msg["n"] += 1
-                    await obj.remove_reaction("🔺", user)
-                index = msg["n"]
-                if index == 0:
-                    embed.set_field_at(-1, name="Instructions", value="Click \"🔻\" to go down and \"🔺\" to go up the list.", inline=False)
-                else:
-                    embed.set_field_at(-1, name=f"📌 Step {index}", value=self.guides[g_name]["content"][str(index)], inline=False)
-                await reaction.message.edit(embed=embed)
-
 
 class GuideCog(commands.Cog, BaseTools):
     def __init__(self, bot):
@@ -1285,19 +1318,8 @@ class GuideCog(commands.Cog, BaseTools):
 
     @commands.command()
     async def g(self, ctx, guide=""):
-        if guide.lower() == "r":
-            priveleged = await self.check_privilege(ctx, "verify author")
-            if not priveleged:
-                await ctx.send(f"\> User {ctx.author} does not have permissions for `;g r` command.\n")
-                return
-            if os.name == "nt": # PC Mode
-                self.file_read_guides()
-            else:
-                self.git_read_guide()
-            await ctx.send("Updated Stuff")
-            return
         if os.name == "nt": # PC Mode
-            self.file_read_guides() 
+            self.file_read("guides") 
 
         if guide == "":
             embedVar = discord.Embed(title="♦️ List of Guide Commands ♦️", color=self.block_color)
@@ -1594,8 +1616,8 @@ class EventCalendarCog(commands.Cog, BaseTools):
         if self.current_month != self.settings["EventCalendarCogSettings"]["latest_update"]:
             self.settings["EventCalendarCogSettings"]["latest_update"] = self.current_month
             self.check_calendar()
-            self.file_save_settings()
-            self.git_save_settings()
+            self.file_save("settings")
+            self.git_save("settings")
             print("System: Updated month EventCalendarCogSettings[\"events\"].")
         else:
             print("System: Not updating month EventCalendarCogSettings[\"events\"].")
@@ -1619,8 +1641,8 @@ class EventCalendarCog(commands.Cog, BaseTools):
             self.events[day]["month"] = date[0]
             self.events[day]["info"] = info
         self.settings["EventCalendarCogSettings"]["events"] = self.events
-        self.file_save_settings()
-        self.git_save_settings()
+        self.file_save("settings")
+        self.git_save("settings")
         return
 
     async def check_event_today(self):
@@ -1655,8 +1677,8 @@ class EventCalendarCog(commands.Cog, BaseTools):
                             continue 
 
                 self.settings["EventCalendarCogSettings"]["current_day"] = self.current_day
-                self.file_save_settings()
-                self.git_save_settings()
+                self.file_save("settings")
+                self.git_save("settings")
                 result = await self.check_event_today()
                 if not result:
                     return
@@ -1702,9 +1724,12 @@ if os.name == "nt": # PC Mode
 else:              # Heroku
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
 
+# Essential Cog
+Bot.add_cog(BaseCog(Bot))
+
+# Feature Cogs
 Bot.add_cog(IllegalBoatSearchCog(Bot))
 Bot.add_cog(ClassSearchCog(Bot))
-# Bot.add_cog(BloomBotCog_3(Bot)) # Do not fucking use
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(CharacterCog(Bot))
 Bot.add_cog(EventCalendarCog(Bot))
