@@ -46,6 +46,8 @@ class BaseProgram:
     def setup(self):
         self.env_variables()
 
+        self.block_color = 3066993
+        self.database_updating = False
         self.url = "https://adventurequest.life/"
         self.settings = {}
         self.classes = {}
@@ -844,8 +846,6 @@ class BaseTools(BaseProgram):
 class BaseCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
-        self.block_color = 3066993
-        self.database_updating = False
         self.bot = bot
 
     @commands.command()
@@ -946,75 +946,86 @@ class BaseCog(commands.Cog, BaseTools):
             "\nLastly, thanks to the @Satan and to the AutoQuest Worlds Community!"
         await ctx.send(embed=self.embed_single("Credits", credit_text))
 
-    # @commands.command()
-    # async def update(self, ctx, mode:str, *, value: str=""):
-    #     """ Description: Updates essential variables and read/saves them from github.
-    #         Arguments:
-    #             [ctx] - discord context
-    #             [mode]  accepts: all, database, guides, settings, classes
-    #                 - 'all'> updates all of the variables
-    #                 - 'database'> self.data
-    #                 - 'guides'> self.guides
-    #                 - 'settings'> self.settings
-    #                 - 'classes'> self.classes
-    #             [value] - if certain updates require their own modes.
-    #         Return: None
-    #     """
-    #     allow_ = await self.allow_evaluator(ctx, mode="user_permissions",
-    #             command_name="update")
-    #     if not allow_:
-    #         return
+    @commands.command()
+    async def update(self, ctx, mode:str="", *, value: str=""):
+        """ Description: Updates essential variables and read/saves them from github.
+            Arguments:
+                [ctx] - discord context
+                [mode]  accepts: all, database, guides, settings, classes
+                    - 'all'> updates all of the variables
+                    - 'database'> self.data
+                    - 'guides'> self.guides
+                    - 'settings'> self.settings
+                    - 'classes'> self.classes
+                [value] - if certain updates require their own modes.
+            Return: None
+        """
+        allow_ = await self.allow_evaluator(ctx, mode="user_permissions-update",
+                command_name="update")
+        if not allow_:
+            return
 
-    #     if mode == "database":
-    #         if self.database_updating:
-    #             await ctx.send(r"\> Bloom Bot update in progress.")
-    #             return
-    #         if not self.database_updating:
-    #             self.database_updating = True
-    #             await ctx.send(r"\> Updating Bloom Bot")
-    #             if value == "web" or value == "":
-    #                 result = self.database_update("web")
-    #             elif value == "html":
-    #                 result = self.database_update("html")
-    #             self.git_read("all")
-    #             if result:
-    #                 await ctx.send(r"\> Bloom Bot updated!")
-    #                 await ctx.send(f"\> Update method: `{self.mode}`")
-    #             else:
-    #                 if self.settings["latest_update"] == "web":
-    #                     await ctx.send("\> Nope. Latest method is web. Not gonna use locally saved .html\n"\
-    #                                   "`Error 14: Already up to date`")
-    #                 else:
-    #                     await ctx.send("\> Something's wrong. Ping the Autistic Chungus.\n"\
-    #                                   "`Error 69: Web method.`")
-    #             self.database_updating = False
-    #             return
+        if mode=="":
+            await ctx.send("\> Please enter valid update value.")
 
-    # @commands.command()
-    # async def class_update(self, ctx):
-    #     allow_ = await self.allow_evaluator(ctx, mode="role_privilege-user_permissions",
-    #             command_name="update")
-    #     if not allow_:
-    #         return
+        if mode == "database":
+            self.database_updating = True
+            await ctx.send(r"\> Updating Bloom Bot")
+            if value == "web":
+                result = self.database_update("web")
+            elif value == "html" or value == "":
+                result = self.database_update("html")
+            self.git_read("settings-database-update")
+            if result:
+                await ctx.send(r"\> Bloom Bot updated!")
+                await ctx.send(f"\> Update method: `{self.mode}`")
+            else:
+                if self.settings["latest_update"] == "web":
+                    await ctx.send("\> Nope. Latest method is web. Not gonna use locally saved .html\n"\
+                                  "`Error 14: Already up to date`")
+                else:
+                    await ctx.send("\> Something's wrong. Ping the Autistic Chungus.\n"\
+                                  "`Error 69: Web method.`")
+            self.database_updating = False
+            return
 
-    #     if self.database_updating:
-    #         await ctx.send(r"\> Bloom Bot update in progress.")
-    #         return
-    #     if not self.database_updating:
-    #         self.database_updating = True
-    #         await ctx.send(r"\> Updating Class Database")
-    #         self.git_read("classes")
-    #         await ctx.send(r"\> Bloom Bot Class Database updated!")
-    #         self.database_updating = False
-    #         return
+        if mode == "settings":
+            self.database_updating = True
+            await ctx.send(r"\>Updating `setting.json`")
+            self.git_read("settings-update")
+            await ctx.send(r"\>Bloom Bot `setting.json` updated!")
+            self.database_updating = False
+            return
+
+        if mode == "classes":
+            self.database_updating = True
+            await ctx.send(r"\>Updating `classes.json`")
+            self.git_read("classes-update")
+            await ctx.send(r"\>Bloom Bot `classes.json` updated!")
+            self.database_updating = False
+            return
+
+        if mode == "guide":
+            self.database_updating = True
+            await ctx.send(r"\>Updating `guides.json`")
+            self.git_read("guides-update")
+            await ctx.send(r"\>Bloom Bot `guides.json` updated!")
+            self.database_updating = False
+            return
+
+
+        if mode == "all":
+            self.database_updating = True
+            await ctx.send(r"\>Updating `all .jsons`")
+            self.git_read("all-update")
+            await ctx.send(r"\>Bloom Bot `all .jsons` updated!")
+            self.database_updating = False
+            return
 
 # Illegal Cog lol
 class IllegalBoatSearchCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
-        # self.database_update("web")
-        self.block_color = 3066993
-        self.database_updating = False
         self.bot = bot
         self.bot.remove_command("help")
 
@@ -1231,10 +1242,8 @@ class ClassSearchCog(BaseTools, commands.Cog):
 
     def __init__(self, bot):
         self.setup()
-        self.block_color = 3066993
         self.bot = bot
         self.bot.remove_command("help")
-        self.database_updating = False
 
     @commands.command()
     async def legends(self, ctx):
@@ -1311,9 +1320,6 @@ class GuideCog(commands.Cog, BaseTools):
         self.setup()
         self.bot = bot
         # self.bot.remove_command("help")
-        self.block_color = 3066993
-        self.message_objects = {}
-        self.msg_count = 0
         self.fotter = "Tip: Use \";g\" to summon a list of all guides."
 
     @commands.command()
@@ -1442,14 +1448,12 @@ class CharacterCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
         self.bot = bot
-        self.block_color = 3066993
-        self.message_objects = {}
-        self.msg_count = 0
         self.char_url = "https://account.aq.com/CharPage?id="
         self.wiki_url = "http://aqwwiki.wikidot.com/"
+        self.weapon_type = ["Axe", "Bow", "Dagger", "Gun", "Mace", "Polearm", "Staff", "Sword", "Wand"]
+        self.house_items = ["Wall Item", "Floor Item"]
+        self.miscs = ["Quest Item", "Item"]
         self.loop = asyncio.get_event_loop()
-        self.message_objects = {}
-        self.msg_count = 0
         nest_asyncio.apply(self.loop)
 
     async def loop_get_content(self, url):
@@ -1512,15 +1516,36 @@ class CharacterCog(commands.Cog, BaseTools):
             if i not in char_details:
                 char_details[i] = ""
 
+        # Inventory stuffs
+        char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
+        char_inv = self.loop.run_until_complete(self.get_site_content(char_inv_url)).find("body").text[1:-1].replace("false", "False").replace("true", "True")
+        char_inv = ast.literal_eval(char_inv)
+
+        item_count = {"Weapon": 0, "House Item": 0, "Misc": 0}
+        for item in char_inv:
+            item_type = item["strType"]
+            if item_type in self.weapon_type:
+                item_count["Weapon"] += 1
+                continue
+            if item_type in self.miscs:
+                item_count["Misc"] += 1
+                continue
+            if item_type not in item_count and item_type:
+                item_count[item_type] = 0
+            item_count[item_type] += 1
+
+        pprint(item_count)
+
         # Inserts stuffs
         embedVar = discord.Embed(title=f"Character Profile - __{char_full_name}__", color=self.block_color, description="\u200b")
         embedVar.description = f"\> [Character Page](https://account.aq.com/CharPage?id={char_full_name.replace(' ', '+')})."
         li = self.wiki_url
-        panel_1 = f"**Level**: {char_details['Level']}\n"\
-                f"**Class**: [{char_details['Class']}]({li + char_details['Class'].replace(' ', '-')})\n"\
-                f"**Faction**: {char_details['Faction']}\n"\
-                f"**Guild**: {char_details['Guild']}\n"\
-                "\u200b"
+        panel_1_raw = [f"**Level**: {char_details['Level']}",
+                "\n" + f"**Class**: [{char_details['Class']}]({li + char_details['Class'].replace(' ', '-')})",
+                "\n" + f"**Faction**: {char_details['Faction']}",
+                "\n" + f"**Guild**: {char_details['Guild']}",
+                "\n\u200b".ljust(29, "")]
+
 
         panel_2 = f"**Weapon**: [{char_details['Weapon']}]({li+char_details['Weapon'].replace(' ', '-')})\n"\
                 f"**Armor**: [{char_details['Armor']}]({li+char_details['Armor'].replace(' ', '-')})\n"\
@@ -1528,9 +1553,40 @@ class CharacterCog(commands.Cog, BaseTools):
                 f"**Cape**: [{char_details['Cape']}]({li+char_details['Cape'].replace(' ', '-')})\n"\
                 f"**Pet**: [{char_details['Pet']}]({li+char_details['Pet'].replace(' ', '-')})\n"
 
+        # for i in item_count:
+        #     item_count[i] = str(item_count[i]).zfill(2)
+
+        vl = 25
+        inventories_ =["```css\n",
+                      f"Classes: {item_count['Class']}".ljust(vl) + f"Miscs: {item_count['Misc']}\n",
+                      f"Weapons: {item_count['Weapon']}".ljust(vl) + f"Pets: {item_count['Pet']}\n",
+                      f"Armors: {item_count['Armor']}".ljust(vl) + f"Houses: {item_count['House']}\n",
+                      f"Helms: {item_count['Helm']}".ljust(vl) + f"Wall Items: {item_count['Wall Item']}\n",
+                      f"Capes: {item_count['Cape']}".ljust(vl) + f"Floor Items: {item_count['Floor Item']}```\n",
+                      ]
+        panel_1 = ""
+        for i in panel_1_raw:
+            panel_1 += i
+
+        inventories_2 = ""
+        for i in inventories_:
+            inventories_2 += i
+                      # "Armors: %s %25s"%(f"{item_count['Armor']}",f"Houses: {item_count['House']}\n"),
+                      # "Helms: %s %25s"%(f"{item_count['Helm']}",f"Wall Items: {item_count['Wall Item']}\n"),
+                      # "Capes: %s %25s"%(f"{item_count['Cape']}",f"Floor Items: {item_count['Floor Item']}\n```")]
+
+                      # f"Weapons: {item_count['Weapon']}\tPets: {item_count['Pet']}\n"\
+                      # f"Armors: {item_count['Armor']}\tHouses: {item_count['House']}\n"\
+                      # f"Helms: {item_count['Helm']}\tWall Items: {item_count['Wall Item']}\n"\
+                      # f"Capes: {item_count['Cape']}\tFloor Items: {item_count['Floor Item']}```"
+
         embedVar.add_field(name="__**Infos**__", value=panel_1, inline=True)
         embedVar.add_field(name="__**Equips**__", value=panel_2, inline=True)
-        embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/807570293501591572/logo-lg-AQW.png")
+        embedVar.add_field(name="__**Inventory**__", value=inventories_2, inline=False)
+
+
+
+        # embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/807570293501591572/logo-lg-AQW.png")
 
         embed_object = await ctx.send(embed=embedVar)
         return
@@ -1593,7 +1649,6 @@ class EventCalendarCog(commands.Cog, BaseTools):
     def __init__(self, Bot):
         self.setup()
         self.bot = Bot
-        self.block_color = 3066993
 
         self.est_dt = datetime.now(timezone('est'))
         self.current_day = self.est_dt.strftime("%d")
@@ -1728,9 +1783,9 @@ else:              # Heroku
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-Bot.add_cog(IllegalBoatSearchCog(Bot))
-Bot.add_cog(ClassSearchCog(Bot))
-Bot.add_cog(GuideCog(Bot)) 
+# Bot.add_cog(IllegalBoatSearchCog(Bot))
+# Bot.add_cog(ClassSearchCog(Bot))
+# Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(CharacterCog(Bot))
-Bot.add_cog(EventCalendarCog(Bot))
+# Bot.add_cog(EventCalendarCog(Bot))
 Bot.run(DISCORD_TOKEN)
