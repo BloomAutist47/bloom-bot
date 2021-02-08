@@ -62,7 +62,8 @@ class BaseProgram:
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
 
         self.file_read("all")
-        self.git_read("all")
+        if os.name != "nt":
+            self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -849,6 +850,16 @@ class BaseCog(commands.Cog, BaseTools):
         self.bot = bot
 
     @commands.command()
+    async def test(self, ctx):
+        if str(ctx.author.id) == str(252363724894109700):
+            if os.name == "nt":
+                await self.bot.fetch_channel(799238286539227136)
+            else:
+                await self.bot.fetch_channel(807587012471029760)
+            desc = f"\> <@&{str(807586780324954123)}>"
+            await ctx.send(desc)
+
+    @commands.command()
     async def bhelp(self, ctx):
         guild_allowed = await self.allow_evaluator(ctx, "guild_privilege")
         if guild_allowed:
@@ -1322,6 +1333,8 @@ class GuideCog(commands.Cog, BaseTools):
         # self.bot.remove_command("help")
         self.fotter = "Tip: Use \";g\" to summon a list of all guides."
 
+
+
     @commands.command()
     async def g(self, ctx, guide=""):
         if os.name == "nt": # PC Mode
@@ -1543,26 +1556,23 @@ class CharacterCog(commands.Cog, BaseTools):
                 item_count[item] = 0
 
         # Inserts stuffs
-        embedVar = discord.Embed(title=f"Character Profile - __{char_full_name}__", color=self.block_color, description="\u200b")
-        embedVar.description = f"\> [Character Page](https://account.aq.com/CharPage?id={char_full_name.replace(' ', '+')})."
+        embedVar = discord.Embed(title=f"Character Profile", color=self.block_color, description="\u200b")
+        embedVar.description = f"__**Name**__: [{char_full_name}](https://account.aq.com/CharPage?id={char_full_name.replace(' ', '+')})."
         li = self.wiki_url
-        panel_1_raw = [f"**Level**: {char_details['Level']}",
-                "\n" + f"**Class**: [{char_details['Class']}]({li + char_details['Class'].replace(' ', '-')})",
-                "\n" + f"**Faction**: {char_details['Faction']}",
-                "\n" + f"**Guild**: {char_details['Guild']}",
-                "\n\u200b".ljust(29, "")]
+        panel_1_raw = [f"**Level**: {char_details['Level']}" + "\n",
+                f"**Class**: [{char_details['Class']}]({li + char_details['Class'].lstrip().replace(' ', '-')})" + "\n",
+                f"**Faction**: {char_details['Faction']}" + "\n",
+                f"**Guild**: {char_details['Guild']}" + "\n",
+                "\u200b".ljust(27, "")]
 
 
-        panel_2 = f"**Weapon**: [{char_details['Weapon']}]({li+char_details['Weapon'].replace(' ', '-')})\n"\
-                f"**Armor**: [{char_details['Armor']}]({li+char_details['Armor'].replace(' ', '-')})\n"\
-                f"**Helm**: [{char_details['Helm']}]({li+char_details['Helm'].replace(' ', '-')})\n"\
-                f"**Cape**: [{char_details['Cape']}]({li+char_details['Cape'].replace(' ', '-')})\n"\
-                f"**Pet**: [{char_details['Pet']}]({li+char_details['Pet'].replace(' ', '-')})\n"
+        panel_2 = f"**Weapon**: [{char_details['Weapon']}]({li+char_details['Weapon'].lstrip().replace(' ', '-')})\n"\
+                f"**Armor**: [{char_details['Armor']}]({li+char_details['Armor'].lstrip().replace(' ', '-')})\n"\
+                f"**Helm**: [{char_details['Helm']}]({li+char_details['Helm'].lstrip().replace(' ', '-')})\n"\
+                f"**Cape**: [{char_details['Cape']}]({li+char_details['Cape'].lstrip().replace(' ', '-')})\n"\
+                f"**Pet**: [{char_details['Pet']}]({li+char_details['Pet'].lstrip().replace(' ', '-')})\n"
 
-        # for i in item_count:
-        #     item_count[i] = str(item_count[i]).zfill(2)
-
-        vl = 25
+        vl = 24
         inventories_ =["```css\n",
                       f"Classes: {item_count['Class']}".ljust(vl) + f"Miscs: {item_count['Misc']}\n",
                       f"Weapons: {item_count['Weapon']}".ljust(vl) + f"Pets: {item_count['Pet']}\n",
@@ -1577,14 +1587,6 @@ class CharacterCog(commands.Cog, BaseTools):
         inventories_2 = ""
         for i in inventories_:
             inventories_2 += i
-                      # "Armors: %s %25s"%(f"{item_count['Armor']}",f"Houses: {item_count['House']}\n"),
-                      # "Helms: %s %25s"%(f"{item_count['Helm']}",f"Wall Items: {item_count['Wall Item']}\n"),
-                      # "Capes: %s %25s"%(f"{item_count['Cape']}",f"Floor Items: {item_count['Floor Item']}\n```")]
-
-                      # f"Weapons: {item_count['Weapon']}\tPets: {item_count['Pet']}\n"\
-                      # f"Armors: {item_count['Armor']}\tHouses: {item_count['House']}\n"\
-                      # f"Helms: {item_count['Helm']}\tWall Items: {item_count['Wall Item']}\n"\
-                      # f"Capes: {item_count['Cape']}\tFloor Items: {item_count['Floor Item']}```"
 
         embedVar.add_field(name="__**Infos**__", value=panel_1, inline=True)
         embedVar.add_field(name="__**Equips**__", value=panel_2, inline=True)
