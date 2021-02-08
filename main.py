@@ -849,15 +849,15 @@ class BaseCog(commands.Cog, BaseTools):
         self.setup()
         self.bot = bot
 
-    @commands.command()
-    async def test(self, ctx):
-        if str(ctx.author.id) == str(252363724894109700):
-            if os.name == "nt":
-                await self.bot.fetch_channel(799238286539227136)
-            else:
-                await self.bot.fetch_channel(807587012471029760)
-            desc = f"\> <@&{str(807586780324954123)}>"
-            await ctx.send(desc)
+    # @commands.command()
+    # async def test(self, ctx):
+    #     if str(ctx.author.id) == str(252363724894109700):
+    #         if os.name == "nt":
+    #             await self.bot.fetch_channel(799238286539227136)
+    #         else:
+    #             await self.bot.fetch_channel(807587012471029760)
+    #         desc = f"\> <@&{str(807586780324954123)}>"
+    #         await ctx.send(desc)
 
     @commands.command()
     async def bhelp(self, ctx):
