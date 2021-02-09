@@ -22,7 +22,10 @@ import io
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
 from discord.ext import commands, tasks
+from discord import Intents
+from discord.utils import get as dis_get
 from discord.ext.commands import CommandNotFound
+from discord.abc import Snowflake
 from pprint import pprint
 from PIL import Image
 
@@ -1761,7 +1764,8 @@ class EventCalendarCog(commands.Cog, BaseTools):
         print('waiting...')
         await self.bot.wait_until_ready()
 
-Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped')
+intents = Intents.all()
+Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped', intents=intents)
 
 @Bot.event
 async def on_command_error(ctx, error):
@@ -1769,6 +1773,27 @@ async def on_command_error(ctx, error):
         print("System: lmao a nigger used", error)
         return
     raise error
+
+@Bot.event
+async def on_member_update(before, after):
+    print("WORKING")
+    satanId = 212913871466266624
+    if os.name == "nt":
+        satanRoleId = 808657429784035338
+        guild_id = 761956630606250005
+    else:
+        satanRoleId = 775824347222245426
+        guild_id = 766627412179550228
+
+    guild = Bot.get_guild(guild_id)
+    role = dis_get(guild.roles, name='satan', id=satanRoleId)
+    role_ids = [x.id for x in after.roles]
+
+    if after.id != satanId and satanRoleId in role_ids:
+        print("TRIED")
+        await after.remove_roles(role)
+
+
 
 @Bot.event
 async def on_ready():
@@ -1791,9 +1816,9 @@ else:              # Heroku
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-Bot.add_cog(IllegalBoatSearchCog(Bot))
-Bot.add_cog(ClassSearchCog(Bot))
-Bot.add_cog(GuideCog(Bot)) 
-Bot.add_cog(CharacterCog(Bot))
-Bot.add_cog(EventCalendarCog(Bot))
+# Bot.add_cog(IllegalBoatSearchCog(Bot))
+# Bot.add_cog(ClassSearchCog(Bot))
+# Bot.add_cog(GuideCog(Bot)) 
+# Bot.add_cog(CharacterCog(Bot))
+# Bot.add_cog(EventCalendarCog(Bot))
 Bot.run(DISCORD_TOKEN)
