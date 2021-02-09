@@ -1788,9 +1788,7 @@ async def on_member_update(before, after):
     guild = Bot.get_guild(guild_id)
     role = dis_get(guild.roles, name='satan', id=satanRoleId)
     role_ids = [x.id for x in after.roles]
-    print("After: {}\tAfter.id: {}\tguild: {}\tRole: {}\tRole ids: {}".format(after, after.id, guild, role, role_ids, ))
     if after.id != satanId and satanRoleId in role_ids:
-        print("TRIED")
         await after.remove_roles(role)
 
 
