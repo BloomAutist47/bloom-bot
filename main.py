@@ -1776,7 +1776,7 @@ async def on_command_error(ctx, error):
 
 @Bot.event
 async def on_member_update(before, after):
-    print("WORKING")
+    # print("WORKING")
     satanId = 212913871466266624
     if os.name == "nt":
         satanRoleId = 808657429784035338
