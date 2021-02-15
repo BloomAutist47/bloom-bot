@@ -226,7 +226,7 @@
     "icskills": {
         "common_key": "ec/ic"
     },
-    "ecskills/icskillstest": {
+    "ecskills/icskills": {
         "type": "text",
         "title": "Eternal/Immortal Chronomancer Skillset Guide",
         "description": "__**Taryth's breakdown of IC/EC skill rotation, and what auras are applied at each cast.**__",
