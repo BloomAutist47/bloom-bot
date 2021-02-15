@@ -37,7 +37,8 @@ import html5lib
 import ast
 import aiosonic
 
-from datetime import datetime
+from datetime import datetime, timedelta, date
+from dateutil.relativedelta import relativedelta
 from pytz import timezone
 import unicodedata
 
@@ -50,8 +51,8 @@ class BaseProgram:
 
     def setup(self):
         self.env_variables()
-
-        self.block_color = 3066993
+        self.block_color = 3066993 
+        # self.block_color = 4521077
         self.database_updating = False
         self.url = "https://adventurequest.life/"
         self.settings = {}
@@ -67,8 +68,8 @@ class BaseProgram:
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
 
         self.file_read("all")
-        # if os.name != "nt":
-        self.git_read("all")
+        if os.name != "nt":
+            self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -108,7 +109,7 @@ class BaseProgram:
                 - 'html': uses pre-downloaded html of self.url
             Return: Bool
         """
-        self.git_read("database-settings")
+        self.git_read("settings")
         self.file_clear_database()
         self.data["sort_by_bot_name"] = {}
         self.data["sort_by_bot_authors"] = {}
@@ -122,7 +123,6 @@ class BaseProgram:
             try:
                 html = requests.get(self.url, headers=headers).text
                 page_soup = Soup(html, "html.parser")
-                pprint(page_soup)
                 body = page_soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
                 row_links = body.find_all("input", {"class":"rainbow"})
 
@@ -213,6 +213,9 @@ class BaseProgram:
         # Saving
         self.file_save("database-settings")
         self.git_save("database-settings")
+        pprint("========DATABASE===========")
+        pprint(self.data)
+        pprint("===================")
         print("lmao")
         return True
 
@@ -604,7 +607,6 @@ class BaseTools(BaseProgram):
         if "user_permissions" in mode:
             permissions_check = await self.check_user_permissions(ctx, command_name)
             if not permissions_check:
-                print("WHYA")
                 return False
         return True
 
@@ -974,11 +976,10 @@ class BaseCog(commands.Cog, BaseTools):
         if mode == "database":
             self.database_updating = True
             await ctx.send(r"\> Updating Bloom Bot")
-            if value == "web":
+            if value == "web" or value == "":
                 result = self.database_update("web")
-            elif value == "html" or value == "":
+            elif value == "html":
                 result = self.database_update("html")
-            self.git_read("settings-database-update")
             if result:
                 await ctx.send(r"\> Bloom Bot updated!")
                 await ctx.send(f"\> Update method: `{self.mode}`")
@@ -1061,13 +1062,11 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
             self.settings["confirmed_authors"][author_name]["alias"] = []
             self.settings["confirmed_authors"][author_name]["alias"].append(author_name)
 
-        await ctx.send(r"\> Saving Bloom Bot.")
-        self.file_save("settings-database")
-        self.git_save("settings-database")
-        await ctx.send(r"\> Updating Bloom Bot")
-        self.database_update("html")
-
-        await ctx.send(r"\> Bloom Bot updated. Author Successfully added!")
+        await ctx.send(r"\> Saving to settings.json")
+        self.file_save("settings")
+        self.git_save("settings")
+        await ctx.send(r"\> Author Successfully added!")
+        await ctx.send(r"\> Please update the database with `;update database <type>`!")
         self.database_updating = False
         return
                 
@@ -1108,13 +1107,11 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
             self.database_updating = False
             return
 
-        await ctx.send(r"\> Saving Bloom Bot.")
-        self.file_save("settings-database")
-        self.git_save("settings-database")
-        await ctx.send(r"\> Updating Bloom Bot")
-        self.file_clear_database()
-        self.database_update("html")
-        await ctx.send(r"\> Bloom Bot updated. Author Successfully removed!")
+        await ctx.send(r"\> Saving to settings.json")
+        self.file_save("settings")
+        self.git_save("settings")
+        await ctx.send(r"\> Author Successfully removed!")
+        await ctx.send(r"\> Please update the database with `;update database <type>`!")
         self.database_updating = False
         return
 
@@ -1333,7 +1330,7 @@ class GuideCog(commands.Cog, BaseTools):
             self.file_read("guides") 
 
         if guide == "":
-            embedVar = discord.Embed(title="♦️ List of Guide Commands ♦️", color=self.block_color)
+            embedVar = discord.Embed(title="🔹 List of Guide Commands 🔹", color=self.block_color)
             desc = "To summon this list, use `;g`. Please read the following carefully.\n\n"
             guild_id = str(ctx.guild.id)
             if guild_id in self.settings["server_settings"]:
@@ -1370,7 +1367,7 @@ class GuideCog(commands.Cog, BaseTools):
 
             if guide_data["type"] == "guide":
                 
-                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color,
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color,
                     description="The following is a short guide of %s. "\
                                 "For the [Full Guide click this](%s)."%(guide_data["title"], guide_data["full_guide"]))
                 embedVar.set_image(url=guide_data["short_link"])
@@ -1381,7 +1378,7 @@ class GuideCog(commands.Cog, BaseTools):
 
             if guide_data["type"] == "guide_links":
 
-                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
                 desc = guide_data["description"]
                 for text in guide_data["content"]:
                     desc += "\> [{}]({}).\n".format(text[0], text[1])
@@ -1392,7 +1389,7 @@ class GuideCog(commands.Cog, BaseTools):
                 return
 
             if guide_data["type"] == "text":
-                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
                 desc = guide_data["description"] + "\n\n"
                 bullet = ""
                 if "bullet" in guide_data:
@@ -1410,7 +1407,7 @@ class GuideCog(commands.Cog, BaseTools):
                 return
 
             if guide_data["type"] == "text_dict":
-                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color,
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color,
                 description=guide_data["description"] + "\n\n")
                 for item in guide_data["content"]:
                     desc = ""
@@ -1425,7 +1422,7 @@ class GuideCog(commands.Cog, BaseTools):
                 return
 
             if guide_data["type"] == "image":
-                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
                 embedVar.description = guide_data["description"]
                 embedVar.set_image(url=guide_data["content"])
                 embedVar.set_footer(text=self.fotter)
@@ -1434,7 +1431,7 @@ class GuideCog(commands.Cog, BaseTools):
 
 
             if guide_data["type"] == "single_link":
-                embedVar = discord.Embed(title="♦️ " + guide_data["title"] + " ♦️", color=self.block_color)
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
                 if type(guide_data["description"]) is list:
                     desc = ""
                     for sentence in guide_data["description"]:
@@ -1481,6 +1478,113 @@ class CharacterCog(commands.Cog, BaseTools):
         await embed_object.add_reaction(emoji = "\U0001F3C6") # Misc Items
         return
 
+    @commands.command()
+    async def ioda(self, ctx, *, char_name=""):
+
+        url = self.char_url + char_name.replace(" ", "+")
+        sites_soup = await self.loop_get_content(url)
+
+        try:
+            ccid = re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
+        except:
+            try:
+                result = sites_soup.find("div", {"class": "card-body"}).find("p").text
+                result = result.replace("Disabled", "**Disabled**").replace("wandering", "**wandering**")
+                result += f" [Click Here]({url}) to go to their Character Page."
+                await ctx.send(embed=self.embed_single("Character Profile Result", result))
+                return
+            except:
+                await ctx.send(embed=self.embed_single("Character Profile Result", "No Character of that name"))
+
+        char_full_name = sites_soup.find("div", {"class":"text-dark"}).find("div", {"class":"card-header"}).find("h1").text
+
+        # Inventory stuffs
+        char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
+        char_inv = self.loop.run_until_complete(self.get_site_content(char_inv_url)).find("body").text[1:-1].replace("false", "False").replace("true", "True")
+        char_inv = ast.literal_eval(char_inv)
+
+
+        for i in char_inv:
+            if i["strName"] == "Treasure Potion":
+                count = i["intCount"]
+                break
+            else:
+                count = 0
+        potion_count = count
+
+
+
+        # Two treasure potions
+        tp_two_spins = round(((1000-potion_count)/2))
+        tp_two_spins_ac = round(tp_two_spins*200)
+
+        tp_mem_two_days = round((1000 - potion_count) / (8*2) * 7)
+        tp_mem_two_weeks = round(tp_mem_two_days/7, 1)
+        tp_mem_two_months = round(tp_mem_two_days/30) 
+        tp_mem_two_date = (date.today() + timedelta(days=tp_mem_two_days)).strftime("%a, %d %B %Y")
+
+        tp_non_two_days = round((1000 - potion_count) / (1*2) * 7)
+        tp_non_two_weeks = round(tp_non_two_days/7, 1)
+        tp_non_two_months = round(tp_non_two_days/30) 
+        tp_non_two_date = (date.today() + timedelta(days=tp_non_two_days)).strftime("%a, %d %B %Y")
+
+        # print(f"Treasure Potion: {potion_count}\nUsing Acs Spins: {tp_two_spins} ({tp_two_spins_ac} ACs)\t\n"\
+        #       f"2TP/Spin Mem days: {tp_mem_two_days}\t\tDate: {tp_mem_two_date}\n"\
+        #       f"2TP/Spin Non-Mem days: {tp_non_two_days}\t\tDate: {tp_non_two_date}\n"\
+        #        )
+
+
+        # six treasure potions
+        tp_six_spins = round(((1000-potion_count)/6))
+        tp_six_spins_ac = round(tp_six_spins*200)
+
+        tp_mem_six_days = round((1000 - potion_count) / (8*6) * 7)
+        tp_mem_six_weeks = round(tp_mem_six_days/7, 1)
+        tp_mem_six_months = round(tp_mem_six_days/30) 
+        tp_mem_six_date = (date.today() + timedelta(days=tp_mem_six_days)).strftime("%a, %d %B %Y")
+
+        tp_non_six_days = round((1000 - potion_count) / (1*6) * 7)
+        tp_non_six_weeks = round(tp_non_six_days/7, 1)
+        tp_non_six_months = round(tp_non_six_days/30) 
+        tp_non_six_date = (date.today() + timedelta(days=tp_non_six_days)).strftime("%a, %d %B %Y")
+
+        # print(f"Treasure Potion: {potion_count}\nUsing Acs Spins: {tp_six_spins} ({tp_six_spins_ac} ACs)\t\n"\
+        #       f"6TP/Spin Mem days: {tp_mem_six_days}\t\tDate: {tp_mem_six_date}\n"\
+        #       f"6TP/Spin Non-Mem days: {tp_non_six_days}\t\tDate: {tp_non_six_date}\n"\
+        #        )
+
+        embedVar = discord.Embed(title="Ioda Calculations", color=self.block_color,
+                        description=f"__**Name**__: [{char_full_name}]({url})")
+        # embedVar.add_field(name="__2 Treasue Potions per Spin__", inline=False,
+        #         value=f"**With ACs**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac} ACs)\n"\
+        #               f"**With Member Daily Spin**\n🔹 Days: {tp_mem_two_days}\n🔹 Date: {tp_mem_two_date}\n"\
+        #               f"**With Non-Member Daily Spin**\n🔹 Days: {tp_non_two_days}\n🔹 Date: {tp_non_two_date}\n"
+        #     )
+        # embedVar.add_field(name="__6 Treasue Potions per Spin__", inline=False,
+        #         value=f"**With ACs**\n 🔹 {tp_six_spins} Spins ({tp_six_spins_ac} ACs)\n"\
+        #               f"**With Member Daily Spin**\n🔹 Days: {tp_mem_six_days}\n🔹 Date: {tp_mem_six_date}\n"\
+        #               f"**With Non-Member Daily Spin**\n🔹 Days: {tp_non_six_days}\n🔹 Date: {tp_non_six_date}\n"💰
+        #     )
+
+
+        embedVar.add_field(name="__2 Treasue Potions per Spin__", inline=True, value=f"**With ACs <:ACtagged:622978586160136202>**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac:,} ACs)\n")
+        embedVar.add_field(name="\u200b", inline=True, value="\u200b")
+        embedVar.add_field(name="__6 Treasue Potions per Spin__", inline=True, value=f"**With ACs <:ACtagged:622978586160136202>**\n 🔹 {tp_six_spins} Spins ({tp_six_spins_ac:,} ACs)\n")
+        
+        embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_two_days}\n🔹 Weeks: {tp_mem_two_weeks}\n🔹 Months: {tp_mem_two_months}\n🔹 __Due__: {tp_mem_two_date}\n")
+        embedVar.add_field(name="\u200b", inline=True, value="\u200b")
+        embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_six_days}\n🔹 Weeks: {tp_mem_six_weeks}\n🔹 Months: {tp_mem_six_months}\n🔹 __Due__: {tp_mem_six_date}\n")
+        
+        embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_two_days}\n🔹 Weeks: {tp_non_two_weeks}\n🔹 Months: {tp_non_two_months}\n🔹 __Due__: {tp_non_two_date}\n")
+        embedVar.add_field(name="\u200b", inline=True, value="\u200b")
+        embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_six_days}\n🔹 Weeks: {tp_non_six_weeks}\n🔹 Months: {tp_non_six_months}\n🔹 __Due__: {tp_non_six_date}\n")
+        embedVar.set_footer(text="Note:\n"\
+            "> The 6 Treasure Potion calculation is made assuming the Player does NOT receive any drop.\n"\
+            "> Without 50% bonus, 40,000 ACs are equal to $100. ")
+
+
+        await ctx.send(embed=embedVar)
+        return
 
     @commands.command()
     async def char(self, ctx, *, char_name=""):
@@ -1549,7 +1653,7 @@ class CharacterCog(commands.Cog, BaseTools):
 
         # Inserts stuffs
         embedVar = discord.Embed(title=f"Character Profile", color=self.block_color, description="\u200b")
-        embedVar.description = f"__**Name**__: [{char_full_name}](https://account.aq.com/CharPage?id={char_full_name.replace(' ', '+')})."
+        embedVar.description = f"__**Name**__: [{char_full_name}](https://account.aq.com/CharPage?id={char_full_name.replace(' ', '+')})"
         li = self.wiki_url
         panel_1_raw = [f"**Level**: {char_details['Level']}" + "\n",
                 f"**Class**: [{char_details['Class']}]({li + char_details['Class'].lstrip().replace(' ', '-')})" + "\n",
@@ -1757,6 +1861,7 @@ class EventCalendarCog(commands.Cog, BaseTools):
 class FatListener(tweepy.StreamListener):
     def __init__(self, api, bot):
         self.block_color = 3066993
+        # self.block_color = 4521077 
         self.bot = bot
         self.api = api
         self.me = api.me()
@@ -1781,6 +1886,7 @@ class FatListener(tweepy.StreamListener):
 
     def on_error(self, status):
         print(status)
+
 
 class TwitterStreamCog(commands.Cog, BaseTools):
     def __init__(self, Bot):
