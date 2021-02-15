@@ -276,7 +276,14 @@
         },
         "Nng": {
             "alias": [
-                "Nng"
+                "Nng",
+                "NNg",
+                "NNG",
+                "nng",
+                "nNg",
+                "NnG",
+                "nnG"
+
             ]
         }
     }
