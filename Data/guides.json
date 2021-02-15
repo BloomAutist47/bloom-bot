@@ -220,10 +220,10 @@
         "content": "https://docs.google.com/document/d/1pHEYDB5JM2qSBFYwVs6Hkj17x24TElB1mtuQUyidv18/edit",
         "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/807173105457823744/Untitled-1.png"
     },
-    "ec": {
+    "ecskills": {
         "common_key": "ec/ic"
     },
-    "ic": {
+    "icskills": {
         "common_key": "ec/ic"
     },
     "ec/ic": {
