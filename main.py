@@ -883,6 +883,8 @@ class BaseCog(commands.Cog, BaseTools):
                 value="Pulls up basic player info from the Character page.")
             embedVar.add_field(name="`;credits`", inline=False,
                 value="Shows the Credits.")
+            embedVar.add_field(name="`;ioda character_name`", inline=False,
+                value="Show player Treasure Potions and IoDA spin and date calculations.")
 
             embedVar.add_field(name="\u200b", inline=False,
                 value="————————  Commands For Priviledge  ————————")
@@ -920,6 +922,8 @@ class BaseCog(commands.Cog, BaseTools):
                 value="Shows the legends for the class data charts.")
             embedVar.add_field(name="`;char character_name`", inline=False,
                 value="Pulls up basic player info from the Character page.")
+            embedVar.add_field(name="`;ioda character_name`", inline=False,
+                value="Show player Treasure Potions and IoDA spin and date calculations.")
             embedVar.add_field(name="`;credits`", inline=False,
                 value="Shows the Credits.")
             embedVar.add_field(name="**Note:**", inline=False,
@@ -1491,10 +1495,11 @@ class CharacterCog(commands.Cog, BaseTools):
                 result = sites_soup.find("div", {"class": "card-body"}).find("p").text
                 result = result.replace("Disabled", "**Disabled**").replace("wandering", "**wandering**")
                 result += f" [Click Here]({url}) to go to their Character Page."
-                await ctx.send(embed=self.embed_single("Character Profile Result", result))
+                await ctx.send(embed=self.embed_single("🔷 Ioda Calculations 🔷", result))
                 return
             except:
-                await ctx.send(embed=self.embed_single("Character Profile Result", "No Character of that name"))
+                await ctx.send(embed=self.embed_single("🔷 Ioda Calculations 🔷", "No Character of that name"))
+                return
 
         char_full_name = sites_soup.find("div", {"class":"text-dark"}).find("div", {"class":"card-header"}).find("h1").text
 
