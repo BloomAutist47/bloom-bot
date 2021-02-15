@@ -436,6 +436,10 @@
             "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot",
             "author": "bloom"
         },
+        "dsg2.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_dsg2.gbot",
+            "author": "bloom"
+        },
         "EtherStorm Rep Balmblossom.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot",
             "author": "bloom"
@@ -1781,6 +1785,9 @@
             },
             "Dragonslayer General ClassBot PRO.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot"
+            },
+            "dsg2.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_dsg2.gbot"
             },
             "EtherStorm Rep Balmblossom.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
