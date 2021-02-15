@@ -880,9 +880,9 @@
             "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot",
             "author": "nng"
         },
-        "NNg Stolen Heart all drop and Pinkest Dye Ever.gbot": {
-            "url": "https://adventurequest.life/bots/NNg_Stolen_Heart_all_drop_and_Pinkest_Dye_Ever.gbot",
-            "author": "unknown"
+        "Stolen Heart all drop and Pinkest Dye Ever.gbot": {
+            "url": "https://adventurequest.life/bots/Nng_Stolen_Heart_all_drop_and_Pinkest_Dye_Ever.gbot",
+            "author": "nng"
         },
         "Ultimate Blinding Weapons  Techfortress War Merge  Stellaria.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Ultimate_Blinding_Weapons_-_Techfortress_War_Merge_-_Stellaria.gbot",
@@ -1298,9 +1298,6 @@
             },
             "NewPlayerStarterPack.zip": {
                 "url": "https://adventurequest.life/bots/NewPlayerStarterPack.zip"
-            },
-            "NNg Stolen Heart all drop and Pinkest Dye Ever.gbot": {
-                "url": "https://adventurequest.life/bots/NNg_Stolen_Heart_all_drop_and_Pinkest_Dye_Ever.gbot"
             },
             "Non-mem VA SkCmd.gbot": {
                 "url": "https://adventurequest.life/bots/Non_mem_VA_SkCmd.gbot"
@@ -1989,6 +1986,9 @@
             },
             "Icy Token I II III IV.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot"
+            },
+            "Stolen Heart all drop and Pinkest Dye Ever.gbot": {
+                "url": "https://adventurequest.life/bots/Nng_Stolen_Heart_all_drop_and_Pinkest_Dye_Ever.gbot"
             },
             "Ultimate Blinding Weapons  Techfortress War Merge  Stellaria.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Ultimate_Blinding_Weapons_-_Techfortress_War_Merge_-_Stellaria.gbot"
