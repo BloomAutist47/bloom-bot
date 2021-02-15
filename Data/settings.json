@@ -272,6 +272,11 @@
             "alias": [
                 "Bloom"
             ]
+        },
+        "Nng": {
+            "alias": [
+                "Nng"
+            ]
         }
     }
 }
