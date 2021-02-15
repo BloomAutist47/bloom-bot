@@ -1460,6 +1460,7 @@ class CharacterCog(commands.Cog, BaseTools):
         self.house_items = ["Wall Item", "Floor Item"]
         self.miscs = ["Quest Item", "Item"]
         self.loop = asyncio.get_event_loop()
+        self.getting_the_good_shit = False
         nest_asyncio.apply(self.loop)
 
     async def loop_get_content(self, url):
@@ -1482,14 +1483,17 @@ class CharacterCog(commands.Cog, BaseTools):
         await embed_object.add_reaction(emoji = "\U0001F3C6") # Misc Items
         return
 
+    async def search_ccid(self, sites_soup):
+        return re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
+
     @commands.command()
     async def ioda(self, ctx, *, char_name=""):
-
+        
         url = self.char_url + char_name.replace(" ", "+")
         sites_soup = await self.loop_get_content(url)
 
         try:
-            ccid = re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
+            ccid = await self.search_ccid(sites_soup)
         except:
             try:
                 result = sites_soup.find("div", {"class": "card-body"}).find("p").text
@@ -1505,7 +1509,9 @@ class CharacterCog(commands.Cog, BaseTools):
 
         # Inventory stuffs
         char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
-        char_inv = self.loop.run_until_complete(self.get_site_content(char_inv_url)).find("body").text[1:-1].replace("false", "False").replace("true", "True")
+        char_inv = await self.loop_get_content(char_inv_url)
+        print("here")
+        char_inv = char_inv.find("body").text[1:-1].replace("false", "False").replace("true", "True")
         char_inv = ast.literal_eval(char_inv)
 
 
@@ -1517,7 +1523,15 @@ class CharacterCog(commands.Cog, BaseTools):
                 count = 0
         potion_count = count
 
+        embedVar = discord.Embed(title="🔷 Ioda Calculations 🔷", color=self.block_color,
+                        description=f"**Name**: [{char_full_name}]({url})\n**Treasure Potions**: {potion_count}")
 
+        if potion_count >= 1000:
+            embedVar.set_footer(text="Note:\n"\
+                "> Without 50% bonus, 40,000 ACs are equal to $100. ")
+            embedVar.description += "\n**Note**: Account ready to __**Get an Ioda**__."
+            await ctx.send(embed=embedVar)
+            return
 
         # Two treasure potions
         tp_two_spins = round(((1000-potion_count)/2))
@@ -1558,8 +1572,7 @@ class CharacterCog(commands.Cog, BaseTools):
         #       f"6TP/Spin Non-Mem days: {tp_non_six_days}\t\tDate: {tp_non_six_date}\n"\
         #        )
 
-        embedVar = discord.Embed(title="🔷 Ioda Calculations 🔷", color=self.block_color,
-                        description=f"**Name**: [{char_full_name}]({url})\n**Treasure Potions**: {potion_count}")
+
         # embedVar.add_field(name="__2 Treasue Potions per Spin__", inline=False,
         #         value=f"**With ACs**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac} ACs)\n"\
         #               f"**With Member Daily Spin**\n🔹 Days: {tp_mem_two_days}\n🔹 Date: {tp_mem_two_date}\n"\
@@ -1570,11 +1583,11 @@ class CharacterCog(commands.Cog, BaseTools):
         #               f"**With Member Daily Spin**\n🔹 Days: {tp_mem_six_days}\n🔹 Date: {tp_mem_six_date}\n"\
         #               f"**With Non-Member Daily Spin**\n🔹 Days: {tp_non_six_days}\n🔹 Date: {tp_non_six_date}\n"💰
         #     )
-# <:ACtagged:622978586160136202>
+        # <:ACtagged:622978586160136202>
 
-        embedVar.add_field(name="__2 Treasue Potions per Spin__", inline=True, value=f"**With ACs 💰**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac:,} ACs)\n")
+        embedVar.add_field(name="__2 Treasure Potions per Spin__", inline=True, value=f"**With ACs 💰**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac:,} ACs)\n")
         embedVar.add_field(name="\u200b", inline=True, value="\u200b")
-        embedVar.add_field(name="__6 Treasue Potions per Spin__", inline=True, value=f"**With ACs 💰**\n 🔹 {tp_six_spins} Spins ({tp_six_spins_ac:,} ACs)\n")
+        embedVar.add_field(name="__6 Treasure Potions per Spin__", inline=True, value=f"**With ACs 💰**\n 🔹 {tp_six_spins} Spins ({tp_six_spins_ac:,} ACs)\n")
         
         # embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_two_days}\n🔹 Weeks: {tp_mem_two_weeks}\n🔹 Months: {tp_mem_two_months}\n🔹 __Due__: {tp_mem_two_date}\n")
         # embedVar.add_field(name="\u200b", inline=True, value="\u200b")
@@ -1643,7 +1656,8 @@ class CharacterCog(commands.Cog, BaseTools):
 
         # Inventory stuffs
         char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
-        char_inv = self.loop.run_until_complete(self.get_site_content(char_inv_url)).find("body").text[1:-1].replace("false", "False").replace("true", "True")
+        char_inv = await self.loop_get_content(char_inv_url)
+        char_inv = char_inv.find("body").text[1:-1].replace("false", "False").replace("true", "True")
         char_inv = ast.literal_eval(char_inv)
 
         item_count = {"Weapon": 0, "House Item": 0, "Misc": 0}
