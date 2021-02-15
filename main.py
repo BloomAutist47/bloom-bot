@@ -67,8 +67,8 @@ class BaseProgram:
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
 
         self.file_read("all")
-        if os.name != "nt":
-            self.git_read("all")
+        # if os.name != "nt":
+        self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -122,6 +122,7 @@ class BaseProgram:
             try:
                 html = requests.get(self.url, headers=headers).text
                 page_soup = Soup(html, "html.parser")
+                pprint(page_soup)
                 body = page_soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
                 row_links = body.find_all("input", {"class":"rainbow"})
 
@@ -617,7 +618,7 @@ class BaseTools(BaseProgram):
             guild_id = ctx.guild.id
         except:
             return False
-        if guild_id in self.settings["EvaluatorSettings"]["guild_privilege"]:
+        if int(guild_id) in self.settings["EvaluatorSettings"]["guild_privilege"]:
             return True
         else:
             return False
