@@ -18,6 +18,7 @@ import github3
 import math as m
 import glob
 import io
+import tweepy
 
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
@@ -43,6 +44,7 @@ import unicodedata
 
 class BreakProgram(Exception):
     pass
+
 
 class BaseProgram:
 
@@ -70,7 +72,7 @@ class BaseProgram:
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
-            
+
             os.chdir(os.path.dirname(os.path.abspath(__file__)))
             load_dotenv()
             self.DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN2') # test bot token
@@ -79,6 +81,12 @@ class BaseProgram:
             self.GIT_BLOOM_TOKEN = os.getenv('GITHUB_BLOOMBOT_TOKEN')
             self.PERMISSIONS = os.getenv("PRIVILEGED_ROLE").split(',')
             self.PORTAL_AGENT = os.getenv('PORTAL_AGENT')
+
+            self.CONSUMER_KEY = os.getenv('TWITTER_NOTIFIER_API_KEY')
+            self.CONSUMER_SECRET = os.getenv('TWITTER_NOTIFIER_API_KEY_SECRET')
+            self.ACCESS_TOKEN = os.getenv('TWITTER_NOTIFIER_ACCESS_TOKEN')
+            self.ACCESS_TOKEN_SECRET = os.getenv('TWITTER_NOTIFIER_ACCESS_TOKEN_SECRET')
+
         else:              # Heroku
             self.DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
             self.GIT_REPOS = os.environ.get('GITHUB_REPOS')
@@ -86,6 +94,11 @@ class BaseProgram:
             self.GIT_BLOOM_TOKEN = os.environ.get('GITHUB_BLOOMBOT_TOKEN')
             self.PERMISSIONS = os.environ.get("PRIVILEGED_ROLE").split(',')
             self.PORTAL_AGENT = os.environ.get("PORTAL_AGENT")
+
+            self.CONSUMER_KEY = os.environ.get('TWITTER_NOTIFIER_API_KEY')
+            self.CONSUMER_SECRET = os.environ.get('TWITTER_NOTIFIER_API_KEY_SECRET')
+            self.ACCESS_TOKEN = os.environ.get('TWITTER_NOTIFIER_ACCESS_TOKEN')
+            self.ACCESS_TOKEN_SECRET = os.environ.get('TWITTER_NOTIFIER_ACCESS_TOKEN_SECRET')
 
     def database_update(self, mode: str):
         """ Description: Updates the database.json
@@ -103,37 +116,12 @@ class BaseProgram:
         if mode == "web":
             # try:
             headers = {
-                'User-Agent': self.PORTAL_AGENT
+                'User-Agent': "DiscordBot"
             }
             row = []
-            # scraper = cloudscraper.create_scraper()
-            # html = scraper.get(self.url, headers=headers).text
-            # html = requests.get(self.url, headers=headers).text
-
-
-            # headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:77.0) Gecko/20100101 Firefox/77.0'}
-            # request = urllib.request.Request(self.url, headers=headers)
-
-            # r = urllib.request.urlopen(request).read()
-
-            # http = urllib3.PoolManager(
-            #     cert_reqs='CERT_REQUIRED',
-            #     ca_certs=certifi.where()
-            # )
-
-            # html = http.request('GET', self.url, headers=headers).text
-            # s = Session()
-            # headers = OrderedDict({
-            #     'Accept-Encoding': 'gzip, deflate, br',
-            #     # 'Host': "grimaldis.myguestaccount.com",
-            #     'User-Agent': self.PORTAL_AGENT
-            # })
-            # s.headers = headers
-            # html = s.get(self.url, headers=headers, verify=False).text
-            # print(html)
             try:
                 html = requests.get(self.url, headers=headers).text
-                page_soup = Soup(html, "lxml")
+                page_soup = Soup(html, "html.parser")
                 body = page_soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
                 row_links = body.find_all("input", {"class":"rainbow"})
 
@@ -1764,6 +1752,59 @@ class EventCalendarCog(commands.Cog, BaseTools):
         print('waiting...')
         await self.bot.wait_until_ready()
 
+
+class FatListener(tweepy.StreamListener):
+    def __init__(self, api, bot):
+        self.block_color = 3066993
+        self.bot = bot
+        self.api = api
+        self.me = api.me()
+
+    def on_status(self, status):
+        if hasattr(status, 'extended_tweet'):
+            tweet = status.extended_tweet['full_text']
+            if "New daily login gift!" in tweet:
+                self.tweet_text = tweet
+                try:
+                    self.image_url = status.extended_tweet['entities']['media'][0]["media_url_https"]
+                    self.process_file()
+                except: pass
+                print("\n")
+            else: print("Something: " + tweet)
+        else:
+            print('text: ' + status.text)
+
+    def process_file(self):
+        embedVar = discord.Embed(title="News Event", color=self.block_color)
+        desc = ""
+
+    def on_error(self, status):
+        print(status)
+
+class TwitterStreamCog(commands.Cog, BaseTools):
+    def __init__(self, Bot):
+        self.setup()
+        self.bot = Bot
+
+        self.est_dt = datetime.now(timezone('est'))
+        self.current_day = self.est_dt.strftime("%d")
+        self.current_month = self.est_dt.strftime("%B")
+
+        self.auth = tweepy.OAuthHandler(self.CONSUMER_KEY, self.CONSUMER_SECRET)
+        auth.set_access_token(self.ACCESS_TOKEN, self.ACCESS_TOKEN_SECRET)
+
+        api = tweepy.API(auth)
+        api.verify_credentials()
+
+        tweets_listener = FatListener(api, bot)
+        stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended')
+        print("Worked")
+        stream.filter(follow=["1349290524901998592"])
+    
+
+
+
+
 intents = Intents.all()
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped', intents=intents)
 
@@ -1776,7 +1817,6 @@ async def on_command_error(ctx, error):
 
 @Bot.event
 async def on_member_update(before, after):
-    # print("WORKING")
     satanId = 212913871466266624
     if os.name == "nt":
         satanRoleId = 808657429784035338
@@ -1818,5 +1858,5 @@ Bot.add_cog(IllegalBoatSearchCog(Bot))
 Bot.add_cog(ClassSearchCog(Bot))
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(CharacterCog(Bot))
-Bot.add_cog(EventCalendarCog(Bot))
+# Bot.add_cog(TwitterStreamCog(Bot))
 Bot.run(DISCORD_TOKEN)
