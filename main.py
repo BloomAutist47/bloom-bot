@@ -48,6 +48,8 @@ class BreakProgram(Exception):
 
 
 class BaseProgram:
+    data = {}
+
 
     def setup(self):
         self.env_variables()
@@ -57,7 +59,6 @@ class BaseProgram:
         self.url = "https://adventurequest.life/"
         self.settings = {}
         self.classes = {}
-        self.data = {}
         self.priveleged_roles = []
         self.mode = ""
         self.author_list_lowercase = []
@@ -111,8 +112,8 @@ class BaseProgram:
         """
         self.git_read("settings")
         self.file_clear_database()
-        self.data["sort_by_bot_name"] = {}
-        self.data["sort_by_bot_authors"] = {}
+        BaseProgram.data["sort_by_bot_name"] = {}
+        BaseProgram.data["sort_by_bot_authors"] = {}
 
         if mode == "web":
             # try:
@@ -198,23 +199,23 @@ class BaseProgram:
             bot_name = re.sub("Non\s|NON\s", "Non-", bot_name)  # replaces "non mem" to "non-mem"
             bot_name = bot_name.lstrip().rstrip()
             bot_author = bot_author.lower()
-            self.data["sort_by_bot_name"][bot_name] = {}
-            self.data["sort_by_bot_name"][bot_name]["url"] = link
-            self.data["sort_by_bot_name"][bot_name]["author"] = bot_author
+            BaseProgram.data["sort_by_bot_name"][bot_name] = {}
+            BaseProgram.data["sort_by_bot_name"][bot_name]["url"] = link
+            BaseProgram.data["sort_by_bot_name"][bot_name]["author"] = bot_author
 
             # Sort by Author
-            if bot_author not in self.data["sort_by_bot_authors"]:
-                self.data["sort_by_bot_authors"][bot_author] = {}
+            if bot_author not in BaseProgram.data["sort_by_bot_authors"]:
+                BaseProgram.data["sort_by_bot_authors"][bot_author] = {}
                 
-            self.data["sort_by_bot_authors"][bot_author][bot_name] = {}
-            self.data["sort_by_bot_authors"][bot_author][bot_name]["url"] = link
+            BaseProgram.data["sort_by_bot_authors"][bot_author][bot_name] = {}
+            BaseProgram.data["sort_by_bot_authors"][bot_author][bot_name]["url"] = link
 
 
         # Saving
         self.file_save("database-settings")
         self.git_save("database-settings")
         pprint("========DATABASE===========")
-        pprint(self.data)
+        pprint(BaseProgram.data)
         pprint("===================")
         print("lmao")
         return True
@@ -229,7 +230,7 @@ class BaseProgram:
             Arguments:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
-                    - 'database'> self.data
+                    - 'database'> BaseProgram.data
                     - 'guides'> self.guides
                     - 'settings'> self.settings
                     - 'classes'> self.classes
@@ -240,7 +241,7 @@ class BaseProgram:
 
         if "database" in mode:
             with open('./Data/database.json', 'r', encoding='utf-8') as f:
-                self.data = json.load(f)
+                BaseProgram.data = json.load(f)
         if "guides" in mode:
             with open('./Data/guides.json', 'r', encoding='utf-8') as f:
                 self.guides = json.load(f)
@@ -261,7 +262,7 @@ class BaseProgram:
             Arguments:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
-                    - 'database'> self.data
+                    - 'database'> BaseProgram.data
                     - 'guides'> self.guides
                     - 'settings'> self.settings
                     - 'classes'> self.classes
@@ -272,7 +273,7 @@ class BaseProgram:
 
         if "database" in mode:
             with open('./Data/database.json', 'w', encoding='utf-8') as f:
-                json.dump(self.data, f, ensure_ascii=False, indent=4)
+                json.dump(BaseProgram.data, f, ensure_ascii=False, indent=4)
         if "guides" in mode:
             with open('./Data/guides.json', 'w', encoding='utf-8') as f:
                 json.dump(self.guides, f, ensure_ascii=False, indent=4)
@@ -290,7 +291,7 @@ class BaseProgram:
             Arguments:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
-                    - 'database'> self.data
+                    - 'database'> BaseProgram.data
                     - 'guides'> self.guides
                     - 'settings'> self.settings
                     - 'classes'> self.classes
@@ -300,7 +301,7 @@ class BaseProgram:
             mode = ["database", "guides", "classes", "settings"]
 
         if "database" in mode:
-            git_data = json.dumps(self.data, indent=4).encode('utf-8')
+            git_data = json.dumps(BaseProgram.data, indent=4).encode('utf-8')
             contents_object = self.repository.file_contents("./Data/database.json")
             contents_object.update("update", git_data)
             print("Git-database called")
@@ -329,7 +330,7 @@ class BaseProgram:
             Arguments:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
-                    - 'database'> self.data
+                    - 'database'> BaseProgram.data
                     - 'guides'> self.guides
                     - 'settings'> self.settings
                     - 'classes'> self.classes
@@ -340,7 +341,7 @@ class BaseProgram:
 
         if "database" in mode:
             git_data = self.repository.file_contents("./Data/database.json").decoded
-            self.data = json.loads(git_data.decode('utf-8'))
+            BaseProgram.data = json.loads(git_data.decode('utf-8'))
 
         if "guides" in mode:
             git_guides = self.repository.file_contents("./Data/guides.json").decoded
@@ -406,9 +407,9 @@ class BaseProgram:
            Arguments:
                [bot_name_value] - search word
         """
-        if bot_name_value in self.data["sort_by_bot_name"]:
-            link = self.data["sort_by_bot_name"][bot_name_value]["url"]
-            author = self.data["sort_by_bot_name"][bot_name_value]["author"]
+        if bot_name_value in BaseProgram.data["sort_by_bot_name"]:
+            link = BaseProgram.data["sort_by_bot_name"][bot_name_value]["url"]
+            author = BaseProgram.data["sort_by_bot_name"][bot_name_value]["author"]
             return {author: [bot_name_value.capitalize(), link]}
 
         # Else, divides the bot between words and searches 
@@ -424,10 +425,10 @@ class BaseProgram:
 
     def find_bot_by_author(self, author):
         author = author.lower()
-        if author in self.data["sort_by_bot_authors"]:
+        if author in BaseProgram.data["sort_by_bot_authors"]:
             list_of_bots = []
-            for bot in self.data["sort_by_bot_authors"][author]:
-                link = self.data["sort_by_bot_authors"][author][bot]["url"]
+            for bot in BaseProgram.data["sort_by_bot_authors"][author]:
+                link = BaseProgram.data["sort_by_bot_authors"][author][bot]["url"]
                 list_of_bots.append([bot, author, link])
             return (True, list_of_bots)
         else:
@@ -443,18 +444,18 @@ class BaseProgram:
     def bot_searching_algorithm(self, bot_name_value):
         list_of_possible_bots = {}
         done_searching = []
-        for author in self.data["sort_by_bot_authors"]:
-            for bot in self.data["sort_by_bot_authors"][author]:
+        for author in BaseProgram.data["sort_by_bot_authors"]:
+            for bot in BaseProgram.data["sort_by_bot_authors"][author]:
                 search_name = bot_name_value.lower()
                 bot_by_author = bot.lower()
 
                 if search_name == bot_by_author:
-                    link = self.data["sort_by_bot_authors"][author][bot]["url"]
+                    link = BaseProgram.data["sort_by_bot_authors"][author][bot]["url"]
                     return {author:[(bot_name_value, link)]}
 
                 if (search_name in bot_by_author) and ((bot_by_author, author) not in done_searching):
                     done_searching.append((bot_by_author, author))
-                    link = self.data["sort_by_bot_authors"][author][bot]["url"]
+                    link = BaseProgram.data["sort_by_bot_authors"][author][bot]["url"]
                     if author not in list_of_possible_bots:
                         list_of_possible_bots[author] = []
                     list_of_possible_bots[author].append([bot, link])
@@ -962,7 +963,7 @@ class BaseCog(commands.Cog, BaseTools):
                 [ctx] - discord context
                 [mode]  accepts: all, database, guides, settings, classes
                     - 'all'> updates all of the variables
-                    - 'database'> self.data
+                    - 'database'> BaseProgram.data
                     - 'guides'> self.guides
                     - 'settings'> self.settings
                     - 'classes'> self.classes
@@ -1223,7 +1224,7 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
         if not found_author:
             # if author has no boats
             if len(bot_list) == 1:
-                if bot_list[0] not in self.data["sort_by_bot_authors"].keys():
+                if bot_list[0] not in BaseProgram.data["sort_by_bot_authors"].keys():
                     desc = f"Author `{bot_list[0]}` has not created any boats yet. "
                     await ctx.send(embed=self.embed_single("Bot Author Result", desc))
                     return
