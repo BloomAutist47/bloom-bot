@@ -1553,8 +1553,8 @@ class CharacterCog(commands.Cog, BaseTools):
         #       f"6TP/Spin Non-Mem days: {tp_non_six_days}\t\tDate: {tp_non_six_date}\n"\
         #        )
 
-        embedVar = discord.Embed(title="Ioda Calculations", color=self.block_color,
-                        description=f"__**Name**__: [{char_full_name}]({url})")
+        embedVar = discord.Embed(title="🔷 Ioda Calculations 🔷", color=self.block_color,
+                        description=f"**Name**: [{char_full_name}]({url})\n**Treasure Potions**: {potion_count}")
         # embedVar.add_field(name="__2 Treasue Potions per Spin__", inline=False,
         #         value=f"**With ACs**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac} ACs)\n"\
         #               f"**With Member Daily Spin**\n🔹 Days: {tp_mem_two_days}\n🔹 Date: {tp_mem_two_date}\n"\
@@ -1565,21 +1565,32 @@ class CharacterCog(commands.Cog, BaseTools):
         #               f"**With Member Daily Spin**\n🔹 Days: {tp_mem_six_days}\n🔹 Date: {tp_mem_six_date}\n"\
         #               f"**With Non-Member Daily Spin**\n🔹 Days: {tp_non_six_days}\n🔹 Date: {tp_non_six_date}\n"💰
         #     )
+# <:ACtagged:622978586160136202>
+
+        embedVar.add_field(name="__2 Treasue Potions per Spin__", inline=True, value=f"**With ACs 💰**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac:,} ACs)\n")
+        embedVar.add_field(name="\u200b", inline=True, value="\u200b")
+        embedVar.add_field(name="__6 Treasue Potions per Spin__", inline=True, value=f"**With ACs 💰**\n 🔹 {tp_six_spins} Spins ({tp_six_spins_ac:,} ACs)\n")
+        
+        # embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_two_days}\n🔹 Weeks: {tp_mem_two_weeks}\n🔹 Months: {tp_mem_two_months}\n🔹 __Due__: {tp_mem_two_date}\n")
+        # embedVar.add_field(name="\u200b", inline=True, value="\u200b")
+        # embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_six_days}\n🔹 Weeks: {tp_mem_six_weeks}\n🔹 Months: {tp_mem_six_months}\n🔹 __Due__: {tp_mem_six_date}\n")
+        
+        # embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_two_days}\n🔹 Weeks: {tp_non_two_weeks}\n🔹 Months: {tp_non_two_months}\n🔹 __Due__: {tp_non_two_date}\n")
+        # embedVar.add_field(name="\u200b", inline=True, value="\u200b")
+        # embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_six_days}\n🔹 Weeks: {tp_non_six_weeks}\n🔹 Months: {tp_non_six_months}\n🔹 __Due__: {tp_non_six_date}\n")
 
 
-        embedVar.add_field(name="__2 Treasue Potions per Spin__", inline=True, value=f"**With ACs <:ACtagged:622978586160136202>**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac:,} ACs)\n")
+        embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_two_days} ({tp_mem_two_weeks} W/ {tp_mem_two_months} M)\n🔹 __Due__: {tp_mem_two_date}\n")
         embedVar.add_field(name="\u200b", inline=True, value="\u200b")
-        embedVar.add_field(name="__6 Treasue Potions per Spin__", inline=True, value=f"**With ACs <:ACtagged:622978586160136202>**\n 🔹 {tp_six_spins} Spins ({tp_six_spins_ac:,} ACs)\n")
+        embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_six_days} ({tp_mem_six_weeks} W/ {tp_mem_six_months} M)\n🔹 __Due__: {tp_mem_six_date}\n")
         
-        embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_two_days}\n🔹 Weeks: {tp_mem_two_weeks}\n🔹 Months: {tp_mem_two_months}\n🔹 __Due__: {tp_mem_two_date}\n")
+        embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_two_days} ({tp_non_two_weeks} W/ {tp_non_two_months} M)\n🔹 __Due__: {tp_non_two_date}\n")
         embedVar.add_field(name="\u200b", inline=True, value="\u200b")
-        embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_six_days}\n🔹 Weeks: {tp_mem_six_weeks}\n🔹 Months: {tp_mem_six_months}\n🔹 __Due__: {tp_mem_six_date}\n")
+        embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_six_days} ({tp_non_six_weeks} W/  {tp_non_six_months} M)\n🔹 __Due__: {tp_non_six_date}\n")
         
-        embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_two_days}\n🔹 Weeks: {tp_non_two_weeks}\n🔹 Months: {tp_non_two_months}\n🔹 __Due__: {tp_non_two_date}\n")
-        embedVar.add_field(name="\u200b", inline=True, value="\u200b")
-        embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_six_days}\n🔹 Weeks: {tp_non_six_weeks}\n🔹 Months: {tp_non_six_months}\n🔹 __Due__: {tp_non_six_date}\n")
+
         embedVar.set_footer(text="Note:\n"\
-            "> The 6 Treasure Potion calculation is made assuming the Player does NOT receive any drop.\n"\
+            "> The 6 Treasure Potion math is made assuming the Player does NOT receive any drop.\n"\
             "> Without 50% bonus, 40,000 ACs are equal to $100. ")
 
 
@@ -1961,9 +1972,9 @@ else:              # Heroku
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-Bot.add_cog(IllegalBoatSearchCog(Bot))
-Bot.add_cog(ClassSearchCog(Bot))
-Bot.add_cog(GuideCog(Bot)) 
+# Bot.add_cog(IllegalBoatSearchCog(Bot))
+# Bot.add_cog(ClassSearchCog(Bot))
+# Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(CharacterCog(Bot))
 # Bot.add_cog(TwitterStreamCog(Bot))
 Bot.run(DISCORD_TOKEN)
