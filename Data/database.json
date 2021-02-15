@@ -477,8 +477,8 @@
             "author": "bluu"
         },
         "Hollowborn Rep Bot.gbot": {
-            "url": "https://adventurequest.life/bots/Nng_Hollowborn_Rep_Bot.gbot",
-            "author": "nng"
+            "url": "https://adventurequest.life/bots/Bluu_Hollowborn_Rep_Bot.gbot",
+            "author": "bluu"
         },
         "Kill Command.gbot": {
             "url": "https://adventurequest.life/bots/Bluu_Kill_Command.gbot",
@@ -856,9 +856,9 @@
             "url": "https://adventurequest.life/bots/LeeryContract_Ninjatov.gbot",
             "author": "ninjatov"
         },
-        "Lord of Order RED1KING FIXED by.zip": {
+        "Lord of Order RED1KING FIXED by Nng.zip": {
             "url": "https://adventurequest.life/bots/Lord_of_Order_RED1KING_FIXED_by_Nng_.zip",
-            "author": "nng"
+            "author": "unknown"
         },
         "Full Lord of Order Bot.rar": {
             "url": "https://adventurequest.life/bots/Minaaaaaa_Full_Lord_of_Order_Bot.rar",
@@ -872,21 +872,25 @@
             "url": "https://adventurequest.life/bots/NinjaSneaks_SDKA_Bot.zip",
             "author": "ninjasneaks"
         },
-        "Beleen Pinkest Dye Ever Other Dyes.gbot": {
+        "Nng Beleen Pinkest Dye Ever Other Dyes.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Beleen_Pinkest_Dye_Ever_Other_Dyes.gbot",
-            "author": "nng"
+            "author": "unknown"
         },
-        "Icy Token I II III IV.gbot": {
+        "Nng Hollowborn Rep Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Nng_Hollowborn_Rep_Bot.gbot",
+            "author": "unknown"
+        },
+        "Nng Icy Token I II III IV.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot",
-            "author": "nng"
+            "author": "unknown"
         },
-        "Ultimate Blinding Weapons  Techfortress War Merge  Stellaria.gbot": {
+        "Nng Ultimate Blinding Weapons  Techfortress War Merge  Stellaria.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Ultimate_Blinding_Weapons_-_Techfortress_War_Merge_-_Stellaria.gbot",
-            "author": "nng"
+            "author": "unknown"
         },
-        "Wheel of Love 5694.gbot": {
+        "Nng Wheel of Love 5694.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Wheel_of_Love_5694.gbot",
-            "author": "nng"
+            "author": "unknown"
         },
         "Non-mem VA SkCmd.gbot": {
             "url": "https://adventurequest.life/bots/Non_mem_VA_SkCmd.gbot",
@@ -1292,8 +1296,26 @@
             "LeeryContract Asistant.gbot": {
                 "url": "https://adventurequest.life/bots/LeeryContract_Asistant.gbot"
             },
+            "Lord of Order RED1KING FIXED by Nng.zip": {
+                "url": "https://adventurequest.life/bots/Lord_of_Order_RED1KING_FIXED_by_Nng_.zip"
+            },
             "NewPlayerStarterPack.zip": {
                 "url": "https://adventurequest.life/bots/NewPlayerStarterPack.zip"
+            },
+            "Nng Beleen Pinkest Dye Ever Other Dyes.gbot": {
+                "url": "https://adventurequest.life/bots/Nng_Beleen_Pinkest_Dye_Ever_Other_Dyes.gbot"
+            },
+            "Nng Hollowborn Rep Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Nng_Hollowborn_Rep_Bot.gbot"
+            },
+            "Nng Icy Token I II III IV.gbot": {
+                "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot"
+            },
+            "Nng Ultimate Blinding Weapons  Techfortress War Merge  Stellaria.gbot": {
+                "url": "https://adventurequest.life/bots/Nng_Ultimate_Blinding_Weapons_-_Techfortress_War_Merge_-_Stellaria.gbot"
+            },
+            "Nng Wheel of Love 5694.gbot": {
+                "url": "https://adventurequest.life/bots/Nng_Wheel_of_Love_5694.gbot"
             },
             "Non-mem VA SkCmd.gbot": {
                 "url": "https://adventurequest.life/bots/Non_mem_VA_SkCmd.gbot"
@@ -1968,26 +1990,6 @@
             },
             "Weebluurts Uni34 NoDrone NoCrag NoOBoN.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Weebluurts_Uni34__NoDrone_NoCrag_NoOBoN.gbot"
-            }
-        },
-        "nng": {
-            "Lord of Order RED1KING FIXED by.zip": {
-                "url": "https://adventurequest.life/bots/Lord_of_Order_RED1KING_FIXED_by_Nng_.zip"
-            },
-            "Beleen Pinkest Dye Ever Other Dyes.gbot": {
-                "url": "https://adventurequest.life/bots/Nng_Beleen_Pinkest_Dye_Ever_Other_Dyes.gbot"
-            },
-            "Hollowborn Rep Bot.gbot": {
-                "url": "https://adventurequest.life/bots/Nng_Hollowborn_Rep_Bot.gbot"
-            },
-            "Icy Token I II III IV.gbot": {
-                "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot"
-            },
-            "Ultimate Blinding Weapons  Techfortress War Merge  Stellaria.gbot": {
-                "url": "https://adventurequest.life/bots/Nng_Ultimate_Blinding_Weapons_-_Techfortress_War_Merge_-_Stellaria.gbot"
-            },
-            "Wheel of Love 5694.gbot": {
-                "url": "https://adventurequest.life/bots/Nng_Wheel_of_Love_5694.gbot"
             }
         },
         "minaaaaaa": {
