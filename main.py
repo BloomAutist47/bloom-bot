@@ -49,29 +49,36 @@ class BreakProgram(Exception):
 
 class BaseProgram:
     data = {}
-
+    settings = {}
+    database_updating = False
+    classes = {}
+    priveleged_roles = []
+    mode = ""
+    author_list_lowercase = []
+    class_acronyms = {}
+    guides = {}
 
     def setup(self):
         self.env_variables()
         self.block_color = 3066993 
         # self.block_color = 4521077
-        self.database_updating = False
+        
         self.url = "https://adventurequest.life/"
-        self.settings = {}
-        self.classes = {}
-        self.priveleged_roles = []
-        self.mode = ""
-        self.author_list_lowercase = []
-        self.class_acronyms = {}
-        self.guides = {}
+        # BaseProgram.settings = {}
+        # BaseProgram.classes = {}
+        # BaseProgram.priveleged_roles = []
+        # BaseProgram.mode = ""
+        # BaseProgram.author_list_lowercase = []
+        # BaseProgram.class_acronyms = {}
+        # BaseProgram.guides = {}
 
         self.github = github3.login(token=self.GIT_BLOOM_TOKEN)
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
 
         self.file_read("all")
-        if os.name != "nt":
-            self.git_read("all")
-
+        # if os.name != "nt":
+        #     self.git_read("all")
+        self.git_read("all")
     def env_variables(self):
         if os.name == "nt": # PC Mode
 
@@ -131,22 +138,22 @@ class BaseProgram:
                     link = self.url + "bots/" + value["value"]
                     row.append(link)
 
-                self.settings["latest_update"] = "web"
-                self.mode = "web"
+                BaseProgram.settings["latest_update"] = "web"
+                BaseProgram.mode = "web"
             except:
                 self.git_read("database-settings")
                 return False
 
         elif mode == "html":
-            if self.settings["latest_update"] == "web":
+            if BaseProgram.settings["latest_update"] == "web":
                 # Checks if the latest update method is web, i.e. the latest most way
                 # of updating this.
                 print("Didn't update. latest update is Web")
                 self.git_read("database-settings")
                 return False
             else:
-                self.settings["latest_update"] = "html"
-                self.mode = "html"
+                BaseProgram.settings["latest_update"] = "html"
+                BaseProgram.mode = "html"
             try:
                 soup = Soup(open("./Data/html/aqw.html", encoding="utf8"), "html.parser")
                 body = soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
@@ -167,13 +174,13 @@ class BaseProgram:
                 raw_author = (re.sub("_|-", "", raw_data[0])).lower()
             except: 
                 pass
-            if raw_author in self.settings["confirmed_authors"]:
+            if raw_author in BaseProgram.settings["confirmed_authors"]:
                 bot_author = raw_author
             else:
                 raw_author = item_name
                 try:
-                    for verified_author in self.settings["confirmed_authors"]:
-                        for alias in self.settings["confirmed_authors"][verified_author]["alias"]:
+                    for verified_author in BaseProgram.settings["confirmed_authors"]:
+                        for alias in BaseProgram.settings["confirmed_authors"][verified_author]["alias"]:
                             if alias in raw_author:
                                 bot_author = verified_author
                                 raise BreakProgram
@@ -185,7 +192,7 @@ class BaseProgram:
             # Code for refining bot name.
             if bot_author != "Unknown":
                 bot_name = item_name
-                alias = [alias for alias in self.settings["confirmed_authors"][bot_author]["alias"]]
+                alias = [alias for alias in BaseProgram.settings["confirmed_authors"][bot_author]["alias"]]
                 for author_nickname in alias:
                     author_replacement = [author_nickname.lower(), author_nickname.capitalize()]
                     for name in author_replacement:
@@ -231,9 +238,9 @@ class BaseProgram:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
                     - 'database'> BaseProgram.data
-                    - 'guides'> self.guides
-                    - 'settings'> self.settings
-                    - 'classes'> self.classes
+                    - 'guides'> BaseProgram.guides
+                    - 'settings'> BaseProgram.settings
+                    - 'classes'> BaseProgram.classes
         """
         mode = mode.split("-")
         if mode == ["all"]:
@@ -244,15 +251,15 @@ class BaseProgram:
                 BaseProgram.data = json.load(f)
         if "guides" in mode:
             with open('./Data/guides.json', 'r', encoding='utf-8') as f:
-                self.guides = json.load(f)
+                BaseProgram.guides = json.load(f)
         if "classes" in mode:   
             with open('./Data/classes.json', 'r', encoding='utf-8') as f:
-                self.classes = json.load(f)
+                BaseProgram.classes = json.load(f)
             self.sort_classes_acronym()
 
         if "settings" in mode:
             with open('./Data/settings.json', 'r', encoding='utf-8') as f:
-                self.settings = json.load(f)
+                BaseProgram.settings = json.load(f)
 
             self.sort_privileged_roles()
             self.sort_author_list_lowercase()
@@ -263,9 +270,9 @@ class BaseProgram:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
                     - 'database'> BaseProgram.data
-                    - 'guides'> self.guides
-                    - 'settings'> self.settings
-                    - 'classes'> self.classes
+                    - 'guides'> BaseProgram.guides
+                    - 'settings'> BaseProgram.settings
+                    - 'classes'> BaseProgram.classes
         """
         mode = mode.split("-")
         if mode == ["all"]:
@@ -276,14 +283,14 @@ class BaseProgram:
                 json.dump(BaseProgram.data, f, ensure_ascii=False, indent=4)
         if "guides" in mode:
             with open('./Data/guides.json', 'w', encoding='utf-8') as f:
-                json.dump(self.guides, f, ensure_ascii=False, indent=4)
+                json.dump(BaseProgram.guides, f, ensure_ascii=False, indent=4)
         if "classes" in mode:
             with open('./Data/classes.json', 'w', encoding='utf-8') as f:
-                json.dump(self.classes, f, ensure_ascii=False, indent=4)
+                json.dump(BaseProgram.classes, f, ensure_ascii=False, indent=4)
             self.sort_classes_acronym()
         if "settings" in mode:
             with open('./Data/settings.json', 'w', encoding='utf-8') as f:
-                json.dump(self.settings, f, ensure_ascii=False, indent=4)
+                json.dump(BaseProgram.settings, f, ensure_ascii=False, indent=4)
 
 
     def git_save(self, mode:str):
@@ -292,9 +299,9 @@ class BaseProgram:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
                     - 'database'> BaseProgram.data
-                    - 'guides'> self.guides
-                    - 'settings'> self.settings
-                    - 'classes'> self.classes
+                    - 'guides'> BaseProgram.guides
+                    - 'settings'> BaseProgram.settings
+                    - 'classes'> BaseProgram.classes
         """
         mode = mode.split("-")
         if mode == ["all"]:
@@ -307,18 +314,18 @@ class BaseProgram:
             print("Git-database called")
 
         if "guides" in mode:
-            git_guides = json.dumps(self.guides, indent=4).encode('utf-8')
+            git_guides = json.dumps(BaseProgram.guides, indent=4).encode('utf-8')
             contents_object = self.repository.file_contents("./Data/guides.json")
             contents_object.update("update", git_guides)
 
         if "settings" in mode:
-            git_settings = json.dumps(self.settings, indent=4).encode('utf-8')
+            git_settings = json.dumps(BaseProgram.settings, indent=4).encode('utf-8')
             contents_object = self.repository.file_contents("./Data/settings.json")
             contents_object.update("update", git_settings)
             print("Git-Settings called")
 
         if "classes" in mode:
-            git_classes = json.dumps(self.classes, indent=4).encode('utf-8')
+            git_classes = json.dumps(BaseProgram.classes, indent=4).encode('utf-8')
             contents_object = self.repository.file_contents("./Data/classes.json")
             contents_object.update("update", git_classes)
 
@@ -331,9 +338,9 @@ class BaseProgram:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
                     - 'database'> BaseProgram.data
-                    - 'guides'> self.guides
-                    - 'settings'> self.settings
-                    - 'classes'> self.classes
+                    - 'guides'> BaseProgram.guides
+                    - 'settings'> BaseProgram.settings
+                    - 'classes'> BaseProgram.classes
         """
         mode = mode.split("-")
         if mode == ["all"]:
@@ -345,16 +352,16 @@ class BaseProgram:
 
         if "guides" in mode:
             git_guides = self.repository.file_contents("./Data/guides.json").decoded
-            self.guides = json.loads(git_guides.decode('utf-8'))
+            BaseProgram.guides = json.loads(git_guides.decode('utf-8'))
 
         if "classes" in mode:
             git_classes = self.repository.file_contents("./Data/classes.json").decoded
-            self.classes = json.loads(git_classes.decode('utf-8'))
+            BaseProgram.classes = json.loads(git_classes.decode('utf-8'))
             self.sort_classes_acronym()
 
         if "settings" in mode:
             git_settings = self.repository.file_contents("./Data/settings.json").decoded
-            self.settings = json.loads(git_settings.decode('utf-8'))
+            BaseProgram.settings = json.loads(git_settings.decode('utf-8'))
 
             self.sort_privileged_roles()
             self.sort_author_list_lowercase()
@@ -370,13 +377,13 @@ class BaseProgram:
                 Method created for much more efficient class acronym search.
         """
 
-        for class_name in self.classes:
-            if "acronym" in self.classes[class_name]:
-                list_of_acronyms = self.classes[class_name]["acronym"].split(",")
+        for class_name in BaseProgram.classes:
+            if "acronym" in BaseProgram.classes[class_name]:
+                list_of_acronyms = BaseProgram.classes[class_name]["acronym"].split(",")
                 acronyms = [acr.replace(" ", "").lower() for acr in list_of_acronyms if acr != "(None)"]
                 if acronyms != ['']:
                     for acr in acronyms:
-                        self.class_acronyms[acr] = class_name
+                        BaseProgram.class_acronyms[acr] = class_name
         return
 
     def sort_author_list_lowercase(self):
@@ -384,20 +391,20 @@ class BaseProgram:
                 and assigns each alias as a key and their author name as value.
                 Method created for much more efficient class author alias search.
         """
-        self.author_list_lowercase = []
-        for author in self.settings["confirmed_authors"]:
-            self.author_list_lowercase.append(author.lower())
-            for alias in self.settings["confirmed_authors"][author]["alias"]:
-                self.author_list_lowercase.append(alias.lower())
+        BaseProgram.author_list_lowercase = []
+        for author in BaseProgram.settings["confirmed_authors"]:
+            BaseProgram.author_list_lowercase.append(author.lower())
+            for alias in BaseProgram.settings["confirmed_authors"][author]["alias"]:
+                BaseProgram.author_list_lowercase.append(alias.lower())
         return
 
     def sort_privileged_roles(self):
-        """ Description: Creates a list of privileged roles from self.settings
+        """ Description: Creates a list of privileged roles from BaseProgram.settings
         """
-        self.priveleged_roles = []
-        for role in self.settings["EvaluatorSettings"]["role_privilege"]:
-            if self.settings["EvaluatorSettings"]["role_privilege"][role] == 1:
-                self.priveleged_roles.append(role)
+        BaseProgram.priveleged_roles = []
+        for role in BaseProgram.settings["EvaluatorSettings"]["role_privilege"]:
+            if BaseProgram.settings["EvaluatorSettings"]["role_privilege"][role] == 1:
+                BaseProgram.priveleged_roles.append(role)
         return
 
 
@@ -433,8 +440,8 @@ class BaseProgram:
             return (True, list_of_bots)
         else:
             list_of_possible_authors = []
-            for verified_author in self.settings["confirmed_authors"]:
-                alias = [alias.lower() for alias in self.settings["confirmed_authors"][verified_author]["alias"]]
+            for verified_author in BaseProgram.settings["confirmed_authors"]:
+                alias = [alias.lower() for alias in BaseProgram.settings["confirmed_authors"][verified_author]["alias"]]
                 for author_nickname in alias:
                     if author in author_nickname:
                         list_of_possible_authors.append(alias[0])
@@ -462,13 +469,13 @@ class BaseProgram:
         return list_of_possible_bots
 
     def find_author_aliases(self, author):
-        return [alias.lower() for alias in self.settings["confirmed_authors"][author]["alias"]]
+        return [alias.lower() for alias in BaseProgram.settings["confirmed_authors"][author]["alias"]]
 
 
     def find_author_id(self, bot_author):
         test_id = re.sub("<|>|!|@","", bot_author)
-        for author in self.settings["confirmed_authors"]:
-            if test_id == self.settings["confirmed_authors"][author]["id"]:
+        for author in BaseProgram.settings["confirmed_authors"]:
+            if test_id == BaseProgram.settings["confirmed_authors"][author]["id"]:
                 return author.lower()
         return None
 
@@ -476,43 +483,43 @@ class BaseProgram:
         possible_classes = []
 
         if len(class_name) <= 4:
-            if class_name.lower() in self.class_acronyms:
-                class_name_ = self.class_acronyms[class_name.lower()]
+            if class_name.lower() in BaseProgram.class_acronyms:
+                class_name_ = BaseProgram.class_acronyms[class_name.lower()]
                 return [
-                    ("Authentic", ""), (class_name_, self.classes[class_name_]["discord_url"], self.classes[class_name_]["wiki"])
+                    ("Authentic", ""), (class_name_, BaseProgram.classes[class_name_]["discord_url"], BaseProgram.classes[class_name_]["wiki"])
                     ]
 
 
-        for class_name_ in self.classes:
+        for class_name_ in BaseProgram.classes:
             # Search if exact name
             if class_name == class_name_.lower():
-                if "discord_url" in self.classes[class_name_]:
+                if "discord_url" in BaseProgram.classes[class_name_]:
                     return [
-                        ("Authentic", ""), (class_name_, self.classes[class_name_]["discord_url"], self.classes[class_name_]["wiki"])
+                        ("Authentic", ""), (class_name_, BaseProgram.classes[class_name_]["discord_url"], BaseProgram.classes[class_name_]["wiki"])
                         ]
                 else:
-                    return [("Basic", ""), (class_name, self.classes[class_name_])]
+                    return [("Basic", ""), (class_name, BaseProgram.classes[class_name_])]
 
-            duplicates = [dn.lower() for dn in self.classes[class_name_]["duplicates"]]
+            duplicates = [dn.lower() for dn in BaseProgram.classes[class_name_]["duplicates"]]
 
             # Search duplicate classes
             if class_name in duplicates:
                 ind = duplicates.index(class_name)
-                if "discord_url" in self.classes[class_name_]:
+                if "discord_url" in BaseProgram.classes[class_name_]:
                     return [
-                        ("Duplicate", self.classes[class_name_]["duplicates"][ind]) ,
-                        (class_name_, self.classes[class_name_]["discord_url"], self.classes[class_name_]["wiki"])
+                        ("Duplicate", BaseProgram.classes[class_name_]["duplicates"][ind]) ,
+                        (class_name_, BaseProgram.classes[class_name_]["discord_url"], BaseProgram.classes[class_name_]["wiki"])
                         ]
                 else:
-                    return [("Basic", ""), (self.classes[class_name_]["duplicates"][ind], self.classes[class_name_])]
+                    return [("Basic", ""), (BaseProgram.classes[class_name_]["duplicates"][ind], BaseProgram.classes[class_name_])]
 
-        if class_name.lower() in self.class_acronyms:
-            class_name_ = self.class_acronyms[class_name.lower()]
+        if class_name.lower() in BaseProgram.class_acronyms:
+            class_name_ = BaseProgram.class_acronyms[class_name.lower()]
             return [
-                ("Authentic", ""), (class_name_, self.classes[class_name_]["discord_url"], self.classes[class_name_]["wiki"])
+                ("Authentic", ""), (class_name_, BaseProgram.classes[class_name_]["discord_url"], BaseProgram.classes[class_name_]["wiki"])
                 ]
 
-        for class_name_ in self.classes:
+        for class_name_ in BaseProgram.classes:
             #Search keyword likeness
             class_words = class_name.replace("  ", " ").split(" ")
             for words in class_words:
@@ -523,7 +530,7 @@ class BaseProgram:
                 for duplicate in duplicates:
                     if words in duplicate:
                         ind = duplicates.index(duplicate)
-                        possible_classes.append(self.classes[class_name_]["duplicates"][ind])
+                        possible_classes.append(BaseProgram.classes[class_name_]["duplicates"][ind])
         if possible_classes:
             return [(False, ""), (possible_classes)]
         else:
@@ -545,7 +552,7 @@ class BaseTools(BaseProgram):
 
         test = value.split(" ")
         for word in test:
-            for banned_words in self.settings["banned_words"]:
+            for banned_words in BaseProgram.settings["banned_words"]:
                 if banned_words in word.lower():
                     await ctx.send(embed=self.embed_single("Warning", f"The term `{banned_words}` is nerfed.\nIt does not give productive results.")) 
                     return False
@@ -579,7 +586,7 @@ class BaseTools(BaseProgram):
                     - 'guild_privilege'> if server can use full functionalities.
                     - 'role_privilege'> if the user is allowed to use privileged commands.
                     - 'user_permissions'> if user has permissions. niglist
-                    - 'update'> checks if self.database_updating is set to True.
+                    - 'update'> checks if BaseProgram.database_updating is set to True.
             Return: Bool.
             Example:
                 allow_ = await self.allow_evaluator(ctx, mode="all-update", command_name="git")
@@ -591,7 +598,7 @@ class BaseTools(BaseProgram):
             mode.extend(["guild_privilege", "user_permissions", "role_privilege"])
 
         if "update" in mode:
-            if self.database_updating:
+            if BaseProgram.database_updating:
                 await ctx.send(r"\> Bloom Bot update in progress.")
                 return False
 
@@ -621,7 +628,7 @@ class BaseTools(BaseProgram):
             guild_id = ctx.guild.id
         except:
             return False
-        if int(guild_id) in self.settings["EvaluatorSettings"]["guild_privilege"]:
+        if int(guild_id) in BaseProgram.settings["EvaluatorSettings"]["guild_privilege"]:
             return True
         else:
             return False
@@ -635,7 +642,7 @@ class BaseTools(BaseProgram):
         try:
             roles = [role.name for role in ctx.author.roles]
             for role in roles:
-                if role in self.priveleged_roles:
+                if role in BaseProgram.priveleged_roles:
                     return True
                     break
         except:
@@ -663,10 +670,10 @@ class BaseTools(BaseProgram):
                 [ctx] - context
         """
         guild_id = str(ctx.guild.id)
-        if guild_id in self.settings["server_settings"]:
-            if self.settings["server_settings"][guild_id]["server_privilage"] == "Homie":
+        if guild_id in BaseProgram.settings["server_settings"]:
+            if BaseProgram.settings["server_settings"][guild_id]["server_privilage"] == "Homie":
                 return True
-        if guild_id not in self.settings["server_settings"]:
+        if guild_id not in BaseProgram.settings["server_settings"]:
             return False
 
     async def embed_image(self, ctx, discord_url:str, wiki_url:str, class_name:str, duplicate_name:str=""):
@@ -964,9 +971,9 @@ class BaseCog(commands.Cog, BaseTools):
                 [mode]  accepts: all, database, guides, settings, classes
                     - 'all'> updates all of the variables
                     - 'database'> BaseProgram.data
-                    - 'guides'> self.guides
-                    - 'settings'> self.settings
-                    - 'classes'> self.classes
+                    - 'guides'> BaseProgram.guides
+                    - 'settings'> BaseProgram.settings
+                    - 'classes'> BaseProgram.classes
                 [value] - if certain updates require their own modes.
             Return: None
         """
@@ -979,7 +986,7 @@ class BaseCog(commands.Cog, BaseTools):
             await ctx.send("\> Please enter valid update value.")
 
         if mode == "database":
-            self.database_updating = True
+            BaseProgram.database_updating = True
             await ctx.send(r"\> Updating Bloom Bot")
             if value == "web" or value == "":
                 result = self.database_update("web")
@@ -987,48 +994,48 @@ class BaseCog(commands.Cog, BaseTools):
                 result = self.database_update("html")
             if result:
                 await ctx.send(r"\> Bloom Bot updated!")
-                await ctx.send(f"\> Update method: `{self.mode}`")
+                await ctx.send(f"\> Update method: `{BaseProgram.mode}`")
             else:
-                if self.settings["latest_update"] == "web":
+                if BaseProgram.settings["latest_update"] == "web":
                     await ctx.send("\> Nope. Latest method is web. Not gonna use locally saved .html\n"\
                                   "`Error 14: Already up to date`")
                 else:
                     await ctx.send("\> Something's wrong. Ping the Autistic Chungus.\n"\
                                   "`Error 69: Web method.`")
-            self.database_updating = False
+            BaseProgram.database_updating = False
             return
 
         if mode == "settings":
-            self.database_updating = True
+            BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `setting.json`")
             self.git_read("settings-update")
             await ctx.send(r"\>Bloom Bot `setting.json` updated!")
-            self.database_updating = False
+            BaseProgram.database_updating = False
             return
 
         if mode == "classes":
-            self.database_updating = True
+            BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `classes.json`")
             self.git_read("classes-update")
             await ctx.send(r"\>Bloom Bot `classes.json` updated!")
-            self.database_updating = False
+            BaseProgram.database_updating = False
             return
 
         if mode == "guide":
-            self.database_updating = True
+            BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `guides.json`")
             self.git_read("guides-update")
             await ctx.send(r"\>Bloom Bot `guides.json` updated!")
-            self.database_updating = False
+            BaseProgram.database_updating = False
             return
 
 
         if mode == "all":
-            self.database_updating = True
+            BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `all .jsons`")
             self.git_read("all-update")
             await ctx.send(r"\>Bloom Bot `all .jsons` updated!")
-            self.database_updating = False
+            BaseProgram.database_updating = False
             return
 
 # Illegal Cog lol
@@ -1054,25 +1061,25 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
             await ctx.send(f"\> Please input valid author name to verify.")
             return
 
-        if author_name.lower() in self.author_list_lowercase:
+        if author_name.lower() in BaseProgram.author_list_lowercase:
             await ctx.send(f"\> Author `{author_name}` already verified.")
             return
 
-        self.database_updating = True
+        BaseProgram.database_updating = True
         author_name = author_name.capitalize()
-        self.settings["confirmed_authors"][author_name] = {}
+        BaseProgram.settings["confirmed_authors"][author_name] = {}
         try:
-            self.settings["confirmed_authors"][author_name]["alias"].append(author_name)
+            BaseProgram.settings["confirmed_authors"][author_name]["alias"].append(author_name)
         except:
-            self.settings["confirmed_authors"][author_name]["alias"] = []
-            self.settings["confirmed_authors"][author_name]["alias"].append(author_name)
+            BaseProgram.settings["confirmed_authors"][author_name]["alias"] = []
+            BaseProgram.settings["confirmed_authors"][author_name]["alias"].append(author_name)
 
         await ctx.send(r"\> Saving to settings.json")
         self.file_save("settings")
         self.git_save("settings")
         await ctx.send(r"\> Author Successfully added!")
         await ctx.send(r"\> Please update the database with `;update database <type>`!")
-        self.database_updating = False
+        BaseProgram.database_updating = False
         return
                 
 
@@ -1093,23 +1100,23 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
             return
 
         author_removed = False
-        self.database_updating = True
+        BaseProgram.database_updating = True
         author_name = author_name.lower()
 
-        for author in self.settings["confirmed_authors"]:
+        for author in BaseProgram.settings["confirmed_authors"]:
             if author_name == author.lower() and not author_removed:
-                self.settings["confirmed_authors"].pop(author, None)
+                BaseProgram.settings["confirmed_authors"].pop(author, None)
                 author_removed = True
                 break
             aliases = self.find_author_aliases(author)
             if author_name in aliases:
-                self.settings["confirmed_authors"].pop(author, None)
+                BaseProgram.settings["confirmed_authors"].pop(author, None)
                 author_removed = True
                 break
 
         if not author_removed:
             await ctx.send(f"\> No author of name `{author_name}` found in the confirmed list.")
-            self.database_updating = False
+            BaseProgram.database_updating = False
             return
 
         await ctx.send(r"\> Saving to settings.json")
@@ -1117,7 +1124,7 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
         self.git_save("settings")
         await ctx.send(r"\> Author Successfully removed!")
         await ctx.send(r"\> Please update the database with `;update database <type>`!")
-        self.database_updating = False
+        BaseProgram.database_updating = False
         return
 
     @commands.command()
@@ -1181,8 +1188,8 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
 
         # All bot_author var is empty. Sends list of all authors.
         if bot_author == "":
-            author_count = m.ceil((len(self.settings["confirmed_authors"].keys())/3))
-            bot_list = sorted([author.lower() for author in self.settings["confirmed_authors"]])
+            author_count = m.ceil((len(BaseProgram.settings["confirmed_authors"].keys())/3))
+            bot_list = sorted([author.lower() for author in BaseProgram.settings["confirmed_authors"]])
             desc ='List of all verified bot authors.'
             embedVar = self.embed_multi_text("Bot Author Result", "Author", desc, bot_list, author_count, False)
             note_desc = "Some bots have unknown authors or were still not \nmanually listed in the "\
@@ -1237,7 +1244,7 @@ class IllegalBoatSearchCog(commands.Cog, BaseTools):
             # No exact author found but gives suggestions.
             if bot_list and not found_author:
                 desc = f"Nothing came up with search key `{bot_author}`.\nMaybe one of these authors?."
-                author_count = round((len(self.settings["confirmed_authors"].keys())/3))
+                author_count = round((len(BaseProgram.settings["confirmed_authors"].keys())/3))
                 embedVar = self.embed_multi_text("Bot Author Result", "Author", desc, bot_list, author_count, False)
                 await ctx.send(embed=embedVar)
             return
@@ -1257,7 +1264,7 @@ class ClassSearchCog(BaseTools, commands.Cog):
 
         embedVar = discord.Embed(title="Legends", color=self.block_color, 
             description=f"Please read the following Carefully.")
-        embedVar.set_image(url=self.settings["ClassSearchCogSettings"]["legends_link"])
+        embedVar.set_image(url=BaseProgram.settings["ClassSearchCogSettings"]["legends_link"])
         embedVar.set_footer(text=credit_text2)
         await ctx.send(embed=embedVar)
         return
@@ -1338,17 +1345,17 @@ class GuideCog(commands.Cog, BaseTools):
             embedVar = discord.Embed(title="🔹 List of Guide Commands 🔹", color=self.block_color)
             desc = "To summon this list, use `;g`. Please read the following carefully.\n\n"
             guild_id = str(ctx.guild.id)
-            if guild_id in self.settings["server_settings"]:
-                if self.settings["server_settings"][guild_id]["server_privilage"] == "Homie":
-                    for guide_name in self.guides:
-                        guide_data = self.guides[guide_name]
+            if guild_id in BaseProgram.settings["server_settings"]:
+                if BaseProgram.settings["server_settings"][guild_id]["server_privilage"] == "Homie":
+                    for guide_name in BaseProgram.guides:
+                        guide_data = BaseProgram.guides[guide_name]
                         if "title" in guide_data:
                             desc += "`;g {}` - {}.\n".format(guide_name, guide_data["title"])
-            if guild_id not in self.settings["server_settings"]:
+            if guild_id not in BaseProgram.settings["server_settings"]:
 
-                for guide_name in self.guides:
-                    if guide_name not in self.settings["server_settings"]["Basic"]["banned_guides"]:
-                        guide_data = self.guides[guide_name]
+                for guide_name in BaseProgram.guides:
+                    if guide_name not in BaseProgram.settings["server_settings"]["Basic"]["banned_guides"]:
+                        guide_data = BaseProgram.guides[guide_name]
                         if "title" in guide_data:
                             desc += "`;g {}` - {}.\n".format(guide_name, guide_data["title"])
             embedVar.description = desc
@@ -1359,15 +1366,15 @@ class GuideCog(commands.Cog, BaseTools):
         g_name = guide.lower()
         guide_mode = await self.check_guild_guide(ctx)
         if not guide_mode:
-            if g_name in self.settings["server_settings"]["Basic"]["banned_guides"]:
+            if g_name in BaseProgram.settings["server_settings"]["Basic"]["banned_guides"]:
                 return
 
-        if g_name in self.guides:
-            if "common_key" in self.guides[g_name]:
-                key = self.guides[g_name]["common_key"]
-                guide_data = self.guides[key]
+        if g_name in BaseProgram.guides:
+            if "common_key" in BaseProgram.guides[g_name]:
+                key = BaseProgram.guides[g_name]["common_key"]
+                guide_data = BaseProgram.guides[key]
             else:
-                guide_data = self.guides[g_name]
+                guide_data = BaseProgram.guides[g_name]
 
 
             if guide_data["type"] == "guide":
@@ -1789,7 +1796,7 @@ class EventCalendarCog(commands.Cog, BaseTools):
         self.current_day = self.est_dt.strftime("%d")
         self.current_month = self.est_dt.strftime("%B")
 
-        self.events = self.settings["EventCalendarCogSettings"]["events"]
+        self.events = BaseProgram.settings["EventCalendarCogSettings"]["events"]
         self.check_current_month()
 
         self.printer.start()
@@ -1803,8 +1810,8 @@ class EventCalendarCog(commands.Cog, BaseTools):
 
     def check_current_month(self):
         self.current_month = self.est_dt.strftime("%B")
-        if self.current_month != self.settings["EventCalendarCogSettings"]["latest_update"]:
-            self.settings["EventCalendarCogSettings"]["latest_update"] = self.current_month
+        if self.current_month != BaseProgram.settings["EventCalendarCogSettings"]["latest_update"]:
+            BaseProgram.settings["EventCalendarCogSettings"]["latest_update"] = self.current_month
             self.check_calendar()
             self.file_save("settings")
             self.git_save("settings")
@@ -1830,7 +1837,7 @@ class EventCalendarCog(commands.Cog, BaseTools):
             self.events[day] = {}
             self.events[day]["month"] = date[0]
             self.events[day]["info"] = info
-        self.settings["EventCalendarCogSettings"]["events"] = self.events
+        BaseProgram.settings["EventCalendarCogSettings"]["events"] = self.events
         self.file_save("settings")
         self.git_save("settings")
         return
@@ -1849,7 +1856,7 @@ class EventCalendarCog(commands.Cog, BaseTools):
     async def printer(self):
         self.current_day = self.est_dt.strftime("%d")
         print("Checked", self.current_day)
-        if self.current_day != self.settings["EventCalendarCogSettings"]["current_day"]:
+        if self.current_day != BaseProgram.settings["EventCalendarCogSettings"]["current_day"]:
             for guild in self.bot.guilds:
                 print(f"Guild: {guild}\tID: {guild.id}")
                 if os.name == "nt":
@@ -1857,16 +1864,16 @@ class EventCalendarCog(commands.Cog, BaseTools):
                     channel = await self.bot.fetch_channel(799238286539227136)
                 else:
                     guild_id = str(guild.id)
-                    if guild_id not in self.settings["server_settings"]:
+                    if guild_id not in BaseProgram.settings["server_settings"]:
                         continue
                     else:
                         try:
-                            guild_set = self.settings["server_settings"][guild_id]
+                            guild_set = BaseProgram.settings["server_settings"][guild_id]
                             channel = await self.bot.fetch_channel(guild_set["event_channel_id"])
                         except:
                             continue 
 
-                self.settings["EventCalendarCogSettings"]["current_day"] = self.current_day
+                BaseProgram.settings["EventCalendarCogSettings"]["current_day"] = self.current_day
                 self.file_save("settings")
                 self.git_save("settings")
                 result = await self.check_event_today()
