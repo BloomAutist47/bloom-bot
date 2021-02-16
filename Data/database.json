@@ -440,6 +440,10 @@
             "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot",
             "author": "bloom"
         },
+        "FreshSoul Uni36.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_FreshSoul_Uni36.gbot",
+            "author": "bloom"
+        },
         "FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_FuchsiaDye_MagentaDye_MEMBER_ONLY_DyeingForAChallenge.gbot",
             "author": "bloom"
@@ -619,14 +623,6 @@
         "Fortune Ticket Buyer.gbot": {
             "url": "https://adventurequest.life/bots/Fortune_Ticket_Buyer.gbot",
             "author": "unknown"
-        },
-        "FreshSoul 3.8PP.gbot": {
-            "url": "https://adventurequest.life/bots/FreshSoul_Ninjatov_3.8PP.gbot",
-            "author": "ninjatov"
-        },
-        "Fresh Soul SC.gbot": {
-            "url": "https://adventurequest.life/bots/Fresh_Soul_SC_Ninjatov.gbot",
-            "author": "ninjatov"
         },
         "ArchPaladin Class Non-Member.gbot": {
             "url": "https://adventurequest.life/bots/Ganku_-_ArchPaladin_Class_Non-Member.gbot",
@@ -824,10 +820,6 @@
             "url": "https://adventurequest.life/bots/King_FirstClassEntertainment_LegionTokens.gbot",
             "author": "archon"
         },
-        "FreshSoul.gbot": {
-            "url": "https://adventurequest.life/bots/King_FreshSoul.gbot",
-            "author": "archon"
-        },
         "GemTotem.gbot": {
             "url": "https://adventurequest.life/bots/King_GemTotem.gbot",
             "author": "archon"
@@ -882,6 +874,10 @@
         },
         "Icy Token I II III IV.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot",
+            "author": "nng"
+        },
+        "NNg Legion Exercises 1 2 3 4.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Legion_Exercises_1_2_3_4.gbot",
             "author": "nng"
         },
         "Stolen Heart all drop and Pinkest Dye Ever.gbot": {
@@ -1387,9 +1383,6 @@
             "FirstClassEntertainment LegionTokens.gbot": {
                 "url": "https://adventurequest.life/bots/King_FirstClassEntertainment_LegionTokens.gbot"
             },
-            "FreshSoul.gbot": {
-                "url": "https://adventurequest.life/bots/King_FreshSoul.gbot"
-            },
             "GemTotem.gbot": {
                 "url": "https://adventurequest.life/bots/King_GemTotem.gbot"
             },
@@ -1697,12 +1690,6 @@
             "EmblemNulgath 3.8PP.gbot": {
                 "url": "https://adventurequest.life/bots/EmblemNulgath_Ninjatov_3.8PP.gbot"
             },
-            "FreshSoul 3.8PP.gbot": {
-                "url": "https://adventurequest.life/bots/FreshSoul_Ninjatov_3.8PP.gbot"
-            },
-            "Fresh Soul SC.gbot": {
-                "url": "https://adventurequest.life/bots/Fresh_Soul_SC_Ninjatov.gbot"
-            },
             "JuggernautItems 3.8PP.gbot": {
                 "url": "https://adventurequest.life/bots/JuggernautItems_Ninjatov_3.8PP.gbot"
             },
@@ -1792,6 +1779,9 @@
             },
             "EtherStorm Rep Balmblossom.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
+            },
+            "FreshSoul Uni36.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_FreshSoul_Uni36.gbot"
             },
             "FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_FuchsiaDye_MagentaDye_MEMBER_ONLY_DyeingForAChallenge.gbot"
@@ -1997,6 +1987,9 @@
             },
             "Icy Token I II III IV.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot"
+            },
+            "NNg Legion Exercises 1 2 3 4.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Legion_Exercises_1_2_3_4.gbot"
             },
             "Stolen Heart all drop and Pinkest Dye Ever.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Stolen_Heart_all_drop_and_Pinkest_Dye_Ever.gbot"
