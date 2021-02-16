@@ -57,6 +57,8 @@ class BaseProgram:
     author_list_lowercase = []
     class_acronyms = {}
     guides = {}
+    loop = asyncio.get_event_loop()
+    nest_asyncio.apply(loop)
 
     def setup(self):
         self.env_variables()
@@ -1483,12 +1485,12 @@ class CharacterCog(commands.Cog, BaseTools):
         self.weapon_type = ["Axe", "Bow", "Dagger", "Gun", "Mace", "Polearm", "Staff", "Sword", "Wand"]
         self.house_items = ["Wall Item", "Floor Item"]
         self.miscs = ["Quest Item", "Item"]
-        self.loop = asyncio.get_event_loop()
+        
         self.getting_the_good_shit = False
-        nest_asyncio.apply(self.loop)
+        
 
     async def loop_get_content(self, url):
-        return self.loop.run_until_complete(self.get_site_content(url))
+        return BaseProgram.loop.run_until_complete(self.get_site_content(url))
 
     async def get_site_content(self, SELECTED_URL):
         client = aiosonic.HTTPClient()
@@ -1838,8 +1840,7 @@ class EventCalendarCog(commands.Cog, BaseTools):
 
     def check_calendar(self):
         url = "https://www.aq.com/aq.com/lore/calendar"
-        loop = asyncio.get_event_loop()
-        sites_soup = loop.run_until_complete(self.get_site_content(url))
+        sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(url))
         body = sites_soup.find("section", {"id":"main-content"}).find("div", class_="container").find("div", class_="row").find_all("div", class_="col-xs-12 col-sm-12 col-md-12 col-lg-12")[1]
         list_of_events_raw = body.find_all("p")[2:]
 
@@ -2015,9 +2016,9 @@ else:              # Heroku
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-# Bot.add_cog(IllegalBoatSearchCog(Bot))
-# Bot.add_cog(ClassSearchCog(Bot))
+Bot.add_cog(IllegalBoatSearchCog(Bot))
+Bot.add_cog(ClassSearchCog(Bot))
 Bot.add_cog(GuideCog(Bot)) 
-# Bot.add_cog(CharacterCog(Bot))
+Bot.add_cog(CharacterCog(Bot))
 # Bot.add_cog(TwitterStreamCog(Bot))
 Bot.run(DISCORD_TOKEN)
