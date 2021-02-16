@@ -1368,7 +1368,7 @@ class GuideCog(commands.Cog, BaseTools):
                         if "type" in guide_data:
                             if guide_data["type"] == "header":
                                 if "tag" not in guide_data:
-                                    desc += "\n\u200b"
+                                    desc += "\u200b"
                                 embedVar.add_field(name=f"{guide_name}", inline=False, value=desc)
                                 desc = ""
                                 continue
