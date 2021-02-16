@@ -19,6 +19,7 @@ import math as m
 import glob
 import io
 import tweepy
+import urllib.parse
 
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
@@ -1735,23 +1736,28 @@ class WikiCog(commands.Cog, BaseTools):
 
     @commands.command()
     async def w(self, ctx, *, item=""):
-        straight = "http://aqwwiki.wikidot.com/" + item.replace(" ", "-")
-
+        straight = ("http://aqwwiki.wikidot.com/" + item.replace(" ", "-").replace("'", "-").replace(")", "-").replace("(", "-")).lower()
+        # items = urllib.parse.quote_minus(item)
+        
         sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(straight))
-        page_content = sites_soup.find("div", {"id":"page-content"})
-        page_check = page_content.find("p").text.strip()
-        if page_check == "This page doesn't exist yet!":
+        try:
+            page_content = sites_soup.find("div", {"id":"page-content"})
+            page_check = page_content.find("p").text.strip()
+            if page_check == "This page doesn't exist yet!":
+                result = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
+                image = None
+            elif "usually refers to:" in page_check:
+                result = straight
+                first_refer = "http://aqwwiki.wikidot.com/" + page_content.find_all("a")[0]["href"]
+                fr_sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(first_refer))
+                fr_page_content = fr_sites_soup.find("div", {"id":"page-content"})
+                image = self.get_image_wiki(fr_page_content)
+            else:
+                result = straight
+                image = self.get_image_wiki(page_content)
+        except:
             result = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
             image = None
-        elif "usually refers to:" in page_check:
-            result = straight
-            first_refer = "http://aqwwiki.wikidot.com/" + page_content.find_all("a")[0]["href"]
-            fr_sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(first_refer))
-            fr_page_content = fr_sites_soup.find("div", {"id":"page-content"})
-            image = self.get_image_wiki(fr_page_content)
-        else:
-            result = straight
-            image = self.get_image_wiki(page_content)
 
         embedVar = self.embed_single("Wiki Search", result)
         if image:
@@ -2030,10 +2036,10 @@ else:              # Heroku
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-Bot.add_cog(IllegalBoatSearchCog(Bot))
-Bot.add_cog(ClassSearchCog(Bot))
-Bot.add_cog(GuideCog(Bot)) 
-Bot.add_cog(CharacterCog(Bot))
+# Bot.add_cog(IllegalBoatSearchCog(Bot))
+# Bot.add_cog(ClassSearchCog(Bot))
+# Bot.add_cog(GuideCog(Bot)) 
+# Bot.add_cog(CharacterCog(Bot))
 Bot.add_cog(WikiCog(Bot))
 
 # Bot.add_cog(TwitterStreamCog(Bot))
