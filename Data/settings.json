@@ -91,6 +91,12 @@
             "server_noice_role": 807586780324954123,
             "event_channel_id": 806077827568762910
         },
+        "766627412179550228": {
+            "server_name": "Buildyard",
+            "server_privilage": "Homie",
+            "server_noice_role": 807586780324954123,
+            "event_channel_id": 799959576392368128
+        },
         "761956630606250005": {
             "server_name": "BloomFactory",
             "server_privilage": "Homie",
