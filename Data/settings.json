@@ -100,7 +100,13 @@
         "Basic": {
             "banned_guides": [
                 "darkmode",
-                "gg"
+                "gg",
+                "newplayer",
+                "spiderfix",
+                "sf",
+                "grimfix",
+                "grimfix/spiderfix/sf"
+
             ]
         }
     },
