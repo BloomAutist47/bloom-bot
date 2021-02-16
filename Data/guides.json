@@ -82,6 +82,27 @@
             "*Make Sure to always farm in public rooms for maximum monster kill efficiency."
         ]
     },
+    "ac":{
+        "type":"text",
+        "title":"Guide on using 2k ACs for gameplay purposes",
+        "description":"__**Don't know how to level up? Read this:**__",
+        "content":[
+        	"1) Rank up Doomwood and Embersea rep to rank 10 -> Buy Pyromancer for 2k ACs -> Merge Blaze Binder ->Sell Pyromancer within 24 hours for 1.8k ACs back. This gets Blaze Binder, a really good farming class.\n",
+        	"2) Prefarm 200 combat trophies -> Get [Undead Warrior](http://aqwwiki.wikidot.com/undead-warrior-armor) -> Do all of Dage's Quests until [Fail to the King](http://aqwwiki.wikidot.com/dage-the-evil-s-quests#1) -> Sell undead warrior within 24 hours for 1.08k ACs back. This gives you access to the Legion, which is a basic prerequisite for Legion Revenant and alot of other stuff.\n",
+        	"3) Use the remaining 1680 ACs however you want, buying [LightMage](http://aqwwiki.wikidot.com/lightmage) to later use to get [LightCaster](http://aqwwiki.wikidot.com/lightcaster-class) is a popular choice. LightCaster is a really, really good class overall, it should cover up your soloing until you get VHL or LR. To check how good it is, use `;c LC` on the commands channel.\n"
+        ]
+    },
+    "newplayer":{
+        "type":"text",
+        "title":"New Player Guide",
+        "description":"__**Download Grim Boats from our Portal Site**__. [**Click Here**](https://adventurequest.life/)",
+        "content":[
+            "**For Levels**: Use the __Arts_IceStormArena_Agro_Boat__ on the portal. Just equip healer and go to a populated Icestormarena and chill. It AFK's in a blank cell while provoking Frost Spirits with packets, so if may look like it doesn't work, but you can relog to check your progress.\n",
+            "**For a Farming Class**: Use the __Arts_Mountdoomskull_Boat__ to complete the 13 Lords of Chaos Saga asap, then run a Chaos Rep boat till you have Rank 10 Chaos Rep and buy yourself the Chaos Slayer Class (any version, all are the same).\n",
+            "**For a Soloing Class**: Use __Weeb_Lycan_Rep__ or __Arts_LycanRep_Boat__ to get to Rank 10 Lycan and buy yourself the Lycan Class. Requires manual storyline completion until /lycan."
+        ],
+        "thumbnail":"https://images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%3Fsize%3D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
+    },
     "starterclass":{
         "type":"text_dict",
         "title":"Starter Class Guide",
@@ -108,17 +129,6 @@
                 "-> Non members with ACs is also a thing so you can still recommend [Blaze Binder](http://tiny.cc/2fletz)."
             ]
         }
-    },
-    "newplayer":{
-        "type":"text",
-        "title":"New Player Guide",
-        "description":"__**Download Grim Boats from our Portal Site**__. [**Click Here**](https://adventurequest.life/)",
-        "content":[
-            "**For Levels**: Use the __Arts_IceStormArena_Agro_Boat__ on the portal. Just equip healer and go to a populated Icestormarena and chill. It AFK's in a blank cell while provoking Frost Spirits with packets, so if may look like it doesn't work, but you can relog to check your progress.\n",
-            "**For a Farming Class**: Use the __Arts_Mountdoomskull_Boat__ to complete the 13 Lords of Chaos Saga asap, then run a Chaos Rep boat till you have Rank 10 Chaos Rep and buy yourself the Chaos Slayer Class (any version, all are the same).\n",
-            "**For a Soloing Class**: Use __Weeb_Lycan_Rep__ or __Arts_LycanRep_Boat__ to get to Rank 10 Lycan and buy yourself the Lycan Class. Requires manual storyline completion until /lycan."
-        ],
-        "thumbnail":"https://images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%3Fsize%3D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
     },
     "alchem":{
         "type":"text",
