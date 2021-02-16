@@ -1,7 +1,4 @@
 {
-	"Boating Guides": {
-		"type": "header"
-	},
     "gg":{
         "type":"single_link",
         "title":"Grimoire Guide 101",
@@ -41,17 +38,23 @@
         "title":"Grimoire Fix Tips",
         "description":"__**Grimoire Not working? Try the following.**__)",
         "content":[
-        	"1.) If you did anything with the MMS.cfg file delete it and reload Grimoire.\n\n",
-        	"2.) Still not working? Clear browser history and clear cache on global settings by right clicking the Grimoire program\n\n",
-        	"3.) Still not working? Allow the .exe file in firewall by going to Windows Firewall with advanced security. Then add new outbound rule with port 5588, and allow it.\n\n",
-        	"4.) Still not working? First, you want to bring your PC outside, then find a trash can and throw it. After that, but a new pc."
+            "1.) If you did anything with the MMS.cfg file delete it and reload Grimoire.\n\n",
+            "2.) Still not working? Clear browser history and clear cache on global settings by right clicking the Grimoire program\n\n",
+            "3.) Still not working? Allow the .exe file in firewall by going to Windows Firewall with advanced security. Then add new outbound rule with port 5588, and allow it.\n\n",
+            "4.) Still not working? First, you want to bring your PC outside, then find a trash can and throw it. After that, but a new pc."
         ],
         "thumbnail":"https://images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%3Fsize%3D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
     },
+    "Boating Guides":{
+        "type":"header"
+    },
 
-	"Farming Guides": {
-		"type": "header"
-	},
+
+
+
+
+
+    
     "guides":{
         "type":"single_link",
         "title":"Compedium of Guides",
@@ -162,7 +165,6 @@
         "description":"Please read the following carefully.",
         "content":"https://cdn.discordapp.com/attachments/805367955923533845/806920849801216030/2CBomK5.png"
     },
-
     "alchem":{
         "type":"text",
         "title":"Alchemy Minigame Guide",
@@ -173,13 +175,15 @@
         ],
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807060789663760465/h54ejuc_orig.png"
     },
+    "Farming Guides":{
+        "type":"header"
+    },
 
 
 
 
-	"Endgame Farming Guides": {
-		"type": "header"
-	},
+
+    
     "blod":{
         "type":"guide",
         "title":"Blinding Light of Destiny Guide",
@@ -210,15 +214,15 @@
         ],
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
     },
+    "Endgame Farming Guides":{
+        "type":"header"
+    },
 
 
 
 
 
-
-	"Skill Guides": {
-		"type": "header"
-	},
+    
     "fdgraph":{
         "type":"image",
         "title":"DPS over time Graph",
@@ -335,5 +339,8 @@
             "Repeat"
         ],
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807176800643317760/Untitled-2.png"
+    },
+    "Skill Guides":{
+        "type":"header"
     }
 }
