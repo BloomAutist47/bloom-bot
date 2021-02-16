@@ -78,7 +78,7 @@ class BaseProgram:
         self.file_read("all")
         # if os.name != "nt":
         #     self.git_read("all")
-        self.git_read("all")
+        # self.git_read("all")
     def env_variables(self):
         if os.name == "nt": # PC Mode
 
@@ -1342,26 +1342,40 @@ class GuideCog(commands.Cog, BaseTools):
             self.file_read("guides") 
 
         if guide == "":
-            embedVar = discord.Embed(title="🔹 List of Guide Commands 🔹", color=self.block_color)
-            desc = "To summon this list, use `;g`. Please read the following carefully.\n\n"
+            embedVar = discord.Embed(title="🔹 List of Guide Commands 🔹", color=self.block_color,
+                description="To summon this list, use `;g`. Please read the following carefully.\n\n")
+            desc = ""
             guild_id = str(ctx.guild.id)
             if guild_id in BaseProgram.settings["server_settings"]:
                 if BaseProgram.settings["server_settings"][guild_id]["server_privilage"] == "Homie":
                     for guide_name in BaseProgram.guides:
                         guide_data = BaseProgram.guides[guide_name]
+                        if "type" in guide_data:
+                            if guide_data["type"] == "header":
+                                if "tag" not in guide_data:
+                                    desc += "\u200b"
+                                embedVar.add_field(name=f"{guide_name}", inline=False, value=desc)
+                                desc = ""
+                                continue
                         if "title" in guide_data:
                             desc += "`;g {}` - {}.\n".format(guide_name, guide_data["title"])
-            if guild_id not in BaseProgram.settings["server_settings"]:
 
+
+            if guild_id not in BaseProgram.settings["server_settings"]:
                 for guide_name in BaseProgram.guides:
                     if guide_name not in BaseProgram.settings["server_settings"]["Basic"]["banned_guides"]:
                         guide_data = BaseProgram.guides[guide_name]
+                        if "type" in guide_data:
+                            if guide_data["type"] == "header":
+                                if "tag" not in guide_data:
+                                    desc += "\n\u200b"
+                                embedVar.add_field(name=f"{guide_name}", inline=False, value=desc)
+                                desc = ""
+                                continue
                         if "title" in guide_data:
                             desc += "`;g {}` - {}.\n".format(guide_name, guide_data["title"])
-            embedVar.description = desc
             await ctx.send(embed=embedVar)
             return
-
 
         g_name = guide.lower()
         guide_mode = await self.check_guild_guide(ctx)
@@ -1376,9 +1390,9 @@ class GuideCog(commands.Cog, BaseTools):
             else:
                 guide_data = BaseProgram.guides[g_name]
 
-
             if guide_data["type"] == "header":
-            
+                return
+
             if guide_data["type"] == "guide":
                 
                 embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color,
@@ -2001,9 +2015,9 @@ else:              # Heroku
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-Bot.add_cog(IllegalBoatSearchCog(Bot))
-Bot.add_cog(ClassSearchCog(Bot))
+# Bot.add_cog(IllegalBoatSearchCog(Bot))
+# Bot.add_cog(ClassSearchCog(Bot))
 Bot.add_cog(GuideCog(Bot)) 
-Bot.add_cog(CharacterCog(Bot))
+# Bot.add_cog(CharacterCog(Bot))
 # Bot.add_cog(TwitterStreamCog(Bot))
 Bot.run(DISCORD_TOKEN)

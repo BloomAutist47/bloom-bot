@@ -25,25 +25,25 @@
         "thumbnail":"https://images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%3Fsize%3D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
     },
     "spiderfix":{
-        "common_key":"spiderfix/sf"
+        "common_key":"grimfix/spiderfix/sf"
     },
     "sf":{
-        "common_key":"spiderfix/sf"
+        "common_key":"grimfix/spiderfix/sf"
     },
     "grimfix":{
-        "common_key":"spiderfix/sf"
+        "common_key":"grimfix/spiderfix/sf"
     },
     "grimfix/spiderfix/sf":{
         "type":"text",
         "title":"Grimoire Fix Tips",
-        "description":"__**Grimoire Not working? Try the following.**__)",
+        "description":"__**Grimoire Not working? Try the following.**__",
         "content":[
-            "1.) If you did anything with the MMS.cfg file delete it and reload Grimoire.\n\n",
-            "2.) Still not working? Clear browser history and clear cache on global settings by right clicking the Grimoire program\n\n",
-            "3.) Still not working? Allow the .exe file in firewall by going to Windows Firewall with advanced security. Then add new outbound rule with port 5588, and allow it.\n\n",
-            "4.) Still not working? First, you want to bring your PC outside, then find a trash can and throw it. After that, but a new pc."
+            "1.) If you did anything with the **MMS.cfg** file delete it and reload Grimoire.\n",
+            "2.) Still not working? __Clear browser history__ and __clear cache__ on global settings by right clicking the Grimoire program\n",
+            "3.) Still not working? Allow the .exe file in firewall by going to __Windows Firewall__ with advanced security. Then add new outbound rule with port 5588, and allow it.\n",
+            "4.) Still not working? First, you want to bring your PC outside, this part is very important for this fix to work. Then find a trash can and throw your pc. After that, but a new one."
         ],
-        "thumbnail":"https://images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%3Fsize%3D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/811193476929814538/4zvbZ3m.png"
     },
     "Boating Guides":{
         "type":"header"
@@ -341,6 +341,7 @@
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807176800643317760/Untitled-2.png"
     },
     "Skill Guides":{
-        "type":"header"
+        "type":"header",
+        "tag": "end"
     }
 }
