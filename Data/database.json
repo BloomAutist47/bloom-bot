@@ -448,6 +448,10 @@
             "url": "https://adventurequest.life/bots/Bloom_Punt.gbot",
             "author": "bloom"
         },
+        "RiftDefenseMedal WavesOfMutilationQuest.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_RiftDefenseMedal_WavesOfMutilationQuest.gbot",
+            "author": "bloom"
+        },
         "Sparrows Blood Daily.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Sparrows_Blood_Daily.gbot",
             "author": "bloom"
@@ -1790,6 +1794,9 @@
             },
             "Punt.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Punt.gbot"
+            },
+            "RiftDefenseMedal WavesOfMutilationQuest.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_RiftDefenseMedal_WavesOfMutilationQuest.gbot"
             },
             "Sparrows Blood Daily.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Sparrows_Blood_Daily.gbot"
