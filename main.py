@@ -1736,33 +1736,63 @@ class WikiCog(commands.Cog, BaseTools):
 
     @commands.command()
     async def w(self, ctx, *, item=""):
+        if item == "":
+            embedVar = self.embed_single("Wiki Search", "Please enter a value.")
+            await ctx.send(embed=embedVar)
+            return
+
+
         straight = ("http://aqwwiki.wikidot.com/" + item.replace(" ", "-").replace("'", "-").replace(")", "-").replace("(", "-")).lower()
         # items = urllib.parse.quote_minus(item)
-        
+        wiki = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
+        only_wiki = False
         sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(straight))
         try:
             page_content = sites_soup.find("div", {"id":"page-content"})
             page_check = page_content.find("p").text.strip()
             if page_check == "This page doesn't exist yet!":
-                result = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
+                result = wiki
                 image = None
+                only_wiki = True
             elif "usually refers to:" in page_check:
                 result = straight
                 first_refer = "http://aqwwiki.wikidot.com/" + page_content.find_all("a")[0]["href"]
                 fr_sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(first_refer))
                 fr_page_content = fr_sites_soup.find("div", {"id":"page-content"})
                 image = self.get_image_wiki(fr_page_content)
+                only_wiki = False
             else:
                 result = straight
                 image = self.get_image_wiki(page_content)
+                only_wiki = False
         except:
             result = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
             image = None
+            only_wiki = True
+            
+        
+        
+        if not only_wiki:
+            desc = f"{result}\n[[Click here for search results.]({wiki})]" 
+        else:
+            desc = f"{result}"
 
-        embedVar = self.embed_single("Wiki Search", result)
+        embedVar = self.embed_single("Wiki Search", desc)
         if image:
             embedVar.set_image(url=image)
 
+        await ctx.send(embed=embedVar)
+        return
+
+    @commands.command()
+    async def ws(self, ctx, *, item=""):
+        if item == "":
+            embedVar = self.embed_single("Wiki Search", "Please enter a value.")
+            await ctx.send(embed=embedVar)
+            return
+
+        wiki = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
+        embedVar = self.embed_single("Wiki Search", wiki)
         await ctx.send(embed=embedVar)
         return
 
