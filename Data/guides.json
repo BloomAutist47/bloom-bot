@@ -1,33 +1,71 @@
 {
-    "blod":{
-        "type":"guide",
-        "title":"Blinding Light of Destiny Guide",
-        "short_link":"https://cdn.discordapp.com/attachments/805367955923533845/806909891175514202/bload.png",
-        "full_guide":"https://aqwg.weebly.com/blinding-light-of-destiny.html",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806405085856530462/5-25-2019-435892_orig.png"
+	"Boating Guides": {
+		"type": "header"
+	},
+    "gg":{
+        "type":"single_link",
+        "title":"Grimoire Guide 101",
+        "description":"Botting has become very common in AQW for a variety of reasons: a combination of being a flash game, game designers doubling down on harder grinds to combat botting (never understood this idea), and lack of gameplay interactivity all contribute to this problem, but we aren\u2019t here to talk about that...",
+        "content":"https://docs.google.com/document/d/1feo9uke1qa0pzjAOTMUkasGR7Rqsz0fdOwdV0BaEzz0/edit?usp=sharing",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807058396326920202/fBCWljGbFIlO8hVm3MnfJki8CFSN0jSeaZ7hbqa0_fx0pO6rCtjVWczDh9rZc2OkuKzviNH77ww1200-h630-p.png"
     },
-    "sdka":{
-        "type":"guide",
-        "title":"Sepulchure's DoomKnight Armor Guide",
-        "short_link":"https://cdn.discordapp.com/attachments/805367955923533845/806914199187226721/sadak.png",
-        "full_guide":"https://aqwg.weebly.com/sepulchures-doomknight-armour.html",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806914605397966849/profile-axell5-14.png"
+    "darkmode":{
+        "type":"single_link",
+        "title":"Dark mode for Grimoire Guide",
+        "description":"For those who wanna use Dark Mode for Grimoire,\nhere are the steps in order to get the mode (in the video):",
+        "content":"https://m.youtube.com/watch?v=b8qJB8rJHaU",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806926635907022848/unknown.png"
     },
-    "nsod":{
-        "type":"guide_links",
-        "title":"Necrotic Sword of Doom Guide",
-        "description":"Click one of the following links:\n",
+    "newplayer":{
+        "type":"text",
+        "title":"New Player Guide",
+        "description":"__**Download Grim Boats from our Portal Site**__. [**Click Here**](https://adventurequest.life/)",
         "content":[
-            [
-                "**NSoD Farming Guide** by Vero",
-                "https://aqwg.weebly.com/necrotic-sword-of-doom.html"
-            ],
-            [
-                "Don't know how to merge NSoD? Follow this merging guide",
-                "https://www.aqwworld.com/2017/02/how-to-get-necrotic-sword-of-doom-guide.html"
-            ]
+            "**For Levels**: Use the __Arts_IceStormArena_Agro_Boat__ on the portal. Just equip healer and go to a populated Icestormarena and chill. It AFK's in a blank cell while provoking Frost Spirits with packets, so if may look like it doesn't work, but you can relog to check your progress.\n",
+            "**For a Farming Class**: Use the __Arts_Mountdoomskull_Boat__ to complete the 13 Lords of Chaos Saga asap, then run a Chaos Rep boat till you have Rank 10 Chaos Rep and buy yourself the Chaos Slayer Class (any version, all are the same).\n",
+            "**For a Soloing Class**: Use __Weeb_Lycan_Rep__ or __Arts_LycanRep_Boat__ to get to Rank 10 Lycan and buy yourself the Lycan Class. Requires manual storyline completion until /lycan."
         ],
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
+        "thumbnail":"https://images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%3Fsize%3D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
+    },
+
+
+
+	"Farming Guides": {
+		"type": "header"
+	},
+    "guides":{
+        "type":"single_link",
+        "title":"Compedium of Guides",
+        "description":"Guides related to farming, membership, reputation,\netc..., can be found here:",
+        "content":"https://aqwg.weebly.com/",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806927386997293077/unknown.png"
+    },
+    "starterclass":{
+        "type":"text_dict",
+        "title":"Starter Class Guide",
+        "description":"Don't have a good class to start farming stuff? Read this guide:",
+        "content":{
+            "**__For Members:__**":[
+                "",
+                "__Have ACs you're not using for something else?__",
+                "-> Have 2000 ACs? Go to [/terrarium](http://tiny.cc/icletz) and accept [**For Science!**](http://tiny.cc/8qletz) from Kid Drakath.",
+                "-> Keep spamming that quest til you get [500 Super-Fan Swag Token C's](.) then merge them all into [Swag Token A's](.). This is for Doomwood and Embersea reps.",
+                "-> Get Doomwood rep fast by spamming [**Essential Essences**](http://tiny.cc/2dletz) from Artix in [/necropolis](http://tiny.cc/sdletz).",
+                "-> After getting Doomwood and Embersea rank 10, go to [/fireforge](http://tiny.cc/bfletz) and open up the class shop from the Game Menu and purchase [Pyromancer](http://tiny.cc/jdletz).",
+                "-> After purchasing Pyromancer, buy the [2 Sigils](http://tiny.cc/ydletz) from the [**AC Pyromancer Shop**](http://tiny.cc/ydletz) and purchase [Blaze Binder](http://tiny.cc/2fletz).",
+                "",
+                "__Member but Don't have ACs?__",
+                "-> Buy [Daimon](http://aqwwiki.wikidot.com/daimon-legend) which can solo and farm decently and can sustain itself by having a self heal.",
+                "\u200b"
+            ],
+            "__**For non-members:**__":[
+                "-> Go and get [Blood Sorceress](http://tiny.cc/nfletz) from [/towerofmirrors](http://tiny.cc/ydletz) by killing [Scarletta](http://tiny.cc/teletz).",
+                "-> Need help killing her? Ask for help in the server and people will be more than welcome to help you! ",
+                "-> After getting [Blood Sorceress](http://tiny.cc/nfletz), go and get level 50 *(use `;g XP` for a guide on leveling up)* and complete the [/hedgemaze](http://tiny.cc/jeletz) and [/towerofmirrors](http://tiny.cc/ydletz) questline.",
+                "-> After doing those 3 steps, go to the NPC in [/towerofmirrors](http://tiny.cc/ydletz) in Screen 1 and turn your [Blood Sorceress](http://tiny.cc/nfletz) into [Scarlet Sorceress](http://tiny.cc/neletz) as it is a massive upgrade and can help farm everything much easier.",
+                "-> Non members with ACs is also a thing so you can still recommend [Blaze Binder](http://tiny.cc/2fletz)."
+            ]
+        }
     },
     "op":{
         "type":"text",
@@ -92,44 +130,20 @@
             "3) Use the remaining 1680 ACs however you want, buying [LightMage](http://aqwwiki.wikidot.com/lightmage) to later use to get [LightCaster](http://aqwwiki.wikidot.com/lightcaster-class) is a popular choice. LightCaster is a really, really good class overall, it should cover up your soloing until you get VHL or LR. To check how good it is, use `;c lc` on the commands channel.\n"
         ]
     },
-    "newplayer":{
-        "type":"text",
-        "title":"New Player Guide",
-        "description":"__**Download Grim Boats from our Portal Site**__. [**Click Here**](https://adventurequest.life/)",
-        "content":[
-            "**For Levels**: Use the __Arts_IceStormArena_Agro_Boat__ on the portal. Just equip healer and go to a populated Icestormarena and chill. It AFK's in a blank cell while provoking Frost Spirits with packets, so if may look like it doesn't work, but you can relog to check your progress.\n",
-            "**For a Farming Class**: Use the __Arts_Mountdoomskull_Boat__ to complete the 13 Lords of Chaos Saga asap, then run a Chaos Rep boat till you have Rank 10 Chaos Rep and buy yourself the Chaos Slayer Class (any version, all are the same).\n",
-            "**For a Soloing Class**: Use __Weeb_Lycan_Rep__ or __Arts_LycanRep_Boat__ to get to Rank 10 Lycan and buy yourself the Lycan Class. Requires manual storyline completion until /lycan."
-        ],
-        "thumbnail":"https://images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%3Fsize%3D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
+    "mem":{
+        "type":"single_link",
+        "title":"Guide for Newly Made Members/Legends",
+        "description":"Please read the following carefully.",
+        "content":"https://docs.google.com/document/d/1R_tkHiC6gCE0EKF8nvPOGY35_wM_4mimbdAJQDMbtXg/edit",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807057211053572156/hnB2u7-T9DI_COu6U6bLOh5ALjGjMPX6QZGZx5hfKVD2zJP-UubeEryFXL6dYV5wbybreHshcgw1200-h630-p.png"
     },
-    "starterclass":{
-        "type":"text_dict",
-        "title":"Starter Class Guide",
-        "description":"Don't have a good class to start farming stuff? Read this guide:",
-        "content":{
-            "**__For Members:__**":[
-                "",
-                "__Have ACs you're not using for something else?__",
-                "-> Have 2000 ACs? Go to [/terrarium](http://tiny.cc/icletz) and accept [**For Science!**](http://tiny.cc/8qletz) from Kid Drakath.",
-                "-> Keep spamming that quest til you get [500 Super-Fan Swag Token C's](.) then merge them all into [Swag Token A's](.). This is for Doomwood and Embersea reps.",
-                "-> Get Doomwood rep fast by spamming [**Essential Essences**](http://tiny.cc/2dletz) from Artix in [/necropolis](http://tiny.cc/sdletz).",
-                "-> After getting Doomwood and Embersea rank 10, go to [/fireforge](http://tiny.cc/bfletz) and open up the class shop from the Game Menu and purchase [Pyromancer](http://tiny.cc/jdletz).",
-                "-> After purchasing Pyromancer, buy the [2 Sigils](http://tiny.cc/ydletz) from the [**AC Pyromancer Shop**](http://tiny.cc/ydletz) and purchase [Blaze Binder](http://tiny.cc/2fletz).",
-                "",
-                "__Member but Don't have ACs?__",
-                "-> Buy [Daimon](http://aqwwiki.wikidot.com/daimon-legend) which can solo and farm decently and can sustain itself by having a self heal.",
-                "\u200b"
-            ],
-            "__**For non-members:**__":[
-                "-> Go and get [Blood Sorceress](http://tiny.cc/nfletz) from [/towerofmirrors](http://tiny.cc/ydletz) by killing [Scarletta](http://tiny.cc/teletz).",
-                "-> Need help killing her? Ask for help in the server and people will be more than welcome to help you! ",
-                "-> After getting [Blood Sorceress](http://tiny.cc/nfletz), go and get level 50 *(use `;g XP` for a guide on leveling up)* and complete the [/hedgemaze](http://tiny.cc/jeletz) and [/towerofmirrors](http://tiny.cc/ydletz) questline.",
-                "-> After doing those 3 steps, go to the NPC in [/towerofmirrors](http://tiny.cc/ydletz) in Screen 1 and turn your [Blood Sorceress](http://tiny.cc/nfletz) into [Scarlet Sorceress](http://tiny.cc/neletz) as it is a massive upgrade and can help farm everything much easier.",
-                "-> Non members with ACs is also a thing so you can still recommend [Blaze Binder](http://tiny.cc/2fletz)."
-            ]
-        }
+    "boost":{
+        "type":"image",
+        "title":"Guide for in-game Boosts",
+        "description":"Please read the following carefully.",
+        "content":"https://cdn.discordapp.com/attachments/805367955923533845/806920849801216030/2CBomK5.png"
     },
+
     "alchem":{
         "type":"text",
         "title":"Alchemy Minigame Guide",
@@ -140,45 +154,57 @@
         ],
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807060789663760465/h54ejuc_orig.png"
     },
-    "boost":{
-        "type":"image",
-        "title":"Guide for in-game Boosts",
-        "description":"Please read the following carefully.",
-        "content":"https://cdn.discordapp.com/attachments/805367955923533845/806920849801216030/2CBomK5.png"
+
+
+
+
+	"Endgame Farming Guides": {
+		"type": "header"
+	},
+    "blod":{
+        "type":"guide",
+        "title":"Blinding Light of Destiny Guide",
+        "short_link":"https://cdn.discordapp.com/attachments/805367955923533845/806909891175514202/bload.png",
+        "full_guide":"https://aqwg.weebly.com/blinding-light-of-destiny.html",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806405085856530462/5-25-2019-435892_orig.png"
     },
+    "sdka":{
+        "type":"guide",
+        "title":"Sepulchure's DoomKnight Armor Guide",
+        "short_link":"https://cdn.discordapp.com/attachments/805367955923533845/806914199187226721/sadak.png",
+        "full_guide":"https://aqwg.weebly.com/sepulchures-doomknight-armour.html",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806914605397966849/profile-axell5-14.png"
+    },
+    "nsod":{
+        "type":"guide_links",
+        "title":"Necrotic Sword of Doom Guide",
+        "description":"Click one of the following links:\n",
+        "content":[
+            [
+                "**NSoD Farming Guide** by Vero",
+                "https://aqwg.weebly.com/necrotic-sword-of-doom.html"
+            ],
+            [
+                "Don't know how to merge NSoD? Follow this merging guide",
+                "https://www.aqwworld.com/2017/02/how-to-get-necrotic-sword-of-doom-guide.html"
+            ]
+        ],
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
+    },
+
+
+
+
+
+
+	"Skill Guides": {
+		"type": "header"
+	},
     "fdgraph":{
         "type":"image",
         "title":"DPS over time Graph",
         "description":"Note: The green is CCM and the Purple is IC.",
         "content":"https://cdn.discordapp.com/attachments/805367955923533845/807042152714076190/unknown.png"
-    },
-    "darkmode":{
-        "type":"single_link",
-        "title":"Dark mode for Grimoire Guide",
-        "description":"For those who wanna use Dark Mode for Grimoire,\nhere are the steps in order to get the mode (in the video):",
-        "content":"https://m.youtube.com/watch?v=b8qJB8rJHaU",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806926635907022848/unknown.png"
-    },
-    "guides":{
-        "type":"single_link",
-        "title":"Compedium of Guides",
-        "description":"Guides related to farming, membership, reputation,\netc..., can be found here:",
-        "content":"https://aqwg.weebly.com/",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806927386997293077/unknown.png"
-    },
-    "mem":{
-        "type":"single_link",
-        "title":"Guide for Newly Made Members/Legends",
-        "description":"Please read the following carefully.",
-        "content":"https://docs.google.com/document/d/1R_tkHiC6gCE0EKF8nvPOGY35_wM_4mimbdAJQDMbtXg/edit",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807057211053572156/hnB2u7-T9DI_COu6U6bLOh5ALjGjMPX6QZGZx5hfKVD2zJP-UubeEryFXL6dYV5wbybreHshcgw1200-h630-p.png"
-    },
-    "gg":{
-        "type":"single_link",
-        "title":"Grimoire Guide 101",
-        "description":"Botting has become very common in AQW for a variety of reasons: a combination of being a flash game, game designers doubling down on harder grinds to combat botting (never understood this idea), and lack of gameplay interactivity all contribute to this problem, but we aren\u2019t here to talk about that...",
-        "content":"https://docs.google.com/document/d/1feo9uke1qa0pzjAOTMUkasGR7Rqsz0fdOwdV0BaEzz0/edit?usp=sharing",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807058396326920202/fBCWljGbFIlO8hVm3MnfJki8CFSN0jSeaZ7hbqa0_fx0pO6rCtjVWczDh9rZc2OkuKzviNH77ww1200-h630-p.png"
     },
     "vhlskills":{
         "type":"single_link",

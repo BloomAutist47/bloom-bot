@@ -1377,6 +1377,8 @@ class GuideCog(commands.Cog, BaseTools):
                 guide_data = BaseProgram.guides[g_name]
 
 
+            if guide_data["type"] == "header":
+            
             if guide_data["type"] == "guide":
                 
                 embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color,
