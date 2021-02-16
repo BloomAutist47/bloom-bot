@@ -1742,7 +1742,7 @@ class WikiCog(commands.Cog, BaseTools):
             return
 
 
-        straight = ("http://aqwwiki.wikidot.com/" + item.replace(" ", "-").replace("'", "-").replace(")", "-").replace("(", "-")).lower()
+        straight = ("http://aqwwiki.wikidot.com/" + item.replace(" ", "-").replace("'", "-").replace(")", "").replace("(", "")).lower()
         # items = urllib.parse.quote_minus(item)
         wiki = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
         only_wiki = False
