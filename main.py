@@ -80,7 +80,7 @@ class BaseProgram:
         self.file_read("all")
         # if os.name != "nt":
         #     self.git_read("all")
-        # self.git_read("all")
+        self.git_read("all")
     def env_variables(self):
         if os.name == "nt": # PC Mode
 
@@ -313,25 +313,26 @@ class BaseProgram:
             git_data = json.dumps(BaseProgram.data, indent=4).encode('utf-8')
             contents_object = self.repository.file_contents("./Data/database.json")
             contents_object.update("update", git_data)
-            print("Git-database called")
+            self.file_save("database")
 
         if "guides" in mode:
             git_guides = json.dumps(BaseProgram.guides, indent=4).encode('utf-8')
             contents_object = self.repository.file_contents("./Data/guides.json")
             contents_object.update("update", git_guides)
+            self.file_save("guides")
 
         if "settings" in mode:
             git_settings = json.dumps(BaseProgram.settings, indent=4).encode('utf-8')
             contents_object = self.repository.file_contents("./Data/settings.json")
             contents_object.update("update", git_settings)
-            print("Git-Settings called")
+            self.file_save("settings")
 
         if "classes" in mode:
             git_classes = json.dumps(BaseProgram.classes, indent=4).encode('utf-8')
             contents_object = self.repository.file_contents("./Data/classes.json")
             contents_object.update("update", git_classes)
+            self.file_save("classes")
 
-        self.file_save("all")
         return
 
     def git_read(self, mode:str):
@@ -848,6 +849,12 @@ class BaseTools(BaseProgram):
         for i in range(0, len(lst), n):
             yield lst[i:i + n]
 
+    async def get_site_content(self, SELECTED_URL):
+        client = aiosonic.HTTPClient()
+        response = await client.get(SELECTED_URL)
+        text_ = await response.content()
+        return Soup(text_.decode('utf-8'), 'html5lib')
+
 class BaseCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
@@ -1023,7 +1030,7 @@ class BaseCog(commands.Cog, BaseTools):
             BaseProgram.database_updating = False
             return
 
-        if mode == "guide":
+        if mode == "guides":
             BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `guides.json`")
             self.git_read("guides-update")
@@ -1492,12 +1499,6 @@ class CharacterCog(commands.Cog, BaseTools):
     async def loop_get_content(self, url):
         return BaseProgram.loop.run_until_complete(self.get_site_content(url))
 
-    async def get_site_content(self, SELECTED_URL):
-        client = aiosonic.HTTPClient()
-        response = await client.get(SELECTED_URL)
-        text_ = await response.content()
-        return Soup(text_.decode('utf-8'), 'html5lib')
-
     async def multiple_reactions(self, embed_object):
         await embed_object.add_reaction(emoji = "\U0001F9D8") # Classes
         await embed_object.add_reaction(emoji = "\U00002694") # Swords
@@ -1593,45 +1594,25 @@ class CharacterCog(commands.Cog, BaseTools):
         tp_non_six_months = round(tp_non_six_days/30) 
         tp_non_six_date = (date.today() + timedelta(days=tp_non_six_days)).strftime("%a, %d %B %Y")
 
-        # print(f"Treasure Potion: {potion_count}\nUsing Acs Spins: {tp_six_spins} ({tp_six_spins_ac} ACs)\t\n"\
-        #       f"6TP/Spin Mem days: {tp_mem_six_days}\t\tDate: {tp_mem_six_date}\n"\
-        #       f"6TP/Spin Non-Mem days: {tp_non_six_days}\t\tDate: {tp_non_six_date}\n"\
-        #        )
-
-
-        # embedVar.add_field(name="__2 Treasue Potions per Spin__", inline=False,
-        #         value=f"**With ACs**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac} ACs)\n"\
-        #               f"**With Member Daily Spin**\n🔹 Days: {tp_mem_two_days}\n🔹 Date: {tp_mem_two_date}\n"\
-        #               f"**With Non-Member Daily Spin**\n🔹 Days: {tp_non_two_days}\n🔹 Date: {tp_non_two_date}\n"
-        #     )
-        # embedVar.add_field(name="__6 Treasue Potions per Spin__", inline=False,
-        #         value=f"**With ACs**\n 🔹 {tp_six_spins} Spins ({tp_six_spins_ac} ACs)\n"\
-        #               f"**With Member Daily Spin**\n🔹 Days: {tp_mem_six_days}\n🔹 Date: {tp_mem_six_date}\n"\
-        #               f"**With Non-Member Daily Spin**\n🔹 Days: {tp_non_six_days}\n🔹 Date: {tp_non_six_date}\n"💰
-        #     )
         # <:ACtagged:622978586160136202>
 
-        embedVar.add_field(name="__2 Treasure Potions per Spin__", inline=True, value=f"**With ACs 💰**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac:,} ACs)\n")
-        embedVar.add_field(name="\u200b", inline=True, value="\u200b")
-        embedVar.add_field(name="__6 Treasure Potions per Spin__", inline=True, value=f"**With ACs 💰**\n 🔹 {tp_six_spins} Spins ({tp_six_spins_ac:,} ACs)\n")
-        
-        # embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_two_days}\n🔹 Weeks: {tp_mem_two_weeks}\n🔹 Months: {tp_mem_two_months}\n🔹 __Due__: {tp_mem_two_date}\n")
-        # embedVar.add_field(name="\u200b", inline=True, value="\u200b")
-        # embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_six_days}\n🔹 Weeks: {tp_mem_six_weeks}\n🔹 Months: {tp_mem_six_months}\n🔹 __Due__: {tp_mem_six_date}\n")
-        
-        # embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_two_days}\n🔹 Weeks: {tp_non_two_weeks}\n🔹 Months: {tp_non_two_months}\n🔹 __Due__: {tp_non_two_date}\n")
-        # embedVar.add_field(name="\u200b", inline=True, value="\u200b")
-        # embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_six_days}\n🔹 Weeks: {tp_non_six_weeks}\n🔹 Months: {tp_non_six_months}\n🔹 __Due__: {tp_non_six_date}\n")
+        embedVar.add_field(name="__2 Treasure Potions per Spin__", inline=True, 
+            value=f"**With ACs 💰**\n 🔹 {tp_two_spins} Spins ({tp_two_spins_ac:,} ACs)\n"
+                   "With Member Daily Spin 📅\n"\
+                  f"🔹 Days: {tp_mem_two_days} ({tp_mem_two_weeks} W/ {tp_mem_two_months} M)\n🔹 __Due__: {tp_mem_two_date}\n"\
+                   "With Non-Member Weekly Spin 📅 \n"\
+                  f"🔹 Days: {tp_non_two_days} ({tp_non_two_weeks} W/ {tp_non_two_months} M)\n🔹 __Due__: {tp_non_two_date}\n"\
+            )
 
+        embedVar.add_field(name="\u200b", inline=True, value="\u200b")
 
-        embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_two_days} ({tp_mem_two_weeks} W/ {tp_mem_two_months} M)\n🔹 __Due__: {tp_mem_two_date}\n")
-        embedVar.add_field(name="\u200b", inline=True, value="\u200b")
-        embedVar.add_field(name="With Member Daily Spin 📅", inline=True, value=f"🔹 Days: {tp_mem_six_days} ({tp_mem_six_weeks} W/ {tp_mem_six_months} M)\n🔹 __Due__: {tp_mem_six_date}\n")
-        
-        embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_two_days} ({tp_non_two_weeks} W/ {tp_non_two_months} M)\n🔹 __Due__: {tp_non_two_date}\n")
-        embedVar.add_field(name="\u200b", inline=True, value="\u200b")
-        embedVar.add_field(name="With Non-Member Weekly Spin 📅 ", inline=True, value=f"🔹 Days: {tp_non_six_days} ({tp_non_six_weeks} W/  {tp_non_six_months} M)\n🔹 __Due__: {tp_non_six_date}\n")
-        
+        embedVar.add_field(name="__6 Treasure Potions per Spin__", inline=True,
+            value=f"**With ACs 💰**\n 🔹 {tp_six_spins} Spins ({tp_six_spins_ac:,} ACs)\n"\
+                   "With Member Daily Spin 📅\n"\
+                  f"🔹 Days: {tp_mem_six_days} ({tp_mem_six_weeks} W/ {tp_mem_six_months} M)\n🔹 __Due__: {tp_mem_six_date}\n"\
+                   "With Non-Member Weekly Spin 📅 \n"\
+                  f"🔹 Days: {tp_non_six_days} ({tp_non_six_weeks} W/  {tp_non_six_months} M)\n🔹 __Due__: {tp_non_six_date}\n"
+            )
 
         embedVar.set_footer(text="Note:\n"\
             "> The 6 Treasure Potion math is made assuming the Player does NOT receive any drop.\n"\
@@ -1744,12 +1725,49 @@ class CharacterCog(commands.Cog, BaseTools):
         embedVar.add_field(name="__**Equips**__", value=panel_2, inline=True)
         embedVar.add_field(name="__**Inventory**__", value=inventories_2, inline=False)
 
-
-
-        # embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/807570293501591572/logo-lg-AQW.png")
-
         embed_object = await ctx.send(embed=embedVar)
         return
+
+class WikiCog(commands.Cog, BaseTools):
+    def __init__(self, bot):
+        self.setup()
+        self.bot = bot
+
+    @commands.command()
+    async def w(self, ctx, *, item=""):
+        straight = "http://aqwwiki.wikidot.com/" + item.replace(" ", "-")
+
+        sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(straight))
+        page_content = sites_soup.find("div", {"id":"page-content"})
+        page_check = page_content.find("p").text.strip()
+        if page_check == "This page doesn't exist yet!":
+            result = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
+            image = None
+        elif "usually refers to:" in page_check:
+            result = straight
+            first_refer = "http://aqwwiki.wikidot.com/" + page_content.find_all("a")[0]["href"]
+            fr_sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(first_refer))
+            fr_page_content = fr_sites_soup.find("div", {"id":"page-content"})
+            image = self.get_image_wiki(fr_page_content)
+        else:
+            result = straight
+            image = self.get_image_wiki(page_content)
+
+        embedVar = self.embed_single("Wiki Search", result)
+        if image:
+            embedVar.set_image(url=image)
+
+        await ctx.send(embed=embedVar)
+        return
+
+    def get_image_wiki(self, soup_item):
+        try:
+            image = soup_item.find_all("img")[-1]["src"]
+        except:
+            image = None
+        return image
+
+
 
     # @commands.command()
     # async def charinv(self, ctx):
@@ -1820,11 +1838,7 @@ class EventCalendarCog(commands.Cog, BaseTools):
         self.printer.start()
 
 
-    async def get_site_content(self, SELECTED_URL):
-        client = aiosonic.HTTPClient()
-        response = await client.get(SELECTED_URL)
-        text_ = await response.content()
-        return Soup(text_.decode('utf-8'), 'html5lib')
+
 
     def check_current_month(self):
         self.current_month = self.est_dt.strftime("%B")
@@ -2020,5 +2034,7 @@ Bot.add_cog(IllegalBoatSearchCog(Bot))
 Bot.add_cog(ClassSearchCog(Bot))
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(CharacterCog(Bot))
+Bot.add_cog(WikiCog(Bot))
+
 # Bot.add_cog(TwitterStreamCog(Bot))
 Bot.run(DISCORD_TOKEN)
