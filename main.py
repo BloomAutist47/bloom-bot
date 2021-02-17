@@ -82,7 +82,7 @@ class BaseProgram:
         self.file_read("all")
         # if os.name != "nt":
         #     self.git_read("all")
-        # self.git_read("all")
+        self.git_read("all")
     def env_variables(self):
         if os.name == "nt": # PC Mode
 

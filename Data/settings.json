@@ -12,6 +12,7 @@
             "Verified Bot Maker": 1
         },
         "guild_privilege": [
+            811305081063604284,
             761956630606250005,
             766627412179550228
         ]
@@ -90,6 +91,12 @@
             "server_privilage": "Homie",
             "server_noice_role": 807586780324954123,
             "event_channel_id": 806077827568762910
+        },
+        "811305081063604284": {
+            "server_name": "SailorsParadise",
+            "server_privilage": "Homie",
+            "server_noice_role": 807586780324954123,
+            "event_channel_id": 811309992727937034
         },
         "766627412179550228": {
             "server_name": "Buildyard",
