@@ -60,6 +60,7 @@ class BaseProgram:
     guides = {}
     loop = asyncio.get_event_loop()
     nest_asyncio.apply(loop)
+    sqlock = False
 
     def setup(self):
         self.env_variables()
@@ -81,7 +82,7 @@ class BaseProgram:
         self.file_read("all")
         # if os.name != "nt":
         #     self.git_read("all")
-        self.git_read("all")
+        # self.git_read("all")
     def env_variables(self):
         if os.name == "nt": # PC Mode
 
@@ -2018,8 +2019,81 @@ class TwitterStreamCog(commands.Cog, BaseTools):
         stream.filter(follow=["1349290524901998592"])
     
 
+class TextUploaders(commands.Cog, BaseTools):
+    def __init__(self, Bot):
+        self.setup()
+        self.bot = Bot
 
 
+    @commands.command()
+    async def listlock(self, ctx, value=""):
+        """ Description: Turns on the lock for the quest upload lists
+            Arguments:
+                [ctx] - context
+                [value] -aaccepts true or false strings
+        """
+        allow_ = await self.allow_evaluator(ctx, mode="role_privilege", command_name="listlock")
+        if not allow_:
+            print("NOPE")
+            return
+        
+        value = value.lower().lstrip().rstrip()
+        if value == "true":
+            BaseProgram.sqlock = True
+            await ctx.send("> Shop & Quest Lock turned on!")
+            return
+            
+        if value == "false":
+            BaseProgram.sqlock = False
+            await ctx.send("> Shop & Quest Lock turned off!")
+            return
+        else:
+            await ctx.send("> Shop & Quest Lock requires either <true> or <false>")
+            return
+
+    @commands.command()
+    async def up_quest(self, ctx):
+        allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_quest")
+        if not allow_:
+            print("yupp: ", BaseProgram.database_updating)
+            return
+
+        if BaseProgram.sqlock == False:
+            return
+
+        BaseProgram.database_updating = True
+        lines = self.read_text("./Data/html/AQW_Quest_ids.txt")
+        await self.send_item(ctx, lines)
+        
+
+    @commands.command()
+    async def up_shop(self, ctx):
+        allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_shop")
+        if not allow_:
+            print("yupp: ", BaseProgram.database_updating)
+            return
+
+        if BaseProgram.sqlock == False:
+            return
+
+        BaseProgram.database_updating = True
+        lines = self.read_text("./Data/html/Shop_ID_List.txt")
+        await self.send_item(ctx, lines)
+
+    def read_text(self, path):
+        f = open(path, "r")
+        return f.read().split("\n")
+        
+    async def send_item(self, ctx, lines):
+        desc = ""
+        for i in lines:
+            if len(desc) >1700:
+                await ctx.send(desc)
+                desc = ""
+            desc += i + "\n"
+        await ctx.send(desc)
+        BaseProgram.database_updating = False
+        return
 
 intents = Intents.all()
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped', intents=intents)
@@ -2070,11 +2144,11 @@ else:              # Heroku
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-Bot.add_cog(IllegalBoatSearchCog(Bot))
-Bot.add_cog(ClassSearchCog(Bot))
-Bot.add_cog(GuideCog(Bot)) 
-Bot.add_cog(CharacterCog(Bot))
-Bot.add_cog(WikiCog(Bot))
-
+# Bot.add_cog(IllegalBoatSearchCog(Bot))
+# Bot.add_cog(ClassSearchCog(Bot))
+# Bot.add_cog(GuideCog(Bot)) 
+# Bot.add_cog(CharacterCog(Bot))
+# Bot.add_cog(WikiCog(Bot))
+Bot.add_cog(TextUploaders(Bot))
 # Bot.add_cog(TwitterStreamCog(Bot))
 Bot.run(DISCORD_TOKEN)
