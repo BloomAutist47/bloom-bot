@@ -872,12 +872,20 @@
             "url": "https://adventurequest.life/bots/Nng_Beleen_Pinkest_Dye_Ever_ONLY.gbot",
             "author": "nng"
         },
+        "IceStormArena XP All Version.gbot": {
+            "url": "https://adventurequest.life/bots/Nng_IceStormArena_XP_All_Version.gbot",
+            "author": "nng"
+        },
         "Icy Token I II III IV.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot",
             "author": "nng"
         },
         "NNg Legion Exercises 1 2 3 4.gbot": {
             "url": "https://adventurequest.life/bots/NNg_Legion_Exercises_1_2_3_4.gbot",
+            "author": "nng"
+        },
+        "Legion Token Undead Champion Recruitment.gbot": {
+            "url": "https://adventurequest.life/bots/Nng_Legion_Token_Undead_Champion_Recruitment.gbot",
             "author": "nng"
         },
         "Stolen Heart all drop and Pinkest Dye Ever.gbot": {
@@ -1230,10 +1238,6 @@
         },
         "Tools for the Job.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Tools_for_the_Job.gbot",
-            "author": "weeb"
-        },
-        "Ultimate Necrotic Sword of Doom Bot pro.rar": {
-            "url": "https://adventurequest.life/bots/Weeb_Ultimate_Necrotic_Sword_of_Doom_Bot_pro.rar",
             "author": "weeb"
         },
         "Void Destroyer.gbot": {
@@ -1985,11 +1989,17 @@
             "Hollowborn Rep Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Hollowborn_Rep_Bot.gbot"
             },
+            "IceStormArena XP All Version.gbot": {
+                "url": "https://adventurequest.life/bots/Nng_IceStormArena_XP_All_Version.gbot"
+            },
             "Icy Token I II III IV.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot"
             },
             "NNg Legion Exercises 1 2 3 4.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Legion_Exercises_1_2_3_4.gbot"
+            },
+            "Legion Token Undead Champion Recruitment.gbot": {
+                "url": "https://adventurequest.life/bots/Nng_Legion_Token_Undead_Champion_Recruitment.gbot"
             },
             "Stolen Heart all drop and Pinkest Dye Ever.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Stolen_Heart_all_drop_and_Pinkest_Dye_Ever.gbot"
@@ -2250,9 +2260,6 @@
             },
             "Tools for the Job.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Tools_for_the_Job.gbot"
-            },
-            "Ultimate Necrotic Sword of Doom Bot pro.rar": {
-                "url": "https://adventurequest.life/bots/Weeb_Ultimate_Necrotic_Sword_of_Doom_Bot_pro.rar"
             },
             "Void Destroyer.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Void_Destroyer.gbot"
