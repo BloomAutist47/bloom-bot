@@ -175,6 +175,13 @@
         ],
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/807060789663760465/h54ejuc_orig.png"
     },
+    "acronyms":{
+        "type":"single_link",
+        "title":"Acronyms Dictionary",
+        "description":"Don't know what NSoD or CoA or smth means? Read the following. .",
+        "content":"https://aqwg.weebly.com/acronyms.html",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/811470176318783508/unknown.png"
+    },
     "General Guides":{
         "type":"header"
     },
