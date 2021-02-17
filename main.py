@@ -81,7 +81,7 @@ class BaseProgram:
 
         self.file_read("all")
         # if os.name != "nt":
-        #     self.git_read("all")
+            # self.git_read("all")
         self.git_read("all")
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -2081,7 +2081,7 @@ class TextUploaders(commands.Cog, BaseTools):
         await self.send_item(ctx, lines)
 
     def read_text(self, path):
-        f = open(path, "r")
+        f = open(path, "r", encoding='cp1252')
         return f.read().split("\n")
         
     async def send_item(self, ctx, lines):
@@ -2103,6 +2103,7 @@ async def on_command_error(ctx, error):
     if isinstance(error, CommandNotFound):
         print("System: lmao a nigger used", error)
         return
+    BaseProgram.database_updating = False
     raise error
 
 @Bot.event
