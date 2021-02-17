@@ -1,0 +1,1855 @@
+ID	Shop	Category	Comments		Category	Explain on Primairy Category	Explain on Secondary Category
+1	Level 1	Normal Shop			AC Shop	Shop containing Only AC items, permanently placed in game.	Besides its primary category this shop Only contains AC items.
+2	Class Tokens	Broken Shop			Badge shop	Shop that is unlocked in the Book of Lore at Achievement or Other Badges.	N/A (Badge shop label is always primairy)
+3	Level 3	Normal Shop			Broken Shop	This shop is taken out game and can not be loaded anymore.	N/A (Broken label is always primairy)
+4	Level 5	Normal Shop			Enhancement Shop	Shop containing Enhancements, permanently placed in game on an NPC or game menu.	Besides its primary category this shop Only contains Enhancements
+5	Beta Shop	Badge Shop			Guild Shop	This shop contains guild items	N/A (Guild label is always primary)
+6	WarpForce Shop	Rare Shop			House Shop	Shop containing Only house items, permanently placed in game.	Besides its primary category this shop Only contains House items
+7	Staff Shop	Staff Shop			Item Shop	Shop that is Only load-able or unlockable by owning/equipping a certain item.	Besides its primary category this shop is Only unlockable via an item.
+8	Helm Shop	Normal Shop			Member Shop	Shop containing Only Member items, permanently placed in game.	Besides its primary category this shop is Only containing member items.
+9	PirateShop	Normal Shop			Merge Shop	This shop solely contains merge-items, and is permanently available in game.	Besides its primary category this shop Only contains merge items.
+10	Legend Only	Member Shop			No Shop	This shop ID is empty, don't keep trying.	N/A (No shop label is always primary)
+11	AdventureCoin Shop	AC Shop			Normal Shop	This shop is still in-game and does contain both non-member and/or member and/or AC items.	N/A (Normal shop label is always primary)
+12	Aria's Pet Shop	Member Shop			Preview Shop	This shop Only contains item previews might have gone rare over time.	N/A (Preview shop is always primary)
+13	Warlic's Shop	Normal Shop			Promo Shop	Shop that is unlocked in the Book of Lore at HeroMart Badges.	N/A (Promo shop is always primary)
+14	Mogloween Legend	Seasonal Shop			Rare Shop	This shop is/or will be rare and not in-game anymore but can still be accessed by staff.	N/A (Rare shop label is always primary,)
+15	Dwakel	Staff Shop			Reputation Shop	This shop Only or mainly contains items that are buyable at owning certain reputation for a faction.	Besides its primary category this shop Only contains reputation bound items.
+16	Free Player Shop	Normal Shop			Seasonal Shop	This shop is Only in-game for a certain amount of time each year.	N/A (seasonal shop label is always primary)
+17	Warrior	Broken Shop			Staff Shop	This shop is Only for game staff.	N/A (Staff Shop label is always primary)
+18	Rogue	Broken Shop			Additional Comments		
+19	Healer	Broken Shop			LQS	This is or was a Limited Time shop.	
+20	Mage	Broken Shop			No Buying!	Do not buy anything from this shop as it will break your character.	
+21	Class Armors	Rare Shop			AC/Member	This shop is containing Only both member and AC items	
+22	Warrior Upgrade	Rare Shop			Merge House Shop	This shop is both Merge shop and a House Shop	
+23	Mage Upgrade	Rare Shop					
+24	Healer Upgrade	Rare Shop					
+25	Rogue Upgrade	Rare Shop					
+26	Paladin	Normal Shop					
+27	Assassin	Member Shop					
+28	Bubble Mogloween	Seasonal Shop					
+29	Toil Mogloween	Seasonal Shop					
+30	Trouble Mogloween	Seasonal Shop					
+31	Battleon Assorted shop	Normal Shop					
+32	Luna Cove Merge	Merge Shop					
+33	Oishii's Harvest Shop	Seasonal Shop					
+34	Frostval Gift Boxes!	Seasonal Shop					
+35	Frostval Caves	Seasonal Shop					
+36	Frostval Factory	Seasonal Shop					
+37	Wedding Shop	Broken Shop					
+38	Dragonslayer	Normal Shop					
+39	Adventurer Gear	Normal Shop					
+40	Artix Shop	Member Shop					
+41	Armor Shop	Normal Shop					
+42	Nulgath	Broken Shop					
+43	Super Bowl Shop	Seasonal Shop					
+44	Murry's Shop	Normal Shop					
+45	Chaos Shop	Member Shop					
+46	Pactagonal Shop	Normal Shop					
+47	Evil Shop	Normal Shop					
+48	Good Shop	Normal Shop					
+49	Quibble Coinbiter's shop	Rare Shop					
+50	Voltaire's Shop	Broken Shop					
+51	Earth Day	Seasonal Shop					
+52	Luna Cove Rares	Rare Shop					
+53	Guardian Shop	Badge Shop					
+54	Dragonlord Shop	Badge Shop					
+55	Star Captain Shop	Badge Shop					
+56	Zio's Shop	Normal Shop					
+57	Renn's Shop	Normal Shop					
+58	Goose Merge Shop	Merge Shop					
+59	Summer Shop	Seasonal Shop					
+60	Chuckles	Promo Shop					
+61	Peacock	Normal Shop					
+62	Mustard	Normal Shop					
+63	Plum	Normal Shop					
+64	Hitchgreen	Normal Shop					
+65	Scarlet	Normal Shop					
+66	Whiteberry	Normal Shop					
+67	Inn Staff	Normal Shop					
+68	Nulgath	Normal Shop					
+69	Legendary Suggestion Shop	Normal Shop					
+70	House Shop (Furniture)	House Shop					
+71	House Shop	House Shop					
+72	House Shop (Wall)	House Shop					
+73	House Shop (Other)	House Shop					
+74	Mage Shop	Rare Shop					
+75	8-Bit House Shop	Rare Shop					
+76	MechQuest ArtBook	Promo Shop					
+77	Little Wolves House Items	House Shop					
+78	Black Knight Shop	Normal Shop					
+79	Coral Beach Merge	Merge Shop					
+80	Dwarfhold Reputation shop	Reputation Shop					
+81	Deady Shop	Promo Shop					
+82	Drow Shop	AC Shop					
+83	Mick Guyver Shop	House Shop					
+84	dwarfwarShop	Rare Shop					
+85	Basic Enhancement	Broken Shop					
+86	Good Alliance Shop	Reputation Shop					
+87	Evil Alliance Shop	Reputation Shop					
+88	Good Rep Shop	Reputation Shop					
+89	Evil Rep Shop	Reputation Shop					
+90	Basic Enhancement Shop	Staff Shop	Enhancement Shop				
+91	Test Enhancement	Staff Shop	Enhancement Shop				
+92	Quibble's House Shop	Rare Shop	House Shop				
+93	Cosplay Shop	Normal Shop					
+94	Ninja Shop	Normal Shop					
+95	Yokai Rep Shop	Reputation Shop					
+96	Akiba House Shop	House Shop					
+97	Akiba House Items	House Shop					
+98	Mistu Bishi Shop	AC Shop					
+99	Voltaire House Items Shop	Badge shop	House Shop				
+100	DoomKnight Shop	Member Shop					
+101	AC DoomKnight Shop	AC Shop					
+102	Canadian Thanksgiving	Seasonal Shop					
+103	Beckett Shop	Rare Shop					
+104	Vampire Shop Mogloween	Seasonal Shop					
+105	Xergon Merge Shop	Merge Shop					
+106	Mogloween AC Shop	Seasonal Shop	AC				
+107	TempFounder	Broken Shop					
+108	Blazebeard Merge	Merge Shop					
+109	First Upholder	Broken Shop					
+110	Unlucky Deady Shop	Rare Shop					
+111	Friday The 13th	Seasonal Shop					
+112	Limited Time Shop	Rare Shop					
+113	Tutorial Shop	Rare Shop					
+114	Turotial Enhancements	Rare Shop	Enhancement Shop				
+115	Harvest Twig Shop	Seasonal Shop					
+116	Harvest House Shop	Seasonal Shop	House Shop				
+117	Black Friday Shop	Seasonal Shop					
+118	PTR Tester Shop	Rare Shop					
+119	Adak's Shop	Normal Shop					
+120	Forge Shop	Normal Shop					
+121	PTR Enhancement 1	Rare Shop	Enhancement Shop				
+122	PTR Enhancement 10	Rare Shop	Enhancement Shop				
+123	PTR Enhancement 20	Rare Shop	Enhancement Shop				
+124	Frostval Seasonal Shop	Seasonal Shop					
+125	Nulgath	House Shop					
+126	King Coal Shop	Normal Shop					
+127	Major Moglin Shop	Seasonal Shop					
+128	Major Moglin's House Shop	Seasonal Shop	House Shop				
+129	New Year's Shop	Seasonal Shop					
+130	Shrine Shop	Normal Shop					
+131	Hashi Hime Rep Yokai	Reputation Shop					
+132	Celestial Realm Merge	Merge Shop					
+133	Big Daddy's Shop	Seasonal Shop					
+134	Prince Jim's Shop	Seasonal Shop					
+135	Beleen's Chaos Fuzzy Shop	Merge Shop					
+136	Chinese New Year House Shop	Seasonal Shop	House Shop				
+137	Pancake Day Shop	Rare Shop					
+138	Shadowslayer Z Shop	Normal Shop					
+139	Vampire Rep Shop	Reputation Shop					
+140	Master Enhancement Shop	Staff Shop	Enhancement Shop				
+141	Reserved Enh Shop - Fighter	Enhancement Shop					
+142	Reserved Enh Shop - Thief	Enhancement Shop					
+143	Reserved Enh Shop - Hybrid	Enhancement Shop					
+144	Reserved Enh Shop - Wizard	Enhancement Shop					
+145	Reserved Enh Shop - Healer	Enhancement Shop					
+146	Reserved Enh Shop - Spellbreaker	Enhancement Shop					
+147	Reserved Enh Shop - Lucky	Enhancement Shop					
+148	Reserved Enh Shop - Armsman	Broken Shop					
+149	Reserved Enh Shop 9	Broken Shop					
+150	Reserved Enh Shop 10	Broken Shop					
+151	Reserved Enh Shop 11	Broken Shop					
+152	Reserved Enh Shop 12	Broken Shop					
+153	Reserved Enh Shop 13	Broken Shop					
+154	Reserved Enh Shop 14	Broken Shop					
+155	Reserved Enh Shop 15	Broken Shop					
+156	Reserved Enh Shop 16	Broken Shop					
+157	Reserved Enh Shop 17	Broken Shop					
+158	Reserved Enh Shop 18	Broken Shop					
+159	Reserved Enh Shop 19	Broken Shop					
+160	Reserved Enh Shop 20	Broken Shop					
+161	Lycan Rep Shop	Reputation Shop					
+162	Fair Token Shop	Seasonal Shop					
+163	Preview	Preview Shop					
+164	Yin	Normal Shop					
+165	Yang	Normal Shop					
+166	Vampire War Shop	House Shop					
+167	Lycan War Shop	House Shop					
+168	Grenwog	Seasonal Shop					
+169	Dumoose's Shop	Broken Shop					
+170	Thok's Shop	Normal Shop					
+171	Thok's Upgrade Shop	Member Shop					
+172	Metrea's Shop	Normal Shop					
+173	Metrea's Upgrade Shop	Member Shop					
+174	Arcana's Shop	Normal Shop					
+175	Arcana's Upgrade Shop	Member Shop					
+176	Juvania's Shop	Normal Shop					
+177	Juvania's Upgrade Shop	Member Shop					
+178	Mazumi's Shop	Normal Shop					
+179	Artix's Shop	Normal Shop					
+180	Noob Enh Shop	Rare Shop	Enhancement Shop				
+181	PvP Necklace	Normal Shop					
+182	Taro	Broken Shop					
+183	Oblivion	Broken Shop					
+184	EXP Boost Shop	AC Shop					
+185	Captain Lore's Shop	Seasonal Shop					
+186	Mythsong Rep	Reputation Shop					
+187	Mythsong Item	Normal Shop					
+188	Mythsong Pet	Member Shop					
+189	Stratos' Birthday Shop	Seasonal Shop					
+190	Cinco de Mayo	Seasonal Shop					
+191	Mothers Day	Seasonal Shop					
+192	Mythsong AC	AC Shop					
+193	Zephyrus	Normal Shop					
+194	Bounty Hunter Shop	Normal Shop					
+195	Cysero's Wedding	Rare Shop					
+196	June Holiday Shop	Seasonal Shop					
+197	Zeppelin Shop	Normal Shop					
+198	Zeppelin Boss Shop	Broken Shop					
+199	One-Eyed Doll Event Shop	Rare Shop					
+200	Backstage House Shop	House Shop					
+201	Pre-Show Merch Shop	Rare Shop					
+202	Hollowsoul Locker	Member Shop					
+203	Freedom Shop	Seasonal Shop					
+204	Hollowsoul Houses	House Shop					
+205	Green Guitar Shop	Promo Shop					
+206	Chicken Cow Shop	Promo Shop					
+207	Live Drawing Shop	Rare Shop					
+208	Viral Shop	Rare Shop					
+209	Lowe Event AC	Rare Shop	AC				
+210	mergeshoptest	Staff Shop	Merge Shop				
+211	Reens' Potion Shop	Normal Shop					
+212	Blakk's Pets	Member Shop					
+213	Moonwrath's Items	Normal Shop					
+214	Arcangrove Rep Shop	Reputation Shop					
+215	Undead Warrior Shop	AC Shop					
+216	Undead Legion Shop	Normal Shop					
+217	Mudluk Mushroom Shop	AC Shop					
+218	Obrigado Brasil	Seasonal Shop					
+219	Taco Day	Seasonal Shop					
+220	Birthday2 AC Shop	Rare Shop	AC				
+221	Test merge shop	Staff Shop					
+222	PvP Trophy Shop	Merge Shop					
+223	Mogloween Seasonal Candy Shop	Seasonal Shop	Merge Shop				
+224	Rotting Pumpkin	Rare Shop	Merge Shop				
+225	Daimyo's Birthday!	Seasonal Shop	Member Shop				
+226	One-Eyed Doll Video Shop	Rare Shop					
+227	AE Calendar Shop	Promo Shop					
+228	AE Novel Shop	Promo Shop					
+229	Hollow Halls Merge Shop	Merge Shop					
+230	Ticklish Zorbo	Rare Shop	Merge Shop				
+231	A Little Touch of Death	Staff Shop	Merge Shop				
+232	Skyguard Outfitters	Rare Shop					
+233	Golden Harvest Scythe	Merge Shop					
+234	Harvest Day Parade Merge Shop	Merge Shop					
+235	Charroupted Northlands Gear	Merge Shop					
+236	Blinding Snow Shop	Normal Shop					
+237	The Void	Normal Shop					
+238	Undead Legion Merge	Merge Shop					
+239	Blizzy's Shop	Seasonal Shop					
+240	Blizzy's House Shop	Seasonal Shop	House shop				
+241	New Year House Shop	Seasonal Shop	House shop				
+242	Sandsea Rep Shop	Reputation Shop					
+243	Sandsea Pet	Member Shop					
+244	Sandsea House	House Shop					
+245	Sandsea Food	Normal Shop					
+246	EpicDuel Shirt Shop	Promo Shop					
+247	Black Market	Broken Shop					
+248	BattleUnder Merge Shop	Merge Shop					
+249	Limited Qty Shop	Rare Shop					
+250	ED Shirt Shop	Promo Shop					
+251	May Holiday Shop	Rare Shop					
+252	Chinese New Year Shop	Seasonal Shop					
+253	Game Challenge Shop	Rare Shop					
+254	HeroSmash Alpha Shop	Rare Shop					
+255	Nythera's Wedding Shop	Rare Shop					
+256	Lucky Day shamrock fair Merge Shop	Merge Shop					
+257	Pancake Day Shop	Seasonal Shop					
+258	Mad Green Inventor Shop	Normal Shop					
+259	Skyguard Rep Shop	Normal Shop					
+260	Skyguard Pet	Member Shop					
+261	Potion Wep Test Shop	Broken Shop					
+262	Derp April Fools Day Shop	Rare Shop					
+263	Skyguard Weapons	Member Shop					
+264	The Shop of Horrors	Rare Shop	Merge Shop				
+265	CardClasher Shop	Promo Shop					
+266	Fear Chaser Shop	Rare Shop					
+267	CardClasher House	Promo Shop	House Shop				
+268	Sky-NET Assault Shop	Rare Shop					
+269	Evolved Bunny Items	Seasonal Shop	Merge Shop				
+270	HeroSmash Launch!	Rare Shop					
+271	Windsor Wedding Shop	Rare Shop					
+272	Alina's Armory	Normal Shop					
+273	DoomWood Arena Shop	Merge Shop					
+274	Deady Big In Japan Shop	Promo Shop					
+275	Deady Urkor Malravenous Shop	Promo Shop					
+276	DoomWood Challenge	Normal Shop					
+277	DoomWood Rep	Reputation Shop					
+278	DoomFood	Normal Shop					
+279	DoomWood Weapons	Normal Shop					
+280	DoomWood Camouflage	Normal Shop					
+281	DoomCoin Shop	Broken Shop					
+282	Necromancer Shop	Member Shop					
+283	Zorbak's Revenge	AC Shop					
+284	Bandit Basher Merge Shop	Merge Shop					
+285	Necromancer Class	Merge Shop					
+286	Dragon Hero Shop	Badge Shop					
+287	Stone Paladin Merge Shop	Merge Shop					
+288	Stone Paladin Armor Shop	Normal Shop					
+289	3 Month Member Shop	Badge Shop					
+290	15 Month Member Shop	Badge Shop					
+291	ShadowFall Merge Shop	Merge Shop					
+292	Synderes Shop	AC Shop					
+293	VIP Upgrade Shop	Badge Shop					
+294	ArcAttack Back Stage	Member Shop					
+295	Gravelyn's Shop	Member Shop					
+296	Vayle's Shop	Member Shop					
+297	Zorbak's Shop	House Shop					
+298	"???'s Shop 
+"	Normal Shop					
+299	Class Shop	AC Shop					
+300	Bad Ending	Normal Shop					
+301	J6 Junkyard Merge Shop	Merge Shop					
+302	Samba Armor Shop	Merge Shop					
+303	Oishii's Cooking Shop	AC Shop					
+304	Cooking Lessons Shop	Merge Shop					
+305	Shop	House Shop					
+306	Troll Rep Shop	Reputation Shop					
+307	Bachius' Weapon Shop	Normal Shop					
+308	Horc Rep Shop	Reputation Shop					
+309	Sput's Butcher Shop	Member Shop					
+310	Ghaz's Weapon Shop	Normal Shop					
+311	Chaos Mod Pack	Promo Shop					
+312	Doomwood Mod Pack	Promo Shop					
+313	ChronoCorruptor Shop	Promo Shop					
+314	Twilly's Key Shop	AC Shop					
+315	Dragon Con Shop	AC Shop					
+316	Horc War Shop	Merge Shop					
+317	Troll War Shop	Merge Shop					
+318	Troll AC Shop	AC Shop					
+319	Horc AC Shop	AC Shop					
+320	PaladinSlayer Class & Helm	Badge shop	Merge Shop				
+321	Troll Defiance Shop	Normal Shop					
+322	Horc Defiance Shop	Normal Shop					
+323	Deadmoor	Staff Shop					
+324	Collector Token Merge	Merge Shop					
+325	Super Fan Token Shop	Merge Shop					
+326	Event Items	AC Shop					
+327	Vindicator of They Armor	Item Shop					
+328	Adventurer Enhancements	Enhancement Shop					
+329	Vindicator of They Shop	Item Shop					
+330	Troll Merge Shop	Merge Shop					
+331	Horc Merge Shop	Merge Shop					
+332	Synderes Shop	Merge Shop					
+333	Bait Shop	Member Shop					
+334	Paymentez Shop	AC Shop					
+335	Coin Collector Shop	Merge Shop					
+336	Zazul Treasure Chest	Merge Shop					
+337	Harvest Feast Shop	Seasonal Shop					
+338		No Shop					
+339		No Shop					
+340	Toy Sepulchure Shop	Promo Shop					
+341	Toy Artix Shop	Promo Shop					
+342	Toy Sepulchure House Shop	Promo Shop	House Shop				
+343	Toy Artix House Shop	Promo Shop	House Shop				
+344	Molgulp's Shop	Member Shop					
+345	Ancient Mudluk Forge	Merge Shop	Member Shop				
+346	Blue Undead Legend	Rare Shop					
+347	Beleen's Merge Shop	Merge Shop					
+348	Duncan's Dragonslayer Shop	Member Shop					
+349	Feranza's Shop	Member Shop					
+350	Rakham's Pirate Shop	Member Shop					
+351	Etherstorm Rep Shop	Reputation Shop					
+352	Heromart Heroes Shirt	Promo Shop					
+353	Kierks Tinker Shop	Merge Shop					
+354	Friday the 13th House Shop	Rare Shop	House Shop				
+355	Kage's Shop	Merge Shop	Member Shop				
+356	Dynamite Shop	AC Shop					
+357	As'iiur's Potions	Normal Shop					
+358	Etherstorm house shop	House Shop					
+359	Air Rep Shop	Reputation Shop					
+360	Yokai New Year Pets	Seasonal Shop	AC				
+361	Agent Sloan's Chest	Merge Shop	Member Shop				
+362	Fishing House Shop	House Shop					
+363	Fishing Fear	Merge Shop					
+364	Water Rep	Reputation Shop					
+365	Cornelis Family Cache	Member Shop					
+366	Cysero's Lens Shop	Member Shop					
+367	Lady Azjurai Wedding	Rare Shop					
+368	Earth Rep Shop	Reputation Shop					
+369	Legion Soul Shop	Rare Shop	Merge Shop				
+370	Dark Heart Shop	Rare Shop					
+371	Member Bonus 2k AC Shop	Badge Shop					
+372	Member Bonus 5k AC Shop	Badge Shop					
+373	Member Bonus 12k AC Shop	Badge Shop					
+374	Carnaval!	Seasonal Shop					
+375	Spirit Hunter Shop	Merge Shop					
+376	Dage's Dark Birthday Shop	Seasonal Shop	AC				
+377	Live at Yulgar Merge	Merge Shop					
+378	Etherstorm Good Merge	Merge Shop					
+379	Australia Day Shop	Seasonal Shop					
+380	Australian House Shop	Rare Shop					
+381	Cheezburger Trade-In	Rare Shop	Merge House Shop				
+382	Etherstorm Evil Merge	Merge Shop					
+383	Desoloth Merge	Merge Shop					
+384	J6 Shirt Shop	Promo Shop					
+385	The Unbroken Sword	Member Shop					
+386	Dwarven Defense	Member Shop					
+387	Evolved Leprechaun AC Shop	Seasonal Shop	AC				
+388	The NPCs Merge	Staff Shop	Merge Shop				
+389	Magic Thief Rewards	Normal Shop					
+390	Deady Sleezter Shop	Promo Shop					
+391	Blood Ancient Shop	Merge Shop					
+392	EBILCORP Standard Shop	Rare Shop	AC				
+393	Mousepad Shop	Promo Shop					
+394	Dage Print Shop	Promo Shop					
+395	Alchemy Items	AC Shop					
+396	Academic Merits shop	Merge Shop					
+397	Trading for Reagents	Merge Shop					
+398	AQ3D Tech Demo Tester	Badge shop					
+399	Dev Backdoor	Broken Shop					
+400	Royal UndeadSlayer Shop	Normal Shop					
+401	Knave1 AC Shop	Rare Shop	AC				
+402	Dage War Preparation	Rare Shop					
+403	Michem's Helms and Capes	Merge Shop					
+404	Video Premiere Shop	Rare Shop					
+405	Doom Starter Package DeathKnight	Badge Shop					
+406	Coffee Dragon Print	Promo Shop					
+407	Vayle's Doomwood Shop	Normal Shop					
+408	Doomwood II Rep	Reputation Shop					
+409	Xan Poster Shop	Promo Shop					
+410	Artix's Doomwood Shop	Normal Shop					
+411	Vayle's Necromancer Shop	Normal Shop					
+412	Missing Sock Shop	Broken Shop					
+413	Trading Mixtures (Jera)	Merge Shop					
+414	Trading Mixtures (Uruz)	Merge Shop					
+415	Trading Mixtures (Fehu)	Merge Shop					
+416	Trading Mixtures (Gebo)	Merge Shop					
+417	Data for Merits (Jera)	Merge Shop					
+418	Data for Merits (Uruz)	Merge Shop					
+419	Data for Merits (Fehu)	Merge Shop					
+420	Data for Merits (Gebo)	Merge Shop					
+421	Nulgath War Preparation	Rare Shop					
+422	Light Merge	Merge Shop					
+423	Doom Merge	Merge Shop					
+424	50% War Shop	Normal Shop					
+425	Zombie Merge Shop	Merge Shop					
+426	Unrare Undead AC Shop	Rare Shop	AC				
+427	100% War Shop	Normal Shop					
+428	Good Heroes Poster Shop	Promo Shop					
+429	Blinding Light Merge Shop	Rare Shop	Merge Shop				
+430	Doom Shadow Merge Shop	Rare Shop	Merge Shop				
+431	50% Chop Shop	Normal Shop					
+432	100% Saviour Shop	Normal Shop					
+433	CVS Promo Shop	Promo Shop					
+434	Forge Metal	Merge Shop					
+435	Finale Rewards	Normal Shop					
+436	Banzai Souvenir Shop	Normal Shop					
+437	Absurd Monster Foot Shop	Normal Shop					
+438	EBILCORP Executive	Promo Shop					
+439	The Span Rep Shop	Reputation Shop					
+440	Tek's Gearz	Normal Shop					
+441		No Shop					
+442	Bulbug's House Shop	House Shop					
+443	Cysero's Orb Pet Shop	Member Shop					
+444		No Shop					
+445	Kittarian Relic	Member Shop					
+446	Golden Plate Promo	Badge shop					
+447	Pyromancer Shop	Merge Shop					
+448	GameStop Promo Shop	Promo Shop					
+449	Target Promo Shop	Promo Shop					
+450	Icy Cache Merge	Merge Shop					
+451	Heromart Villains T-Shirt	Promo Shop					
+452	Nulgath War Merge shop	Merge Shop					
+453	Paragon Set	Rare Shop					
+454	Dage War Merge shop	Merge Shop					
+455	Legion War Shop	Merge Shop					
+456	Nulgath Diamond Shop	Merge Shop					
+457	Spell Crafting	Staff Shop					
+458	Death Bunny Nitro Shop	Promo Shop					
+459	Beast Maker AC shop	Rare Shop					
+460	Evil War Print Shop	Promo Shop					
+461	Lorelypmics 2014 Shop	Rare Shop					
+462	Epic Duel Armor Shop	Rare Shop					
+463	900 AC Bonus Shop	Badge Shop					
+464	Stranger's Shop	Merge Shop					
+465	Dilligas' Merge Shop	Merge Shop					
+466	Klunk (House Shop)	Rare Shop	House Shop				
+467	Exos Merge Shop	Merge Shop					
+468	Power Gem Shop	Merge Shop					
+469	Nulgath Reward Shop	Merge Shop					
+470	DragonCon 2012 Shop	Promo Shop					
+471	Good Allegiance	Reputation Shop					
+472	Evil Allegiance	Reputation Shop					
+473	Cleric's Temple Shop	Normal Shop					
+474	Solaris Shop	Reputation Shop					
+475	Lunaris Shop	Reputation Shop					
+476	Suggestion Shop	Normal Shop					
+477	J6's Boss Bounty	Merge Shop					
+478	Lag PTR reward	Badge Shop					
+479	Rare Houses Shop	Rare Shop	House Shop				
+480	Heroes and Villains Combo	Promo Shop					
+481	Battlepet shop	Member Shop					
+482	J6's Wedding House Shop	Rare Shop	House Shop				
+483	4th Upholder	Badge Shop					
+484		No Shop					
+485	Zorbak Shirt	Promo Shop					
+486	Death's Rewards	Normal Shop					
+487	Death's Rares	Rare Shop					
+488	AQ Anniversary Shop	Rare Shop					
+489	DF Anniversary Shop	Rare Shop					
+490	MQ Anniversary Shop	Rare Shop					
+491	AQW Anniversary Shop	Rare Shop					
+492	HS Anniversary Shop	Rare Shop					
+493	ED Anniversary Shop	Rare Shop					
+494	Brightoak House Shop	House Shop					
+495	BioHazard Shop	Promo Shop					
+496	Tree Titan	Staff Shop					
+497	Mallora's Shop	Normal Shop					
+498	Chaos Queen Beleen	Rare Shop					
+499	Chunin shop	Rare Shop	Merge Shop				
+500	Cysero's Gear	Merge Shop					
+501	Mogloween 2012 t-shirt	Promo Shop					
+502	10 Year Anniversary Shop	Promo Shop					
+503	Something About a Dragon Shop	Promo Shop					
+504	United Nations Day	Rare Shop					
+505	Commited Event Rare	Rare Shop					
+506	Commited Merge Shop	Merge Shop					
+507	Mogloween Commited	Seasonal Shop					
+508	2013 Calendar Shop	Promo Shop					
+509	OverSoul Release Shop	Rare Shop					
+510	Cysero's tutorial shop	Normal Shop					
+511	Referral Shop	Merge Shop					
+512	Destiny Shop	Rare Shop					
+513	Guilds PTR shop	Badge Shop					
+514		No Shop					
+515	Fall Fire Shop	Rare Shop					
+516	TheSpan war merge Shop	Rare Shop	Merge Shop				
+517	ChaosLord Beleen Print	Promo Shop					
+518	Fall Dryad Merge Shop	Item Shop	Merge Shop				
+519	Dark Harvest Shop	Seasonal Shop					
+520	Sword of Hope 	Seasonal Shop	Merge shop				
+521	Athon's Frostval Shop	Seasonal Shop					
+522	December Specials Shop	Rare Shop					
+523	Beleen's Birthday House Shop	Rare Shop	House Shop				
+524	Yeti t-shirt	Promo Shop					
+525	LQS House Merge	Rare Shop	Merge House Shop				
+526	New Beginning	Seasonal Shop					
+527	Dreadspace Replicator	Merge Shop					
+528	Chaos Watch tower	Normal Shop					
+529	Holi-Daily merge	Rare Shop	Merge Shop				
+530	Holi-Daily Resource	Rare Shop					
+531		No Shop					
+532	Blackhorn AC Shop	AC Shop					
+533	Blackhorn Tomb Shop	Normal Shop					
+534	Winter Token Shop	Item Shop					
+535	Seasons Shop Tokens	AC Shop					
+536	Witchhunter Shop	Rare Shop					
+537	Lionfang Invasion Shop	Normal Shop					
+538	Lionfang Invasion AC Shop	AC Shop					
+539		No Shop					
+540		No Shop					
+541		No Shop					
+542		No Shop					
+543	Helper Pets	Normal Shop					
+544	Thunderforge Rep Shop	Reputation Shop					
+545	Jade Samurai	Badge Shop					
+546	Vokun's Birthday Shop	Rare Shop					
+547	Darkblood Armors	Normal Shop					
+548	Falguard Weapons	Normal Shop					
+549	Spell Ink	Staff Shop	Merge Shop				
+550	Shattersword Shop	Normal Shop					
+551	Silver Duelist	Badge Shop					
+552		No Shop					
+553	Shadow of Sepulchure	Promo Shop					
+554	Shadow Wraith Shop	Promo Shop					
+555	Shadow Empress 	Promo Shop					
+556	ChickenCow Bock two	Promo Shop					
+557	Treasure Map	AC Shop					
+558	Undead Goat Merge	Merge Shop					
+559	Hero Tournament	Merge Shop	AC				
+560	Trophyhunter Shop	Badge Shop					
+561	Alpha Omega Merge	Merge Shop					
+562	Tournament Rares	Rare Shop					
+563	Tournament Shop	Normal Shop					
+564	AE Coffee mug	Promo Shop					
+565	Ebil Corp mug	Promo Shop					
+566	Beautiful Creatures	Rare Shop					
+567	Stonehand Shop	Normal Shop					
+568	Treasure Chest	Normal Shop					
+569	Not a mod Shirt	Promo Shop					
+570	Legion Poster	Promo Shop					
+571	Sketchbook	Promo Shop					
+572	Death Pits rewards	Normal Shop					
+573	ShadowScythe Follower	Promo Shop					
+574	Bright Knight	Merge Shop					
+575	AQWorlds Cup	Rare Shop					
+576	StormBringer	Badge Shop					
+577	SoulForge	Item Shop	Merge Shop				
+578	DragonClaw	Badge Shop					
+579	MCW Rare shop	Rare Shop					
+580	Valencia's Treasure Shop	AC Shop					
+581	Galanoth's Birthday Merge	Seasonal Shop	Merge shop				
+582	DragonSlayer Treasures	Seasonal Shop					
+583	Royal Commander	Badge Shop					
+584	Lionfang's Vault	AC Shop					
+585	Lionfang's Vault	AC Shop					
+586	Lionfang's Vault	AC Shop					
+587	Manticore LTS	Rare Shop	AC				
+588	Treasure Map	AC Shop					
+589	Sketchbook House shop	Promo Shop	House Shop				
+590	Seasonal Preview	Preview Shop					
+591	Spring Shop	Item Shop					
+592	Undead Goat Morph	Item Shop					
+593	Aria's pet eggs	Rare Shop	Merge Shop				
+594	Pet Eggs	Rare Shop					
+595	Pink Romancer	Item Shop					
+596	Dragon Blade Limited Time	Rare Shop					
+597	Warp Necro Cape	Item Shop					
+598	Warp Necro Set	Item Shop					
+599	GI J6	Rare Shop					
+600	Astral Guardian	Badge shop					
+601	Cysero Bacon T-shirt	Promo Shop					
+602	Astral Guardian	Rare Shop					
+603	J6 House	House Shop					
+604	Dunestalker	Rare Shop					
+605	Artist Showcase: Vokun	Normal Shop					
+606	Gilded Champion Blade	AC Shop					
+607	Center of Lore Shop	Normal Shop					
+608	Lucky 13 contest	Rare Shop					
+609	Realm Guardian	Merge Shop					
+610		No Shop					
+611	Artist Showcase: Memet	Normal Shop					
+612	LightCaster	Badge Shop					
+613	LightCaster LTS	Rare Shop					
+614	RavenScar	Normal Shop					
+615	RavenScar Legion	Rare Shop					
+616	Worldsaver Shop	Rare Shop					
+617	Blood Titan Merge Shop	Merge Shop	AC/Member				
+618	Mirror Realm Merge	Merge Shop					
+619	Irony x3	Rare Shop					
+620	Artist Showcase: Hizu	Normal Shop					
+621	Found Sock Shop	Seasonal Shop					
+622	AC Spell Inks	Merge Shop					
+623	Spellcraft Rep Shop	Reputation Shop					
+624	Kanataka Warrior	Badge Shop					
+625	Artist Showcase: Mido	Normal Shop					
+626	Chaos Twin Print	Promo Shop					
+627	Good Twin	Promo Shop	Item Shop				
+628	Bad Twin	Promo Shop	Item Shop				
+629	Artist Showcase: Nulgath	Member Shop					
+630	Blade of Awe	Merge Shop					
+631	Gear of Awe	Normal Shop					
+632	Awe Merge shop	Merge Shop					
+633	Hybrid Awe Enhancements	Enhancement Shop					
+634	Stonewrit Merge	Merge Shop					
+635	Fighter Awe Enhancements	Enhancement Shop					
+636	Wizard Awe Enhancements	Enhancement Shop					
+637	Thief Awe Enhancements	Enhancement Shop					
+638	Healer Awe Enhancements	Enhancement Shop					
+639	Lucky Awe Enhancements	Enhancement Shop					
+640	Artist Showcase: Jemini	Normal Shop					
+641	Lore's Defender	AC Shop					
+642	Chaos War Merge	Merge Shop					
+643	Chaos Destroyer	Normal Shop					
+644	Golden Fury	Badge Shop					
+645		No Shop					
+646	Chaos 100%	Normal Shop					
+647	Pie-rate shop	Item Shop					
+648	Artist Showcase: Dage	Member Shop					
+649	Femme Fatalies	Normal Shop					
+650	Artist Showcase: Aegis	Member Shop					
+651	Loremaster Rep Shop	Reputation Shop					
+652	Mort's Shop	Normal Shop					
+653	AQW Guide Shop	Item Shop					
+654	Artist Showcase: Tyronius	Normal Shop					
+655	Grim Gift Shop	Merge Shop					
+656	Hero of Steel	Rare Shop					
+657	MQ t-shirt	Promo Shop					
+658	Summer Seasonal Shop Preview	Preview Shop					
+659	Artist Showcase: Beleen	Normal Shop					
+660	Aeneas' Shop	Normal Shop					
+661	Sybil's Shop	Normal Shop					
+662	Shadowfire Emperor	Badge Shop					
+663	Legion Champion	Rare Shop					
+664	Summer Seasonal Shop	Item Shop					
+665	AQWorlds War 3 	Merge Shop					
+666	Artist Showcase: Diozz	Normal Shop					
+667	Trigoras Challenge	Merge Shop					
+668	Cysero Merge shop	Merge Shop					
+669	Meme Moglin	Normal Shop					
+670	Charon's Purge Merge	Merge Shop					
+671	Ninja Warrior	Rare Shop					
+672	Building Shop	Guild Shop	No Buying!				
+673	Shadowfire Emissary	Badge Shop					
+674	Living Dungeon Merge	Merge Shop					
+675	Guiding Blade	Item Shop					
+676	Mini Valoth	Promo Shop					
+677	Artist Showcase: Aranx	Normal Shop					
+678	Starsinc Merge	Merge Shop					
+679	Legendary Hero	Badge Shop					
+680	Artist Showcase: Solrac	Normal Shop					
+681	Sybil's Merge	Merge Shop					
+682	Aeneas' Merge	Merge Shop					
+683	Combo Breaker	Promo Shop					
+684	MechQuest Finale	Normal Shop					
+685	Fantastic Lore	Rare Shop					
+686	Summer Blockbuster	Rare Shop					
+687	July Moglin Pets	Rare Shop					
+688	Enchanted Chess Shop	Normal Shop					
+689	Maedoc's Shop	Reputation Shop					
+690	Warlic's Shop	Reputation Shop					
+691	Muerdan's Shop	Reputation Shop					
+692	Spellcraft Shop	Reputation Shop					
+693	Arcane Quill shop	AC Shop					
+694	Archfiend Class	AC Shop					
+695	Archfiend Merge	Merge Shop					
+696	Base ENH shop	Enhancement Shop					
+697	Ven Showcase	Normal Shop					
+698	Swordhaven Armory	Normal Shop					
+699	Gjappy Birthday Shop	Rare Shop					
+700	Swordhaven Weapons	Normal Shop					
+701	Swordhaven Pets	Member Shop					
+702	Swordhaven Rep	Reputation Shop					
+703	Artist Showcase: Roroth	Normal Shop					
+704	Shadow Sorcerer	Badge Shop					
+705	Brutalcorn Shop	Rare Shop					
+706	Shadow Sorceror LTS	Rare Shop					
+707	Fortune Tickets	Rare Shop					
+708	DragonFable T-shirt	Promo Shop					
+709	Doom Preview 	Preview Shop					
+710	Archives	Normal Shop					
+711	Aranx Birthday	Seasonal Shop					
+712	Doom Merge	Merge Shop					
+713	Artix Attacks T-Shirt	Promo Shop					
+714	Chaos Eye T-Shirt	Promo Shop					
+715	Pre-Event 13Th Shop	Rare Shop					
+716	Treasure Hoard	Normal Shop					
+717	Brightoak	Rare Shop					
+718	Chika Birthday Shop	Rare Shop					
+719	Gustav Merge	Merge shop					
+720	Undead Legion Naval	Merge shop					
+721	Destiny Merge	Merge shop					
+722	Distressed DF Shirt	Promo Shop					
+723	Naval Top Hat Merge	Merge shop					
+724	Naval Merge Resource	Normal Shop					
+725	Starsinc Rares	Rare Shop					
+726	Wedding Presents	normal shop					
+727	Fall seasonal shop	Item Shop					
+728	Fall Seasonal Preview	Preview Shop					
+729	Zoshi's Featured Artist	Normal Shop					
+730	AdventureQuest Gear	Normal Shop					
+731	DragonFable Gear	Normal Shop					
+732	MechQuest Gear	Normal Shop					
+733	AQWorlds BattleCon Gear	Normal Shop					
+734	EpicDuel Gear	Normal Shop					
+735	HeroSmash Gear	Normal Shop					
+736	OverSoul Gear	Normal Shop					
+737	BattleGems Gear	Normal Shop					
+738	EbilCorp Gear	Normal Shop					
+739	HeroMart Gear	Normal Shop					
+740	Beleen's Balloons	Normal Shop					
+741	Food Court	AC Shop					
+742	1st Upholder	Badge shop					
+743	2nd Upholder	Badge shop					
+744	3rd Upholder	Badge shop					
+745	Founder Shop	Badge shop					
+746	5th Upholder	Badge shop					
+747	Sweetest Helm	Rare Shop					
+748	Blood Shadowcaster	Badge shop					
+749	BattleMage	Normal Shop					
+750	Dragon's Bane Gear	Normal Shop					
+751	Battlecon Cosplay Shop	Rare Shop					
+752	Clawg Pet	Promo Shop					
+753	Artis Showcase: Ghost	Normal Shop					
+754	Artis Showcase: Arklen	Normal Shop					
+755	Secret Lab Merge	Merge Shop					
+756	Dragon Shinobi Merge	Merge Shop					
+757	Dragon Shinobi Class	Rare Shop					
+758	Lab Gear	Normal Shop					
+759	Oracle Class 	Rare Shop					
+760	Guilds Halls PTR Shop	Badge shop	House Shop				
+761		No Shop					
+762	Lvl 50* Healer	Enhancement Shop					
+763	Lvl 50* Lucky Enh	Enhancement Shop					
+764	Lvl 50* Spellbreaker Enh	Enhancement Shop					
+765	Lvl 50* Wizard Enh	Enhancement Shop					
+766	Lvl 50* Hybrid Enh	Enhancement Shop					
+767	Lvl 50* Thief Enh	Enhancement Shop					
+768	Lvl 50* Fighter Enh	Enhancement Shop					
+769	BrideandGroom	Merge Shop					
+770	Mog-GLOW-ween Merge	Merge Shop					
+771	2014 Calendar	Promo Shop					
+772	Artix Logo T-shirt	Promo Shop					
+773	Thor's Day Shop	Item Shop					
+774	Shriekward Potions	Normal Shop					
+775	Memet's Birthday Shop!	Rare Shop					
+776	Chaos Shop	Reputation Shop					
+777	Journey Shop	Staff Shop					
+778	Doctor Whoooo	Rare Shop					
+779	Zardis House	Rare Shop	House Shop				
+780	Black Friday Shop	Rare Shop					
+781	Cyber Monday	Seasonal Shop					
+782	Turdracolich Rares	Seasonal Shop					
+783	Shadowspawn Warrior	Badge shop					
+784	Winter Shop	Item Shop					
+785	Spring Preview Shop	Preview Shop					
+786	Winter Token Shop	Item Shop					
+787	Bright Fortress	Badge shop	LQS				
+788	Artix Wedding Merge	Merge Shop					
+789	Glacial Warlord	Badge shop					
+790	Glacial Warlord Armor	Rare Shop					
+791	Darkwinter Good Merge	Rare Shop	Merge Shop				
+792	Darkwinter Evil Merge	Rare Shop	Merge Shop				
+793	Necrotic Sword of Doom	Merge Shop					
+794	J6 Space	Rare Shop					
+795	"Mirror Realm Invasion Merge
+"	Merge Shop	Member Shop				
+796	Data Elemental Combo	Badge shop					
+797	Love Caster Class	Rare Shop					
+798	Ash Birthday	Rare Shop					
+799	Countdown to New Year	Seasonal Shop					
+800	Darkwinter War Shop	Rare Shop					
+801	Brightoak Reputation	Reputation Shop					
+802	Ulfgar's Shop	Seasonal Shop					
+803	Shadowfall Defense	Merge Shop					
+804	Shadowfall Commander	Badge shop					
+805	Bitterfrost Dragon	Badge shop					
+806	Ultra Elemental Capes	AC Shop					
+807	Legendary Ultra Elemental Capes	Member Shop					
+808	Frost Lich	Staff Shop					
+809	Legendary Ultra Elemental Class	Item Shop					
+810	Ultra Elemental Class	Item Shop					
+811	Ultra Chaos Gear	AC Shop					
+812	Legendairy Ultra Gear	Item Shop					
+813	Nulgath Birthday	Seasonal Shop					
+814	Fae's Shop	Member Shop					
+815	Fable Forest Merge	Merge Shop	Member Shop				
+816	Battle Gems Pet	Item Shop					
+817	Battle Gems Shop	Rare Shop					
+818	Member Class Shop	Member Shop					
+819	Yokai New Year Rares	Rare Shop					
+820		No Shop					
+821	Immortal Legion Poster	Promo Shop					
+822	Level 10+ Champion	Merge Shop					
+823	Level 20+ Champion	Merge Shop					
+824	Level 30+ Champion	Merge Shop					
+825	Level 40+ Champion	Merge Shop					
+826	Level 50+ Champion	Merge Shop					
+827	Blockhead Shop	Rare Shop					
+828	Zoshi Birthday	Rare Shop					
+829	BattleGems Founder	Badge Shop					
+830	Beleen's Dream Island Shop	Normal Shop					
+831	August Rares	Rare Shop					
+832	Good Alliance Gear	Reputation Shop					
+833		No Shop					
+834	Evil Alliance Shop	Reputation Shop					
+835	Timedragon Warrior	Badge Shop					
+836	Timedragon Warrior Plus	Badge Shop					
+837	Timedragon Warrior Ultra	Badge Shop					
+838	Greywolf Commander	Badge shop					
+839	Dage's Birthday Merge	Seasonal Shop	Merge Shop				
+840	Zack's Shop	Rare Shop					
+841	Artix's Mug	Promo Shop					
+842	Ebilcorp Mug	Promo Shop					
+843	Dage's Birthday Altar	Rare Shop	Reputation Shop				
+844	BattleGems Game Gear	Seasonal Shop	Merge Shop				
+845	Evolved Dark Caster Class	Rare Shop					
+846	Noob Shop	Normal Shop					
+847	Ravenloss Reward	Normal Shop					
+848	Ravenloss War Rewards	Normal Shop					
+849	Double Mug	Promo Shop					
+850	Arachnomancer Shop	AC Shop					
+851	Ravenloss War Merge	Merge Shop					
+852	Dichromatic Shop	Rare Shop					
+853	Bellybutton Armor	Rare Shop					
+854	Verde Warrior	Promo Shop					
+855	Intiero Warrior	Promo Shop					
+856	Cave Loot	Normal Shop					
+857	Dragon Morph	Rare Shop					
+858	Monster Hunter Shop	Merge Shop					
+859	WolfHound Warrior	Badge shop					
+860	WolfHound Plus	Badge shop					
+861	WolfHound Ultra	Badge shop					
+862	Fantasy Hero Pass	Badge shop					
+863	Il'Lar's Armors 	Reputation Shop					
+864	Aniya's Weapons	Reputation Shop					
+865	Phelan's Brew	Normal Shop					
+866	May 4th	Rare Shop					
+867	Shav's Riel's Helms	Reputation Shop					
+868	Smothers's Capes	Reputation Shop					
+869	Golden Forest Warrior	Rare Shop					
+870	Glacier Lord Set	Badge shop	LQS				
+871	Lavastorm Lord Set	Badge shop	LQS				
+872	Dragon Salvation Shop	Badge shop	LQS				
+873	Shadowdragon Set	Badge shop	LQS				
+874	Necronaut Rares	Rare Shop					
+875	Randor Birthday	Seasonal Shop					
+876	Dragon Emperor 1	Badge Shop					
+877	Dragon Emperor 2	Badge Shop					
+878	Dragon Emperor	Badge shop					
+879	Fell Beast Shop	Merge Shop					
+880	Escherion Print Bonus	Promo Shop					
+881	Bright Fortress	Badge shop	House Shop				
+882	Escherion Print	Promo Shop					
+883	X-Treme Mutant	Rare Shop					
+884	Hyperspace Shop	Item Shop					
+885	Galatic Shop	Item Shop					
+886	Blackhole Shop	Item Shop					
+887	Chaos Lab Merge	Merge Shop					
+888	OMGZilla	Rare Shop					
+889	Razorclaw Merge	Merge Shop					
+890	Animated Item Shop	Normal Shop					
+891	Chaos Slayer Class	Normal Shop					
+892	Thirdspell Merge	Merge Shop					
+893	Chaos Slayer AC Shop	AC Shop					
+894	Gift Certificate	Promo Shop					
+895	Drakath Print	Promo Shop					
+896	Chaotic Friday the 13th	Rare Shop					
+897	Willowcreek War Chest	Item Shop					
+898	Warlock Grand Master	Badge shop					
+899	Forsaken Warrior	Badge Shop					
+900	Warlock Adept	Badge Shop					
+901	Shadow Warlock	Badge shop					
+902	Captain Swordhaven	Promo Shop					
+903	Paragon of Light	Badge shop					
+904	Dungeon Treasure Chest	Merge Shop					
+905	Guild Launch	Badge shop					
+906	World War Lore Merge	Merge Shop					
+907	Bev's Wig Shop	Normal Shop					
+908	Chaos Paragon	Badge shop					
+909	Eternal Warrior	Badge shop					
+910	Chaos Conqueror	Badge shop					
+911	Blazing Chaos	Badge shop					
+912	Nine Tentatails	Badge shop					
+913	50% Alliance Pvp Shop	Normal Shop					
+914	50% Chaos Pvp Shop	Normal Shop					
+915	1 Month Loyalty	Badge shop					
+916	2 Months Loyalty	Badge shop					
+917	3 Months Loyalty	Badge shop					
+918	6 Months Loyalty	Badge shop					
+919	9 Months Loyalty	Badge shop					
+920	12 Months Loyalty	Badge shop					
+921	15 Months Loyalty	Badge shop					
+922	2 Years Loyalty	Badge shop					
+923	3 Years Loyalty	Badge shop					
+924	4 Years Loyalty	Badge shop					
+925	5 Years Loyalty	Badge shop					
+926	500 AC Loyalty	Badge shop					
+927	2000 AC Loyalty	Badge shop					
+928	12000 AC Loyalty	Badge shop					
+929	25000 AC Loyalty	Badge shop					
+930	50000 AC Loyalty	Badge shop					
+931	100000 AC Loyalty	Badge shop					
+932	200000 AC Loyalty	Badge shop					
+933	1 Week Anniversary	Badge shop					
+934	1 Month Anniversary	Badge shop					
+935	3 Months Anniversary	Badge shop					
+936	6 Months Anniversary	Badge shop					
+937	12 Months Anniversary	Badge shop					
+938	15 Months Anniversary	Badge shop					
+939	2 Year Anniversary	Badge shop					
+940	3 Year Anniversary	Badge shop					
+941	4 Year Anniversary	Badge shop					
+942	5 Year Anniversary	Badge shop					
+943	6 Year Anniversary	Badge shop					
+944	Prologue Complete	Badge shop					
+945	Shadowfall Complete	Badge shop					
+946	Chiral Valley Champion	Badge shop					
+947	Dwarfhold Champion	Badge shop					
+948	Yokai Champion	Badge shop					
+949	Darkovia Champion	Badge shop					
+950	Mythsong Champion	Badge shop					
+951	Arcangrove Champion	Badge shop					
+952	Sandsea Champion	Badge shop					
+953	DragonSlayer Trophy	Item Shop					
+954	Annihilator of Battleon	Normal Shop					
+955	Defender of Battleon	Normal Shop					
+956	Alden's Pack	Staff Shop					
+957	Tower Helms	Staff Shop					
+958	Panda Hoodie	Promo Shop					
+959	Monthly Member Shop	Member Shop					
+960	Blockbuster Battle Shop	Rare Shop					
+961	Featured Artist LQS Memet	Badge shop					
+962	DragonFlight	Item Shop					
+963	Orange Drellie	Promo Shop					
+964	Dreadmaw Merge	Merge Shop					
+965	Featured Artist LQS Nulgath (AC)	Badge shop					
+966	Chaos Champion Prime	Item Shop					
+967	Zorbak Orange Drellie	Promo Shop					
+968	Chaos Lord Items	Promo Shop	Item Shop				
+969	Shadowscythe Gryphon	Badge shop	LQS				
+970	Shadowscythe Rider	Badge shop	LQS				
+971	DreadLeopard Gryphon	Badge shop	LQS				
+972	DreadLeopard Gryphon Rider	Badge shop	LQS				
+973	Bright Gryphon	Badge shop	LQS				
+974	Bright GryphonRider	Badge shop	LQS				
+975	GryphonRider Guards	Badge shop	LQS				
+976	Beastmaster Class	Reputation Shop	Member Shop				
+977	13 Lord of Chaos Poster Shop	Promo Shop	House Shop				
+978	AE Panel Survivor	Promo Shop					
+979	Beastmaster AC Shop	Member Shop					
+980	Vokun Merge	Merge Shop					
+981	Bladelord AC Shop	Rare Shop					
+982	Waves of Wrath	Rare Shop					
+983	Deep Terror Blade	Rare Shop					
+984	Barnacle's Bandanas	Merge Shop					
+985	Preen's Pet Shop	Normal Shop					
+986	6th Upholder	Badge shop					
+987	Bloodtusk Champion	Badge shop					
+988	Trolls Ally	Staff Shop					
+989	TheSpan Champion	Badge shop					
+990	ThunderForge Champion	Badge shop					
+991	Swordhaven Champion	Badge shop					
+992	Mirror Realm Champion	Badge shop					
+993	DoomSkull Champion	Badge shop					
+994	Drakath's Armor	Badge shop	Item Shop				
+995	Haunted Muffins	Rare Shop					
+996	Artifact Hunter Merge	Merge Shop					
+997	Amazons Accessories	Normal Shop					
+998	Dread's Weapons	Merge Shop					
+999	Throne Depot	House Shop					
+1000		No Shop					
+1001	OmniKnight	Badge shop					
+1002	Artifact Merge	Merge Shop					
+1003	Blood Of Cerberus	Rare Shop					
+1004	Vampire War Merge	Merge Shop					
+1005	Dage's Death Rider	Rare Shop					
+1006	Mirror Realm Rares	Rare Shop					
+1007	House of Usher Shop	Seasonal Shop					
+1008	Cask of Amoglinado Shop	Seasonal Shop					
+1009	The Wyvern Shop	Seasonal Shop					
+1010	Starship Paladin Shop	Normal Shop					
+1011	DeathRider Key	Item Shop					
+1012	Parked DeathRider	House Shop					
+1013	Dark DragonMaster	Badge shop					
+1014	Package Preview	Preview Shop					
+1015	5 Years Loyalty House Shop	Badge shop	House Shop				
+1016	Legion T-Shirt	Promo Shop					
+1017	Paladin T-Shirt	Promo Shop					
+1018	Legion Paladin	Promo Shop					
+1019	2015 Calendar	Promo Shop					
+1020	BrightFall Commander	Badge shop					
+1021	Daily Treasure Shop	Staff Shop					
+1022	Draconic DmK Tier 1	Badge shop					
+1023	Draconic DmK Tier 2	Badge shop					
+1024	Draconic DmK Tier 3	Badge shop					
+1025	Extinction Games Merge	Merge Shop					
+1026	Featured Artist LQS Nulgath (Legend)	Badge shop					
+1027	J6 Birthday	Rare Shop					
+1028	J6 Birthday Merge	Rare Shop	Merge Shop				
+1029	2k AC Preview	Preview Shop					
+1030	5k AC Preview	Preview Shop					
+1031	12k AC Preview	Preview Shop					
+1032	Ultra OmniKnight Blade	Staff Shop					
+1033	Sheng Long Guardian	Badge shop					
+1034	Sheng Chi Guardian	Badge shop					
+1035	Dage's Underworld House	Badge shop	House Shop				
+1036	Dragon's Altar House	Badge shop	House Shop				
+1037	Draconis Pets	Badge shop					
+1038	AQ:Dragons Founder	Badge shop					
+1039	Ectocave Merge	Merge Shop					
+1040	Fallenfire Raffle	Rare Shop					
+1041	Featured Artist LQS Dage	Badge shop					
+1042	Legion Recruit Merge Shop	Promo Shop	Merge Shop				
+1043	Countdown to Black Friday	Rare Shop					
+1044	FallenFire Raffle Token	Rare Shop					
+1045	Shadow Legion Vampire	Merge Shop					
+1046	BoneBreaker	Badge shop					
+1047	Marvel Spiderman	Promo Shop					
+1048	Marvel Ironman	Promo Shop					
+1049	IceRise Past	Seasonal Shop	Member Shop				
+1050	Tundra Stalker	Rare Shop					
+1051	Bonebreaker Merge	Merge Shop					
+1052	BoneBreaker Exclusive	Badge shop					
+1053	Winter's Heart Merge	Seasonal Shop	Merge Shop				
+1054	Sora's Birthday	Seasonal Shop					
+1055	Tower of Winds Merge	Merge Shop					
+1056	Cryomancer Class	Merge Shop					
+1057	Dage Frostval Armor LQS	Badge shop					
+1058	Ice Fortress House Shop	Badge shop	House Shop				
+1059	Santa Nulgath Battle Pet	Badge shop					
+1060	Frostval Gear Set	Badge shop					
+1061	Dark Ice Cryomancer	Member Shop					
+1062	Eagle's Reach Armory	Merge Shop					
+1063	Holiday Zorbak	Promo Shop					
+1064	AdventureCoin Shop	AC Shop					
+1065	Showcase Shop	Normal Shop					
+1066	Golden Gladiator Tier 1	Badge shop					
+1067	Golden Gladiator Tier 2	Badge shop					
+1068	Golden Gladiator Tier 3	Badge shop					
+1069	Golden Gladiator Tier 4	Badge shop					
+1070	Cysero's Secret Rares	Rare Shop					
+1071	Za'nar Merge	Merge Shop					
+1072	First Weapon	Normal Shop					
+1073	Oaklore Enhance	Enhancement Shop					
+1074	Za'nar Book	Promo Shop					
+1075	J6: Evolution	Promo Shop					
+1076	J6: Bundle	Promo Shop					
+1077	Za'nar Book House Shop	Promo Shop	House Shop				
+1078	Oaklore Potion	Normal Shop					
+1079	Void Defender LTS	Rare Shop					
+1080	Oaklore Weapons	Normal Shop					
+1081	Moglin Pets	Merge Shop					
+1082	Northpointe Weapons	Reputation Shop					
+1083	Northpointe Accessories	Reputation Shop					
+1084	Northpointe Pets	Reputation Shop	Member Shop				
+1085	Northpointe Magic Shop	Reputation Shop					
+1086	Northpointe Shop	Reputation Shop					
+1087	Good Recruiter	Reputation Shop					
+1088	Evil Recruiter	Reputation Shop					
+1089	Chaos Recruiter	Reputation Shop					
+1090	Unlucky Love Shop	Seasonal Shop					
+1091	Embersea Pets	Member Shop					
+1092	Embersea Gear	Reputation Shop					
+1093	Embersea Rep	Reputation Shop					
+1094	Northpointe Dye Shop	Merge Shop					
+1095	Fyreborn Tier 1	Badge shop					
+1096	Fyreborn Tier 2	Badge shop					
+1097	Fyreborn Tier 3	Badge shop					
+1098	Brightoak Gear	Normal Shop					
+1099	Fyreborn AC	Rare Shop					
+1100	Embersea Healing	Normal Shop					
+1101	Pyrewatch Armory	Normal Shop					
+1102	Dark Hunt Merge Shop	Merge Shop					
+1103	Storm Cache	Merge Shop					
+1104	Dage's House Shop	House Shop					
+1105	Guardian Tower Memorial Shop	House Shop					
+1106	Legion DoomKnight Merge	Merge Shop					
+1107	September Holiday	Rare Shop					
+1108	Brimstone	Member Shop					
+1109	1 month Centaur	Badge shop					
+1110	3 months Centaur	Badge shop					
+1111	6 months Centaur	Badge shop					
+1112	12 months Centaur	Badge shop					
+1113	Grovebreaker Rares	Rare Shop					
+1114	Undead Assault	Rare Shop					
+1115	Zazul's House Shop	House Shop					
+1116	Dark Carnival Merge	Merge Shop					
+1117	Dragonspire Merge	Merge Shop					
+1118	Shadowspire Merge	Merge Shop					
+1119	Queenspire Merge	Merge Shop					
+1120	Shadowflame Warrior	Badge shop					
+1121	Shadowflame Champion	Badge shop					
+1122	Shadowflame Champion Merge	Badge shop	Merge Shop				
+1123	Raptor Rider	Rare Shop					
+1124	Forgotten Tombs	Merge Shop					
+1125	Feverfew Merge	Merge Shop					
+1126	Nightmare	Member Shop					
+1127	Brightoak Pets	Normal Shop					
+1128	Twilight's Arcana	Rare Shop					
+1129	Armor of Awe	Merge Shop					
+1130	Awe Passes	AC Shop					
+1131	AQW Dragon Cape	Item Shop					
+1132	Necromancer AC pkg	Badge shop					
+1133	Seraphic Gear	Normal Shop					
+1134	Bright New Hero	Badge shop					
+1135	Obsidia Necromancer	Rare Shop					
+1136	Starsword Rares	Rare Shop					
+1137	Draden's Merge Shop	Merge Shop					
+1138	FireForge Shop	Merge Shop					
+1139	Blaze Binder AC Class	AC Shop					
+1140	Blaze Binder Rep Class	Normal Shop					
+1141	AC Pyromancer Sigils	Item Shop					
+1142	Pyromancer Sigils	Item Shop					
+1143	Lavarun Merge	Merge Shop					
+1144	Dark Palace Merge	Merge Shop					
+1145	Shadowflame Warrior Merge	Badge shop	Merge Shop				
+1146	Celestial Rares	Rare Shop					
+1147	1st Upholder Merge	Merge Shop					
+1148	2nd Upholder Merge	Merge Shop					
+1149	3rd Upholder Merge	Merge Shop					
+1150	4th Upholder Merge	Merge Shop					
+1151	5th Upholder Merge	Merge Shop					
+1152	6th Upholder Merge	Merge Shop					
+1153	7th Upholder Merge	Merge Shop					
+1154	Starsword Merge	Merge Shop					
+1155	Pirate Adventure House	Rare Shop	House Shop				
+1156	7th Upholder	Badge shop					
+1157		No Shop					
+1158	6 Year Upgrade Badge	Badge shop					
+1159	7 Years Played Badge	Badge shop					
+1160	300000 AC Loyalty	Badge shop	House Shop				
+1161	7th Birthday Rares	Rare Shop					
+1162	BattleCon Gear	Merge Shop					
+1163	Dark Loremaster	Merge Shop					
+1164	Evo Pumpkin Lord Class	Seasonal Shop					
+1165	13th Anniversary Rares	Rare Shop					
+1166	13th Anniversary Merge	Merge Shop					
+1167	13th Anniversary Class	Staff Shop					
+1168	Undead Assault Badge	Badge shop					
+1169	The Hoard Merge	Merge Shop					
+1170	Dragon Samurai AC Package	Badge shop					
+1171	Horde Zombie Slayer Badge	Badge shop					
+1172	Cruxshadows Merge	Merge Shop					
+1173	Cruxshadows Rares	Rare Shop					
+1174	CruxShadows VIP Shop	Member Shop					
+1175	Moonlight Khopesh	Badge shop	Merge Shop				
+1176	Mogloween Seasonal	Seasonal Shop					
+1177	November LTS	Rare Shop					
+1178	Rabbit Merge	Merge Shop					
+1179	Fox Merge	Merge Shop					
+1180	Owl Merge	Merge Shop					
+1181	12 Month Swordhaven Royalty	Badge shop					
+1182	12k Lord of Doom Shop	Badge shop					
+1183	5k Lord of Doom Shop	Badge shop					
+1184	2k Lord of Doom Shop	Badge shop					
+1185	13th Friday Rares	Rare Shop					
+1186	13th Friday Merge	Merge Shop					
+1187	2016 Calendar	Promo Shop					
+1188	Elfhame Merge	Merge Shop					
+1189	Memet's Birthday Merge!	Rare Shop	Merge Shop				
+1190	Feast of Fear Merge	Seasonal Shop	Merge Shop				
+1191	Black Friday House Shop	Seasonal Shop	House Shop				
+1192	Cyber Monday House Shop	Seasonal Shop	House Shop				
+1193	AU-some Gold Shop	Normal Shop					
+1194	DarkHeart Merge	Merge Shop					
+1195	Northlands Wolf Rider	Badge shop					
+1196	Cryostorm Wolf Rider	Badge shop					
+1197	Cryostorm Merge Shop	Merge Shop					
+1198	New Year Rares	Rare Shop					
+1199	Glacial Commander LQS	Badge shop					
+1200	Ice Realm Portal House Shop	Badge shop	House Shop		Category	Explain on Primairy Category	Explain on Secondary Category
+1201	Doom Claws LQS	Badge shop			AC Shop	Shop containing Only AC items, permanently placed in game.	Besides its primary category this shop Only contains AC items.
+1202	Shatterglass Pack LQS	Badge shop			Badge shop	Shop that is unlocked in the Book of Lore at Achievement or Other Badges.	N/A (Badge shop label is always primairy)
+1203	New Year Merge	Merge Shop			Broken Shop	This shop is taken out game and can not be loaded anymore.	N/A (Broken label is always primairy)
+1204	Knight Commander Tier 1	Badge shop			Enhancement Shop	Shop containing Enhancements, permanently placed in game on an NPC or game menu.	Besides its primary category this shop Only contains Enhancements
+1205	Knight Commander Tier 2	Badge shop			Guild Shop	This shop contains guild items	N/A (Guild label is always primary)
+1206	Nation Merge	Merge Shop			House Shop	Shop containing Only house items, permanently placed in game.	Besides its primary category this shop Only contains House items
+1207	Legion Merge	Merge Shop			Item Shop	Shop that is Only load-able or unlockable by owning/equipping a certain item.	Besides its primary category this shop is Only unlockable via an item.
+1208	Shadowscythe Merge	Merge Shop			Member Shop	Shop containing Only Member items, permanently placed in game.	Besides its primary category this shop is Only containing member items.
+1209	Assassin's Creed LTS	Rare Shop			Merge Shop	This shop solely contains merge-items, and is permanently available in game.	Besides its primary category this shop Only contains merge items.
+1210	StoneCrusher Class Merge Shop	Merge Shop			No Shop	This shop ID is empty, don't keep trying.	N/A (No shop label is always primary)
+1211	Dirtlicker's Shop	Merge Shop			Normal Shop	This shop is still in-game and does contain both non-member and/or member and/or AC items.	N/A (Normal shop label is always primary)
+1212	Dwobo's Shop	Merge Shop			Preview Shop	This shop Only contains item previews might have gone rare over time.	N/A (Preview shop is always primary)
+1213	Chest Shop	Merge Shop			Promo Shop	Shop that is unlocked in the Book of Lore at HeroMart Badges.	N/A (Promo shop is always primary)
+1214	January Holiday Shop	Rare Shop			Rare Shop	This shop is/or will be rare and not in-game anymore but can still be accessed by staff.	N/A (Rare shop label is always primary,)
+1215	Feburary Rares Shop	Rare Shop			Reputation Shop	This shop Only or mainly contains items that are buyable at owning certain reputation for a faction.	Besides its primary category this shop Only contains reputation bound items.
+1216	Parades	Seasonal Shop			Seasonal Shop	This shop is Only in-game for a certain amount of time each year.	N/A (seasonal shop label is always primary)
+1217	Love Locked Merge	Seasonal Shop	Merge Shop		Staff Shop	This shop is Only for game staff.	N/A (Staff Shop label is always primary)
+1218	Flock Shop	Merge Shop			Additional Comments		
+1219	Dreadrock Rep	Reputation Shop			LQS	This is or was a Limited Time shop.	
+1220	Dreadrock Gear	Normal Shop			No Buying!	Do not buy anything from this shop as it will break your character.	
+1221	Dreadrock Pet	Normal Shop			AC/Member	This shop is containing Only both member and AC items	
+1222	Darkblood Tier 2	Badge shop			Merge House Shop	This shop is both Merge shop and a House Shop	
+1223	Darkblood Tier 1	Badge shop					
+1224	Dreadrock Weapons	Normal Shop					
+1225	Heromart Crystals	Promo Shop	Merge Shop				
+1226	BioBeasts Install Shop	Preview Shop					
+1227	BioBeasts Merge	Merge Shop					
+1228	J6s Envy Shop	Merge Shop					
+1229	Aegis Rep Shop	Reputation Shop					
+1230	Aegis Gear Shop	Normal Shop					
+1231	Aegis Pet Shop	Normal Shop					
+1232	Laken Birthday	Seasonal Shop					
+1233	Luckdragon Merge	Merge Shop					
+1234	Portal War Reward	Staff Shop					
+1235	Arcane Dark Caster Merge	Merge Shop					
+1236	Grenstory Merge	Seasonal Shop	Merge Shop				
+1237	VoidCaster Tier 1	Badge Shop					
+1238	VoidCaster Tier 2	Badge shop					
+1239	April Fools 3D Shop	Rare Shop					
+1240	Crystal Bright Merge	Merge Shop					
+1241	April Rares 2016	Rare Shop					
+1242	Bone Castle Merge	Merge Shop					
+1243	BoneCastle Tower Merge	Merge Shop					
+1244	Paradox Portal War Merge	Merge Shop					
+1245	Abyssal Angel Class	Rare Shop					
+1246	Tempus Mori Low	Badge shop					
+1247	Tempus Mori High	Badge shop					
+1248	Paradox Portal Merge	Badge shop					
+1249	Friday the 13th	Rare Shop					
+1250	Lore Trek Merge	Merge Shop					
+1251	Tachyon Merge	Merge Shop					
+1252		No Shop					
+1253	Tachyon Rare Gear	Rare Shop					
+1254	Ziri's Magical Rares	Rare Shop					
+1255	Ziri's Shop	Normal Shop					
+1256	House Shop Test	Staff Shop					
+1257	Bacon Cat Force Communicator	Member Shop					
+1258	Galatic Defender	Badge Shop					
+1259	Galatic Commander	Badge Shop					
+1260	BaconCat Rep	Reputation Shop					
+1261	Death Pit Arena Rep	Reputation Shop	Merge Shop				
+1262	World Champions	Rare Shop					
+1263	Ancient CryptKeeper	Badge Shop					
+1264	Arcane CryptKeeper	Badge Shop					
+1265	Abyssal CryptKeeper	Badge Shop					
+1266	CryptKeeper Vault	Badge Shop					
+1267		No Shop					
+1268	Black Hole War Merge	Merge Shop					
+1269	4D Pyramid Merge	Merge Shop					
+1270	Death Pit Brawl Rep	Reputation Shop	Merge Shop				
+1271	Black Hole War Chest	Normal Shop					
+1272	Golden Falcon Tier 1	Badge Shop					
+1273	Maze Merge	Merge Shop					
+1274	Golden Falcon Tier 2	Badge Shop					
+1275	4D Pyramid Rep	Reputation Shop					
+1276	4D Pyramid House	Merge Shop	Reputation Shop, House Shop				
+1277	Black Dragon's Chest	Item Shop					
+1278	Sanguine Merge	Merge Shop					
+1279	AQ3D Kickstarter	Badge shop					
+1280	Radioactive BioBeast	Badge shop					
+1281	Pockey-Mogs Shop	Normal Shop					
+1282	Dracolich War Merge	Merge Shop					
+1283	Slayer War Chest	Merge Shop					
+1284	Defender War Chest	Merge Shop					
+1285	Elemental Dracomancer Class	Normal Shop					
+1286	Dragonslayer General Class	Merge Shop					
+1287	Draco War Rares	Rare Shop					
+1288	Shadowstrike Tier 1	Badge Shop					
+1289	Shadowstrike Tier 2	Badge Shop					
+1290	Goodbye Goodluck G	Normal Shop					
+1291	Glurp's Merge	Merge Shop					
+1292	Royal Raider	Badge Shop					
+1293	Dark Seas Ruler	Badge Shop					
+1294	Cursed Legion Merge	Merge Shop					
+1295	8th Upholder	Badge Shop					
+1296	8th Upholder Merge	Merge Shop					
+1297	Shadow Sorcery Tier 1	Badge Shop					
+1298	Shadow Sorcery Tier 2	Badge Shop					
+1299	Mystcroft Forest	AC Shop					
+1300		No Shop					
+1301		No Shop					
+1302	8th Birthday Rares	Rare Shop					
+1303	ArchPaladin Shop	Normal Shop					
+1304	Twilly's Potion Shop	Normal Shop					
+1305	DoomFire Guard	Badge shop					
+1306	DoomFire Warrior	Badge shop					
+1307	Gravelyn's DoomFire	AC Shop					
+1308	Mysterious Dungeon Rep	Normal Shop					
+1309	Castle of Darkness House Shop	House Shop					
+1310	Warlic's Enchantment Shop	Merge Shop					
+1311	Yulgar's Dual Wield Shop	Merge Shop					
+1312	Yulgar's Dual Wield Drop Off	Merge Shop					
+1313	Pizza Hutch	House Shop					
+1314	FEARS Shop	Rare Shop					
+1315							
+1316							
+1317	NostalgiaQuest	Badge shop					
+1318	Mazumi Shop	Staff Shop					
+1319	Warlic Reversion	Merge Shop					
+1320	Lord of Bones Tier 1	Badge shop					
+1321	Lord of Bones Tier 2	Badge shop					
+1322	Lord of Broken Bones 1	Merge Shop					
+1323	Lord of Broken Bones 2	Merge Shop					
+1324	Champion of Light	Badge shop					
+1325	Lesser Bloodbeacon Polearm	Merge Shop					
+1326	Featured November Gear	Rare Shop					
+1327	Turkonian War Chest	Merge Shop					
+1328	2017 Calander	Promo Shop					
+1329	Northlands Ranger Tier 1	Badge shop					
+1330	Northlands Ranger Tier 2	Badge shop					
+1331	Wyldehunt Keep	House Shop					
+1332	Wyldehunt Keep	House Shop					
+1333	Darknight Stalker	Merge Shop					
+1334	Darknight Stalker	Merge Shop					
+1335	Shadow Stalker Key	AC Shop					
+1336	Maya's Gifts	Merge Shop					
+1337							
+1338	Artist Showcase: Blade	Rare Shop					
+1339	Northern Defence Rep	Reputation Shop					
+1340							
+1341	Glaceran War Merge	Merge Shop					
+1342	Frostling Horror	Badge shop					
+1343	BattleLord of Ravens	Badge shop					
+1344	BattleLord of Ravens	Badge shop					
+1345	NightElf SnowStalker	Badge shop					
+1346	Snowmoglin House	Badge shop					
+1347	Archive of Time Merge	Merge Shop					
+1348	Featured January Gear	Rare Shop					
+1349	ArchAngel Defender	Badge shop					
+1350	ArchFiend Loyalist	Badge shop					
+1351	LightCaster Class	AC Shop					
+1352							
+1353	Evolved LightCaster	AC Shop					
+1354	Crownsreach Merge Shop	Merge Shop					
+1355	Void Highlord Merge Shop	Merge Shop					
+1356	Void Class Test	Preview Shop					
+1357	Zorbak Hat	Promo Shop					
+1358	Twilly Hat	Promo Shop					
+1359	Swindle's Shop	AC Shop					
+1360	Nulgath's Birthday	Rare Shop					
+1361	Classic Paladin	Merge Shop			Category	Explain on Primairy Category	Explain on Secondary Category
+1362	Blood Samurai Tier 1	Promo Shop			AC Shop	Shop containing Only AC items, permanently placed in game.	Besides its primary category this shop Only contains AC items.
+1363	Blood Samurai Tier 2	Promo Shop			Badge shop	Shop that is unlocked in the Book of Lore at Achievement or Other Badges.	N/A (Badge shop label is always primairy)
+1364	Dreadfire Milita Shop	Reputation Shop			Broken Shop	This shop is taken out game and can not be loaded anymore.	N/A (Broken label is always primairy)
+1365	Dreadfire Rep	Reputation Shop			Enhancement Shop	Shop containing Enhancements, permanently placed in game on an NPC or game menu.	Besides its primary category this shop Only contains Enhancements
+1366	Dreafire Gear	Reputation Shop			Guild Shop	This shop contains guild items	N/A (Guild label is always primary)
+1367	Dreadfire Pet	Reputation Shop			House Shop	Shop containing Only house items, permanently placed in game.	Besides its primary category this shop Only contains House items
+1368					Item Shop	Shop that is Only load-able or unlockable by owning/equipping a certain item.	Besides its primary category this shop is Only unlockable via an item.
+1369					Member Shop	Shop containing Only Member items, permanently placed in game.	Besides its primary category this shop is Only containing member items.
+1370					Merge Shop	This shop solely contains merge-items, and is permanently available in game.	Besides its primary category this shop Only contains merge items.
+1371					No Shop	This shop ID is empty, don't keep trying.	N/A (No shop label is always primary)
+1372					Normal Shop	This shop is still in-game and does contain both non-member and/or member and/or AC items.	N/A (Normal shop label is always primary)
+1373					Preview Shop	This shop Only contains item previews might have gone rare over time.	N/A (Preview shop is always primary)
+1374					Promo Shop	Shop that is unlocked in the Book of Lore at HeroMart Badges.	N/A (Promo shop is always primary)
+1375					Rare Shop	This shop is/or will be rare and not in-game anymore but can still be accessed by staff.	N/A (Rare shop label is always primary,)
+1376	Future Legion 50%	Merge Shop			Reputation Shop	This shop Only or mainly contains items that are buyable at owning certain reputation for a faction.	Besides its primary category this shop Only contains reputation bound items.
+1377	Dage War 50%	Merge Shop			Seasonal Shop	This shop is Only in-game for a certain amount of time each year.	N/A (seasonal shop label is always primary)
+1378	Future War Merge	Merge Shop			Staff Shop	This shop is Only for game staff.	N/A (Staff Shop label is always primary)
+1379	Paragon Mk 3017	AC Shop			Additional Comments		
+1380	Darkness	Enhancement Shop	"Requires ""Void Lodestone"""		LQS	This is or was a Limited Time shop.	
+1381	Dark Loremaster's Shop	Merge Shop			No Buying!	Do not buy anything from this shop as it will break your character.	
+1382	Mad Chemist's Shop	Normal Shop			AC/Member	This shop is containing Only both member and AC items	
+1383	Crownsreach Milita	Reputation Shop			Merge House Shop	This shop is both Merge shop and a House Shop	
+1384	Crownsreach Gear	Reputation Shop					
+1385	Crown Critters	Reputation Shop					
+1386	Chaos Alliance	Normal Shop					
+1387							
+1388							
+1389	Nation Logo Shirt	Promo Shop					
+1390	Future Legion Logo Shirt	Promo Shop					
+1391	Undead Legion Logo Shop	Promo Shop					
+1392	Nation Legion Shirt Combo	Promo Shop					
+1393	/ / Shop	Rare Shop					
+1394	RiftWalker Tier 1	Promo Shop					
+1395	RiftWalker Tier 2	Promo Shop					
+1396	Rift Rep Shop	Reputation Shop					
+1397	Rift Pet Shop	Reputation Shop					
+1398	Rift Gear	Reputation Shop					
+1399	Rift Milita	Reputation Shop					
+1400	Rift Potions and Rations	Reputation Shop					
+1401	Barricade Defense	Merge Shop					
+1402	Bubble Potion Shelf Shop	House Shop	Don't know the real name.				
+1403	Loremaster Houses	House Shop					
+1404	Lightstrike Commander	Promo Shop					
+1405	Shadowforce Commander	Promo Shop					
+1406	Void Merge	Merge Shop					
+1407	Galactic Imperator	Badge shop					
+1408	Void Guardian	Badge shop					
+1409	Void Guardian	Badge shop					
+1410	Amaranthine Void Gear	Badge shop					
+1411	Pilgrim Gear Shop	Reputation Shop					
+1412		House Shop	Don't know name.				
+1413	Legendary Broodfiend	Badge shop					
+1414	Arch Broodfiend	Badge shop					
+1415	Blinding Light of Destiny	Badge shop					
+1416	Wishing Shop	Normal Shop					
+1417	Damiyo Fountain Shop	House Shop					
+1418	Molten Mayhem	AC Shop					
+1419	Classic DoomKnight	Normal Shop					
+1420	Darkblood War Merge	Merge Shop					
+1421	Quibble's Void Hunt	Merge Shop					
+1422	Camp Shop	Merge Shop					
+1423	Dragon Chest		Staff Only?				
+1424	Ashfall Gear	AC Shop					
+1425	Fecceus' House Shop	House Shop					
+1426	Mystic Dragoncaller	Promo Shop					
+1427	Mythic Dragoncaller	Promo Shop					
+1428	Molten Forge	Merge Shop					
+1429	Plague Gear	Merge Shop					
+1430	Void DragonGuard	Promo Shop					
+1431	Dark DragonGuard	Promo Shop					
+1432							
+1433	Elemental Summoner LQS	Badge shop					
+1434	Dreadhound Rider LQS	Badge shop					
+1435	Dreadhound Rider LQS	Badge shop					
+1436	Elemental Gear LQS	Badge shop					
+1437	Flame Dragon Warrior	Badge shop					
+1438	Eclipse Shop	Normal Shop					
+1439	Golden Raider	Promo Shop					
+1440	Naval Reaper	Promo Shop					
+1441	Shadow Dragon Chest	AC Shop	Requires 41140				
+1442	Red Dragon Chest	AC Shop	Requires 41159				
+1443	Orange Dragon Chest	AC Shop	Requires 41160				
+1444	Gold Dragon Chest	AC Shop	Requires 41161				
+1445	Green Dragon Chest	AC Shop	Requires 41162				
+1446	Blue Dragon Chest	AC Shop	Requires 41163				
+1447	Purple Dragon Chest	AC Shop	Requires 41164				
+1448	Brown Dragon Chest	AC Shop	Requires 41165				
+1449	Black Dragon Chest	AC Shop	Requires 41166				
+1450	White Dragon Chest	AC Shop	Requires 41167				
+1451	Pink Dragon Chest	AC Shop	Requires 41168				
+1452	Crystal Dragon Chest	AC Shop	Requires 41169				
+1453	Dragon King Chest	AC Shop	Requires 41170				
+1454	Kaiju War Chest	AC Shop					
+1455	Quibble's Dragon Shop	Rare Shop					
+1456	Kaiju Naval Commander	AC Shop					
+1457							
+1458	Shadow Dragon House Chest	AC Shop					
+1459	Red Dragon House Chest	AC Shop					
+1460	Orange Dragon House Chest	AC Shop					
+1461	Gold Dragon House Chest	AC Shop					
+1462	Green Dragon House Chest	AC Shop					
+1463	Blue Dragon House Chest	AC Shop					
+1464	Purple Dragon House Chest	AC Shop					
+1465	Brown Dragon House Chest	AC Shop					
+1466	Black Dragon House Chest	AC Shop					
+1467	White Dragon House Chest	AC Shop					
+1468	Pink Dragon House Chest	AC Shop					
+1469	Crystal Dragon House Chest	AC Shop					
+1470	Crimson CryptLord	Promo Shop					
+1471	Dark CryptLord	Promo Shop					
+1472	9th Upholder	Badge shop					
+1473	Celestial Challenger	Normal Shop					
+1474	Celestial Champion	Normal Shop					
+1475							
+1476	Vampire Lord Class	AC Shop					
+1477	Vampire Lord Merge	Merge Shop					
+1478	Blood Moon Chest	AC Shop					
+1479	Blood Moon Gear	AC Shop					
+1480							
+1481	0 AC Naval Commander	AC Shop					
+1482	Vampire Logo Shirt	Promo Shop					
+1483	Lycan Logo Shirt	Promo Shop					
+1484	Cauldron Shirt 2017	Promo Shop					
+1485	15th Anniversary Shirt						
+1486	Pupkin Spice of Destiny	Normal Shop					
+1487	Blood Moon Rares	Rare Shop					
+1488	Blood Moon Lycan	Merge Shop					
+1489	Blood Moon Vampire	Merge Shop					
+1490	Golden Merge	Merge Shop					
+1491	Shadowfall Fortress	Badge shop					
+1492	Swordhaven Castle	Badge shop					
+1493	Brightfall Fortress	Badge shop					
+1494	November Upgrade Tier 1	Badge shop					
+1495	November Upgrade Tier 2	Badge shop					
+1496	Olantern's Shop	AC Shop					
+1497	EbilCorp War Chest	Normal Shop					
+1498	EbilCorp Reward Shop	Normal Shop					
+1499	2018 Calander Shop	Promo Shop					
+1500	December Upgrade Tier 1	Badge shop					
+1501	December Upgrade Tier 2	Badge shop					
+1502							
+1503							
+1504	Immortality Key	AC Shop					
+1505	Frostval Chest	AC Shop					
+1506	Frost Wolf LQS Gear	Badge shop	LQS				
+1507	Frostlf Wolf House Items	House Shop	LQS				
+1508	Northern Defender AC	Badge shop	LQS				
+1509	Northern Defender Mem	Badge shop	LQS				
+1510	Northern Warrior	Badge shop	LQS				
+1511	Djinn Gate Merge	Merge Shop					
+1512	Void Overlord Tier 1	AC Shop					
+1513	Void Overlord Tier 2	AC Shop					
+1514	February Upgrade Tier 1 	Must meet requirements					
+1515	February Upgrade Tier 2 	Must meet requirements					
+1516	March Upgrade Tier 1 	Must meet requirements					
+1517	March Upgrade Tier 2 	Must meet requirements					
+1518	April Upgrade Tier 1 	Must meet requirements					
+1519	April Upgrade Tier 2 	Must meet requirements					
+1520	Archfiend DragonKnight 	Must meet requirements					
+1521	Archfiend DragonLord 	Must meet requirements					
+1522	ShadowScythe Warrior 	Must meet requirements					
+1523	Shadow DoomLord 	Must meet requirements					
+1524	July Upgrade Tier 1 	Must meet requirements					
+1525	July Upgrade Tier 2 	Must meet requirements					
+1526	Charged Ninja 	Must meet requirements					
+1527	Dark Shogun 	Must meet requirements					
+1528	Infernal Naval Commander 	Must meet requirements					
+1529	Infernal Pirate Captain 	Must meet requirements					
+1530	Dark Guardian of Time 	Must meet requirements					
+1531	Guardian of Time 	Must meet requirements					
+1532	Apocalyptic DragonLord 	Must meet requirements					
+1533	Apocalyptic DragonKing 	Must meet requirements					
+1534	Golden Northlands Royalty Set 	Must meet requirements					
+1535	Northlands Royalty II 	Must meet requirements					
+1536	Greenguard Shop						
+1537	Tower Guardian Gear 	Only in /tower					
+1538	Pet Tamer Rep 	Only in /battleontown					
+1539	Vinara's Odd Shop 	Only in /battleontown					
+1540	Dage print 2018 	Must meet requirements					
+1541	 - 						
+1542	 - 						
+1543	 - 						
+1544	Nulgath Print 2018 	Must meet requirements					
+1545	Nulgath Armor Shirt 	Must meet requirements					
+1546	Sepulchure ShadowScythe Armor Shirt 	Must meet requirements					
+1547	Soul Taker of Darkness 	Must meet requirements					
+1548	2017 Honorable Hero 	Must meet requirements					
+1549	Chateau Swaggy House 	Only in /chateau					
+1550	Swaggy House Merge 	Only in /chateau					
+1551	Beleen's Dye Shop 	Only in /chateau					
+1552	Thistle's Potion Shop 	Only in /nibbleon					
+1553	Comet's Treasures 	Only in /nibbleon					
+1554	Noms & Such Foodibles 	Only in /nibbleon					
+1555	Quokka Quokka Pets 	Only in /nibbleon					
+1556	Tika’s Hut Shop 	Only in /nibbleon					
+1557	Zifwin's Magic Shop 	Only in /nibbleon					
+1558	Horc Merge Shop 	Only in /warhorc					
+1559	Unlife Insurance Bond 	Only in /prison					
+1560	Dark Knight Armor 	Only in /battleontown					
+1561	 - 						
+1562	Paragon Helm House Shop 	Must meet requirements					
+1563	 - 						
+1564	Dragons of Ashfall 	Must meet requirements					
+1565	 - 						
+1566	Legion OathKeeper T-Shirt 	Must meet requirements					
+1567	Undersworn T-Shirt 	Must meet requirements					
+1568	Legion Pledge Scroll 	Must meet requirements					
+1569	Undersworn OathKeeper Combo 	Must meet requirements					
+1570	Heroes of Lore T-Shirt 	Must meet requirements					
+1571	Seraphic Order T-Shirt 	Must meet requirements					
+1572	 - 						
+1573	Seraphic War Chest 	Only in /seraphicwarlaken,seraphicwardage,seraphicwar					
+1574	Seraphic War Rares						
+1575	 - 						
+1576	Sora's Free Shop 	Only in /oaklore					
+1577	Undead War Merge 	Only in /warundead					
+1578	Djinn Palace House Shop 	Must meet requirements					
+1579	DerpBlade of Doom 	Must meet requirements					
+1580	GonnaGetcha T-Shirt 	Must meet requirements					
+1581	 - 						
+1582	Celestial Spoils Merge 	Only in /djinnguard					
+1583	Bido's Wanderer Shop 	Only in /djinnguard					
+1584	Terrane's Merge Shop 	Only in /guardiantree					
+1585	Dragonslayer LoreKeeper 	Only in /lair,underlair					
+1586	Akriloth War Chest 	Only in /firewar					
+1587	Fire War Merge 	Only in /firewar					
+1588	StarGazer 	Must meet requirements					
+1589	Black Market Tickets						
+1590	LQS Fire AC 	Must meet requirements					
+1591	LQS Ice AC 	Must meet requirements					
+1592	LQS Fire Mem 	Must meet requirements					
+1593	LQS Ice Mem 	Must meet requirements					
+1594	LQS Fire Ice Weapons 	Must meet requirements					
+1595	Cryonos Merge 	Only in /northmountain,charredplains					
+1596	Fire and Ice Merge 	Only in /drakonnan					
+1597	Hydra Merge 	Only in /mobius,hydrachallenge					
+1598	Treasure Chest Preview						
+1599	Valen Gear 	Only in /valleyofdoom,guardiantower,guardiantowerb,ebondungeon,ebonslate					
+1600	Valen Merge 	Only in /valleyofdoom,guardiantower					
+1601	Dragon of Light						
+1602	Guardian of Energy						
+1603	Sepulchure's Doomblade 	Only in /ebondungeon, guardiantowerb					
+1604	Doom Sigil Merge 	Only in /ebondungeon,  guardiantowerb					
+1605	 - 						
+1606	Chaos Lord Poster 2.0						
+1607	Yokai Loyalty						
+1608	Kyo's Food and Drink 	Only in /heiwavalley					
+1609	Garek's Seasonal Gear Shop						
+1610	September Seasonal Shop						
+1611	Items Required 	Only in /celestialrealm					
+1612	LightMage Class 	Only in /celestialrealm					
+1613	Items Required 	Only in /celestialrealm					
+1614	Items Required 	Only in /celestialrealm					
+1615	Pirate Collection 2018 	must own Pirate Collection Chest 2018					
+1616	2018 Pirate Collection Chest						
+1617	Nulgath's Navy Shirt						
+1618	Stygian Legion Shirt						
+1619	Evil Pirate Crew Combo						
+1620	October Seasonal Shop						
+1621	10th Upholder						
+1622	 - 						
+1623	Master of Moglins Class						
+1624	Moglin Back-Kick						
+1625	Moglin Twilly Plush						
+1626	Moglin Zorbak Plush						
+1627	Moglin Twig Plush						
+1628	Moglin Memet Plush						
+1629	Moglin Mort Plush						
+1630	Moglin Quibble Plush						
+1631	Moglin Scurvy Plush						
+1632	Moglin Rez Plush						
+1633	Moglin Nugget Plush						
+1634	Moglin Scourge Plush						
+1635	Moglin Cupcake Plush						
+1636	Moglin Zilla Plush						
+1637	10th Birthday Rares						
+1638	ShadowScythe General Shop						
+1639	ShadowScythe Honor Shop						
+1640	Zorbak's Merge Shop						
+1641	AQ3D Gear						
+1642	 - 						
+1643	 - 						
+1644	ShadowScythe General Merge						
+1645	November Seasonal Set						
+1646	2019 Calendar						
+1647	10 Years Played						
+1648	9 Years Membership						
+1649	600,000 AC						
+1650	9th Upholder Merge 	Only in /dragonroad					
+1651	10th Upholder Merge 	Only in /dragonroad					
+1652	SpellSword Shop 	Only in /dragonrune					
+1653	Sirbuh Shop 	Only in /museum					
+1654	Vesper's Birthday Shop 	Previously Hollowborn Chest					
+1655	Hollowborn Evoker Gear 	Must own Hollowborn Chest Pet					
+1656	 - 						
+1657	 - 						
+1658	Lich King's Bounty 	Only in /frozenlair					
+1659	December Seasonal Set						
+1660	Northlands Royalty Bonus						
+1661	Icestorm Arena Merge 	Only in /icestormarena					
+1662	 - 						
+1663	IceStorm Collection Chest						
+1664	Nothing						
+1665	2019 Calendar Collectors						
+1666	Frostvale Barbarian						
+1667	Festive ArchMage LQS						
+1668	Holiday Paragon 2018						
+1669	Shadow Infinity Knight						
+1670	January Seasonal Shop						
+1671	February Seasonal Shop						
+1672	March Seasonal Shop						
+1673	 - 						
+1674	 - 						
+1675	 - 						
+1676	 - 						
+1677	 - 						
+1678	Copper Void ChronoKnight Set						
+1679	January 2019 Tier 2						
+1680	Crulon's Enchanter Gear						
+1681	OS 1st Upholder						
+1682	Frostval Helpers						
+1683	Akiban Samurai Upgrade						
+1684	BountyHunter Armor T-shirt						
+1685	DragonSlayer Armor T-shirt						
+1686	Combo BountyHunter/DragonSlayer Armor T-shirt						
+1687	 - 						
+1688	 - 						
+1689	Relationship Goals Shop						
+1690	Relationship Goals 	Receiver Shop					
+1691	Wubbles Merge Shop 	Only in /wubbles, wubblevania					
+1692	Wubbles (Vesper) House Shop	Only in /wubbles, wubblevania					
+1693	Dark Hand Merge 	Only in /legionarena					
+1694	 - 						
+1695	Underworld Team Shop 	Only in /legionpvp					
+1696	Underworld 1v1 Shop 	Only in /legionpvp					
+1697	Dark Birthday Token Merge 	Only in /darkbirthday					
+1698	Paragon Fiend Upgrade Bonus						
+1699							
+1700							
+1701	Lucky Day Shop						
+1702	ED Poster						
+1703	Slayer vs Harbinger Print						
+1704	Pride of the Exiles Print						
+1705	Pride of the Legion Print						
+1706	 -						
+1707	 -						
+1708	April Fools 2019 Rares						
+1709	April Fools 2019 War Merge						
+1710	Galactic Captain Upgrade Bonus						
+1711	 -						
+1712	 -						
+1713	 -						
+1714	 -						
+1715	 -						
+1716	Infinity Titan Upgrade Bonus						
+1717	 -						
+1718	BrightSlayer Gear						
+1719	 -						
+1720	 -						
+1721	 -						
+1722	8 -Bit Undead Slayer						
+1723	Kibbles & 8 -Bits						
+1724	8 -Bit Gold Member						
+1725	 -						
+1726	 -						
+1727	NES Kickstarter Exclusive						
+1728	 -						
+1729	 -						
+1730	Doom Dragon Upgrade						
+1731	 -						
+1732	 -						
+1733	Infernal Invoker						
+1734	 -						
+1735	 -						
+1736	 -						
+1737	Yokai Summoner LQS						
+1738	 -						
+1739	Frostval in Yokai Rares						
+1740	 -						
+1741	ShadowFlame War Rares						
+1742	 -						
+1743	 -						
+1744	Akuma Upgrade Shop						
+1745	Event Merge Shop						
+1746	Event Collection						
+1747	VIP Event Collection						
+1748	Music Fan Shop						
+1749	Arena Coin Merge						
+1750	 -						
+1751	 -						
+1752	Event Collection Preview						
+1753	VIP Collection Preview						
+1754	 -						
+1755	Galactic Pirate Commander						
+1756	Dage x Faith Wedding						
+1757	Cursed Collection						
+1758	2019 Pirate Collection Chest						
+1759	TLaPD Reocurring Items						
+1760	Golden Moglinmancer						
+1761	 -						
+1762	ShadowFlame DragonMage						
+1763	Garek October						
+1764	 -						
+1765	 -						
+1766	 -						
+1767	 -						
+1768	 -						
+1769	 -						
+1770	 -						
+1771	 -						
+1772	 -						
+1773	 -						
+1774	 -						
+1775	11th Upholder						
+1776	 -						
+1777	 -						
+1778	 -						
+1779	11th Anniversary Collection Chest						
+1780	 -						
+1781	 -						
+1782	Alice in Chains VIP Collection						
+1783	Alice in Chains Special Event Collection						
+1784	Apocalyptic Werepyre						
+1785	Achievement Tracker 750.000 Acs						
+1786	10 Years Membership						
+1787	11 Years Played						
+1788	 -						
+1789	 -						
+1790	 -						
+1791	Artist Showcase: Kotaro						
+1792	Artist Showcase: PP2						
+1793	Artist Showcase: Lae						
+1794	Artist Showcase: Hikari						
+1795	Artist Showcase: Ferozakh						
+1796	2020 Calendar Shop						
+1797	2020 Collector's Calendar						
+1798	Story Moglin Collection						
+1799	Epic Moglin Collection						
+1800	 -						
+1801	Black Friday 2019 Rares 						
+1802	- 						
+1803	- 						
+1804	- 						
+1805	Technocaster Merge 						
+1806	- 						
+1807	- 						
+1808	GlacialFrost Elf Upgrade Bonus 						
+1809	Frostval the 13th Collection 						
+1810	Frostval the 13th Collection Chest, ArchFiend's Collection Chest 						
+1811	Frost Dracolich Rider LQS						
+1812	Winter Dracolich House LQS 						
+1813	Golden Royal Knight LQS 						
+1814	Epic Frost Weapon Pack LQS 						
+1815	- 						
+1816	- 						
+1817	ArchFiend's 2020 Birthday Collection 						
+1818	Vampiric Knight Upgrade Bonus 						
+1819	Crag's Gem Merge 						
+1820	Archfiend Warlord Merge 						
+1821	Cubic Zirconia of Noogalth 						
+1822	Fiends of Apocalypse Print 						
+1823	Underworld Followers Print 						
+1824	Followers and Fiends Print Combo 						
+1825	Darkon's Underworld Complete 						
+1826	Elemental Treasure Chest 						
+1827	Crulon's Artist Alley Shop 						
+1828	Arlette's Artist Alley Shop 						
+1829	Arlette's Artist Alley House Shop 						
+1830	- 						
+1831	Darkon's Merge 						
+1832	Mythsong War Merge 						
+1833	Beleen Gift's 						
+1834	Duality Battlemage Upgrade 						
+1835	- 						
+1836	- 						
+1837	Breaking Benjamin Rares 						
+1838	Breaking Benjamin Class Merge 						
+1839	Hero's Haute Couture 						
+1840	Abyssal Heretic 						
+1841	Abyssal Merge 						
+1842	SoulEater's 2020 Collection 						
+1843	SoulEater's Collection Chest 						
+1844	Dage 50 % 						
+1845	Shrade 50% 						
+1846	Dark Carnival Sales 						
+1847	Dark Carnival Merge 						
+1848	Bear Necessities 						
+1849	Ubear Merge 						
+1850	Voidborn of Nulgath 						
+1851	Shop Name : Ubear Token 						
+1852	LIMFT Token 						
