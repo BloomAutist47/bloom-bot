@@ -2144,11 +2144,11 @@ else:              # Heroku
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-# Bot.add_cog(IllegalBoatSearchCog(Bot))
-# Bot.add_cog(ClassSearchCog(Bot))
-# Bot.add_cog(GuideCog(Bot)) 
-# Bot.add_cog(CharacterCog(Bot))
-# Bot.add_cog(WikiCog(Bot))
+Bot.add_cog(IllegalBoatSearchCog(Bot))
+Bot.add_cog(ClassSearchCog(Bot))
+Bot.add_cog(GuideCog(Bot)) 
+Bot.add_cog(CharacterCog(Bot))
+Bot.add_cog(WikiCog(Bot))
 Bot.add_cog(TextUploaders(Bot))
 # Bot.add_cog(TwitterStreamCog(Bot))
 Bot.run(DISCORD_TOKEN)
