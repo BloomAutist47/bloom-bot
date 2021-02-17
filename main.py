@@ -1741,7 +1741,6 @@ class WikiCog(commands.Cog, BaseTools):
             await ctx.send(embed=embedVar)
             return
 
-
         straight = ("http://aqwwiki.wikidot.com/" + item.replace(" ", "-").replace("'", "-").replace(")", "").replace("(", "")).lower()
         # items = urllib.parse.quote_minus(item)
         wiki = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
@@ -1773,7 +1772,7 @@ class WikiCog(commands.Cog, BaseTools):
         
         
         if not only_wiki:
-            desc = f"{result}\n[[Click here for search results.]({wiki})]" 
+            desc = f"{result}\n[[Click here for all result.]({wiki})]" 
         else:
             desc = f"{result}"
 
@@ -1798,10 +1797,15 @@ class WikiCog(commands.Cog, BaseTools):
 
     def get_image_wiki(self, soup_item):
         try:
+            image = soup_item.find_all("div", {"class":"yui-content"})[-1].find_all("div")[0].find_all("img")[-1]["src"]
+            return image
+        except: pass
+
+        try:
             image = soup_item.find_all("img")[-1]["src"]
+            return image
         except:
-            image = None
-        return image
+            return Nonee
 
 
 
@@ -2066,10 +2070,10 @@ else:              # Heroku
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-# Bot.add_cog(IllegalBoatSearchCog(Bot))
-# Bot.add_cog(ClassSearchCog(Bot))
-# Bot.add_cog(GuideCog(Bot)) 
-# Bot.add_cog(CharacterCog(Bot))
+Bot.add_cog(IllegalBoatSearchCog(Bot))
+Bot.add_cog(ClassSearchCog(Bot))
+Bot.add_cog(GuideCog(Bot)) 
+Bot.add_cog(CharacterCog(Bot))
 Bot.add_cog(WikiCog(Bot))
 
 # Bot.add_cog(TwitterStreamCog(Bot))
