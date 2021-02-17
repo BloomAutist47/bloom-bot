@@ -1,17 +1,17 @@
 {
     "faqs":{
         "How do I use a boat?":{
-            "text":"\n\nYou will need the Grimoire 3.8+ PRO v1.7.8. application to run boats. You can download the application from our portal site, https://adventurequest.life/, instructions to do so are in #how-to-find-boats if you need any help. Once you do that, simply download a boat and load it.\n\n> Bo(a)t -> Misc -> Load Boat [ NOT Load Boat (command) ]\nHow to load a boat: \n\n",
+            "text":"\n\nYou will need the **Grimoire 3.8+ PRO v1.7.8**. application to run boats. You can download the application from our portal site, https://adventurequest.life/, instructions to do so are in #how-to-find-boats if you need any help. Once you do that, simply download a boat and load it.\n\n> Bo(a)t -> Misc -> Load Boat [ NOT Load Boat (command) ]\nHow to load a boat: \n\n",
             "image":"https://media.discordapp.net/attachments/782192890847559695/798486266013941780/oy7f3EZpWA.gif?width=930&height=587"
         },
         "How do I edit something in a bot?":{
             "text":"\n\nDouble click the line you want to edit, and change whatever you want to change. If you want to make a mass edit, just open the .gbot file with Notepad (from its folder), and use a quick Find+Replace.\n"
         },
         "I downloaded a bot and it isn't loading! What do I do?":{
-            "text":"\n\nIf you downloaded a bot and tried loading it, but nothing happened once you loaded the .gbot file, chances are, you're on an outdated version of Grimoire. Download Grimoire 3.8+ PRO v1.7.7 from #how-to-download-bots and try again. If it still doesn't work, head over to #boating-help-chat and describe your issue in detail.\n\n"
+            "text":"\n\nIf you downloaded a bot and tried loading it, but nothing happened once you loaded the .gbot file, chances are, you're on an outdated version of Grimoire. Download **Grimoire 3.8+ PRO v1.7.7** from #how-to-download-bots and try again. If it still doesn't work, head over to #boating-help-chat and describe your issue in detail.\n\n"
         },
         "My screen became black! What happened?":{
-            "text":"\n\nIf a boat turns black, chances are, it has the lag killer feature enabled, which reduces lag significantly. Don't worry, the boat is still running in the background, this is just done to increase farming efficiency by killing lag.\n> To turn it off while the bot is running:\n> Boat -> Options -> Untick Lag Killer\n> To turn it off while the bot is not running:\n> Boat -> Options -> Untick Lag Killer -> Tick Enable Options Without Starting Boat\nIt is highly recommended to leave it on whilst boating, as it enhances the speed of the boat.\n"
+            "text":"\n\nIf a boat turns black, chances are, it has the lag killer feature enabled, which reduces lag significantly. Don't worry, the boat is still running in the background, this is just done to increase farming efficiency by killing lag.\n\n> To turn it off while the bot is running:\n> Boat -> Options -> Untick Lag Killer\n> To turn it off while the bot is not running:\n> Boat -> Options -> Untick Lag Killer -> Tick Enable Options Without Starting Boat\n\nIt is highly recommended to leave it on whilst boating, as it enhances the speed of the boat.\n"
         },
         "My bot keeps disconnecting? How do I fix it?":{
             "text":"\n\nMost good bots will have a `Set Bot Delay: <number>` command at the top. If it's `Set Bot Delay: 0`, delete it, and add a `Set Bot Delay: 10` command in its place.\n> Boat -> Misc -> Boat Delay -> Type in 10 -> Set Boat Delay\nIf it's another number, double click the command and increase that number by 5 or 10. \n\nIncreasing the Boat Delay will make the boat very slightly slower, but will also prevent disconnections from occurring as frequently, so keep increasing the Boat Delay by 5 or 10 until you hit that sweet spot where you stop disconnecting. This usually happens at 10 for most people, but some have to go up to 25.\n"

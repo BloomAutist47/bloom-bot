@@ -60,7 +60,8 @@ class BaseProgram:
     guides = {}
     loop = asyncio.get_event_loop()
     nest_asyncio.apply(loop)
-    sqlock = False
+    sqlock = True
+    texts = {}
 
     def setup(self):
         self.env_variables()
@@ -248,7 +249,7 @@ class BaseProgram:
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings"]
+            mode = ["database", "guides", "classes", "settings", "texts"]
 
         if "database" in mode:
             with open('./Data/database.json', 'r', encoding='utf-8') as f:
@@ -264,6 +265,10 @@ class BaseProgram:
         if "settings" in mode:
             with open('./Data/settings.json', 'r', encoding='utf-8') as f:
                 BaseProgram.settings = json.load(f)
+
+        if "texts" in mode:
+            with open('./Data/texts.json', 'r', encoding='utf-8') as f:
+                BaseProgram.texts = json.load(f)
 
             self.sort_privileged_roles()
             self.sort_author_list_lowercase()
@@ -295,7 +300,9 @@ class BaseProgram:
         if "settings" in mode:
             with open('./Data/settings.json', 'w', encoding='utf-8') as f:
                 json.dump(BaseProgram.settings, f, ensure_ascii=False, indent=4)
-
+        if "texts" in mode:
+            with open('./Data/texts.json', 'w', encoding='utf-8') as f:
+                json.dump(BaseProgram.texts, f, ensure_ascii=False, indent=4)
 
     def git_save(self, mode:str):
         """ Description: Saves data to github .json files
@@ -335,6 +342,12 @@ class BaseProgram:
             contents_object.update("update", git_classes)
             self.file_save("classes")
 
+        if "texts" in mode:
+            git_texts = json.dumps(BaseProgram.texts, indent=4).encode('utf-8')
+            contents_object = self.repository.file_contents("./Data/texts.json")
+            contents_object.update("update", git_texts)
+            self.file_save("texts")
+
         return
 
     def git_read(self, mode:str):
@@ -370,6 +383,10 @@ class BaseProgram:
 
             self.sort_privileged_roles()
             self.sort_author_list_lowercase()
+
+        if "texts" in mode:
+            git_texts = self.repository.file_contents("./Data/texts.json").decoded
+            BaseProgram.texts = json.loads(git_texts.decode('utf-8'))
 
 
         # Saving
@@ -1040,6 +1057,13 @@ class BaseCog(commands.Cog, BaseTools):
             BaseProgram.database_updating = False
             return
 
+        if mode == "texts":
+            BaseProgram.database_updating = True
+            await ctx.send(r"\>Updating `texts.json`")
+            self.git_read("texts-update")
+            await ctx.send(r"\>Bloom Bot `texts.json` updated!")
+            BaseProgram.database_updating = False
+            return
 
         if mode == "all":
             BaseProgram.database_updating = True
@@ -2026,11 +2050,11 @@ class TextUploaders(commands.Cog, BaseTools):
 
 
     @commands.command()
-    async def listlock(self, ctx, value=""):
-        """ Description: Turns on the lock for the quest upload lists
+    async def textlock(self, ctx, value=""):
+        """ Description: Toggles the lock for the text upload commands
             Arguments:
                 [ctx] - context
-                [value] -aaccepts true or false strings
+                [value] -aaccepts on or off strings
         """
         allow_ = await self.allow_evaluator(ctx, mode="role_privilege", command_name="listlock")
         if not allow_:
@@ -2038,27 +2062,26 @@ class TextUploaders(commands.Cog, BaseTools):
             return
         
         value = value.lower().lstrip().rstrip()
-        if value == "true":
-            BaseProgram.sqlock = True
-            await ctx.send("> Shop & Quest Lock turned on!")
+        if value == "off":
+            BaseProgram.sqlock = False
+            await ctx.send("\> Text upload lock turned off!")
             return
             
-        if value == "false":
-            BaseProgram.sqlock = False
-            await ctx.send("> Shop & Quest Lock turned off!")
+        if value == "on":
+            BaseProgram.sqlock = True
+            await ctx.send("\> Text upload lock turned on!")
             return
         else:
-            await ctx.send("> Shop & Quest Lock requires either <true> or <false>")
+            await ctx.send("\> Text upload lock requires <on> or <off>")
             return
 
     @commands.command()
     async def up_quest(self, ctx):
         allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_quest")
         if not allow_:
-            print("yupp: ", BaseProgram.database_updating)
             return
 
-        if BaseProgram.sqlock == False:
+        if BaseProgram.sqlock:
             return
 
         BaseProgram.database_updating = True
@@ -2070,15 +2093,64 @@ class TextUploaders(commands.Cog, BaseTools):
     async def up_shop(self, ctx):
         allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_shop")
         if not allow_:
-            print("yupp: ", BaseProgram.database_updating)
+    
             return
 
-        if BaseProgram.sqlock == False:
+        if BaseProgram.sqlock:
             return
 
         BaseProgram.database_updating = True
         lines = self.read_text("./Data/html/Shop_ID_List.txt")
         await self.send_item(ctx, lines)
+
+
+    @commands.command()
+    async def up_fags(self, ctx):
+        allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_fags")
+        if not allow_:
+            return
+
+        if BaseProgram.sqlock:
+            return
+
+        index = {}
+
+        BaseProgram.database_updating = True
+        embedVar = discord.Embed(title="Frequently Asked Questions", color=self.block_color,
+            description="Something's not working? Read The following.")
+        item_1 = await ctx.send(embed=embedVar)
+        start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
+        await ctx.send("\u200b")
+        for title in BaseProgram.texts["faqs"]:
+            embedVar = discord.Embed(title=title, color=self.block_color,
+                description=BaseProgram.texts["faqs"][title]["text"])
+            if "image" in BaseProgram.texts["faqs"][title]:
+                embedVar.set_image(url=BaseProgram.texts["faqs"][title]["image"])
+            item = await ctx.send(embed=embedVar)
+            start_link = f'https://discordapp.com/channels/{item.guild.id}/{item.channel.id}/{item.id}'
+            index[title] = start_link
+            await ctx.send("\u200b")
+
+        desc = ""
+        count = 0
+        start_shit = False
+        embedVar = self.embed_single("Frequently Asked Questions", f"[Click here to go to the TOP]({start_link_1})")
+        for title in index:
+            if count == 7:
+                if not start_shit:
+                    embedVar.add_field(name="Table of Contents", value=desc, inline=False)
+                    start_shit = True
+                else:
+                    embedVar.add_field(name="\u200b", value=desc, inline=False)
+                desc = ""
+                count = 0
+            desc += f"🔹 [{title}]({index[title]})\n"
+            count += 1
+        embedVar.add_field(name="\u200b", value=desc, inline=False)
+        await ctx.send(embed=embedVar)
+        BaseProgram.database_updating = False
+        return
+
 
     def read_text(self, path):
         f = open(path, "r", encoding='cp1252')
