@@ -21,7 +21,8 @@
     },
     "TextUploadSettings": {
         "channels": {
-            "811895381331148830": "https://discord.com/api/webhooks/811895403150049320/Qe8Ys0mSZlZ7wBRasrKldEpFwIQAYaGQUXjC6nHhSspenrqVOa4RnlCOEeqkTM5YQT1S"
+            "811895381331148830": "https://discord.com/api/webhooks/811895403150049320/Qe8Ys0mSZlZ7wBRasrKldEpFwIQAYaGQUXjC6nHhSspenrqVOa4RnlCOEeqkTM5YQT1S",
+            "811305082377207859": "https://discord.com/api/webhooks/811913469414604840/0PQ_B6v9oJwWunarZZTmNGoDAwL0Tq_qy9s2ZZd_xAqLA4QlDaYBnTLXMnQGoObd4MnA"
         }
     },
     "latest_update": "web",
