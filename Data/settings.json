@@ -20,9 +20,7 @@
         "legends_link": "https://cdn.discordapp.com/attachments/805367955923533845/807995288483921920/intructions.png"
     },
     "TextUploadSettings": {
-        "channels": {
-            "811895381331148830": "https://discord.com/api/webhooks/811895403150049320/Qe8Ys0mSZlZ7wBRasrKldEpFwIQAYaGQUXjC6nHhSspenrqVOa4RnlCOEeqkTM5YQT1S"
-        }
+        "channels": {}
     },
     "latest_update": "web",
     "EventCalendarCogSettings": {
