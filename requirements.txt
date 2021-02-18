@@ -16,3 +16,4 @@ aiosonic==0.9.5
 nest_asyncio==1.5.1
 pytz==2020.5
 tweepy==3.10.0
+discord_webhook==0.11.0

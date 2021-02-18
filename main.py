@@ -17,10 +17,10 @@ import requests
 import github3
 import math as m
 import glob
-import io
 import tweepy
 import urllib.parse
 
+from io import BytesIO
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup as Soup
 from discord.ext import commands, tasks
@@ -28,6 +28,7 @@ from discord import Intents
 from discord.utils import get as dis_get
 from discord.ext.commands import CommandNotFound
 from discord.abc import Snowflake
+from discord_webhook import DiscordWebhook
 from pprint import pprint
 from PIL import Image
 
@@ -60,7 +61,7 @@ class BaseProgram:
     guides = {}
     loop = asyncio.get_event_loop()
     nest_asyncio.apply(loop)
-    sqlock = True
+    sqlock = False
     texts = {}
 
     def setup(self):
@@ -69,21 +70,11 @@ class BaseProgram:
         # self.block_color = 4521077
         
         self.url = "https://adventurequest.life/"
-        # BaseProgram.settings = {}
-        # BaseProgram.classes = {}
-        # BaseProgram.priveleged_roles = []
-        # BaseProgram.mode = ""
-        # BaseProgram.author_list_lowercase = []
-        # BaseProgram.class_acronyms = {}
-        # BaseProgram.guides = {}
-
         self.github = github3.login(token=self.GIT_BLOOM_TOKEN)
         self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
 
         self.file_read("all")
-        # if os.name != "nt":
-            # self.git_read("all")
-        self.git_read("all")
+        # self.git_read("all")
     def env_variables(self):
         if os.name == "nt": # PC Mode
 
@@ -873,6 +864,12 @@ class BaseTools(BaseProgram):
         response = await client.get(SELECTED_URL)
         text_ = await response.content()
         return Soup(text_.decode('utf-8'), 'html5lib')
+
+    async def get_site_txt(self, SELECTED_URL):
+        client = aiosonic.HTTPClient()
+        response = await client.get(SELECTED_URL)
+        text_ = await response.content()
+        return text_
 
 class BaseCog(commands.Cog, BaseTools):
     def __init__(self, bot):
@@ -2076,7 +2073,7 @@ class TextUploaders(commands.Cog, BaseTools):
             return
 
     @commands.command()
-    async def up_quest(self, ctx):
+    async def uptext(self, ctx):
         allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_quest")
         if not allow_:
             return
@@ -2084,24 +2081,71 @@ class TextUploaders(commands.Cog, BaseTools):
         if BaseProgram.sqlock:
             return
 
-        BaseProgram.database_updating = True
-        lines = self.read_text("./Data/html/AQW_Quest_ids.txt")
-        await self.send_item(ctx, lines)
+        try:
+            attach = ctx.message.attachments[0]
+        except:
+            await ctx.send("\> Please attach a .txt file.")
+            return
+
+        if str(ctx.channel.id) in BaseProgram.settings["TextUploadSettings"]["channels"]:
+            hook_link = BaseProgram.settings["TextUploadSettings"]["channels"][f"{ctx.channel.id}"]
+        else:
+            await ctx.send("\> Please set a Webhook for this channel with `;upset webhook_name`.")
+            return
+
+        file_n = attach.filename
+        if file_n.split(".")[-1] != "txt":
+            await ctx.send("\> Only a .txt files are allowed with `;uptext` command.")
+            return  
+
+        target_url = attach.url
         
+        data = BaseProgram.loop.run_until_complete(self.get_site_txt(target_url))
+        text = str(data.decode('cp1252') ).split("\n")
+        await self.send_item(ctx, hook_link, text)
+
+        
+        fp = BytesIO()
+        await ctx.message.attachments[0].save(fp)
+        await self.send_webhook(hook_link, "file", fp, file_n)
+
 
     @commands.command()
-    async def up_shop(self, ctx):
-        allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_shop")
-        if not allow_:
-    
+    async def upset(self, ctx, *, webhook_name:str=""):
+        if not webhook_name:
+            await ctx.send("\> Please type a webhook name.")
             return
 
-        if BaseProgram.sqlock:
+        channel_id = f"{ctx.channel.id}"
+        if channel_id in BaseProgram.settings["TextUploadSettings"]["channels"]:
+            await ctx.send(f"\> A Webhook  is **already registered** for this channel.\n\> `{webhook_name}`")
             return
 
-        BaseProgram.database_updating = True
-        lines = self.read_text("./Data/html/Shop_ID_List.txt")
-        await self.send_item(ctx, lines)
+        webhook = await ctx.channel.webhooks()
+        for hook in webhook:
+            if webhook_name == hook.name:
+                hook_url = hook.url
+                break
+        
+        BaseProgram.settings["TextUploadSettings"]["channels"][channel_id] = str(hook_url)
+        self.file_save("settings")
+        self.git_save("settings")
+        await ctx.send(f"\> Webhook `{webhook_name}` Successfully set for this channel.")
+        return
+
+
+    @commands.command()
+    async def updel(self, ctx):
+        channel_id = f"{ctx.channel.id}"
+        if channel_id not in BaseProgram.settings["TextUploadSettings"]["channels"]:
+            await ctx.send(f"\> This channel has no registered `;uptext` webhook")
+            return
+
+        BaseProgram.settings["TextUploadSettings"]["channels"].pop(channel_id, None)
+        self.file_save("settings")
+        self.git_save("settings")
+        await ctx.send(f"\> Webhook Channel for `;uptext` is Successfully unregistered ")
+        return
 
 
     @commands.command()
@@ -2156,16 +2200,25 @@ class TextUploaders(commands.Cog, BaseTools):
         f = open(path, "r", encoding='cp1252')
         return f.read().split("\n")
         
-    async def send_item(self, ctx, lines):
+    async def send_item(self, ctx, hook_link, lines):
         desc = ""
         for i in lines:
             if len(desc) >1700:
-                await ctx.send(desc)
+                await self.send_webhook(hook_link, "txt", desc)
                 desc = ""
             desc += i + "\n"
-        await ctx.send(desc)
+        await self.send_webhook(hook_link, "txt", desc)
         BaseProgram.database_updating = False
-        return
+        return 
+
+    async def send_webhook(self, hook_link:str, mode:str, *value):
+        webhook_urls = [hook_link]
+        if mode == "txt":
+            webhook = DiscordWebhook(url=webhook_urls, content=value[0])
+        elif mode == "file":
+            webhook = DiscordWebhook(url=webhook_urls)
+            webhook.add_file(file=value[0], filename=value[1])
+        response = webhook.execute()    
 
 intents = Intents.all()
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped', intents=intents)
@@ -2202,7 +2255,7 @@ async def on_ready():
     if os.name == "nt":
         channel = Bot.get_channel(799238286539227136)
         await channel.send("HOLA")
-    name = "A bot Created by Bloom Autist. Currently Beta V.1.4.8.01"
+    name = "A bot Created by Bloom Autist. Currently Beta V.2.0.0.00"
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
 
