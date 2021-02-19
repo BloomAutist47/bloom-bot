@@ -888,6 +888,10 @@
             "url": "https://adventurequest.life/bots/Nng_Legion_Token_Undead_Champion_Recruitment.gbot",
             "author": "nng"
         },
+        "NNg Mirror Realm Merge.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Mirror_Realm_Merge.gbot",
+            "author": "nng"
+        },
         "Stolen Heart all drop and Pinkest Dye Ever.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Stolen_Heart_all_drop_and_Pinkest_Dye_Ever.gbot",
             "author": "nng"
@@ -2000,6 +2004,9 @@
             },
             "Legion Token Undead Champion Recruitment.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Legion_Token_Undead_Champion_Recruitment.gbot"
+            },
+            "NNg Mirror Realm Merge.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Mirror_Realm_Merge.gbot"
             },
             "Stolen Heart all drop and Pinkest Dye Ever.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Stolen_Heart_all_drop_and_Pinkest_Dye_Ever.gbot"
