@@ -912,9 +912,9 @@
             "url": "https://adventurequest.life/bots/NWNO_RoomHop_-_Taryth.gbot",
             "author": "taryth"
         },
-        "prussia dragonblade of nulgath bot.gbot": {
-            "url": "https://adventurequest.life/bots/prussia_dragonblade_of_nulgath_bot.gbot",
-            "author": "unknown"
+        "dragonblade of nulgath bot.gbot": {
+            "url": "https://adventurequest.life/bots/Prussia_dragonblade_of_nulgath_bot.gbot",
+            "author": "prussia"
         },
         "Full Awe Bot.rar": {
             "url": "https://adventurequest.life/bots/Prussia_Full_Awe_Bot.rar",
@@ -1317,9 +1317,6 @@
             },
             "Non-mem VA SkCmd.gbot": {
                 "url": "https://adventurequest.life/bots/Non_mem_VA_SkCmd.gbot"
-            },
-            "prussia dragonblade of nulgath bot.gbot": {
-                "url": "https://adventurequest.life/bots/prussia_dragonblade_of_nulgath_bot.gbot"
             },
             "Rascam BlightEssence.gbot": {
                 "url": "https://adventurequest.life/bots/Rascam_BlightEssence.gbot"
@@ -2036,6 +2033,9 @@
             }
         },
         "prussia": {
+            "dragonblade of nulgath bot.gbot": {
+                "url": "https://adventurequest.life/bots/Prussia_dragonblade_of_nulgath_bot.gbot"
+            },
             "Full Awe Bot.rar": {
                 "url": "https://adventurequest.life/bots/Prussia_Full_Awe_Bot.rar"
             }
