@@ -61,56 +61,77 @@ class BaseProgram:
     guides = {}
     loop = asyncio.get_event_loop()
     nest_asyncio.apply(loop)
-    sqlock = False
+    sqlock = True
     texts = {}
+    tweet_text = ""
+    block_color = 3066993
+
+
+    url = "https://adventurequest.life/"
+    CONSUMER_KEY = ""
+    CONSUMER_SECRET = ""
+    ACCESS_TOKEN = ""
+    ACCESS_TOKEN_SECRET = ""
+
+    DISCORD_TOKEN = ""
+    PERMISSIONS = ""
+    PORTAL_AGENT = ""
+
+    tweets_listener = ""
+    stream = ""
+
+    git_already = False
 
     def setup(self):
-        self.env_variables()
         self.block_color = 3066993 
-        # self.block_color = 4521077
         
-        self.url = "https://adventurequest.life/"
-        self.github = github3.login(token=self.GIT_BLOOM_TOKEN)
-        self.repository = self.github.repository(self.GIT_USER, self.GIT_REPOS)
+
+    def git_prepare(self):
+        self.env_variables()
+        
+        # self.block_color = 4521077
+        BaseProgram.github = github3.login(token=BaseProgram.GIT_BLOOM_TOKEN)
+        BaseProgram.repository = BaseProgram.github.repository(BaseProgram.GIT_USER, BaseProgram.GIT_REPOS)
 
         self.file_read("all")
-        # self.git_read("all")
+        self.git_read("all")
+
     def env_variables(self):
         if os.name == "nt": # PC Mode
 
             os.chdir(os.path.dirname(os.path.abspath(__file__)))
             load_dotenv()
-            self.DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN2') # test bot token
-            self.GIT_REPOS = os.getenv('GITHUB_REPOS')
-            self.GIT_USER = os.getenv('GITHUB_USERNAME')
-            self.GIT_BLOOM_TOKEN = os.getenv('GITHUB_BLOOMBOT_TOKEN')
-            self.PERMISSIONS = os.getenv("PRIVILEGED_ROLE").split(',')
-            self.PORTAL_AGENT = os.getenv('PORTAL_AGENT')
+            BaseProgram.DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN2') # test bot token
+            BaseProgram.GIT_REPOS = os.getenv('GITHUB_REPOS')
+            BaseProgram.GIT_USER = os.getenv('GITHUB_USERNAME')
+            BaseProgram.GIT_BLOOM_TOKEN = os.getenv('GITHUB_BLOOMBOT_TOKEN')
+            BaseProgram.PERMISSIONS = os.getenv("PRIVILEGED_ROLE").split(',')
+            BaseProgram.PORTAL_AGENT = os.getenv('PORTAL_AGENT')
 
-            self.CONSUMER_KEY = os.getenv('TWITTER_NOTIFIER_API_KEY')
-            self.CONSUMER_SECRET = os.getenv('TWITTER_NOTIFIER_API_KEY_SECRET')
-            self.ACCESS_TOKEN = os.getenv('TWITTER_NOTIFIER_ACCESS_TOKEN')
-            self.ACCESS_TOKEN_SECRET = os.getenv('TWITTER_NOTIFIER_ACCESS_TOKEN_SECRET')
+            BaseProgram.CONSUMER_KEY = os.getenv('TWITTER_NOTIFIER_API_KEY')
+            BaseProgram.CONSUMER_SECRET = os.getenv('TWITTER_NOTIFIER_API_KEY_SECRET')
+            BaseProgram.ACCESS_TOKEN = os.getenv('TWITTER_NOTIFIER_ACCESS_TOKEN')
+            BaseProgram.ACCESS_TOKEN_SECRET = os.getenv('TWITTER_NOTIFIER_ACCESS_TOKEN_SECRET')
 
         else:              # Heroku
-            self.DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
-            self.GIT_REPOS = os.environ.get('GITHUB_REPOS')
-            self.GIT_USER = os.environ.get('GITHUB_USERNAME')
-            self.GIT_BLOOM_TOKEN = os.environ.get('GITHUB_BLOOMBOT_TOKEN')
-            self.PERMISSIONS = os.environ.get("PRIVILEGED_ROLE").split(',')
-            self.PORTAL_AGENT = os.environ.get("PORTAL_AGENT")
+            BaseProgram.DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
+            BaseProgram.GIT_REPOS = os.environ.get('GITHUB_REPOS')
+            BaseProgram.GIT_USER = os.environ.get('GITHUB_USERNAME')
+            BaseProgram.GIT_BLOOM_TOKEN = os.environ.get('GITHUB_BLOOMBOT_TOKEN')
+            BaseProgram.PERMISSIONS = os.environ.get("PRIVILEGED_ROLE").split(',')
+            BaseProgram.PORTAL_AGENT = os.environ.get("PORTAL_AGENT")
 
-            self.CONSUMER_KEY = os.environ.get('TWITTER_NOTIFIER_API_KEY')
-            self.CONSUMER_SECRET = os.environ.get('TWITTER_NOTIFIER_API_KEY_SECRET')
-            self.ACCESS_TOKEN = os.environ.get('TWITTER_NOTIFIER_ACCESS_TOKEN')
-            self.ACCESS_TOKEN_SECRET = os.environ.get('TWITTER_NOTIFIER_ACCESS_TOKEN_SECRET')
+            BaseProgram.CONSUMER_KEY = os.environ.get('TWITTER_NOTIFIER_API_KEY')
+            BaseProgram.CONSUMER_SECRET = os.environ.get('TWITTER_NOTIFIER_API_KEY_SECRET')
+            BaseProgram.ACCESS_TOKEN = os.environ.get('TWITTER_NOTIFIER_ACCESS_TOKEN')
+            BaseProgram.ACCESS_TOKEN_SECRET = os.environ.get('TWITTER_NOTIFIER_ACCESS_TOKEN_SECRET')
 
     def database_update(self, mode: str):
         """ Description: Updates the database.json
             Arguments:
             [mode] accepts 'web', 'html'
-                - 'web': scrapes directly from the self.url
-                - 'html': uses pre-downloaded html of self.url
+                - 'web': scrapes directly from the BaseProgram.url
+                - 'html': uses pre-downloaded html of BaseProgram.url
             Return: Bool
         """
         self.git_read("settings")
@@ -125,13 +146,13 @@ class BaseProgram:
             }
             row = []
             try:
-                html = requests.get(self.url, headers=headers).text
+                html = requests.get(BaseProgram.url, headers=headers).text
                 page_soup = Soup(html, "html.parser")
                 body = page_soup.find("table", {"id":"table_id", "class":"display"}).find("tbody")
                 row_links = body.find_all("input", {"class":"rainbow"})
 
                 for value in row_links:
-                    link = self.url + "bots/" + value["value"]
+                    link = BaseProgram.url + "bots/" + value["value"]
                     row.append(link)
 
                 BaseProgram.settings["latest_update"] = "web"
@@ -311,31 +332,31 @@ class BaseProgram:
 
         if "database" in mode:
             git_data = json.dumps(BaseProgram.data, indent=4).encode('utf-8')
-            contents_object = self.repository.file_contents("./Data/database.json")
+            contents_object = BaseProgram.repository.file_contents("./Data/database.json")
             contents_object.update("update", git_data)
             self.file_save("database")
 
         if "guides" in mode:
             git_guides = json.dumps(BaseProgram.guides, indent=4).encode('utf-8')
-            contents_object = self.repository.file_contents("./Data/guides.json")
+            contents_object = BaseProgram.repository.file_contents("./Data/guides.json")
             contents_object.update("update", git_guides)
             self.file_save("guides")
 
         if "settings" in mode:
             git_settings = json.dumps(BaseProgram.settings, indent=4).encode('utf-8')
-            contents_object = self.repository.file_contents("./Data/settings.json")
+            contents_object = BaseProgram.repository.file_contents("./Data/settings.json")
             contents_object.update("update", git_settings)
             self.file_save("settings")
 
         if "classes" in mode:
             git_classes = json.dumps(BaseProgram.classes, indent=4).encode('utf-8')
-            contents_object = self.repository.file_contents("./Data/classes.json")
+            contents_object = BaseProgram.repository.file_contents("./Data/classes.json")
             contents_object.update("update", git_classes)
             self.file_save("classes")
 
         if "texts" in mode:
             git_texts = json.dumps(BaseProgram.texts, indent=4).encode('utf-8')
-            contents_object = self.repository.file_contents("./Data/texts.json")
+            contents_object = BaseProgram.repository.file_contents("./Data/texts.json")
             contents_object.update("update", git_texts)
             self.file_save("texts")
 
@@ -356,27 +377,27 @@ class BaseProgram:
             mode = ["database", "guides", "classes", "settings"]
 
         if "database" in mode:
-            git_data = self.repository.file_contents("./Data/database.json").decoded
+            git_data = BaseProgram.repository.file_contents("./Data/database.json").decoded
             BaseProgram.data = json.loads(git_data.decode('utf-8'))
 
         if "guides" in mode:
-            git_guides = self.repository.file_contents("./Data/guides.json").decoded
+            git_guides = BaseProgram.repository.file_contents("./Data/guides.json").decoded
             BaseProgram.guides = json.loads(git_guides.decode('utf-8'))
 
         if "classes" in mode:
-            git_classes = self.repository.file_contents("./Data/classes.json").decoded
+            git_classes = BaseProgram.repository.file_contents("./Data/classes.json").decoded
             BaseProgram.classes = json.loads(git_classes.decode('utf-8'))
             self.sort_classes_acronym()
 
         if "settings" in mode:
-            git_settings = self.repository.file_contents("./Data/settings.json").decoded
+            git_settings = BaseProgram.repository.file_contents("./Data/settings.json").decoded
             BaseProgram.settings = json.loads(git_settings.decode('utf-8'))
 
             self.sort_privileged_roles()
             self.sort_author_list_lowercase()
 
         if "texts" in mode:
-            git_texts = self.repository.file_contents("./Data/texts.json").decoded
+            git_texts = BaseProgram.repository.file_contents("./Data/texts.json").decoded
             BaseProgram.texts = json.loads(git_texts.decode('utf-8'))
 
 
@@ -670,7 +691,7 @@ class BaseTools(BaseProgram):
                 [ctx] - context
                 [command_name] - command name that is being evaluated
         """
-        if str(ctx.author.id) not in self.PERMISSIONS:
+        if str(ctx.author.id) not in BaseProgram.PERMISSIONS:
             return True
         else:
             desc = f"\> User {ctx.author} does not have permissions for `;{command_name}` command.\n"
@@ -860,10 +881,16 @@ class BaseTools(BaseProgram):
             yield lst[i:i + n]
 
     async def get_site_content(self, SELECTED_URL):
-        client = aiosonic.HTTPClient()
-        response = await client.get(SELECTED_URL)
-        text_ = await response.content()
-        return Soup(text_.decode('utf-8'), 'html5lib')
+        async with aiohttp.ClientSession(trust_env=True) as session:
+            async with session.get(SELECTED_URL) as response:
+                text_ = await response.read()
+                return Soup(text_.decode('utf-8'), 'html5lib')
+
+    # async def get_site_content(self, SELECTED_URL):
+    #     client = aiosonic.HTTPClient()
+    #     response = await client.get(SELECTED_URL)
+    #     text_ = await response.content()
+    #     return Soup(text_.decode('utf-8'), 'html5lib')
 
     async def get_site_txt(self, SELECTED_URL):
         client = aiosonic.HTTPClient()
@@ -1762,10 +1789,11 @@ class WikiCog(commands.Cog, BaseTools):
             embedVar = self.embed_single("Wiki Search", "Please enter a value.")
             await ctx.send(embed=embedVar)
             return
+        x = re.sub("[']", "-", item).replace(" ", "-")
+        x = re.sub("[^A-Za-z0-9\-]+", "", x)
+        straight = "http://aqwwiki.wikidot.com/" + x
+        wiki = "http://aqwwiki.wikidot.com/search:site/q/" + x.replace("-", "%20")
 
-        straight = ("http://aqwwiki.wikidot.com/" + item.replace(" ", "-").replace("'", "-").replace(")", "").replace("(", "")).lower()
-        # items = urllib.parse.quote_minus(item)
-        wiki = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
         only_wiki = False
         sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(straight))
         try:
@@ -1811,8 +1839,11 @@ class WikiCog(commands.Cog, BaseTools):
             embedVar = self.embed_single("Wiki Search", "Please enter a value.")
             await ctx.send(embed=embedVar)
             return
+        x = re.sub("[']", "-", item).replace(" ", "-")
+        x = re.sub("[^A-Za-z0-9\-]+", "", x)
+        straight = "http://aqwwiki.wikidot.com/" + x
+        wiki = "http://aqwwiki.wikidot.com/search:site/q/" + x.replace("-", "%20")
 
-        wiki = "http://aqwwiki.wikidot.com/search:site/q/" + item.replace(" ", "%20")
         embedVar = self.embed_single("Wiki Search", wiki)
         await ctx.send(embed=embedVar)
         return
@@ -1989,56 +2020,139 @@ class EventCalendarCog(commands.Cog, BaseTools):
         await self.bot.wait_until_ready()
 
 
-class FatListener(tweepy.StreamListener):
-    def __init__(self, api, bot):
-        self.block_color = 3066993
-        # self.block_color = 4521077 
+class FatListener(tweepy.StreamListener, BaseTools):
+    def __init__(self, bot, api,  *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # self.discord = discord # this is just a function which sends a message to a channel
+        # self.loop = loop # this is the loop of discord client
         self.bot = bot
         self.api = api
         self.me = api.me()
+        self.tweet_text = ""
+        self.image_url = ""
+
+        self.key_check = [
+            "BONUS daily login gift",
+            "New daily login gift",
+            "daily login",
+            "holi-daily",
+            "login gift",
+            "BONUS daily",
+            "daily drops"
+            ]
+
 
     def on_status(self, status):
         if hasattr(status, 'extended_tweet'):
             tweet = status.extended_tweet['full_text']
-            if "New daily login gift!" in tweet:
-                self.tweet_text = tweet
-                try:
-                    self.image_url = status.extended_tweet['entities']['media'][0]["media_url_https"]
-                    self.process_file()
-                except: pass
-                print("\n")
-            else: print("Something: " + tweet)
+            got = False
+            for i in self.key_check:
+                if i in tweet:
+                    got = True
+                    print("GOT")
+                    break
+
+            if not got: return
+            print("Reached")
+            
+            link = status.extended_tweet['entities']['media'][0]["media_url_https"]
+            BaseProgram.loop.run_until_complete(self.tweet_send(tweet, link))
+            # future = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link), BaseProgram.loop)
+            # Wait for the result with an optional timeout argument
+            # future.result()
+            print("Reached2")
+            return
+
+            
         else:
             print('text: ' + status.text)
+            return
 
-    def process_file(self):
-        embedVar = discord.Embed(title="News Event", color=self.block_color)
-        desc = ""
+    async def tweet_send(self, text, link):
+
+        # Enemy
+        enemy = re.search("(battle the|battle|Battle\sthe|Battle)(.*)(in the|in)\s/", text)
+        if enemy != None:
+            enemy = enemy.groups()[1].strip()
+            enemy_link = await self.check_website_integrity(enemy)
+        else:
+            self.save_log(1, text, link)
+            return 
+
+        # Location
+        location = re.search("\s/(.+?)(map|\s)", text)
+        if location !=  None:
+            location = "/join %s"%(location[1])
+        else:
+            self.save_log(2, text, link)
+            return 
+
+        # Items
+        item = re.search("(for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal)(.+?)((!)|(\.)|(as we celebrate))", text)
+        if item !=  None:
+            item = item.groups()[1]
+        else:
+            self.save_log(3, text, link)
+            return 
+
+        item = re.sub(r'((?<=^\s\b)this seasonal(?=\b\s))|(((?<=^\s\b)rare(?=\b\s)))','', item).strip()
+        if "0 AC" not in item:
+            item = "0 AC " + item
+
+        embedVar = discord.Embed(title="New Daily Gift!", url=link, color=BaseProgram.block_color)
+        embedVar.description = f"**Location**: {location}\n"\
+                               f"**Enemy**: [{enemy}]({enemy_link})\n"\
+                               f"**Item**: {item}\n"
+        embedVar.set_image(url=link)
+
+        if os.name == "nt":
+            channel = await self.bot.fetch_channel(799238286539227136)
+        else:
+            channel = await self.bot.fetch_channel(811305082002866235)
+
+        await channel.send(embed=embedVar)
+        return
 
     def on_error(self, status):
         print(status)
 
+    def save_log(self, m, text, link):
+        if m == 1:
+            item = f"[Error at enemy] \nTweet: {text} Link: {link}"
+        
+        if m == 2:
+            item = f"[Error at location] \nTweet: {text} Link: {link}"
+        
+        if m == 3:
+            item = f"[Error at item] \nTweet: {text} Link: {link}"
+        self.settings["TwitterListenerCogSettings"]["Logs"].append(item)
+        self.file_save("settings")
+        self.git_save("settings")
 
-class TwitterStreamCog(commands.Cog, BaseTools):
-    def __init__(self, Bot):
-        self.setup()
-        self.bot = Bot
 
-        self.est_dt = datetime.now(timezone('est'))
-        self.current_day = self.est_dt.strftime("%d")
-        self.current_month = self.est_dt.strftime("%B")
+    async def check_website_integrity(self, item):
 
-        self.auth = tweepy.OAuthHandler(self.CONSUMER_KEY, self.CONSUMER_SECRET)
-        auth.set_access_token(self.ACCESS_TOKEN, self.ACCESS_TOKEN_SECRET)
+        x = re.sub("[']", "-", item).replace(" ", "-")
+        x = re.sub("[^A-Za-z0-9\-]+", "", x)
+        straight = "http://aqwwiki.wikidot.com/" + x
+        
+        wiki = "http://aqwwiki.wikidot.com/search:site/q/" + x.replace("-", "%20")
 
-        api = tweepy.API(auth)
-        api.verify_credentials()
+        sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(straight))
+        try:
+            page_content = sites_soup.find("div", {"id":"page-content"})
+            page_check = page_content.find("p").text.strip()
+            if page_check == "This page doesn't exist yet!":
+                result = wiki
+            elif "usually refers to:" in page_check:
+                result = straight
+            else:
+                result = straight
+        except:
+            result = wiki
 
-        tweets_listener = FatListener(api, bot)
-        stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended')
-        print("Worked")
-        stream.filter(follow=["1349290524901998592"])
-    
+        return result
+
 
 class TextUploaders(commands.Cog, BaseTools):
     def __init__(self, Bot):
@@ -2231,21 +2345,21 @@ async def on_command_error(ctx, error):
     BaseProgram.database_updating = False
     raise error
 
-@Bot.event
-async def on_member_update(before, after):
-    satanId = 212913871466266624
-    if os.name == "nt":
-        satanRoleId = 808657429784035338
-        guild_id = 761956630606250005
-    else:
-        satanRoleId = 775824347222245426
-        guild_id = 766627412179550228
+# @Bot.event
+# async def on_member_update(before, after):
+#     satanId = 212913871466266624
+#     if os.name == "nt":
+#         satanRoleId = 808657429784035338
+#         guild_id = 761956630606250005
+#     else:
+#         satanRoleId = 775824347222245426
+#         guild_id = 766627412179550228
 
-    guild = Bot.get_guild(guild_id)
-    role = dis_get(guild.roles, name='satan', id=satanRoleId)
-    role_ids = [x.id for x in after.roles]
-    if after.id != satanId and satanRoleId in role_ids:
-        await after.remove_roles(role)
+#     guild = Bot.get_guild(guild_id)
+#     role = dis_get(guild.roles, name='satan', id=satanRoleId)
+#     role_ids = [x.id for x in after.roles]
+#     if after.id != satanId and satanRoleId in role_ids:
+#         await after.remove_roles(role)
 
 
 
@@ -2259,12 +2373,30 @@ async def on_ready():
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
 
+    auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
+    auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
+
+    api = tweepy.API(auth)
+    api.verify_credentials()
+
+    # BaseProgram.tweets_listener = FatListener(api)
+
+    # BaseProgram.stream = tweepy.Stream(auth, BaseProgram.tweets_listener, )
+    BaseProgram.stream = tweepy.Stream(auth=auth, listener=FatListener(Bot, api), tweet_mode='extended')
+    print("Worked")
+    BaseProgram.stream.filter(follow=["1349290524901998592"], is_async=True)
+
+
+
 
 if os.name == "nt": # PC Mode
     load_dotenv()
     DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN2') # test bot token
 else:              # Heroku
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
+
+BaseStuff = BaseProgram()
+BaseStuff.git_prepare()
 
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
@@ -2276,5 +2408,4 @@ Bot.add_cog(GuideCog(Bot))
 Bot.add_cog(CharacterCog(Bot))
 Bot.add_cog(WikiCog(Bot))
 Bot.add_cog(TextUploaders(Bot))
-# Bot.add_cog(TwitterStreamCog(Bot))
 Bot.run(DISCORD_TOKEN)
