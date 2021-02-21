@@ -1,0 +1,150 @@
+from .Base import *
+from discord.ext import commands
+import os
+
+class GuideCog(commands.Cog, BaseTools):
+    def __init__(self, bot):
+        self.setup()
+        self.bot = bot
+        # self.bot.remove_command("help")
+        self.fotter = "Tip: Use \";g\" to summon a list of all guides."
+
+
+
+    @commands.command()
+    async def g(self, ctx, guide=""):
+        if os.name == "nt": # PC Mode
+            self.file_read("guides") 
+
+        if guide == "":
+            embedVar = discord.Embed(title="🔹 List of Guide Commands 🔹", color=self.block_color,
+                description="To summon this list, use `;g`. Please read the following carefully.\n\n")
+            desc = ""
+            guild_id = str(ctx.guild.id)
+            if guild_id in BaseProgram.settings["server_settings"]:
+                if BaseProgram.settings["server_settings"][guild_id]["server_privilage"] == "Homie":
+                    for guide_name in BaseProgram.guides:
+                        guide_data = BaseProgram.guides[guide_name]
+                        if "type" in guide_data:
+                            if guide_data["type"] == "header":
+                                if "tag" not in guide_data:
+                                    desc += "\u200b"
+                                embedVar.add_field(name=f"{guide_name}", inline=False, value=desc)
+                                desc = ""
+                                continue
+                        if "title" in guide_data:
+                            desc += "`;g {}` - {}.\n".format(guide_name, guide_data["title"])
+
+
+            if guild_id not in BaseProgram.settings["server_settings"]:
+                for guide_name in BaseProgram.guides:
+                    if guide_name not in BaseProgram.settings["server_settings"]["Basic"]["banned_guides"]:
+                        guide_data = BaseProgram.guides[guide_name]
+                        if "type" in guide_data:
+                            if guide_data["type"] == "header":
+                                if "tag" not in guide_data:
+                                    desc += "\u200b"
+                                embedVar.add_field(name=f"{guide_name}", inline=False, value=desc)
+                                desc = ""
+                                continue
+                        if "title" in guide_data:
+                            desc += "`;g {}` - {}.\n".format(guide_name, guide_data["title"])
+            await ctx.send(embed=embedVar)
+            return
+
+        g_name = guide.lower()
+        guide_mode = await self.check_guild_guide(ctx)
+        if not guide_mode:
+            if g_name in BaseProgram.settings["server_settings"]["Basic"]["banned_guides"]:
+                return
+
+        if g_name in BaseProgram.guides:
+            if "common_key" in BaseProgram.guides[g_name]:
+                key = BaseProgram.guides[g_name]["common_key"]
+                guide_data = BaseProgram.guides[key]
+            else:
+                guide_data = BaseProgram.guides[g_name]
+
+            if guide_data["type"] == "header":
+                return
+
+            if guide_data["type"] == "guide":
+                
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color,
+                    description="The following is a short guide of %s. "\
+                                "For the [Full Guide click this](%s)."%(guide_data["title"], guide_data["full_guide"]))
+                embedVar.set_image(url=guide_data["short_link"])
+                embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                embedVar.set_footer(text=self.fotter)
+                await ctx.send(embed=embedVar)
+                return
+
+            if guide_data["type"] == "guide_links":
+
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
+                desc = guide_data["description"]
+                for text in guide_data["content"]:
+                    desc += "\> [{}]({}).\n".format(text[0], text[1])
+                embedVar.description = desc
+                embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                embedVar.set_footer(text=self.fotter)
+                await ctx.send(embed=embedVar)
+                return
+
+            if guide_data["type"] == "text":
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
+                desc = guide_data["description"] + "\n\n"
+                bullet = ""
+                if "bullet" in guide_data:
+                    bullet = "%s "%(guide_data["bullet"])
+                if type(guide_data["content"]) is list:
+                    for sentence in guide_data["content"]:
+                        desc += bullet + sentence + "\n"
+                else:
+                    desc = guide_data["content"]
+                embedVar.description = desc
+                if "thumbnail" in guide_data:
+                    embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                embedVar.set_footer(text=self.fotter)
+                await ctx.send(embed=embedVar)
+                return
+
+            if guide_data["type"] == "text_dict":
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color,
+                description=guide_data["description"] + "\n\n")
+                for item in guide_data["content"]:
+                    desc = ""
+                    for sentence in guide_data["content"][item]:
+                        desc += sentence + "\n"
+                    embedVar.add_field(name=item, value=desc, inline=False)
+                    # embedVar.add_field(name=, value="\u200b", inline=False)
+                if "thumbnail" in guide_data:
+                    embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                embedVar.set_footer(text=self.fotter)
+                await ctx.send(embed=embedVar)
+                return
+
+            if guide_data["type"] == "image":
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
+                embedVar.description = guide_data["description"]
+                embedVar.set_image(url=guide_data["content"])
+                embedVar.set_footer(text=self.fotter)
+                await ctx.send(embed=embedVar)
+                return
+
+
+            if guide_data["type"] == "single_link":
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
+                if type(guide_data["description"]) is list:
+                    desc = ""
+                    for sentence in guide_data["description"]:
+                        desc += sentence + "\n"
+                else:
+                    desc = guide_data["description"] + "\n"
+                desc += "\> [Click this link]({}).".format(guide_data["content"])
+                embedVar.description = desc
+                if "thumbnail" in guide_data:
+                    embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                embedVar.set_footer(text=self.fotter)
+                await ctx.send(embed=embedVar)
+                return

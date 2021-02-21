@@ -32,6 +32,7 @@ from discord_webhook import DiscordWebhook
 from pprint import pprint
 from PIL import Image
 
+
 import asyncio
 import nest_asyncio
 import aiohttp
@@ -43,7 +44,9 @@ from datetime import datetime, timedelta, date
 from dateutil.relativedelta import relativedelta
 from pytz import timezone
 import unicodedata
+import pyshorteners
 
+# from Cogs import IllegalBoatSearchCog
 
 class BreakProgram(Exception):
     pass
@@ -81,6 +84,8 @@ class BaseProgram:
     stream = ""
 
     git_already = False
+    s = pyshorteners.Shortener()
+
 
     def setup(self):
         self.block_color = 3066993 
@@ -88,6 +93,7 @@ class BaseProgram:
 
     def git_prepare(self):
         self.env_variables()
+        
         
         # self.block_color = 4521077
         BaseProgram.github = github3.login(token=BaseProgram.GIT_BLOOM_TOKEN)
@@ -897,6 +903,18 @@ class BaseTools(BaseProgram):
         response = await client.get(SELECTED_URL)
         text_ = await response.content()
         return text_
+
+
+    async def get_site(self, SELECTED_URL, headers=""):
+        async with aiohttp.ClientSession(trust_env=True, headers=headers) as session:
+            async with session.get(SELECTED_URL) as response:
+                x = await response.read()
+                return x
+                 
+        # async with aiohttp.ClientSession(trust_env=True) as session:
+        #     async with session.get(SELECTED_URL) as response:
+        #         text_ = await response.read()
+        #         return Soup(text_.decode('utf-8'), 'html5lib')
 
 class BaseCog(commands.Cog, BaseTools):
     def __init__(self, bot):
@@ -2108,7 +2126,7 @@ class FatListener(tweepy.StreamListener, BaseTools):
         if os.name == "nt":
             channel = await self.bot.fetch_channel(799238286539227136)
         else:
-            channel = await self.bot.fetch_channel(811305082002866235)
+            channel = await self.bot.fetch_channel(812318143322128384)
 
         await channel.send(embed=embedVar)
         return
@@ -2334,8 +2352,73 @@ class TextUploaders(commands.Cog, BaseTools):
             webhook.add_file(file=value[0], filename=value[1])
         response = webhook.execute()    
 
+class GoogleSearchCog(commands.Cog, BaseTools):
+    def __init__(self, Bot):
+        self.setup()
+        self.bot = Bot
+
+
+    def search(self, term, num_results=10, lang="en"):
+        usr_agent = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/61.0.3163.100 Safari/537.36'}
+
+        def fetch_results(search_term, number_results, language_code):
+            escaped_search_term = search_term.replace(' ', '+')
+
+            google_url = 'https://www.google.com/search?q={}&num={}&hl={}'.format(escaped_search_term, number_results+1,
+                                                                                  language_code)
+            print(google_url)
+            response = requests.get(google_url, headers=usr_agent)
+            # response = BaseProgram.loop.run_until_complete(self.get_site(google_url, headers=usr_agent))
+            # response.raise_for_status()
+
+            # return (response.decode("utf-8"), google_url)
+            return (response.text, google_url)
+
+        def parse_results(raw_html):
+            links = {}
+
+            soup = Soup(raw_html, 'html.parser')
+            result_block = soup.find_all('div', attrs={'class': 'g'})
+            for result in result_block:
+                link = result.find('a', href=True)
+                title = result.find('h3')
+                name = result.find("span").text
+                if link and title:
+                    links[name] = link['href']
+            return links
+        html = fetch_results(term, num_results, lang)
+        return [parse_results(html[0]), html[1]]
+
+
+    @commands.command(pass_context=True)
+    async def go(self, ctx, *, value:str=""):
+        if not value:
+            await ctx.send(self.embed_single("Google Search Warning", "Please input a search keyword."))
+            return
+
+        item = self.search(value, 10)
+        link_all = BaseProgram.s.tinyurl.short(item[1])
+        embedVar = discord.Embed(title=f"Google Search - __{value}__", color=self.block_color,
+            )
+        desc = f"[Click here for all Result]({link_all})\n\n**Results**\n"
+        # response = BaseProgram.loop.run_until_complete(
+        for i in item[0]:
+            # print(item[0][i])
+            # link_ = BaseProgram.loop.run_until_complete(BaseProgram.s.tinyurl.short(item[0][i]))
+            link_ = item[0][i]
+            desc += f"[{i}]({link_})\n"
+        embedVar.description = desc
+        # embedVar.add_field(name="Results", value=desc, inline=False)
+        await ctx.send(embed=embedVar)
+        return
+
+
 intents = Intents.all()
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped', intents=intents)
+
+
 
 @Bot.event
 async def on_command_error(ctx, error):
@@ -2373,18 +2456,18 @@ async def on_ready():
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
 
-    auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
-    auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
+    # auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
+    # auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
 
-    api = tweepy.API(auth)
-    api.verify_credentials()
+    # api = tweepy.API(auth)
+    # api.verify_credentials()
 
-    # BaseProgram.tweets_listener = FatListener(api)
+    # # BaseProgram.tweets_listener = FatListener(api)
 
-    # BaseProgram.stream = tweepy.Stream(auth, BaseProgram.tweets_listener, )
-    BaseProgram.stream = tweepy.Stream(auth=auth, listener=FatListener(Bot, api), tweet_mode='extended')
-    print("Worked")
-    BaseProgram.stream.filter(follow=["1349290524901998592"], is_async=True)
+    # # BaseProgram.stream = tweepy.Stream(auth, BaseProgram.tweets_listener, )
+    # BaseProgram.stream = tweepy.Stream(auth=auth, listener=FatListener(Bot, api), tweet_mode='extended')
+    # print("Worked")
+    # BaseProgram.stream.filter(follow=["1349290524901998592"], is_async=True)
 
 
 
@@ -2402,10 +2485,11 @@ BaseStuff.git_prepare()
 Bot.add_cog(BaseCog(Bot))
 
 # Feature Cogs
-Bot.add_cog(IllegalBoatSearchCog(Bot))
-Bot.add_cog(ClassSearchCog(Bot))
-Bot.add_cog(GuideCog(Bot)) 
-Bot.add_cog(CharacterCog(Bot))
-Bot.add_cog(WikiCog(Bot))
-Bot.add_cog(TextUploaders(Bot))
+# Bot.add_cog(IllegalBoatSearchCog(Bot))
+# Bot.add_cog(ClassSearchCog(Bot))
+# Bot.add_cog(GuideCog(Bot)) 
+# Bot.add_cog(CharacterCog(Bot))
+# Bot.add_cog(WikiCog(Bot))
+# Bot.add_cog(TextUploaders(Bot))
+Bot.add_cog(GoogleSearchCog(Bot))
 Bot.run(DISCORD_TOKEN)

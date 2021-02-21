@@ -1,0 +1,134 @@
+
+
+class TwitterListener(tweepy.StreamListener, BaseTools):
+    def __init__(self, bot, api,  *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # self.discord = discord # this is just a function which sends a message to a channel
+        # self.loop = loop # this is the loop of discord client
+        self.bot = bot
+        self.api = api
+        self.me = api.me()
+        self.tweet_text = ""
+        self.image_url = ""
+
+        self.key_check = [
+            "BONUS daily login gift",
+            "New daily login gift",
+            "daily login",
+            "holi-daily",
+            "login gift",
+            "BONUS daily",
+            "daily drops"
+            ]
+
+
+    def on_status(self, status):
+        if hasattr(status, 'extended_tweet'):
+            tweet = status.extended_tweet['full_text']
+            got = False
+            for i in self.key_check:
+                if i in tweet:
+                    got = True
+                    print("GOT")
+                    break
+
+            if not got: return
+            print("Reached")
+            
+            link = status.extended_tweet['entities']['media'][0]["media_url_https"]
+            BaseProgram.loop.run_until_complete(self.tweet_send(tweet, link))
+            # future = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link), BaseProgram.loop)
+            # Wait for the result with an optional timeout argument
+            # future.result()
+            print("Reached2")
+            return
+
+            
+        else:
+            print('text: ' + status.text)
+            return
+
+    async def tweet_send(self, text, link):
+
+        # Enemy
+        enemy = re.search("(battle the|battle|Battle\sthe|Battle)(.*)(in the|in)\s/", text)
+        if enemy != None:
+            enemy = enemy.groups()[1].strip()
+            enemy_link = await self.check_website_integrity(enemy)
+        else:
+            self.save_log(1, text, link)
+            return 
+
+        # Location
+        location = re.search("\s/(.+?)(map|\s)", text)
+        if location !=  None:
+            location = "/join %s"%(location[1])
+        else:
+            self.save_log(2, text, link)
+            return 
+
+        # Items
+        item = re.search("(for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal)(.+?)((!)|(\.)|(as we celebrate))", text)
+        if item !=  None:
+            item = item.groups()[1]
+        else:
+            self.save_log(3, text, link)
+            return 
+
+        item = re.sub(r'((?<=^\s\b)this seasonal(?=\b\s))|(((?<=^\s\b)rare(?=\b\s)))','', item).strip()
+        if "0 AC" not in item:
+            item = "0 AC " + item
+
+        embedVar = discord.Embed(title="New Daily Gift!", url=link, color=BaseProgram.block_color)
+        embedVar.description = f"**Location**: {location}\n"\
+                               f"**Enemy**: [{enemy}]({enemy_link})\n"\
+                               f"**Item**: {item}\n"
+        embedVar.set_image(url=link)
+
+        if os.name == "nt":
+            channel = await self.bot.fetch_channel(799238286539227136)
+        else:
+            channel = await self.bot.fetch_channel(812318143322128384)
+
+        await channel.send(embed=embedVar)
+        return
+
+    def on_error(self, status):
+        print(status)
+
+    def save_log(self, m, text, link):
+        if m == 1:
+            item = f"[Error at enemy] \nTweet: {text} Link: {link}"
+        
+        if m == 2:
+            item = f"[Error at location] \nTweet: {text} Link: {link}"
+        
+        if m == 3:
+            item = f"[Error at item] \nTweet: {text} Link: {link}"
+        self.settings["TwitterListenerCogSettings"]["Logs"].append(item)
+        self.file_save("settings")
+        self.git_save("settings")
+
+
+    async def check_website_integrity(self, item):
+
+        x = re.sub("[']", "-", item).replace(" ", "-")
+        x = re.sub("[^A-Za-z0-9\-]+", "", x)
+        straight = "http://aqwwiki.wikidot.com/" + x
+        
+        wiki = "http://aqwwiki.wikidot.com/search:site/q/" + x.replace("-", "%20")
+
+        sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(straight))
+        try:
+            page_content = sites_soup.find("div", {"id":"page-content"})
+            page_check = page_content.find("p").text.strip()
+            if page_check == "This page doesn't exist yet!":
+                result = wiki
+            elif "usually refers to:" in page_check:
+                result = straight
+            else:
+                result = straight
+        except:
+            result = wiki
+
+        return result
