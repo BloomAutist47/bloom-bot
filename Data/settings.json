@@ -314,6 +314,11 @@
             "alias": [
                 "Prussia"
             ]
+        },
+        "Test_name": {
+            "alias": [
+                "Test_name"
+            ]
         }
     },
     "TwitterListenerCogSettings": {
