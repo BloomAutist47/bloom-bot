@@ -94,7 +94,7 @@ async def on_ready():
     tweets_listener = TwitterListener(Bot, api)
     stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended', is_async=True)
     print("> Twitter Listener Success")
-    stream.filter(follow=["1349290524901998592"], is_async=True)
+    stream.filter(follow=["16480141"], is_async=True)
 
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141
