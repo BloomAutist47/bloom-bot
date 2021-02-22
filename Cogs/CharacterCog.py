@@ -26,7 +26,7 @@ class CharacterCog(commands.Cog, BaseTools):
             "Evil": "http://aqwwiki.wikidot.com/evil-faction",
             "Chaos": "http://aqwwiki.wikidot.com/chaos-faction",
         }
-        self.est_dt = datetime.now(timezone('est'))
+        
     async def loop_get_content(self, url):
         result = self.try_till_succeed(lambda: BaseProgram.loop.run_until_complete(self.get_site_content(url)), "loop_get_content")
         return result
@@ -286,7 +286,7 @@ class CharacterCog(commands.Cog, BaseTools):
 
     @commands.command()
     async def server(self, ctx):
-        
+        self.est_dt = datetime.now(timezone('est'))
         current_time = self.est_dt.strftime("Server Time: %d %B %Y, %I:%M %p")
 
         url = "https://game.aq.com/game/cf-serverlist.asp"
