@@ -94,7 +94,7 @@ class TwitterListener(tweepy.StreamListener, BaseTools, commands.Cog):
         if os.name == "nt":
             channel = await self.bot.fetch_channel(799238286539227136)
         else:
-            channel = await self.bot.fetch_channel(811305082758758432)
+            channel = await self.bot.fetch_channel(812318143322128384)
 
         await channel.send(embed=embedVar)
         return
