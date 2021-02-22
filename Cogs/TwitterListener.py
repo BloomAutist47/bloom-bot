@@ -3,17 +3,18 @@ import tweepy
 import re
 from .Base import *
 from discord.ext import commands
-
+import asyncio
 from threading import Thread
+from pprint import pprint
 
-class TwitterListener(tweepy.StreamListener, BaseTools):
+class TwitterListener(tweepy.StreamListener, BaseTools, commands.Cog):
     def __init__(self, bot, api,  *args, **kwargs):
         super().__init__(*args, **kwargs)
         # self.discord = discord # this is just a function which sends a message to a channel
         # self.loop = loop # this is the loop of discord client
         self.bot = bot
-        self.api = api
-        self.me = api.me()
+        # self.api = api
+        # self.me = api.me()
         self.tweet_text = ""
         self.image_url = ""
 
@@ -27,8 +28,9 @@ class TwitterListener(tweepy.StreamListener, BaseTools):
             "daily drops"
             ]
 
-
-    def on_status(self, status):
+    def on_status(self, status=""):
+        if status == "":
+            return
         if hasattr(status, 'extended_tweet'):
             tweet = status.extended_tweet['full_text']
             got = False
@@ -39,40 +41,25 @@ class TwitterListener(tweepy.StreamListener, BaseTools):
                     break
 
             if not got: return
-            print("Reached")
-            
-            link = status.extended_tweet['entities']['media'][0]["media_url_https"]
-            while True:
-                try:
-                    BaseProgram.loop_2.run_until_complete(self.loop_tweet(tweet, link))
-                    # t = Thread(target=self.loop_tweet, args=(tweet, link))
-                    # t.start()    
-                    # print("Twittter successs...")
-                    break
-                except:
-                    print(">Failed Twitter send... retrying")
-                    continue
 
-            # future = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link), BaseProgram.loop)
-            # Wait for the result with an optional timeout argument
-            # future.result()
-            print("Reached2")
+            link = status.extended_tweet['entities']['media'][0]["media_url_https"]
+            send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id), BaseProgram.loop)
+
+            send_fut.result()
             return
 
-            
         else:
             print('text: ' + status.text)
             return
-    async def loop_tweet(self, tweet, link):
-        await self.tweet_send(tweet, link)
 
-    async def tweet_send(self, text, link):
+    async def tweet_send(self, text, link, id_):
+        tweet_link = "https://twitter.com/twitter/statuses/"+str(id_)
 
         # Enemy
         enemy = re.search("(battle the|battle|Battle\sthe|Battle)(.*)(in the|in)\s/", text)
         if enemy != None:
             enemy = enemy.groups()[1].strip()
-            enemy_link = enemy #await self.check_website_integrity(enemy)
+            enemy_link = await self.check_website_integrity(enemy)
         else:
             self.save_log(1, text, link)
             return 
@@ -84,7 +71,7 @@ class TwitterListener(tweepy.StreamListener, BaseTools):
         else:
             self.save_log(2, text, link)
             return 
-
+        print("Or fucking here?")
         # Items
         item = re.search("(for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal)(.+?)((!)|(\.)|(as we celebrate))", text)
         if item !=  None:
@@ -97,12 +84,13 @@ class TwitterListener(tweepy.StreamListener, BaseTools):
         if "0 AC" not in item:
             item = "0 AC " + item
 
-        embedVar = discord.Embed(title="New Daily Gift!", url=link, color=BaseProgram.block_color)
+        embedVar = discord.Embed(title="New Daily Gift!", url=tweet_link, color=BaseProgram.block_color)
         embedVar.description = f"**Location**: {location}\n"\
                                f"**Enemy**: [{enemy}]({enemy_link})\n"\
                                f"**Item**: {item}\n"
         embedVar.set_image(url=link)
-
+        embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
+        
         if os.name == "nt":
             channel = await self.bot.fetch_channel(799238286539227136)
         else:
@@ -132,11 +120,11 @@ class TwitterListener(tweepy.StreamListener, BaseTools):
 
         x = re.sub("[']", "-", item).replace(" ", "-")
         x = re.sub("[^A-Za-z0-9\-]+", "", x)
-        straight = "http://aqwwiki.wikidot.com/" + x
+        straight = "http://aqwwiki.wikidot.com/" + x.lower()
         
         wiki = "http://aqwwiki.wikidot.com/search:site/q/" + x.replace("-", "%20")
 
-        sites_soup = BaseProgram.loop.run_until_complete(self.get_site_content(straight))
+        sites_soup = self.get_url_item(straight)
         try:
             page_content = sites_soup.find("div", {"id":"page-content"})
             page_check = page_content.find("p").text.strip()

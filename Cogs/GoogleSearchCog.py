@@ -1,9 +1,13 @@
+import pyshorteners
 
+from .Base import *
+from discord.ext import commands
 
 class GoogleSearchCog(commands.Cog, BaseTools):
     def __init__(self, Bot):
         self.setup()
         self.bot = Bot
+        self.s = pyshorteners.Shortener()
 
 
     def search(self, term, num_results=10, lang="en"):
@@ -47,9 +51,10 @@ class GoogleSearchCog(commands.Cog, BaseTools):
             return
 
         item = self.search(value, 10)
-        link_all = BaseProgram.s.tinyurl.short(item[1])
-        embedVar = discord.Embed(title=f"Google Search - __{value}__", color=self.block_color,
+        link_all = self.s.tinyurl.short(item[1])
+        embedVar = discord.Embed(title=f"Search - __{value}__", color=self.block_color,
             )
+        embedVar.set_author(name="Google Chrome", icon_url=BaseProgram.icon_google)
         desc = f"[Click here for all Result]({link_all})\n\n**Results**\n"
         # response = BaseProgram.loop.run_until_complete(
         for i in item[0]:

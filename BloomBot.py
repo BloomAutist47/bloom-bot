@@ -36,7 +36,7 @@ from Cogs.ClassSearchCog import ClassSearchCog
 from Cogs.GuideCog import GuideCog
 from Cogs.WikiCog import WikiCog
 from Cogs.TwitterListener import TwitterListener
-
+from Cogs.GoogleSearchCog import GoogleSearchCog
 
 class BreakProgram(Exception):
     pass
@@ -89,14 +89,12 @@ async def on_ready():
     auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
 
     api = tweepy.API(auth)
-    api.verify_credentials()
+    # api.verify_credentials()
 
-    # BaseProgram.tweets_listener = TwitterListener(api)
-
-    # BaseProgram.stream = tweepy.Stream(auth, BaseProgram.tweets_listener, )
-    BaseProgram.stream = tweepy.Stream(auth=auth, listener=TwitterListener(Bot, api), tweet_mode='extended')
+    tweets_listener = TwitterListener(Bot, api)
+    stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended', is_async=True)
     print("> Twitter Listener Success")
-    BaseProgram.stream.filter(follow=["1349290524901998592"], is_async=True)
+    stream.filter(follow=["1349290524901998592"], is_async=True)
 
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141
@@ -121,10 +119,9 @@ Bot.add_cog(GuideCog(Bot))
 Bot.add_cog(CharacterCog(Bot))
 Bot.add_cog(WikiCog(Bot))
 # Bot.add_cog(TextUploaders(Bot))
-# Bot.add_cog(GoogleSearchCog(Bot))
+Bot.add_cog(GoogleSearchCog(Bot))
 
 
-# BaseProgram.loop.run_until_complete(Bot.run(DISCORD_TOKEN))
 print("> Starting Bot...")
 while True:
     try:
