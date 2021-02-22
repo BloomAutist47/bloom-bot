@@ -293,20 +293,24 @@ class CharacterCog(commands.Cog, BaseTools):
         sites_soup = self.get_url_item_2(url)
         servers = sites_soup.find_all("servers")
 
-        embedVar = discord.Embed(title="Server Info", color=self.block_color)
-
+        
+        total_players = 0
         print("indeed")
         for i in servers:
-            data[int(i["icount"])] = i["sname"]
+            ct = int(i["icount"])
+            total_players += ct
+            data[ct] = i["sname"]
+
+        embedVar = discord.Embed(title=f"🌎 Server Info", description=f"{total_players} Players online", color=self.block_color)
 
         for i in sorted(data.keys(), reverse=True):
             if count == 7:
-                embedVar.add_field(name="Server", value=desc, inline=True)
+                embedVar.add_field(name="🖼️ Server", value=desc, inline=True)
                 embedVar.add_field(name="\u200b", value="\u200b", inline=True)
                 desc = ""
             desc += f'{data[i]}: **{str(i)}**\n'
             count += 1
-        embedVar.add_field(name="Server", value=desc, inline=True)
+        embedVar.add_field(name=f"🖼️ Server", value=desc, inline=True)
         print("yes?")
         embedVar.set_author(name="AdventureQuest World", icon_url=BaseProgram.icon_aqw)
         embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/813412831651168266/beleen-youve-got-mail-new-adventure-quest-worlds-aqw-newsletter.png")
