@@ -118,7 +118,7 @@ Bot.add_cog(ClassSearchCog(Bot))
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(CharacterCog(Bot))
 Bot.add_cog(WikiCog(Bot))
-# Bot.add_cog(TextUploaders(Bot))
+Bot.add_cog(TextUploaders(Bot))
 Bot.add_cog(GoogleSearchCog(Bot))
 
 

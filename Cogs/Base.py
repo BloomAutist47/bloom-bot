@@ -94,7 +94,7 @@ class BaseProgram:
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
         os.chdir('..')
         self.file_read("all")
-        self.git_read("all")
+        # self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -970,81 +970,42 @@ class BaseCog(commands.Cog, BaseTools):
     @commands.command()
     async def bhelp(self, ctx):
         guild_allowed = await self.allow_evaluator(ctx, "guild_privilege")
+
+        embedVar = discord.Embed(title="Bloom Help", color=self.block_color)
+        desc = "`;bhelp` ➣ Shows all Bloom commands.\n"\
+               "`;g` ➣ Summons a list of all guides commands.\n"\
+               "`;g guide_name` ➣ Returns a specific guide.\n"\
+               "`;c class_name` ➣ Shows Class data chart. Can use acronyms.\n"\
+               "`;legends` ➣ Shows the legends for the class data charts.\n"\
+               "`;char character_name` ➣ Shows player info from the Char page. \n"\
+               "`;ioda character_name` ➣ IoDA date calculations.\n"\
+               "`;w search` ➣ Search AQW Wikidot.\n"\
+               "`;ws search` ➣ Gets list of AQW Wikidot searches.\n"\
+               "`;go search` ➣ Search with google chrome.\n"\
+               "`;credits` ➣ Reveals the credits.\n"
+        embedVar.description = desc
         if guild_allowed:
-            embedVar = discord.Embed(title="Bloom Help", color=self.block_color,
-                description="The following are a list of all commands and "\
-                            "how to use them. These commands must be used "\
-                            "in the <#802082388451655691> channel. "\
-                            "Please ping <@!252363724894109700> if something goes wrong with Bloom Bot.")
-            embedVar.add_field(name="\u200b", inline=False,
-                value="————————  Commands For Everyone  ————————")
-            embedVar.add_field(name="`;bhelp`", inline=False,
-                value="Reveals the help embed, showing all commands.")
-            embedVar.add_field(name="`;b bot_name`", inline=False,
-                value="Searches a bot. Keywords must be letters with atleast 3 characters "\
-                      "or numbers with at least 2 digits.")
-            embedVar.add_field(name="`;a author`", inline=False,
-                value="Searches the bots made by a particular author.")
-            embedVar.add_field(name="`;a`", inline=False,
-                value="Shows a list of all bot authors.")
-            embedVar.add_field(name="`;a u`", inline=False,
-                value="Shows a list of all bots with unidentified authors.")
-            embedVar.add_field(name="`;c class_name`", inline=False,
-                value="Shows the data chart of the searched class.")
-            embedVar.add_field(name="`;legends`", inline=False,
-                value="Shows the legends for the class data charts.")
-            embedVar.add_field(name="`;char character_name`", inline=False,
-                value="Pulls up basic player info from the Character page.")
-            embedVar.add_field(name="`;credits`", inline=False,
-                value="Shows the Credits.")
-            embedVar.add_field(name="`;ioda character_name`", inline=False,
-                value="Show player Treasure Potions and IoDA spin and date calculations.")
+            embedVar.add_field(name="Shadow Commands", inline=False, 
+                value="`;b bot_name` ➣ Search a boat.\n"\
+                      "`;a author` ➣ Search a boat author.\n"\
+                      "`;a` ➣ Returns list of boat authors.\n"\
+                      "`;a u` ➣ Returns list of boats with no authors.\n"\
+                      "`;bverify u` ➣ Verifies an author name. Case sensitive.\n"\
+                      "`;buverify u` ➣ Unverifies an author name. \n"\
+                      "`;update database` ➣ Updates boat database.\n"\
 
-            embedVar.add_field(name="\u200b", inline=False,
-                value="————————  Commands For Priviledge  ————————")
-            embedVar.add_field(name="`;bverify author`", inline=False,
-                value="Verifies an author name so the Bloom Command ;b author can "\
-                      "recognize their bots.")
-            embedVar.add_field(name="`;bunverify author`", inline=False,
-                value="Unverifies an author name, removing their bot name recognition")
+                )
+        embedVar.add_field(name="Privileged Commands", inline=False, 
+            value="`;update all` ➣ Updates all .jsons.\n"\
+                  "`;update settings` ➣ Updates the settings.\n"\
+                  "`;update guides` ➣ Update the guides.\n"\
+                  "`;update classes` ➣ Update the classes. Not the charts.\n"\
+                  )
 
-            embedVar.add_field(name="**Lists of Priviledged Roles**", inline=False,
-                value="Admin, Staff, Helper, Trial Helper, Verified Bot Makers")
-            embedVar.add_field(name="**Note:**", inline=False,
-                value="\"Heil Gravelyn!\" -Bloom Autist")
-            embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/802986034538610708/804373863650558022/Gravelyn.png")
-
-            await ctx.send(embed=embedVar)
-            return
-        if not guild_allowed:
-            embedVar = discord.Embed(title="Bloom Help", color=self.block_color,
-                    description="The following are a list of all commands and "\
-                                "how to use them. These commands must be used "\
-                                "in the <#805413618719260712> channel. "\
-                                "Please ping <@!252363724894109700> if something goes wrong with Bloom Bot.")
-            embedVar.add_field(name="\u200b", inline=False,
-                value="————————  Commands For Everyone  ————————")
-            embedVar.add_field(name="`;bhelp`", inline=False,
-                value="Reveals the help embed, showing all commands.")
-            embedVar.add_field(name="`;g`", inline=False,
-                value="Summons a list of all guides.")
-            embedVar.add_field(name="`;g guide_name`", inline=False,
-                value="Returns a specific guide. Use ;g to get a guide name.")
-            embedVar.add_field(name="`;c class_name`", inline=False,
-                value="Shows the data chart of the searched class. Can use whole class name or acronym.")
-            embedVar.add_field(name="`;legends`", inline=False,
-                value="Shows the legends for the class data charts.")
-            embedVar.add_field(name="`;char character_name`", inline=False,
-                value="Pulls up basic player info from the Character page.")
-            embedVar.add_field(name="`;ioda character_name`", inline=False,
-                value="Show player Treasure Potions and IoDA spin and date calculations.")
-            embedVar.add_field(name="`;credits`", inline=False,
-                value="Shows the Credits.")
-            embedVar.add_field(name="**Note:**", inline=False,
-                value="\"Heil Gravelyn!\" -Bloom Autist")
-            embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/802986034538610708/804373863650558022/Gravelyn.png")
-            await ctx.send(embed=embedVar)
-            return
+        embedVar.set_author(name="An AdventureQuest World General Discord Bot", icon_url=BaseProgram.icon_aqw)
+        embedVar.set_thumbnail(url=BaseProgram.icon_bloom)
+        await ctx.send(embed=embedVar)
+        return
 
     @commands.command()
     async def git(self, ctx):
