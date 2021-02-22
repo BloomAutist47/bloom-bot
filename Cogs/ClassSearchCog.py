@@ -54,7 +54,7 @@ class ClassSearchCog(BaseTools, commands.Cog):
         if not allow_:
             return
         
-        class_name = re.sub('[^A-Za-z0-9]+', '', class_name)
+        # class_name = re.sub('[^A-Za-z0-9]+', '', class_name)
 
         cmd_title = "Class Search"
         if class_name=="":
