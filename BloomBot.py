@@ -7,32 +7,26 @@ bloom tempalte: https://discord.new/D79FPrWaZh2V
 """
 
 
+
+# from discord.utils import get as dis_get
+# from discord_webhook import DiscordWebhook
+# from PIL import Image
+# from pytz import timezone
+# import asyncio
+# import aiohttp
+# import urllib.parse
+# import unicodedata
+
+
 # Imports
 import discord
-
-import logging
 import os
-
 import tweepy
-import urllib.parse
-
 
 from discord.ext import tasks
 from discord import Intents
-from discord.utils import get as dis_get
 from discord.ext.commands import CommandNotFound
-from discord.abc import Snowflake
-from discord_webhook import DiscordWebhook
 from pprint import pprint
-from PIL import Image
-
-
-# import asyncio
-
-# import aiohttp
-
-from pytz import timezone
-import unicodedata
 from time import sleep
 
 from Cogs.Base import *
@@ -40,7 +34,8 @@ from Cogs.BoatSearchCog import BoatSearchCog
 from Cogs.CharacterCog import CharacterCog
 from Cogs.ClassSearchCog import ClassSearchCog
 from Cogs.GuideCog import GuideCog
-
+from Cogs.WikiCog import WikiCog
+from Cogs.TwitterListener import TwitterListener
 
 
 class BreakProgram(Exception):
@@ -49,19 +44,18 @@ class BreakProgram(Exception):
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
-
 intents = Intents.all()
 Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped', intents=intents)
 Bot.remove_command("help")
 
 
-@Bot.event
-async def on_command_error(ctx, error):
-    if isinstance(error, CommandNotFound):
-        print("System: lmao a nigger used", error)
-        return
-    BaseProgram.database_updating = False
-    raise error
+# @Bot.event
+# async def on_command_error(ctx, error):
+#     if isinstance(error, CommandNotFound):
+#         print("System: lmao a nigger used", error)
+#         return
+#     BaseProgram.database_updating = False
+#     # raise error
 
 # @Bot.event
 # async def on_member_update(before, after):
@@ -91,20 +85,22 @@ async def on_ready():
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
 
-    # auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
-    # auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
+    auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
+    auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
 
-    # api = tweepy.API(auth)
-    # api.verify_credentials()
+    api = tweepy.API(auth)
+    api.verify_credentials()
 
-    # # BaseProgram.tweets_listener = FatListener(api)
+    # BaseProgram.tweets_listener = TwitterListener(api)
 
-    # # BaseProgram.stream = tweepy.Stream(auth, BaseProgram.tweets_listener, )
-    # BaseProgram.stream = tweepy.Stream(auth=auth, listener=FatListener(Bot, api), tweet_mode='extended')
-    # print("Worked")
-    # BaseProgram.stream.filter(follow=["1349290524901998592"], is_async=True)
+    # BaseProgram.stream = tweepy.Stream(auth, BaseProgram.tweets_listener, )
+    BaseProgram.stream = tweepy.Stream(auth=auth, listener=TwitterListener(Bot, api), tweet_mode='extended')
+    print("> Twitter Listener Success")
+    BaseProgram.stream.filter(follow=["1349290524901998592"], is_async=True)
 
-
+    # Bloom Autist ID: 1349290524901998592
+    # Alina ID: 16480141
+    # Use this to get IDS: https://tweeterid.com/
 
 if os.name == "nt": # PC Mode
     load_dotenv()
@@ -123,7 +119,7 @@ Bot.add_cog(BoatSearchCog(Bot))
 Bot.add_cog(ClassSearchCog(Bot))
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(CharacterCog(Bot))
-# Bot.add_cog(WikiCog(Bot))
+Bot.add_cog(WikiCog(Bot))
 # Bot.add_cog(TextUploaders(Bot))
 # Bot.add_cog(GoogleSearchCog(Bot))
 

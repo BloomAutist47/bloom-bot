@@ -1,4 +1,10 @@
 
+import tweepy
+import re
+from .Base import *
+from discord.ext import commands
+
+from threading import Thread
 
 class TwitterListener(tweepy.StreamListener, BaseTools):
     def __init__(self, bot, api,  *args, **kwargs):
@@ -36,7 +42,17 @@ class TwitterListener(tweepy.StreamListener, BaseTools):
             print("Reached")
             
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
-            BaseProgram.loop.run_until_complete(self.tweet_send(tweet, link))
+            while True:
+                try:
+                    BaseProgram.loop_2.run_until_complete(self.loop_tweet(tweet, link))
+                    # t = Thread(target=self.loop_tweet, args=(tweet, link))
+                    # t.start()    
+                    # print("Twittter successs...")
+                    break
+                except:
+                    print(">Failed Twitter send... retrying")
+                    continue
+
             # future = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link), BaseProgram.loop)
             # Wait for the result with an optional timeout argument
             # future.result()
@@ -47,6 +63,8 @@ class TwitterListener(tweepy.StreamListener, BaseTools):
         else:
             print('text: ' + status.text)
             return
+    async def loop_tweet(self, tweet, link):
+        await self.tweet_send(tweet, link)
 
     async def tweet_send(self, text, link):
 
@@ -54,7 +72,7 @@ class TwitterListener(tweepy.StreamListener, BaseTools):
         enemy = re.search("(battle the|battle|Battle\sthe|Battle)(.*)(in the|in)\s/", text)
         if enemy != None:
             enemy = enemy.groups()[1].strip()
-            enemy_link = await self.check_website_integrity(enemy)
+            enemy_link = enemy #await self.check_website_integrity(enemy)
         else:
             self.save_log(1, text, link)
             return 

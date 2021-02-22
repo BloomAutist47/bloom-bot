@@ -1,6 +1,6 @@
+import os
 from .Base import *
 from discord.ext import commands
-import os
 
 class GuideCog(commands.Cog, BaseTools):
     def __init__(self, bot):
@@ -19,6 +19,7 @@ class GuideCog(commands.Cog, BaseTools):
         if guide == "":
             embedVar = discord.Embed(title="🔹 List of Guide Commands 🔹", color=self.block_color,
                 description="To summon this list, use `;g`. Please read the following carefully.\n\n")
+            # embedVar.set_author()
             desc = ""
             guild_id = str(ctx.guild.id)
             if guild_id in BaseProgram.settings["server_settings"]:
@@ -68,6 +69,9 @@ class GuideCog(commands.Cog, BaseTools):
             if guide_data["type"] == "header":
                 return
 
+            au_title = BaseProgram.icons[guide_data["auth"]]["title"]
+            au_icon = BaseProgram.icons[guide_data["auth"]]["icon"]
+
             if guide_data["type"] == "guide":
                 
                 embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color,
@@ -76,6 +80,7 @@ class GuideCog(commands.Cog, BaseTools):
                 embedVar.set_image(url=guide_data["short_link"])
                 embedVar.set_thumbnail(url=guide_data["thumbnail"])
                 embedVar.set_footer(text=self.fotter)
+                embedVar.set_author(name=au_title, icon_url=au_icon)
                 await ctx.send(embed=embedVar)
                 return
 
@@ -84,10 +89,11 @@ class GuideCog(commands.Cog, BaseTools):
                 embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
                 desc = guide_data["description"]
                 for text in guide_data["content"]:
-                    desc += "\> [{}]({}).\n".format(text[0], text[1])
+                    desc += "➣ [{}]({}).\n".format(text[0], text[1])
                 embedVar.description = desc
                 embedVar.set_thumbnail(url=guide_data["thumbnail"])
                 embedVar.set_footer(text=self.fotter)
+                embedVar.set_author(name=au_title, icon_url=au_icon)
                 await ctx.send(embed=embedVar)
                 return
 
@@ -106,6 +112,7 @@ class GuideCog(commands.Cog, BaseTools):
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
                 embedVar.set_footer(text=self.fotter)
+                embedVar.set_author(name=au_title, icon_url=au_icon)
                 await ctx.send(embed=embedVar)
                 return
 
@@ -121,6 +128,7 @@ class GuideCog(commands.Cog, BaseTools):
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
                 embedVar.set_footer(text=self.fotter)
+                embedVar.set_author(name=au_title, icon_url=au_icon)
                 await ctx.send(embed=embedVar)
                 return
 
@@ -129,6 +137,7 @@ class GuideCog(commands.Cog, BaseTools):
                 embedVar.description = guide_data["description"]
                 embedVar.set_image(url=guide_data["content"])
                 embedVar.set_footer(text=self.fotter)
+                embedVar.set_author(name=au_title, icon_url=au_icon)
                 await ctx.send(embed=embedVar)
                 return
 
@@ -141,10 +150,11 @@ class GuideCog(commands.Cog, BaseTools):
                         desc += sentence + "\n"
                 else:
                     desc = guide_data["description"] + "\n"
-                desc += "\> [Click this link]({}).".format(guide_data["content"])
+                desc += "➣ [Click this link]({}).".format(guide_data["content"])
                 embedVar.description = desc
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
                 embedVar.set_footer(text=self.fotter)
+                embedVar.set_author(name=au_title, icon_url=au_icon)
                 await ctx.send(embed=embedVar)
                 return

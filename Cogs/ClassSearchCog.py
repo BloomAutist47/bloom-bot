@@ -1,6 +1,7 @@
-from discord.ext import commands
-from .Base import *
+
 import re
+from .Base import *
+from discord.ext import commands
 
 
 class ClassSearchCog(BaseTools, commands.Cog):

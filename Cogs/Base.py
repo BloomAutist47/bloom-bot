@@ -16,6 +16,8 @@ from discord.ext import commands
 from bs4 import BeautifulSoup as Soup
 from dotenv import load_dotenv
 
+
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 os.chdir('..')
 
@@ -30,6 +32,7 @@ class BaseProgram:
     class_acronyms = {}
     guides = {}
     loop = asyncio.get_event_loop()
+    loop_2 = asyncio.new_event_loop()
     nest_asyncio.apply(loop)
     sqlock = True
     texts = {}
@@ -53,10 +56,21 @@ class BaseProgram:
     git_already = False
     s = pyshorteners.Shortener()
 
-    icon_bloom = "https://cdn.discordapp.com/attachments/806920895934365766/812982758418677770/icon2.png"
+    icon_bloom = "https://cdn.discordapp.com/attachments/805367955923533845/813066459281489981/icon3.png"
     icon_aqw = "https://cdn.discordapp.com/attachments/805367955923533845/812991601714397194/logo_member.png"
     icon_auqw = "https://images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%3Fsize%3D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
     icon_aqw_g = "https://cdn.discordapp.com/attachments/805367955923533845/813015948256608256/aqw.png"
+
+    icons = {
+                "auqw": {
+                    "title": "AutoQuest Worlds",
+                    "icon": icon_auqw
+                },
+                "aqw": {
+                    "title": "AdventureQuest Worlds",
+                    "icon": icon_aqw
+                }
+            }
 
     usr_agent = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
@@ -882,6 +896,18 @@ class BaseTools(BaseProgram):
                 print(f"> Failed Executing {name}... Trying again.")
                 print("> Reloading...")
                 continue
+
+    def get_url_item(self, url):
+        while True:
+            try:
+                content = BaseProgram.loop.run_until_complete(self.get_site_content(url))
+                print(f"> Function get executed...Success!")
+                return content
+            except:
+                print(f"> Failed Executing get... Trying again.")
+                print("> Reloading...")
+                continue
+        
 
     # async def get_site_content(self, SELECTED_URL):
     #     async with aiohttp.ClientSession(trust_env=True) as session:
