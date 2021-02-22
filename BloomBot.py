@@ -12,7 +12,7 @@ Paradise template: https://discord.new/rntDVgbpUSzW
 # from discord.utils import get as dis_get
 # from discord_webhook import DiscordWebhook
 # from PIL import Image
-# from pytz import timezone
+
 # import asyncio
 # import aiohttp
 # import urllib.parse

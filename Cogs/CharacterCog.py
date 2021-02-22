@@ -7,6 +7,7 @@ from ast import literal_eval
 
 from datetime import datetime, timedelta, date
 from dateutil.relativedelta import relativedelta
+from pytz import timezone
 
 class CharacterCog(commands.Cog, BaseTools):
     def __init__(self, bot):
@@ -25,7 +26,7 @@ class CharacterCog(commands.Cog, BaseTools):
             "Evil": "http://aqwwiki.wikidot.com/evil-faction",
             "Chaos": "http://aqwwiki.wikidot.com/chaos-faction",
         }
-
+        self.est_dt = datetime.now(timezone('est'))
     async def loop_get_content(self, url):
         result = self.try_till_succeed(lambda: BaseProgram.loop.run_until_complete(self.get_site_content(url)), "loop_get_content")
         return result
@@ -285,6 +286,9 @@ class CharacterCog(commands.Cog, BaseTools):
 
     @commands.command()
     async def server(self, ctx):
+        
+        current_time = self.est_dt.strftime("Server Time: %d %B %Y, %I:%M %p")
+
         url = "https://game.aq.com/game/cf-serverlist.asp"
 
         count = 0
@@ -314,6 +318,7 @@ class CharacterCog(commands.Cog, BaseTools):
         print("yes?")
         embedVar.set_author(name="AdventureQuest World", icon_url=BaseProgram.icon_aqw)
         embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/813412831651168266/beleen-youve-got-mail-new-adventure-quest-worlds-aqw-newsletter.png")
+        embedVar.set_footer(text=current_time)
         await ctx.send(embed=embedVar)
 
     # @commands.command()
