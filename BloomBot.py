@@ -4,6 +4,7 @@ Notes:
         "file_fucntion": file refers to functions that deals
                          with locally saved data.
 bloom tempalte: https://discord.new/D79FPrWaZh2V
+Paradise template: https://discord.new/rntDVgbpUSzW
 """
 
 

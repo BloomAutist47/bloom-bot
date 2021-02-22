@@ -94,7 +94,7 @@ class BaseProgram:
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
         os.chdir('..')
         self.file_read("all")
-        # self.git_read("all")
+        self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -908,6 +908,16 @@ class BaseTools(BaseProgram):
                 print("> Reloading...")
                 continue
         
+    def get_url_item_2(self, url):
+        while True:
+            try:
+                content = BaseProgram.loop.run_until_complete(self.get_site_content_2(url))
+                print(f"> Function get executed...Success!")
+                return content
+            except:
+                print(f"> Failed Executing get... Trying again.")
+                print("> Reloading...")
+                continue
 
     # async def get_site_content(self, SELECTED_URL):
     #     async with aiohttp.ClientSession(trust_env=True) as session:
@@ -923,6 +933,15 @@ class BaseTools(BaseProgram):
             response = await client.get(SELECTED_URL)
         text_ = await response.content()
         return Soup(text_.decode('utf-8'), 'html5lib')
+
+    async def get_site_content_2(self, SELECTED_URL, header=""):
+        client = aiosonic.HTTPClient()
+        if header:
+            response = await client.get(SELECTED_URL, headers=header)
+        else:
+            response = await client.get(SELECTED_URL)
+        text_ = await response.content()
+        return Soup(text_.decode('utf-8'), 'html.parser')
 
     async def get_site_txt(self, SELECTED_URL):
         client = aiosonic.HTTPClient()
@@ -982,6 +1001,7 @@ class BaseCog(commands.Cog, BaseTools):
                "`;w search` ➣ Search AQW Wikidot.\n"\
                "`;ws search` ➣ Gets list of AQW Wikidot searches.\n"\
                "`;go search` ➣ Search with google chrome.\n"\
+               "`;server` ➣ Shows player count of Aqw servers.\n"\
                "`;credits` ➣ Reveals the credits.\n"
         embedVar.description = desc
         if guild_allowed:

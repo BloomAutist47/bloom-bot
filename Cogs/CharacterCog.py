@@ -283,6 +283,35 @@ class CharacterCog(commands.Cog, BaseTools):
         embed_object = await ctx.send(embed=embedVar)
         return
 
+    @commands.command()
+    async def server(self, ctx):
+        url = "https://game.aq.com/game/cf-serverlist.asp"
+
+        count = 0
+        data = {}
+        desc = ""
+        sites_soup = self.get_url_item_2(url)
+        servers = sites_soup.find_all("servers")
+
+        embedVar = discord.Embed(title="Server Info", color=self.block_color)
+
+        print("indeed")
+        for i in servers:
+            data[int(i["icount"])] = i["sname"]
+
+        for i in sorted(data.keys(), reverse=True):
+            if count == 7:
+                embedVar.add_field(name="Server", value=desc, inline=True)
+                embedVar.add_field(name="\u200b", value="\u200b", inline=True)
+                desc = ""
+            desc += f'{data[i]}: **{str(i)}**\n'
+            count += 1
+        embedVar.add_field(name="Server", value=desc, inline=True)
+        print("yes?")
+        embedVar.set_author(name="AdventureQuest World", icon_url=BaseProgram.icon_aqw)
+        embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/813412831651168266/beleen-youve-got-mail-new-adventure-quest-worlds-aqw-newsletter.png")
+        await ctx.send(embed=embedVar)
+
     # @commands.command()
     # async def charinv(self, ctx):
     #     url = self.char_url + char_name.replace(" ", "+")
