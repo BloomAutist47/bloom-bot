@@ -49,13 +49,13 @@ Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped', 
 Bot.remove_command("help")
 
 
-# @Bot.event
-# async def on_command_error(ctx, error):
-#     if isinstance(error, CommandNotFound):
-#         print("System: lmao a nigger used", error)
-#         return
-#     BaseProgram.database_updating = False
-#     # raise error
+@Bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, CommandNotFound):
+        print("System: lmao a nigger used", error)
+        return
+    BaseProgram.database_updating = False
+    # raise error
 
 # @Bot.event
 # async def on_member_update(before, after):
