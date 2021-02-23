@@ -90,6 +90,7 @@ class TwitterListener(tweepy.StreamListener, BaseTools, commands.Cog):
                                f"**Item**: {item}\n"
         embedVar.set_image(url=link)
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
+        embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
         
         if os.name == "nt":
             channel = await self.bot.fetch_channel(799238286539227136)

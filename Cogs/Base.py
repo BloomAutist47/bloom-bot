@@ -50,7 +50,7 @@ class BaseProgram:
     PORTAL_AGENT = ""
 
     tweets_listener = ""
-    stream = ""
+    streams = ""
 
     git_already = False
     
@@ -262,7 +262,7 @@ class BaseProgram:
 
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "texts"]
+            mode = ["database", "guides", "classes", "settings", "texts" , "streams"]
 
         if "database" in mode:
             with open('./Data/database.json', 'r', encoding='utf-8') as f:
@@ -283,8 +283,13 @@ class BaseProgram:
             with open('./Data/texts.json', 'r', encoding='utf-8') as f:
                 BaseProgram.texts = json.load(f)
 
-            self.sort_privileged_roles()
-            self.sort_author_list_lowercase()
+        if "streams" in mode:
+            with open('./Data/streams.json', 'r', encoding='utf-8') as f:
+                BaseProgram.streams = json.load(f)
+
+
+        self.sort_privileged_roles()
+        self.sort_author_list_lowercase()
 
     def file_save(self, mode:str):
         """ Description: Saves data to local .json files
@@ -298,7 +303,7 @@ class BaseProgram:
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings"]
+            mode = ["database", "guides", "classes", "settings", "streams"]
 
         if "database" in mode:
             with open('./Data/database.json', 'w', encoding='utf-8') as f:
@@ -316,6 +321,11 @@ class BaseProgram:
         if "texts" in mode:
             with open('./Data/texts.json', 'w', encoding='utf-8') as f:
                 json.dump(BaseProgram.texts, f, ensure_ascii=False, indent=4)
+        if "streams" in mode:
+            with open('./Data/streams.json', 'w', encoding='utf-8') as f:
+                json.dump(BaseProgram.streams, f, ensure_ascii=False, indent=4)
+
+
 
     def git_save(self, mode:str):
         """ Description: Saves data to github .json files
@@ -329,7 +339,7 @@ class BaseProgram:
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings"]
+            mode = ["database", "guides", "classes", "settings", "streams"]
 
         if "database" in mode:
             git_data = json.dumps(BaseProgram.data, indent=4).encode('utf-8')
@@ -361,6 +371,13 @@ class BaseProgram:
             contents_object.update("update", git_texts)
             self.file_save("texts")
 
+        if "streams" in mode:
+            git_streams = json.dumps(BaseProgram.streams, indent=4).encode('utf-8')
+            contents_object = BaseProgram.repository.file_contents("./Data/streams.json")
+            contents_object.update("update", git_streams)
+            self.file_save("streams")
+
+
         return
 
     def git_read(self, mode:str):
@@ -375,7 +392,7 @@ class BaseProgram:
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings"]
+            mode = ["database", "guides", "classes", "settings", "streams"]
 
         if "database" in mode:
             git_data = BaseProgram.repository.file_contents("./Data/database.json").decoded
@@ -400,6 +417,10 @@ class BaseProgram:
         if "texts" in mode:
             git_texts = BaseProgram.repository.file_contents("./Data/texts.json").decoded
             BaseProgram.texts = json.loads(git_texts.decode('utf-8'))
+
+        if "streams" in mode:
+            git_streams = BaseProgram.repository.file_contents("./Data/streams.json").decoded
+            BaseProgram.streams = json.loads(git_streams.decode('utf-8'))
 
 
         # Saving
@@ -1121,6 +1142,14 @@ class BaseCog(commands.Cog, BaseTools):
             await ctx.send(r"\>Updating `texts.json`")
             self.git_read("texts-update")
             await ctx.send(r"\>Bloom Bot `texts.json` updated!")
+            BaseProgram.database_updating = False
+            return
+
+        if mode == "streams":
+            BaseProgram.database_updating = True
+            await ctx.send(r"\>Updating `streams.jsons`")
+            self.git_read("streams-update")
+            await ctx.send(r"\>Bloom Bot `streams.jsons` updated!")
             BaseProgram.database_updating = False
             return
 

@@ -172,7 +172,7 @@ class CharacterCog(commands.Cog, BaseTools):
         except:
             try:
                 result = sites_soup.find("div", {"class": "card-body"}).find("p").text
-                result = result.replace("Disabled", "**Disabled**").replace("wandering", "**wandering**")
+                result = result.replace("Disabled", "**Disabled**").replace("wandering in the Void", "**wandering in The Void**").replace("frozen solid", "**Frozen solid**").replace("Deleted", "**Deleted**").replace("our","AQW's")
                 result += f" [Click Here]({url}) to go to their Character Page."
                 await ctx.send(embed=self.embed_single("Character Profile Result", result))
                 return

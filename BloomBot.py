@@ -38,6 +38,7 @@ from Cogs.GuideCog import GuideCog
 from Cogs.WikiCog import WikiCog
 from Cogs.TwitterListener import TwitterListener
 from Cogs.GoogleSearchCog import GoogleSearchCog
+from Cogs.StreamCog import StreamCog
 
 class BreakProgram(Exception):
     pass
