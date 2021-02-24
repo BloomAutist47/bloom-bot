@@ -671,7 +671,7 @@
                 "strName": "Empowered Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 1,
+                "intCount": 13,
                 "strType": "Quest Item"
             },
             "Tiger Leech Essence": {
