@@ -399,7 +399,7 @@
                 "strName": "Cavern Celestite",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 1,
+                "intCount": 3,
                 "strType": "Item"
             },
             "Chaoroot": {
