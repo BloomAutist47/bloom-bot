@@ -1,6 +1,6 @@
 {
     "acrolous": {
-        "time": "24 February 2021, 09:10 AM",
+        "time": "24 February 2021, 09:14 AM",
         "inventory": {
             "Diabolical Witch": {
                 "intCharId": 57302223,
@@ -671,15 +671,7 @@
                 "strName": "Empowered Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 50,
-                "strType": "Quest Item"
-            },
-            "Malignant Essence": {
-                "intCharId": 57302223,
-                "strName": "Malignant Essence",
-                "bUpgrade": false,
-                "bCoins": true,
-                "intCount": 2,
+                "intCount": 39,
                 "strType": "Quest Item"
             },
             "Tiger Leech Essence": {
@@ -797,7 +789,7 @@
         }
     },
     "weebolate": {
-        "time": "24 February 2021, 09:10 AM",
+        "time": "24 February 2021, 09:14 AM",
         "inventory": {
             "Healer": {
                 "intCharId": 72973339,
@@ -836,7 +828,7 @@
                 "strName": "Belrot the Fiend Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 7,
+                "intCount": 54,
                 "strType": "Quest Item"
             },
             "Black Knight Essence": {
