@@ -6,6 +6,9 @@ from discord.ext import commands
 import asyncio
 from threading import Thread
 from pprint import pprint
+from discord.utils import get
+
+
 
 class TwitterListener(tweepy.StreamListener, BaseTools, commands.Cog):
     def __init__(self, bot, api,  *args, **kwargs):
@@ -98,6 +101,9 @@ class TwitterListener(tweepy.StreamListener, BaseTools, commands.Cog):
             channel = await self.bot.fetch_channel(812318143322128384)
 
         await channel.send(embed=embedVar)
+        searched_role = get(ctx.guild.roles, name='Daily Gifts')
+        print(searched_role)
+        # await channel.send("<@!>")
         return
 
     def on_error(self, status):

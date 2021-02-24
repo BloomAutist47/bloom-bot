@@ -11,18 +11,23 @@ class StreamCog(commands.Cog, BaseTools):
         self.list_links = {}
         self.compare = {}
 
-        BaseProgram.loop.run_until_complete(self.stream_player())
-
 
     @commands.command()
-    async def stream(self, ctx, *, value=""):
-        print(ctx.author)
+    async def setstream(self, ctx, *, value=""):
+        
 
         if not value:
             await ctx.send("Please Input value.")
 
+        id_ = str(ctx.author.id)
+        confirmed_name = []
+
+        empty_char = []
+        await ctx.send("➣ A")
+
         value = value.split(" ")
         for name in value:
+            name = name.lower()
             char_link = 'https://account.aq.com/CharPage?id=' + name
 
            
@@ -36,72 +41,107 @@ class StreamCog(commands.Cog, BaseTools):
                     result = sites_soup.find("div", {"class": "card-body"}).find("p").text
                     result = result.replace("Disabled", "**Disabled**").replace("wandering in the Void", "**wandering in The Void**").replace("frozen solid", "**Frozen solid**").replace("Deleted", "**Deleted**").replace("our","AQW's")
                     result += f" [Click Here]({url}) to go to their Character Page."
-                    print(result)
-                    # await ctx.send(embed=self.embed_single("Character Profile Result", result))
-                    return
+                    # print(result)
+                    await ctx.send(embed=self.embed_single("Stream Result", result))
+                    continue
                 except:
                     print("No Character")
-                    # await ctx.send(embed=self.embed_single("Character Profile Result", "No Character of that name"))
-                    return
+                    await ctx.send(embed=self.embed_single("Stream Result", "No Character of that name"))
+                    continue
 
-
+            confirmed_name.append(name)
             char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
             char_inv = await self.get_site_content(char_inv_url)
             char_inv = char_inv.find("body").text[1:-1].replace("false", "False").replace("true", "True")
-            char_inv = literal_eval(char_inv)
+            char_inv = ast.literal_eval(char_inv)
             char_inv = self.convert_form(char_inv)
 
-            weapon_type = ["Axe", "Bow", "Dagger", "Gun", "Mace", "Polearm", "Staff", "Sword", "Wand"]
+            # weapon_type = ["Axe", "Bow", "Dagger", "Gun", "Mace", "Polearm", "Staff", "Sword", "Wand"]
 
-            item_count = {"Weapon": 0}
-            for item in char_inv:
-                item_type = char_inv[item]["strType"]
-                if item_type in weapon_type:
-                    item_count["Weapon"] += 1
-                    continue
-                if item_type not in item_count:
-                    item_count[item_type] = 0
-                item_count[item_type] += 1
-
+            # item_count = {"Weapon": 0}
+            # for item in char_inv:
+            #     item_type = char_inv[item]["strType"]
+            #     if item_type in weapon_type:
+            #         item_count["Weapon"] += 1
+            #         continue
+            #     if item_type not in item_count:
+            #         item_count[item_type] = 0
+            #     item_count[item_type] += 1
 
             # pprint(char_inv)
             est_dt = datetime.now(timezone('est'))
             current_time = est_dt.strftime("%d %B %Y, %I:%M %p")
 
-            if name not in BaseProgram.stream_list:
-                BaseProgram.stream_list[name] = {}
-                BaseProgram.stream_list[name]["time"] = current_time
-                BaseProgram.stream_list[name]["inventory"] = char_inv
+            if name not in BaseProgram.streams:
+                BaseProgram.streams[name] = {}
+                BaseProgram.streams[name]["time"] = current_time
+                BaseProgram.streams[name]["inventory"] = char_inv
                 
 
                 print("Character saved to stream list")
                 self.file_save()
                 return
 
-            if name in BaseProgram.stream_list:
-                compare = BaseProgram.stream_list[name]["inventory"]
+            if name in BaseProgram.streams:
+                compare = BaseProgram.streams[name]["inventory"]
 
-                diff_ = []
-                for item in compare:
-                    if item in char_inv:
-                        for diff in list(dictdiffer.diff(compare[item], char_inv[item])):       
-                            print(f"{item}: ", diff)
-                            if diff:
-                                diff_.append(item)
-                    else:
-                        print(f"{item} is gone!")
+                data = {
+                    "change": {},
+                    "add": {},
+                    "remove": {}
+                }
 
-                BaseProgram.stream_list[name]["time"] = current_time
-                BaseProgram.stream_list[name]["inventory"] = char_inv
+                # for item in compare:
+                #     if item in char_inv:
+                for diff in list(dictdiffer.diff(compare, char_inv)):
+                    # print(diff)
+                    type_ = diff[0]
+
+                    if type_ == "change":
+                        item = diff[1].split(".")[0]
+                        data["change"][item] = {"prev": diff[2][0], "next": diff[2][1]}
+                        continue
+                    if type_ == "add":
+                        for added in diff[2]:
+                            item = added[0]
+                            data["add"][item] = added[1]
+                        continue
+                    if type_ == "remove":
+                        for added in diff[2]:
+                            item = added[0]
+                            data["remove"][item] = added[1]
+                        continue
+                        # print(diff)
+                        # print(f"{item}: ", diff)
+                    # else:
+                    #     # diff_["remove"][item] = "True"
+                    #     print(f"{diff} is gone!")
+
+                BaseProgram.streams[name]["time"] = current_time
+                BaseProgram.streams[name]["inventory"] = char_inv
                 
-                if diff_:
-                    print(diff_)
+                if data != {
+                    "change": {},
+                    "add": {},
+                    "remove": {}
+                }:
+                    # type_ = self.change_data(data)
+                    
+                    print("Data")
+                    pprint(data)
+                    print("\n"*3)
+                    pass
                 else:
                     print("No difference")
                 print("Character saved to stream list")
-                self.file_save()
 
-        self.git_save("streams")
+        if id_ not in BaseProgram.settings["StreamCogSettings"]["users"]:
+            BaseProgram.settings["StreamCogSettings"]["users"][id_] = {}
+        for acc in confirmed_name:
+            if acc not in BaseProgram.settings["StreamCogSettings"]["users"][id_]["stream_list"]:
+                BaseProgram.settings["StreamCogSettings"]["users"][id_]["stream_list"].append(acc)
+        
+        self.git_save("streams-settings")
         
 
 

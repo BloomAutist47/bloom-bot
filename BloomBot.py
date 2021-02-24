@@ -5,6 +5,12 @@ Notes:
                          with locally saved data.
 bloom tempalte: https://discord.new/D79FPrWaZh2V
 Paradise template: https://discord.new/rntDVgbpUSzW
+
+heroku config
+$ heroku login
+$ heroku ps:scale worker=1 -a bloom-2
+
+
 """
 
 
@@ -39,6 +45,7 @@ from Cogs.WikiCog import WikiCog
 from Cogs.TwitterListener import TwitterListener
 from Cogs.GoogleSearchCog import GoogleSearchCog
 from Cogs.StreamCog import StreamCog
+from Cogs.TestCog import TestCog
 
 class BreakProgram(Exception):
     pass
@@ -47,7 +54,10 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 intents = Intents.all()
-Bot = commands.Bot(command_prefix=[";", ":"], description='Bloom Bot Revamped', intents=intents)
+if os.name == "nt":
+    Bot = commands.Bot(command_prefix=["'"], description='Bloom Bot Revamped', intents=intents)
+else:
+    Bot = commands.Bot(command_prefix=[";"], description='Bloom Bot Revamped', intents=intents)
 Bot.remove_command("help")
 
 
@@ -113,16 +123,18 @@ BaseStuff.git_prepare()
 
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
+Bot.add_cog(TestCog(Bot))
 
 # Feature Cogs
-Bot.add_cog(BoatSearchCog(Bot))
-Bot.add_cog(ClassSearchCog(Bot))
-Bot.add_cog(GuideCog(Bot)) 
-Bot.add_cog(CharacterCog(Bot))
-Bot.add_cog(WikiCog(Bot))
-# Bot.add_cog(TextUploaders(Bot))
-Bot.add_cog(GoogleSearchCog(Bot))
+# Bot.add_cog(BoatSearchCog(Bot))
+# Bot.add_cog(ClassSearchCog(Bot))
+# Bot.add_cog(GuideCog(Bot)) 
+# Bot.add_cog(CharacterCog(Bot))
+# Bot.add_cog(WikiCog(Bot))
+# Bot.add_cog(GoogleSearchCog(Bot))
+# Bot.add_cog(StreamCog(Bot))
 
+# Bot.add_cog(TextUploaders(Bot))
 
 print("> Starting Bot...")
 while True:
