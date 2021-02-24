@@ -92,10 +92,6 @@
             "url": "https://adventurequest.life/bots/Arts_ChronoAssassin_Bot.gbot",
             "author": "arts"
         },
-        "CommandingShadowEssences VA Bot.gbot": {
-            "url": "https://adventurequest.life/bots/Arts_CommandingShadowEssences_VA_Bot.gbot",
-            "author": "arts"
-        },
         "CragSpin Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_CragSpin_Bot.gbot",
             "author": "arts"
@@ -916,6 +912,10 @@
             "url": "https://adventurequest.life/bots/NWNO_RoomHop_-_Taryth.gbot",
             "author": "taryth"
         },
+        "dragonblade of nulgath bot.gbot": {
+            "url": "https://adventurequest.life/bots/Prussia_dragonblade_of_nulgath_bot.gbot",
+            "author": "prussia"
+        },
         "Full Awe Bot.rar": {
             "url": "https://adventurequest.life/bots/Prussia_Full_Awe_Bot.rar",
             "author": "prussia"
@@ -1463,9 +1463,6 @@
             },
             "ChronoAssassin Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_ChronoAssassin_Bot.gbot"
-            },
-            "CommandingShadowEssences VA Bot.gbot": {
-                "url": "https://adventurequest.life/bots/Arts_CommandingShadowEssences_VA_Bot.gbot"
             },
             "CragSpin Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_CragSpin_Bot.gbot"
@@ -2040,6 +2037,9 @@
             }
         },
         "prussia": {
+            "dragonblade of nulgath bot.gbot": {
+                "url": "https://adventurequest.life/bots/Prussia_dragonblade_of_nulgath_bot.gbot"
+            },
             "Full Awe Bot.rar": {
                 "url": "https://adventurequest.life/bots/Prussia_Full_Awe_Bot.rar"
             }
