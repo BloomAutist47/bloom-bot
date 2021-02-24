@@ -1,6 +1,6 @@
 {
     "acrolous": {
-        "time": "24 February 2021, 09:05 AM",
+        "time": "24 February 2021, 09:10 AM",
         "inventory": {
             "Diabolical Witch": {
                 "intCharId": 57302223,
@@ -797,7 +797,7 @@
         }
     },
     "weebolate": {
-        "time": "24 February 2021, 09:05 AM",
+        "time": "24 February 2021, 09:10 AM",
         "inventory": {
             "Healer": {
                 "intCharId": 72973339,
@@ -820,7 +820,7 @@
                 "strName": "Void Aura",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 145,
+                "intCount": 190,
                 "strType": "Item"
             },
             "Astral Ephemerite Essence": {
@@ -828,7 +828,7 @@
                 "strName": "Astral Ephemerite Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 66,
+                "intCount": 70,
                 "strType": "Quest Item"
             },
             "Belrot the Fiend Essence": {
@@ -836,7 +836,7 @@
                 "strName": "Belrot the Fiend Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 66,
+                "intCount": 7,
                 "strType": "Quest Item"
             },
             "Black Knight Essence": {
@@ -844,7 +844,7 @@
                 "strName": "Black Knight Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 66,
+                "intCount": 6,
                 "strType": "Quest Item"
             },
             "Carnax Essence": {
@@ -852,7 +852,7 @@
                 "strName": "Carnax Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 66,
+                "intCount": 6,
                 "strType": "Quest Item"
             },
             "Chaos Vordred Essence": {
@@ -860,7 +860,7 @@
                 "strName": "Chaos Vordred Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 66,
+                "intCount": 6,
                 "strType": "Quest Item"
             },
             "Creature Creation Essence": {
@@ -876,7 +876,7 @@
                 "strName": "Dai Tengu Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 66,
+                "intCount": 6,
                 "strType": "Quest Item"
             },
             "Tiger Leech Essence": {
@@ -884,7 +884,7 @@
                 "strName": "Tiger Leech Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 67,
+                "intCount": 7,
                 "strType": "Quest Item"
             },
             "Unending Avatar Essence": {
@@ -892,7 +892,7 @@
                 "strName": "Unending Avatar Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 66,
+                "intCount": 6,
                 "strType": "Quest Item"
             },
             "Void Dragon Essence": {
@@ -900,7 +900,7 @@
                 "strName": "Void Dragon Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 66,
+                "intCount": 6,
                 "strType": "Quest Item"
             },
             "Default Staff": {
