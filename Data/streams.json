@@ -1,6 +1,6 @@
 {
     "pepe the frog1337": {
-        "time": "24 February 2021, 09:38 AM",
+        "time": "24 February 2021, 09:39 AM",
         "inventory": {
             "Dirt Void of Nulgath": {
                 "intCharId": 71634458,
@@ -343,7 +343,7 @@
                 "strName": "Void Dragon Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 48,
+                "intCount": 66,
                 "strType": "Quest Item"
             },
             "Burning Blade Of Abezeth": {
@@ -381,7 +381,7 @@
         }
     },
     "pepe the frog1338": {
-        "time": "24 February 2021, 09:38 AM",
+        "time": "24 February 2021, 09:39 AM",
         "inventory": {
             "Arcane of Nulgath": {
                 "intCharId": 71703813,
@@ -716,7 +716,7 @@
                 "strName": "Void Dragon Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 47,
+                "intCount": 66,
                 "strType": "Quest Item"
             },
             "Chaos Widow Staff": {
@@ -754,7 +754,7 @@
         }
     },
     "pepe the frog1339": {
-        "time": "24 February 2021, 09:38 AM",
+        "time": "24 February 2021, 09:39 AM",
         "inventory": {
             "Arcane Warfiend of Nulgath": {
                 "intCharId": 71703823,
@@ -1113,7 +1113,7 @@
                 "strName": "Void Dragon Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 53,
+                "intCount": 67,
                 "strType": "Quest Item"
             },
             "Burning Blade Of Abezeth": {
@@ -1131,6 +1131,171 @@
                 "bCoins": false,
                 "intCount": 1,
                 "strType": "Wall Item"
+            }
+        }
+    },
+    "pepe the frog1310": {
+        "time": "24 February 2021, 09:39 AM",
+        "inventory": {
+            "Dream Palace Guard": {
+                "intCharId": 71703824,
+                "strName": "Dream Palace Guard",
+                "bUpgrade": false,
+                "bCoins": false,
+                "intCount": 1,
+                "strType": "Armor"
+            },
+            "Void Nation Cheerleader": {
+                "intCharId": 71703824,
+                "strName": "Void Nation Cheerleader",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Armor"
+            },
+            "Deadly Axe of Chaos": {
+                "intCharId": 71703824,
+                "strName": "Deadly Axe of Chaos",
+                "bUpgrade": false,
+                "bCoins": false,
+                "intCount": 1,
+                "strType": "Axe"
+            },
+            "Dream Palace Guard Arms": {
+                "intCharId": 71703824,
+                "strName": "Dream Palace Guard Arms",
+                "bUpgrade": false,
+                "bCoins": false,
+                "intCount": 1,
+                "strType": "Cape"
+            },
+            "Chaos Slayer Cleric": {
+                "intCharId": 71703824,
+                "strName": "Chaos Slayer Cleric",
+                "bUpgrade": false,
+                "bCoins": false,
+                "intCount": 302500,
+                "strType": "Class"
+            },
+            "Healer": {
+                "intCharId": 71703824,
+                "strName": "Healer",
+                "bUpgrade": false,
+                "bCoins": false,
+                "intCount": 302500,
+                "strType": "Class"
+            },
+            "Divine Horned Headdress": {
+                "intCharId": 71703824,
+                "strName": "Divine Horned Headdress",
+                "bUpgrade": false,
+                "bCoins": false,
+                "intCount": 1,
+                "strType": "Helm"
+            },
+            "Treasure Potion": {
+                "intCharId": 71703824,
+                "strName": "Treasure Potion",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 2,
+                "strType": "Item"
+            },
+            "Void Aura": {
+                "intCharId": 71703824,
+                "strName": "Void Aura",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 3940,
+                "strType": "Item"
+            },
+            "Astral Ephemerite Essence": {
+                "intCharId": 71703824,
+                "strName": "Astral Ephemerite Essence",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 86,
+                "strType": "Quest Item"
+            },
+            "Belrot the Fiend Essence": {
+                "intCharId": 71703824,
+                "strName": "Belrot the Fiend Essence",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 66,
+                "strType": "Quest Item"
+            },
+            "Black Knight Essence": {
+                "intCharId": 71703824,
+                "strName": "Black Knight Essence",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 66,
+                "strType": "Quest Item"
+            },
+            "Carnax Essence": {
+                "intCharId": 71703824,
+                "strName": "Carnax Essence",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 66,
+                "strType": "Quest Item"
+            },
+            "Chaos Vordred Essence": {
+                "intCharId": 71703824,
+                "strName": "Chaos Vordred Essence",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 66,
+                "strType": "Quest Item"
+            },
+            "Creature Creation Essence": {
+                "intCharId": 71703824,
+                "strName": "Creature Creation Essence",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 7,
+                "strType": "Quest Item"
+            },
+            "Dai Tengu Essence": {
+                "intCharId": 71703824,
+                "strName": "Dai Tengu Essence",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 67,
+                "strType": "Quest Item"
+            },
+            "Tiger Leech Essence": {
+                "intCharId": 71703824,
+                "strName": "Tiger Leech Essence",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 66,
+                "strType": "Quest Item"
+            },
+            "Treasure Chest": {
+                "intCharId": 71703824,
+                "strName": "Treasure Chest",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 233,
+                "strType": "Quest Item"
+            },
+            "Unending Avatar Essence": {
+                "intCharId": 71703824,
+                "strName": "Unending Avatar Essence",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 66,
+                "strType": "Quest Item"
+            },
+            "Void Dragon Essence": {
+                "intCharId": 71703824,
+                "strName": "Void Dragon Essence",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 66,
+                "strType": "Quest Item"
             }
         }
     }
