@@ -1,6 +1,6 @@
 {
     "acrolous": {
-        "time": "24 February 2021, 09:18 AM",
+        "time": "24 February 2021, 09:25 AM",
         "inventory": {
             "Diabolical Witch": {
                 "intCharId": 57302223,
@@ -394,6 +394,14 @@
                 "intCount": 1,
                 "strType": "Item"
             },
+            "Cavern Celestite": {
+                "intCharId": 57302223,
+                "strName": "Cavern Celestite",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Item"
+            },
             "Chaoroot": {
                 "intCharId": 57302223,
                 "strName": "Chaoroot",
@@ -567,7 +575,7 @@
                 "strName": "Void Aura",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 7499,
+                "intCount": 7500,
                 "strType": "Item"
             },
             "Voucher of Nulgath": {
@@ -664,14 +672,6 @@
                 "bUpgrade": false,
                 "bCoins": true,
                 "intCount": 28,
-                "strType": "Quest Item"
-            },
-            "Empowered Essence": {
-                "intCharId": 57302223,
-                "strName": "Empowered Essence",
-                "bUpgrade": false,
-                "bCoins": true,
-                "intCount": 21,
                 "strType": "Quest Item"
             },
             "Tiger Leech Essence": {
@@ -789,7 +789,7 @@
         }
     },
     "weebolate": {
-        "time": "24 February 2021, 09:18 AM",
+        "time": "24 February 2021, 09:25 AM",
         "inventory": {
             "Healer": {
                 "intCharId": 72973339,
@@ -906,7 +906,7 @@
         }
     },
     "chaosripjaw": {
-        "time": "24 February 2021, 09:18 AM",
+        "time": "24 February 2021, 09:25 AM",
         "inventory": {
             "Battle Swimwear": {
                 "intCharId": 13776017,
