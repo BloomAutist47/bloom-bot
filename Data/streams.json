@@ -1,6 +1,6 @@
 {
     "acrolous": {
-        "time": "24 February 2021, 07:37 AM",
+        "time": "24 February 2021, 08:33 AM",
         "inventory": {
             "Diabolical Witch": {
                 "intCharId": 57302223,
@@ -567,7 +567,7 @@
                 "strName": "Void Aura",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 7219,
+                "intCount": 7424,
                 "strType": "Item"
             },
             "Voucher of Nulgath": {
@@ -671,7 +671,7 @@
                 "strName": "Empowered Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 41,
+                "intCount": 1,
                 "strType": "Quest Item"
             },
             "Tiger Leech Essence": {
