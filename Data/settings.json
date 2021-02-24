@@ -129,7 +129,8 @@
                 "grimfix",
                 "grimfix/spiderfix/sf",
                 "Boating Guides",
-                "wf"
+                "wf",
+                "grimui"
             ]
         }
     },
