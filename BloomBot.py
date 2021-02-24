@@ -132,7 +132,7 @@ Bot.add_cog(TestCog(Bot))
 # Bot.add_cog(CharacterCog(Bot))
 # Bot.add_cog(WikiCog(Bot))
 # Bot.add_cog(GoogleSearchCog(Bot))
-# Bot.add_cog(StreamCog(Bot))
+Bot.add_cog(StreamCog(Bot))
 
 # Bot.add_cog(TextUploaders(Bot))
 

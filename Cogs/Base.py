@@ -50,7 +50,7 @@ class BaseProgram:
     PORTAL_AGENT = ""
 
     tweets_listener = ""
-    streams = ""
+    streams = []
 
     git_already = False
     
@@ -94,7 +94,7 @@ class BaseProgram:
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
         os.chdir('..')
         self.file_read("all")
-        # self.git_read("all")
+        self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode

@@ -102,8 +102,8 @@ class TwitterListener(tweepy.StreamListener, BaseTools, commands.Cog):
 
         await channel.send(embed=embedVar)
         searched_role = get(ctx.guild.roles, name='Daily Gifts')
-        print(searched_role)
-        # await channel.send("<@!>")
+        print()
+        await channel.send(searched_role.mention)
         return
 
     def on_error(self, status):

@@ -23,10 +23,11 @@ class StreamCog(commands.Cog, BaseTools):
         confirmed_name = []
 
         empty_char = []
-        await ctx.send("➣ A")
-
-        value = value.split(" ")
-        for name in value:
+        await ctx.send(f"➣ Setting Stream for {ctx.author}")
+        # print(BaseProgram.steams)
+        values = value.split(" ")
+        print(values)
+        for name in values:
             name = name.lower()
             char_link = 'https://account.aq.com/CharPage?id=' + name
 
@@ -50,12 +51,15 @@ class StreamCog(commands.Cog, BaseTools):
                     continue
 
             confirmed_name.append(name)
+            print("broke")
             char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
             char_inv = await self.get_site_content(char_inv_url)
+            print("Here")
             char_inv = char_inv.find("body").text[1:-1].replace("false", "False").replace("true", "True")
             char_inv = ast.literal_eval(char_inv)
+            print(char_inv)
             char_inv = self.convert_form(char_inv)
-
+            pprint(char_inv)
             # weapon_type = ["Axe", "Bow", "Dagger", "Gun", "Mace", "Polearm", "Staff", "Sword", "Wand"]
 
             # item_count = {"Weapon": 0}
@@ -119,7 +123,7 @@ class StreamCog(commands.Cog, BaseTools):
 
                 BaseProgram.streams[name]["time"] = current_time
                 BaseProgram.streams[name]["inventory"] = char_inv
-                
+                pprint(data)
                 if data != {
                     "change": {},
                     "add": {},

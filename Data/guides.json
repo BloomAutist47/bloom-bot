@@ -61,6 +61,19 @@
         ],
         "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/813316873566814228/yu041l5bhli61.png"
     },
+    "ui": {
+        "type": "text",
+        "auth": "auqw",
+        "title": "Grim shitty UI fix",
+        "description": "Does your grim UI looks complete shit? The fonts are different sizes, the widges, boxes, dropdowns are completely messed up? Do this.",
+        "content": [
+            "1.) Right click Grimoire.exe and click properties.",
+            "2.) On compatibility, click the \"Change high DPI settings\"",
+            "3.) Check \"Overide high DPI scaling behavior\" and select \"System (Enhanced)\"",
+            "4.) Click Ok. Run Grimoire."
+        ],
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/814088319281135616/unknown.png"
+    },
     "Boating Guides": {
         "type": "header"
     },
