@@ -1,6 +1,6 @@
 {
     "pepe the frog1337": {
-        "time": "24 February 2021, 09:39 AM",
+        "time": "24 February 2021, 09:40 AM",
         "inventory": {
             "Dirt Void of Nulgath": {
                 "intCharId": 71634458,
@@ -255,7 +255,7 @@
                 "strName": "Creature Creation Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 7,
+                "intCount": 18,
                 "strType": "Quest Item"
             },
             "Dai Tengu Essence": {
@@ -343,7 +343,7 @@
                 "strName": "Void Dragon Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 66,
+                "intCount": 67,
                 "strType": "Quest Item"
             },
             "Burning Blade Of Abezeth": {
@@ -381,7 +381,7 @@
         }
     },
     "pepe the frog1338": {
-        "time": "24 February 2021, 09:39 AM",
+        "time": "24 February 2021, 09:40 AM",
         "inventory": {
             "Arcane of Nulgath": {
                 "intCharId": 71703813,
@@ -620,7 +620,7 @@
                 "strName": "Creature Creation Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 16,
                 "strType": "Quest Item"
             },
             "Dai Tengu Essence": {
@@ -754,7 +754,7 @@
         }
     },
     "pepe the frog1339": {
-        "time": "24 February 2021, 09:39 AM",
+        "time": "24 February 2021, 09:40 AM",
         "inventory": {
             "Arcane Warfiend of Nulgath": {
                 "intCharId": 71703823,
@@ -1025,7 +1025,7 @@
                 "strName": "Creature Creation Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 19,
                 "strType": "Quest Item"
             },
             "Dai Tengu Essence": {
@@ -1135,7 +1135,7 @@
         }
     },
     "pepe the frog1310": {
-        "time": "24 February 2021, 09:39 AM",
+        "time": "24 February 2021, 09:40 AM",
         "inventory": {
             "Dream Palace Guard": {
                 "intCharId": 71703824,
@@ -1254,7 +1254,7 @@
                 "strName": "Creature Creation Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 7,
+                "intCount": 20,
                 "strType": "Quest Item"
             },
             "Dai Tengu Essence": {
