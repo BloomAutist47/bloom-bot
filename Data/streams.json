@@ -1,6 +1,6 @@
 {
     "pepe the frog1337": {
-        "time": "24 February 2021, 09:45 AM",
+        "time": "24 February 2021, 10:23 AM",
         "inventory": {
             "Dirt Void of Nulgath": {
                 "intCharId": 71634458,
@@ -175,7 +175,7 @@
                 "strName": "Void Aura",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 4175,
+                "intCount": 4195,
                 "strType": "Item"
             },
             "Voucher of Nulgath": {
@@ -215,7 +215,7 @@
                 "strName": "Astral Ephemerite Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 70,
+                "intCount": 68,
                 "strType": "Quest Item"
             },
             "Belrot the Fiend Essence": {
@@ -223,7 +223,7 @@
                 "strName": "Belrot the Fiend Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 10,
+                "intCount": 66,
                 "strType": "Quest Item"
             },
             "Black Knight Essence": {
@@ -247,7 +247,7 @@
                 "strName": "Chaos Vordred Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 7,
                 "strType": "Quest Item"
             },
             "Creature Creation Essence": {
@@ -263,7 +263,7 @@
                 "strName": "Dai Tengu Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 7,
+                "intCount": 5,
                 "strType": "Quest Item"
             },
             "Dark Crystal Shard": {
@@ -311,7 +311,7 @@
                 "strName": "Tiger Leech Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 7,
                 "strType": "Quest Item"
             },
             "Treasure Chest": {
@@ -381,7 +381,7 @@
         }
     },
     "pepe the frog1338": {
-        "time": "24 February 2021, 09:45 AM",
+        "time": "24 February 2021, 10:23 AM",
         "inventory": {
             "Arcane of Nulgath": {
                 "intCharId": 71703813,
@@ -548,7 +548,7 @@
                 "strName": "Void Aura",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 4020,
+                "intCount": 4050,
                 "strType": "Item"
             },
             "Voucher of Nulgath": {
@@ -580,7 +580,7 @@
                 "strName": "Astral Ephemerite Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 75,
+                "intCount": 78,
                 "strType": "Quest Item"
             },
             "Belrot the Fiend Essence": {
@@ -588,7 +588,7 @@
                 "strName": "Belrot the Fiend Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 11,
+                "intCount": 62,
                 "strType": "Quest Item"
             },
             "Black Knight Essence": {
@@ -754,7 +754,7 @@
         }
     },
     "pepe the frog1339": {
-        "time": "24 February 2021, 09:45 AM",
+        "time": "24 February 2021, 10:23 AM",
         "inventory": {
             "Arcane Warfiend of Nulgath": {
                 "intCharId": 71703823,
@@ -929,7 +929,7 @@
                 "strName": "Void Aura",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 4100,
+                "intCount": 4130,
                 "strType": "Item"
             },
             "Voucher of Nulgath": {
@@ -985,7 +985,7 @@
                 "strName": "Astral Ephemerite Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 66,
+                "intCount": 72,
                 "strType": "Quest Item"
             },
             "Belrot the Fiend Essence": {
@@ -993,7 +993,7 @@
                 "strName": "Belrot the Fiend Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 14,
+                "intCount": 61,
                 "strType": "Quest Item"
             },
             "Black Knight Essence": {
@@ -1017,7 +1017,7 @@
                 "strName": "Chaos Vordred Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 7,
                 "strType": "Quest Item"
             },
             "Creature Creation Essence": {
@@ -1033,7 +1033,7 @@
                 "strName": "Dai Tengu Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 7,
+                "intCount": 6,
                 "strType": "Quest Item"
             },
             "Dark Crystal Shard": {
@@ -1113,7 +1113,7 @@
                 "strName": "Void Dragon Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 7,
+                "intCount": 6,
                 "strType": "Quest Item"
             },
             "Burning Blade Of Abezeth": {
@@ -1135,7 +1135,7 @@
         }
     },
     "pepe the frog1310": {
-        "time": "24 February 2021, 09:45 AM",
+        "time": "24 February 2021, 10:23 AM",
         "inventory": {
             "Dream Palace Guard": {
                 "intCharId": 71703824,
@@ -1206,7 +1206,7 @@
                 "strName": "Void Aura",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 3970,
+                "intCount": 3980,
                 "strType": "Item"
             },
             "Astral Ephemerite Essence": {
@@ -1214,7 +1214,7 @@
                 "strName": "Astral Ephemerite Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 69,
+                "intCount": 66,
                 "strType": "Quest Item"
             },
             "Belrot the Fiend Essence": {
@@ -1222,7 +1222,7 @@
                 "strName": "Belrot the Fiend Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 13,
+                "intCount": 60,
                 "strType": "Quest Item"
             },
             "Black Knight Essence": {
@@ -1230,7 +1230,7 @@
                 "strName": "Black Knight Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 7,
                 "strType": "Quest Item"
             },
             "Carnax Essence": {
@@ -1254,7 +1254,7 @@
                 "strName": "Creature Creation Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 7,
                 "strType": "Quest Item"
             },
             "Dai Tengu Essence": {
@@ -1262,7 +1262,7 @@
                 "strName": "Dai Tengu Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 7,
+                "intCount": 6,
                 "strType": "Quest Item"
             },
             "Tiger Leech Essence": {
