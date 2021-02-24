@@ -671,7 +671,7 @@
                 "strName": "Empowered Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 29,
+                "intCount": 36,
                 "strType": "Quest Item"
             },
             "Tiger Leech Essence": {
@@ -836,7 +836,7 @@
                 "strName": "Black Knight Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 15,
+                "intCount": 18,
                 "strType": "Quest Item"
             },
             "Carnax Essence": {
