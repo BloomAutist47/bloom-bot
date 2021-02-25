@@ -254,12 +254,17 @@ class CharacterCog(commands.Cog, BaseTools):
                 f"Guild: [{char_details['Guild']}](https://www.aq.com/lore/guilds)" + guild_length,
                 ]
 
-
-        panel_2 = f"Weapon: [{char_details['Weapon']}]({li+char_details['Weapon'].lstrip().replace(' ', '-')})\n"\
-                f"Armor: [{char_details['Armor']}]({li+char_details['Armor'].lstrip().replace(' ', '-')})\n"\
-                f"Helm: [{char_details['Helm']}]({li+char_details['Helm'].lstrip().replace(' ', '-')})\n"\
-                f"Cape: [{char_details['Cape']}]({li+char_details['Cape'].lstrip().replace(' ', '-')})\n"\
-                f"Pet: [{char_details['Pet']}]({li+char_details['Pet'].lstrip().replace(' ', '-')})"
+        link_weapon =li+char_details['Weapon'].lstrip().replace(' ', '-').replace("’", "-")
+        link_armor = li+char_details['Armor'].lstrip().replace(' ', '-').replace("’", "-")
+        link_helm = li+char_details['Helm'].lstrip().replace(' ', '-').replace("’", "-")
+        link_cape = li+char_details['Cape'].lstrip().replace(' ', '-').replace("’", "-")
+        link_pet = li+char_details['Pet'].lstrip().replace(' ', '-').replace("’", "-")    
+        print(link_cape)
+        panel_2 = f"Weapon: [{char_details['Weapon']}]({link_weapon})\n"\
+                f"Armor: [{char_details['Armor']}]({link_armor})\n"\
+                f"Helm: [{char_details['Helm']}]({link_helm})\n"\
+                f"Cape: [{char_details['Cape']}]({link_cape})\n"\
+                f"Pet: [{char_details['Pet']}]({link_pet})"
 
         vl = 25
         inventories_ =["```css\n",

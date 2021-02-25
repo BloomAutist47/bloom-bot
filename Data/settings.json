@@ -17,7 +17,19 @@
         ]
     },
     "StreamCogSettings": {
-        "users": {}
+        "users": {
+            "252363724894109700": {
+                "stream_list": [
+                    "acrolous",
+                    "weebolate",
+                    "chaosripjaw",
+                    "pepe the frog1337",
+                    "pepe the frog1338",
+                    "pepe the frog1339",
+                    "pepe the frog1310"
+                ]
+            }
+        }
     },
     "ClassSearchCogSettings": {
         "legends_link": "https://cdn.discordapp.com/attachments/805367955923533845/807995288483921920/intructions.png"

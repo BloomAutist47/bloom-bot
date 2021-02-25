@@ -94,7 +94,7 @@ class BaseProgram:
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
         os.chdir('..')
         self.file_read("all")
-        self.git_read("all")
+        # self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -945,6 +945,16 @@ class BaseTools(BaseProgram):
     #         async with session.get(SELECTED_URL) as response:
     #             text_ = await response.read()
     #             return Soup(text_.decode('utf-8'), 'html5lib')
+
+    # async def contentcreator(self, url) -> str :
+    #     async with aiohttp.ClientSession() as session:
+    #         async with session.get(url,allow_redirects=True) as page_response:
+    #             response = await page_response.read()
+    #             soup = Soup(response.decode('cp1252'), 'html5lib')
+    #         if page_response.status == 200:
+    #             return soup
+    #         else:
+    #             return await contentcreator(self, url)
 
     async def get_site_content(self, SELECTED_URL, header=""):
         client = aiosonic.HTTPClient()

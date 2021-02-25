@@ -44,7 +44,7 @@ from Cogs.GuideCog import GuideCog
 from Cogs.WikiCog import WikiCog
 from Cogs.TwitterListener import TwitterListener
 from Cogs.GoogleSearchCog import GoogleSearchCog
-from Cogs.StreamCog import StreamCog
+# from Cogs.StreamCog import StreamCog
 from Cogs.TestCog import TestCog
 
 class BreakProgram(Exception):
@@ -67,7 +67,7 @@ async def on_command_error(ctx, error):
         print("System: lmao a nigger used", error)
         return
     BaseProgram.database_updating = False
-    # raise error
+    raise error
 
 # @Bot.event
 # async def on_member_update(before, after):
@@ -123,16 +123,16 @@ BaseStuff.git_prepare()
 
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
-Bot.add_cog(TestCog(Bot))
+# Bot.add_cog(TestCog(Bot))
 
 # Feature Cogs
-# Bot.add_cog(BoatSearchCog(Bot))
-# Bot.add_cog(ClassSearchCog(Bot))
-# Bot.add_cog(GuideCog(Bot)) 
-# Bot.add_cog(CharacterCog(Bot))
-# Bot.add_cog(WikiCog(Bot))
-# Bot.add_cog(GoogleSearchCog(Bot))
-Bot.add_cog(StreamCog(Bot))
+Bot.add_cog(BoatSearchCog(Bot))
+Bot.add_cog(ClassSearchCog(Bot))
+Bot.add_cog(GuideCog(Bot)) 
+Bot.add_cog(CharacterCog(Bot))
+Bot.add_cog(WikiCog(Bot))
+Bot.add_cog(GoogleSearchCog(Bot))
+# Bot.add_cog(StreamCog(Bot))
 
 # Bot.add_cog(TextUploaders(Bot))
 
