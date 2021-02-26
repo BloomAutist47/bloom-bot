@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 11:11 AM",
+                    "time_scanned": "26 February 2021, 11:13 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -562,7 +562,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 984,
+                            "intCount": 985,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -570,7 +570,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 779,
+                            "intCount": 780,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -586,7 +586,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 169,
+                            "intCount": 170,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -689,7 +689,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "26 February 2021, 11:11 AM",
+                    "time_scanned": "26 February 2021, 11:13 AM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -752,7 +752,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 35,
+                            "intCount": 60,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
@@ -807,7 +807,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "26 February 2021, 11:12 AM",
+                    "time_scanned": "26 February 2021, 11:13 AM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -1150,7 +1150,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 15,
+                            "intCount": 32,
                             "strType": "Quest Item"
                         },
                         "Burning Blade Of Abezeth": {
