@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 12:00 PM",
+                    "time_scanned": "26 February 2021, 12:06 PM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -557,6 +557,14 @@
                             "intCount": 1,
                             "strType": "Pet"
                         },
+                        "Unidentified 19": {
+                            "intCharId": 57302223,
+                            "strName": "Unidentified 19",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Pet"
+                        },
                         "Bone Dust": {
                             "intCharId": 57302223,
                             "strName": "Bone Dust",
@@ -578,7 +586,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 835,
+                            "intCount": 847,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -594,7 +602,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 181,
+                            "intCount": 182,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -705,7 +713,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "26 February 2021, 12:00 PM",
+                    "time_scanned": "26 February 2021, 12:06 PM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -823,7 +831,7 @@
                     "target_items": []
                 },
                 "chaosripjaw": {
-                    "time_scanned": "26 February 2021, 12:00 PM",
+                    "time_scanned": "26 February 2021, 12:06 PM",
                     "inventory": {
                         "Battle Swimwear": {
                             "intCharId": 13776017,
@@ -2277,7 +2285,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "26 February 2021, 12:05 PM",
+                    "time_scanned": "26 February 2021, 12:06 PM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -2516,7 +2524,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 14,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -2659,7 +2667,7 @@
                     "target_items": []
                 },
                 "pepe the frog1338": {
-                    "time_scanned": "26 February 2021, 12:05 PM",
+                    "time_scanned": "26 February 2021, 12:06 PM",
                     "inventory": {
                         "Arcane of Nulgath": {
                             "intCharId": 71703813,
@@ -2882,7 +2890,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7,
+                            "intCount": 15,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -2962,7 +2970,7 @@
                             "strName": "Tiger Leech Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 61,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Treasure Chest": {
@@ -3033,7 +3041,7 @@
                     "target_items": []
                 },
                 "pepe the frog1339": {
-                    "time_scanned": "26 February 2021, 12:05 PM",
+                    "time_scanned": "26 February 2021, 12:06 PM",
                     "inventory": {
                         "Arcane Warfiend of Nulgath": {
                             "intCharId": 71703823,
@@ -3288,7 +3296,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 15,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -3415,7 +3423,7 @@
                     "target_items": []
                 },
                 "pepe the frog1310": {
-                    "time_scanned": "26 February 2021, 12:05 PM",
+                    "time_scanned": "26 February 2021, 12:06 PM",
                     "inventory": {
                         "Dream Palace Guard": {
                             "intCharId": 71703824,
@@ -3518,7 +3526,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 15,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -3550,7 +3558,7 @@
                             "strName": "Tiger Leech Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 62,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Treasure Chest": {
