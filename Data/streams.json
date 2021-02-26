@@ -1300,7 +1300,7 @@
         }
     },
     "weebolate": {
-        "time": "26 February 2021, 09:47 AM",
+        "time": "26 February 2021, 09:53 AM",
         "inventory": {
             "Healer": {
                 "intCharId": 72973339,
@@ -1355,7 +1355,7 @@
                 "strName": "Carnax Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 33,
+                "intCount": 66,
                 "strType": "Quest Item"
             },
             "Chaos Vordred Essence": {
@@ -1363,7 +1363,7 @@
                 "strName": "Chaos Vordred Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 10,
                 "strType": "Quest Item"
             },
             "Creature Creation Essence": {
@@ -1417,8 +1417,16 @@
         }
     },
     "acrolous": {
-        "time": "26 February 2021, 09:47 AM",
+        "time": "26 February 2021, 09:53 AM",
         "inventory": {
+            "Anti-Kolyaban Armor": {
+                "intCharId": 57302223,
+                "strName": "Anti-Kolyaban Armor",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Armor"
+            },
             "Diabolical Witch": {
                 "intCharId": 57302223,
                 "strName": "Diabolical Witch",
@@ -1427,10 +1435,34 @@
                 "intCount": 1,
                 "strType": "Armor"
             },
+            "Eremon's Armor": {
+                "intCharId": 57302223,
+                "strName": "Eremon's Armor",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Armor"
+            },
+            "Fiend Minion": {
+                "intCharId": 57302223,
+                "strName": "Fiend Minion",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Armor"
+            },
             "Fiend Warrior": {
                 "intCharId": 57302223,
                 "strName": "Fiend Warrior",
                 "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Armor"
+            },
+            "FlameScourge Mage": {
+                "intCharId": 57302223,
+                "strName": "FlameScourge Mage",
+                "bUpgrade": true,
                 "bCoins": true,
                 "intCount": 1,
                 "strType": "Armor"
@@ -1443,6 +1475,14 @@
                 "intCount": 1,
                 "strType": "Armor"
             },
+            "Reshaper": {
+                "intCharId": 57302223,
+                "strName": "Reshaper",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Armor"
+            },
             "Sepulchure's DoomKnight Armor": {
                 "intCharId": 57302223,
                 "strName": "Sepulchure's DoomKnight Armor",
@@ -1451,9 +1491,33 @@
                 "intCount": 1,
                 "strType": "Armor"
             },
+            "Blinding Light of Destiny": {
+                "intCharId": 57302223,
+                "strName": "Blinding Light of Destiny",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Axe"
+            },
+            "Anti-Kolyaban Cape": {
+                "intCharId": 57302223,
+                "strName": "Anti-Kolyaban Cape",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Cape"
+            },
             "Arch DoomKnight Cape Sword": {
                 "intCharId": 57302223,
                 "strName": "Arch DoomKnight Cape Sword",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Cape"
+            },
+            "Fiend Warrior Tail": {
+                "intCharId": 57302223,
+                "strName": "Fiend Warrior Tail",
                 "bUpgrade": false,
                 "bCoins": true,
                 "intCount": 1,
@@ -1506,6 +1570,14 @@
                 "bCoins": true,
                 "intCount": 302500,
                 "strType": "Class"
+            },
+            "Reshaper Swords": {
+                "intCharId": 57302223,
+                "strName": "Reshaper Swords",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Dagger"
             },
             "Blue Onsen Slipper": {
                 "intCharId": 57302223,
@@ -1675,11 +1747,43 @@
                 "intCount": 1,
                 "strType": "Floor Item"
             },
+            "Anti-Kolyaban Helm": {
+                "intCharId": 57302223,
+                "strName": "Anti-Kolyaban Helm",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Helm"
+            },
             "Bearded Warrior": {
                 "intCharId": 57302223,
                 "strName": "Bearded Warrior",
                 "bUpgrade": false,
                 "bCoins": false,
+                "intCount": 1,
+                "strType": "Helm"
+            },
+            "Face of Chaos": {
+                "intCharId": 57302223,
+                "strName": "Face of Chaos",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Helm"
+            },
+            "Frigid Snowcat Locks": {
+                "intCharId": 57302223,
+                "strName": "Frigid Snowcat Locks",
+                "bUpgrade": true,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Helm"
+            },
+            "Horned Reshaper Helm": {
+                "intCharId": 57302223,
+                "strName": "Horned Reshaper Helm",
+                "bUpgrade": false,
+                "bCoins": true,
                 "intCount": 1,
                 "strType": "Helm"
             },
@@ -1710,6 +1814,30 @@
             "Reborn Sepulchure's Helm": {
                 "intCharId": 57302223,
                 "strName": "Reborn Sepulchure's Helm",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Helm"
+            },
+            "Reshaper Hair": {
+                "intCharId": 57302223,
+                "strName": "Reshaper Hair",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Helm"
+            },
+            "Reshaper Helm": {
+                "intCharId": 57302223,
+                "strName": "Reshaper Helm",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Helm"
+            },
+            "Reshaper Hood": {
+                "intCharId": 57302223,
+                "strName": "Reshaper Hood",
                 "bUpgrade": false,
                 "bCoins": true,
                 "intCount": 1,
@@ -1971,6 +2099,22 @@
                 "intCount": 1,
                 "strType": "Pet"
             },
+            "Soul Crystal ": {
+                "intCharId": 57302223,
+                "strName": "Soul Crystal ",
+                "bUpgrade": true,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Pet"
+            },
+            "Anti-Kolyaban Trident": {
+                "intCharId": 57302223,
+                "strName": "Anti-Kolyaban Trident",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Polearm"
+            },
             "Bone Dust": {
                 "intCharId": 57302223,
                 "strName": "Bone Dust",
@@ -2043,9 +2187,33 @@
                 "intCount": 13,
                 "strType": "Quest Item"
             },
+            "Blade of Awe": {
+                "intCharId": 57302223,
+                "strName": "Blade of Awe",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Sword"
+            },
+            "Iron Dreadsaw": {
+                "intCharId": 57302223,
+                "strName": "Iron Dreadsaw",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Sword"
+            },
             "Necrotic Sword of Doom": {
                 "intCharId": 57302223,
                 "strName": "Necrotic Sword of Doom",
+                "bUpgrade": false,
+                "bCoins": true,
+                "intCount": 1,
+                "strType": "Sword"
+            },
+            "Reshaper Sword": {
+                "intCharId": 57302223,
+                "strName": "Reshaper Sword",
                 "bUpgrade": false,
                 "bCoins": true,
                 "intCount": 1,
@@ -2110,7 +2278,7 @@
         }
     },
     "soulerousxx": {
-        "time": "26 February 2021, 09:47 AM",
+        "time": "26 February 2021, 09:53 AM",
         "inventory": {
             "A Friend of a Fiend": {
                 "intCharId": 43756358,
