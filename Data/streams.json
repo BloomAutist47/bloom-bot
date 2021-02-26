@@ -1300,7 +1300,7 @@
         }
     },
     "weebolate": {
-        "time": "26 February 2021, 09:34 AM",
+        "time": "26 February 2021, 09:44 AM",
         "inventory": {
             "Healer": {
                 "intCharId": 72973339,
@@ -1339,7 +1339,7 @@
                 "strName": "Belrot the Fiend Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 60,
+                "intCount": 66,
                 "strType": "Quest Item"
             },
             "Black Knight Essence": {
@@ -1347,7 +1347,7 @@
                 "strName": "Black Knight Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 66,
                 "strType": "Quest Item"
             },
             "Carnax Essence": {
@@ -1355,7 +1355,7 @@
                 "strName": "Carnax Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 17,
                 "strType": "Quest Item"
             },
             "Chaos Vordred Essence": {
@@ -1387,7 +1387,7 @@
                 "strName": "Tiger Leech Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 6,
+                "intCount": 67,
                 "strType": "Quest Item"
             },
             "Unending Avatar Essence": {
