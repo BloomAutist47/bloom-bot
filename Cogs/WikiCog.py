@@ -99,24 +99,24 @@ class WikiCog(commands.Cog, BaseTools):
                 if "http://i.imgur.com/" in img["src"] or "https://i.imgur.com" in img["src"]:
                     print(img["src"])
                     return img["src"]
-            return "https://cdn.discordapp.com/attachments/805367955923533845/814852887598989342/6M513.png"
+            
         except:
             return "https://cdn.discordapp.com/attachments/805367955923533845/814852887598989342/6M513.png"
 
-        # try:
-        #     image = soup_item.find_all("div", {"class":"yui-content"})[-1].find_all("div")[0].find_all("img")[-1]["src"]
-        #     images = self.check_stuff(image)
-        #     print(images)
-        #     return images
-        # except: pass
+        try:
+            image = soup_item.find_all("div", {"class":"yui-content"})[-1].find_all("div")[0].find_all("img")[-1]["src"]
+            images = self.check_stuff(image)
+            return images
+        except: pass
 
-        # try:
-        #     image = soup_item.find_all("img")[-1]["src"]
-        #     images = self.check_stuff(image)
-        #     print(images)
-        #     return images
-        # except:
-        #     return Nonee
+        try:
+            image = soup_item.find_all("img")[-1]["src"]
+            images = self.check_stuff(image)
+            print(images)
+            return images
+        except:
+            pass
+        return "https://cdn.discordapp.com/attachments/805367955923533845/814852887598989342/6M513.png"
 
     def check_stuff(self, image_url):
         if "https" not in image_url:
