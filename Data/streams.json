@@ -429,6 +429,14 @@
                             "intCount": 1,
                             "strType": "Item"
                         },
+                        "Tainted Core": {
+                            "intCharId": 57302223,
+                            "strName": "Tainted Core",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
                         "Totem of Nulgath": {
                             "intCharId": 57302223,
                             "strName": "Totem of Nulgath",
