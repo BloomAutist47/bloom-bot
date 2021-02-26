@@ -760,7 +760,7 @@
                             "strName": "Creature Creation Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 38,
+                            "intCount": 43,
                             "strType": "Quest Item"
                         },
                         "Dai Tengu Essence": {
@@ -1040,7 +1040,7 @@
                             "strName": "Black Knight Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 41,
+                            "intCount": 45,
                             "strType": "Quest Item"
                         },
                         "Carnax Essence": {
