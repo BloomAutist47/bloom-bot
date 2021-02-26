@@ -752,7 +752,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 32,
+                            "intCount": 35,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
@@ -807,7 +807,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "26 February 2021, 11:11 AM",
+                    "time_scanned": "26 February 2021, 11:12 AM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -1150,7 +1150,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7,
+                            "intCount": 15,
                             "strType": "Quest Item"
                         },
                         "Burning Blade Of Abezeth": {
