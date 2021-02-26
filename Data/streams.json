@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 12:06 PM",
+                    "time_scanned": "26 February 2021, 12:07 PM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -586,7 +586,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 847,
+                            "intCount": 850,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -713,7 +713,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "26 February 2021, 12:06 PM",
+                    "time_scanned": "26 February 2021, 12:07 PM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -831,7 +831,7 @@
                     "target_items": []
                 },
                 "chaosripjaw": {
-                    "time_scanned": "26 February 2021, 12:06 PM",
+                    "time_scanned": "26 February 2021, 12:07 PM",
                     "inventory": {
                         "Battle Swimwear": {
                             "intCharId": 13776017,
@@ -2285,7 +2285,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "26 February 2021, 12:06 PM",
+                    "time_scanned": "26 February 2021, 12:07 PM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -2524,7 +2524,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 14,
+                            "intCount": 23,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -2667,7 +2667,7 @@
                     "target_items": []
                 },
                 "pepe the frog1338": {
-                    "time_scanned": "26 February 2021, 12:06 PM",
+                    "time_scanned": "26 February 2021, 12:07 PM",
                     "inventory": {
                         "Arcane of Nulgath": {
                             "intCharId": 71703813,
@@ -2890,7 +2890,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 15,
+                            "intCount": 24,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -3041,7 +3041,7 @@
                     "target_items": []
                 },
                 "pepe the frog1339": {
-                    "time_scanned": "26 February 2021, 12:06 PM",
+                    "time_scanned": "26 February 2021, 12:08 PM",
                     "inventory": {
                         "Arcane Warfiend of Nulgath": {
                             "intCharId": 71703823,
@@ -3296,7 +3296,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 15,
+                            "intCount": 33,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -3423,7 +3423,7 @@
                     "target_items": []
                 },
                 "pepe the frog1310": {
-                    "time_scanned": "26 February 2021, 12:06 PM",
+                    "time_scanned": "26 February 2021, 12:08 PM",
                     "inventory": {
                         "Dream Palace Guard": {
                             "intCharId": 71703824,
@@ -3526,7 +3526,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 15,
+                            "intCount": 34,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
