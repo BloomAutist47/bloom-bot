@@ -12,7 +12,10 @@ class TestCog(commands.Cog, BaseTools):
 
     @commands.command()
     async def test(self, ctx, *, value=""):
-        searched_role = get(ctx.guild.roles, name='Daily Gifts')
+
+        # searched_role = get(ctx.guild.roles, name='Daily Gifts')
         channel = await self.bot.fetch_channel(801384957364142101)
-        await channel.send(searched_role.mention)
+        # await channel.send(searched_role.mention)
+        await channel.send("<@&814054683651342366>")
+        # await channel.send("<&@814054683651342366>")
         # await channel.send("<@!>")

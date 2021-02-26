@@ -43,7 +43,9 @@ from Cogs.ClassSearchCog import ClassSearchCog
 from Cogs.GuideCog import GuideCog
 from Cogs.WikiCog import WikiCog
 from Cogs.TwitterListener import TwitterListener
+from Cogs.TwitterListener import TwitterCog
 from Cogs.GoogleSearchCog import GoogleSearchCog
+
 # from Cogs.StreamCog import StreamCog
 from Cogs.TestCog import TestCog
 
@@ -54,10 +56,10 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 intents = Intents.all()
-# if os.name == "nt":
-#     Bot = commands.Bot(command_prefix=["'"], description='Bloom Bot Revamped', intents=intents)
-# else:
-Bot = commands.Bot(command_prefix=[";"], description='Bloom Bot Revamped', intents=intents)
+if os.name == "nt":
+    Bot = commands.Bot(command_prefix=["'"], description='Bloom Bot Revamped', intents=intents)
+else:
+    Bot = commands.Bot(command_prefix=[";"], description='Bloom Bot Revamped', intents=intents)
 Bot.remove_command("help")
 
 
@@ -97,16 +99,16 @@ async def on_ready():
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
 
-    auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
-    auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
+    # auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
+    # auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
 
-    api = tweepy.API(auth)
+    # api = tweepy.API(auth)
     # api.verify_credentials()
 
-    tweets_listener = TwitterListener(Bot, api)
-    stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended', is_async=True)
-    print("> Twitter Listener Success")
-    stream.filter(follow=["16480141"], is_async=True)
+    # tweets_listener = TwitterListener(Bot, api)
+    # stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended', is_async=True)
+    # print("> Twitter Listener Success")
+    # stream.filter(follow=["16480141"], is_async=True)
 
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141
@@ -123,7 +125,7 @@ BaseStuff.git_prepare()
 
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
-# Bot.add_cog(TestCog(Bot))
+Bot.add_cog(TestCog(Bot))
 
 # Feature Cogs
 Bot.add_cog(BoatSearchCog(Bot))
@@ -132,21 +134,25 @@ Bot.add_cog(GuideCog(Bot))
 Bot.add_cog(CharacterCog(Bot))
 Bot.add_cog(WikiCog(Bot))
 Bot.add_cog(GoogleSearchCog(Bot))
+Bot.add_cog(TwitterCog(Bot))
+
 # Bot.add_cog(StreamCog(Bot))
 
 # Bot.add_cog(TextUploaders(Bot))
 
 print("> Starting Bot...")
-while True:
-    try:
-        BaseProgram.loop.run_until_complete(Bot.run(DISCORD_TOKEN))
-        print("> Discord Connection...Success!")
-        break
-    except:
-        BaseProgram.loop.close()
-        print("> Failed Connecting to Discord... Trying again.")
-        print("> Reconnecting...")
-        sleep(5)
-        continue
+Bot.run(DISCORD_TOKEN)
+
+# while True:
+#     try:
+#         BaseProgram.loop.run_until_complete(Bot.run(DISCORD_TOKEN))
+#         print("> Discord Connection...Success!")
+#         break
+#     except:
+#         BaseProgram.loop.close()
+#         print("> Failed Connecting to Discord... Trying again.")
+#         print("> Reconnecting...")
+#         sleep(5)
+#         continue
 
 # ➣➣
