@@ -65,7 +65,7 @@ class TweetTools(BaseTools):
         tweet_link = "https://twitter.com/twitter/statuses/"+str(id_)
 
         # Enemy
-        enemy = re.search("(battle the|battle|Battle\sthe|Battle)(.*)(in the|in)\s/", text)
+        enemy = re.search("(battle the|battle|Battle\sthe|Battle)(.*)(in the|in|the)\s/", text)
         if enemy != None:
             enemy = enemy.groups()[1].strip()
             enemy_link = await self.check_website_integrity(enemy)
