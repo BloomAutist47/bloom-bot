@@ -334,6 +334,8 @@
         }
     },
     "TwitterListenerCogSettings": {
-        "Logs": []
+        "Logs": [
+            "[Error at enemy] \nTweet: Battle Lu Niu to get reward drops + merge shop resources to create the Akiban Hanfu armor and select accessories. Then return next week for Year of the Ox daily drops + later this month, we'll have a new LNY event with even MORE gear! https://t.co/7Rjp6sLMXv #LunarNewYear https://t.co/K198woXxs8 Link: http://pbs.twimg.com/media/Etf1pc9XEAIhR9a.jpg"
+        ]
     }
 }
