@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 11:33 AM",
+                    "time_scanned": "26 February 2021, 11:37 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -562,7 +562,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 994,
+                            "intCount": 997,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -570,7 +570,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 789,
+                            "intCount": 792,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -586,7 +586,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 174,
+                            "intCount": 175,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -689,7 +689,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "26 February 2021, 11:33 AM",
+                    "time_scanned": "26 February 2021, 11:37 AM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -728,7 +728,7 @@
                             "strName": "Belrot the Fiend Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 57,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Black Knight Essence": {
@@ -736,7 +736,7 @@
                             "strName": "Black Knight Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 59,
                             "strType": "Quest Item"
                         },
                         "Carnax Essence": {
@@ -807,7 +807,7 @@
                     "target_items": []
                 },
                 "chaosripjaw": {
-                    "time_scanned": "26 February 2021, 11:33 AM",
+                    "time_scanned": "26 February 2021, 11:37 AM",
                     "inventory": {
                         "Battle Swimwear": {
                             "intCharId": 13776017,
