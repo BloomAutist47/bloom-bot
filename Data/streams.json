@@ -1417,13 +1417,21 @@
         }
     },
     "acrolous": {
-        "time": "26 February 2021, 06:03 AM",
+        "time": "26 February 2021, 09:00 AM",
         "inventory": {
             "Diabolical Witch": {
                 "intCharId": 57302223,
                 "strName": "Diabolical Witch",
                 "bUpgrade": false,
                 "bCoins": false,
+                "intCount": 1,
+                "strType": "Armor"
+            },
+            "Fiend Warrior": {
+                "intCharId": 57302223,
+                "strName": "Fiend Warrior",
+                "bUpgrade": false,
+                "bCoins": true,
                 "intCount": 1,
                 "strType": "Armor"
             },
@@ -1840,7 +1848,7 @@
                 "strName": "Totem of Nulgath",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 91,
+                "intCount": 100,
                 "strType": "Item"
             },
             "Treasure Potion": {
@@ -1968,7 +1976,7 @@
                 "strName": "Bone Dust",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 1618,
+                "intCount": 2551,
                 "strType": "Quest Item"
             },
             "Dark Crystal Shard": {
@@ -1976,7 +1984,7 @@
                 "strName": "Dark Crystal Shard",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 982,
+                "intCount": 1000,
                 "strType": "Quest Item"
             },
             "Diamond of Nulgath": {
@@ -1984,7 +1992,7 @@
                 "strName": "Diamond of Nulgath",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 1000,
+                "intCount": 742,
                 "strType": "Quest Item"
             },
             "Essence of Nulgath": {
@@ -1992,7 +2000,7 @@
                 "strName": "Essence of Nulgath",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 72,
+                "intCount": 100,
                 "strType": "Quest Item"
             },
             "Gem of Nulgath": {
@@ -2000,7 +2008,7 @@
                 "strName": "Gem of Nulgath",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 300,
+                "intCount": 169,
                 "strType": "Quest Item"
             },
             "Tainted Gem": {
@@ -2016,7 +2024,7 @@
                 "strName": "Treasure Chest",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 184,
+                "intCount": 192,
                 "strType": "Quest Item"
             },
             "Undead Energy": {
@@ -2024,7 +2032,7 @@
                 "strName": "Undead Energy",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 1601,
+                "intCount": 2671,
                 "strType": "Quest Item"
             },
             "Unidentified 13": {
@@ -2032,7 +2040,7 @@
                 "strName": "Unidentified 13",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 11,
+                "intCount": 13,
                 "strType": "Quest Item"
             },
             "Necrotic Sword of Doom": {
