@@ -1300,7 +1300,7 @@
         }
     },
     "weebolate": {
-        "time": "26 February 2021, 09:44 AM",
+        "time": "26 February 2021, 09:45 AM",
         "inventory": {
             "Healer": {
                 "intCharId": 72973339,
@@ -1355,7 +1355,7 @@
                 "strName": "Carnax Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 17,
+                "intCount": 18,
                 "strType": "Quest Item"
             },
             "Chaos Vordred Essence": {
@@ -2110,7 +2110,7 @@
         }
     },
     "soulerousxx": {
-        "time": "26 February 2021, 09:44 AM",
+        "time": "26 February 2021, 09:45 AM",
         "inventory": {
             "A Friend of a Fiend": {
                 "intCharId": 43756358,
