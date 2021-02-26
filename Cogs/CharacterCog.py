@@ -13,8 +13,7 @@ class CharacterCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
         self.bot = bot
-        self.char_url = "https://account.aq.com/CharPage?id="
-        self.wiki_url = "http://aqwwiki.wikidot.com/"
+
         self.weapon_type = ["Axe", "Bow", "Dagger", "Gun", "Mace", "Polearm", "Staff", "Sword", "Wand"]
         self.house_items = ["Wall Item", "Floor Item"]
         self.miscs = ["Quest Item", "Item"]
@@ -27,9 +26,6 @@ class CharacterCog(commands.Cog, BaseTools):
             "Chaos": "http://aqwwiki.wikidot.com/chaos-faction",
         }
         
-    async def loop_get_content(self, url):
-        result = self.try_till_succeed(lambda: BaseProgram.loop.run_until_complete(self.get_site_content(url)), "loop_get_content")
-        return result
 
     async def multiple_reactions(self, embed_object):
         await embed_object.add_reaction(emoji = "\U0001F9D8") # Classes
@@ -42,17 +38,17 @@ class CharacterCog(commands.Cog, BaseTools):
         await embed_object.add_reaction(emoji = "\U0001F3C6") # Misc Items
         return
 
-    async def search_ccid(self, sites_soup):
+    def search_ccid(self, sites_soup):
         return re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
 
     @commands.command()
     async def ioda(self, ctx, *, char_name=""):
         
-        url = self.char_url + char_name.replace(" ", "+")
-        sites_soup = await self.loop_get_content(url)
+        url = self.convert_aqurl(char_name)
+        sites_soup = await self.get_site_content(URL=url)
 
         try:
-            ccid = await self.search_ccid(sites_soup)
+            ccid = self.search_ccid(sites_soup)
         except:
             try:
                 result = sites_soup.find("div", {"class": "card-body"}).find("p").text
@@ -72,7 +68,7 @@ class CharacterCog(commands.Cog, BaseTools):
 
         # Inventory stuffs
         char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
-        char_inv = await self.loop_get_content(char_inv_url)
+        char_inv = await self.get_site_content(char_inv_url)
         print("here")
         char_inv = char_inv.find("body").text[1:-1].replace("false", "False").replace("true", "True")
         char_inv = literal_eval(char_inv)
@@ -165,10 +161,10 @@ class CharacterCog(commands.Cog, BaseTools):
 
     @commands.command()
     async def char(self, ctx, *, char_name=""):
-        url = self.char_url + char_name.replace(" ", "+")
-        sites_soup = await self.loop_get_content(url)
+        url = self.convert_aqurl(char_name)
+        sites_soup = await self.get_site_content(url)
         try:
-            ccid = re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
+            ccid = self.search_ccid(sites_soup)
         except:
             try:
                 result = sites_soup.find("div", {"class": "card-body"}).find("p").text
@@ -204,7 +200,7 @@ class CharacterCog(commands.Cog, BaseTools):
 
         # Inventory stuffs
         char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
-        char_inv = await self.loop_get_content(char_inv_url)
+        char_inv = await self.get_site_content(char_inv_url)
         char_inv = char_inv.find("body").text[1:-1].replace("false", "False").replace("true", "True")
         char_inv = literal_eval(char_inv)
 
@@ -236,30 +232,30 @@ class CharacterCog(commands.Cog, BaseTools):
             faction_link = self.faction_link[fac]
 
         # Inserts stuffs
+        link_name = self.convert_aqurl(char_full_name)
         embedVar = discord.Embed(title="Character Profile", color=self.block_color)
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
-        # embedVar.add_field(value="Test")
-        char_full_text = f"Name: [{char_full_name}](https://account.aq.com/CharPage?id={char_full_name.replace(' ', '+')})"
+        char_full_text = f"Name: [{char_full_name}]({link_name})"
 
         guild_dat = f"Guild: {char_details['Guild']}"
         guild_length = f"{guild_dat}".ljust(30, "")
         guild_length = guild_length.replace(f"{guild_dat}", "")
         print(guild_length)
 
-        li = self.wiki_url
+        link_class = self.convert_aqurl(char_details['Class'], mode="wiki")
         panel_1_raw = [char_full_text + "\n",
                 f"Level: [{char_details['Level']}](http://aqwwiki.wikidot.com/exp-class-points-rep)" + "\n",
-                f"Class: [{char_details['Class']}]({li + char_details['Class'].lstrip().replace(' ', '-')})" + "\n",
+                f"Class: [{char_details['Class']}]({link_class})" + "\n",
                 f"Faction: [{char_details['Faction']}]({faction_link})" + "\n",
                 f"Guild: [{char_details['Guild']}](https://www.aq.com/lore/guilds)" + guild_length,
                 ]
 
-        link_weapon =li+char_details['Weapon'].lstrip().replace(' ', '-').replace("’", "-")
-        link_armor = li+char_details['Armor'].lstrip().replace(' ', '-').replace("’", "-")
-        link_helm = li+char_details['Helm'].lstrip().replace(' ', '-').replace("’", "-")
-        link_cape = li+char_details['Cape'].lstrip().replace(' ', '-').replace("’", "-")
-        link_pet = li+char_details['Pet'].lstrip().replace(' ', '-').replace("’", "-")    
-        print(link_cape)
+        link_weapon = self.convert_aqurl(char_details['Armor'], mode="wiki")
+        link_armor = self.convert_aqurl(char_details['Armor'], mode="wiki")
+        link_helm = self.convert_aqurl(char_details['Helm'], mode="wiki")
+        link_cape = self.convert_aqurl(char_details['Cape'], mode="wiki")
+        link_pet = self.convert_aqurl(char_details['Pet'], mode="wiki")
+
         panel_2 = f"Weapon: [{char_details['Weapon']}]({link_weapon})\n"\
                 f"Armor: [{char_details['Armor']}]({link_armor})\n"\
                 f"Helm: [{char_details['Helm']}]({link_helm})\n"\
@@ -299,7 +295,7 @@ class CharacterCog(commands.Cog, BaseTools):
         count = 0
         data = {}
         desc = ""
-        sites_soup = self.get_url_item_2(url)
+        sites_soup = await self.get_site_content(url, parser="html.parser")
         servers = sites_soup.find_all("servers")
 
         
@@ -329,7 +325,7 @@ class CharacterCog(commands.Cog, BaseTools):
     # @commands.command()
     # async def charinv(self, ctx):
     #     url = self.char_url + char_name.replace(" ", "+")
-    #     sites_soup = await self.loop_get_content(url)
+    #     sites_soup = await self.get_site_content(url)
     #     try:
     #         ccid = re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
     #     except:
@@ -346,12 +342,12 @@ class CharacterCog(commands.Cog, BaseTools):
 
     #     # Get Badges
     #     char_badge_url = "https://account.aq.com/CharPage/Badges?ccid="+ccid
-    #     char_badges = self.loop_get_content(char_badge_url).find("body").text[1:-1]
+    #     char_badges = self.get_site_content(char_badge_url).find("body").text[1:-1]
     #     char_badges = literal_eval(char_badges)
 
     #     # Get Inventory
     #     char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
-    #     char_inv_raw = await self.loop_get_content(char_inv_url)
+    #     char_inv_raw = await self.get_site_content(char_inv_url)
     #     char_inv = char_inv_raw.find("body").text[1:-1].replace("false", "False").replace("true", "True")
     #     char_inv = literal_eval(char_inv)
 

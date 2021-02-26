@@ -21,6 +21,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 os.chdir('..')
 
 class BaseProgram:
+    # Dynamic attributes
     data = {}
     settings = {}
     database_updating = False
@@ -30,7 +31,14 @@ class BaseProgram:
     author_list_lowercase = []
     class_acronyms = {}
     guides = {}
-    loop = asyncio.get_event_loop()
+
+    if os.name == 'nt':
+        loop = asyncio.ProactorEventLoop() # for subprocess' pipes on Windows
+        asyncio.set_event_loop(loop)
+    else:
+        loop = asyncio.get_event_loop()
+
+    # loop = asyncio.get_event_loop()
     loop_2 = asyncio.new_event_loop()
     nest_asyncio.apply(loop)
     sqlock = True
@@ -597,8 +605,10 @@ class BaseTools(BaseProgram):
     description = "Sets of tool functions to be used by other Cogs"
 
     def setup(self):
+        # Static attributes
         self.block_color = 3066993 
-        
+        self.char_url = "https://account.aq.com/CharPage?id="
+        self.wiki_url = "http://aqwwiki.wikidot.com/"
 
     async def check_word_count(self, ctx, value:str, icon=""):
         """ Description: Checks word is allowed for searching
@@ -906,8 +916,7 @@ class BaseTools(BaseProgram):
         for i in range(0, len(lst), n):
             yield lst[i:i + n]
 
-
-    def try_till_succeed(self, function, name):
+    def floop(self, function, name="x()"):
         while True:
             try:
                 x = function()
@@ -918,104 +927,61 @@ class BaseTools(BaseProgram):
                 print("> Reloading...")
                 continue
 
-    def get_url_item(self, url):
-        while True:
-            try:
-                content = BaseProgram.loop.run_until_complete(self.get_site_content(url))
-                print(f"> Function get executed...Success!")
-                return content
-            except:
-                print(f"> Failed Executing get... Trying again.")
+    def convert_aqurl(self, name, mode="char"):
+        if mode=="char":
+            return  self.char_url + name.replace(" ", "+")
+        elif mode =="wiki":
+            x = name.strip().replace("'", "-").replace(" ", "-")
+            return  self.wiki_url + x
+        elif mode == "wikisearch":
+            return "http://aqwwiki.wikidot.com/search:site/q/" + name.replace(" ", "%20")
+
+    def get_site_content_looped(self, URL:str,  mode="aisonic", name="content_get", 
+        is_soup:bool=True, parser="html5lib", encoding="utf-8", headers={}):
+            result = BaseProgram.loop.run_until_complete(self.get_site_content(URL=URL, mode=mode, 
+                    name=name, is_soup=is_soup, parser=parser, encoding=encoding, headers=headers))
+            return result
+
+    async def get_site_content(self, URL:str,  mode="aisonic", name="content_get", 
+                is_soup:bool=True, parser="html5lib", encoding="utf-8", headers={}):
+
+        if mode == "aisonic":
+            while True:
                 print("> Reloading...")
-                continue
-        
-    def get_url_item_2(self, url):
-        while True:
-            try:
-                content = BaseProgram.loop.run_until_complete(self.get_site_content_2(url))
-                print(f"> Function get executed...Success!")
-                return content
-            except:
-                print(f"> Failed Executing get... Trying again.")
+                try:
+                    client = aiosonic.HTTPClient()
+                    response = await client.get(URL, headers=headers)
+                    text_ = await response.content()
+                    print(f"> Function {name} executed...Success!")
+                    if is_soup:
+                        return Soup(text_.decode(encoding), parser)
+                    else:
+                        return text_.decode(encoding)
+                except:
+                    print(f"> Failed Executing {name}... Trying again.")
+                    continue
+
+        elif mode == "aiohttp":
+            while True:
                 print("> Reloading...")
-                continue
+                try:
+                    async with aiohttp.ClientSession(trust_env=True) as session:
+                        async with session.get(URL, headers=header) as response:
+                            text_ = await response.read()
+                            if is_soup:
+                                return Soup(text_.decode(encoding), parser)
+                            else:
+                                return text_.decode(encoding)
+                except:
+                    print(f"> Failed Executing {name}... Trying again.")
+                    continue
 
-    # async def get_site_content(self, SELECTED_URL):
-    #     async with aiohttp.ClientSession(trust_env=True) as session:
-    #         async with session.get(SELECTED_URL) as response:
-    #             text_ = await response.read()
-    #             return Soup(text_.decode('utf-8'), 'html5lib')
-
-    # async def contentcreator(self, url) -> str :
-    #     async with aiohttp.ClientSession() as session:
-    #         async with session.get(url,allow_redirects=True) as page_response:
-    #             response = await page_response.read()
-    #             soup = Soup(response.decode('cp1252'), 'html5lib')
-    #         if page_response.status == 200:
-    #             return soup
-    #         else:
-    #             return await contentcreator(self, url)
-
-    async def get_site_content(self, SELECTED_URL, header=""):
-        client = aiosonic.HTTPClient()
-        if header:
-            response = await client.get(SELECTED_URL, headers=header)
-        else:
-            response = await client.get(SELECTED_URL)
-        text_ = await response.content()
-        return Soup(text_.decode('utf-8'), 'html5lib')
-
-    async def get_site_content_2(self, SELECTED_URL, header=""):
-        client = aiosonic.HTTPClient()
-        if header:
-            response = await client.get(SELECTED_URL, headers=header)
-        else:
-            response = await client.get(SELECTED_URL)
-        text_ = await response.content()
-        return Soup(text_.decode('utf-8'), 'html.parser')
-
-    async def get_site_txt(self, SELECTED_URL):
-        client = aiosonic.HTTPClient()
-        response = await client.get(SELECTED_URL)
-        text_ = await response.content()
-        return text_
-
-    async def get_site(self, SELECTED_URL, headers=""):
-        client = aiosonic.HTTPClient()
-        response = await client.get(SELECTED_URL, headers=headers)
-        text_ = await response.content()
-        return text_
-    # async def get_site_txt(self, SELECTED_URL):
-    #     async with aiohttp.ClientSession(trust_env=True) as session:
-    #         async with session.get(SELECTED_URL) as response:
-    #             text_ = await response.read()
-    #             return text_
-
-    # async def get_site(self, SELECTED_URL, headers=""):
-    #     async with aiohttp.ClientSession(trust_env=True, headers=headers) as session:
-    #         async with session.get(SELECTED_URL) as response:
-    #             x = await response.read()
-    #             return x
-                 
-        # async with aiohttp.ClientSession(trust_env=True) as session:
-        #     async with session.get(SELECTED_URL) as response:
-        #         text_ = await response.read()
-        #         return Soup(text_.decode('utf-8'), 'html5lib')
 
 class BaseCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
         self.bot = bot
 
-    # @commands.command()
-    # async def test(self, ctx):
-    #     if str(ctx.author.id) == str(252363724894109700):
-    #         if os.name == "nt":
-    #             await self.bot.fetch_channel(799238286539227136)
-    #         else:
-    #             await self.bot.fetch_channel(807587012471029760)
-    #         desc = f"\> <@&{str(807586780324954123)}>"
-    #         await ctx.send(desc)
 
     @commands.command()
     async def bhelp(self, ctx):

@@ -20,18 +20,18 @@ class GoogleSearchCog(commands.Cog, BaseTools):
 
             google_url = 'https://www.google.com/search?q={}&num={}&hl={}'.format(escaped_search_term, number_results+1,
                                                                                   language_code)
-            print(google_url)
-            response = requests.get(google_url, headers=usr_agent)
+            # response = requests.get(google_url, headers=usr_agent)
+            response = self.get_site_content_looped(URL=google_url, headers=usr_agent)
             # response = BaseProgram.loop.run_until_complete(self.get_site(google_url, headers=usr_agent))
             # response.raise_for_status()
 
             # return (response.decode("utf-8"), google_url)
-            return (response.text, google_url)
+            return (response, google_url)
 
-        def parse_results(raw_html):
+        def parse_results(soup):
             links = {}
 
-            soup = Soup(raw_html, 'html.parser')
+            # soup = Soup(raw_html, 'html.parser')
             result_block = soup.find_all('div', attrs={'class': 'g'})
             for result in result_block:
                 link = result.find('a', href=True)
@@ -49,9 +49,9 @@ class GoogleSearchCog(commands.Cog, BaseTools):
         if not value:
             await ctx.send(self.embed_single("Google Search Warning", "Please input a search keyword."))
             return
-
         item = self.search(value, 10)
-        link_all = self.s.tinyurl.short(item[1])
+        # item = self.floop(lambda: self.search(value, 10))
+        link_all = self.floop(lambda: self.s.tinyurl.short(item[1]))
         embedVar = discord.Embed(title=f"Search - __{value}__", color=self.block_color,
             )
         embedVar.set_author(name="Google Chrome", icon_url=BaseProgram.icon_google)

@@ -40,14 +40,15 @@ from Cogs.Base import *
 from Cogs.BoatSearchCog import BoatSearchCog
 from Cogs.CharacterCog import CharacterCog
 from Cogs.ClassSearchCog import ClassSearchCog
+from Cogs.GoogleSearchCog import GoogleSearchCog
 from Cogs.GuideCog import GuideCog
 from Cogs.WikiCog import WikiCog
 from Cogs.TwitterListener import TwitterListener
 from Cogs.TwitterListener import TwitterCog
-from Cogs.GoogleSearchCog import GoogleSearchCog
 
-# from Cogs.StreamCog import StreamCog
-from Cogs.TestCog import TestCog
+
+from Cogs.StreamCog import StreamCog
+# from Cogs.TestCog import TestCog
 
 class BreakProgram(Exception):
     pass
@@ -125,19 +126,18 @@ BaseStuff.git_prepare()
 
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
-Bot.add_cog(TestCog(Bot))
+# Bot.add_cog(TestCog(Bot))
 
 # Feature Cogs
-Bot.add_cog(BoatSearchCog(Bot))
-Bot.add_cog(ClassSearchCog(Bot))
-Bot.add_cog(GuideCog(Bot)) 
-Bot.add_cog(CharacterCog(Bot))
-Bot.add_cog(WikiCog(Bot))
-Bot.add_cog(GoogleSearchCog(Bot))
-Bot.add_cog(TwitterCog(Bot))
+# Bot.add_cog(BoatSearchCog(Bot))
+# Bot.add_cog(CharacterCog(Bot))
+# Bot.add_cog(ClassSearchCog(Bot))
+# Bot.add_cog(GoogleSearchCog(Bot))
+# Bot.add_cog(GuideCog(Bot)) 
+# Bot.add_cog(WikiCog(Bot))
+# Bot.add_cog(TwitterCog(Bot))
 
-# Bot.add_cog(StreamCog(Bot))
-
+Bot.add_cog(StreamCog(Bot))
 # Bot.add_cog(TextUploaders(Bot))
 
 print("> Starting Bot...")

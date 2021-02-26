@@ -18,7 +18,8 @@ class TweetTools(BaseTools):
             "holi-daily",
             "login gift",
             "BONUS daily",
-            "daily drops"
+            "daily drops",
+            "daily gifts"
             ]
         self.mode = ""
 
@@ -42,9 +43,10 @@ class TweetTools(BaseTools):
         x = re.sub("[^A-Za-z0-9\-]+", "", x)
         straight = "http://aqwwiki.wikidot.com/" + x.lower()
         
-        wiki = "http://aqwwiki.wikidot.com/search:site/q/" + x.replace("-", "%20")
+        # wiki = "http://aqwwiki.wikidot.com/search:site/q/" + x.replace("-", "%20")
+        wiki = self.convert_aqurl(item, "wikisearch")
 
-        sites_soup = self.get_url_item(straight)
+        sites_soup = await self.get_site_content(straight)
         try:
             page_content = sites_soup.find("div", {"id":"page-content"})
             page_check = page_content.find("p").text.strip()
@@ -151,8 +153,9 @@ class TwitterCog(commands.Cog, TweetTools):
         print("appending")
         for tweet in (time_line):
             # print(tweet.full_text)
+            tweet_text = tweet.full_text.lower()
             for i in self.key_check:
-                if i in tweet.full_text:
+                if i in tweet_text:
                     got = True
                     break
             if not got:
@@ -175,6 +178,56 @@ class TwitterCog(commands.Cog, TweetTools):
         reversed_list = reversed(tweet_list)
         for tweet in reversed_list:
             await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"])
+
+    @commands.command()
+    async def uponce(self, ctx):
+        allow_ = await self.allow_evaluator(ctx, mode="role_privilege", command_name="updaily")
+        if not allow_:
+            return
+
+        self.mode == "uponce"
+
+        # this code block is another way of doing the thing below
+
+        user = self.api.get_user("Alina_AE")
+
+        got = False
+        time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", count=10, tweet_mode='extended').items(40)
+
+        tweet_list = []
+        count = 0
+
+        for tweet in time_line:
+            print("new")
+            tweet_text = tweet.full_text.lower()
+            for i in self.key_check:
+                if i in tweet_text:
+                    got = True
+                    break
+            if not got:
+                continue
+            if "media" not in tweet.entities:
+                continue
+
+            med = tweet.entities['media']
+            for i in med:
+                if "media_url" in i:
+                    time_ = tweet.created_at.strftime("%d %B %Y")
+                    tweet_list.append({
+                        "tweet": tweet.full_text,
+                        "image_url": i["media_url"],
+                        "id": tweet.id,
+                        "time": time_,
+                        })
+                    count += 1
+                    print(count)
+                    got = False
+                    break
+                    a
+        print("starting")
+        tweet_ = tweet_list[-1]
+        pprint(tweet_)
+        await self.tweet_send(tweet_["tweet"], tweet_["image_url"], tweet_["id"], tweet_["time"])
 
 
 
@@ -199,8 +252,9 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
         if hasattr(status, 'extended_tweet'):
             tweet = status.extended_tweet['full_text']
             got = False
+            tweet_text = tweet.lower()
             for i in self.key_check:
-                if i in tweet:
+                if i in tweet_text:
                     got = True
                     print("GOT")
                     break
@@ -210,7 +264,6 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
             time_ = status.created_at.strftime("%d %B %Y")
             send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, time_), BaseProgram.loop)
-
             send_fut.result()
             return
 
