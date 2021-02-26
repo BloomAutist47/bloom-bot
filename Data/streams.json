@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 11:13 AM",
+                    "time_scanned": "26 February 2021, 11:14 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -689,7 +689,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "26 February 2021, 11:13 AM",
+                    "time_scanned": "26 February 2021, 11:14 AM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -752,7 +752,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 60,
+                            "intCount": 63,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
@@ -807,7 +807,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "26 February 2021, 11:13 AM",
+                    "time_scanned": "26 February 2021, 11:14 AM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -1150,7 +1150,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 32,
+                            "intCount": 34,
                             "strType": "Quest Item"
                         },
                         "Burning Blade Of Abezeth": {
