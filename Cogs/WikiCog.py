@@ -62,7 +62,7 @@ class WikiCog(commands.Cog, BaseTools):
         else: embedVar = self.embed_single("Wiki Search", desc)
         if image:
             print("YUPS")
-            embedVar.set_image(url=image)
+            embedVar.set_thumbnail(url=image)
         if not only_wiki:
             embedVar.add_field(name="All Result", value=f"[Click here for all result]({wiki})", inline=False)
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)

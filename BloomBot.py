@@ -54,10 +54,10 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 intents = Intents.all()
-if os.name == "nt":
-    Bot = commands.Bot(command_prefix=["'"], description='Bloom Bot Revamped', intents=intents)
-else:
-    Bot = commands.Bot(command_prefix=[";"], description='Bloom Bot Revamped', intents=intents)
+# if os.name == "nt":
+#     Bot = commands.Bot(command_prefix=["'"], description='Bloom Bot Revamped', intents=intents)
+# else:
+Bot = commands.Bot(command_prefix=[";"], description='Bloom Bot Revamped', intents=intents)
 Bot.remove_command("help")
 
 
