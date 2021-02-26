@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 11:30 AM",
+                    "time_scanned": "26 February 2021, 11:32 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -689,7 +689,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "26 February 2021, 11:30 AM",
+                    "time_scanned": "26 February 2021, 11:32 AM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -728,7 +728,7 @@
                             "strName": "Belrot the Fiend Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7,
+                            "intCount": 54,
                             "strType": "Quest Item"
                         },
                         "Black Knight Essence": {
@@ -807,7 +807,7 @@
                     "target_items": []
                 },
                 "chaosripjaw": {
-                    "time_scanned": "26 February 2021, 11:30 AM",
+                    "time_scanned": "26 February 2021, 11:32 AM",
                     "inventory": {
                         "Battle Swimwear": {
                             "intCharId": 13776017,
