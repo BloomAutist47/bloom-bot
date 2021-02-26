@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 11:00 AM",
+                    "time_scanned": "26 February 2021, 11:01 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -689,7 +689,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "26 February 2021, 11:00 AM",
+                    "time_scanned": "26 February 2021, 11:01 AM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -776,7 +776,7 @@
                             "strName": "Tiger Leech Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 18,
+                            "intCount": 32,
                             "strType": "Quest Item"
                         },
                         "Unending Avatar Essence": {
@@ -1054,7 +1054,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 8,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
