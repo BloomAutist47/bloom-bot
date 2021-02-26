@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 11:14 AM",
+                    "time_scanned": "26 February 2021, 11:27 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -562,7 +562,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 985,
+                            "intCount": 993,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -570,7 +570,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 780,
+                            "intCount": 788,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -586,7 +586,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 170,
+                            "intCount": 174,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -689,7 +689,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "26 February 2021, 11:14 AM",
+                    "time_scanned": "26 February 2021, 11:27 AM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -752,7 +752,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 63,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
@@ -760,7 +760,7 @@
                             "strName": "Creature Creation Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 38,
                             "strType": "Quest Item"
                         },
                         "Dai Tengu Essence": {
@@ -768,7 +768,7 @@
                             "strName": "Dai Tengu Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Tiger Leech Essence": {
@@ -784,7 +784,7 @@
                             "strName": "Unending Avatar Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Void Dragon Essence": {
@@ -792,7 +792,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Default Staff": {
@@ -804,10 +804,12 @@
                             "strType": "Staff"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Chaos Vordred Essence"
+                    ]
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "26 February 2021, 11:14 AM",
+                    "time_scanned": "26 February 2021, 11:27 AM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -982,7 +984,7 @@
                             "strName": "Void Aura",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6620,
+                            "intCount": 6650,
                             "strType": "Item"
                         },
                         "Voucher of Nulgath": {
@@ -1022,7 +1024,7 @@
                             "strName": "Astral Ephemerite Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 79,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Belrot the Fiend Essence": {
@@ -1038,7 +1040,7 @@
                             "strName": "Black Knight Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 41,
                             "strType": "Quest Item"
                         },
                         "Carnax Essence": {
@@ -1046,7 +1048,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -1054,7 +1056,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
@@ -1070,7 +1072,7 @@
                             "strName": "Dai Tengu Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Dark Crystal Shard": {
@@ -1118,7 +1120,7 @@
                             "strName": "Tiger Leech Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Treasure Chest": {
@@ -1134,7 +1136,7 @@
                             "strName": "Unending Avatar Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 67,
+                            "intCount": 7,
                             "strType": "Quest Item"
                         },
                         "Unidentified 13": {
@@ -1150,7 +1152,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 34,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Burning Blade Of Abezeth": {
@@ -1186,7 +1188,9 @@
                             "strType": "Wall Item"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Chaos Vordred Essence"
+                    ]
                 }
             },
             "time": 60,
