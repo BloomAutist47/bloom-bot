@@ -947,7 +947,6 @@ class BaseTools(BaseProgram):
 
         if mode == "aisonic":
             while True:
-                print("> Reloading...")
                 try:
                     client = aiosonic.HTTPClient()
                     response = await client.get(URL, headers=headers)
@@ -958,6 +957,7 @@ class BaseTools(BaseProgram):
                     else:
                         return text_.decode(encoding)
                 except:
+                    await client.delete(URL)
                     print(f"> Failed Executing {name}... Trying again.")
                     continue
 

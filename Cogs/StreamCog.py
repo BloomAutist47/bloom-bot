@@ -24,9 +24,9 @@ class StreamCog(commands.Cog, BaseTools):
                 "add": {},
                 "remove": {}
             }
-
+        self.set_item_cmd = ["all", "set", "remove"]
     @commands.command()
-    async def setstream(self, ctx, *, value=""):
+    async def streamset(self, ctx, *, value=""):
         if not value:
             await ctx.send("Please Input value.")
             return
@@ -78,20 +78,68 @@ class StreamCog(commands.Cog, BaseTools):
         return
 
     @commands.command()
-    async def setitems(self, ctx, mode:str="", *, value=""):
-        if mode != "all" or mode != "set":
+    async def streamsetitems(self, ctx, mode, *, value):
+        mode = mode.strip()
+        print(mode)
+        if mode not in self.set_item_cmd:
             await ctx.send("➣ Please enter either `all` or `set` in <mode>.")
             return
-        value = value.lower()
+        if not value:
+            await ctx.send("➣ Please enter either a value.")
+            return
 
+        id_ = str(ctx.author.id)
+        value = value.split(",")
+        not_accepted = []
+        done = False
+        # Modes
         if mode == "all":
-            # for name in value:
-            pass
+            for name in BaseProgram.streams["users"][id_]["stream_list"]:
+                for items in value:
+                    items = items.strip()
+                    print(items)
+                    if items in BaseProgram.streams["users"][id_]["stream_list"][name]["inventory"]:
+                        if items not in BaseProgram.streams["users"][id_]["stream_list"][name]["target_items"]:
+                            print("yesd")
+                            BaseProgram.streams["users"][id_]["stream_list"][name]["target_items"].append(items)
+                            if not done:
+                                done = True
+                        else:
+                            continue
+                    else:
+                        not_accepted.append(f"{name}: {items}")
+            if done:
+                await ctx.send("➣ Item all Completed.")
 
-
+        # [chaosripjaw, acrolous]=void essence, [item, ripjaw]=dragon shit
+        print("valu: ", value)
         if mode == "set":
+            for raw in value:
+                items = raw.split("=")[-1].strip()
+                players = raw.split("=")[0].lower().replace("[", "").replace("]", "").split(",")
+                print(items)
+                for name in players:
+                    name = name.strip()
+                    if items in BaseProgram.streams["users"][id_]["stream_list"][name]["inventory"]:
+                        if items not in BaseProgram.streams["users"][id_]["stream_list"][name]["target_items"]:
+                            BaseProgram.streams["users"][id_]["stream_list"][name]["target_items"].append(items)
+                            if not done:
+                                done = True
+                        else:
+                            continue
+                    else:
+                        not_accepted.append(f"{name}: {items}")
+            if done:
+                await ctx.send("➣ Item Set Completed.")
+
+        if not_accepted:
+            embedVar = self.item_not_accepted_embed(not_accepted)
+            await ctx.send(embed=embedVar)
+
+        self.file_save("streams-settings")
+        self.git_save("streams-settings")
             
-            pass
+        #     pass
 
     @commands.command()
     async def stream(self, ctx, *, value=""):
@@ -99,7 +147,7 @@ class StreamCog(commands.Cog, BaseTools):
         
         id_ = str(ctx.author.id)
         if id_ not in BaseProgram.streams["users"]:
-            await ctx.send("➣ Please register yourself with atleast one aqw account using `;setstream player_name, player_namer, player, etc...`")
+            await ctx.send("➣ Please register yourself with atleast one aqw account using `;streamset player_name, player_namer, player, etc...`")
             return
         # await ctx.send("\u200b\n\n\n\u200b")
 
@@ -112,6 +160,7 @@ class StreamCog(commands.Cog, BaseTools):
             values = value.lower().split(",")
             for name in values:
                 await self.stream_method(ctx, name, id_)
+
 
         if self.char_rejected:
             embedVar = self.char_rejected_embed()
@@ -208,21 +257,21 @@ class StreamCog(commands.Cog, BaseTools):
 
                 if type_ == "change":
                     item = diff[1].split(".")[0]
-                    check_ = self.is_target_item(item)
+                    check_ = self.is_target_item(name, item, id_)
                     if check_:
                         data["change"][item] = {"prev": diff[2][0], "next": diff[2][1]}
                     continue
                 if type_ == "add":
                     for added in diff[2]:
                         item = added[0]
-                        check_ = self.is_target_item(item)
+                        check_ = self.is_target_item(name, item, id_)
                         if check_:
                             data["add"][item] = added[1]
                     continue
                 if type_ == "remove":
                     for removed in diff[2]:
                         item = removed[0]
-                        check_ = self.is_target_item(item)
+                        check_ = self.is_target_item(name, item, id_)
                         if check_:
                             data["remove"][item] = removed[1]
                     continue
@@ -292,11 +341,11 @@ class StreamCog(commands.Cog, BaseTools):
             data[i["strName"]] = i
         return data
 
-    def is_target_item(self, item, id_):
-        BaseProgram.streams["users"][id_]["stream_list"][name]["inventory"]
-        if not user["target_items"]:
+    def is_target_item(self, name, item, id_):
+        targets = BaseProgram.streams["users"][id_]["stream_list"][name]["target_items"]
+        if not targets:
             return True
-        if item in user["target_items"]:
+        if item in targets:
             return True
         return False
 
@@ -314,4 +363,11 @@ class StreamCog(commands.Cog, BaseTools):
             value_list=self.char_exists, block_count=10,
             two_collumn=True, icon=BaseProgram.icon_auqw)
         self.char_exists = []
+        return embedVar
+
+    def item_not_accepted_embed(self, not_accepted):
+        embedVar = self.embed_multi_text(title="AutoQuest Worlds", field_name="These items are not accepted.",
+            description="Make sure to check the player character page. `;streamsetitems mode item, item, item, etc...` will only work if the item is currently on the player inventory and appears on the Character Page. Copy the EXACT NAME on the char page.", 
+            value_list=not_accepted, block_count=10,
+            two_collumn=True, icon=BaseProgram.icon_auqw)
         return embedVar
