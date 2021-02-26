@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 12:09 PM",
+                    "time_scanned": "26 February 2021, 12:12 PM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -429,6 +429,14 @@
                             "intCount": 1,
                             "strType": "Item"
                         },
+                        "Tainted Core": {
+                            "intCharId": 57302223,
+                            "strName": "Tainted Core",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
                         "Totem of Nulgath": {
                             "intCharId": 57302223,
                             "strName": "Totem of Nulgath",
@@ -586,7 +594,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 853,
+                            "intCount": 862,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -602,7 +610,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 183,
+                            "intCount": 186,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
