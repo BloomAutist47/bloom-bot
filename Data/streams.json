@@ -53,6 +53,14 @@
                             "intCount": 1,
                             "strType": "Cape"
                         },
+                        "ArchPaladin": {
+                            "intCharId": 57302223,
+                            "strName": "ArchPaladin",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
                         "Imperial Chunin": {
                             "intCharId": 57302223,
                             "strName": "Imperial Chunin",
@@ -620,6 +628,14 @@
                             "bCoins": true,
                             "intCount": 13,
                             "strType": "Quest Item"
+                        },
+                        "2017 Honorable Hero Blade": {
+                            "intCharId": 57302223,
+                            "strName": "2017 Honorable Hero Blade",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Sword"
                         },
                         "Necrotic Sword of Doom": {
                             "intCharId": 57302223,
