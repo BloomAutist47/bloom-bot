@@ -16,19 +16,6 @@
             766627412179550228
         ]
     },
-    "StreamCogSettings": {
-        "users": {
-            "252363724894109700": {
-                "stream_list": [
-                    "Acrolous",
-                    "SoulerousXX",
-                    "Weebolate"
-                ],
-                "time": 30,
-                "target_items": {}
-            }
-        }
-    },
     "ClassSearchCogSettings": {
         "legends_link": "https://cdn.discordapp.com/attachments/805367955923533845/807995288483921920/intructions.png"
     },
