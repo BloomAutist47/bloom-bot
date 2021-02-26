@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 11:38 AM",
+                    "time_scanned": "26 February 2021, 11:44 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -562,7 +562,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 997,
+                            "intCount": 1000,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -570,7 +570,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 792,
+                            "intCount": 796,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -586,7 +586,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 175,
+                            "intCount": 177,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -689,7 +689,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "26 February 2021, 11:38 AM",
+                    "time_scanned": "26 February 2021, 11:44 AM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -776,7 +776,7 @@
                             "strName": "Tiger Leech Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 13,
+                            "intCount": 31,
                             "strType": "Quest Item"
                         },
                         "Unending Avatar Essence": {
@@ -807,7 +807,7 @@
                     "target_items": []
                 },
                 "chaosripjaw": {
-                    "time_scanned": "26 February 2021, 11:38 AM",
+                    "time_scanned": "26 February 2021, 11:44 AM",
                     "inventory": {
                         "Battle Swimwear": {
                             "intCharId": 13776017,
