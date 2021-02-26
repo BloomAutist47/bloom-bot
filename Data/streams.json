@@ -838,7 +838,9 @@
                             "strType": "Staff"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Carnax Essence"
+                    ]
                 },
                 "chaosripjaw": {
                     "time_scanned": "26 February 2021, 12:07 PM",
