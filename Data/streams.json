@@ -1300,7 +1300,7 @@
         }
     },
     "weebolate": {
-        "time": "26 February 2021, 09:33 AM",
+        "time": "26 February 2021, 09:34 AM",
         "inventory": {
             "Healer": {
                 "intCharId": 72973339,
@@ -1339,7 +1339,7 @@
                 "strName": "Belrot the Fiend Essence",
                 "bUpgrade": false,
                 "bCoins": true,
-                "intCount": 52,
+                "intCount": 60,
                 "strType": "Quest Item"
             },
             "Black Knight Essence": {
