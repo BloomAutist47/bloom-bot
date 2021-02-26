@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "26 February 2021, 11:53 AM",
+                    "time_scanned": "26 February 2021, 12:00 PM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -429,14 +429,6 @@
                             "intCount": 1,
                             "strType": "Item"
                         },
-                        "Tainted Core": {
-                            "intCharId": 57302223,
-                            "strName": "Tainted Core",
-                            "bUpgrade": true,
-                            "bCoins": false,
-                            "intCount": 1,
-                            "strType": "Item"
-                        },
                         "Totem of Nulgath": {
                             "intCharId": 57302223,
                             "strName": "Totem of Nulgath",
@@ -586,7 +578,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 811,
+                            "intCount": 835,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -602,7 +594,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 179,
+                            "intCount": 181,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -713,7 +705,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "26 February 2021, 11:53 AM",
+                    "time_scanned": "26 February 2021, 12:00 PM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -831,7 +823,7 @@
                     "target_items": []
                 },
                 "chaosripjaw": {
-                    "time_scanned": "26 February 2021, 11:53 AM",
+                    "time_scanned": "26 February 2021, 12:00 PM",
                     "inventory": {
                         "Battle Swimwear": {
                             "intCharId": 13776017,
