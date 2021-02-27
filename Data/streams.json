@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "27 February 2021, 03:51 AM",
+                    "time_scanned": "27 February 2021, 04:01 AM",
                     "inventory": {
                         "Archfiend Warlord": {
                             "intCharId": 57302223,
@@ -466,7 +466,7 @@
                             "strName": "Totem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 94,
+                            "intCount": 95,
                             "strType": "Item"
                         },
                         "Treasure Potion": {
@@ -610,7 +610,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 864,
+                            "intCount": 867,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -618,7 +618,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 404,
+                            "intCount": 407,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -634,7 +634,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 42,
+                            "intCount": 44,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -747,7 +747,7 @@
                     ]
                 },
                 "weebolate": {
-                    "time_scanned": "27 February 2021, 03:51 AM",
+                    "time_scanned": "27 February 2021, 04:01 AM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -868,7 +868,7 @@
                     ]
                 },
                 "chaosripjaw": {
-                    "time_scanned": "27 February 2021, 03:51 AM",
+                    "time_scanned": "27 February 2021, 04:01 AM",
                     "inventory": {
                         "Battle Swimwear": {
                             "intCharId": 13776017,
@@ -2322,7 +2322,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "27 February 2021, 03:51 AM",
+                    "time_scanned": "27 February 2021, 04:01 AM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -2634,7 +2634,7 @@
                     ]
                 },
                 "pepe the frog1338": {
-                    "time_scanned": "27 February 2021, 03:51 AM",
+                    "time_scanned": "27 February 2021, 04:01 AM",
                     "inventory": {
                         "Arcane of Nulgath": {
                             "intCharId": 71703813,
@@ -3010,7 +3010,7 @@
                     ]
                 },
                 "pepe the frog1339": {
-                    "time_scanned": "27 February 2021, 03:52 AM",
+                    "time_scanned": "27 February 2021, 04:01 AM",
                     "inventory": {
                         "Arcane Warfiend of Nulgath": {
                             "intCharId": 71703823,
@@ -3394,7 +3394,7 @@
                     ]
                 },
                 "pepe the frog1310": {
-                    "time_scanned": "27 February 2021, 03:52 AM",
+                    "time_scanned": "27 February 2021, 04:02 AM",
                     "inventory": {
                         "Dream Palace Guard": {
                             "intCharId": 71703824,
