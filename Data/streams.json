@@ -863,7 +863,8 @@
                         }
                     },
                     "target_items": [
-                        "Carnax Essence"
+                        "Carnax Essence",
+                        "Void Aura"
                     ]
                 },
                 "chaosripjaw": {
@@ -2628,7 +2629,9 @@
                             "strType": "Wall Item"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Void Aura"
+                    ]
                 },
                 "pepe the frog1338": {
                     "time_scanned": "27 February 2021, 03:48 AM",
@@ -3002,7 +3005,9 @@
                             "strType": "Wall Item"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Void Aura"
+                    ]
                 },
                 "pepe the frog1339": {
                     "time_scanned": "27 February 2021, 03:48 AM",
@@ -3384,7 +3389,9 @@
                             "strType": "Wall Item"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Void Aura"
+                    ]
                 },
                 "pepe the frog1310": {
                     "time_scanned": "27 February 2021, 03:48 AM",
@@ -3550,7 +3557,9 @@
                             "strType": "Quest Item"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Void Aura"
+                    ]
                 }
             },
             "time": 60,
