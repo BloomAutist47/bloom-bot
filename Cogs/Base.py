@@ -6,6 +6,7 @@ import github3
 import requests
 import asyncio
 import aiosonic
+from aiosonic.timeout import Timeouts
 import aiohttp
 import discord
 import nest_asyncio
@@ -937,19 +938,28 @@ class BaseTools(BaseProgram):
             return "http://aqwwiki.wikidot.com/search:site/q/" + name.replace(" ", "%20")
 
     def get_site_content_looped(self, URL:str,  mode="aisonic", name="content_get", 
-        is_soup:bool=True, parser="html5lib", encoding="utf-8", headers={}):
+        is_soup:bool=True, parser="html5lib", encoding="utf-8", headers={}, handle_cookies=False):
             result = BaseProgram.loop.run_until_complete(self.get_site_content(URL=URL, mode=mode, 
-                    name=name, is_soup=is_soup, parser=parser, encoding=encoding, headers=headers))
+                    name=name, is_soup=is_soup, parser=parser, encoding=encoding, headers=headers,
+                    handle_cookies=handle_cookies
+                    ))
             return result
-
+          # timeouts = Timeouts(
+          #       sock_read=timeout["sock_read"],
+          #       sock_connect=timeout["sock_connect"],
+          #       pool_acquire=timeout["pool_acquire"],
+          #       request_timeout=timeout["request_timeout"],
+          #   )
     async def get_site_content(self, URL:str,  mode="aisonic", name="content_get", 
-                is_soup:bool=True, parser="html5lib", encoding="utf-8", headers={}):
+                is_soup:bool=True, parser="html5lib", encoding="utf-8", headers={},
+                handle_cookies=False):
 
         if mode == "aisonic":
             while True:
                 try:
-                    client = aiosonic.HTTPClient()
-                    response = await client.get(URL, headers=headers)
+                    client = aiosonic.HTTPClient(handle_cookies=handle_cookies)
+                    response = await client.get(URL)
+                    print("RESP: ", response)
                     text_ = await response.content()
                     print(f"> Function {name} executed...Success!")
                     if is_soup:
@@ -957,16 +967,23 @@ class BaseTools(BaseProgram):
                     else:
                         return text_.decode(encoding)
                 except:
-                    await client.delete(URL)
+                    # client.shutdown()
                     print(f"> Failed Executing {name}... Trying again.")
                     continue
 
         elif mode == "aiohttp":
+            # async with aiohttp.ClientSession(trust_env=True) as session:
+            #     async with session.get(URL, headers=header) as response:
+            #         text_ = await response.read()
+            #         if is_soup:
+            #             return Soup(text_.decode(encoding), parser)
+            #         else:
+            #             return text_.decode(encoding)
             while True:
                 print("> Reloading...")
                 try:
                     async with aiohttp.ClientSession(trust_env=True) as session:
-                        async with session.get(URL, headers=header) as response:
+                        async with session.get(URL) as response:
                             text_ = await response.read()
                             if is_soup:
                                 return Soup(text_.decode(encoding), parser)

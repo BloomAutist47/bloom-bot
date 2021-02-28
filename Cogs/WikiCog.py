@@ -99,9 +99,8 @@ class WikiCog(commands.Cog, BaseTools):
                 if "http://i.imgur.com/" in img["src"] or "https://i.imgur.com" in img["src"]:
                     print(img["src"])
                     return img["src"]
-            
         except:
-            return "https://cdn.discordapp.com/attachments/805367955923533845/814852887598989342/6M513.png"
+            pass
 
         try:
             image = soup_item.find_all("div", {"class":"yui-content"})[-1].find_all("div")[0].find_all("img")[-1]["src"]

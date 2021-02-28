@@ -3,29 +3,13 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "27 February 2021, 04:01 AM",
+                    "time_scanned": "27 February 2021, 11:46 AM",
                     "inventory": {
-                        "Archfiend Warlord": {
-                            "intCharId": 57302223,
-                            "strName": "Archfiend Warlord",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 1,
-                            "strType": "Armor"
-                        },
                         "Diabolical Witch": {
                             "intCharId": 57302223,
                             "strName": "Diabolical Witch",
                             "bUpgrade": false,
                             "bCoins": false,
-                            "intCount": 1,
-                            "strType": "Armor"
-                        },
-                        "Fiend Warrior": {
-                            "intCharId": 57302223,
-                            "strName": "Fiend Warrior",
-                            "bUpgrade": false,
-                            "bCoins": true,
                             "intCount": 1,
                             "strType": "Armor"
                         },
@@ -37,41 +21,9 @@
                             "intCount": 1,
                             "strType": "Armor"
                         },
-                        "Arch DoomKnight Cape Sword": {
-                            "intCharId": 57302223,
-                            "strName": "Arch DoomKnight Cape Sword",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 1,
-                            "strType": "Cape"
-                        },
-                        "Archfiend Warlord Wings": {
-                            "intCharId": 57302223,
-                            "strName": "Archfiend Warlord Wings",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 1,
-                            "strType": "Cape"
-                        },
                         "Archfiend Warlord Wings + Tail": {
                             "intCharId": 57302223,
                             "strName": "Archfiend Warlord Wings + Tail",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 1,
-                            "strType": "Cape"
-                        },
-                        "Fiend Warrior Tail": {
-                            "intCharId": 57302223,
-                            "strName": "Fiend Warrior Tail",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 1,
-                            "strType": "Cape"
-                        },
-                        "Fiend Warrior Tail + Fur": {
-                            "intCharId": 57302223,
-                            "strName": "Fiend Warrior Tail + Fur",
                             "bUpgrade": false,
                             "bCoins": true,
                             "intCount": 1,
@@ -365,6 +317,14 @@
                             "intCount": 1,
                             "strType": "House"
                         },
+                        "Archfiend's Favor": {
+                            "intCharId": 57302223,
+                            "strName": "Archfiend's Favor",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 625,
+                            "strType": "Item"
+                        },
                         "Chaoroot": {
                             "intCharId": 57302223,
                             "strName": "Chaoroot",
@@ -466,7 +426,7 @@
                             "strName": "Totem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 95,
+                            "intCount": 100,
                             "strType": "Item"
                         },
                         "Treasure Potion": {
@@ -512,14 +472,6 @@
                         "Unidentified 24": {
                             "intCharId": 57302223,
                             "strName": "Unidentified 24",
-                            "bUpgrade": false,
-                            "bCoins": false,
-                            "intCount": 1,
-                            "strType": "Item"
-                        },
-                        "Unidentified 25": {
-                            "intCharId": 57302223,
-                            "strName": "Unidentified 25",
                             "bUpgrade": false,
                             "bCoins": false,
                             "intCount": 1,
@@ -610,7 +562,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 867,
+                            "intCount": 846,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -618,7 +570,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 407,
+                            "intCount": 106,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -626,7 +578,7 @@
                             "strName": "Essence of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 50,
+                            "intCount": 100,
                             "strType": "Quest Item"
                         },
                         "Gem of Nulgath": {
@@ -634,7 +586,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 44,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -650,7 +602,7 @@
                             "strName": "Treasure Chest",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 192,
+                            "intCount": 198,
                             "strType": "Quest Item"
                         },
                         "Undead Energy": {
@@ -668,14 +620,6 @@
                             "bCoins": true,
                             "intCount": 13,
                             "strType": "Quest Item"
-                        },
-                        "2017 Honorable Hero Blade": {
-                            "intCharId": 57302223,
-                            "strName": "2017 Honorable Hero Blade",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 1,
-                            "strType": "Sword"
                         },
                         "Necrotic Sword of Doom": {
                             "intCharId": 57302223,
@@ -747,7 +691,7 @@
                     ]
                 },
                 "weebolate": {
-                    "time_scanned": "27 February 2021, 04:01 AM",
+                    "time_scanned": "27 February 2021, 11:46 AM",
                     "inventory": {
                         "Healer": {
                             "intCharId": 72973339,
@@ -770,7 +714,7 @@
                             "strName": "Void Aura",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 1455,
+                            "intCount": 1715,
                             "strType": "Item"
                         },
                         "Astral Ephemerite Essence": {
@@ -778,7 +722,7 @@
                             "strName": "Astral Ephemerite Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 68,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Belrot the Fiend Essence": {
@@ -794,7 +738,7 @@
                             "strName": "Black Knight Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 60,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Carnax Essence": {
@@ -834,7 +778,7 @@
                             "strName": "Tiger Leech Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 13,
                             "strType": "Quest Item"
                         },
                         "Unending Avatar Essence": {
@@ -850,7 +794,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Default Staff": {
@@ -868,7 +812,7 @@
                     ]
                 },
                 "chaosripjaw": {
-                    "time_scanned": "27 February 2021, 04:01 AM",
+                    "time_scanned": "27 February 2021, 11:46 AM",
                     "inventory": {
                         "Battle Swimwear": {
                             "intCharId": 13776017,
@@ -2322,7 +2266,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "27 February 2021, 04:01 AM",
+                    "time_scanned": "27 February 2021, 11:46 AM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -2634,7 +2578,7 @@
                     ]
                 },
                 "pepe the frog1338": {
-                    "time_scanned": "27 February 2021, 04:01 AM",
+                    "time_scanned": "27 February 2021, 11:46 AM",
                     "inventory": {
                         "Arcane of Nulgath": {
                             "intCharId": 71703813,
@@ -2785,7 +2729,7 @@
                             "strName": "Treasure Potion",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 4,
+                            "intCount": 5,
                             "strType": "Item"
                         },
                         "Unidentified 10": {
@@ -2801,7 +2745,7 @@
                             "strName": "Void Aura",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7265,
+                            "intCount": 7380,
                             "strType": "Item"
                         },
                         "Voucher of Nulgath": {
@@ -2833,7 +2777,7 @@
                             "strName": "Astral Ephemerite Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 83,
+                            "intCount": 68,
                             "strType": "Quest Item"
                         },
                         "Belrot the Fiend Essence": {
@@ -2841,7 +2785,7 @@
                             "strName": "Belrot the Fiend Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Black Knight Essence": {
@@ -2849,7 +2793,7 @@
                             "strName": "Black Knight Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Carnax Essence": {
@@ -2857,7 +2801,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -2865,7 +2809,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
@@ -2873,7 +2817,7 @@
                             "strName": "Creature Creation Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 5,
+                            "intCount": 59,
                             "strType": "Quest Item"
                         },
                         "Dai Tengu Essence": {
@@ -2881,7 +2825,7 @@
                             "strName": "Dai Tengu Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 5,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Dark Crystal Shard": {
@@ -2937,7 +2881,7 @@
                             "strName": "Tiger Leech Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Treasure Chest": {
@@ -2953,7 +2897,7 @@
                             "strName": "Unending Avatar Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Unidentified 13": {
@@ -2969,7 +2913,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Chaos Widow Staff": {
@@ -3010,7 +2954,7 @@
                     ]
                 },
                 "pepe the frog1339": {
-                    "time_scanned": "27 February 2021, 04:01 AM",
+                    "time_scanned": "27 February 2021, 11:47 AM",
                     "inventory": {
                         "Arcane Warfiend of Nulgath": {
                             "intCharId": 71703823,
@@ -3169,7 +3113,7 @@
                             "strName": "Treasure Potion",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 196,
+                            "intCount": 197,
                             "strType": "Item"
                         },
                         "Unidentified 10": {
@@ -3185,7 +3129,7 @@
                             "strName": "Void Aura",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7370,
+                            "intCount": 7500,
                             "strType": "Item"
                         },
                         "Voucher of Nulgath": {
@@ -3236,62 +3180,6 @@
                             "intCount": 1,
                             "strType": "Polearm"
                         },
-                        "Astral Ephemerite Essence": {
-                            "intCharId": 71703823,
-                            "strName": "Astral Ephemerite Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 68,
-                            "strType": "Quest Item"
-                        },
-                        "Belrot the Fiend Essence": {
-                            "intCharId": 71703823,
-                            "strName": "Belrot the Fiend Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 66,
-                            "strType": "Quest Item"
-                        },
-                        "Black Knight Essence": {
-                            "intCharId": 71703823,
-                            "strName": "Black Knight Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 6,
-                            "strType": "Quest Item"
-                        },
-                        "Carnax Essence": {
-                            "intCharId": 71703823,
-                            "strName": "Carnax Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 6,
-                            "strType": "Quest Item"
-                        },
-                        "Chaos Vordred Essence": {
-                            "intCharId": 71703823,
-                            "strName": "Chaos Vordred Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 7,
-                            "strType": "Quest Item"
-                        },
-                        "Creature Creation Essence": {
-                            "intCharId": 71703823,
-                            "strName": "Creature Creation Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 6,
-                            "strType": "Quest Item"
-                        },
-                        "Dai Tengu Essence": {
-                            "intCharId": 71703823,
-                            "strName": "Dai Tengu Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 7,
-                            "strType": "Quest Item"
-                        },
                         "Dark Crystal Shard": {
                             "intCharId": 71703823,
                             "strName": "Dark Crystal Shard",
@@ -3332,14 +3220,6 @@
                             "intCount": 1000,
                             "strType": "Quest Item"
                         },
-                        "Tiger Leech Essence": {
-                            "intCharId": 71703823,
-                            "strName": "Tiger Leech Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 6,
-                            "strType": "Quest Item"
-                        },
                         "Treasure Chest": {
                             "intCharId": 71703823,
                             "strName": "Treasure Chest",
@@ -3348,28 +3228,12 @@
                             "intCount": 144,
                             "strType": "Quest Item"
                         },
-                        "Unending Avatar Essence": {
-                            "intCharId": 71703823,
-                            "strName": "Unending Avatar Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 6,
-                            "strType": "Quest Item"
-                        },
                         "Unidentified 13": {
                             "intCharId": 71703823,
                             "strName": "Unidentified 13",
                             "bUpgrade": false,
                             "bCoins": true,
                             "intCount": 10,
-                            "strType": "Quest Item"
-                        },
-                        "Void Dragon Essence": {
-                            "intCharId": 71703823,
-                            "strName": "Void Dragon Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 7,
                             "strType": "Quest Item"
                         },
                         "Burning Blade Of Abezeth": {
@@ -3394,7 +3258,7 @@
                     ]
                 },
                 "pepe the frog1310": {
-                    "time_scanned": "27 February 2021, 04:02 AM",
+                    "time_scanned": "27 February 2021, 11:47 AM",
                     "inventory": {
                         "Dream Palace Guard": {
                             "intCharId": 71703824,
@@ -3465,72 +3329,8 @@
                             "strName": "Void Aura",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7375,
+                            "intCount": 7500,
                             "strType": "Item"
-                        },
-                        "Astral Ephemerite Essence": {
-                            "intCharId": 71703824,
-                            "strName": "Astral Ephemerite Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 68,
-                            "strType": "Quest Item"
-                        },
-                        "Belrot the Fiend Essence": {
-                            "intCharId": 71703824,
-                            "strName": "Belrot the Fiend Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 66,
-                            "strType": "Quest Item"
-                        },
-                        "Black Knight Essence": {
-                            "intCharId": 71703824,
-                            "strName": "Black Knight Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 6,
-                            "strType": "Quest Item"
-                        },
-                        "Carnax Essence": {
-                            "intCharId": 71703824,
-                            "strName": "Carnax Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 6,
-                            "strType": "Quest Item"
-                        },
-                        "Chaos Vordred Essence": {
-                            "intCharId": 71703824,
-                            "strName": "Chaos Vordred Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 6,
-                            "strType": "Quest Item"
-                        },
-                        "Creature Creation Essence": {
-                            "intCharId": 71703824,
-                            "strName": "Creature Creation Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 5,
-                            "strType": "Quest Item"
-                        },
-                        "Dai Tengu Essence": {
-                            "intCharId": 71703824,
-                            "strName": "Dai Tengu Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 6,
-                            "strType": "Quest Item"
-                        },
-                        "Tiger Leech Essence": {
-                            "intCharId": 71703824,
-                            "strName": "Tiger Leech Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 7,
-                            "strType": "Quest Item"
                         },
                         "Treasure Chest": {
                             "intCharId": 71703824,
@@ -3538,22 +3338,6 @@
                             "bUpgrade": false,
                             "bCoins": true,
                             "intCount": 233,
-                            "strType": "Quest Item"
-                        },
-                        "Unending Avatar Essence": {
-                            "intCharId": 71703824,
-                            "strName": "Unending Avatar Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 5,
-                            "strType": "Quest Item"
-                        },
-                        "Void Dragon Essence": {
-                            "intCharId": 71703824,
-                            "strName": "Void Dragon Essence",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 7,
                             "strType": "Quest Item"
                         }
                     },

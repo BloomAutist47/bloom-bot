@@ -6,6 +6,7 @@ from datetime import datetime
 from pprint import pprint
 from pytz import timezone
 import dictdiffer  
+from bs4 import BeautifulSoup as Soup
 # from bs4 import BeautifulSoup as Soup
 
 
@@ -25,6 +26,14 @@ class StreamCog(commands.Cog, BaseTools):
                 "remove": {}
             }
         self.set_item_cmd = ["all", "set", "remove"]
+
+        self.usr_agent = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/61.0.3163.100 Safari/537.36'}
+        self.user_agent = {
+                'User-Agent': "DiscordBot"
+            }
+
     @commands.command()
     async def streamset(self, ctx, *, value=""):
         if not value:
@@ -80,7 +89,6 @@ class StreamCog(commands.Cog, BaseTools):
     @commands.command()
     async def streamsetitems(self, ctx, mode, *, value):
         mode = mode.strip()
-        print(mode)
         if mode not in self.set_item_cmd:
             await ctx.send("➣ Please enter either `all` or `set` in <mode>.")
             return
@@ -97,10 +105,9 @@ class StreamCog(commands.Cog, BaseTools):
             for name in BaseProgram.streams["users"][id_]["stream_list"]:
                 for items in value:
                     items = items.strip()
-                    print(items)
                     if items in BaseProgram.streams["users"][id_]["stream_list"][name]["inventory"]:
                         if items not in BaseProgram.streams["users"][id_]["stream_list"][name]["target_items"]:
-                            print("yesd")
+
                             BaseProgram.streams["users"][id_]["stream_list"][name]["target_items"].append(items)
                             if not done:
                                 done = True
@@ -112,12 +119,10 @@ class StreamCog(commands.Cog, BaseTools):
                 await ctx.send("➣ Item all Completed.")
 
         # [chaosripjaw, acrolous]=void essence, [item, ripjaw]=dragon shit
-        print("valu: ", value)
         if mode == "set":
             for raw in value:
                 items = raw.split("=")[-1].strip()
                 players = raw.split("=")[0].lower().replace("[", "").replace("]", "").split(",")
-                print(items)
                 for name in players:
                     name = name.strip()
                     if items in BaseProgram.streams["users"][id_]["stream_list"][name]["inventory"]:
@@ -202,33 +207,42 @@ class StreamCog(commands.Cog, BaseTools):
 
     async def check_name(self, ctx, name):
         char_link = 'https://account.aq.com/CharPage?id=' + name.replace(" ", "+")
-        try:
-            sites_soup = await self.get_site_content(char_link)
-            char_full_name = sites_soup.find("div", {"class":"card-header"}).find("h1").text
-        except:
-            self.char_rejected.append(name)
-            return None
-        try:
-            ccid = re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
-            self.char_accepted.append(char_full_name)
-            return (char_full_name, ccid, char_link)
-        except:
-            try:
-                result = sites_soup.find("div", {"class": "card-body"}).find("p").text
-                result = result.replace("Disabled", "**Disabled**").replace("wandering in the Void", "**wandering in The Void**").replace("frozen solid", "**Frozen solid**").replace("Deleted", "**Deleted**").replace("our","AQW's")
-                result += f" [Click Here]({url}) to go to their Character Page."
-                self.char_rejected.append(name)
-                return None
-            except:
-                self.char_rejected.append(name)
-                return None
+
+        site_ = self.get_site_content_looped(char_link, is_soup=False, handle_cookies=True)
+        sites_soup = Soup(site_, "html5lib")
+        char_full_name = sites_soup.find("div", {"class":"card-header"}).find("h1").text
+        ccid = re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
+        self.char_accepted.append(char_full_name)
+        return (char_full_name, ccid, char_link)
+
+        # try:
+        #     sites_soup = await self.get_site_content_looped(char_link)
+        #     char_full_name = sites_soup.find("div", {"class":"card-header"}).find("h1").text
+
+        #     ccid = re.search("var ccid = [\d]+;", sites_soup.find_all("script")[-2].text)[0][11:-1]
+        #     self.char_accepted.append(char_full_name)
+        #     print("SHIT: ", ccid)
+        #     return (char_full_name, ccid, char_link)
+        # except:
+        #     try:
+        #         result = sites_soup.find("div", {"class": "card-body"}).find("p").text
+        #         result = result.replace("Disabled", "**Disabled**").replace("wandering in the Void", "**wandering in The Void**").replace("frozen solid", "**Frozen solid**").replace("Deleted", "**Deleted**").replace("our","AQW's")
+        #         result += f" [Click Here]({url}) to go to their Character Page."
+        #         self.char_rejected.append(name)
+        #         print("nope this")
+        #         return None
+        #     except:
+        #         print("this part")
+        #         self.char_rejected.append(name)
+        #         return None
 
 
     async def get_inv_changes(self, name, ccid, id_):
 
         # Get inventory data
         char_inv_url = "https://account.aq.com/CharPage/Inventory?ccid="+ccid
-        char_inv = await self.get_site_content(char_inv_url)
+        char_soup = self.get_site_content_looped(char_inv_url, is_soup=False, handle_cookies=True)
+        char_inv = Soup(char_soup, "html5lib")
         char_inv = char_inv.find("body").text[1:-1].replace("false", "False").replace("true", "True")
         char_inv = literal_eval(char_inv)
         char_inv = self.convert_form(char_inv)
@@ -280,12 +294,6 @@ class StreamCog(commands.Cog, BaseTools):
             BaseProgram.streams["users"][id_]["stream_list"][name]["inventory"] = char_inv
 
             return data
-
-            
-
-            
-        
-
         
     async def send_to_discord(self, name, url, data):
         some = False
