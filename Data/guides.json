@@ -53,7 +53,7 @@
         "type":"text",
         "auth":"auqw",
         "title":"Windows Update Flash Fix",
-        "description":"Grimoire no longer working after windows update? Do this. When downloaded, your browser may show a warning. Ignore it.",
+        "description":"Grimoire no longer working after windows update? Do this.\nWhen downloaded, your browser may show a warning. Ignore it.",
         "content":[
             "1.) Download [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe)",
             "2.) Install it.",
