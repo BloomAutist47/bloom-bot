@@ -55,9 +55,8 @@
         "title":"Windows Update Flash Fix",
         "description":"Grimoire no longer working after windows update? Do this.",
         "content":[
-            "1.) Download [flash_player_ax.exe](https://cdn.discordapp.com/attachments/811305082377207866/812362328964202546/install_flash_player_ax.exe) and install it. (Your browser may show a warning, ignore it.)",
-            "2.) Right click on the flash_player_ax.exe and open properties.",
-            "3.) Run it as windows 7 compatibility then install it."
+            "1.) Download [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe) (Your browser may show a warning, ignore it.)",
+            "2.) Install it. (\"No cumpatibility fuck-shit required\" - Desolate)"
         ],
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/813316873566814228/yu041l5bhli61.png"
     },
