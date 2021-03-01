@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 03:52 AM",
+                    "time_scanned": "01 March 2021, 04:06 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -98,7 +98,7 @@
                             "strName": "Creature Creation Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 29,
                             "strType": "Quest Item"
                         },
                         "Dai Tengu Essence": {
@@ -130,7 +130,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 39,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Default Staff": {
