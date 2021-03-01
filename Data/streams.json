@@ -1,7 +1,766 @@
 {
     "users": {
         "252363724894109700": {
-            "stream_list": {},
+            "stream_list": {
+                "acrolous": {
+                    "time_scanned": "01 March 2021, 06:10 AM",
+                    "inventory": {
+                        "Diabolical Witch": {
+                            "intCharId": 57302223,
+                            "strName": "Diabolical Witch",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Sepulchure's DoomKnight Armor": {
+                            "intCharId": 57302223,
+                            "strName": "Sepulchure's DoomKnight Armor",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Archfiend Warlord Wings + Tail": {
+                            "intCharId": 57302223,
+                            "strName": "Archfiend Warlord Wings + Tail",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Cape"
+                        },
+                        "PUNisher Cape": {
+                            "intCharId": 57302223,
+                            "strName": "PUNisher Cape",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Cape"
+                        },
+                        "ArchPaladin": {
+                            "intCharId": 57302223,
+                            "strName": "ArchPaladin",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Imperial Chunin": {
+                            "intCharId": 57302223,
+                            "strName": "Imperial Chunin",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Legion Revenant": {
+                            "intCharId": 57302223,
+                            "strName": "Legion Revenant",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Mage": {
+                            "intCharId": 57302223,
+                            "strName": "Mage",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Necromancer": {
+                            "intCharId": 57302223,
+                            "strName": "Necromancer",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Void Highlord": {
+                            "intCharId": 57302223,
+                            "strName": "Void Highlord",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "ArchFiend Enchanted Orbs": {
+                            "intCharId": 57302223,
+                            "strName": "ArchFiend Enchanted Orbs",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Dagger"
+                        },
+                        "Mortal Fiend Armblades": {
+                            "intCharId": 57302223,
+                            "strName": "Mortal Fiend Armblades",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Dagger"
+                        },
+                        "Mortal Fiend Claws": {
+                            "intCharId": 57302223,
+                            "strName": "Mortal Fiend Claws",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Dagger"
+                        },
+                        "Mortal Fiend Katanas": {
+                            "intCharId": 57302223,
+                            "strName": "Mortal Fiend Katanas",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Dagger"
+                        },
+                        "Mortal Fiend Reavers": {
+                            "intCharId": 57302223,
+                            "strName": "Mortal Fiend Reavers",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Dagger"
+                        },
+                        "Blue Onsen Slipper": {
+                            "intCharId": 57302223,
+                            "strName": "Blue Onsen Slipper",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Blue Vending Machine": {
+                            "intCharId": 57302223,
+                            "strName": "Blue Vending Machine",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Cardboard Box": {
+                            "intCharId": 57302223,
+                            "strName": "Cardboard Box",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Crystallis Lounge Chair II": {
+                            "intCharId": 57302223,
+                            "strName": "Crystallis Lounge Chair II",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Crystallis Partition": {
+                            "intCharId": 57302223,
+                            "strName": "Crystallis Partition",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Double Trobble": {
+                            "intCharId": 57302223,
+                            "strName": "Double Trobble",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Empress' Tea Party Guest": {
+                            "intCharId": 57302223,
+                            "strName": "Empress' Tea Party Guest",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Flower Petals": {
+                            "intCharId": 57302223,
+                            "strName": "Flower Petals",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Gold Crystallis K29": {
+                            "intCharId": 57302223,
+                            "strName": "Gold Crystallis K29",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "House Zard": {
+                            "intCharId": 57302223,
+                            "strName": "House Zard",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Kitty Boo Boo's Secret": {
+                            "intCharId": 57302223,
+                            "strName": "Kitty Boo Boo's Secret",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Peace was Never an Option": {
+                            "intCharId": 57302223,
+                            "strName": "Peace was Never an Option",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Pet Shop Plant": {
+                            "intCharId": 57302223,
+                            "strName": "Pet Shop Plant",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Pile o' Stuff": {
+                            "intCharId": 57302223,
+                            "strName": "Pile o' Stuff",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "PUNisher House Guard": {
+                            "intCharId": 57302223,
+                            "strName": "PUNisher House Guard",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Purple Dragon Fountain": {
+                            "intCharId": 57302223,
+                            "strName": "Purple Dragon Fountain",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Straw Bedding": {
+                            "intCharId": 57302223,
+                            "strName": "Straw Bedding",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Swaggy's Wheel Of Love": {
+                            "intCharId": 57302223,
+                            "strName": "Swaggy's Wheel Of Love",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Toy Wheel of Destiny": {
+                            "intCharId": 57302223,
+                            "strName": "Toy Wheel of Destiny",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Trellis and Heart Potted Trees ": {
+                            "intCharId": 57302223,
+                            "strName": "Trellis and Heart Potted Trees ",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Twig's Borgar": {
+                            "intCharId": 57302223,
+                            "strName": "Twig's Borgar",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Wheel Of Love": {
+                            "intCharId": 57302223,
+                            "strName": "Wheel Of Love",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Reborn Sepulchure's Helm": {
+                            "intCharId": 57302223,
+                            "strName": "Reborn Sepulchure's Helm",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Unidentified 9": {
+                            "intCharId": 57302223,
+                            "strName": "Unidentified 9",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Akiba Tea House": {
+                            "intCharId": 57302223,
+                            "strName": "Akiba Tea House",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "House"
+                        },
+                        "COOLtage": {
+                            "intCharId": 57302223,
+                            "strName": "COOLtage",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "House"
+                        },
+                        "Hollowborn Mansion": {
+                            "intCharId": 57302223,
+                            "strName": "Hollowborn Mansion",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "House"
+                        },
+                        "Legion Castle": {
+                            "intCharId": 57302223,
+                            "strName": "Legion Castle",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "House"
+                        },
+                        "Yulgath's Inn": {
+                            "intCharId": 57302223,
+                            "strName": "Yulgath's Inn",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "House"
+                        },
+                        "Archfiend's Favor": {
+                            "intCharId": 57302223,
+                            "strName": "Archfiend's Favor",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 625,
+                            "strType": "Item"
+                        },
+                        "Chaoroot": {
+                            "intCharId": 57302223,
+                            "strName": "Chaoroot",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 3,
+                            "strType": "Item"
+                        },
+                        "Dage's Favor": {
+                            "intCharId": 57302223,
+                            "strName": "Dage's Favor",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 91,
+                            "strType": "Item"
+                        },
+                        "Doomatter": {
+                            "intCharId": 57302223,
+                            "strName": "Doomatter",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 5,
+                            "strType": "Item"
+                        },
+                        "Hadean Onyx of Nulgath": {
+                            "intCharId": 57302223,
+                            "strName": "Hadean Onyx of Nulgath",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 2,
+                            "strType": "Item"
+                        },
+                        "Magenta Dye": {
+                            "intCharId": 57302223,
+                            "strName": "Magenta Dye",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 90,
+                            "strType": "Item"
+                        },
+                        "Makai Sceptre": {
+                            "intCharId": 57302223,
+                            "strName": "Makai Sceptre",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Mystic Parchment": {
+                            "intCharId": 57302223,
+                            "strName": "Mystic Parchment",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 99,
+                            "strType": "Item"
+                        },
+                        "Mystic Shards": {
+                            "intCharId": 57302223,
+                            "strName": "Mystic Shards",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 91,
+                            "strType": "Item"
+                        },
+                        "Necrot": {
+                            "intCharId": 57302223,
+                            "strName": "Necrot",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 2,
+                            "strType": "Item"
+                        },
+                        "Nulgath's Approval": {
+                            "intCharId": 57302223,
+                            "strName": "Nulgath's Approval",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 5000,
+                            "strType": "Item"
+                        },
+                        "Scroll Key": {
+                            "intCharId": 57302223,
+                            "strName": "Scroll Key",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Tainted Soul": {
+                            "intCharId": 57302223,
+                            "strName": "Tainted Soul",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 3,
+                            "strType": "Item"
+                        },
+                        "Totem of Nulgath": {
+                            "intCharId": 57302223,
+                            "strName": "Totem of Nulgath",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 100,
+                            "strType": "Item"
+                        },
+                        "Treasure Potion": {
+                            "intCharId": 57302223,
+                            "strName": "Treasure Potion",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 49,
+                            "strType": "Item"
+                        },
+                        "Undead Essence": {
+                            "intCharId": 57302223,
+                            "strName": "Undead Essence",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1000,
+                            "strType": "Item"
+                        },
+                        "Unidentified 10": {
+                            "intCharId": 57302223,
+                            "strName": "Unidentified 10",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 532,
+                            "strType": "Item"
+                        },
+                        "Unidentified 22": {
+                            "intCharId": 57302223,
+                            "strName": "Unidentified 22",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Unidentified 23": {
+                            "intCharId": 57302223,
+                            "strName": "Unidentified 23",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Unidentified 24": {
+                            "intCharId": 57302223,
+                            "strName": "Unidentified 24",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Unidentified 25": {
+                            "intCharId": 57302223,
+                            "strName": "Unidentified 25",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Unidentified 34": {
+                            "intCharId": 57302223,
+                            "strName": "Unidentified 34",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 80,
+                            "strType": "Item"
+                        },
+                        "Verick's ID": {
+                            "intCharId": 57302223,
+                            "strName": "Verick's ID",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Voucher of Nulgath": {
+                            "intCharId": 57302223,
+                            "strName": "Voucher of Nulgath",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Voucher of Nulgath (non-mem)": {
+                            "intCharId": 57302223,
+                            "strName": "Voucher of Nulgath (non-mem)",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Mortal Fiend Armblade": {
+                            "intCharId": 57302223,
+                            "strName": "Mortal Fiend Armblade",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Mace"
+                        },
+                        "Mortal Fiend Claw": {
+                            "intCharId": 57302223,
+                            "strName": "Mortal Fiend Claw",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Mace"
+                        },
+                        "Diamond PvP Amulet +5500": {
+                            "intCharId": 57302223,
+                            "strName": "Diamond PvP Amulet +5500",
+                            "bUpgrade": true,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Necklace"
+                        },
+                        "Crag & Bamboozle": {
+                            "intCharId": 57302223,
+                            "strName": "Crag & Bamboozle",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Pet"
+                        },
+                        "Doom Kitten": {
+                            "intCharId": 57302223,
+                            "strName": "Doom Kitten",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Pet"
+                        },
+                        "Nulgath's Birthday Gift": {
+                            "intCharId": 57302223,
+                            "strName": "Nulgath's Birthday Gift",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Pet"
+                        },
+                        "Unidentified 19": {
+                            "intCharId": 57302223,
+                            "strName": "Unidentified 19",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Pet"
+                        },
+                        "Bone Dust": {
+                            "intCharId": 57302223,
+                            "strName": "Bone Dust",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 2551,
+                            "strType": "Quest Item"
+                        },
+                        "Dark Crystal Shard": {
+                            "intCharId": 57302223,
+                            "strName": "Dark Crystal Shard",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1000,
+                            "strType": "Quest Item"
+                        },
+                        "Diamond of Nulgath": {
+                            "intCharId": 57302223,
+                            "strName": "Diamond of Nulgath",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 509,
+                            "strType": "Quest Item"
+                        },
+                        "Essence of Nulgath": {
+                            "intCharId": 57302223,
+                            "strName": "Essence of Nulgath",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 100,
+                            "strType": "Quest Item"
+                        },
+                        "Gem of Nulgath": {
+                            "intCharId": 57302223,
+                            "strName": "Gem of Nulgath",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 226,
+                            "strType": "Quest Item"
+                        },
+                        "Tainted Gem": {
+                            "intCharId": 57302223,
+                            "strName": "Tainted Gem",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1000,
+                            "strType": "Quest Item"
+                        },
+                        "Treasure Chest": {
+                            "intCharId": 57302223,
+                            "strName": "Treasure Chest",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 206,
+                            "strType": "Quest Item"
+                        },
+                        "Undead Energy": {
+                            "intCharId": 57302223,
+                            "strName": "Undead Energy",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 2671,
+                            "strType": "Quest Item"
+                        },
+                        "Unidentified 13": {
+                            "intCharId": 57302223,
+                            "strName": "Unidentified 13",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 13,
+                            "strType": "Quest Item"
+                        },
+                        "Mortal Fiend Katana": {
+                            "intCharId": 57302223,
+                            "strName": "Mortal Fiend Katana",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "Necrotic Sword of Doom": {
+                            "intCharId": 57302223,
+                            "strName": "Necrotic Sword of Doom",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "Love You A Latte": {
+                            "intCharId": 57302223,
+                            "strName": "Love You A Latte",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Wall Item"
+                        },
+                        "Lycan Plaque": {
+                            "intCharId": 57302223,
+                            "strName": "Lycan Plaque",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Wall Item"
+                        },
+                        "Parrot": {
+                            "intCharId": 57302223,
+                            "strName": "Parrot",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Wall Item"
+                        },
+                        "Pink Lantern V": {
+                            "intCharId": 57302223,
+                            "strName": "Pink Lantern V",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Wall Item"
+                        },
+                        "Pink Neon Heart (L)": {
+                            "intCharId": 57302223,
+                            "strName": "Pink Neon Heart (L)",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Wall Item"
+                        },
+                        "Pink Neon Heart (R)": {
+                            "intCharId": 57302223,
+                            "strName": "Pink Neon Heart (R)",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Wall Item"
+                        },
+                        "The Crying Warrior Painting": {
+                            "intCharId": 57302223,
+                            "strName": "The Crying Warrior Painting",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Wall Item"
+                        }
+                    },
+                    "target_items": []
+                }
+            },
             "time": 60,
             "target_items": {}
         }
