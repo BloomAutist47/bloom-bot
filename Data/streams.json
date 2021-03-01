@@ -758,7 +758,9 @@
                             "strType": "Wall Item"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Gem of Nulgath"
+                    ]
                 },
                 "weebolate": {
                     "time_scanned": "01 March 2021, 05:40 AM",
@@ -901,7 +903,8 @@
                         }
                     },
                     "target_items": [
-                        "Void Aura"
+                        "Void Aura",
+                        "Dai Tengu Essence"
                     ]
                 }
             },
