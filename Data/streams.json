@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 02:41 AM",
+                    "time_scanned": "01 March 2021, 02:43 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -618,7 +618,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 106,
+                            "intCount": 108,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -634,7 +634,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 160,
+                            "intCount": 162,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -739,7 +739,7 @@
                     ]
                 },
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 02:41 AM",
+                    "time_scanned": "01 March 2021, 02:43 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -884,7 +884,7 @@
                     ]
                 },
                 "chaosripjaw": {
-                    "time_scanned": "01 March 2021, 02:41 AM",
+                    "time_scanned": "01 March 2021, 02:43 AM",
                     "inventory": {
                         "Battle Swimwear": {
                             "intCharId": 13776017,
@@ -2338,7 +2338,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "01 March 2021, 02:41 AM",
+                    "time_scanned": "01 March 2021, 02:43 AM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -2626,7 +2626,7 @@
                     ]
                 },
                 "pepe the frog1338": {
-                    "time_scanned": "01 March 2021, 02:41 AM",
+                    "time_scanned": "01 March 2021, 02:43 AM",
                     "inventory": {
                         "Arcane of Nulgath": {
                             "intCharId": 71703813,
@@ -2882,7 +2882,7 @@
                     ]
                 },
                 "pepe the frog1339": {
-                    "time_scanned": "01 March 2021, 02:41 AM",
+                    "time_scanned": "01 March 2021, 02:43 AM",
                     "inventory": {
                         "Arcane Warfiend of Nulgath": {
                             "intCharId": 71703823,
@@ -3146,7 +3146,7 @@
                     ]
                 },
                 "pepe the frog1310": {
-                    "time_scanned": "01 March 2021, 02:41 AM",
+                    "time_scanned": "01 March 2021, 02:44 AM",
                     "inventory": {
                         "Dream Palace Guard": {
                             "intCharId": 71703824,
