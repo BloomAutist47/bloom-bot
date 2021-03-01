@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 07:16 AM",
+                    "time_scanned": "01 March 2021, 07:34 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -618,7 +618,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 883,
+                            "intCount": 889,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -626,7 +626,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 112,
+                            "intCount": 118,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -642,7 +642,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 207,
+                            "intCount": 210,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -761,7 +761,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 07:16 AM",
+                    "time_scanned": "01 March 2021, 07:34 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -832,7 +832,7 @@
                             "strName": "Black Knight Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 34,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Carnax Essence": {
@@ -840,7 +840,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 8,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -872,7 +872,7 @@
                             "strName": "Tiger Leech Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Unending Avatar Essence": {
@@ -903,7 +903,7 @@
                     "target_items": []
                 },
                 "sad": {
-                    "time_scanned": "01 March 2021, 07:16 AM",
+                    "time_scanned": "01 March 2021, 07:34 AM",
                     "inventory": {
                         "Dark Caster X": {
                             "intCharId": 3364617,
