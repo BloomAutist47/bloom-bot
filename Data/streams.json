@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 01:50 AM",
+                    "time_scanned": "01 March 2021, 02:06 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -114,14 +114,6 @@
                             "strName": "Mortal Fiend Reavers",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 1,
-                            "strType": "Dagger"
-                        },
-                        "Unidentified 6": {
-                            "intCharId": 57302223,
-                            "strName": "Unidentified 6",
-                            "bUpgrade": false,
-                            "bCoins": false,
                             "intCount": 1,
                             "strType": "Dagger"
                         },
@@ -301,14 +293,6 @@
                             "intCount": 1,
                             "strType": "Floor Item"
                         },
-                        "Unidentified 1": {
-                            "intCharId": 57302223,
-                            "strName": "Unidentified 1",
-                            "bUpgrade": true,
-                            "bCoins": false,
-                            "intCount": 1,
-                            "strType": "Gun"
-                        },
                         "Reborn Sepulchure's Helm": {
                             "intCharId": 57302223,
                             "strName": "Reborn Sepulchure's Helm",
@@ -482,7 +466,7 @@
                             "strName": "Treasure Potion",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 47,
+                            "intCount": 49,
                             "strType": "Item"
                         },
                         "Undead Essence": {
@@ -626,7 +610,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 998,
+                            "intCount": 1000,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -634,7 +618,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 85,
+                            "intCount": 88,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -650,7 +634,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 152,
+                            "intCount": 153,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -666,7 +650,7 @@
                             "strName": "Treasure Chest",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 208,
+                            "intCount": 206,
                             "strType": "Quest Item"
                         },
                         "Undead Energy": {
@@ -685,27 +669,11 @@
                             "intCount": 13,
                             "strType": "Quest Item"
                         },
-                        "P\u00e1ssaro Rosa Fan": {
-                            "intCharId": 57302223,
-                            "strName": "P\u00e1ssaro Rosa Fan",
-                            "bUpgrade": false,
-                            "bCoins": false,
-                            "intCount": 1,
-                            "strType": "Staff"
-                        },
                         "Necrotic Sword of Doom": {
                             "intCharId": 57302223,
                             "strName": "Necrotic Sword of Doom",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 1,
-                            "strType": "Sword"
-                        },
-                        "Unidentified 20": {
-                            "intCharId": 57302223,
-                            "strName": "Unidentified 20",
-                            "bUpgrade": false,
-                            "bCoins": false,
                             "intCount": 1,
                             "strType": "Sword"
                         },
@@ -771,7 +739,7 @@
                     ]
                 },
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 01:50 AM",
+                    "time_scanned": "01 March 2021, 02:06 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -916,7 +884,7 @@
                     ]
                 },
                 "chaosripjaw": {
-                    "time_scanned": "01 March 2021, 01:50 AM",
+                    "time_scanned": "01 March 2021, 02:06 AM",
                     "inventory": {
                         "Battle Swimwear": {
                             "intCharId": 13776017,
@@ -2370,7 +2338,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "01 March 2021, 01:50 AM",
+                    "time_scanned": "01 March 2021, 02:06 AM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -2658,7 +2626,7 @@
                     ]
                 },
                 "pepe the frog1338": {
-                    "time_scanned": "01 March 2021, 01:51 AM",
+                    "time_scanned": "01 March 2021, 02:06 AM",
                     "inventory": {
                         "Arcane of Nulgath": {
                             "intCharId": 71703813,
@@ -2914,7 +2882,7 @@
                     ]
                 },
                 "pepe the frog1339": {
-                    "time_scanned": "01 March 2021, 01:51 AM",
+                    "time_scanned": "01 March 2021, 02:06 AM",
                     "inventory": {
                         "Arcane Warfiend of Nulgath": {
                             "intCharId": 71703823,
@@ -3178,7 +3146,7 @@
                     ]
                 },
                 "pepe the frog1310": {
-                    "time_scanned": "01 March 2021, 01:51 AM",
+                    "time_scanned": "01 March 2021, 02:06 AM",
                     "inventory": {
                         "Dream Palace Guard": {
                             "intCharId": 71703824,
