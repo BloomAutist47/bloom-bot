@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 04:55 AM",
+                    "time_scanned": "01 March 2021, 04:59 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -490,7 +490,7 @@
                             "strName": "Unidentified 10",
                             "bUpgrade": false,
                             "bCoins": false,
-                            "intCount": 409,
+                            "intCount": 415,
                             "strType": "Item"
                         },
                         "Unidentified 22": {
@@ -634,7 +634,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 326,
+                            "intCount": 335,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -650,7 +650,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 201,
+                            "intCount": 203,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -761,7 +761,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 04:55 AM",
+                    "time_scanned": "01 March 2021, 04:59 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -808,7 +808,7 @@
                             "strName": "Void Aura",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 2435,
+                            "intCount": 2465,
                             "strType": "Item"
                         },
                         "Astral Ephemerite Essence": {
@@ -816,7 +816,7 @@
                             "strName": "Astral Ephemerite Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 72,
+                            "intCount": 64,
                             "strType": "Quest Item"
                         },
                         "Belrot the Fiend Essence": {
@@ -824,7 +824,7 @@
                             "strName": "Belrot the Fiend Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 16,
                             "strType": "Quest Item"
                         },
                         "Black Knight Essence": {
@@ -832,7 +832,7 @@
                             "strName": "Black Knight Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Carnax Essence": {
@@ -840,7 +840,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -848,7 +848,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
@@ -856,7 +856,7 @@
                             "strName": "Creature Creation Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 39,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Dai Tengu Essence": {
@@ -864,7 +864,7 @@
                             "strName": "Dai Tengu Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 67,
+                            "intCount": 7,
                             "strType": "Quest Item"
                         },
                         "Tiger Leech Essence": {
@@ -872,7 +872,7 @@
                             "strName": "Tiger Leech Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Unending Avatar Essence": {
@@ -880,7 +880,7 @@
                             "strName": "Unending Avatar Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 67,
+                            "intCount": 7,
                             "strType": "Quest Item"
                         },
                         "Void Dragon Essence": {
@@ -888,7 +888,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 67,
+                            "intCount": 7,
                             "strType": "Quest Item"
                         },
                         "Default Staff": {
