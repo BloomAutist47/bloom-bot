@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 04:59 AM",
+                    "time_scanned": "01 March 2021, 05:04 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -490,7 +490,7 @@
                             "strName": "Unidentified 10",
                             "bUpgrade": false,
                             "bCoins": false,
-                            "intCount": 415,
+                            "intCount": 421,
                             "strType": "Item"
                         },
                         "Unidentified 22": {
@@ -634,7 +634,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 335,
+                            "intCount": 344,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -650,7 +650,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 203,
+                            "intCount": 204,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -761,7 +761,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 04:59 AM",
+                    "time_scanned": "01 March 2021, 05:04 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -824,7 +824,7 @@
                             "strName": "Belrot the Fiend Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 16,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Black Knight Essence": {
@@ -832,7 +832,7 @@
                             "strName": "Black Knight Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 27,
                             "strType": "Quest Item"
                         },
                         "Carnax Essence": {
