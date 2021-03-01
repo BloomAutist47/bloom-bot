@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 04:52 AM",
+                    "time_scanned": "01 March 2021, 04:55 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -301,14 +301,6 @@
                             "intCount": 1,
                             "strType": "Floor Item"
                         },
-                        "Escherion's Helm": {
-                            "intCharId": 57302223,
-                            "strName": "Escherion's Helm",
-                            "bUpgrade": true,
-                            "bCoins": false,
-                            "intCount": 1,
-                            "strType": "Helm"
-                        },
                         "Reborn Sepulchure's Helm": {
                             "intCharId": 57302223,
                             "strName": "Reborn Sepulchure's Helm",
@@ -498,7 +490,7 @@
                             "strName": "Unidentified 10",
                             "bUpgrade": false,
                             "bCoins": false,
-                            "intCount": 405,
+                            "intCount": 409,
                             "strType": "Item"
                         },
                         "Unidentified 22": {
@@ -642,7 +634,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 320,
+                            "intCount": 326,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -658,7 +650,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 199,
+                            "intCount": 201,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -769,7 +761,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 04:52 AM",
+                    "time_scanned": "01 March 2021, 04:55 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -864,7 +856,7 @@
                             "strName": "Creature Creation Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 39,
                             "strType": "Quest Item"
                         },
                         "Dai Tengu Essence": {
@@ -896,7 +888,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 45,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Default Staff": {
