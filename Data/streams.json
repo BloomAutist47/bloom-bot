@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 06:26 AM",
+                    "time_scanned": "01 March 2021, 07:14 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -84,14 +84,6 @@
                             "bCoins": true,
                             "intCount": 302500,
                             "strType": "Class"
-                        },
-                        "ArchFiend Enchanted Orbs": {
-                            "intCharId": 57302223,
-                            "strName": "ArchFiend Enchanted Orbs",
-                            "bUpgrade": false,
-                            "bCoins": true,
-                            "intCount": 1,
-                            "strType": "Dagger"
                         },
                         "Mortal Fiend Armblades": {
                             "intCharId": 57302223,
@@ -466,7 +458,7 @@
                             "strName": "Totem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 100,
+                            "intCount": 95,
                             "strType": "Item"
                         },
                         "Treasure Potion": {
@@ -490,7 +482,7 @@
                             "strName": "Unidentified 10",
                             "bUpgrade": false,
                             "bCoins": false,
-                            "intCount": 532,
+                            "intCount": 332,
                             "strType": "Item"
                         },
                         "Unidentified 22": {
@@ -530,28 +522,12 @@
                             "strName": "Unidentified 34",
                             "bUpgrade": false,
                             "bCoins": false,
-                            "intCount": 80,
+                            "intCount": 79,
                             "strType": "Item"
                         },
                         "Verick's ID": {
                             "intCharId": 57302223,
                             "strName": "Verick's ID",
-                            "bUpgrade": false,
-                            "bCoins": false,
-                            "intCount": 1,
-                            "strType": "Item"
-                        },
-                        "Voucher of Nulgath": {
-                            "intCharId": 57302223,
-                            "strName": "Voucher of Nulgath",
-                            "bUpgrade": true,
-                            "bCoins": false,
-                            "intCount": 1,
-                            "strType": "Item"
-                        },
-                        "Voucher of Nulgath (non-mem)": {
-                            "intCharId": 57302223,
-                            "strName": "Voucher of Nulgath (non-mem)",
                             "bUpgrade": false,
                             "bCoins": false,
                             "intCount": 1,
@@ -613,6 +589,22 @@
                             "intCount": 1,
                             "strType": "Pet"
                         },
+                        "ArchFiend Spear": {
+                            "intCharId": 57302223,
+                            "strName": "ArchFiend Spear",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Polearm"
+                        },
+                        "Mortal Fiend Fangs Spear": {
+                            "intCharId": 57302223,
+                            "strName": "Mortal Fiend Fangs Spear",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Polearm"
+                        },
                         "Bone Dust": {
                             "intCharId": 57302223,
                             "strName": "Bone Dust",
@@ -626,7 +618,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 1000,
+                            "intCount": 883,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -634,7 +626,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 509,
+                            "intCount": 112,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -650,7 +642,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 226,
+                            "intCount": 207,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -684,6 +676,14 @@
                             "bCoins": true,
                             "intCount": 13,
                             "strType": "Quest Item"
+                        },
+                        "Fiend Minion Staff ": {
+                            "intCharId": 57302223,
+                            "strName": "Fiend Minion Staff ",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Staff"
                         },
                         "Mortal Fiend Katana": {
                             "intCharId": 57302223,
@@ -761,7 +761,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 06:26 AM",
+                    "time_scanned": "01 March 2021, 07:15 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -808,7 +808,7 @@
                             "strName": "Void Aura",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 2520,
+                            "intCount": 2565,
                             "strType": "Item"
                         },
                         "Astral Ephemerite Essence": {
@@ -816,7 +816,7 @@
                             "strName": "Astral Ephemerite Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 69,
+                            "intCount": 64,
                             "strType": "Quest Item"
                         },
                         "Belrot the Fiend Essence": {
@@ -832,7 +832,7 @@
                             "strName": "Black Knight Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 31,
                             "strType": "Quest Item"
                         },
                         "Carnax Essence": {
@@ -840,7 +840,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -848,7 +848,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
@@ -864,7 +864,7 @@
                             "strName": "Dai Tengu Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Tiger Leech Essence": {
@@ -872,7 +872,7 @@
                             "strName": "Tiger Leech Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 67,
+                            "intCount": 7,
                             "strType": "Quest Item"
                         },
                         "Unending Avatar Essence": {
@@ -880,7 +880,7 @@
                             "strName": "Unending Avatar Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 26,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Void Dragon Essence": {
@@ -888,7 +888,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Default Staff": {
@@ -903,7 +903,7 @@
                     "target_items": []
                 },
                 "sad": {
-                    "time_scanned": "01 March 2021, 06:26 AM",
+                    "time_scanned": "01 March 2021, 07:15 AM",
                     "inventory": {
                         "Dark Caster X": {
                             "intCharId": 3364617,
