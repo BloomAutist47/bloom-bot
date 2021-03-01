@@ -453,14 +453,6 @@
                             "intCount": 1,
                             "strType": "Item"
                         },
-                        "Tainted Core": {
-                            "intCharId": 57302223,
-                            "strName": "Tainted Core",
-                            "bUpgrade": true,
-                            "bCoins": false,
-                            "intCount": 1,
-                            "strType": "Item"
-                        },
                         "Tainted Soul": {
                             "intCharId": 57302223,
                             "strName": "Tainted Soul",
@@ -498,7 +490,7 @@
                             "strName": "Unidentified 10",
                             "bUpgrade": false,
                             "bCoins": false,
-                            "intCount": 310,
+                            "intCount": 311,
                             "strType": "Item"
                         },
                         "Unidentified 22": {
@@ -658,7 +650,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 178,
+                            "intCount": 179,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
