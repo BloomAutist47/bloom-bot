@@ -900,7 +900,9 @@
                             "strType": "Staff"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Void Aura"
+                    ]
                 }
             },
             "time": 60,
