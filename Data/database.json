@@ -688,6 +688,10 @@
             "url": "https://adventurequest.life/bots/Ganku_Follower-Attack-Mule.gbot",
             "author": "ganku"
         },
+        "5BFOTIA5D Legion Token.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_%5BFOTIA%5D-Legion-Token.gbot",
+            "author": "ganku"
+        },
         "GemTotem ofnul 1 prov g3.8plus only.gbot": {
             "url": "https://adventurequest.life/bots/GemTotem_ofnul_1_prov_g3.8plus_only.gbot",
             "author": "unknown"
@@ -742,6 +746,10 @@
         },
         "Crag Gold ReturnPolicy DrudgentheSalesman VoucherItem COMBO.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_Crag_Gold_ReturnPolicy_DrudgentheSalesman_VoucherItem_COMBO.gbot",
+            "author": "kaos"
+        },
+        "DoomwoodSpeedrunHelper FOR PROS ONLY.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_DoomwoodSpeedrunHelper_FOR_PROS_ONLY.gbot",
             "author": "kaos"
         },
         "DragonShinobi Token.gbot": {
@@ -1935,6 +1943,9 @@
             },
             "Follower Attack Mule.gbot": {
                 "url": "https://adventurequest.life/bots/Ganku_Follower-Attack-Mule.gbot"
+            },
+            "5BFOTIA5D Legion Token.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_%5BFOTIA%5D-Legion-Token.gbot"
             }
         },
         "jex": {
@@ -1969,6 +1980,9 @@
             },
             "Crag Gold ReturnPolicy DrudgentheSalesman VoucherItem COMBO.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Crag_Gold_ReturnPolicy_DrudgentheSalesman_VoucherItem_COMBO.gbot"
+            },
+            "DoomwoodSpeedrunHelper FOR PROS ONLY.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_DoomwoodSpeedrunHelper_FOR_PROS_ONLY.gbot"
             },
             "DragonShinobi Token.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_DragonShinobi_Token.gbot"
