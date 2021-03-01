@@ -896,6 +896,10 @@
             "url": "https://adventurequest.life/bots/Nng_Legion_Token_Undead_Champion_Recruitment.gbot",
             "author": "nng"
         },
+        "NNg LightCaster Bot.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_LightCaster_Bot.gbot",
+            "author": "nng"
+        },
         "NNg Mirror Realm Merge.gbot": {
             "url": "https://adventurequest.life/bots/NNg_Mirror_Realm_Merge.gbot",
             "author": "nng"
@@ -2030,6 +2034,9 @@
             },
             "Legion Token Undead Champion Recruitment.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Legion_Token_Undead_Champion_Recruitment.gbot"
+            },
+            "NNg LightCaster Bot.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_LightCaster_Bot.gbot"
             },
             "NNg Mirror Realm Merge.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Mirror_Realm_Merge.gbot"
