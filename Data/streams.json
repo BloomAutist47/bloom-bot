@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 08:34 AM",
+                    "time_scanned": "01 March 2021, 08:39 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -634,7 +634,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 917,
+                            "intCount": 919,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -642,7 +642,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 146,
+                            "intCount": 148,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -658,7 +658,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 224,
+                            "intCount": 225,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -777,7 +777,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 08:38 AM",
+                    "time_scanned": "01 March 2021, 08:39 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -896,7 +896,7 @@
                             "strName": "Creature Creation Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 52,
+                            "intCount": 57,
                             "strType": "Quest Item"
                         },
                         "Dai Tengu Essence": {
