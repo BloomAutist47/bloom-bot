@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 06:10 AM",
+                    "time_scanned": "01 March 2021, 06:26 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -761,7 +761,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 06:10 AM",
+                    "time_scanned": "01 March 2021, 06:26 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -848,7 +848,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 54,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
@@ -864,7 +864,7 @@
                             "strName": "Dai Tengu Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Tiger Leech Essence": {
@@ -880,7 +880,7 @@
                             "strName": "Unending Avatar Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 26,
                             "strType": "Quest Item"
                         },
                         "Void Dragon Essence": {
@@ -898,6 +898,716 @@
                             "bCoins": false,
                             "intCount": 1,
                             "strType": "Staff"
+                        }
+                    },
+                    "target_items": []
+                },
+                "sad": {
+                    "time_scanned": "01 March 2021, 06:26 AM",
+                    "inventory": {
+                        "Dark Caster X": {
+                            "intCharId": 3364617,
+                            "strName": "Dark Caster X",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Evolved Hex of Nulgath": {
+                            "intCharId": 3364617,
+                            "strName": "Evolved Hex of Nulgath",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Fluffy Bunny Suit 15": {
+                            "intCharId": 3364617,
+                            "strName": "Fluffy Bunny Suit 15",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Frost Void of Nulgath": {
+                            "intCharId": 3364617,
+                            "strName": "Frost Void of Nulgath",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Gummi Bear Suit": {
+                            "intCharId": 3364617,
+                            "strName": "Gummi Bear Suit",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Hex of NOOOO-Gasp!": {
+                            "intCharId": 3364617,
+                            "strName": "Hex of NOOOO-Gasp!",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Legion DreadRider ": {
+                            "intCharId": 3364617,
+                            "strName": "Legion DreadRider ",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Nulgath's Void Rider": {
+                            "intCharId": 3364617,
+                            "strName": "Nulgath's Void Rider",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Snuggle Bear 12": {
+                            "intCharId": 3364617,
+                            "strName": "Snuggle Bear 12",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Soul Harvester": {
+                            "intCharId": 3364617,
+                            "strName": "Soul Harvester",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Thanatos": {
+                            "intCharId": 3364617,
+                            "strName": "Thanatos",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Void Nation Cheerleader": {
+                            "intCharId": 3364617,
+                            "strName": "Void Nation Cheerleader",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Arcane Dark Caster Bats": {
+                            "intCharId": 3364617,
+                            "strName": "Arcane Dark Caster Bats",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Cape"
+                        },
+                        "Back Frost Blades 10": {
+                            "intCharId": 3364617,
+                            "strName": "Back Frost Blades 10",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Cape"
+                        },
+                        "Cyber Werepyre Wings": {
+                            "intCharId": 3364617,
+                            "strName": "Cyber Werepyre Wings",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Cape"
+                        },
+                        "Dragon Phantasm": {
+                            "intCharId": 3364617,
+                            "strName": "Dragon Phantasm",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Cape"
+                        },
+                        "Paragon Cape": {
+                            "intCharId": 3364617,
+                            "strName": "Paragon Cape",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Cape"
+                        },
+                        "Vampire Bats": {
+                            "intCharId": 3364617,
+                            "strName": "Vampire Bats",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Cape"
+                        },
+                        "Classic Legion DoomKnight": {
+                            "intCharId": 3364617,
+                            "strName": "Classic Legion DoomKnight",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Classic Pirate": {
+                            "intCharId": 3364617,
+                            "strName": "Classic Pirate",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 41327,
+                            "strType": "Class"
+                        },
+                        "Evolved Shaman": {
+                            "intCharId": 3364617,
+                            "strName": "Evolved Shaman",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Infinite Legion Dark Caster": {
+                            "intCharId": 3364617,
+                            "strName": "Infinite Legion Dark Caster",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Mage (Rare)": {
+                            "intCharId": 3364617,
+                            "strName": "Mage (Rare)",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Master Ranger": {
+                            "intCharId": 3364617,
+                            "strName": "Master Ranger",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 36959,
+                            "strType": "Class"
+                        },
+                        "Necromancer": {
+                            "intCharId": 3364617,
+                            "strName": "Necromancer",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Shadow Dragon Shinobi": {
+                            "intCharId": 3364617,
+                            "strName": "Shadow Dragon Shinobi",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Class"
+                        },
+                        "Shaman": {
+                            "intCharId": 3364617,
+                            "strName": "Shaman",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Vindicator Of They ": {
+                            "intCharId": 3364617,
+                            "strName": "Vindicator Of They ",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 302500,
+                            "strType": "Class"
+                        },
+                        "Aquarium": {
+                            "intCharId": 3364617,
+                            "strName": "Aquarium",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Chochinobake": {
+                            "intCharId": 3364617,
+                            "strName": "Chochinobake",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Croc Skin Rug": {
+                            "intCharId": 3364617,
+                            "strName": "Croc Skin Rug",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Dr. Worm": {
+                            "intCharId": 3364617,
+                            "strName": "Dr. Worm",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Evil Umbrella Lamp": {
+                            "intCharId": 3364617,
+                            "strName": "Evil Umbrella Lamp",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Extraterresterrarium": {
+                            "intCharId": 3364617,
+                            "strName": "Extraterresterrarium",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Gold Sneevil Statue": {
+                            "intCharId": 3364617,
+                            "strName": "Gold Sneevil Statue",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Gold Undead Statue": {
+                            "intCharId": 3364617,
+                            "strName": "Gold Undead Statue",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Gold Zard Statue": {
+                            "intCharId": 3364617,
+                            "strName": "Gold Zard Statue",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Golden Dragon Statue": {
+                            "intCharId": 3364617,
+                            "strName": "Golden Dragon Statue",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Horse": {
+                            "intCharId": 3364617,
+                            "strName": "Horse",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "House Rat": {
+                            "intCharId": 3364617,
+                            "strName": "House Rat",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "J6 Plushie": {
+                            "intCharId": 3364617,
+                            "strName": "J6 Plushie",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Mx7 Limited Edition": {
+                            "intCharId": 3364617,
+                            "strName": "Mx7 Limited Edition",
+                            "bUpgrade": true,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Voltaire's Black Unicorn": {
+                            "intCharId": 3364617,
+                            "strName": "Voltaire's Black Unicorn",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Wind Throne": {
+                            "intCharId": 3364617,
+                            "strName": "Wind Throne",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Floor Item"
+                        },
+                        "Red Wire Whip": {
+                            "intCharId": 3364617,
+                            "strName": "Red Wire Whip",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Gun"
+                        },
+                        "Blue Snug Helm 12": {
+                            "intCharId": 3364617,
+                            "strName": "Blue Snug Helm 12",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Dark-tic DragonSlayer Helm": {
+                            "intCharId": 3364617,
+                            "strName": "Dark-tic DragonSlayer Helm",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Evolved Hex Helm": {
+                            "intCharId": 3364617,
+                            "strName": "Evolved Hex Helm",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Fluffy Bunny Bow 15": {
+                            "intCharId": 3364617,
+                            "strName": "Fluffy Bunny Bow 15",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Grove Buns": {
+                            "intCharId": 3364617,
+                            "strName": "Grove Buns",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Gummi Head ": {
+                            "intCharId": 3364617,
+                            "strName": "Gummi Head ",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Sleeping Tiki Head 15": {
+                            "intCharId": 3364617,
+                            "strName": "Sleeping Tiki Head 15",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Steampunk Santa Cutie": {
+                            "intCharId": 3364617,
+                            "strName": "Steampunk Santa Cutie",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Void General Horned Locks": {
+                            "intCharId": 3364617,
+                            "strName": "Void General Horned Locks",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Winter Defense Scarf + Locks": {
+                            "intCharId": 3364617,
+                            "strName": "Winter Defense Scarf + Locks",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Young Pumpkin Head 15": {
+                            "intCharId": 3364617,
+                            "strName": "Young Pumpkin Head 15",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
+                        "Aussie Opera House": {
+                            "intCharId": 3364617,
+                            "strName": "Aussie Opera House",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "House"
+                        },
+                        "Shadowfall Fortress": {
+                            "intCharId": 3364617,
+                            "strName": "Shadowfall Fortress",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "House"
+                        },
+                        "Fiend Token": {
+                            "intCharId": 3364617,
+                            "strName": "Fiend Token",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 30,
+                            "strType": "Item"
+                        },
+                        "Fuchsia Dye": {
+                            "intCharId": 3364617,
+                            "strName": "Fuchsia Dye",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 524,
+                            "strType": "Item"
+                        },
+                        "Golden 8th Birthday Candle": {
+                            "intCharId": 3364617,
+                            "strName": "Golden 8th Birthday Candle",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Legion Soul Collector": {
+                            "intCharId": 3364617,
+                            "strName": "Legion Soul Collector",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Magenta Dye": {
+                            "intCharId": 3364617,
+                            "strName": "Magenta Dye",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 134,
+                            "strType": "Item"
+                        },
+                        "Necrot": {
+                            "intCharId": 3364617,
+                            "strName": "Necrot",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 2,
+                            "strType": "Item"
+                        },
+                        "Nulgath's Approval": {
+                            "intCharId": 3364617,
+                            "strName": "Nulgath's Approval",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 176,
+                            "strType": "Item"
+                        },
+                        "Treasure Potion": {
+                            "intCharId": 3364617,
+                            "strName": "Treasure Potion",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 183,
+                            "strType": "Item"
+                        },
+                        "Unidentified 10": {
+                            "intCharId": 3364617,
+                            "strName": "Unidentified 10",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 28,
+                            "strType": "Item"
+                        },
+                        "Unidentified 23": {
+                            "intCharId": 3364617,
+                            "strName": "Unidentified 23",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Unidentified 25": {
+                            "intCharId": 3364617,
+                            "strName": "Unidentified 25",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "SoulForge Hammer": {
+                            "intCharId": 3364617,
+                            "strName": "SoulForge Hammer",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Mace"
+                        },
+                        "Platinum PvP Amulet +5000": {
+                            "intCharId": 3364617,
+                            "strName": "Platinum PvP Amulet +5000",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Necklace"
+                        },
+                        "Evolved Hex Orb": {
+                            "intCharId": 3364617,
+                            "strName": "Evolved Hex Orb",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Pet"
+                        },
+                        "Zorbak Bank Pet": {
+                            "intCharId": 3364617,
+                            "strName": "Zorbak Bank Pet",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Pet"
+                        },
+                        "Blinding ZombieSlayer Spear": {
+                            "intCharId": 3364617,
+                            "strName": "Blinding ZombieSlayer Spear",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Polearm"
+                        },
+                        "FrostScythe of Nulgath": {
+                            "intCharId": 3364617,
+                            "strName": "FrostScythe of Nulgath",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Polearm"
+                        },
+                        "Evolved Hex Staff": {
+                            "intCharId": 3364617,
+                            "strName": "Evolved Hex Staff",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Staff"
+                        },
+                        "The Supreme Arcane Staff": {
+                            "intCharId": 3364617,
+                            "strName": "The Supreme Arcane Staff",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Staff"
+                        },
+                        "Blade of Affliction": {
+                            "intCharId": 3364617,
+                            "strName": "Blade of Affliction",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "Blister's Chainsaw 10": {
+                            "intCharId": 3364617,
+                            "strName": "Blister's Chainsaw 10",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "Corrupted Dragon Slayer": {
+                            "intCharId": 3364617,
+                            "strName": "Corrupted Dragon Slayer",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "HeroBlade": {
+                            "intCharId": 3364617,
+                            "strName": "HeroBlade",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "Legion DoomBlade": {
+                            "intCharId": 3364617,
+                            "strName": "Legion DoomBlade",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "PainSaw of Eidolon": {
+                            "intCharId": 3364617,
+                            "strName": "PainSaw of Eidolon",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "Sanguine": {
+                            "intCharId": 3364617,
+                            "strName": "Sanguine",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "Superbia": {
+                            "intCharId": 3364617,
+                            "strName": "Superbia",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "Vamp Blade of Nulgath": {
+                            "intCharId": 3364617,
+                            "strName": "Vamp Blade of Nulgath",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Sword"
+                        },
+                        "Friday the 13th Poster!": {
+                            "intCharId": 3364617,
+                            "strName": "Friday the 13th Poster!",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Wall Item"
+                        },
+                        "Top-Corner Spiderweb 10": {
+                            "intCharId": 3364617,
+                            "strName": "Top-Corner Spiderweb 10",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Wall Item"
                         }
                     },
                     "target_items": []
