@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 07:34 AM",
+                    "time_scanned": "01 March 2021, 07:51 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -458,7 +458,7 @@
                             "strName": "Totem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 95,
+                            "intCount": 98,
                             "strType": "Item"
                         },
                         "Treasure Potion": {
@@ -529,6 +529,14 @@
                             "intCharId": 57302223,
                             "strName": "Verick's ID",
                             "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Item"
+                        },
+                        "Voucher of Nulgath": {
+                            "intCharId": 57302223,
+                            "strName": "Voucher of Nulgath",
+                            "bUpgrade": true,
                             "bCoins": false,
                             "intCount": 1,
                             "strType": "Item"
@@ -618,7 +626,7 @@
                             "strName": "Dark Crystal Shard",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 889,
+                            "intCount": 898,
                             "strType": "Quest Item"
                         },
                         "Diamond of Nulgath": {
@@ -626,7 +634,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 118,
+                            "intCount": 127,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -642,7 +650,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 210,
+                            "intCount": 213,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
@@ -761,7 +769,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 07:34 AM",
+                    "time_scanned": "01 March 2021, 07:51 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -770,6 +778,22 @@
                             "bCoins": true,
                             "intCount": 1,
                             "strType": "Armor"
+                        },
+                        "Peasant Rags": {
+                            "intCharId": 72973339,
+                            "strName": "Peasant Rags",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
+                        "Ichneumon Spires": {
+                            "intCharId": 72973339,
+                            "strName": "Ichneumon Spires",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Cape"
                         },
                         "Chaos Slayer Berserker": {
                             "intCharId": 72973339,
@@ -786,6 +810,14 @@
                             "bCoins": false,
                             "intCount": 302500,
                             "strType": "Class"
+                        },
+                        "Ichneumon Keras": {
+                            "intCharId": 72973339,
+                            "strName": "Ichneumon Keras",
+                            "bUpgrade": false,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Helm"
                         },
                         "Cottage": {
                             "intCharId": 72973339,
@@ -840,7 +872,7 @@
                             "strName": "Carnax Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 8,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Chaos Vordred Essence": {
@@ -848,7 +880,7 @@
                             "strName": "Chaos Vordred Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Creature Creation Essence": {
@@ -864,7 +896,7 @@
                             "strName": "Dai Tengu Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 66,
                             "strType": "Quest Item"
                         },
                         "Tiger Leech Essence": {
@@ -880,7 +912,7 @@
                             "strName": "Unending Avatar Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6,
+                            "intCount": 14,
                             "strType": "Quest Item"
                         },
                         "Void Dragon Essence": {
@@ -903,7 +935,7 @@
                     "target_items": []
                 },
                 "sad": {
-                    "time_scanned": "01 March 2021, 07:34 AM",
+                    "time_scanned": "01 March 2021, 07:51 AM",
                     "inventory": {
                         "Dark Caster X": {
                             "intCharId": 3364617,
