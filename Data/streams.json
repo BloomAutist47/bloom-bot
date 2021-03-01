@@ -782,7 +782,10 @@
                             "strType": "Wall Item"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Carnax Essence",
+                        "Dai Tengu Essence"
+                    ]
                 },
                 "weebolate": {
                     "time_scanned": "01 March 2021, 07:54 AM",
