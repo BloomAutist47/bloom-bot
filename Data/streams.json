@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 04:46 AM",
+                    "time_scanned": "01 March 2021, 04:52 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -301,6 +301,14 @@
                             "intCount": 1,
                             "strType": "Floor Item"
                         },
+                        "Escherion's Helm": {
+                            "intCharId": 57302223,
+                            "strName": "Escherion's Helm",
+                            "bUpgrade": true,
+                            "bCoins": false,
+                            "intCount": 1,
+                            "strType": "Helm"
+                        },
                         "Reborn Sepulchure's Helm": {
                             "intCharId": 57302223,
                             "strName": "Reborn Sepulchure's Helm",
@@ -490,7 +498,7 @@
                             "strName": "Unidentified 10",
                             "bUpgrade": false,
                             "bCoins": false,
-                            "intCount": 396,
+                            "intCount": 405,
                             "strType": "Item"
                         },
                         "Unidentified 22": {
@@ -634,7 +642,7 @@
                             "strName": "Diamond of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 305,
+                            "intCount": 320,
                             "strType": "Quest Item"
                         },
                         "Essence of Nulgath": {
@@ -650,7 +658,7 @@
                             "strName": "Gem of Nulgath",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 196,
+                            "intCount": 199,
                             "strType": "Quest Item"
                         },
                         "Tainted Gem": {
