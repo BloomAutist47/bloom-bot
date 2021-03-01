@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "weebolate": {
-                    "time_scanned": "01 March 2021, 04:12 AM",
+                    "time_scanned": "01 March 2021, 04:46 AM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -50,7 +50,7 @@
                             "strName": "Void Aura",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 2385,
+                            "intCount": 2435,
                             "strType": "Item"
                         },
                         "Astral Ephemerite Essence": {
@@ -58,7 +58,7 @@
                             "strName": "Astral Ephemerite Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 68,
+                            "intCount": 72,
                             "strType": "Quest Item"
                         },
                         "Belrot the Fiend Essence": {
@@ -98,7 +98,7 @@
                             "strName": "Creature Creation Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 36,
+                            "intCount": 6,
                             "strType": "Quest Item"
                         },
                         "Dai Tengu Essence": {
@@ -106,7 +106,7 @@
                             "strName": "Dai Tengu Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 67,
                             "strType": "Quest Item"
                         },
                         "Tiger Leech Essence": {
@@ -122,7 +122,7 @@
                             "strName": "Unending Avatar Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 66,
+                            "intCount": 7,
                             "strType": "Quest Item"
                         },
                         "Void Dragon Essence": {
@@ -130,7 +130,7 @@
                             "strName": "Void Dragon Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 67,
+                            "intCount": 7,
                             "strType": "Quest Item"
                         },
                         "Default Staff": {
@@ -145,7 +145,7 @@
                     "target_items": []
                 },
                 "acrolous": {
-                    "time_scanned": "01 March 2021, 04:44 AM",
+                    "time_scanned": "01 March 2021, 04:46 AM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -632,7 +632,7 @@
                             "strName": "Unidentified 10",
                             "bUpgrade": false,
                             "bCoins": false,
-                            "intCount": 394,
+                            "intCount": 396,
                             "strType": "Item"
                         },
                         "Unidentified 22": {
