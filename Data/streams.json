@@ -774,10 +774,7 @@
                             "strType": "Wall Item"
                         }
                     },
-                    "target_items": [
-                        "Carnax Essence",
-                        "Dai Tengu Essence"
-                    ]
+                    "target_items": []
                 },
                 "weebolate": {
                     "time_scanned": "01 March 2021, 08:34 AM",
@@ -943,11 +940,7 @@
                             "strType": "Staff"
                         }
                     },
-                    "target_items": [
-                        "Void Aura",
-                        "Carnax Essence",
-                        "Dai Tengu Essence"
-                    ]
+                    "target_items": []
                 },
                 "sad": {
                     "time_scanned": "01 March 2021, 08:34 AM",
