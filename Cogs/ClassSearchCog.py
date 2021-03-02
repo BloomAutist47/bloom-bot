@@ -34,7 +34,7 @@ class ClassSearchCog(BaseTools, commands.Cog):
 
         guild_id = str(ctx.guild.id)
         if guild_id in BaseProgram.settings["server_settings"]:
-            desc += "\n**Note:** This chart is meant for legittards."
+            desc += "\n**Note:** How to get is meant for legittards."
 
         embedVar.description = desc
         embedVar.set_image(url=discord_url)
