@@ -333,10 +333,10 @@
         "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/807173105457823744/Untitled-1.png"
     },
     "ecskills": {
-        "common_key": "ec/ic"
+        "common_key": "ecskills/icskills"
     },
     "icskills": {
-        "common_key": "ec/ic"
+        "common_key": "ecskills/icskills"
     },
     "ecskills/icskills": {
         "type": "text",
