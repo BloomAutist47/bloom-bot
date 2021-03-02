@@ -29,8 +29,14 @@ class ClassSearchCog(BaseTools, commands.Cog):
             dupliVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
             await ctx.send(embed=dupliVar)
 
-        embedVar = discord.Embed(title=class_name, color=self.block_color, url=wiki_url,
-            description=f"Use `;legends` to understand the chart.")
+        embedVar = discord.Embed(title=class_name, color=self.block_color, url=wiki_url)
+        desc = "Use `;legends` to understand the chart."
+
+        guild_allowed = await self.allow_evaluator(ctx, "guild_privilege")
+        if guild_allowed:
+            desc += "\n**Note:** This chart is meant for legitards."
+
+        embedVar.description = desc
         embedVar.set_image(url=discord_url)
         embedVar.set_footer(text=self.credits)
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
