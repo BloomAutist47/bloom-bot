@@ -32,8 +32,8 @@ class ClassSearchCog(BaseTools, commands.Cog):
         embedVar = discord.Embed(title=class_name, color=self.block_color, url=wiki_url)
         desc = "Use `;legends` to understand the chart."
 
-        guild_allowed = await self.allow_evaluator(ctx, "guild_privilege")
-        if guild_allowed:
+        guild_id = str(ctx.guild.id)
+        if guild_id in BaseProgram.settings["server_settings"]:
             desc += "\n**Note:** This chart is meant for legitards."
 
         embedVar.description = desc
