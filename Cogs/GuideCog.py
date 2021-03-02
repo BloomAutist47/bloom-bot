@@ -17,7 +17,7 @@ class GuideCog(commands.Cog, BaseTools):
             self.file_read("guides") 
 
         if guide == "":
-            embedVar = discord.Embed(title="🔹 List of Guide Commands 🔹", color=self.block_color,
+            embedVar = discord.Embed(title="🔹 List of Guide Commands 🔹", color=BaseProgram.block_color,
                 description="To summon this list, use `;g`. Please read the following carefully.\n\n")
             # embedVar.set_author()
             desc = ""
@@ -74,7 +74,7 @@ class GuideCog(commands.Cog, BaseTools):
 
             if guide_data["type"] == "guide":
                 
-                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color,
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=BaseProgram.block_color,
                     description="The following is a short guide of %s. "\
                                 "For the [Full Guide click this](%s)."%(guide_data["title"], guide_data["full_guide"]))
                 embedVar.set_image(url=guide_data["short_link"])
@@ -86,7 +86,7 @@ class GuideCog(commands.Cog, BaseTools):
 
             if guide_data["type"] == "guide_links":
 
-                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=BaseProgram.block_color)
                 desc = guide_data["description"]
                 for text in guide_data["content"]:
                     desc += "➣ [{}]({}).\n".format(text[0], text[1])
@@ -98,7 +98,7 @@ class GuideCog(commands.Cog, BaseTools):
                 return
 
             if guide_data["type"] == "text":
-                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=BaseProgram.block_color)
                 desc = guide_data["description"] + "\n\n"
                 bullet = ""
                 if "bullet" in guide_data:
@@ -117,7 +117,7 @@ class GuideCog(commands.Cog, BaseTools):
                 return
 
             if guide_data["type"] == "text_dict":
-                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color,
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=BaseProgram.block_color,
                 description=guide_data["description"] + "\n\n")
                 for item in guide_data["content"]:
                     desc = ""
@@ -133,7 +133,7 @@ class GuideCog(commands.Cog, BaseTools):
                 return
 
             if guide_data["type"] == "image":
-                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=BaseProgram.block_color)
                 embedVar.description = guide_data["description"]
                 embedVar.set_image(url=guide_data["content"])
                 embedVar.set_footer(text=self.fotter)
@@ -143,7 +143,7 @@ class GuideCog(commands.Cog, BaseTools):
 
 
             if guide_data["type"] == "single_link":
-                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=self.block_color)
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=BaseProgram.block_color)
                 if type(guide_data["description"]) is list:
                     desc = ""
                     for sentence in guide_data["description"]:

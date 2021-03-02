@@ -24,12 +24,12 @@ class ClassSearchCog(BaseTools, commands.Cog):
         """
 
         if duplicate_name:
-            dupliVar = discord.Embed(title="Duplicate", color=self.block_color, 
+            dupliVar = discord.Embed(title="Duplicate", color=BaseProgram.block_color, 
                 description=f"`{duplicate_name[0]}` is a duplicate of the __{duplicate_name[1]}__ Class")
             dupliVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
             await ctx.send(embed=dupliVar)
 
-        embedVar = discord.Embed(title=class_name, color=self.block_color, url=wiki_url)
+        embedVar = discord.Embed(title=class_name, color=BaseProgram.block_color, url=wiki_url)
         desc = "Use `;legends` to understand the chart."
 
         guild_id = str(ctx.guild.id)
@@ -46,7 +46,7 @@ class ClassSearchCog(BaseTools, commands.Cog):
     @commands.command()
     async def legends(self, ctx):
 
-        embedVar = discord.Embed(title="Legends", color=self.block_color)
+        embedVar = discord.Embed(title="Legends", color=BaseProgram.block_color)
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
         embedVar.set_image(url=BaseProgram.settings["ClassSearchCogSettings"]["legends_link"])
         embedVar.set_footer(text=self.credits)

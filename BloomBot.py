@@ -9,21 +9,9 @@ Paradise template: https://discord.new/rntDVgbpUSzW
 heroku config
 $ heroku login
 $ heroku ps:scale worker=1 -a bloom-2
-
+# ➣➣
 
 """
-
-
-
-# from discord.utils import get as dis_get
-# from discord_webhook import DiscordWebhook
-# from PIL import Image
-
-# import asyncio
-# import aiohttp
-# import urllib.parse
-# import unicodedata
-
 
 # Imports
 import discord
@@ -34,7 +22,7 @@ from discord.ext import tasks
 from discord import Intents
 from discord.ext.commands import CommandNotFound
 from pprint import pprint
-from time import sleep
+from time import sleep  
 
 from Cogs.Base import *
 from Cogs.BoatSearchCog import BoatSearchCog
@@ -45,9 +33,9 @@ from Cogs.GuideCog import GuideCog
 from Cogs.WikiCog import WikiCog
 from Cogs.TwitterListener import TwitterListener
 from Cogs.TwitterListener import TwitterCog
+from Cogs.UtilsCog import UtilsCog
 
-
-# from Cogs.StreamCog import StreamCog
+from Cogs.StreamCog import StreamCog
 # from Cogs.TestCog import TestCog
 
 class BreakProgram(Exception):
@@ -136,23 +124,12 @@ Bot.add_cog(GoogleSearchCog(Bot))
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(WikiCog(Bot))
 Bot.add_cog(TwitterCog(Bot))
-# 
+
+Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
 # Bot.add_cog(TextUploaders(Bot))
 
 print("> Starting Bot...")
 Bot.run(DISCORD_TOKEN)
 
-# while True:
-#     try:
-#         BaseProgram.loop.run_until_complete(Bot.run(DISCORD_TOKEN))
-#         print("> Discord Connection...Success!")
-#         break
-#     except:
-#         BaseProgram.loop.close()
-#         print("> Failed Connecting to Discord... Trying again.")
-#         print("> Reconnecting...")
-#         sleep(5)
-#         continue
 
-# ➣➣

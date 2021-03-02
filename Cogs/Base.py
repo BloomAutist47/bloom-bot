@@ -90,7 +90,7 @@ class BaseProgram:
         
         while True:
             try:
-                # self.block_color = 4521077
+                # BaseProgram.block_color = 4521077
                 BaseProgram.github = github3.login(token=BaseProgram.GIT_BLOOM_TOKEN)
                 BaseProgram.repository = BaseProgram.github.repository(BaseProgram.GIT_USER, BaseProgram.GIT_REPOS)
                 print("> Github Connection...Success!")
@@ -103,7 +103,7 @@ class BaseProgram:
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
         os.chdir('..')
         self.file_read("all")
-        self.git_read("all")
+        self.git_read("streams-update")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -472,7 +472,6 @@ class BaseProgram:
                 BaseProgram.priveleged_roles.append(role)
         return
 
-
     """ SEARCH METHODS SECTION """
     def find_bot_by_name(self, bot_name_value:str):
         """Description: Finds boats by name
@@ -607,7 +606,7 @@ class BaseTools(BaseProgram):
 
     def setup(self):
         # Static attributes
-        self.block_color = 3066993 
+        BaseProgram.block_color = 3066993 
         self.char_url = "https://account.aq.com/CharPage?id="
         self.wiki_url = "http://aqwwiki.wikidot.com/"
 
@@ -768,10 +767,10 @@ class BaseTools(BaseProgram):
         
 
         if icon:
-            embedVar = discord.Embed(description=desc, color=self.block_color)
+            embedVar = discord.Embed(description=desc, color=BaseProgram.block_color)
             embedVar.set_author(name=title, icon_url=icon)
         else:
-            embedVar = discord.Embed(title=title, description=desc, color=self.block_color)
+            embedVar = discord.Embed(title=title, description=desc, color=BaseProgram.block_color)
 
 
         done = []
@@ -786,7 +785,7 @@ class BaseTools(BaseProgram):
                         counts["item"] = 0
                         await ctx.send(embed=embedVar)
                         bot_list = ""
-                        embedVar = discord.Embed(title=title, description=desc, color=self.block_color)
+                        embedVar = discord.Embed(title=title, description=desc, color=BaseProgram.block_color)
                     if counts["item"] == 9:
                         embedVar.add_field(name=author.capitalize(), value=bot_list, inline=inline)
                         counts["item"] = 0
@@ -815,10 +814,10 @@ class BaseTools(BaseProgram):
         counts = {"field": 0, "item": 0}
 
         if icon:
-            embedVar = discord.Embed(description=embed_description, color=self.block_color)
+            embedVar = discord.Embed(description=embed_description, color=BaseProgram.block_color)
             embedVar.set_author(name=title, icon_url=icon)
         else:
-            embedVar = discord.Embed(title=title, description=embed_description, color=self.block_color)
+            embedVar = discord.Embed(title=title, description=embed_description, color=BaseProgram.block_color)
 
         for items in list_var:
             if counts["field"] == 2:
@@ -861,10 +860,10 @@ class BaseTools(BaseProgram):
         text_item = "```css\n"
 
         if icon:
-            embedVar = discord.Embed(description=description, color=self.block_color)
+            embedVar = discord.Embed(description=description, color=BaseProgram.block_color)
             embedVar.set_author(name=title, icon_url=BaseProgram.icon_auqw)
         else:
-            embedVar = discord.Embed(title=title, description=description, color=self.block_color)
+            embedVar = discord.Embed(title=title, description=description, color=BaseProgram.block_color)
         for text in value_list:
             if counts["field"] == 2 and two_collumn:
                 embedVar.add_field(name=st, value=st, inline=True)
@@ -893,6 +892,62 @@ class BaseTools(BaseProgram):
             embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
         return embedVar
 
+
+
+    def embed_multi_text_indiv(self, title,description:str,
+            value_list, block_count:int, icon=""):
+        """ Description: Embeds multiple links not sorted by anything.
+            Arguments:
+                [title] - title
+                [field_name] - title of the fields
+                [description] - embed description
+                [value_list] - the info chunk of text
+                [block_count] - how may items per fields
+            Return: Discord embed object
+        """
+        st = "\u200b"
+        counts = {"field": 0, "item": 0}
+        text_item = "```css\n"
+
+        if icon:
+            embedVar = discord.Embed(description=description, color=BaseProgram.block_color)
+            embedVar.set_author(name=title, icon_url=BaseProgram.icon_auqw)
+        else:
+            embedVar = discord.Embed(title=title, description=description, color=BaseProgram.block_color)
+
+
+        for field_name in value_list:
+            for text in value_list[field_name]:
+
+                if counts["item"] == block_count:
+                    embedVar.add_field(name=field_name, value=text_item+ "```", inline=True)
+                    text_item = "```css\n"
+                    counts["item"] = 0
+                    counts["field"]+=1
+
+                text_item += text + "\n"
+                counts["item"] += 1
+            embedVar.add_field(name=field_name, value=text_item+ "```", inline=True)
+            text_item = "```css\n"
+            counts["item"] = 0
+            counts["field"]+=1
+
+
+        # if two_collumn:
+        #     if counts["field"] == 2:
+        #         embedVar.add_field(name=st, value=st, inline=True)
+        #         embedVar.add_field(name=st, value=st, inline=True)
+        #     embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
+
+        #     if counts["field"] == 0:
+        #         embedVar.add_field(name=st, value=st, inline=True)
+        #         embedVar.add_field(name=st, value=st, inline=True)
+        #     if counts["field"] == 1:
+        #         embedVar.add_field(name=st, value=st, inline=True)
+        # if not two_collumn:
+        #     embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
+        return embedVar
+
     def embed_single(self, title, description, icon=""):
         """ Description: Single item embed
             Arguments:
@@ -901,11 +956,11 @@ class BaseTools(BaseProgram):
             Return: Discord embed object
         """
         if icon:
-            embedVar = discord.Embed(description=description, color=self.block_color)
+            embedVar = discord.Embed(description=description, color=BaseProgram.block_color)
             embedVar.set_author(name=title, icon_url=icon)
             return embedVar
         else:
-            return discord.Embed(title=title, description=description, color=self.block_color)
+            return discord.Embed(title=title, description=description, color=BaseProgram.block_color)
 
     def chunks_list(self, lst, n):
         """ Description: Yield successive n-sized chunks from lst.
@@ -944,46 +999,49 @@ class BaseTools(BaseProgram):
                     handle_cookies=handle_cookies
                     ))
             return result
-          # timeouts = Timeouts(
-          #       sock_read=timeout["sock_read"],
-          #       sock_connect=timeout["sock_connect"],
-          #       pool_acquire=timeout["pool_acquire"],
-          #       request_timeout=timeout["request_timeout"],
-          #   )
+
     async def get_site_content(self, URL:str,  mode="aisonic", name="content_get", 
                 is_soup:bool=True, parser="html5lib", encoding="utf-8", headers={},
                 handle_cookies=False):
-
+        # cp1252
+        # client = aiosonic.HTTPClient(handle_cookies=handle_cookies)
+        # response = await client.request(URL, headers=headers)
+        # print("RESP: ", response)
+        # text_ = await response.content()
+        # print(f"> Function {name} executed...Success!")
+        # if is_soup:
+        #     return Soup(text_.decode(encoding), parser)
+        # else:
+        #     return text_.decode(encoding)
+        timeouts = Timeouts(
+            sock_read=2,
+            # sock_connect=timeout["sock_connect"],
+            # pool_acquire=timeout["pool_acquire"],
+            # request_timeout=timeout["request_timeout"],
+        )
         if mode == "aisonic":
             while True:
                 try:
                     client = aiosonic.HTTPClient(handle_cookies=handle_cookies)
-                    response = await client.get(URL)
-                    print("RESP: ", response)
+                    response = await client.get(URL, headers=headers, timeouts=timeouts)
+
                     text_ = await response.content()
+
                     print(f"> Function {name} executed...Success!")
                     if is_soup:
                         return Soup(text_.decode(encoding), parser)
                     else:
                         return text_.decode(encoding)
                 except:
-                    # client.shutdown()
                     print(f"> Failed Executing {name}... Trying again.")
                     continue
 
         elif mode == "aiohttp":
-            # async with aiohttp.ClientSession(trust_env=True) as session:
-            #     async with session.get(URL, headers=header) as response:
-            #         text_ = await response.read()
-            #         if is_soup:
-            #             return Soup(text_.decode(encoding), parser)
-            #         else:
-            #             return text_.decode(encoding)
             while True:
                 print("> Reloading...")
                 try:
                     async with aiohttp.ClientSession(trust_env=True) as session:
-                        async with session.get(URL) as response:
+                        async with session.get(URL, headers=headers) as response:
                             text_ = await response.read()
                             if is_soup:
                                 return Soup(text_.decode(encoding), parser)
@@ -1004,7 +1062,7 @@ class BaseCog(commands.Cog, BaseTools):
     async def bhelp(self, ctx):
         guild_allowed = await self.allow_evaluator(ctx, "guild_privilege")
 
-        embedVar = discord.Embed(title="Bloom Help", color=self.block_color)
+        embedVar = discord.Embed(title="Bloom Help", color=BaseProgram.block_color)
         desc = "`;bhelp` ➣ Shows all Bloom commands.\n"\
                "`;g` ➣ Summons a list of all guides commands.\n"\
                "`;g guide_name` ➣ Returns a specific guide.\n"\

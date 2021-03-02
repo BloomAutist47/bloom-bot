@@ -17,11 +17,11 @@ class GoogleSearchCog(commands.Cog, BaseTools):
         escaped_search_term = term.replace(' ', '+')
         google_url = 'https://www.google.com/search?q={}&num={}&hl={}'.format(escaped_search_term, num_results+1,
                                                                               lang)
-
-        response = requests_get(google_url, headers=usr_agent)
+        soup = await self.get_site_content(URL=google_url, headers=usr_agent, encoding="utf-8", parser="html.parser")
+        # response = requests_get(google_url, headers=usr_agent)
         links = {}
 
-        soup = Soup(response.content, 'html.parser')
+        # soup = Soup(response.content, 'html.parser')
         result_block = soup.find_all('div', attrs={'class': 'g'})
         for result in result_block:
             link = result.find('a', href=True)
@@ -39,7 +39,7 @@ class GoogleSearchCog(commands.Cog, BaseTools):
             return
         item = await self.search(value, 11)
 
-        embedVar = discord.Embed(title=f"Search: __{value}__", color=self.block_color,
+        embedVar = discord.Embed(title=f"Search: __{value}__", color=BaseProgram.block_color,
             url=item[1]
             )
         embedVar.set_author(name="Google Chrome", icon_url=BaseProgram.icon_google)

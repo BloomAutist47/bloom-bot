@@ -82,7 +82,7 @@ class CharacterCog(commands.Cog, BaseTools):
                 count = 0
         potion_count = count
 # 🔷
-        embedVar = discord.Embed(title="Ioda Calculations", color=self.block_color,
+        embedVar = discord.Embed(title="Ioda Calculations", color=BaseProgram.block_color,
                         description=f"Name: [**{char_full_name}**]({url})\nTreasure Potions: **{potion_count}**")
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
 
@@ -233,7 +233,7 @@ class CharacterCog(commands.Cog, BaseTools):
 
         # Inserts stuffs
         link_name = self.convert_aqurl(char_full_name)
-        embedVar = discord.Embed(title="Character Profile", color=self.block_color)
+        embedVar = discord.Embed(title="Character Profile", color=BaseProgram.block_color)
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
         char_full_text = f"Name: [{char_full_name}]({link_name})"
 
@@ -306,7 +306,7 @@ class CharacterCog(commands.Cog, BaseTools):
             total_players += ct
             data[ct] = i["sname"]
 
-        embedVar = discord.Embed(title=f"🌎 Server Info", description=f"{total_players} Players online", color=self.block_color)
+        embedVar = discord.Embed(title=f"🌎 Server Info", description=f"{total_players} Players online", color=BaseProgram.block_color)
 
         for i in sorted(data.keys(), reverse=True):
             if count == 7:
@@ -338,7 +338,7 @@ class CharacterCog(commands.Cog, BaseTools):
     #         except:
     #             await ctx.send(embed=self.embed_single("Character Profile Result", "No Character of that name"))
 
-    #     embedVar = discord.Embed(title="Character Profile Help", color=self.block_color)
+    #     embedVar = discord.Embed(title="Character Profile Help", color=BaseProgram.block_color)
 
     #     # Get Badges
     #     char_badge_url = "https://account.aq.com/CharPage/Badges?ccid="+ccid

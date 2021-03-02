@@ -120,13 +120,13 @@ class TextUploaders(commands.Cog, BaseTools):
         index = {}
 
         BaseProgram.database_updating = True
-        embedVar = discord.Embed(title="Frequently Asked Questions", color=self.block_color,
+        embedVar = discord.Embed(title="Frequently Asked Questions", color=BaseProgram.block_color,
             description="Something's not working? Read The following.")
         item_1 = await ctx.send(embed=embedVar)
         start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
         await ctx.send("\u200b")
         for title in BaseProgram.texts["faqs"]:
-            embedVar = discord.Embed(title=title, color=self.block_color,
+            embedVar = discord.Embed(title=title, color=BaseProgram.block_color,
                 description=BaseProgram.texts["faqs"][title]["text"])
             if "image" in BaseProgram.texts["faqs"][title]:
                 embedVar.set_image(url=BaseProgram.texts["faqs"][title]["image"])
