@@ -1,4 +1,4 @@
-
+import numpy
 import os
 import tweepy
 
@@ -10,6 +10,7 @@ from discord.utils import get
 from discord import Intents
 
 from layeris.layer_image import LayerImage
+
 from layeris.utils.conversions import convert_float_to_uint
 from PIL import Image, ImageDraw
 
@@ -47,3 +48,4 @@ from random import randint
 from ast import literal_eval
 from pprint import pprint
 from dotenv import load_dotenv
+
