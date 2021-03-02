@@ -33,7 +33,7 @@ from Cogs.GuideCog import GuideCog
 from Cogs.WikiCog import WikiCog
 from Cogs.TwitterListener import TwitterListener
 from Cogs.TwitterListener import TwitterCog
-from Cogs.UtilsCog import UtilsCog
+# from Cogs.UtilsCog import UtilsCog
 
 from Cogs.StreamCog import StreamCog
 # from Cogs.TestCog import TestCog
@@ -125,7 +125,7 @@ Bot.add_cog(GuideCog(Bot))
 Bot.add_cog(WikiCog(Bot))
 Bot.add_cog(TwitterCog(Bot))
 
-Bot.add_cog(UtilsCog(Bot))
+# Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
 # Bot.add_cog(TextUploaders(Bot))
 

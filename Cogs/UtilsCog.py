@@ -4,7 +4,7 @@ from .Base import *
 from discord.ext import commands, tasks
 
 from layeris.layer_image import LayerImage
-from layeris.utils.conversions import convert_float_to_uint
+# from layeris.utils.conversions import convert_float_to_uint
 from PIL import Image, ImageDraw
 
 from random import randint
@@ -42,10 +42,10 @@ class UtilsCog(commands.Cog, BaseTools):
         
         BaseProgram.block_color = int(hex(int(color.replace("#", ""), 16)), 0)
         symbol.overlay(color)
+        symbol.save(save_loc)
 
-
-        base_image = Image.fromarray(convert_float_to_uint(symbol.image_data))
-
+        
+        base_image = Image.open(save_loc)
         img = ImageDraw.Draw(base_image)
 
         bg_overlay = Image.open(bg)
