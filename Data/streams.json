@@ -766,7 +766,9 @@
                             "strType": "Wall Item"
                         }
                     },
-                    "target_items": []
+                    "target_items": [
+                        "Legion Token"
+                    ]
                 },
                 "weebolate": {
                     "time_scanned": "02 March 2021, 09:02 PM",
