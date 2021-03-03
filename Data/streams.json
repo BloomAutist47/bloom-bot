@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "02 March 2021, 09:02 PM",
+                    "time_scanned": "02 March 2021, 09:16 PM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -450,7 +450,7 @@
                             "strName": "Legion Token",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7045,
+                            "intCount": 7475,
                             "strType": "Item"
                         },
                         "Magenta Dye": {
