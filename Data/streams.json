@@ -450,7 +450,7 @@
                             "strName": "Legion Token",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 7475,
+                            "intCount": 7485,
                             "strType": "Item"
                         },
                         "Magenta Dye": {
@@ -771,7 +771,7 @@
                     ]
                 },
                 "weebolate": {
-                    "time_scanned": "02 March 2021, 09:02 PM",
+                    "time_scanned": "02 March 2021, 09:17 PM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -937,7 +937,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "02 March 2021, 09:02 PM",
+                    "time_scanned": "02 March 2021, 09:17 PM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -1271,7 +1271,7 @@
                     "target_items": []
                 },
                 "artix": {
-                    "time_scanned": "02 March 2021, 09:02 PM",
+                    "time_scanned": "02 March 2021, 09:17 PM",
                     "inventory": {
                         "ArchPaladin Armor": {
                             "intCharId": 3,
@@ -2141,7 +2141,7 @@
                     "target_items": []
                 },
                 "alina": {
-                    "time_scanned": "02 March 2021, 09:03 PM",
+                    "time_scanned": "02 March 2021, 09:17 PM",
                     "inventory": {
                         "Abyssal Naval Commander of Nulgath": {
                             "intCharId": 15,
