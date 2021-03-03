@@ -3,7 +3,7 @@
         "252363724894109700": {
             "stream_list": {
                 "acrolous": {
-                    "time_scanned": "02 March 2021, 08:55 PM",
+                    "time_scanned": "02 March 2021, 09:02 PM",
                     "inventory": {
                         "Diabolical Witch": {
                             "intCharId": 57302223,
@@ -450,7 +450,7 @@
                             "strName": "Legion Token",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 6855,
+                            "intCount": 7045,
                             "strType": "Item"
                         },
                         "Magenta Dye": {
@@ -769,7 +769,7 @@
                     "target_items": []
                 },
                 "weebolate": {
-                    "time_scanned": "02 March 2021, 08:58 PM",
+                    "time_scanned": "02 March 2021, 09:02 PM",
                     "inventory": {
                         "Mountain Breaker": {
                             "intCharId": 72973339,
@@ -935,7 +935,7 @@
                     "target_items": []
                 },
                 "pepe the frog1337": {
-                    "time_scanned": "02 March 2021, 08:58 PM",
+                    "time_scanned": "02 March 2021, 09:02 PM",
                     "inventory": {
                         "Dirt Void of Nulgath": {
                             "intCharId": 71634458,
@@ -1269,7 +1269,7 @@
                     "target_items": []
                 },
                 "artix": {
-                    "time_scanned": "02 March 2021, 08:58 PM",
+                    "time_scanned": "02 March 2021, 09:02 PM",
                     "inventory": {
                         "ArchPaladin Armor": {
                             "intCharId": 3,
@@ -2139,7 +2139,7 @@
                     "target_items": []
                 },
                 "alina": {
-                    "time_scanned": "02 March 2021, 08:58 PM",
+                    "time_scanned": "02 March 2021, 09:03 PM",
                     "inventory": {
                         "Abyssal Naval Commander of Nulgath": {
                             "intCharId": 15,
