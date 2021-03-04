@@ -904,6 +904,10 @@
             "url": "https://adventurequest.life/bots/NNg_Mirror_Realm_Merge.gbot",
             "author": "nng"
         },
+        "NNg MythsongWar Merge Dorian Shadowsong.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_MythsongWar_Merge_Dorian_Shadowsong.gbot",
+            "author": "nng"
+        },
         "NNg Ox Medallion.gbot": {
             "url": "https://adventurequest.life/bots/NNg_Ox_Medallion.gbot",
             "author": "nng"
@@ -2040,6 +2044,9 @@
             },
             "NNg Mirror Realm Merge.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Mirror_Realm_Merge.gbot"
+            },
+            "NNg MythsongWar Merge Dorian Shadowsong.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_MythsongWar_Merge_Dorian_Shadowsong.gbot"
             },
             "NNg Ox Medallion.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Ox_Medallion.gbot"
