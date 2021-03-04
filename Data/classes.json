@@ -2378,6 +2378,9 @@
             5,
             5
         ],
+        "tags": [
+            "acs_only"
+        ],
         "bludrut": 4,
         "acquire": {
             "ac_version": "No",
@@ -2433,6 +2436,9 @@
             4,
             3,
             5
+        ],
+        "tags": [
+            "acs_only"
         ],
         "bludrut": 4,
         "acquire": {
@@ -3579,7 +3585,7 @@
             3
         ],
         "tags": [
-            "member_only"
+            "member_only", "acs_only"
         ],
         "bludrut": 2,
         "acquire": {
