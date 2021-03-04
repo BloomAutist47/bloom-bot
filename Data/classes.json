@@ -28,7 +28,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Seasonal, Black Friday, 2k AC",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913622160408616/Abyssal_Angels_Shadow_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923413184380958/Abyssal_Angels_Shadow_Class_Chart.png"
     },
     "Alpha Omega": {
         "acronym": "AO",
@@ -58,7 +58,7 @@
         },
         "type": "available",
         "location": "Merge, 300 PvP trophies, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913627603566592/Alpha_Omega_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923418779189248/Alpha_Omega_Class_Chart.png"
     },
     "Alpha Pirate": {
         "acronym": "",
@@ -96,7 +96,7 @@
         },
         "type": "available",
         "location": "Quest, /icedungeon",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913988041998356/Frost_SpiritReaver_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923875820568596/Frost_SpiritReaver_Class_Chart.png"
     },
     "Arachnomancer": {
         "acronym": "Arach",
@@ -124,7 +124,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Ravenloss",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913634839003156/Arachnomancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923430347341864/Arachnomancer_Class_Chart.png"
     },
     "ArchPaladin": {
         "acronym": "AP, Arch",
@@ -152,7 +152,7 @@
         },
         "type": "available",
         "location": "Questline - from Artix in /darkthronehub",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913642603446305/ArchPaladin_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923452145270784/ArchPaladin_Class_Chart.png"
     },
     "Legendary Archfiend": {
         "acronym": "AF, Arch",
@@ -185,7 +185,7 @@
         },
         "type": "available",
         "location": "Merge, 30 Fiend Tokens, via /tercessuinotlim",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914079837880380/Legendary_Archfiend_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923979095867402/Legendary_Archfiend_Class_Chart.png"
     },
     "Artifact Hunter": {
         "acronym": "AH",
@@ -213,7 +213,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913650601328700/Artifact_Hunter_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923459803545630/Artifact_Hunter_Class_Chart.png"
     },
     "Barber": {
         "acronym": "(None)",
@@ -239,7 +239,7 @@
         },
         "type": "available",
         "location": "Shop, 20k gold",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913657560334366/Barber_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923466812620810/Barber_Class_Chart.png"
     },
     "Bard": {
         "acronym": "(None)",
@@ -272,7 +272,7 @@
         },
         "type": "available",
         "location": "Rep, r4 Mythsong",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913664844922920/Bard_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923479349002250/Bard_Class_Chart.png"
     },
     "Royal BattleMage": {
         "acronym": "RBM, BM",
@@ -304,7 +304,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Swordhaven",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914271563579392/Royal_BattleMage_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924184344789002/Royal_BattleMage_Class_Chart.png"
     },
     "BeastMaster": {
         "acronym": "(None)",
@@ -332,7 +332,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Beastmaster",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913669832343602/BeastMaster_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923484617703434/BeastMaster_Class_Chart.png"
     },
     "Berserker": {
         "acronym": "Zerker",
@@ -363,7 +363,7 @@
         },
         "type": "available",
         "location": "Shop, 5k gold, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913676547686450/Berserker_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923490158247956/Berserker_Class_Chart.png"
     },
     "SwordMaster": {
         "acronym": "BM, SM",
@@ -396,7 +396,7 @@
         },
         "type": "available",
         "location": "Merge, Seasonal, Legion, 2k LT",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914365310206002/SwordMaster_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924269337509928/SwordMaster_Class_Chart.png"
     },
     "SwordMaster Assassin": {
         "acronym": "BMA, SMA",
@@ -424,7 +424,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Seasonal, Dage Bday, 2k AC",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914357060141056/SwordMaster_Assassin_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924261452873728/SwordMaster_Assassin_Class_Chart.png"
     },
     "Blaze Binder": {
         "acronym": "BB",
@@ -452,7 +452,7 @@
         },
         "type": "available",
         "location": "Rep - r10 Embersea, r10 Doomwood, Pyro",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913681522130954/Blaze_Binder_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923495648198676/Blaze_Binder_Class_Chart.png"
     },
     "Blood Ancient": {
         "acronym": "BA",
@@ -483,7 +483,7 @@
         },
         "type": "available",
         "location": "Merge, 25 Ancient Vitae, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913689524076594/Blood_Ancient_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923501021233162/Blood_Ancient_Class_Chart.png"
     },
     "Blood Sorceress": {
         "acronym": "BS",
@@ -511,7 +511,7 @@
         },
         "type": "available",
         "location": "Drop in /towerofmirrors",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913694708105236/Blood_Sorceress_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923506776211486/Blood_Sorceress_Class_Chart.png"
     },
     "Blood Titan": {
         "acronym": "BT",
@@ -542,7 +542,7 @@
         },
         "type": "available",
         "location": "Merge, 450 Blood Titan Tokens, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913702032146432/Blood_Titan_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923513209225246/Blood_Titan_Class_Chart.png"
     },
     "CardClasher": {
         "acronym": "CC",
@@ -571,7 +571,7 @@
         },
         "type": "rare",
         "location": "Heromart Reward",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913707009998868/CardClasher_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923520911147008/CardClasher_Class_Chart.png"
     },
     "Chaos Shaper": {
         "acronym": "(None)",
@@ -600,7 +600,7 @@
         },
         "type": "available",
         "location": "Shop, 15 month member bonus",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913715114180608/Chaos_Shaper_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923526166085692/Chaos_Shaper_Class_Chart.png"
     },
     "Chaos Slayer": {
         "acronym": "CS, CSlayer",
@@ -635,7 +635,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Chaos + Comeplete Chaos Saga",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913722822524938/Chaos_Slayer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923539696255016/Chaos_Slayer_Class_Chart.png"
     },
     "Chronomancer": {
         "acronym": "(None)",
@@ -664,7 +664,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913750543335424/Chronomancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923576858312715/Chronomancer_Class_Chart.png"
     },
     "Chrono Assassin": {
         "acronym": "CA",
@@ -695,7 +695,7 @@
         },
         "type": "available",
         "location": "Merge, /tachyon, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913727990824980/Chrono_Assassin_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923544810291210/Chrono_Assassin_Class_Chart.png"
     },
     "Chrono DragonKnight": {
         "acronym": "CDK",
@@ -721,7 +721,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913734743654430/Chrono_DragonKnight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923554133311498/Chrono_DragonKnight_Class_Chart.png"
     },
     "ChronoCommander": {
         "acronym": "CC",
@@ -750,7 +750,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913740321423390/ChronoCommander_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923561461284884/ChronoCommander_Class_Chart.png"
     },
     "ChronoCorruptor": {
         "acronym": "CC",
@@ -779,10 +779,10 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913745321295882/ChronoCorruptor_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923569115103272/ChronoCorruptor_Class_Chart.png"
     },
     "Imperial Chunin": {
-        "acronym": "IC",
+        "acronym": "IC, ImC",
         "awe_enh": "Spiral Carve",
         "duplicates": [
             "Chunin"
@@ -809,7 +809,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Yokai, /dragonkoiz",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914056496578570/Imperial_Chunin_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923954051547156/Imperial_Chunin_Class_Chart.png"
     },
     "Classic Alpha Pirate": {
         "acronym": "",
@@ -856,7 +856,7 @@
         },
         "type": "available",
         "location": "Shop, /tower, verification",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913755564179496/Classic_Defender_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923584794591232/Classic_Defender_Class_Chart.png"
     },
     "Classic DoomKnight": {
         "acronym": "Classic DmK",
@@ -887,7 +887,7 @@
         },
         "type": "available",
         "location": "Quest, r10 Warrior, r10 Healer, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913762890842123/Classic_DoomKnight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923590439338034/Classic_DoomKnight_Class_Chart.png"
     },
     "Classic DragonLord": {
         "acronym": "Classic DL",
@@ -916,7 +916,7 @@
         },
         "type": "available",
         "location": "Shop, /tower, verification",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913770604298261/Classic_DragonLord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923595254005760/Classic_DragonLord_Class_Chart.png"
     },
     "Classic Guardian": {
         "acronym": "(None)",
@@ -945,7 +945,7 @@
         },
         "type": "available",
         "location": "Shop, /tower, verification",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913781774123009/Classic_Guardian_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923610542243900/Classic_Guardian_Class_Chart.png"
     },
     "Classic Legion DoomKnight": {
         "acronym": "CLDK, CLDmK",
@@ -973,7 +973,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913788455911444/Classic_Legion_DoomKnight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923615910953000/Classic_Legion_DoomKnight_Class_Chart.png"
     },
     "Classic Paladin": {
         "acronym": "(None)",
@@ -1004,7 +1004,7 @@
         },
         "type": "available",
         "location": "Quest, r10 Warrior, r10 Healer, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913795565256714/Classic_Paladin_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923621120540672/Classic_Paladin_Class_Chart.png"
     },
     "Classic Exalted Soul Cleaver": {
         "acronym": "CESC",
@@ -1034,7 +1034,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913776241180722/Classic_Exalted_Soul_Cleaver_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923602476728340/Classic_Exalted_Soul_Cleaver_Class_Chart.png"
     },
     "ClawSuit": {
         "acronym": "(None)",
@@ -1063,7 +1063,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913802417963039/ClawSuit_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923628452446248/ClawSuit_Class_Chart.png"
     },
     "Underworld Chronomancer": {
         "acronym": "UCM",
@@ -1092,7 +1092,7 @@
         },
         "type": "rare",
         "location": "Heromart, 2020 Calendar",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914422563504128/Underworld_Chronomancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924329781493760/Underworld_Chronomancer_Class_Chart.png"
     },
     "Corrupted Chronomancer": {
         "acronym": "CCM",
@@ -1121,7 +1121,7 @@
         },
         "type": "rare",
         "location": "Heromart, 2019 Calendar",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913809725095936/Corrupted_Chronomancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923641539067925/Corrupted_Chronomancer_Class_Chart.png"
     },
     "Cryomancer": {
         "acronym": "Cryo",
@@ -1152,7 +1152,7 @@
         },
         "type": "available",
         "location": "Merge, Daily",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913815592796160/Cryomancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923646659788800/Cryomancer_Class_Chart.png"
     },
     "Daimon": {
         "acronym": "(None)",
@@ -1178,7 +1178,7 @@
         },
         "type": "available",
         "location": "Shop, 100k gold, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913822227922954/Daimon_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923651789684746/Daimon_Class_Chart.png"
     },
     "Dark Metal Necro": {
         "acronym": "DMN, HMN, UR, SR",
@@ -1211,7 +1211,7 @@
         },
         "type": "seasonal",
         "location": "Merge",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913836811649044/Dark_Metal_Necro_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923674572619786/Dark_Metal_Necro_Class_Chart.png"
     },
     "Darkblood StormKing": {
         "acronym": "DBSK",
@@ -1239,7 +1239,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Thunderforge",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913852410789909/Darkblood_StormKing_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923709885251615/Darkblood_StormKing_Class_Chart.png"
     },
     "Darkside": {
         "acronym": "(None)",
@@ -1265,7 +1265,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913857392967700/Darkside_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923716092166174/Darkside_Class_Chart.png"
     },
     "DeathKnight": {
         "acronym": "DK",
@@ -1296,7 +1296,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Doomwood, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913862556024852/DeathKnight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923720908013568/DeathKnight_Class_Chart.png"
     },
     "DeathKnight Lord": {
         "acronym": "DKL",
@@ -1327,7 +1327,7 @@
         },
         "type": "available",
         "location": "Merge, Daily, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913869577682954/DeathKnight_Lord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923736401510450/DeathKnight_Lord_Class_Chart.png"
     },
     "Defender": {
         "acronym": "(None)",
@@ -1356,7 +1356,7 @@
         },
         "type": "available",
         "location": "Shop, /tower, verification",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913876507197450/Defender_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923744470958080/Defender_Class_Chart.png"
     },
     "DoomKnight Overlord": {
         "acronym": "DKO",
@@ -1385,7 +1385,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913890385887252/DoomKnight_Overlord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923760128163840/DoomKnight_Overlord_Class_Chart.png"
     },
     "Doomknight": {
         "acronym": "DmK",
@@ -1416,7 +1416,7 @@
         },
         "type": "available",
         "location": "Quest, r10 Warrior, r10 Healer, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913882219577374/Doomknight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923752406712330/Doomknight_Class_Chart.png"
     },
     "Dragon Knight": {
         "acronym": "DK",
@@ -1445,7 +1445,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913896655847434/Dragon_Knight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923767766253588/Dragon_Knight_Class_Chart.png"
     },
     "DragonSoul Shinobi": {
         "acronym": "DS, DShinobi, SDS, DSS",
@@ -1466,8 +1466,7 @@
             0,
             4
         ],
-        "tags": [
-        ],
+        "tags": [],
         "bludrut": 3,
         "acquire": {
             "ac_version": "No",
@@ -1478,10 +1477,10 @@
         },
         "type": "available",
         "location": "Merge, r10 Yokai, completion of Shadow Shogun saga",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/808737172864892999/DragonSoul_Shinobi_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923805767041035/DragonSoul_Shinobi_Class_Chart.png"
     },
     "Dragon of Time": {
-        "acronym": "EDoT, DT",
+        "acronym": "EDoT, DT, DoT",
         "awe_enh": "Health Vamp",
         "duplicates": [],
         "enh": "healer",
@@ -1506,7 +1505,7 @@
         },
         "type": "available",
         "location": "Quest, /yulgar",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913903710535710/Dragon_of_Time_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923773084368906/Dragon_of_Time_Class_Chart.png"
     },
     "DragonLord": {
         "acronym": "DL",
@@ -1535,7 +1534,7 @@
         },
         "type": "available",
         "location": "Shop, /tower, verification",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913908954202142/DragonLord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923780495441920/DragonLord_Class_Chart.png"
     },
     "Dragonslayer": {
         "acronym": "DS",
@@ -1563,7 +1562,7 @@
         },
         "type": "available",
         "location": "Quest in /lair",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913916109291580/Dragonslayer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923787688673291/Dragonslayer_Class_Chart.png"
     },
     "Dragonslayer General": {
         "acronym": "DSG",
@@ -1593,7 +1592,7 @@
         },
         "type": "available",
         "location": "Merge, /dragontown and r10 Dragonslayer",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913923876487208/Dragonslayer_General_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923794445697074/Dragonslayer_General_Class_Chart.png"
     },
     "Drakel Warlord": {
         "acronym": "DW",
@@ -1622,7 +1621,7 @@
         },
         "type": "available",
         "location": "Shop, 100k gold, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913934316240896/Drakel_Warlord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923815924727838/Drakel_Warlord_Class_Chart.png"
     },
     "Elemental Dracomancer": {
         "acronym": "ED",
@@ -1652,7 +1651,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Etherstorm",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913943192174612/Elemental_Dracomancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923823928115210/Elemental_Dracomancer_Class_Chart.png"
     },
     "Eternal Inversionist": {
         "acronym": "EI",
@@ -1680,7 +1679,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Eternal",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913954943959050/Eternal_Inversionist_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923838129373204/Eternal_Inversionist_Class_Chart.png"
     },
     "Prismatic ClawSuit": {
         "acronym": "PCS",
@@ -1711,7 +1710,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Seasonal, Free, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914256393699348/Prismatic_ClawSuit_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924166892290088/Prismatic_ClawSuit_Class_Chart.png"
     },
     "Evolved Leprechaun": {
         "acronym": "(None)",
@@ -1739,7 +1738,7 @@
         },
         "type": "seasonal",
         "location": "Merge, Seasonal, Daily quest",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913960254341150/Evolved_Leprechaun_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923845259821126/Evolved_Leprechaun_Class_Chart.png"
     },
     "Evolved Pumpkin Lord": {
         "acronym": "EPL",
@@ -1767,7 +1766,7 @@
         },
         "type": "available",
         "location": "Merge (Seasonal) / Drop, Mogloween",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913967883780136/Evolved_Pumpkin_Lord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923853795229716/Evolved_Pumpkin_Lord_Class_Chart.png"
     },
     "Evolved Shaman": {
         "acronym": "ES, EShaman",
@@ -1795,7 +1794,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Arcangrove",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913972979466290/Evolved_Shaman_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923862393552916/Evolved_Shaman_Class_Chart.png"
     },
     "Soul Cleaver": {
         "acronym": "SC, ESC, Harb",
@@ -1827,7 +1826,7 @@
         },
         "type": "available",
         "location": "Merge, Legion, 2k LT",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914331986853919/Soul_Cleaver_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924234390569020/Soul_Cleaver_Class_Chart.png"
     },
     "Flame Dragon Warrior": {
         "acronym": "FDW",
@@ -1856,7 +1855,7 @@
         },
         "type": "available",
         "location": "Shop, AQ:Dragons package, $10",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913980558704640/Flame_Dragon_Warrior_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923870350147655/Flame_Dragon_Warrior_Class_Chart.png"
     },
     "Frostval Barbarian": {
         "acronym": "FB, Barb",
@@ -1884,7 +1883,7 @@
         },
         "type": "seasonal",
         "location": "Quest, 5 dailies, complete Frostvale storylines",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913994588258315/Frostval_Barbarian_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923883571511306/Frostval_Barbarian_Class_Chart.png"
     },
     "Glacial Berserker": {
         "acronym": "GB",
@@ -1914,7 +1913,7 @@
         },
         "type": "seasonal",
         "location": "Rep, r10 Glacial",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914002339856424/Glacial_Berserker_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923893637709854/Glacial_Berserker_Class_Chart.png"
     },
     "Glacial Warlord": {
         "acronym": "GW",
@@ -1943,7 +1942,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914009978208276/Glacial_Warlord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923901694967828/Glacial_Warlord_Class_Chart.png"
     },
     "Great Thief": {
         "acronym": "GT",
@@ -1972,7 +1971,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914015270371348/Great_Thief_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923908410310666/Great_Thief_Class_Chart.png"
     },
     "Grim Necromancer": {
         "acronym": "GN",
@@ -2001,7 +2000,7 @@
         },
         "type": "available",
         "location": "Shop, 600k AC purchased badge",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914020518363146/Grim_Necromancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923913808248852/Grim_Necromancer_Class_Chart.png"
     },
     "Guardian": {
         "acronym": "(None)",
@@ -2030,7 +2029,7 @@
         },
         "type": "available",
         "location": "Shop, /tower, verification",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914028382289940/Guardian_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923919407382558/Guardian_Class_Chart.png"
     },
     "Healer": {
         "acronym": "(None)",
@@ -2060,7 +2059,7 @@
         },
         "type": "available",
         "location": "Starter / Shop",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914035303022592/Healer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923924889206815/Healer_Class_Chart.png"
     },
     "HighSeas Commander": {
         "acronym": "HSC, Highseas",
@@ -2086,7 +2085,7 @@
         },
         "type": "available",
         "location": "Shop, 10 years played badge",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914040982372392/HighSeas_Commander_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923932757065738/HighSeas_Commander_Class_Chart.png"
     },
     "Horc Evader": {
         "acronym": "HE, Horc",
@@ -2114,7 +2113,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Horc",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914046396432394/Horc_Evader_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923940270243850/Horc_Evader_Class_Chart.png"
     },
     "Eternal Chronomancer": {
         "acronym": "EC, IC, ECM, ICM",
@@ -2146,7 +2145,7 @@
         },
         "type": "rare",
         "location": "Heromart, 2018 Calendar",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913949068001310/Eternal_Chronomancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923831419666432/Eternal_Chronomancer_Class_Chart.png"
     },
     "Immortal Dark Caster": {
         "acronym": "IDC, Immo DC, DC",
@@ -2177,7 +2176,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Seasonal, 2k AC",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914051321462794/Immortal_Dark_Caster_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923946208722964/Immortal_Dark_Caster_Class_Chart.png"
     },
     "Infinite Dark Caster": {
         "acronym": "IDC, ILDC, EDC, ELDC",
@@ -2212,7 +2211,7 @@
         },
         "type": "available",
         "location": "Merge, Legion, 2k LT",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914064293396480/Infinite_Dark_Caster_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923959823040512/Infinite_Dark_Caster_Class_Chart.png"
     },
     "Infinity Knight": {
         "acronym": "IK",
@@ -2241,7 +2240,7 @@
         },
         "type": "rare",
         "location": "Heromart, 2016 Calendar",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914071969234955/Infinity_Knight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923967481708564/Infinity_Knight_Class_Chart.png"
     },
     "Legendary Hero": {
         "acronym": "LH",
@@ -2272,7 +2271,7 @@
         },
         "type": "available",
         "location": "Shop, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914092349489202/Legendary_Hero_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923991788879882/Legendary_Hero_Class_Chart.png"
     },
     "Legion SwordMaster Assassin": {
         "acronym": "LBMA, LSMA",
@@ -2302,7 +2301,7 @@
         },
         "type": "seasonal",
         "location": "Merge, Seasonal, Legion, 5k LT + 300 rocks",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914113505689600/Legion_SwordMaster_Assassin_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924020070547456/Legion_SwordMaster_Assassin_Class_Chart.png"
     },
     "Legion DoomKnight": {
         "acronym": "LDK, LDmK",
@@ -2330,7 +2329,7 @@
         },
         "type": "seasonal",
         "location": "Merge, Seasonal, Legion, 2k LT",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914097546231828/Legion_DoomKnight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923999169675274/Legion_DoomKnight_Class_Chart.png"
     },
     "Legion Paladin": {
         "acronym": "LP",
@@ -2359,7 +2358,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914103095164938/Legion_Paladin_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924006681673728/Legion_Paladin_Class_Chart.png"
     },
     "Legion Revenant": {
         "acronym": "LR",
@@ -2389,7 +2388,7 @@
         },
         "type": "available",
         "location": "Questline - need at least one Dark Caster type",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914108099231775/Legion_Revenant_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924012194037810/Legion_Revenant_Class_Chart.png"
     },
     "Leprechaun": {
         "acronym": "Lep, Leppy",
@@ -2417,7 +2416,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914120632205352/Leprechaun_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924025090473984/Leprechaun_Class_Chart.png"
     },
     "LightCaster": {
         "acronym": "LC",
@@ -2445,7 +2444,7 @@
         },
         "type": "available",
         "location": "Quest - need LightMage",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914128442130442/LightCaster_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924030904959016/LightCaster_Class_Chart.png"
     },
     "LightMage": {
         "acronym": "LM",
@@ -2474,7 +2473,7 @@
         },
         "type": "available",
         "location": "Shop, Buy 1k AC armor",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914135739301959/LightMage_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924036646699048/LightMage_Class_Chart.png"
     },
     "Lord of Order": {
         "acronym": "LoO, Lorder",
@@ -2502,7 +2501,7 @@
         },
         "type": "available",
         "location": "Questline - from /Battleoff",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914140823060511/Lord_of_Order_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924041687334932/Lord_of_Order_Class_Chart.png"
     },
     "Lycan": {
         "acronym": "(None)",
@@ -2530,7 +2529,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Lycan",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914148620402688/Lycan_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924048499146752/Lycan_Class_Chart.png"
     },
     "Mage": {
         "acronym": "(None)",
@@ -2560,7 +2559,7 @@
         },
         "type": "available",
         "location": "Starter / Shop",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914156077744128/Mage_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924053813461003/Mage_Class_Chart.png"
     },
     "Master Ranger": {
         "acronym": "MR",
@@ -2590,7 +2589,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Sandsea rep",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914163430621224/Master_Ranger_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924060667346944/Master_Ranger_Class_Chart.png"
     },
     "Dark Master of Moglins": {
         "acronym": "MoM",
@@ -2621,7 +2620,7 @@
         },
         "type": "available",
         "location": "Heromart or Kickstarter reward",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913829488918559/Dark_Master_of_Moglins_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923659909857280/Dark_Master_of_Moglins_Class_Chart.png"
     },
     "MechaJouster": {
         "acronym": "MJ, Jouster",
@@ -2649,7 +2648,7 @@
         },
         "type": "available",
         "location": "Merge",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914171215511552/MechaJouster_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924067172057128/MechaJouster_Class_Chart.png"
     },
     "MindBreaker": {
         "acronym": "MB",
@@ -2678,7 +2677,7 @@
         },
         "type": "available",
         "location": "Shop, 12k AC bonus shop",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914177070497792/MindBreaker_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924074395435038/MindBreaker_Class_Chart.png"
     },
     "NOT A MOD": {
         "acronym": "(None)",
@@ -2707,7 +2706,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914211027320872/NOT_A_MOD_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924125179281408/NOT_A_MOD_Class_Chart.png"
     },
     "Naval Commander": {
         "acronym": "NC",
@@ -2736,7 +2735,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Seasonal, 100k gold, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914182006538260/Naval_Commander_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924083592757288/Naval_Commander_Class_Chart.png"
     },
     "Necromancer": {
         "acronym": "Necro",
@@ -2766,7 +2765,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Doomwood",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914187061067796/Necromancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924097749319680/Necromancer_Class_Chart.png"
     },
     "Ninja": {
         "acronym": "Sin",
@@ -2795,7 +2794,7 @@
         },
         "type": "available",
         "location": "Shop, 15k gold",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914192324919316/Ninja_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924105374695435/Ninja_Class_Chart.png"
     },
     "No Class": {
         "acronym": "HHL",
@@ -2824,7 +2823,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Seasonal, 1 gold",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914198712975381/No_Class_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924111518302218/No_Class_Class_Chart.png"
     },
     "Northlands Monk": {
         "acronym": "NM, Monk",
@@ -2852,7 +2851,7 @@
         },
         "type": "seasonal",
         "location": "Drop from /frozensoul",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914205268541460/Northlands_Monk_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924117030273045/Northlands_Monk_Class_Chart.png"
     },
     "Nu Metal Necro": {
         "acronym": "NMN",
@@ -2884,7 +2883,7 @@
         },
         "type": "seasonal",
         "location": "Merge",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914218313482270/Nu_Metal_Necro_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924131000844288/Nu_Metal_Necro_Class_Chart.png"
     },
     "Oracle": {
         "acronym": "(None)",
@@ -2910,7 +2909,7 @@
         },
         "type": "available",
         "location": "Shop- Class shop, free",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914225661771796/Oracle_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924136424341554/Oracle_Class_Chart.png"
     },
     "Paladin": {
         "acronym": "Pal",
@@ -2943,7 +2942,7 @@
         },
         "type": "available",
         "location": "r10 Warrior, r10 Healer, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914231516758026/Paladin_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924143701721128/Paladin_Class_Chart.png"
     },
     "Paladin High Lord": {
         "acronym": "PHL",
@@ -2969,7 +2968,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914239100059648/Paladin_High_Lord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924148412317726/Paladin_High_Lord_Class_Chart.png"
     },
     "PaladinSlayer": {
         "acronym": "PS",
@@ -2998,7 +2997,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914243906076682/PaladinSlayer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924153285443614/PaladinSlayer_Class_Chart.png"
     },
     "Pirate": {
         "acronym": "(None)",
@@ -3026,7 +3025,7 @@
         },
         "type": "seasonal",
         "location": "Quest, Seasonal, TLaPD, Classic Pirate",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914249031778315/Pirate_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924160059506708/Pirate_Class_Chart.png"
     },
     "Pumpkin Lord": {
         "acronym": "",
@@ -3064,7 +3063,7 @@
         },
         "type": "available",
         "location": "Merge, Daily",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914261498167356/Pyromancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924172567576576/Pyromancer_Class_Chart.png"
     },
     "Rogue": {
         "acronym": "(None)",
@@ -3093,7 +3092,7 @@
         },
         "type": "available",
         "location": "Starter / Shop",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914266555580426/Rogue_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924178862178324/Rogue_Class_Chart.png"
     },
     "Rustbucket": {
         "acronym": "RB, Proto",
@@ -3124,7 +3123,7 @@
         },
         "type": "available",
         "location": "Quest in /crashsite",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914276945264670/Rustbucket_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924189163388968/Rustbucket_Class_Chart.png"
     },
     "Scarlet Sorceress": {
         "acronym": "SS",
@@ -3152,7 +3151,7 @@
         },
         "type": "available",
         "location": "Quest, Level 50, Blood Sorc, and /towerofmirrors",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914285434404884/Scarlet_Sorceress_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924194314387516/Scarlet_Sorceress_Class_Chart.png"
     },
     "Sentinel": {
         "acronym": "(None)",
@@ -3181,7 +3180,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Upholder",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914290668371998/Sentinel_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924200018247680/Sentinel_Class_Chart.png"
     },
     "ShadowScythe General": {
         "acronym": "SSG",
@@ -3209,7 +3208,7 @@
         },
         "type": "available",
         "location": "Merge, Daily",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914296570413056/ShadowScythe_General_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924205324697651/ShadowScythe_General_Class_Chart.png"
     },
     "ShadowWalker of Time": {
         "acronym": "SWoT, SSoT",
@@ -3241,7 +3240,7 @@
         },
         "type": "rare",
         "location": "Heromart, 2017 Calendar",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914303709118514/ShadowWalker_of_Time_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924210194284544/ShadowWalker_of_Time_Class_Chart.png"
     },
     "Shaman": {
         "acronym": "(None)",
@@ -3269,7 +3268,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Arcangrove",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914311741734933/Shaman_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924217731448863/Shaman_Class_Chart.png"
     },
     "SkyCharged Grenadier": {
         "acronym": "SCG",
@@ -3298,7 +3297,7 @@
         },
         "type": "available",
         "location": "Shop, 9 years membership badge",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914317633683456/SkyCharged_Grenadier_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924222453841920/SkyCharged_Grenadier_Class_Chart.png"
     },
     "SkyGuard Grenadier": {
         "acronym": "SGG",
@@ -3326,7 +3325,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Skyguard, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914325171372052/SkyGuard_Grenadier_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924227503915008/SkyGuard_Grenadier_Class_Chart.png"
     },
     "Star Captain": {
         "acronym": "StC",
@@ -3355,7 +3354,7 @@
         },
         "type": "available",
         "location": "Shop/tower, verification",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914337804091422/Star_Captain_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924241256775690/Star_Captain_Class_Chart.png"
     },
     "StarLord": {
         "acronym": "SL",
@@ -3384,7 +3383,7 @@
         },
         "type": "available",
         "location": "Shop/tower, verification",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914343639285760/StarLord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924249146916904/StarLord_Class_Chart.png"
     },
     "StoneCrusher": {
         "acronym": "SC",
@@ -3414,7 +3413,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Brightoak, r10 Mythsong, r10 Arcangrove",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914349225181195/StoneCrusher_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924254700044328/StoneCrusher_Class_Chart.png"
     },
     "The Collector": {
         "acronym": "(None)",
@@ -3442,7 +3441,7 @@
         },
         "type": "available",
         "location": "Merge, Daily",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914372264624168/The_Collector_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924276955283466/The_Collector_Class_Chart.png"
     },
     "Thief of Hours": {
         "acronym": "ToH",
@@ -3470,7 +3469,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Chronospan",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914377839640616/Thief_of_Hours_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924284235546664/Thief_of_Hours_Class_Chart.png"
     },
     "TimeKiller": {
         "acronym": "TK",
@@ -3499,7 +3498,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914383014625290/TimeKiller_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924291252617216/TimeKiller_Class_Chart.png"
     },
     "Timeless Dark Caster": {
         "acronym": "TDC, Timeless, ADC, MDC",
@@ -3531,7 +3530,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Seasonal, 2k AC",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914388367212566/Timeless_Dark_Caster_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924296450408458/Timeless_Dark_Caster_Class_Chart.png"
     },
     "Troll Spellsmith": {
         "acronym": "TSS",
@@ -3559,7 +3558,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Troll",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914395505262622/Troll_Spellsmith_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924303173222400/Troll_Spellsmith_Class_Chart.png"
     },
     "Legendary Elemental Warrior": {
         "acronym": "LEW, UEW, EW",
@@ -3592,7 +3591,7 @@
         },
         "type": "available",
         "location": "Rep, r6 Elemental Master, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914085340545034/Legendary_Elemental_Warrior_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923985660608562/Legendary_Elemental_Warrior_Class_Chart.png"
     },
     "Dark Ultra OmniNight": {
         "acronym": "DUON, UOK",
@@ -3623,7 +3622,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Seasonal, 2k AC",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913844486963210/Dark_Ultra_OmniNight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816923703051812864/Dark_Ultra_OmniNight_Class_Chart.png"
     },
     "Undead Goat": {
         "acronym": "(None)",
@@ -3649,7 +3648,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914403004809236/Undead_Goat_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924309490237440/Undead_Goat_Class_Chart.png"
     },
     "UndeadSlayer": {
         "acronym": "US",
@@ -3677,7 +3676,7 @@
         },
         "type": "available",
         "location": "Rep, r10 Doomwood",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914415508160552/UndeadSlayer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924321762639901/UndeadSlayer_Class_Chart.png"
     },
     "Undead Leperchaun": {
         "acronym": "(None)",
@@ -3708,7 +3707,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Seasonal, 100k gold, mem",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914408667643924/Undead_Leperchaun_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924316150661150/Undead_Leperchaun_Class_Chart.png"
     },
     "Vampire Lord": {
         "acronym": "VL",
@@ -3740,7 +3739,7 @@
         },
         "type": "seasonal",
         "location": "Merge, Seasonal, B-day class, 300 Blood Moon Tokens",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914428455976981/Vampire_Lord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924334899724339/Vampire_Lord_Class_Chart.png"
     },
     "Vindicator of They": {
         "acronym": "VoT",
@@ -3768,7 +3767,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914435456794634/Vindicator_of_They_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924340134215690/Vindicator_of_They_Class_Chart.png"
     },
     "Void Highlord": {
         "acronym": "VHL",
@@ -3796,7 +3795,7 @@
         },
         "type": "available",
         "location": "Merge",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914442121412628/Void_Highlord_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924345494274088/Void_Highlord_Class_Chart.png"
     },
     "Warrior": {
         "acronym": "War",
@@ -3829,7 +3828,7 @@
         },
         "type": "available",
         "location": "Starter / Shop",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914447133343764/Warrior_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924353123713024/Warrior_Class_Chart.png"
     },
     "Yami no Ronin": {
         "acronym": "YnR",
@@ -3857,6 +3856,6 @@
         },
         "type": "available",
         "location": "Quest, /darkally",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807914454229450752/Yami_no_Ronin_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/816924358387826718/Yami_no_Ronin_Class_Chart.png"
     }
 }
