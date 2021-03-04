@@ -77,60 +77,6 @@
     "Boating Guides":{
         "type":"header"
     },
-    "wmons":{
-        "type":"single_link",
-        "auth":"aqw",
-        "title":"Weapons with Damage Boost against All Monsters",
-        "description":"A list on wikidot containing all weapons with damage boost against monsters.",
-        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2monsters#pages",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964118912958474/monsterkind.png"
-    },
-    "wchaos":{
-        "type":"single_link",
-        "auth":"aqw",
-        "title":"Weapons with Damage Boost against Chaos Monsters",
-        "description":"A list on wikidot containing all weapons with damage boost against Chaos monsters.",
-        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2chaos#pages",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964122066681856/chaoskind.png"
-    },
-    "whum":{
-        "type":"single_link",
-        "auth":"aqw",
-        "title":"Weapons with Damage Boost against Human Monsters",
-        "description":"A list on wikidot containing all weapons with damage boost against Human monsters.",
-        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2human#pages",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964128303480842/humankind.png"
-    },
-    "wdra":{
-        "type":"single_link",
-        "auth":"aqw",
-        "title":"Weapons with Damage Boost against Dragon Monsters",
-        "description":"A list on wikidot containing all weapons with damage boost against Dragon monsters.",
-        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2dragon#pages",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964123068989470/dragonkind.png"
-    },
-    "welem":{
-        "type":"single_link",
-        "auth":"aqw",
-        "title":"Weapons with Damage Boost against Elemental Monsters",
-        "description":"A list on wikidot containing all weapons with damage boost against Elemental monsters.",
-        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2elemental#pages",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964125010690048/elementalkind.png"
-    },
-    "Damage lists":{
-        "type":"header"
-    },
-    "wund":{
-        "type":"single_link",
-        "auth":"aqw",
-        "title":"Weapons with Damage Boost against Undead Monsters",
-        "description":"A list on wikidot containing all weapons with damage boost against Undead monsters.",
-        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2undead#pages",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964119898095646/undeadkind.png"
-    },
-    "Damage lists":{
-        "type":"header"
-    },
     "guides":{
         "type":"single_link",
         "auth":"aqw",
@@ -278,6 +224,92 @@
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/811470176318783508/unknown.png"
     },
     "General Guides":{
+        "type":"header"
+    },
+    "wmons":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"Damage Boost against All Monsters",
+        "description":"A list on wikidot containing all items with damage boost against monsters.",
+        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2monsters#pages",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964118912958474/monsterkind.png"
+    },
+    "wchaos":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"Damage Boost against Chaos Monsters",
+        "description":"A list on wikidot containing all items with damage boost against Chaos monsters.",
+        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2chaos#pages",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964122066681856/chaoskind.png"
+    },
+    "whum":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"Damage Boost against Human Monsters",
+        "description":"A list on wikidot containing all items with damage boost against Human monsters.",
+        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2human#pages",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964128303480842/humankind.png"
+    },
+    "wdra":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"Damage Boost against Dragon Monsters",
+        "description":"A list on wikidot containing all items with damage boost against Dragon monsters.",
+        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2dragon#pages",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964123068989470/dragonkind.png"
+    },
+    "welem":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"Damage Boost against Elemental Monsters",
+        "description":"A list on wikidot containing all items with damage boost against Elemental monsters.",
+        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2elemental#pages",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964125010690048/elementalkind.png"
+    },
+    "wund":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"Damage Boost against Undead Monsters",
+        "description":"A list on wikidot containing all items with damage boost against Undead monsters.",
+        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2undead#pages",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964119898095646/undeadkind.png"
+    },
+    "Damage Boosters":{
+        "type":"header"
+    },
+    "boostxp":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"XP Boosts Items",
+        "description":"A list on wikidot containing all items with Experience Point boosts.",
+        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xpboost#pages",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816967847162806292/XPBoost.png"
+    },
+    "boostcp":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"CP Boosts Items",
+        "description":"A list on wikidot containing all items with Class Point boosts.",
+        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/cpboost#pages",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816967847216545792/ClassBoost.png"
+    },
+    "boostrep":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"CP Boosts Items",
+        "description":"A list on wikidot containing all items with Reputation Points boosts.",
+        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/repboost#pages",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816967844088512552/RepBoost.png"
+    },
+    "boostgold":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"CP Boosts Items",
+        "description":"A list on wikidot containing all items with Gold boosts.",
+        "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/goldboost#pages",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816967845346410526/GoldBoost.png"
+    },
+    "Item Boosters":{
         "type":"header"
     },
     "blod":{
