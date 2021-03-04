@@ -789,7 +789,7 @@
         ],
         "enh": "luck",
         "note": "",
-        "wiki": "http://aqwwiki.wikidot.com/chunin-merge",
+        "wiki": "http://aqwwiki.wikidot.com/imperial-chunin",
         "stats": [
             3,
             4,
@@ -1456,7 +1456,7 @@
         ],
         "enh": "luck",
         "note": "",
-        "wiki": "http://aqwwiki.wikidot.com/dragon-shinobi-class-ac",
+        "wiki": "http://aqwwiki.wikidot.com/dragonsoul-shinobi-class",
         "stats": [
             4,
             5,
@@ -1467,7 +1467,6 @@
             4
         ],
         "tags": [
-            "acs_only"
         ],
         "bludrut": 3,
         "acquire": {
