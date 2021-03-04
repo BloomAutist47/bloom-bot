@@ -226,7 +226,7 @@
     "General Guides":{
         "type":"header"
     },
-    "wmons":{
+    "mons":{
         "type":"single_link",
         "auth":"aqw",
         "title":"Damage Boost against All Monsters",
@@ -234,7 +234,7 @@
         "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2monsters#pages",
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964118912958474/monsterkind.png"
     },
-    "wchaos":{
+    "chaos":{
         "type":"single_link",
         "auth":"aqw",
         "title":"Damage Boost against Chaos Monsters",
@@ -242,7 +242,7 @@
         "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2chaos#pages",
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964122066681856/chaoskind.png"
     },
-    "whum":{
+    "hum":{
         "type":"single_link",
         "auth":"aqw",
         "title":"Damage Boost against Human Monsters",
@@ -258,7 +258,7 @@
         "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2dragon#pages",
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964123068989470/dragonkind.png"
     },
-    "welem":{
+    "elem":{
         "type":"single_link",
         "auth":"aqw",
         "title":"Damage Boost against Elemental Monsters",
@@ -266,7 +266,7 @@
         "content":"http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2elemental#pages",
         "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964125010690048/elementalkind.png"
     },
-    "wund":{
+    "und":{
         "type":"single_link",
         "auth":"aqw",
         "title":"Damage Boost against Undead Monsters",
