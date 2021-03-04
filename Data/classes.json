@@ -782,7 +782,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/807913745321295882/ChronoCorruptor_Class_Chart.png"
     },
     "Imperial Chunin": {
-        "acronym": "IC",
+        "acronym": "IC, ImC",
         "awe_enh": "Spiral Carve",
         "duplicates": [
             "Chunin"
@@ -1466,8 +1466,7 @@
             0,
             4
         ],
-        "tags": [
-        ],
+        "tags": [],
         "bludrut": 3,
         "acquire": {
             "ac_version": "No",
@@ -1481,7 +1480,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/808737172864892999/DragonSoul_Shinobi_Class_Chart.png"
     },
     "Dragon of Time": {
-        "acronym": "EDoT, DT",
+        "acronym": "EDoT, DTDoT",
         "awe_enh": "Health Vamp",
         "duplicates": [],
         "enh": "healer",
