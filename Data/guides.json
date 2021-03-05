@@ -414,7 +414,7 @@
     "topsup":{
         "type":"text",
         "auth":"aqw",
-        "title":"Top Farming Classes",
+        "title":"Top Support Classes",
         "description":"Support Class Rank Class mentioned here are ranked mostly from its supporting role while also taking other aspects such as GDPS as well as boosted survivability in mind.",
         "content":[
             "**Top List** (Best to worst)",
