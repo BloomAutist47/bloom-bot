@@ -353,7 +353,7 @@
         "title":"Top Soloing Classes",
         "description":"Solo Class rank Both DPS and survivability are taken into consideration, however, DPS has more influence in a class' ranking.",
         "content":[
-            "**Top List**",
+            "**Top List** (Best to worst)",
             "🔹 Corrupted Chronomancer",
             "🔹 Underworld Chronomancer",
             "🔹 Eternal/Immortal Chronomancer",
@@ -378,7 +378,7 @@
             "The rankings here are only accurate when the classes listed are used both properly and optimally. The Current Rank of Solo Classes (Best to worst).",
             "",
             "**Credits**",
-            "Thanks to IzMei for [creating](http://tiny.cc/4m4rtz) this list and the people that helped him; u/xiaomole, u/Ancholo_, u/nickcagenado."
+            "Thanks to IzMei for [creating](http://tiny.cc/4m4rtz) this list and the people that helped him; [u/xiaomole](https://www.reddit.com/u/xiaomole/), [u/Ancholo_](https://www.reddit.com/u/Ancholo_/), [u/nickcagenado](https://www.reddit.com/u/nickcagenado/)."
         ]
     },
     "topfarm":{
@@ -387,7 +387,7 @@
         "title":"Top Farming Classes",
         "description":"Farming Class Rank Damage per second (DPS), time to kill (TTK), and survivability are taken into consideration with DPS and TTK having more influence in the rankings.",
         "content":[
-            "**Top List**",
+            "**Top List** (Best to worst)",
             "🔹 Master of Moglins",
             "🔹 Legion Revenant",
             "🔹 Nechronomancer",
@@ -408,7 +408,7 @@
             "The rankings here are only accurate when the classes listed are used both properly and optimally. The Current Rank of Solo Classes (Best to worst).",
             "",
             "**Credits**",
-            "Thanks to IzMei for [creating](http://tiny.cc/4m4rtz) this list and the people that helped him; u/xiaomole, u/Ancholo_, u/nickcagenado."
+            "Thanks to IzMei for [creating](http://tiny.cc/4m4rtz) this list and the people that helped him; [u/xiaomole](https://www.reddit.com/u/xiaomole/), [u/Ancholo_](https://www.reddit.com/u/Ancholo_/), [u/nickcagenado](https://www.reddit.com/u/nickcagenado/)."
         ]
     },
     "topsup":{
@@ -417,7 +417,7 @@
         "title":"Top Farming Classes",
         "description":"Support Class Rank Class mentioned here are ranked mostly from its supporting role while also taking other aspects such as GDPS as well as boosted survivability in mind.",
         "content":[
-            "**Top List**",
+            "**Top List** (Best to worst)",
             "🔹 Lord of Order",
             "🔹 Stone Crusher",
             "🔹 Legion Revenant",
