@@ -424,6 +424,14 @@
             "url": "https://adventurequest.life/bots/Beneficience%2BBluu_Frost_Spirit_Reaver_Class_and_Items_Bot_pro.zip",
             "author": "bluu"
         },
+        "BoneSigil FrostvalBarbarian.rar": {
+            "url": "https://adventurequest.life/bots/Bloom_BoneSigil_FrostvalBarbarian.rar",
+            "author": "bloom"
+        },
+        "BoneSigil PRO.rar": {
+            "url": "https://adventurequest.life/bots/Bloom_BoneSigil_PRO.rar",
+            "author": "bloom"
+        },
         "ChronoSpan Rep Boat.zip": {
             "url": "https://adventurequest.life/bots/Bloom_ChronoSpan_Rep_Boat.zip",
             "author": "bloom"
@@ -728,6 +736,14 @@
             "url": "https://adventurequest.life/bots/JuggernautItems_Ninjatov_3.8PP.gbot",
             "author": "ninjatov"
         },
+        "weeb NSoD RVA Synced.gbot": {
+            "url": "https://adventurequest.life/bots/Kaosweeb_NSoD_RVA_Synced.gbot",
+            "author": "kaos"
+        },
+        "BattleunderABCAccept.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_BattleunderABCAccept.gbot",
+            "author": "kaos"
+        },
         "BloodyChaos.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_BloodyChaos.gbot",
             "author": "kaos"
@@ -886,6 +902,10 @@
         },
         "Icy Token I II III IV.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot",
+            "author": "nng"
+        },
+        "NNg Infinite BackFlip emote fun way to afk.zip": {
+            "url": "https://adventurequest.life/bots/NNg_Infinite_BackFlip_emote_fun_way_to_afk.zip",
             "author": "nng"
         },
         "NNg Legion Exercises 1 2 3 4.gbot": {
@@ -1804,6 +1824,12 @@
             }
         },
         "bloom": {
+            "BoneSigil FrostvalBarbarian.rar": {
+                "url": "https://adventurequest.life/bots/Bloom_BoneSigil_FrostvalBarbarian.rar"
+            },
+            "BoneSigil PRO.rar": {
+                "url": "https://adventurequest.life/bots/Bloom_BoneSigil_PRO.rar"
+            },
             "ChronoSpan Rep Boat.zip": {
                 "url": "https://adventurequest.life/bots/Bloom_ChronoSpan_Rep_Boat.zip"
             },
@@ -1974,6 +2000,12 @@
             }
         },
         "kaos": {
+            "weeb NSoD RVA Synced.gbot": {
+                "url": "https://adventurequest.life/bots/Kaosweeb_NSoD_RVA_Synced.gbot"
+            },
+            "BattleunderABCAccept.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_BattleunderABCAccept.gbot"
+            },
             "BloodyChaos.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_BloodyChaos.gbot"
             },
@@ -2032,6 +2064,9 @@
             },
             "Icy Token I II III IV.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot"
+            },
+            "NNg Infinite BackFlip emote fun way to afk.zip": {
+                "url": "https://adventurequest.life/bots/NNg_Infinite_BackFlip_emote_fun_way_to_afk.zip"
             },
             "NNg Legion Exercises 1 2 3 4.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Legion_Exercises_1_2_3_4.gbot"
