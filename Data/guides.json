@@ -342,10 +342,97 @@
                 "Don't know how to merge NSoD? Follow this merging guide",
                 "https://www.aqwworld.com/2017/02/how-to-get-necrotic-sword-of-doom-guide.html"
             ]
-        ],
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
+        ]
     },
     "Endgame Farming Guides":{
+        "type":"header"
+    },
+    "topsolo":{
+        "type":"text",
+        "auth":"aqw",
+        "title":"Top Soloing Classes",
+        "description":"Solo Class rank Both DPS and survivability are taken into consideration, however, DPS has more influence in a class' ranking. The rankings here are only accurate when the classes listed are used both properly and optimally. The Current Rank of Solo Classes (Best to worst).",
+        "content":[
+            "**Top List**",
+            "➣ Corrupted Chronomancer",
+            "➣ Underworld Chronomancer",
+            "➣ Eternal/Immortal Chronomancer",
+            "➣ Shadowwalker/stalker of Time",
+            "➣ Void Highlord",
+            "➣ Yami no Ronin",
+            "➣ Dark Metal Necro",
+            "➣ LightCaster",
+            "➣ Legion Revenant",
+            "➣ Great Thief",
+            "➣ Legion Doomknight",
+            "➣ Dragon of Time",
+            "➣ Glacial Berserker",
+            "➣ Chaos Slayer",
+            "",
+            "**Honorable Mentions**",
+            "➣ Chrono Assassin, Horc Evader, Leprechaun - These classes could not make it on the list because despite being practically unkillable, their DPS is quite poor in comparison.\n",
+            "➣ Undead Slayer - One of the highest DPS classes vs Undead, especially bosses, and with the new respawn timer it now can carry over its buff to the next fight.",
+            "**Credits**",
+            "Thanks to IzMei for [creating](http://tiny.cc/4m4rtz) this list and the people that helped him; u/xiaomole, u/Ancholo_, u/nickcagenado."
+        ]
+    },
+    "topfarm":{
+        "type":"text",
+        "auth":"aqw",
+        "title":"Top Farming Classes",
+        "description":"Farming Class Rank Damage per second (DPS), time to kill (TTK), and survivability are taken into consideration with DPS and TTK having more influence in the rankings. The rankings here are only accurate when the classes listed are used both properly and optimally. The Current Rank of Solo Classes (Best to worst).",
+        "content":[
+            "**Top List**",
+            "➣ Master of Moglins",
+            "➣ Legion Revenant",
+            "➣ Nechronomancer",
+            "➣ Dragon of Time",
+            "➣ Dragonlord",
+            "➣ Blaze Binder",
+            "➣ Scarlet Sorceress",
+            "➣ Daimon",
+            "➣ Vampire Lord",
+            "➣ Abyssal Angel's shadow",
+            "",
+            "**Honorable Mentions**",
+            "➣ Shadowwalker/stalker of Time - Fastest class for high HP farming such as the hydras in /hydrachallenge and /revenant farming.\\n",
+            "➣ Frostval Barbarian - Objectively the fastest class for low HP farming provided the HP stays within its 5 thresholds (beats out LR and MoM by a mile).\\n",
+            "➣ Yami no Ronin/Void Highlord - Has a niche in Legion Token or Tainted Core farming or where the enemies' HP is too high for FB to one-shot or typical farmers take too long to kill.\\n",
+            "",
+            "**Credits**",
+            "Thanks to IzMei for [creating](http://tiny.cc/4m4rtz) this list and the people that helped him; u/xiaomole, u/Ancholo_, u/nickcagenado."
+        ]
+    },
+    "topsup":{
+        "type":"text",
+        "auth":"aqw",
+        "title":"Top Farming Classes",
+        "description":"Support Class Rank Class mentioned here are ranked mostly from its supporting role while also taking other aspects such as GDPS as well as boosted survivability in mind. The rankings here are only accurate when the classes listed are used both properly and optimally. The Current Rank of Solo Classes (Best to worst).",
+        "content":[
+            "**Top List**",
+            "➣ Lord of Order",
+            "➣ Stone Crusher",
+            "➣ Legion Revenant",
+            "➣ LightCaster",
+            "➣ Frostval Barbarian",
+            "➣ Bard",
+            "➣ Chaos Slayer",
+            "➣ Glacial Berserker",
+            "➣ Arachnomancer",
+            "➣ Master of Moglin",
+            "➣ Mecha Jouster",
+            "",
+            "**Honorable Mentions**",
+            "➣ Ninja - shadow blade can apply a buff that turns enemy 100% blinded and is loopable with max haste\\n",
+            "➣ Immortal/Eternal Chronomacer - Apply Unity Trough Time to Calendar class (2018 bellow) a buff under the specific condition that give it affected ally 30% in Haste, All out, Dodge.\\n",
+            "➣ Light Mage - if Light caster is present, this is a valid option but there is a better option, unless you're looking for a breaking point for dodge then this is a secondary option to Lord of Order.\\n",
+            "➣ Naval Commander - A nice support that gives you Small haste and HoT, while NC itself has high dodge with taunt to the enemy, making it an effective tank if paired with other support that can provide dodge buff.\\n",
+            "",
+            "**Credits**",
+            "Thanks to IzMei for [creating](http://tiny.cc/4m4rtz) this list and the people that helped him; u/xiaomole, u/Ancholo_, u/nickcagenado."
+        ]
+    },
+    "Top Classes":{
         "type":"header"
     },
     "fdgraph":{
