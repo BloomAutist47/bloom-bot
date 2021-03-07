@@ -692,6 +692,10 @@
             "url": "https://adventurequest.life/bots/Ganku_-_%5BNECROTIC_BOW%5D_Pinpoint_the_Pieces.gbot",
             "author": "ganku"
         },
+        "Dage PvP.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_Dage-PvP.gbot",
+            "author": "ganku"
+        },
         "Follower Attack Mule.gbot": {
             "url": "https://adventurequest.life/bots/Ganku_Follower-Attack-Mule.gbot",
             "author": "ganku"
@@ -718,6 +722,10 @@
         },
         "DroneNWNOVHL.gbot": {
             "url": "https://adventurequest.life/bots/Jex_DroneNWNOVHL.gbot",
+            "author": "jex"
+        },
+        "FBBlackSmithingRep.gbot": {
+            "url": "https://adventurequest.life/bots/Jex_FBBlackSmithingRep.gbot",
             "author": "jex"
         },
         "ICskillset.rar": {
@@ -780,12 +788,20 @@
             "url": "https://adventurequest.life/bots/Kaos_FiendEmblem_pro.gbot",
             "author": "kaos"
         },
+        "HorsemenDailies Synced.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_HorsemenDailies_Synced.gbot",
+            "author": "kaos"
+        },
         "SeksSlaveCoomFollower v2.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_SeksSlaveCoomFollower_v2.gbot",
             "author": "kaos"
         },
         "ShardoftheShard.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_ShardoftheShard.gbot",
+            "author": "kaos"
+        },
+        "ShogunParagon LegionToken FOR REGARDS ONLY.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_ShogunParagon_LegionToken_FOR_REGARDS_ONLY.gbot",
             "author": "kaos"
         },
         "Supplies Gold ReturnPolicy DrudgentheSalesman VoucherItem COMBO.gbot": {
@@ -906,6 +922,14 @@
         },
         "NNg Infinite BackFlip emote fun way to afk.zip": {
             "url": "https://adventurequest.life/bots/NNg_Infinite_BackFlip_emote_fun_way_to_afk.zip",
+            "author": "nng"
+        },
+        "NNg AbyssLairShit.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Kaos_AbyssLairShit.gbot",
+            "author": "kaos"
+        },
+        "NNg Legion Castle Quest LT.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Legion_Castle_Quest_LT.gbot",
             "author": "nng"
         },
         "NNg Legion Exercises 1 2 3 4.gbot": {
@@ -1975,6 +1999,9 @@
             "5BNECROTIC BOW5D Pinpoint the Pieces.gbot": {
                 "url": "https://adventurequest.life/bots/Ganku_-_%5BNECROTIC_BOW%5D_Pinpoint_the_Pieces.gbot"
             },
+            "Dage PvP.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_Dage-PvP.gbot"
+            },
             "Follower Attack Mule.gbot": {
                 "url": "https://adventurequest.life/bots/Ganku_Follower-Attack-Mule.gbot"
             },
@@ -1991,6 +2018,9 @@
             },
             "DroneNWNOVHL.gbot": {
                 "url": "https://adventurequest.life/bots/Jex_DroneNWNOVHL.gbot"
+            },
+            "FBBlackSmithingRep.gbot": {
+                "url": "https://adventurequest.life/bots/Jex_FBBlackSmithingRep.gbot"
             },
             "ICskillset.rar": {
                 "url": "https://adventurequest.life/bots/Jex_ICskillset.rar"
@@ -2033,17 +2063,26 @@
             "FiendEmblem pro.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_FiendEmblem_pro.gbot"
             },
+            "HorsemenDailies Synced.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_HorsemenDailies_Synced.gbot"
+            },
             "SeksSlaveCoomFollower v2.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_SeksSlaveCoomFollower_v2.gbot"
             },
             "ShardoftheShard.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_ShardoftheShard.gbot"
             },
+            "ShogunParagon LegionToken FOR REGARDS ONLY.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_ShogunParagon_LegionToken_FOR_REGARDS_ONLY.gbot"
+            },
             "Supplies Gold ReturnPolicy DrudgentheSalesman VoucherItem COMBO.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Supplies_Gold_ReturnPolicy_DrudgentheSalesman_VoucherItem_COMBO.gbot"
             },
             "Weebluurts Uni34 NoDrone NoCrag NoOBoN.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Weebluurts_Uni34__NoDrone_NoCrag_NoOBoN.gbot"
+            },
+            "NNg AbyssLairShit.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Kaos_AbyssLairShit.gbot"
             }
         },
         "nng": {
@@ -2067,6 +2106,9 @@
             },
             "NNg Infinite BackFlip emote fun way to afk.zip": {
                 "url": "https://adventurequest.life/bots/NNg_Infinite_BackFlip_emote_fun_way_to_afk.zip"
+            },
+            "NNg Legion Castle Quest LT.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Legion_Castle_Quest_LT.gbot"
             },
             "NNg Legion Exercises 1 2 3 4.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Legion_Exercises_1_2_3_4.gbot"
