@@ -247,6 +247,30 @@
     "General Guides":{
         "type":"header"
     },
+    "w":{
+        "type":"text",
+        "auth":"aqw",
+        "title":"Item booster lists",
+        "description":"__**Wikidot page of boosters.**__",
+        "content":[
+            "**List of Items with Attack Boosters**",
+            "➣ [All Monsters](http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2monsters#pages)",
+            "➣ [Undeads](http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2undead#pages)",
+            "➣ [Dragon Monsters](http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2dragon#pages)",
+            "➣ [Elemental Monsters](http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2elemental#pages)",
+            "➣ [Human Monsters](http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2human#pages)",
+            "➣ [Chaos Monsters](http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2chaos#pages)",
+            "",
+            "**Boosters**",
+            "➣ [XP Boosters](http://aqwwiki.wikidot.com/system:page-tags/tag/xpboost#pages)",
+            "➣ [CP Boosters](http://aqwwiki.wikidot.com/system:page-tags/tag/cpboost#pages)",
+            "➣ [Rep Boosters](http://aqwwiki.wikidot.com/system:page-tags/tag/repboost#pages)",
+            "➣ [Gold Boosters](http://aqwwiki.wikidot.com/system:page-tags/tag/goldboost#pages)"
+        ]
+    },
+    "Wikidot Redirects":{
+        "type":"header"
+    },
     "mons":{
         "type":"single_link",
         "auth":"aqw",
