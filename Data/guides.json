@@ -245,18 +245,11 @@
             "➣ [CP Boosters](http://aqwwiki.wikidot.com/system:page-tags/tag/cpboost#pages)",
             "➣ [Rep Boosters](http://aqwwiki.wikidot.com/system:page-tags/tag/repboost#pages)",
             "➣ [Gold Boosters](http://aqwwiki.wikidot.com/system:page-tags/tag/goldboost#pages)"
-        ]
+        ],
+        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/816964118912958474/monsterkind.png"
     },
     "Wikidot Redirects":{
         "type":"header"
-    },
-    "mons":{
-        "type":"single_link",
-        "auth":"aqw",
-        "title":"",
-        "description":"A list on wikidot containing all items with damage boost against monsters.",
-        "content":"",
-        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964118912958474/monsterkind.png"
     },
     "blod":{
         "type":"guide",
