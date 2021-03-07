@@ -226,8 +226,8 @@
     "w":{
         "type":"text",
         "auth":"aqw",
-        "title":"Leveling-up Guide",
-        "description":"__**Don't know how to level up? Read this:**__",
+        "title":"Item booster lists",
+        "description":"__**Wikidot page of boosters.**__",
         "content":[
             "**Attack Boosters**",
             "➣ [List of Damage Booster against All Monsters](http://aqwwiki.wikidot.com/system:page-tags/tag/xdmg2monsters#pages)",
