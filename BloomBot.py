@@ -20,7 +20,7 @@ import tweepy
 
 from discord.ext import tasks
 from discord import Intents
-from discord.ext.commands import CommandNotFound
+from discord.ext.commands import CommandNotFound    
 from pprint import pprint
 from time import sleep  
 
@@ -35,7 +35,7 @@ from Cogs.TwitterListener import TwitterListener
 from Cogs.TwitterListener import TwitterCog
 # from Cogs.UtilsCog import UtilsCog
 
-from Cogs.StreamCog import StreamCog
+# from Cogs.StreamCog import StreamCog
 # from Cogs.TestCog import TestCog
 
 class BreakProgram(Exception):

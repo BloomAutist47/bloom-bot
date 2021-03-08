@@ -22,6 +22,8 @@ class WikiCog(commands.Cog, BaseTools):
         only_wiki = False
         sites_soup = await self.get_site_content(straight)
 
+        
+
         try:
             title = sites_soup.find("div", {"id":"main-content"}).find("div", {"id": "page-title"}).text.strip()
             page_content = sites_soup.find("div", {"id":"page-content"})
@@ -67,6 +69,9 @@ class WikiCog(commands.Cog, BaseTools):
 
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
         await ctx.send(embed=embedVar)
+
+        return
+
         # while True:
         #     try:
         #         await ctx.send(embed=embedVar)
@@ -76,7 +81,6 @@ class WikiCog(commands.Cog, BaseTools):
         #         print(f"> Failed Executing send... Trying again.")
         #         print("> Reloading...")
         #         continue
-        return
 
     @commands.command()
     async def ws(self, ctx, *, item=""):

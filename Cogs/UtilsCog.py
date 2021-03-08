@@ -4,7 +4,6 @@ from .Base import *
 from discord.ext import commands, tasks
 
 from layeris.layer_image import LayerImage
-# from layeris.utils.conversions import convert_float_to_uint
 from PIL import Image, ImageDraw
 
 from random import randint
@@ -30,7 +29,11 @@ class UtilsCog(commands.Cog, BaseTools):
         await asyncio.sleep(20)
         await self.change_profile()
 
+    # @commands.command()
+    # async def change(self, ctx):
+    #     await self.change_profile()
 
+        
     async def change_profile(self):
         sb = "./Data/Resources/icon/bloom_icon_symbol.png"
         bg = "./Data/Resources/icon/bloom_icon_bg.png"
@@ -41,6 +44,7 @@ class UtilsCog(commands.Cog, BaseTools):
         color = "#%06x" % randint(0, 0xFFFFFF)
         
         BaseProgram.block_color = int(hex(int(color.replace("#", ""), 16)), 0)
+        print(BaseProgram.block_color)
         symbol.overlay(color)
         symbol.save(save_loc)
 
@@ -53,7 +57,7 @@ class UtilsCog(commands.Cog, BaseTools):
 
         new_image = self.image_to_byte_array(base_image)
 
-        await self.bot.user.edit(avatar=new_image)
+        # await self.bot.user.edit(avatar=new_image)
         self.done = True
 
 

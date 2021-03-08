@@ -446,7 +446,7 @@ class StreamCog(commands.Cog, BaseTools):
                 
             except:
                 print("> Retry")
-                sleep(12)
+                await asyncio.sleep(10)
                 continue
 
     async def check_name(self, ctx, name):
@@ -547,6 +547,8 @@ class StreamCog(commands.Cog, BaseTools):
                     embedVar.add_field(name="Changed", value=change_desc, inline=True)
                     change_desc = ""
                 change_desc+= f"📌 {change}**:** {dat_[change]['prev']} ➣ {dat_[change]['next']}\n"
+
+                
             if change_desc == "":
                 change_desc = "\u200b"
             embedVar.add_field(name="Changed", value=change_desc, inline=True)

@@ -606,7 +606,6 @@ class BaseTools(BaseProgram):
 
     def setup(self):
         # Static attributes
-        BaseProgram.block_color = 3066993 
         self.char_url = "https://account.aq.com/CharPage?id="
         self.wiki_url = "http://aqwwiki.wikidot.com/"
 
@@ -858,6 +857,7 @@ class BaseTools(BaseProgram):
         st = "\u200b"
         counts = {"field": 0, "item": 0}
         text_item = "```css\n"
+        print("CC: ", BaseProgram.block_color)
 
         if icon:
             embedVar = discord.Embed(description=description, color=BaseProgram.block_color)
@@ -1023,7 +1023,7 @@ class BaseTools(BaseProgram):
             while True:
                 try:
                     client = aiosonic.HTTPClient(handle_cookies=handle_cookies)
-                    response = await client.get(URL, headers=headers, timeouts=timeouts)
+                    response = await client.get(URL, headers=headers)
 
                     text_ = await response.content()
 
@@ -1050,6 +1050,9 @@ class BaseTools(BaseProgram):
                 except:
                     print(f"> Failed Executing {name}... Trying again.")
                     continue
+
+
+
 
 
 class BaseCog(commands.Cog, BaseTools):

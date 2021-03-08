@@ -19,3 +19,12 @@ class TestCog(commands.Cog, BaseTools):
         await channel.send("<@&814054683651342366>")
         # await channel.send("<&@814054683651342366>")
         # await channel.send("<@!>")
+
+    @commands.command()
+    async def ee(self, ctx):
+        url="http://aqwwiki.wikidot.com/ewfwefwefwf"
+        soup = await self.contentcreator(url)
+        print("Retards: ", soup)
+        if soup =="None":
+            print("yes")
+        print(soup)

@@ -7,5 +7,17 @@
     },
     "Dark Master of Moglins": {
         "acronym": "DMoM"
+    },
+    "ArchPaladin": {
+        "stats": [
+            4,
+            6,
+            4,
+            3,
+            4,
+            3,
+            3
+        ],
+        "bludurt": 6,
     }
 }
