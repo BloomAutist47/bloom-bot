@@ -281,7 +281,8 @@
                 "Don't know how to merge NSoD? Follow this merging guide",
                 "https://www.aqwworld.com/2017/02/how-to-get-necrotic-sword-of-doom-guide.html"
             ]
-        ]
+        ],
+        "thumbnail": "https://media.discordapp.net/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
     },
     "Endgame Farming Guides":{
         "type":"header"
