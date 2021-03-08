@@ -246,9 +246,16 @@
             "➣ [Rep Boosters](http://aqwwiki.wikidot.com/system:page-tags/tag/repboost#pages)",
             "➣ [Gold Boosters](http://aqwwiki.wikidot.com/system:page-tags/tag/goldboost#pages)"
         ],
-        "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/816964118912958474/monsterkind.png"
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/816964118912958474/monsterkind.png"
     },
-    "Wikidot Redirects":{
+    "bestarmy":{
+        "type":"image",
+        "auth":"aqw",
+        "title":"Best Army Composition",
+        "description":"Arachnomancer, Lord of Order, Legion Revenant, LightCaster, StoneCrusher, LighCaster (2), Oracle (Possibly).",
+        "content":"https://cdn.discordapp.com/attachments/805367955923533845/818383102123704361/NSoDArmy.png"
+    },
+    "Others":{
         "type":"header"
     },
     "blod":{
@@ -282,7 +289,7 @@
                 "https://www.aqwworld.com/2017/02/how-to-get-necrotic-sword-of-doom-guide.html"
             ]
         ],
-        "thumbnail": "https://media.discordapp.net/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
+        "thumbnail":"https://media.discordapp.net/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
     },
     "Endgame Farming Guides":{
         "type":"header"
