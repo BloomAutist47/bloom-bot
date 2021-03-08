@@ -460,6 +460,10 @@
             "url": "https://adventurequest.life/bots/Bloom_RiftDefenseMedal_WavesOfMutilationQuest.gbot",
             "author": "bloom"
         },
+        "Spammer GoldenTicket MakaiToken.rar": {
+            "url": "https://adventurequest.life/bots/Bloom_Spammer_GoldenTicket_MakaiToken.rar",
+            "author": "bloom"
+        },
         "Sparrows Blood Daily.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Sparrows_Blood_Daily.gbot",
             "author": "bloom"
@@ -535,14 +539,6 @@
         "BrightParagon 3.8PP.gbot": {
             "url": "https://adventurequest.life/bots/BrightParagon_Ninjatov_3.8PP.gbot",
             "author": "ninjatov"
-        },
-        "CombatTrophyBB.gbot": {
-            "url": "https://adventurequest.life/bots/CombatTrophyBB-Taryth.gbot",
-            "author": "taryth"
-        },
-        "Combat Trophies.gbot": {
-            "url": "https://adventurequest.life/bots/Combat_Trophies_Raze.gbot",
-            "author": "raze"
         },
         "AssistingOBoN Quest SkillCommand.gbot": {
             "url": "https://adventurequest.life/bots/Desolates_AssistingOBoN_Quest_SkillCommand.gbot",
@@ -744,6 +740,10 @@
             "url": "https://adventurequest.life/bots/JuggernautItems_Ninjatov_3.8PP.gbot",
             "author": "ninjatov"
         },
+        "Jex VoidSpartan.gbot": {
+            "url": "https://adventurequest.life/bots/KaosJex_VoidSpartan.gbot",
+            "author": "kaos"
+        },
         "weeb NSoD RVA Synced.gbot": {
             "url": "https://adventurequest.life/bots/Kaosweeb_NSoD_RVA_Synced.gbot",
             "author": "kaos"
@@ -778,6 +778,10 @@
         },
         "DragonShinobi Token.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_DragonShinobi_Token.gbot",
+            "author": "kaos"
+        },
+        "FaerieCourt REP.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_FaerieCourt_REP.gbot",
             "author": "kaos"
         },
         "FiendEmblem.gbot": {
@@ -910,6 +914,10 @@
         },
         "NNg Dance Guru Merge Harpy Drops.gbot": {
             "url": "https://adventurequest.life/bots/NNg_Dance_Guru_Merge_Harpy_Drops.gbot",
+            "author": "nng"
+        },
+        "NNg Faerie Court reputation.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Faerie_Court_reputation.gbot",
             "author": "nng"
         },
         "IceStormArena XP All Version.gbot": {
@@ -1875,30 +1883,14 @@
             "RiftDefenseMedal WavesOfMutilationQuest.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_RiftDefenseMedal_WavesOfMutilationQuest.gbot"
             },
+            "Spammer GoldenTicket MakaiToken.rar": {
+                "url": "https://adventurequest.life/bots/Bloom_Spammer_GoldenTicket_MakaiToken.rar"
+            },
             "Sparrows Blood Daily.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Sparrows_Blood_Daily.gbot"
             },
             "SpoiledDragonQuest EliteVoidSet.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
-            }
-        },
-        "taryth": {
-            "CombatTrophyBB.gbot": {
-                "url": "https://adventurequest.life/bots/CombatTrophyBB-Taryth.gbot"
-            },
-            "KTV .gbot": {
-                "url": "https://adventurequest.life/bots/KTV_-_Taryth.gbot"
-            },
-            "NWNO RoomHop .gbot": {
-                "url": "https://adventurequest.life/bots/NWNO_RoomHop_-_Taryth.gbot"
-            }
-        },
-        "raze": {
-            "Combat Trophies.gbot": {
-                "url": "https://adventurequest.life/bots/Combat_Trophies_Raze.gbot"
-            },
-            "Shogun Paragon LT BB LR EI.gbot": {
-                "url": "https://adventurequest.life/bots/Shogun_Paragon_LT_Raze_BB_LR_EI.gbot"
             }
         },
         "desolates": {
@@ -2030,6 +2022,9 @@
             }
         },
         "kaos": {
+            "Jex VoidSpartan.gbot": {
+                "url": "https://adventurequest.life/bots/KaosJex_VoidSpartan.gbot"
+            },
             "weeb NSoD RVA Synced.gbot": {
                 "url": "https://adventurequest.life/bots/Kaosweeb_NSoD_RVA_Synced.gbot"
             },
@@ -2056,6 +2051,9 @@
             },
             "DragonShinobi Token.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_DragonShinobi_Token.gbot"
+            },
+            "FaerieCourt REP.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_FaerieCourt_REP.gbot"
             },
             "FiendEmblem.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_FiendEmblem.gbot"
@@ -2085,6 +2083,14 @@
                 "url": "https://adventurequest.life/bots/NNg_Kaos_AbyssLairShit.gbot"
             }
         },
+        "taryth": {
+            "KTV .gbot": {
+                "url": "https://adventurequest.life/bots/KTV_-_Taryth.gbot"
+            },
+            "NWNO RoomHop .gbot": {
+                "url": "https://adventurequest.life/bots/NWNO_RoomHop_-_Taryth.gbot"
+            }
+        },
         "nng": {
             "Lord of Order RED1KING FIXED by.zip": {
                 "url": "https://adventurequest.life/bots/Lord_of_Order_RED1KING_FIXED_by_Nng_.zip"
@@ -2094,6 +2100,9 @@
             },
             "NNg Dance Guru Merge Harpy Drops.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Dance_Guru_Merge_Harpy_Drops.gbot"
+            },
+            "NNg Faerie Court reputation.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Faerie_Court_reputation.gbot"
             },
             "Hollowborn Rep Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Hollowborn_Rep_Bot.gbot"
@@ -2212,6 +2221,11 @@
             },
             "yami no ronin bot.gbot": {
                 "url": "https://adventurequest.life/bots/satan_yami_no_ronin_bot.gbot"
+            }
+        },
+        "raze": {
+            "Shogun Paragon LT BB LR EI.gbot": {
+                "url": "https://adventurequest.life/bots/Shogun_Paragon_LT_Raze_BB_LR_EI.gbot"
             }
         },
         "weebluurts": {
