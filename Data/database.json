@@ -460,6 +460,10 @@
             "url": "https://adventurequest.life/bots/Bloom_RiftDefenseMedal_WavesOfMutilationQuest.gbot",
             "author": "bloom"
         },
+        "Spammer GoldenTicket MakaiToken.rar": {
+            "url": "https://adventurequest.life/bots/Bloom_Spammer_GoldenTicket_MakaiToken.rar",
+            "author": "bloom"
+        },
         "Sparrows Blood Daily.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Sparrows_Blood_Daily.gbot",
             "author": "bloom"
@@ -744,6 +748,10 @@
             "url": "https://adventurequest.life/bots/JuggernautItems_Ninjatov_3.8PP.gbot",
             "author": "ninjatov"
         },
+        "Jex VoidSpartan.gbot": {
+            "url": "https://adventurequest.life/bots/KaosJex_VoidSpartan.gbot",
+            "author": "kaos"
+        },
         "weeb NSoD RVA Synced.gbot": {
             "url": "https://adventurequest.life/bots/Kaosweeb_NSoD_RVA_Synced.gbot",
             "author": "kaos"
@@ -778,6 +786,10 @@
         },
         "DragonShinobi Token.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_DragonShinobi_Token.gbot",
+            "author": "kaos"
+        },
+        "FaerieCourt REP.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_FaerieCourt_REP.gbot",
             "author": "kaos"
         },
         "FiendEmblem.gbot": {
@@ -910,6 +922,10 @@
         },
         "NNg Dance Guru Merge Harpy Drops.gbot": {
             "url": "https://adventurequest.life/bots/NNg_Dance_Guru_Merge_Harpy_Drops.gbot",
+            "author": "nng"
+        },
+        "NNg Faerie Court reputation.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Faerie_Court_reputation.gbot",
             "author": "nng"
         },
         "IceStormArena XP All Version.gbot": {
@@ -1875,6 +1891,9 @@
             "RiftDefenseMedal WavesOfMutilationQuest.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_RiftDefenseMedal_WavesOfMutilationQuest.gbot"
             },
+            "Spammer GoldenTicket MakaiToken.rar": {
+                "url": "https://adventurequest.life/bots/Bloom_Spammer_GoldenTicket_MakaiToken.rar"
+            },
             "Sparrows Blood Daily.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Sparrows_Blood_Daily.gbot"
             },
@@ -2030,6 +2049,9 @@
             }
         },
         "kaos": {
+            "Jex VoidSpartan.gbot": {
+                "url": "https://adventurequest.life/bots/KaosJex_VoidSpartan.gbot"
+            },
             "weeb NSoD RVA Synced.gbot": {
                 "url": "https://adventurequest.life/bots/Kaosweeb_NSoD_RVA_Synced.gbot"
             },
@@ -2056,6 +2078,9 @@
             },
             "DragonShinobi Token.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_DragonShinobi_Token.gbot"
+            },
+            "FaerieCourt REP.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_FaerieCourt_REP.gbot"
             },
             "FiendEmblem.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_FiendEmblem.gbot"
@@ -2094,6 +2119,9 @@
             },
             "NNg Dance Guru Merge Harpy Drops.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Dance_Guru_Merge_Harpy_Drops.gbot"
+            },
+            "NNg Faerie Court reputation.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Faerie_Court_reputation.gbot"
             },
             "Hollowborn Rep Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Hollowborn_Rep_Bot.gbot"
