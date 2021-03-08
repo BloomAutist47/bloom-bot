@@ -540,14 +540,6 @@
             "url": "https://adventurequest.life/bots/BrightParagon_Ninjatov_3.8PP.gbot",
             "author": "ninjatov"
         },
-        "CombatTrophyBB.gbot": {
-            "url": "https://adventurequest.life/bots/CombatTrophyBB-Taryth.gbot",
-            "author": "taryth"
-        },
-        "Combat Trophies.gbot": {
-            "url": "https://adventurequest.life/bots/Combat_Trophies_Raze.gbot",
-            "author": "raze"
-        },
         "AssistingOBoN Quest SkillCommand.gbot": {
             "url": "https://adventurequest.life/bots/Desolates_AssistingOBoN_Quest_SkillCommand.gbot",
             "author": "desolates"
@@ -1901,25 +1893,6 @@
                 "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
             }
         },
-        "taryth": {
-            "CombatTrophyBB.gbot": {
-                "url": "https://adventurequest.life/bots/CombatTrophyBB-Taryth.gbot"
-            },
-            "KTV .gbot": {
-                "url": "https://adventurequest.life/bots/KTV_-_Taryth.gbot"
-            },
-            "NWNO RoomHop .gbot": {
-                "url": "https://adventurequest.life/bots/NWNO_RoomHop_-_Taryth.gbot"
-            }
-        },
-        "raze": {
-            "Combat Trophies.gbot": {
-                "url": "https://adventurequest.life/bots/Combat_Trophies_Raze.gbot"
-            },
-            "Shogun Paragon LT BB LR EI.gbot": {
-                "url": "https://adventurequest.life/bots/Shogun_Paragon_LT_Raze_BB_LR_EI.gbot"
-            }
-        },
         "desolates": {
             "AssistingOBoN Quest SkillCommand.gbot": {
                 "url": "https://adventurequest.life/bots/Desolates_AssistingOBoN_Quest_SkillCommand.gbot"
@@ -2110,6 +2083,14 @@
                 "url": "https://adventurequest.life/bots/NNg_Kaos_AbyssLairShit.gbot"
             }
         },
+        "taryth": {
+            "KTV .gbot": {
+                "url": "https://adventurequest.life/bots/KTV_-_Taryth.gbot"
+            },
+            "NWNO RoomHop .gbot": {
+                "url": "https://adventurequest.life/bots/NWNO_RoomHop_-_Taryth.gbot"
+            }
+        },
         "nng": {
             "Lord of Order RED1KING FIXED by.zip": {
                 "url": "https://adventurequest.life/bots/Lord_of_Order_RED1KING_FIXED_by_Nng_.zip"
@@ -2240,6 +2221,11 @@
             },
             "yami no ronin bot.gbot": {
                 "url": "https://adventurequest.life/bots/satan_yami_no_ronin_bot.gbot"
+            }
+        },
+        "raze": {
+            "Shogun Paragon LT BB LR EI.gbot": {
+                "url": "https://adventurequest.life/bots/Shogun_Paragon_LT_Raze_BB_LR_EI.gbot"
             }
         },
         "weebluurts": {
