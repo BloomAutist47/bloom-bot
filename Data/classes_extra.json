@@ -182,5 +182,17 @@
             4
         ],
         "bludrut": 5
+    },
+    "LightCaster": {
+        "stats": [
+            "null",
+            "null",
+            6,
+            "null",
+            "null",
+            "null",
+            "null"
+        ],
+        "bludrut": 5
     }
 }
