@@ -1,18 +1,18 @@
 {
-    "Imperial Chunin":{
-        "acronym":"ImC"
+    "Imperial Chunin": {
+        "acronym": "ImC"
     },
-    "Dragon of Time":{
-        "acronym":"DoT"
+    "Dragon of Time": {
+        "acronym": "DoT"
     },
-    "Dark Master of Moglins":{
-        "acronym":"DMoM"
+    "Dark Master of Moglins": {
+        "acronym": "DMoM"
     },
-    "ArchPaladin":{
-        "bludrut":6
+    "ArchPaladin": {
+        "bludrut": 6
     },
-    "Legion Revenant":{
-        "stats":[
+    "Legion Revenant": {
+        "stats": [
             "null",
             "null",
             6,
@@ -21,10 +21,10 @@
             "null",
             "null"
         ],
-        "bludrut":6
+        "bludrut": 6
     },
-    "Elemental Dracomancer":{
-        "stats":[
+    "Elemental Dracomancer": {
+        "stats": [
             3,
             4,
             2,
@@ -33,10 +33,10 @@
             "null",
             "null"
         ],
-        "bludrut":6
+        "bludrut": 6
     },
-    "Horc Evader":{
-        "stats":[
+    "Horc Evader": {
+        "stats": [
             "null",
             5,
             "null",
@@ -45,10 +45,10 @@
             "null",
             "null"
         ],
-        "bludrut":3
+        "bludrut": 3
     },
-    "Great Thief":{
-        "stats":[
+    "Great Thief": {
+        "stats": [
             6,
             "null",
             "null",
@@ -57,10 +57,10 @@
             "null",
             "null"
         ],
-        "bludrut":6
+        "bludrut": 6
     },
-    "Void Highlord":{
-        "stats":[
+    "Void Highlord": {
+        "stats": [
             6,
             "null",
             "null",
@@ -70,8 +70,8 @@
             "null"
         ]
     },
-    "ShadowWalker of Time":{
-        "stats":[
+    "ShadowWalker of Time": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -81,8 +81,8 @@
             "null"
         ]
     },
-    "Eternal Chronomancer":{
-        "stats":[
+    "Eternal Chronomancer": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -92,8 +92,8 @@
             "null"
         ]
     },
-    "Corrupted Chronomancer":{
-        "stats":[
+    "Corrupted Chronomancer": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -103,8 +103,8 @@
             "null"
         ]
     },
-    "Underworld Chronomancer":{
-        "stats":[
+    "Underworld Chronomancer": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -114,8 +114,8 @@
             "null"
         ]
     },
-    "Chrono DragonKnight":{
-        "stats":[
+    "Chrono DragonKnight": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -125,8 +125,8 @@
             "null"
         ]
     },
-    "ChronoCommander":{
-        "stats":[
+    "ChronoCommander": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -136,8 +136,8 @@
             "null"
         ]
     },
-    "Chronomancer":{
-        "stats":[
+    "Chronomancer": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -147,8 +147,8 @@
             "null"
         ]
     },
-    "Lycan":{
-        "stats":[
+    "Lycan": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -157,10 +157,10 @@
             1,
             "null"
         ],
-        "bludrut":5
+        "bludrut": 5
     },
-    "Royal BattleMage":{
-        "stats":[
+    "Royal BattleMage": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -169,10 +169,10 @@
             "null",
             "null"
         ],
-        "bludrut":4
+        "bludrut": 4
     },
-    "Vampire Lord":{
-        "stats":[
+    "Vampire Lord": {
+        "stats": [
             2,
             2,
             2,
@@ -181,6 +181,6 @@
             5,
             4
         ],
-        "bludrut":5
+        "bludrut": 5
     }
 }
