@@ -444,6 +444,10 @@
             "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot",
             "author": "bloom"
         },
+        "EvolvedLeprechaun.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_EvolvedLeprechaun.gbot",
+            "author": "bloom"
+        },
         "FreshSoul Uni36.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_FreshSoul_Uni36.gbot",
             "author": "bloom"
@@ -942,6 +946,10 @@
         },
         "NNg Legion Exercises 1 2 3 4.gbot": {
             "url": "https://adventurequest.life/bots/NNg_Legion_Exercises_1_2_3_4.gbot",
+            "author": "nng"
+        },
+        "NNg Legion Sigil Pet Quest LTs 6725 Legion Arena.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Legion_Sigil_Pet_Quest_LTs_6725_Legion_Arena.gbot",
             "author": "nng"
         },
         "Legion Token Undead Champion Recruitment.gbot": {
@@ -1871,6 +1879,9 @@
             "EtherStorm Rep Balmblossom.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
             },
+            "EvolvedLeprechaun.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_EvolvedLeprechaun.gbot"
+            },
             "FreshSoul Uni36.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_FreshSoul_Uni36.gbot"
             },
@@ -2121,6 +2132,9 @@
             },
             "NNg Legion Exercises 1 2 3 4.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Legion_Exercises_1_2_3_4.gbot"
+            },
+            "NNg Legion Sigil Pet Quest LTs 6725 Legion Arena.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Legion_Sigil_Pet_Quest_LTs_6725_Legion_Arena.gbot"
             },
             "Legion Token Undead Champion Recruitment.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Legion_Token_Undead_Champion_Recruitment.gbot"
