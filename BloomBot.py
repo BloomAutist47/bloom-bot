@@ -52,6 +52,8 @@ else:
 Bot.remove_command("help")
 
 
+
+
 @Bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, CommandNotFound):
@@ -88,16 +90,12 @@ async def on_ready():
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
 
-    # auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
-    # auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
 
-    # api = tweepy.API(auth)
-    # api.verify_credentials()
 
-    # tweets_listener = TwitterListener(Bot, api)
-    # stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended', is_async=True)
-    # print("> Twitter Listener Success")
-    # stream.filter(follow=["16480141"], is_async=True)
+    tweets_listener = TwitterListener(Bot, api)
+    stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended', is_async=True)
+    print("> Twitter Listener Success")
+    stream.filter(follow=["1349290524901998592"], is_async=True, stall_warnings=True)
 
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141
@@ -112,6 +110,13 @@ else:              # Heroku
 BaseStuff = BaseProgram()
 BaseStuff.git_prepare()
 
+auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
+auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
+
+api = tweepy.API(auth)
+api.verify_credentials()
+
+
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
 # Bot.add_cog(TestCog(Bot))
@@ -123,7 +128,7 @@ Bot.add_cog(ClassSearchCog(Bot))
 Bot.add_cog(GoogleSearchCog(Bot))
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(WikiCog(Bot))
-Bot.add_cog(TwitterCog(Bot))
+Bot.add_cog(TwitterCog(Bot, api))
 
 # Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))

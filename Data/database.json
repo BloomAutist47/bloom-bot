@@ -1,5 +1,9 @@
 {
     "sort_by_bot_name": {
+        "AnderSkrrtt StoneCrusherNoReq.gbot": {
+            "url": "https://adventurequest.life/bots/AnderSkrrtt_StoneCrusherNoReq.gbot",
+            "author": "unknown"
+        },
         "AQW Questline Bots.zip": {
             "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip",
             "author": "unknown"
@@ -444,6 +448,10 @@
             "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot",
             "author": "bloom"
         },
+        "EvolvedLeprechaun.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_EvolvedLeprechaun.gbot",
+            "author": "bloom"
+        },
         "FreshSoul Uni36.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_FreshSoul_Uni36.gbot",
             "author": "bloom"
@@ -458,6 +466,10 @@
         },
         "RiftDefenseMedal WavesOfMutilationQuest.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_RiftDefenseMedal_WavesOfMutilationQuest.gbot",
+            "author": "bloom"
+        },
+        "SoulForgeHammer ObsidianRock SolidifiedSoul.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_SoulForgeHammer_ObsidianRock_SolidifiedSoul.gbot",
             "author": "bloom"
         },
         "Spammer GoldenTicket MakaiToken.rar": {
@@ -944,6 +956,10 @@
             "url": "https://adventurequest.life/bots/NNg_Legion_Exercises_1_2_3_4.gbot",
             "author": "nng"
         },
+        "NNg Legion Sigil Pet Quest LTs 6725 Legion Arena.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Legion_Sigil_Pet_Quest_LTs_6725_Legion_Arena.gbot",
+            "author": "nng"
+        },
         "Legion Token Undead Champion Recruitment.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Legion_Token_Undead_Champion_Recruitment.gbot",
             "author": "nng"
@@ -1355,6 +1371,9 @@
     },
     "sort_by_bot_authors": {
         "unknown": {
+            "AnderSkrrtt StoneCrusherNoReq.gbot": {
+                "url": "https://adventurequest.life/bots/AnderSkrrtt_StoneCrusherNoReq.gbot"
+            },
             "AQW Questline Bots.zip": {
                 "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip"
             },
@@ -1871,6 +1890,9 @@
             "EtherStorm Rep Balmblossom.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
             },
+            "EvolvedLeprechaun.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_EvolvedLeprechaun.gbot"
+            },
             "FreshSoul Uni36.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_FreshSoul_Uni36.gbot"
             },
@@ -1882,6 +1904,9 @@
             },
             "RiftDefenseMedal WavesOfMutilationQuest.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_RiftDefenseMedal_WavesOfMutilationQuest.gbot"
+            },
+            "SoulForgeHammer ObsidianRock SolidifiedSoul.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_SoulForgeHammer_ObsidianRock_SolidifiedSoul.gbot"
             },
             "Spammer GoldenTicket MakaiToken.rar": {
                 "url": "https://adventurequest.life/bots/Bloom_Spammer_GoldenTicket_MakaiToken.rar"
@@ -2121,6 +2146,9 @@
             },
             "NNg Legion Exercises 1 2 3 4.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Legion_Exercises_1_2_3_4.gbot"
+            },
+            "NNg Legion Sigil Pet Quest LTs 6725 Legion Arena.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Legion_Sigil_Pet_Quest_LTs_6725_Legion_Arena.gbot"
             },
             "Legion Token Undead Champion Recruitment.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Legion_Token_Undead_Champion_Recruitment.gbot"

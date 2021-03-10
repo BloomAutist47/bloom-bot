@@ -11,68 +11,31 @@ from discord.utils import get
 
 class TweetTools(BaseTools):
     def tweet_tools(self):
-
-        self.gift_checks = [
+        self.key_check = [
             "BONUS daily login gift",
             "New daily login gift",
             "daily login",
             "holi-daily",
             "login gift",
             "BONUS daily",
-            "New daily drops",
-            "daily gift",
-            "daily gifts",
-            "hour DOUBLE",
-            "hour Drop",
-            "DOUBLE Reputation"
-        ]
-
-        self.double_check = [
-            "hour DOUBLE",
-            "hour Drop",
-            "DOUBLE Reputation"
-        ]
-        self.black_list = [
-            "Design Notes", "RT @"
+            "daily drops",
+            "daily gifts"
             ]
         self.mode = ""
-        self.is_double = False
 
-    def save_log(self, m, text, link, is_success=False):
-        """
-            1 = enemy
-            2 = location
-            3 = item
-            4 = quest
-            5 = hour
-            6 = boost
-        """
-
-
+    def save_log(self, m, text, link):
         if m == 1:
-            error_name = "enemy"
+            item = f"[Error at enemy] \nTweet: {text} Link: {link}"
+        
         if m == 2:
-            error_name = "location"
+            item = f"[Error at location] \nTweet: {text} Link: {link}"
+        
         if m == 3:
-            error_name = "item"
-        if m == 4:
-            error_name = "quest"
-        if m == 5:
-            error_name = "hour"
-        if m == 6:
-            error_name = "boost"
-
-        if is_success:
-            item = f"[None at {error_name}] \nTweet: {text} Link: {link}"
-        else:
-            item = f"[Error at {error_name}] \nTweet: {text} Link: {link}"
-        print(item)
+            item = f"[Error at item] \nTweet: {text} Link: {link}"
         self.settings["TwitterListenerCogSettings"]["Logs"].append(item)
         self.file_save("settings")
         self.git_save("settings")
 
-    def word_cleaner(self, word):
-        return word.strip().capitalize()
 
     async def check_website_integrity(self, item):
 
@@ -101,149 +64,57 @@ class TweetTools(BaseTools):
     async def tweet_send(self, text, link, id_, time):
         tweet_link = "https://twitter.com/twitter/statuses/"+str(id_)
 
+        # Enemy
+        enemy = re.search("(battle the|battle|Battle\sthe|Battle)(.*)(in the|in|the)\s/", text)
+        if enemy != None:
+            enemy = enemy.groups()[1].strip()
+            enemy_link = await self.check_website_integrity(enemy)
+        else:
+            self.save_log(1, text, link)
+            return 
+
+        # Location
+        location = re.search("\s/(.+?)(map|\s)", text)
+        if location !=  None:
+            location = "/join %s"%(location[1])
+        else:
+            self.save_log(2, text, link)
+            return 
+        print("Or fucking here?")
+        # Items
+        item = re.search("(for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal)(.+?)((!)|(\.)|(as we celebrate))", text)
+        if item !=  None:
+            item = item.groups()[1]
+        else:
+            self.save_log(3, text, link)
+            return 
+
+        item = re.sub(r'((?<=^\s\b)this seasonal(?=\b\s))|(((?<=^\s\b)rare(?=\b\s)))','', item).strip()
+        if "0 AC" not in item:
+            item = "0 AC " + item
 
 
-        text = text.replace("Log in", "")
-        text = re.sub('(https://|http://)(.+?)(\s)', "", text).replace("\n", "")
-        location = None
-        quest = None
-        item = None
-        enemy = None
-        hour = None
-        hour = None
+        embedVar = discord.Embed(title="New Daily Gift!", url=tweet_link, color=BaseProgram.block_color)
+        embedVar.description = f"**Location**: {location}\n"\
+                               f"**Enemy**: [{enemy}]({enemy_link})\n"\
+                               f"**Item**: {item}\n"\
+                               f"**Posted**: {time}"
+        embedVar.set_image(url=link)
+        embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
+        embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
+        
+        if os.name == "nt":
+            channel = await self.bot.fetch_channel(799238286539227136)
+            if self.mode == "updaily":
+                await channel.send("<@&814054683651342366>")
+        else:
+            channel = await self.bot.fetch_channel(812318143322128384)
+            if self.mode == "updaily":
+                await channel.send("<@&811305081063604290>")
 
-        if self.is_double:
-
-            hour = re.search("(\d\d)", text)
-            if hour:
-                hour = hour.groups()[0]
-            else:
-                self.save_log(5, text, link)
-                return 
-            boost = re.search("(DOUBLE|hour)(.+?)(on all servers|through|\!)", text)
-            if boost:
-                boost = boost.groups()[1].strip().capitalize()
-            else:
-                self.save_log(6, text, link)
-
-            hour = self.word_cleaner(hour)
-            boost = self.word_cleaner(boost)
-
-            embedVar = discord.Embed(title="New Server Boost!", url=tweet_link, color=BaseProgram.block_color)
-            embedVar.description = f"**Duration**: {hour}\n"\
-                                   f"**Boost**: {boost}\n"\
-                                   f"**Posted**: {time}"
-            embedVar.set_image(url=link)
-            embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
-            embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
-            
-            if os.name == "nt":
-                channel = await self.bot.fetch_channel(799238286539227136)
-                if self.mode == "updaily":
-                    await channel.send("<@&814054683651342366>")
-            else:
-                channel = await self.bot.fetch_channel(812318143322128384)
-                if self.mode == "updaily":
-                    await channel.send("<@&811305081063604290>")
-
-            await channel.send(embed=embedVar)
-            print("Done")
-            self.is_double = False
-            return
-            
-
-        if not self.is_double:
-
-            # Location
-            if "battleontown" in text.lower():
-                location = "Battleontown"
-            
-            if not location:
-                location = re.search("\s/(.+?)(\s)|map", text)
-                if location:
-                    location = "/%s"%(location[1])
-                else:
-                    location = re.search("(boss battle in the|\sin your\s|in\s|available now in the|battle in the\s|\sin the|Complete)(.+?)(to collect|to find|\.|\s\(|\!|for a chance|to get the|\smap|quest)", text)
-                    if location:
-                        location = location.groups()[1]
-                    else:
-                        self.save_log(2, text, link)
-                        return 
-
-            # Quest/Enemy
-            if re.search("(\squest\s|quest\!)", text.lower()):
-                quest = re.search("(Complete the|Complete|dropping from his)(.+?)(quest|quest\!)", text)
-                if quest:
-                    quest = quest.groups()[1]
-                else:
-                    self.save_log(4, text, link)
-                    return 
-            else:
-                text = text.replace("Battleontown", "").replace("battleontown", "")
-                if "Defeat the" in text:
-                    enemy = re.search("(Defeat the)(.+?)(for reward gear)", text)
-                else:
-                    enemy = re.search("(battle the|battle|Battle\sthe|Battle|Battle the|Defeat)(.+?)(for reward gear|in the\s/|in\s/|the\s|/|\sin\s)", text)
-                if enemy:
-                    enemy = enemy.groups()[1]
-                    enemy_link = await self.check_website_integrity(enemy)
-                else:
-                    self.save_log(1, text, link)
-                    return
-
-            # Items
-            item = re.search("(to find|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|as we celebrate|as we head into|in her))", text)
-            if item:
-                item = item.groups()[1]
-                item = re.sub(r'((?<=^\s\b)this seasonal(?=\b\s))|(((?<=^\s\b)rare(?=\b\s)))','', item).strip()
-            else:
-                item = re.search("(pieces of the |to collect all |Find the full|\sfor\s|one of the new)(.+?)(\.|\!|available|\,)", text)
-                if item:
-                    item = item.groups()[1]
-                else:
-                    self.save_log(3, text, link)
-                    return
-
-            # Word processing
-            item = self.word_cleaner(item)
-            location = self.word_cleaner(location)
-            if quest:
-                quest = self.word_cleaner(quest)
-                target = f"**Quest**: [{quest}]\n" 
-            else:
-                enemy = self.word_cleaner(enemy)
-                target = f"**Enemy**: [{enemy}]({enemy_link})\n" 
-
-            # Adding /join to location
-            location = location.replace("/", "")
-            location = "/join " + location.lower()
-
-            # Adding 0 AC to item
-            if "0 AC" not in item:
-                item = "0 AC " + item
-
-
-            embedVar = discord.Embed(title="New Daily Gift!", url=tweet_link, color=BaseProgram.block_color)
-            embedVar.description = f"**Location**: {location}\n"\
-                                   f"{target}"\
-                                   f"**Item**: {item}\n"\
-                                   f"**Posted**: {time}"
-            embedVar.set_image(url=link)
-            embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
-            embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
-            
-            if os.name == "nt":
-                channel = await self.bot.fetch_channel(799238286539227136)
-                if self.mode == "updaily":
-                    await channel.send("<@&814054683651342366>")
-            else:
-                channel = await self.bot.fetch_channel(812318143322128384)
-                if self.mode == "updaily":
-                    await channel.send("<@&811305081063604290>")
-
-            await channel.send(embed=embedVar)
-            print("Done")
-            return
+        await channel.send(embed=embedVar)
+        print("Done")
+        return
 
 
     # async def tweet_send(self, text, link, id_, time):
@@ -437,46 +308,26 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
 
 
     def on_status(self, status=""):
-
-        self.is_double = False
-        got = False
-
         if status == "":
             return
         if hasattr(status, 'extended_tweet'):
             tweet = status.extended_tweet['full_text']
+            got = False
             tweet_text = tweet.lower()
-
-            # Checks if wrong tweet
-            for i in self.black_list:
-                if i.lower() in tweet_text:
-                    return
-
-            # Checks if double boost
-            for i in  self.double_check:
-                if i.lower() in tweet_text:
-                    self.is_double = True
+            for i in self.key_check:
+                if i in tweet_text:
                     got = True
+                    print("GOT")
                     break
 
-            if not self.is_double:
-                # Check if Daily Gift
-                for i in self.gift_checks:
-                    if i.lower() in tweet_text:
-                        got = True
-                        for i in self.gift_checks:
-                            tweet = tweet.replace(i, "")
-                        break
-
-            if not got:
-                return
-
+            if not got: return
             self.mode == "stuff"
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
             time_ = status.created_at.strftime("%d %B %Y")
             send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, time_), BaseProgram.loop)
             send_fut.result()
             return
+
         else:
             print('text: ' + status.text)
             return
