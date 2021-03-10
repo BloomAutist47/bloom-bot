@@ -1,5 +1,9 @@
 {
     "sort_by_bot_name": {
+        "AnderSkrrtt StoneCrusherNoReq.gbot": {
+            "url": "https://adventurequest.life/bots/AnderSkrrtt_StoneCrusherNoReq.gbot",
+            "author": "unknown"
+        },
         "AQW Questline Bots.zip": {
             "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip",
             "author": "unknown"
@@ -462,6 +466,10 @@
         },
         "RiftDefenseMedal WavesOfMutilationQuest.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_RiftDefenseMedal_WavesOfMutilationQuest.gbot",
+            "author": "bloom"
+        },
+        "SoulForgeHammer ObsidianRock SolidifiedSoul.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_SoulForgeHammer_ObsidianRock_SolidifiedSoul.gbot",
             "author": "bloom"
         },
         "Spammer GoldenTicket MakaiToken.rar": {
@@ -1363,6 +1371,9 @@
     },
     "sort_by_bot_authors": {
         "unknown": {
+            "AnderSkrrtt StoneCrusherNoReq.gbot": {
+                "url": "https://adventurequest.life/bots/AnderSkrrtt_StoneCrusherNoReq.gbot"
+            },
             "AQW Questline Bots.zip": {
                 "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip"
             },
@@ -1893,6 +1904,9 @@
             },
             "RiftDefenseMedal WavesOfMutilationQuest.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_RiftDefenseMedal_WavesOfMutilationQuest.gbot"
+            },
+            "SoulForgeHammer ObsidianRock SolidifiedSoul.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_SoulForgeHammer_ObsidianRock_SolidifiedSoul.gbot"
             },
             "Spammer GoldenTicket MakaiToken.rar": {
                 "url": "https://adventurequest.life/bots/Bloom_Spammer_GoldenTicket_MakaiToken.rar"
