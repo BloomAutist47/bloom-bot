@@ -209,7 +209,7 @@ class TweetTools(BaseTools):
             location = self.word_cleaner(location)
             if quest:
                 quest = self.word_cleaner(quest)
-                target = f"**Quest**: [{quest}]\n" 
+                target = f"**Quest**: {quest}\n" 
             else:
                 enemy = self.word_cleaner(enemy)
                 target = f"**Enemy**: [{enemy}]({enemy_link})\n" 
@@ -344,6 +344,41 @@ class TwitterCog(commands.Cog, TweetTools):
         for tweet in (time_line):
             # print(tweet.full_text)
             tweet_text = tweet.full_text.lower()
+# # ---------------
+
+#             self.is_double = False
+#             got = False
+
+
+#                 tweet = status.extended_tweet['full_text']
+#                 tweet_text = tweet.lower()
+
+#                 # Checks if wrong tweet
+#                 for i in self.black_list:
+#                     if i.lower() in tweet_text:
+#                         return
+
+#                 # Checks if double boost
+#                 for i in  self.double_check:
+#                     if i.lower() in tweet_text:
+#                         self.is_double = True
+#                         got = True
+#                         break
+
+#                 if not self.is_double:
+#                     # Check if Daily Gift
+#                     for i in self.gift_checks:
+#                         if i.lower() in tweet_text:
+#                             got = True
+#                             for i in self.gift_checks:
+#                                 tweet = tweet.replace(i, "")
+#                             break
+# # ---------------
+
+            if not got:
+                return
+
+
             for i in self.key_check:
                 if i in tweet_text:
                     got = True

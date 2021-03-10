@@ -78,17 +78,17 @@ async def on_command_error(ctx, error):
 #     if after.id != satanId and satanRoleId in role_ids:
 #         await after.remove_roles(role)
 
+BaseStuff = BaseProgram()
+BaseStuff.git_prepare()
+
+auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
+auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
+
+api = tweepy.API(auth)
+api.verify_credentials()
 
 
-@Bot.event
-async def on_ready():
-    print('> Starting Bloom bot 2')
-    if os.name == "nt":
-        channel = Bot.get_channel(799238286539227136)
-        await channel.send("HOLA")
-    name = "A bot Created by Bloom Autist. Currently Beta V.2.0.0.00"
-    await Bot.change_presence(status=discord.Status.idle,
-        activity=discord.Game(name=name, type=3))
+async def stream_tweet():
 
     if os.name == "nt":
         tweet_user = "1349290524901998592"
@@ -104,20 +104,31 @@ async def on_ready():
     # Alina ID: 16480141
     # Use this to get IDS: https://tweeterid.com/
 
+
+@Bot.event
+async def on_ready():
+    print('> Starting Bloom bot 2')
+    if os.name == "nt":
+        channel = Bot.get_channel(799238286539227136)
+        await channel.send("HOLA")
+    name = "A bot Created by Bloom Autist. Currently Beta V.2.0.0.00"
+    await Bot.change_presence(status=discord.Status.idle,
+        activity=discord.Game(name=name, type=3))
+
+
+
+    send_fut = asyncio.run_coroutine_threadsafe(stream_tweet(), BaseProgram.loop)
+    # send_fut.result()
+
+
+
 if os.name == "nt": # PC Mode
     load_dotenv()
     DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN2') # test bot token
 else:              # Heroku
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
 
-BaseStuff = BaseProgram()
-BaseStuff.git_prepare()
 
-auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
-auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
-
-api = tweepy.API(auth)
-api.verify_credentials()
 
 
 # Essential Cog
