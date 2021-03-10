@@ -90,12 +90,15 @@ async def on_ready():
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
 
-
+    if os.name == "nt":
+        tweet_user = "1349290524901998592"
+    else:
+        tweet_user = "16480141"
 
     tweets_listener = TwitterListener(Bot, api)
     stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended', is_async=True)
     print("> Twitter Listener Success")
-    stream.filter(follow=["1349290524901998592"], is_async=True, stall_warnings=True)
+    stream.filter(follow=[tweet_user], is_async=True, stall_warnings=True)
 
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141
