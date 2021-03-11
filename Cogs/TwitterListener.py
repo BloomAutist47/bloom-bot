@@ -326,11 +326,13 @@ class TweetTools(BaseTools):
     #     return
 
     async def tweet_simple(self, link):
+        link = str(link)
         if os.name == "nt":
             channel = await self.bot.fetch_channel(799238286539227136)
         else:
             channel = await self.bot.fetch_channel(811309992727937034)
-        await channel.send(f"@Alina_AE: {link}")
+
+        await channel.send(f"@Alina_AE: https://twitter.com/twitter/statuses/{link}")
         return
 
 class TwitterCog(commands.Cog, TweetTools):
@@ -505,8 +507,7 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
             # Checks if wrong tweet
             for i in self.black_list:
                 if i.lower() in tweet_text:
-                    if "RT @" not in tweet:
-                        self.send_to_discord(status.id)
+                    self.send_to_discord(status.id, status.user.id_str)
                     return
 
             # Checks if double boost
@@ -526,8 +527,7 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
                         break
 
             if not got:
-                if "RT @" not in tweet:
-                    self.send_to_discord(status.id)
+                self.send_to_discord(status.id, status.user.id_str)
                 return
 
             self.mode == "stuff"
@@ -536,15 +536,25 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
             send_fut.result()
             return
         else:
+            # print(status)
             print('text: ' + status.text)
-            if "RT @" not in status.text:
-                self.send_to_discord(status.id)
+            self.send_to_discord(status.id, status.user.id_str)
             return
+
+
 
     def on_error(self, status):
         print(status)
 
-    def send_to_discord(self, id_):
-        send_fut = asyncio.run_coroutine_threadsafe(self.tweet_simple("https://twitter.com/twitter/statuses/" + str(id_)), BaseProgram.loop)
+    def send_to_discord(self, id_, tweet_id):
+        if os.name == "nt":
+            tweet_user = "1349290524901998592"
+        else:
+            tweet_user = "16480141"
+        
+
+        if tweet_id != tweet_user:
+            return
+        send_fut = asyncio.run_coroutine_threadsafe(self.tweet_simple(id_), BaseProgram.loop)
         send_fut.result()
         return

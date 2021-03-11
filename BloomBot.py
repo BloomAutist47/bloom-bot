@@ -90,10 +90,12 @@ api.verify_credentials()
 
 async def stream_tweet():
 
-    if os.name == "nt":
-        tweet_user = "1349290524901998592"
-    else:
-        tweet_user = "16480141"
+    # if os.name == "nt":
+    #     tweet_user = "1349290524901998592"
+    # else:
+    #     tweet_user = "16480141"
+
+    tweet_user = "16480141"
 
     tweets_listener = TwitterListener(Bot, api)
     stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended', is_async=True)
