@@ -59,13 +59,10 @@ class WikiCog(commands.Cog, BaseTools):
 
         if only_wiki:
             result_desc = ""
-            wiki_soup = await self.get_site_content(result)
+            wiki_soup = await self.get_wiki_search_content(result)
 
             
-            wiki_content = wiki_soup.find("div", {"id":"page-content"}).find("div", {"class":"search-box"}).find("div", {"class":"search-results"})
-            print(wiki_content)
-            # pprint(list_results)
-            if "Sorry, no results found for your query." in wiki_content.text.strip():
+            if not wiki_soup:
                 result_desc = "None"
             else:
                 list_results =  wiki_content.find_all("div", {"class":"item"})
@@ -113,16 +110,12 @@ class WikiCog(commands.Cog, BaseTools):
 
 
         result_desc = ""
-        wiki_soup = await self.get_site_content(wiki)
-
+        wiki_soup = await self.get_wiki_search_content(wiki)
         
-        wiki_content = wiki_soup.find("div", {"id":"page-content"}).find("div", {"class":"search-box"}).find("div", {"class":"search-results"})
-
-        if "Sorry, no results found for your query." in wiki_content.text.strip():
+        if not wiki_soup:
             result_desc = "None"
         else:
-            list_results =  wiki_content.find_all("div", {"class":"item"})
-            for item in list_results:
+            for item in wiki_soup:
                 re_name = item.find("div", {"class":"title"}).find("a").text.strip()
                 link = item.find("div", {"class":"title"}).find("a")["href"]
                 result_desc += f"➣ [{re_name}]({link})\n"
@@ -132,6 +125,22 @@ class WikiCog(commands.Cog, BaseTools):
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
         await ctx.send(embed=embedVar)
         return
+
+    async def get_wiki_search_content(self, link):
+        while True:
+            wiki_soup = await self.get_site_content(link)
+            wiki_content = wiki_soup.find("div", {"id":"page-content"})
+            wiki_box = wiki_content.find("div", {"class":"search-box"})
+            
+            if not wiki_box:
+                print(link)
+                print("> REDOING")
+            elif "Sorry, no results found for your query." in wiki_box.text.strip():
+                return None
+            else:
+                result = wiki_box.find("div", {"class":"search-results"}).find_all("div", {"class":"item"})
+                return result
+
 
     def get_image_wiki(self, soup_item):
         try:
