@@ -505,7 +505,8 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
             # Checks if wrong tweet
             for i in self.black_list:
                 if i.lower() in tweet_text:
-                    self.send_to_discord(status.id)
+                    if "RT @" not in tweet:
+                        self.send_to_discord(status.id)
                     return
 
             # Checks if double boost
@@ -525,7 +526,8 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
                         break
 
             if not got:
-                self.send_to_discord(status.id)
+                if "RT @" not in tweet:
+                    self.send_to_discord(status.id)
                 return
 
             self.mode == "stuff"
@@ -535,7 +537,8 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
             return
         else:
             print('text: ' + status.text)
-            self.send_to_discord(status.id)
+            if "RT @" not in status.text:
+                self.send_to_discord(status.id)
             return
 
     def on_error(self, status):
