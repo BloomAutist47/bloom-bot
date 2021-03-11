@@ -123,7 +123,7 @@ class TweetTools(BaseTools):
             else:
                 self.save_log(5, text, link)
                 return 
-            boost = re.search("(DOUBLE|hour)(.+?)(on all servers|through|\!)", text)
+            boost = re.search("(DOUBLE|hour)(.+?)(on all servers|through|\!|\.)", text)
             if boost:
                 boost = boost.groups()[1].strip().capitalize()
             else:
@@ -137,8 +137,8 @@ class TweetTools(BaseTools):
 
             embedVar = discord.Embed(title="New Server Boost!", url=tweet_link, color=BaseProgram.block_color)
             embedVar.description = f"**Duration**: {hour} Hours\n"\
-                                   f"**Boost**: {boost}\n"\
-                                   f"**Posted**: {time_}"\
+                                   f"**Boost**: {boost.title()}\n"\
+                                   f"**Posted**: {time_}\n"\
                                    f"**Ends in**: {end_date}"
             embedVar.set_image(url=link)
             embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
@@ -198,14 +198,15 @@ class TweetTools(BaseTools):
                     enemy = re.search("(battle the|battle|Battle\sthe|Battle|Battle the|Defeat)(.+?)(for reward gear|in the\s/|in\s/|the\s|/|\sin\s)", text)
                 if enemy:
                     enemy = enemy.groups()[1]
-                    enemy_link = self.convert_aqurl(enemy_link, "wiki")
+                    enemy_link = self.convert_aqurl(enemy, "wiki")
                     # enemy_link = await self.check_website_integrity(enemy)
                 else:
                     self.save_log(1, text, link)
-                    return
+                    enemy = "<none>"
+                    enemy_link = ""
 
             # Items
-            item = re.search("(to find our|to find the|to find|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|as we celebrate|as we head into|in her|in his shop|in her shop))", text)
+            item = re.search("(to find our|to find the|to find|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|as we celebrate|as we head into|in her|in his shop|in her shop|as we lead up))", text)
             if item:
                 item = item.groups()[1]
                 item = re.sub(r'((?<=^\s\b)this seasonal(?=\b\s))|(((?<=^\s\b)rare(?=\b\s)))','', item).strip()
@@ -222,10 +223,10 @@ class TweetTools(BaseTools):
             location = self.word_cleaner(location)
             if quest:
                 quest = self.word_cleaner(quest)
-                target = f"**Quest**: {quest}\n" 
+                target = f"**Quest**: {quest.title()}\n" 
             else:
                 enemy = self.word_cleaner(enemy)
-                target = f"**Enemy**: [{enemy}]({enemy_link})\n" 
+                target = f"**Enemy**: [{enemy.title()}]({enemy_link})\n" 
             if npc:
                 npc = self.word_cleaner(npc)
 
@@ -233,13 +234,16 @@ class TweetTools(BaseTools):
             location = location.replace("/", "")
             location = "/join " + location.lower()
 
+            item = item.title()
             # Adding 0 AC to item
             if "0 ac" not in item.lower():
                 item = "0 AC " + item
             else:
-                item = item.replace("0 ac", "0 AC")
+                item = item.replace("0 ac", "0 AC").replace("0 Ac", "0 AC").replace("0 aC", "0 AC")
+
+
             if npc:
-                item += f"\nNPC: {npc}"
+                location += f" ({npc.title()})"
 
             embedVar = discord.Embed(title="New Daily Gift!", url=tweet_link, color=BaseProgram.block_color)
             embedVar.description = f"**Location**: {location}\n"\
@@ -362,7 +366,7 @@ class TwitterCog(commands.Cog, TweetTools):
         print("appending")
         for tweet in (time_line):
             tweet_text = tweet.full_text.lower()
-            print("did")
+            # print("did")
             self.is_double = False
             got = False
             tweet_line = tweet.full_text
