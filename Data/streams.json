@@ -13,6 +13,14 @@
                             "intCount": 1,
                             "strType": "Armor"
                         },
+                        "Enraged FiendHunter": {
+                            "intCharId": 57302223,
+                            "strName": "Enraged FiendHunter",
+                            "bUpgrade": false,
+                            "bCoins": true,
+                            "intCount": 1,
+                            "strType": "Armor"
+                        },
                         "Hollowborn Trainer": {
                             "intCharId": 57302223,
                             "strName": "Hollowborn Trainer",
@@ -856,7 +864,7 @@
                             "strName": "Black Knight Essence",
                             "bUpgrade": false,
                             "bCoins": true,
-                            "intCount": 51,
+                            "intCount": 52,
                             "strType": "Quest Item"
                         },
                         "Carnax Essence": {
