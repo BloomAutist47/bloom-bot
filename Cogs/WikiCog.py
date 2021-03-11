@@ -18,6 +18,7 @@ class WikiCog(commands.Cog, BaseTools):
         item = item.lower()
 
         straight = self.convert_aqurl(item, "wiki")
+        print(straight)
         wiki = self.convert_aqurl(item, "wikisearch")
 
         only_wiki = False

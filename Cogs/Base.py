@@ -987,7 +987,7 @@ class BaseTools(BaseProgram):
         if mode=="char":
             return  self.char_url + name.replace(" ", "+")
         elif mode =="wiki":
-            x = name.strip().replace("'", "-").replace(" ", "-")
+            x = name.strip().replace("(", "").replace(")", "").replace("'", "-").replace(" ", "-")
             return  self.wiki_url + x
         elif mode == "wikisearch":
             return "http://aqwwiki.wikidot.com/search:site/q/" + name.replace(" ", "%20")
