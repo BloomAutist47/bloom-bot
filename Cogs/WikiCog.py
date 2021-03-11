@@ -2,6 +2,7 @@ import re
 
 from .Base import *
 from discord.ext import commands
+from pprint import pprint
 
 class WikiCog(commands.Cog, BaseTools):
     def __init__(self, bot):
@@ -59,12 +60,18 @@ class WikiCog(commands.Cog, BaseTools):
         if only_wiki:
             result_desc = ""
             wiki_soup = await self.get_site_content(result)
-            print(wiki_soup)
+
+            
             list_results = wiki_soup.find("div", {"id":"page-content"}).find("div", {"class":"search-box"}).find("div", {"class":"search-results"}).find_all("div", {"class":"item"})
-            for item in list_results:
-                re_name = item.find("div", {"class":"title"}).find("a").text.strip()
-                link = item.find("div", {"class":"title"}).find("a")["href"]
-                result_desc += f"[{re_name}]({link})\n"
+            # pprint(list_results)
+            if not list_results:
+                result_desc = "None"
+            else:
+
+                for item in list_results:
+                    re_name = item.find("div", {"class":"title"}).find("a").text.strip()
+                    link = item.find("div", {"class":"title"}).find("a")["href"]
+                    result_desc += f"➣ [{re_name}]({link})\n"
             
         if not only_wiki:
             embedVar = self.embed_single(title, f"{result}" )
@@ -101,7 +108,25 @@ class WikiCog(commands.Cog, BaseTools):
 
         wiki = self.convert_aqurl(item, "wikisearch")
 
+
+        result_desc = ""
+        wiki_soup = await self.get_site_content(wiki)
+
+        
+        list_results = wiki_soup.find("div", {"id":"page-content"}).find("div", {"class":"search-box"}).find("div", {"class":"search-results"}).find_all("div", {"class":"item"})
+        if not list_results:
+            result_desc = "None"
+        else:
+
+            for item in list_results:
+                re_name = item.find("div", {"class":"title"}).find("a").text.strip()
+                link = item.find("div", {"class":"title"}).find("a")["href"]
+                result_desc += f"➣ [{re_name}]({link})\n"
+            
+
+
         embedVar = self.embed_single("Wiki Search", wiki)
+        embedVar.add_field(name="Top Result", value=result_desc, inline=False)
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
         await ctx.send(embed=embedVar)
         return
@@ -125,7 +150,7 @@ class WikiCog(commands.Cog, BaseTools):
         try:
             image = soup_item.find_all("img")[-1]["src"]
             images = self.check_stuff(image)
-            print(images)
+            # print(images)
             return images
         except:
             pass
