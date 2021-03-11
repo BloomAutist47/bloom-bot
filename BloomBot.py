@@ -46,10 +46,10 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 intents = Intents.all()
 if os.name == "nt":
-    Bot = commands.Bot(command_prefix=["'"], description='Bloom Bot Revamped', intents=intents)
+    Bot = commands.Bot(command_prefix=["'"], description='Bloom Bot Revamped', intents=intents, help_command=None)
 else:
-    Bot = commands.Bot(command_prefix=[";"], description='Bloom Bot Revamped', intents=intents)
-Bot.remove_command("help")
+    Bot = commands.Bot(command_prefix=[";"], description='Bloom Bot Revamped', intents=intents, help_command=None)
+
 
 
 
@@ -90,12 +90,12 @@ api.verify_credentials()
 
 async def stream_tweet():
 
-    # if os.name == "nt":
-    #     tweet_user = "1349290524901998592"
-    # else:
-    #     tweet_user = "16480141"
+    if os.name == "nt":
+        tweet_user = "1349290524901998592"
+    else:
+        tweet_user = "16480141"
 
-    tweet_user = "16480141"
+
 
     tweets_listener = TwitterListener(Bot, api)
     stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended', is_async=True)
@@ -132,7 +132,7 @@ else:              # Heroku
 
 
 
-
+# Bot.remove_command("help")
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
 # Bot.add_cog(TestCog(Bot))

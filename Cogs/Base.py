@@ -1061,12 +1061,13 @@ class BaseCog(commands.Cog, BaseTools):
         self.bot = bot
 
 
+
     @commands.command()
-    async def help(self, ctx):
+    async def bhelp(self, ctx):
         guild_allowed = await self.allow_evaluator(ctx, "guild_privilege")
 
         embedVar = discord.Embed(title="Bloom Help", color=BaseProgram.block_color)
-        desc = "`;help` ➣ Shows all Bloom commands.\n"\
+        desc = "`;bhelp` ➣ Shows all Bloom commands.\n"\
                "`;g` ➣ Summons a list of all guides commands.\n"\
                "`;g guide_name` ➣ Returns a specific guide.\n"\
                "`;c class_name` ➣ Shows Class data chart. Can use acronyms.\n"\

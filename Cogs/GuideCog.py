@@ -18,7 +18,7 @@ class GuideCog(commands.Cog, BaseTools):
 
         if guide == "":
             embedVar = discord.Embed(title="🔹 List of Guide Commands 🔹", color=BaseProgram.block_color,
-                description="To summon this list, use `;g`. Please read the following carefully.\n To know all Bloom Bot commands, use `;help`.\n\n")
+                description="To summon this list, use `;g`. Please read the following carefully.\n To know all Bloom Bot commands, use `;bhelp`.\n\n")
             # embedVar.set_author()
             desc = ""
             guild_id = str(ctx.guild.id)
