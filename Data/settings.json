@@ -329,7 +329,6 @@
         }
     },
     "TwitterListenerCogSettings": {
-        "Logs": [
-            ]
+        "Logs": []
     }
 }

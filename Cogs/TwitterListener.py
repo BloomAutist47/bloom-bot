@@ -7,7 +7,7 @@ import asyncio
 from threading import Thread
 from pprint import pprint
 from discord.utils import get
-
+from datetime import datetime, timedelta
 
 class TweetTools(BaseTools):
     def tweet_tools(self):
@@ -112,8 +112,10 @@ class TweetTools(BaseTools):
         enemy = None
         hour = None
         hour = None
+        npc = None
 
         if self.is_double:
+            time_ = time.strftime("%d %B %Y")
 
             hour = re.search("(\d\d)", text)
             if hour:
@@ -130,10 +132,14 @@ class TweetTools(BaseTools):
             hour = self.word_cleaner(hour)
             boost = self.word_cleaner(boost)
 
+            end_date = time + timedelta(hours=int(hour))
+            end_date = end_date.strftime('%d %B %Y')
+
             embedVar = discord.Embed(title="New Server Boost!", url=tweet_link, color=BaseProgram.block_color)
-            embedVar.description = f"**Duration**: {hour}\n"\
+            embedVar.description = f"**Duration**: {hour} Hours\n"\
                                    f"**Boost**: {boost}\n"\
-                                   f"**Posted**: {time}"
+                                   f"**Posted**: {time_}"\
+                                   f"**Ends in**: {end_date}"
             embedVar.set_image(url=link)
             embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
             embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
@@ -154,9 +160,10 @@ class TweetTools(BaseTools):
             
 
         if not self.is_double:
-
+            time = time.strftime("%d %B %Y")
+            lowered_text = text.lower()
             # Location
-            if "battleontown" in text.lower():
+            if "battleontown" in lowered_text:
                 location = "Battleontown"
             
             if not location:
@@ -171,8 +178,12 @@ class TweetTools(BaseTools):
                         self.save_log(2, text, link)
                         return 
 
+            if "talk to" in lowered_text:
+                npc  = re.search("(Talk to|talk to)(.+?)(\sin\s|\, in)", text).groups()[1]
+
+
             # Quest/Enemy
-            if re.search("(\squest\s|quest\!)", text.lower()):
+            if re.search("(\squest\s|quest\!)", lowered_text):
                 quest = re.search("(Complete the|Complete|dropping from his)(.+?)(quest|quest\!)", text)
                 if quest:
                     quest = quest.groups()[1]
@@ -182,23 +193,24 @@ class TweetTools(BaseTools):
             else:
                 text = text.replace("Battleontown", "").replace("battleontown", "")
                 if "Defeat the" in text:
-                    enemy = re.search("(Defeat the)(.+?)(for reward gear)", text)
+                    enemy = re.search("(Defeat the)(.+?)(for reward gear|in the)", text)
                 else:
                     enemy = re.search("(battle the|battle|Battle\sthe|Battle|Battle the|Defeat)(.+?)(for reward gear|in the\s/|in\s/|the\s|/|\sin\s)", text)
                 if enemy:
                     enemy = enemy.groups()[1]
-                    enemy_link = await self.check_website_integrity(enemy)
+                    enemy_link = self.convert_aqurl(enemy_link, "wiki")
+                    # enemy_link = await self.check_website_integrity(enemy)
                 else:
                     self.save_log(1, text, link)
                     return
 
             # Items
-            item = re.search("(to find|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|as we celebrate|as we head into|in her))", text)
+            item = re.search("(to find our|to find the|to find|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|as we celebrate|as we head into|in her|in his shop|in her shop))", text)
             if item:
                 item = item.groups()[1]
                 item = re.sub(r'((?<=^\s\b)this seasonal(?=\b\s))|(((?<=^\s\b)rare(?=\b\s)))','', item).strip()
             else:
-                item = re.search("(pieces of the |to collect all |Find the full|\sfor\s|one of the new)(.+?)(\.|\!|available|\,)", text)
+                item = re.search("(pieces of the |to collect all |Find the full|\sfor\s|one of the new|to find)(.+?)(\.|\!|available|\,|in his shop)", text)
                 if item:
                     item = item.groups()[1]
                 else:
@@ -214,21 +226,27 @@ class TweetTools(BaseTools):
             else:
                 enemy = self.word_cleaner(enemy)
                 target = f"**Enemy**: [{enemy}]({enemy_link})\n" 
+            if npc:
+                npc = self.word_cleaner(npc)
 
             # Adding /join to location
             location = location.replace("/", "")
             location = "/join " + location.lower()
 
             # Adding 0 AC to item
-            if "0 oc" not in item.lower():
+            if "0 ac" not in item.lower():
                 item = "0 AC " + item
-
+            else:
+                item = item.replace("0 ac", "0 AC")
+            if npc:
+                item += f"\nNPC: {npc}"
 
             embedVar = discord.Embed(title="New Daily Gift!", url=tweet_link, color=BaseProgram.block_color)
             embedVar.description = f"**Location**: {location}\n"\
                                    f"{target}"\
                                    f"**Item**: {item}\n"\
                                    f"**Posted**: {time}"
+
             embedVar.set_image(url=link)
             embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
             embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
@@ -372,17 +390,17 @@ class TwitterCog(commands.Cog, TweetTools):
 
             if not got:
                 continue
-            print(tweet)
+
             if "media" in tweet.entities:
                 med = tweet.entities['media']
                 for i in med:
                     if "media_url" in i:
-                        time_ = tweet.created_at.strftime("%d %B %Y")
+                        # time_ = tweet.created_at.strftime("%d %B %Y")
                         tweet_list.append({
                             "tweet": tweet_line,
                             "image_url": i["media_url"],
                             "id": tweet.id,
-                            "time": time_,
+                            "time": tweet.created_at,
                             "double": self.is_double
                             })
                         print("done tweet")
@@ -438,7 +456,7 @@ class TwitterCog(commands.Cog, TweetTools):
                     print(count)
                     got = False
                     break
-                    a
+
         print("starting")
         tweet_ = tweet_list[-1]
         pprint(tweet_)
@@ -498,8 +516,8 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
 
             self.mode == "stuff"
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
-            time_ = status.created_at.strftime("%d %B %Y")
-            send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, time_), BaseProgram.loop)
+            # time_ = status.created_at.strftime("%d %B %Y")
+            send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, status.created_at), BaseProgram.loop)
             send_fut.result()
             return
         else:
