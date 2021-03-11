@@ -55,15 +55,25 @@ class WikiCog(commands.Cog, BaseTools):
             result = wiki
             image = None
             only_wiki = True
+
+        if only_wiki:
+            result_desc = ""
+            wiki_soup = await self.get_site_content(result)
+            print(wiki_soup)
+            list_results = wiki_soup.find("div", {"id":"page-content"}).find("div", {"class":"search-box"}).find("div", {"class":"search-results"}).find_all("div", {"class":"item"})
+            for item in list_results:
+                re_name = item.find("div", {"class":"title"}).find("a").text.strip()
+                link = item.find("div", {"class":"title"}).find("a")["href"]
+                result_desc += f"[{re_name}]({link})\n"
             
-        if title:
-            embedVar = self.embed_single(title, f"{result}" )
-        else:
-            embedVar = self.embed_single("Wiki Search", f"{result}" )
-
-
         if not only_wiki:
+            embedVar = self.embed_single(title, f"{result}" )
             embedVar.add_field(name="All Result", value=f"[Click here for all result]({wiki})", inline=False)
+
+        if only_wiki:
+            embedVar = self.embed_single("Wiki Search", f"{result}" )
+            embedVar.add_field(name="Top Result", value=result_desc, inline=False)
+
         if image:
             embedVar.set_image(url=image)
 
