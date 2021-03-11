@@ -62,12 +62,13 @@ class WikiCog(commands.Cog, BaseTools):
             wiki_soup = await self.get_site_content(result)
 
             
-            list_results = wiki_soup.find("div", {"id":"page-content"}).find("div", {"class":"search-box"}).find("div", {"class":"search-results"}).find_all("div", {"class":"item"})
+            wiki_content = wiki_soup.find("div", {"id":"page-content"}).find("div", {"class":"search-box"}).find("div", {"class":"search-results"})
+            print(wiki_content)
             # pprint(list_results)
-            if not list_results:
+            if "Sorry, no results found for your query." in wiki_content.text.strip():
                 result_desc = "None"
             else:
-
+                list_results =  wiki_content.find_all("div", {"class":"item"})
                 for item in list_results:
                     re_name = item.find("div", {"class":"title"}).find("a").text.strip()
                     link = item.find("div", {"class":"title"}).find("a")["href"]
@@ -106,6 +107,8 @@ class WikiCog(commands.Cog, BaseTools):
             await ctx.send(embed=embedVar)
             return
 
+
+
         wiki = self.convert_aqurl(item, "wikisearch")
 
 
@@ -113,17 +116,16 @@ class WikiCog(commands.Cog, BaseTools):
         wiki_soup = await self.get_site_content(wiki)
 
         
-        list_results = wiki_soup.find("div", {"id":"page-content"}).find("div", {"class":"search-box"}).find("div", {"class":"search-results"}).find_all("div", {"class":"item"})
-        if not list_results:
+        wiki_content = wiki_soup.find("div", {"id":"page-content"}).find("div", {"class":"search-box"}).find("div", {"class":"search-results"})
+
+        if "Sorry, no results found for your query." in wiki_content.text.strip():
             result_desc = "None"
         else:
-
+            list_results =  wiki_content.find_all("div", {"class":"item"})
             for item in list_results:
                 re_name = item.find("div", {"class":"title"}).find("a").text.strip()
                 link = item.find("div", {"class":"title"}).find("a")["href"]
                 result_desc += f"➣ [{re_name}]({link})\n"
-            
-
 
         embedVar = self.embed_single("Wiki Search", wiki)
         embedVar.add_field(name="Top Result", value=result_desc, inline=False)
