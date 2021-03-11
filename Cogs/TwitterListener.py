@@ -146,11 +146,11 @@ class TweetTools(BaseTools):
             
             if os.name == "nt":
                 channel = await self.bot.fetch_channel(799238286539227136)
-                if self.mode == "updaily":
+                if self.mode == "stuff":
                     await channel.send("<@&814054683651342366>")
             else:
                 channel = await self.bot.fetch_channel(812318143322128384)
-                if self.mode == "updaily":
+                if self.mode == "stuff":
                     await channel.send("<@&811305081063604290>")
 
             await channel.send(embed=embedVar)
@@ -206,7 +206,7 @@ class TweetTools(BaseTools):
                     enemy_link = ""
 
             # Items
-            item = re.search("(to find our|to find the|to find|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|as we celebrate|as we head into|in her|in his shop|in her shop|as we lead up))", text)
+            item = re.search("(to find our|to find the|to find|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|as we celebrate|as we head into|in her|in his shop|in her shop|as we lead up|until))", text)
             if item:
                 item = item.groups()[1]
                 item = re.sub(r'((?<=^\s\b)this seasonal(?=\b\s))|(((?<=^\s\b)rare(?=\b\s)))','', item).strip()
@@ -257,13 +257,14 @@ class TweetTools(BaseTools):
             
             if os.name == "nt":
                 channel = await self.bot.fetch_channel(799238286539227136)
-                if self.mode == "updaily":
+                if self.mode == "stuff":
                     await channel.send("<@&814054683651342366>")
+                    self.mode = ""
             else:
                 channel = await self.bot.fetch_channel(812318143322128384)
-                if self.mode == "updaily":
+                if self.mode == "stuff":
                     await channel.send("<@&811305081063604290>")
-
+                    self.mode = ""
             await channel.send(embed=embedVar)
             print("Done")
             return
@@ -480,6 +481,7 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
         self.tweet_text = ""
         self.image_url = ""
         self.tweet_tools()
+        self.setup()
 
 
 
