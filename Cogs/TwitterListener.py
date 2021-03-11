@@ -219,7 +219,7 @@ class TweetTools(BaseTools):
             location = "/join " + location.lower()
 
             # Adding 0 AC to item
-            if "0 AC" not in item:
+            if "0 oc" not in item.lower():
                 item = "0 AC " + item
 
 
@@ -342,63 +342,50 @@ class TwitterCog(commands.Cog, TweetTools):
         tweet_list = []
         print("appending")
         for tweet in (time_line):
-            # print(tweet.full_text)
             tweet_text = tweet.full_text.lower()
-# # ---------------
+            print("did")
+            self.is_double = False
+            got = False
+            tweet_line = tweet.full_text
 
-#             self.is_double = False
-#             got = False
+            # Checks if wrong tweet
+            for i in self.black_list:
+                if i.lower() in tweet_text:
+                    continue
 
-
-#                 tweet = status.extended_tweet['full_text']
-#                 tweet_text = tweet.lower()
-
-#                 # Checks if wrong tweet
-#                 for i in self.black_list:
-#                     if i.lower() in tweet_text:
-#                         return
-
-#                 # Checks if double boost
-#                 for i in  self.double_check:
-#                     if i.lower() in tweet_text:
-#                         self.is_double = True
-#                         got = True
-#                         break
-
-#                 if not self.is_double:
-#                     # Check if Daily Gift
-#                     for i in self.gift_checks:
-#                         if i.lower() in tweet_text:
-#                             got = True
-#                             for i in self.gift_checks:
-#                                 tweet = tweet.replace(i, "")
-#                             break
-# # ---------------
-
-            if not got:
-                return
-
-
-            for i in self.key_check:
-                if i in tweet_text:
+            # Checks if double boost
+            for i in  self.double_check:
+                if i.lower() in tweet_text:
+                    self.is_double = True
                     got = True
                     break
+
+            if not self.is_double:
+                # Check if Daily Gift
+                for i in self.gift_checks:
+                    if i.lower() in tweet_text:
+                        got = True
+                        for i in self.gift_checks:
+                            tweet_line = tweet.full_text.replace(i, "")
+                        break
+
             if not got:
                 continue
-
+            print(tweet)
             if "media" in tweet.entities:
                 med = tweet.entities['media']
                 for i in med:
                     if "media_url" in i:
                         time_ = tweet.created_at.strftime("%d %B %Y")
                         tweet_list.append({
-                            "tweet": tweet.full_text,
+                            "tweet": tweet_line,
                             "image_url": i["media_url"],
                             "id": tweet.id,
                             "time": time_,
                             })
                         print("done tweet")
                         got = False
+                        break
         print("starting")
         reversed_list = reversed(tweet_list)
         for tweet in reversed_list:
