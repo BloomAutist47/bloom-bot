@@ -98,10 +98,11 @@ class TweetTools(BaseTools):
 
         return result
 
-    async def tweet_send(self, text, link, id_, time):
+    async def tweet_send(self, text, link, id_, time, double=False):
         tweet_link = "https://twitter.com/twitter/statuses/"+str(id_)
 
-
+        if double:
+            self.is_double = True
 
         text = text.replace("Log in", "")
         text = re.sub('(https://|http://)(.+?)(\s)', "", text).replace("\n", "")
@@ -382,14 +383,16 @@ class TwitterCog(commands.Cog, TweetTools):
                             "image_url": i["media_url"],
                             "id": tweet.id,
                             "time": time_,
+                            "double": self.is_double
                             })
                         print("done tweet")
                         got = False
+                        self.is_double = False
                         break
         print("starting")
         reversed_list = reversed(tweet_list)
         for tweet in reversed_list:
-            await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"])
+            await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"], tweet['double'])
 
     @commands.command()
     async def uponce(self, ctx):
