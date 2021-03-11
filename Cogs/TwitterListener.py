@@ -325,7 +325,13 @@ class TweetTools(BaseTools):
     #     print("Done")
     #     return
 
-
+    async def tweet_simple(self, link):
+        if os.name == "nt":
+            channel = await self.bot.fetch_channel(799238286539227136)
+        else:
+            channel = await self.bot.fetch_channel(811309992727937034)
+        await channel.send(link)
+        return
 
 class TwitterCog(commands.Cog, TweetTools):
 
@@ -499,6 +505,7 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
             # Checks if wrong tweet
             for i in self.black_list:
                 if i.lower() in tweet_text:
+                    self.send_to_discord(status.id)
                     return
 
             # Checks if double boost
@@ -518,17 +525,23 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
                         break
 
             if not got:
+                self.send_to_discord(status.id)
                 return
 
             self.mode == "stuff"
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
-            # time_ = status.created_at.strftime("%d %B %Y")
             send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, status.created_at), BaseProgram.loop)
             send_fut.result()
             return
         else:
             print('text: ' + status.text)
+            self.send_to_discord(status.id)
             return
 
     def on_error(self, status):
         print(status)
+
+    def send_to_discord(self, id_):
+        send_fut = asyncio.run_coroutine_threadsafe(self.tweet_simple("https://twitter.com/twitter/statuses/" + str(id_)), BaseProgram.loop)
+        send_fut.result()
+        return
