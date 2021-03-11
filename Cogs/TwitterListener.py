@@ -330,7 +330,7 @@ class TweetTools(BaseTools):
             channel = await self.bot.fetch_channel(799238286539227136)
         else:
             channel = await self.bot.fetch_channel(811309992727937034)
-        await channel.send(link)
+        await channel.send("@Alina_AE:", link)
         return
 
 class TwitterCog(commands.Cog, TweetTools):
