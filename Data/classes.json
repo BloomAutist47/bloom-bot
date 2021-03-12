@@ -1504,7 +1504,7 @@
             "fast_obtain_difficulty": "B"
         },
         "type": "available",
-        "location": "Quest, /yulgar",
+        "location": "Quest, /classhall",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650208329531452/Dragon_of_Time_Class_Chart.png"
     },
     "DragonLord": {
@@ -3801,7 +3801,7 @@
             "fast_obtain_difficulty": "S"
         },
         "type": "available",
-        "location": "Merge",
+        "location": "merge, /tercessuinotlim",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650779052146788/Void_Highlord_Class_Chart.png"
     },
     "Warrior": {
