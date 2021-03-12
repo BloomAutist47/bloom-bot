@@ -2143,7 +2143,7 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "Heromart, 2018 Calendar",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650258015911946/Eternal_Chronomancer_Class_Chart.png"
     },
@@ -3189,7 +3189,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650638028111872/Sentinel_Class_Chart.png"
     },
     "ShadowScythe General": {
-        "acronym": "SSG",
+        "acronym": "SSG, SG",
         "awe_enh": "Spiral Carve",
         "duplicates": [],
         "enh": "luck",
@@ -3244,7 +3244,7 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "Heromart, 2017 Calendar",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650651021017108/ShadowWalker_of_Time_Class_Chart.png"
     },
@@ -3717,7 +3717,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650745305825354/Undead_Leperchaun_Class_Chart.png"
     },
     "Vampire Lord": {
-        "acronym": "VL",
+        "acronym": "VL, RVL",
         "awe_enh": "Spiral Carve",
         "duplicates": [
             "Enchanted Vampire Lord",
