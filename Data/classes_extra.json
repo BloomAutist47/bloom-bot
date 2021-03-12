@@ -3,7 +3,8 @@
         "acronym": "ImC"
     },
     "Dragon of Time": {
-        "acronym": "DoT"
+        "acronym": "DoT",
+        "location": "Quest, /classhall"
     },
     "Dark Master of Moglins": {
         "acronym": "DMoM"
@@ -68,7 +69,8 @@
             "null",
             "null",
             "null"
-        ]
+        ],
+        "location": "merge, /tercessuinotlim"
     },
     "ShadowStalker of Time": {
         "stats": [
@@ -202,5 +204,8 @@
     },
     "ShadowScythe General": {
         "acronym": "SG"
+    },
+    "Infinite Legion Dark Caster":{
+        "type": "available"
     }
 }
