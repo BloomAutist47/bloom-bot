@@ -81,7 +81,7 @@
             "null"
         ],
         "type": "available",
-        "location": "/curio, 6k AC, Speak to Chronis"
+        "location": "/curio, 6k AC, Speak to Chronix"
     },
     "Immortal Chronomancer": {
         "stats": [
@@ -200,7 +200,7 @@
         ],
         "bludrut": 5
     },
-    "ShadowScythe General":{
+    "ShadowScythe General": {
         "acronym": "SG"
     }
 }
