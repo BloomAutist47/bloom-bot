@@ -35,7 +35,7 @@ from Cogs.TwitterListener import TwitterListener
 from Cogs.TwitterListener import TwitterCog
 # from Cogs.UtilsCog import UtilsCog
 
-# from Cogs.StreamCog import StreamCog
+from Cogs.StreamCog import StreamCog
 # from Cogs.TestCog import TestCog
 
 class BreakProgram(Exception):
@@ -147,7 +147,7 @@ Bot.add_cog(WikiCog(Bot))
 Bot.add_cog(TwitterCog(Bot, api))
 
 # Bot.add_cog(UtilsCog(Bot))
-# Bot.add_cog(StreamCog(Bot))
+Bot.add_cog(StreamCog(Bot))
 # Bot.add_cog(TextUploaders(Bot))
 
 print("> Starting Bot...")

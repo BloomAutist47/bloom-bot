@@ -46,9 +46,9 @@ class StreamCog(commands.Cog, BaseTools):
             return
 
         id_ = str(ctx.author.id)
-        allow = await self.user_check(ctx, id_)
-        if not allow:
-            return
+        # allow = await self.user_check(ctx, id_)
+        # if not allow:
+        #     return
 
         if id_ not in BaseProgram.streams["users"]:
             BaseProgram.streams["users"][id_] = {}

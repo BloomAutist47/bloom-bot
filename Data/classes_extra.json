@@ -70,7 +70,7 @@
             "null"
         ]
     },
-    "ShadowWalker of Time": {
+    "ShadowStalker of Time": {
         "stats": [
             "null",
             "null",
@@ -79,9 +79,11 @@
             "null",
             "null",
             "null"
-        ]
+        ],
+        "type": "available",
+        "location": "/curio, 6k AC, Speak to Chronis"
     },
-    "Eternal Chronomancer": {
+    "Immortal Chronomancer": {
         "stats": [
             "null",
             "null",
@@ -90,7 +92,9 @@
             "null",
             "null",
             "null"
-        ]
+        ],
+        "type": "available",
+        "location": "/curio, 6k AC, Speak to Chronis"
     },
     "Corrupted Chronomancer": {
         "stats": [
@@ -195,5 +199,8 @@
             "null"
         ],
         "bludrut": 5
+    },
+    "ShadowScythe General":{
+        "acronym": "SG"
     }
 }
