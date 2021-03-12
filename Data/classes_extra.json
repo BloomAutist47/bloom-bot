@@ -22,7 +22,8 @@
             "null",
             "null"
         ],
-        "bludrut": 6
+        "bludrut": 6,
+        "location": "Insane Quest, /revenant, needs one dark caster class"
     },
     "Elemental Dracomancer": {
         "stats": [
@@ -205,7 +206,7 @@
     "ShadowScythe General": {
         "acronym": "SG"
     },
-    "Infinite Legion Dark Caster":{
+    "Infinite Legion Dark Caster": {
         "type": "available"
     }
 }
