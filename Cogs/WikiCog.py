@@ -163,6 +163,17 @@ class WikiCog(commands.Cog, BaseTools):
                             ac = discord.utils.get(self.bot.emojis, name='tagLegend')
                             embedVar.title = embedVar.title + f" {ac}"
 
+                    if "seasonal_tag" in data:
+                        if data["seasonal_tag"] == True:
+                            ac = discord.utils.get(self.bot.emojis, name='tagSeasonal')
+                            embedVar.title = embedVar.title + f" {ac}"
+
+                    if "rare_Tag" in data:
+                        if data["rare_Tag"] == True:
+                            ac = discord.utils.get(self.bot.emojis, name='tagRare')
+                            embedVar.title = embedVar.title + f" {ac}"
+
+
                     if "Special Effects:" in data:
                         embedVar.add_field(name="Special Effects:", value=data["Special Effects:"], inline=False)
 
@@ -178,8 +189,13 @@ class WikiCog(commands.Cog, BaseTools):
                         embedVar.add_field(name="Note:", value=data["Note:"], inline=False)
 
                 break
+
         embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
-        await ctx.send(embed=embedVar)
+        
+        try:
+            await ctx.send(embed=embedVar)
+        except:
+            print("Error, too big I guess", item)
 
         return
 
@@ -258,6 +274,9 @@ class WikiCog(commands.Cog, BaseTools):
         pseudo_tag = page_content.find("img", {"alt":"pseudolarge.png"})
         special_tag = page_content.find("img", {"alt":"speciallarge.png"})
         legend_tag = page_content.find("img", {"alt":"legendlarge.png"})
+        rare_Tag = page_content.find("img", {"alt":"rarelarge.png"})
+        seasonal_tag = page_content.find("img", {"alt":"seasonallarge.png"})
+
         # print(ac_tag)
         if special_tag:
             data["special_tag"] = True
@@ -267,7 +286,10 @@ class WikiCog(commands.Cog, BaseTools):
             data["pseudo_tag"] = True
         if legend_tag:
             data["legend_tag"] = True
-
+        if rare_Tag:
+            data["rare_Tag"] = True
+        if seasonal_tag:
+            data["seasonal_tag"] = True
 
 
         for div in page_content.find_all("span", {'style':'text-decoration: line-through;'}): 
