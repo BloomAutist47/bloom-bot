@@ -25,6 +25,7 @@ class WikiCog(commands.Cog, BaseTools):
 
         only_wiki = False
         true_item = False
+        text_content = False
         sites_soup = await self.get_site_content(straight)
         # pprint(sites_soup)
         wiki_soup_site = ""
@@ -40,6 +41,9 @@ class WikiCog(commands.Cog, BaseTools):
                 image = None
                 only_wiki = True
             elif "usually refers to:" in page_check:
+                refer_content = page_content.find_all("a")
+                text_content = '\n'.join([f"➣ [{x.text.strip()}](http://aqwwiki.wikidot.com+{x['href']})" for x in refer_content])
+                pprint("WHUTS")
                 # Referals
                 title = sites_soup.find("div", {"id":"main-content"}).find("div", {"id": "page-title"}).text.strip()
                 result = straight
@@ -90,11 +94,13 @@ class WikiCog(commands.Cog, BaseTools):
             embedVar.add_field(name="Top Result", value=result_desc, inline=False)
 
         if image:
-            embedVar.set_image(url=image)
-
+            embedVar.set_thumbnail(url=image)
+        if text_content:
+            embedVar.add_field(name="Search Usually refers to: ", value=text_content, inline=False)
         no_list = ["note", "descrip", "special effect", "location", "price", "ac_tag", "sellback", "seasonal_tag","special_tag","rarity", "damage", "legend_tag", "pseudo_tag"]
         ac_tagged = False
         cont = False
+        field_inline = False
         if true_item:
             while True:
                 try:
@@ -121,27 +127,28 @@ class WikiCog(commands.Cog, BaseTools):
 
                         else:
                             if data[head]:
-                                embedVar.add_field(name=head, value=data[head], inline=True)
+                                embedVar.add_field(name=head, value=data[head], inline=field_inline)
                         
 
                     if "Rarity:" in data:
-                        embedVar.add_field(name="Rarity:", value=data["Rarity:"], inline=True)
+                        embedVar.add_field(name="Rarity:", value=data["Rarity:"], inline=field_inline)
                         # embedVar = self.embed_check(embedVar)
 
                     if "Base Damage:" in data:
-                        embedVar.add_field(name="Base Damage:", value=data["Base Damage:"], inline=True)
-                        # embedVar = self.embed_check(embedVar)
-
-                    if "Sellback:" in data:
-                        embedVar.add_field(name="Sellback:", value=data["Sellback:"], inline=True)
-                        # embedVar = self.embed_check(embedVar)
-
-                    if "Locations:" in data:
-                        embedVar.add_field(name="Locations:", value=data["Locations:"], inline=True)
+                        embedVar.add_field(name="Base Damage:", value=data["Base Damage:"], inline=field_inline)
                         # embedVar = self.embed_check(embedVar)
 
                     if "Price:" in data:
-                        embedVar.add_field(name="Price:", value=data["Price:"], inline=True)
+                        embedVar.add_field(name="Price:", value=data["Price:"], inline=field_inline)
+                        # embedVar = self.embed_check(embedVar)
+
+
+                    if "Sellback:" in data:
+                        embedVar.add_field(name="Sellback:", value=data["Sellback:"], inline=field_inline)
+                        # embedVar = self.embed_check(embedVar)
+
+                    if "Locations:" in data:
+                        embedVar.add_field(name="Locations:", value=data["Locations:"], inline=field_inline)
                         # embedVar = self.embed_check(embedVar)
 
 
