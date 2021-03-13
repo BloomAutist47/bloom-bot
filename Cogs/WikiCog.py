@@ -141,6 +141,7 @@ class WikiCog(commands.Cog, BaseTools):
                         
 
                     if "Rarity:" in data:
+                        # if len(data["Rarity:"]) > 15:
                         embedVar.add_field(name="Rarity:", value=data["Rarity:"], inline=field_inline)
                         # embedVar = self.embed_check(embedVar)
 

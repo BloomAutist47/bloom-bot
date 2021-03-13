@@ -10,6 +10,8 @@ from discord.utils import get
 from datetime import datetime, timedelta
 
 class TweetTools(BaseTools):
+    
+
     def tweet_tools(self):
 
         self.gift_checks = [
@@ -35,7 +37,6 @@ class TweetTools(BaseTools):
         self.black_list = [
             "Design Notes", "RT @"
             ]
-        self.mode = ""
         self.is_double = False
 
     def save_log(self, m, text, link, is_success=False):
@@ -98,7 +99,7 @@ class TweetTools(BaseTools):
 
         return result
 
-    async def tweet_send(self, text, link, id_, time, double=False):
+    async def tweet_send(self, text, link, id_, time, double, send_ping="not_automatic"):
         tweet_link = "https://twitter.com/twitter/statuses/"+str(id_)
 
         if double:
@@ -146,11 +147,11 @@ class TweetTools(BaseTools):
             
             if os.name == "nt":
                 channel = await self.bot.fetch_channel(799238286539227136)
-                if self.mode == "stuff":
+                if BaseProgram.tweet_call == "stuff":
                     await channel.send("<@&814054683651342366>")
             else:
                 channel = await self.bot.fetch_channel(812318143322128384)
-                if self.mode == "stuff":
+                if BaseProgram.tweet_call == "stuff":
                     await channel.send("<@&811305081063604290>")
 
             await channel.send(embed=embedVar)
@@ -257,15 +258,16 @@ class TweetTools(BaseTools):
             
             if os.name == "nt":
                 channel = await self.bot.fetch_channel(799238286539227136)
-                if self.mode == "stuff":
+                if send_ping == "automatic":
                     await channel.send("<@&814054683651342366>")
-                    self.mode = ""
+                    print("happened!?!")
             else:
                 channel = await self.bot.fetch_channel(812318143322128384)
-                if self.mode == "stuff":
+                if send_ping == "automatic":
                     await channel.send("<@&811305081063604290>")
-                    self.mode = ""
+                    
             await channel.send(embed=embedVar)
+            BaseProgram.tweet_call = ""
             print("Done")
             return
 
@@ -314,11 +316,11 @@ class TweetTools(BaseTools):
         
     #     if os.name == "nt":
     #         channel = await self.bot.fetch_channel(799238286539227136)
-    #         if self.mode == "updaily":
+    #         if BaseProgram.tweet_call == "updaily":
     #             await channel.send("<@&814054683651342366>")
     #     else:
     #         channel = await self.bot.fetch_channel(812318143322128384)
-    #         if self.mode == "updaily":
+    #         if BaseProgram.tweet_call == "updaily":
     #             await channel.send("<@&811305081063604290>")
 
     #     await channel.send(embed=embedVar)
@@ -363,7 +365,7 @@ class TwitterCog(commands.Cog, TweetTools):
         if not allow_:
             return
 
-        self.mode == "updaily"
+        BaseProgram.tweet_call == "updaily"
 
         # this code block is another way of doing the thing below
 
@@ -423,7 +425,7 @@ class TwitterCog(commands.Cog, TweetTools):
         print("starting")
         reversed_list = reversed(tweet_list)
         for tweet in reversed_list:
-            await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"], tweet['double'])
+            await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"], double=tweet['double'])
 
     @commands.command()
     async def uponce(self, ctx):
@@ -431,7 +433,7 @@ class TwitterCog(commands.Cog, TweetTools):
         if not allow_:
             return
 
-        self.mode == "uponce"
+        BaseProgram.tweet_call == "uponce"
 
         # this code block is another way of doing the thing below
 
@@ -530,9 +532,8 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
                 self.send_to_discord(status.id, status.user.id_str)
                 return
 
-            self.mode == "stuff"
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
-            send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, status.created_at), BaseProgram.loop)
+            send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"), BaseProgram.loop)
             send_fut.result()
             return
         else:

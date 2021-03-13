@@ -32,6 +32,7 @@ class BaseProgram:
     author_list_lowercase = []
     class_acronyms = {}
     guides = {}
+    tweet_call = ""
 
     if os.name == 'nt':
         loop = asyncio.ProactorEventLoop() # for subprocess' pipes on Windows
