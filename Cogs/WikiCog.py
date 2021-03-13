@@ -92,7 +92,7 @@ class WikiCog(commands.Cog, BaseTools):
         if image:
             embedVar.set_image(url=image)
 
-        no_list = ["note", "descrip", "special effect", "location", "price", "ac_tag", "sellback", "special_tag","rarity", "damage", "legend_tag", "pseudo_tag"]
+        no_list = ["note", "descrip", "special effect", "location", "price", "ac_tag", "sellback", "seasonal_tag","special_tag","rarity", "damage", "legend_tag", "pseudo_tag"]
         ac_tagged = False
         cont = False
         if true_item:
