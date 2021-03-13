@@ -101,6 +101,8 @@ class WikiCog(commands.Cog, BaseTools):
         ac_tagged = False
         cont = False
         field_inline = False
+        setup_two = False
+        note_storage = ""
         if true_item:
             while True:
                 try:
@@ -112,9 +114,17 @@ class WikiCog(commands.Cog, BaseTools):
                 if data:
                     for head in data:
                         head_ = head.lower()
+                        if setup_two == True:
+                            if "note" in head_:
+                                note_storage = data[head]
+                                break
+                            continue
+
+
                         if "note" in head_:
                             break
                         if "skills" in head_:
+                            setup_two = True
                             break
                         for i in no_list:
                             if i in head_:
@@ -191,9 +201,14 @@ class WikiCog(commands.Cog, BaseTools):
                         embedVar.add_field(name="Description:", value=data["Description:"], inline=False)
      
                     if "Notes:" in data:
-                        embedVar.add_field(name="Notes:", value=data["Notes:"], inline=False)
+                        note_dat = data["Notes:"].split("Male Female")[0]
+                        embedVar.add_field(name="Notes:", value=note_dat, inline=False)
                     if "Note:" in data:
-                        embedVar.add_field(name="Note:", value=data["Note:"], inline=False)
+                        note_dat = data["Note:"].split("Male Female")[0]
+                        embedVar.add_field(name="Note:", value=note_dat, inline=False)
+                    if note_storage:
+                        note_dat = note_storage.split("Male Female")[0]
+                        embedVar.add_field(name="Note:", value=note_dat, inline=False)
 
                 break
 
@@ -324,8 +339,8 @@ class WikiCog(commands.Cog, BaseTools):
             head = x.lower()
             target = next(it)
 
-            if "skill" in head:
-                break
+            # if "skill" in head:
+            #     break
 
             links = re.findall(r"(\(/.+?\))", target)
             if links:
