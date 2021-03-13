@@ -97,7 +97,7 @@ class WikiCog(commands.Cog, BaseTools):
             embedVar.set_thumbnail(url=image)
         if text_content:
             embedVar.add_field(name="Search Usually refers to: ", value=text_content, inline=False)
-        no_list = ["note", "descrip", "special effect", "location", "price", "ac_tag", "sellback", "seasonal_tag","special_tag","rarity", "damage", "legend_tag", "pseudo_tag"]
+        no_list = ["note", "descrip", "special effect", "location", "rare_tag","price", "ac_tag", "sellback", "seasonal_tag","special_tag","rarity", "damage", "legend_tag", "pseudo_tag"]
         ac_tagged = False
         cont = False
         field_inline = False
