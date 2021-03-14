@@ -29,7 +29,7 @@ class RedditCog(commands.Cog, BaseTools):
             password = os.getenv('REDDIT_PASSWORD')
             user_agent = os.getenv('REDDIT_USER_AGENT')
         else:              # Heroku
-            client_id = os.environ.get('DISCORD_BOT_TOKEN')
+            client_id = os.environ.get('REDDIT_ID')
             client_secret = os.environ.get('REDDIT_SECRET')
             username = os.environ.get('REDDIT_USERNAME')
             password = os.environ.get('REDDIT_PASSWORD')
@@ -99,7 +99,7 @@ class RedditCog(commands.Cog, BaseTools):
 
 
             await self.send_webhook(author_, title_, link_, image_, time_, text_)
-
+            await asyncio.sleep(5)
 
             print(f"Title: {sub.title}\nAuthor: u/{sub.author}\nAuthor Link: https://www.reddit.com/user/{sub.author}/\nScore: {sub.score}\nID: {sub.id}\nURL: https://www.reddit.com{sub.permalink}\nImage URL: {sub.url}\n\n")
 
