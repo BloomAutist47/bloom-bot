@@ -82,42 +82,7 @@ class TextUploaders(commands.Cog, BaseTools):
         # await self.send_webhook(hook_link, "file", fp, file_n)
 
 
-    # @commands.command()
-    # async def upset(self, ctx, *, webhook_name:str=""):
-    #     if not webhook_name:
-    #         await ctx.send("\> Please type a webhook name.")
-    #         return
 
-    #     channel_id = f"{ctx.channel.id}"
-    #     if channel_id in BaseProgram.settings["TextUploadSettings"]["channels"]:
-    #         await ctx.send(f"\> A Webhook  is **already registered** for this channel.\n\> `{webhook_name}`")
-    #         return
-
-    #     webhook = await ctx.channel.webhooks()
-    #     for hook in webhook:
-    #         if webhook_name == hook.name:
-    #             hook_url = hook.url
-    #             break
-        
-    #     BaseProgram.settings["TextUploadSettings"]["channels"][channel_id] = str(hook_url)
-    #     self.file_save("settings")
-    #     self.git_save("settings")
-    #     await ctx.send(f"\> Webhook `{webhook_name}` Successfully set for this channel.")
-    #     return
-
-
-    # @commands.command()
-    # async def updel(self, ctx):
-    #     channel_id = f"{ctx.channel.id}"
-    #     if channel_id not in BaseProgram.settings["TextUploadSettings"]["channels"]:
-    #         await ctx.send(f"\> This channel has no registered `;uptext` webhook")
-    #         return
-
-    #     BaseProgram.settings["TextUploadSettings"]["channels"].pop(channel_id, None)
-    #     self.file_save("settings")
-    #     self.git_save("settings")
-    #     await ctx.send(f"\> Webhook Channel for `;uptext` is Successfully unregistered ")
-    #     return
 
 
     @commands.command()
@@ -171,12 +136,3 @@ class TextUploaders(commands.Cog, BaseTools):
     def read_text(self, path):
         f = open(path, "r", encoding='cp1252')
         return f.read().split("\n")
-        
-    # async def send_webhook(self, ctx, mode:str, *value):
-    #     webhook_urls = [hook_link]
-    #     if mode == "txt":
-    #         webhook = DiscordWebhook(url=webhook_urls, content=value[0])
-    #     elif mode == "file":
-    #         webhook = DiscordWebhook(url=webhook_urls)
-    #         webhook.add_file(file=value[0], filename=value[1])
-    #     response = webhook.execute()    

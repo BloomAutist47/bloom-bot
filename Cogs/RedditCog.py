@@ -1,0 +1,164 @@
+
+from .Base import *
+from discord.ext import commands
+from threading import Thread
+from pprintpp import pprint
+from discord_webhook import DiscordWebhook, DiscordEmbed
+
+import os
+import textwrap
+
+class RedditCog(commands.Cog, BaseTools):
+
+    def __init__(self, bot, api):
+        self.setup()
+        self.bot = bot
+        self.self.reddit_logs = {}
+        self.load_reddit_log()
+
+        if os.name = "nt":
+        	from dotenv import load_dotenv
+        	load_dotenv()
+
+			client_id = os.getenv('REDDIT_ID')
+			client_secret = os.getenv('REDDIT_SECRET')
+			username = os.getenv('REDDIT_USERNAME')
+			password = os.getenv('REDDIT_PASSWORD')
+			user_agent = os.getenv('REDDIT_USER_AGENT')
+        else:              # Heroku
+			client_id = os.environ.get('DISCORD_BOT_TOKEN')
+			client_secret = os.environ.get('REDDIT_SECRET')
+			username = os.environ.get('REDDIT_USERNAME')
+			password = os.environ.get('REDDIT_PASSWORD')
+			user_agent = os.environ.get('REDDIT_USER_AGENT')
+
+		self.reddit = praw.Reddit(client_id = client_id,  
+		                     client_secret = client_secret,  
+		                     username = username,  
+		                     password = password, 
+		                     user_agent = user_agent) 
+
+
+        send_fut = asyncio.run_coroutine_threadsafe(self.listener(), BaseProgram.loop)
+        send_fut.result()
+
+	def load_reddit_log(self):
+	    with open('./Data/self.reddit_logs.json', 'r', encoding='utf-8') as f:
+	        self.reddit_logs = json.load(f)
+
+
+	def save_reddit_log(self):
+	    with open('./Data/self.reddit_logs.json', 'w', encoding='utf-8') as f:
+	        json.dump(self.reddit_logs, f, ensure_ascii=False, indent=4)
+
+    async def listener(self):
+		print("Start Watching")
+		for sub in reddit.subreddit('aqw').stream.submissions():
+
+		    sub_name = str(sub.subreddit)
+		    if sub_name not in self.reddit_logs:
+		        self.reddit_logs[sub_name] = {}
+
+		    if str(sub.id) in self.reddit_logs[sub_name]:
+		    	continue
+
+	    	author_ = str(sub.author)
+	    	title_ = str(sub.title)
+	    	link_ = f"https://www.reddit.com{sub.permalink}"
+	    	image_ = str(sub.url)
+	    	text_ = str(sub.selftext)
+	    	time_ = get_date(sub)
+
+		    self.reddit_logs[sub_name][sub.id] = {
+		        "author": author_,
+		        "title": title_,
+		        "link": link_,
+		        "image": image_,
+		        "text": text_,
+		        "time": time_
+		    }
+		    self.save_reddit_log()
+
+
+		    await self.send_webhook(author_, title_, link_, image_, time_, text_)
+
+
+		    print(f"Title: {sub.title}\nAuthor: u/{sub.author}\nAuthor Link: https://www.reddit.com/user/{sub.author}/\nScore: {sub.score}\nID: {sub.id}\nURL: https://www.reddit.com{sub.permalink}\nImage URL: {sub.url}\n\n")
+    		return
+    		
+    async def send_webhook(self, author_, title_, link_, image_, time_, text_):
+    	for channel_url in BaseProgram.settings["RedditCogSettings"]["channels"]:
+			webhook = DiscordWebhook(url=channel_url)
+
+			# create embed object for webhook
+			embed = DiscordEmbed(title=title_, color=BaseProgram.block_color, url=link_)
+
+			embed.set_author(name="r/AQW", url=, icon_url=BaseProgram.icon_aqw)
+		    chunks = textwrap.wrap(sub.selftext, 1024, break_long_words=False)
+
+		    embed.add_embed_field(name='Description:', value=chunks[0], inline=False)
+		    for chunk in chunks[1:]
+		    	embed.add_embed_field(name="\u200b", value=chunk, inline=False)
+
+			embed.add_embed_field(name='Date Posted:', value=time_, inline=True)
+			embed.add_embed_field(name='Author:', value=f"[u/{author_}](https://www.reddit.com/user/{author_}/)", inline=True)
+			
+			if image_:
+				embed.set_image(url=image_)
+			webhook.add_embed(embed)
+			response = webhook.execute()
+        
+    # async def send_webhook(self, ctx, mode:str, *value):
+    #     webhook_urls = [hook_link]
+    #     if mode == "txt":
+    #         webhook = DiscordWebhook(url=webhook_urls, content=value[0])
+    #     elif mode == "file":
+    #         webhook = DiscordWebhook(url=webhook_urls)
+    #         webhook.add_file(file=value[0], filename=value[1])
+    #     response = webhook.execute()    
+
+	def get_date(self, submission):
+		time = submission.created
+		return datetime.datetime.fromtimestamp(time).strftime('%d %B %Y | %I:%M %p %Z')
+
+
+    @commands.command()
+    async def reddithook(self, ctx, mode, *, webhook_name:str=""):
+    	mode = mode.lower()
+    	channel_id = f"{ctx.channel.id}"
+
+    	if mode == "set":
+	        if not webhook_name:
+	            await ctx.send("\> Please type a webhook name.")
+	            return
+	        
+	        if channel_id in BaseProgram.settings["RedditCogSettings"]["channels"]:
+	            await ctx.send(f"\> A Webhook  is **already registered** for this channel.\n\> `{webhook_name}`")
+	            return
+	        got = False
+	        webhook = await ctx.channel.webhooks()
+	        for hook in webhook:
+	            if webhook_name == hook.name:
+	                hook_url = hook.url
+	                got = True
+	                break
+	        if not got:
+	            await ctx.send("\> No Webhook of that name in this channel.")
+	            return
+	        
+	        BaseProgram.settings["RedditCogSettings"]["channels"][channel_id] = str(hook_url)
+	        self.file_save("settings")
+	        self.git_save("settings")
+	        await ctx.send(f"\> Webhook `{webhook_name}` Successfully set for this channel.")
+	        return
+        elif mode == "rem":
+	        if channel_id not in BaseProgram.settings["RedditCogSettings"]["channels"]:
+	            await ctx.send(f"\> This channel has no registered `;uptext` webhook")
+	            return
+
+	        BaseProgram.settings["RedditCogSettings"]["channels"].pop(channel_id, None)
+	        self.file_save("settings")
+	        self.git_save("settings")
+	        await ctx.send(f"\> Webhook for this Channel is Successfully unregistered ")
+	        return
+        await ctx.send("\> Please type a `;reddithook set webhook_name` or  `;reddithook rem webhook_name`.")
