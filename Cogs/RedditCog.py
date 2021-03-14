@@ -58,7 +58,7 @@ class RedditCog(commands.Cog, BaseTools):
             json.dump(self.reddit_logs, f, ensure_ascii=False, indent=4)
 
     async def listener(self):
-        await asyncio.sleep(5)
+        await asyncio.sleep(20)
         print("Start Watching")
         subreddit = await self.reddit.subreddit("AQW")
         async for sub in subreddit.stream.submissions():
