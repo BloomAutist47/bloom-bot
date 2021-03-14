@@ -344,9 +344,9 @@
             "[Error at location] \nTweet: NEW daily gift item to celebrate @YoshinoAE's birthday! Yoshino's color custom Birthday Blast Cape! Available for one year only.  each day for a new reward, boost, or gift at https://t.co/MhZ29GUFoA Link: http://pbs.twimg.com/tweet_video_thumb/EhlPlW2XcAEEjw_.jpg"
         ]
     },
-    "RedditCogSettings":{
-        "channels":{
-            
+    "RedditCogSettings": {
+        "channels": {
+            "799238286539227136": "https://discord.com/api/webhooks/820627046329614346/04vCT5yMRJaigq7ww74b7xgTfRSH1FnVhtl0-FkPLpDa4-J8FFk06yOM_fiuetpuT73i"
         }
     }
 }

@@ -35,6 +35,8 @@ from Cogs.TwitterListener import TwitterListener
 from Cogs.TwitterListener import TwitterCog
 from Cogs.TextUploaderCog import TextUploaders
 # from Cogs.UtilsCog import UtilsCog
+from Cogs.RedditCog import RedditCog
+
 
 # from Cogs.StreamCog import StreamCog
 # from Cogs.TestCog import TestCog
@@ -72,7 +74,7 @@ async def on_command_error(ctx, error):
 #     else:
 #         satanRoleId = 775824347222245426
 #         guild_id = 766627412179550228
-
+    
 #     guild = Bot.get_guild(guild_id)
 #     role = dis_get(guild.roles, name='satan', id=satanRoleId)
 #     role_ids = [x.id for x in after.roles]
@@ -142,10 +144,11 @@ Bot.add_cog(BaseCog(Bot))
 Bot.add_cog(BoatSearchCog(Bot))
 Bot.add_cog(CharacterCog(Bot))
 Bot.add_cog(ClassSearchCog(Bot))
-Bot.add_cog(GoogleSearchCog(Bot))
+Bot.add_cog(GoogleSearchCog(Bot))   
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(WikiCog(Bot))
 Bot.add_cog(TwitterCog(Bot, api))
+Bot.add_cog(RedditCog(Bot)) 
 
 # Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
