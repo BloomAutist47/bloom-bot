@@ -345,8 +345,6 @@
         ]
     },
     "RedditCogSettings": {
-        "channels": {
-            "799238286539227136": "https://discord.com/api/webhooks/820627046329614346/04vCT5yMRJaigq7ww74b7xgTfRSH1FnVhtl0-FkPLpDa4-J8FFk06yOM_fiuetpuT73i"
-        }
+        "channels": {}
     }
 }
