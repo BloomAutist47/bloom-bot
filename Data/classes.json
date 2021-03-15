@@ -1,14 +1,14 @@
 {
-    "Abyssal Angel's Shadow":{
-        "acronym":"Aba, AAS, AA",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Abyssal Angel's Shadow": {
+        "acronym": "Aba, AAS, AA",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Abyssal Angel"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/abyssal-angel-ac",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/abyssal-angel-ac",
+        "stats": [
             4,
             5,
             0,
@@ -17,29 +17,29 @@
             4,
             3
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"seasonal",
-        "location":"Shop, Seasonal, Black Friday, 2k AC",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818649935704096808/Abyssal_Angels_Shadow_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Shop, Seasonal, Black Friday, 2k AC",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818649935704096808/Abyssal_Angels_Shadow_Class_Chart.png"
     },
-    "Alpha Omega":{
-        "acronym":"AO",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Alpha Omega": {
+        "acronym": "AO",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Alpha DOOMmega"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/alpha-omega-non-legend",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/alpha-omega-non-legend",
+        "stats": [
             0,
             2,
             0,
@@ -48,38 +48,36 @@
             0,
             0
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Merge, 300 PvP trophies, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818649942930489364/Alpha_Omega_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, 300 PvP trophies, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818649942930489364/Alpha_Omega_Class_Chart.png"
     },
-    "Alpha Pirate":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Alpha Pirate": {
+        "acronym": "",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Pirate"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/alpha-pirate-class"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/alpha-pirate-class"
     },
-    "Frost SpiritReaver":{
-        "acronym":"FSR",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/frost-spiritreaver-class",
-        "stats":[
+    "Frost SpiritReaver": {
+        "acronym": "FSR",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/frost-spiritreaver-class",
+        "stats": [
             4,
             4,
             2,
@@ -88,28 +86,26 @@
             3,
             4
         ],
-        "bludrut":4,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_method":"3 4",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "3 4",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Quest, /icedungeon",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650301987815464/Frost_SpiritReaver_Class_Chart.png"
+        "type": "available",
+        "location": "Quest, /icedungeon",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650301987815464/Frost_SpiritReaver_Class_Chart.png"
     },
-    "Arachnomancer":{
-        "acronym":"Arach",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/arachnomancer-non-ac",
-        "stats":[
+    "Arachnomancer": {
+        "acronym": "Arach",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/arachnomancer-non-ac",
+        "stats": [
             1,
             1,
             4,
@@ -118,28 +114,26 @@
             0,
             1
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Rep, r10 Ravenloss",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818649948101804053/Arachnomancer_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Ravenloss",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818649948101804053/Arachnomancer_Class_Chart.png"
     },
-    "ArchPaladin":{
-        "acronym":"AP, Arch",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/archpaladin-class-0-ac",
-        "stats":[
+    "ArchPaladin": {
+        "acronym": "AP, Arch",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/archpaladin-class-0-ac",
+        "stats": [
             4,
             6,
             4,
@@ -148,28 +142,28 @@
             3,
             3
         ],
-        "bludrut":6,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"S",
-            "fast_obtain_method":"1 2 3 4",
-            "fast_obtain_difficulty":"C"
+        "bludrut": 6,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "S",
+            "fast_obtain_method": "1 2 3 4",
+            "fast_obtain_difficulty": "C"
         },
-        "type":"available",
-        "location":"Questline - from Artix in /darkthronehub",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818649953051607050/ArchPaladin_Class_Chart.png"
+        "type": "available",
+        "location": "Questline - from Artix in /darkthronehub",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818649953051607050/ArchPaladin_Class_Chart.png"
     },
-    "Legendary Archfiend":{
-        "acronym":"AF, Arch",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Legendary Archfiend": {
+        "acronym": "AF, Arch",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "ArchFiend"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/archfiend",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/archfiend",
+        "stats": [
             2,
             2,
             4,
@@ -178,31 +172,29 @@
             2,
             2
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_method":"2",
-            "fast_obtain_difficulty":"E"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"available",
-        "location":"Merge, 30 Fiend Tokens, via /tercessuinotlim",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650401674887199/Legendary_Archfiend_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, 30 Fiend Tokens, via /tercessuinotlim",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650401674887199/Legendary_Archfiend_Class_Chart.png"
     },
-    "Artifact Hunter":{
-        "acronym":"AH",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/artifact-hunter-class-ac",
-        "stats":[
+    "Artifact Hunter": {
+        "acronym": "AH",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/artifact-hunter-class-ac",
+        "stats": [
             3,
             4,
             0,
@@ -211,28 +203,26 @@
             0,
             4
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"C"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818649961062465586/Artifact_Hunter_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818649961062465586/Artifact_Hunter_Class_Chart.png"
     },
-    "Barber":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/barber",
-        "stats":[
+    "Barber": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/barber",
+        "stats": [
             2,
             2,
             3,
@@ -241,29 +231,29 @@
             0,
             2
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Shop, 20k gold",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818649965676462131/Barber_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, 20k gold",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818649965676462131/Barber_Class_Chart.png"
     },
-    "Bard":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Bard": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Troubador of Love"
         ],
-        "enh":"luck",
-        "tags":[
+        "enh": "luck",
+        "tags": [
             "member_only"
         ],
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/bard-class",
-        "stats":[
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/bard-class",
+        "stats": [
             0,
             2,
             4,
@@ -272,30 +262,30 @@
             0,
             0
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"E",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Rep, r4 Mythsong",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818649973192785920/Bard_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r4 Mythsong",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818649973192785920/Bard_Class_Chart.png"
     },
-    "Royal BattleMage":{
-        "acronym":"RBM, BM",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Royal BattleMage": {
+        "acronym": "RBM, BM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "BattleMage of Love",
             "Dark BattleMage",
             "BattleMage"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/battlemage-class",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/battlemage-class",
+        "stats": [
             2,
             3,
             2,
@@ -304,28 +294,26 @@
             3,
             2
         ],
-        "bludrut":4,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"D",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Rep, r10 Swordhaven",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650617588613200/Royal_BattleMage_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Swordhaven",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650617588613200/Royal_BattleMage_Class_Chart.png"
     },
-    "BeastMaster":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/beastmaster-non-ac",
-        "stats":[
+    "BeastMaster": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/beastmaster-non-ac",
+        "stats": [
             2,
             2,
             1,
@@ -334,31 +322,31 @@
             0,
             2
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"C",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Rep, r10 Beastmaster",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818649981593583626/BeastMaster_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Beastmaster",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818649981593583626/BeastMaster_Class_Chart.png"
     },
-    "Berserker":{
-        "acronym":"Zerker",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Berserker": {
+        "acronym": "Zerker",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Beta Berserker"
         ],
-        "enh":"luck",
-        "tags":[
+        "enh": "luck",
+        "tags": [
             "member_only"
         ],
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/berserker",
-        "stats":[
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/berserker",
+        "stats": [
             1,
             2,
             0,
@@ -367,26 +355,26 @@
             0,
             1
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":true,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Shop, 5k gold, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818649988933877810/Berserker_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, 5k gold, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818649988933877810/Berserker_Class_Chart.png"
     },
-    "SwordMaster":{
-        "acronym":"BM, SM",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "SwordMaster": {
+        "acronym": "BM, SM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "BladeMaster"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/blademaster-ac",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/blademaster-ac",
+        "stats": [
             4,
             5,
             2,
@@ -395,31 +383,31 @@
             0,
             3
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"2",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Merge, Seasonal, Legion, 2k LT",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650702430601237/SwordMaster_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, Seasonal, Legion, 2k LT",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650702430601237/SwordMaster_Class_Chart.png"
     },
-    "SwordMaster Assassin":{
-        "acronym":"BMA, SMA",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "SwordMaster Assassin": {
+        "acronym": "BMA, SMA",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "BladeMaster Assassin"
         ],
-        "enh":"luck",
-        "note":"To reach full Evasion, use Thief and a Potion of Evasion.",
-        "wiki":"http://aqwwiki.wikidot.com/blademaster-assassin-class",
-        "stats":[
+        "enh": "luck",
+        "note": "To reach full Evasion, use Thief and a Potion of Evasion.",
+        "wiki": "http://aqwwiki.wikidot.com/blademaster-assassin-class",
+        "stats": [
             3,
             4,
             0,
@@ -428,26 +416,24 @@
             4,
             3
         ],
-        "bludrut":4,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"seasonal",
-        "location":"Shop, Seasonal, Dage Bday, 2k AC",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650696039399494/SwordMaster_Assassin_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Shop, Seasonal, Dage Bday, 2k AC",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650696039399494/SwordMaster_Assassin_Class_Chart.png"
     },
-    "Blaze Binder":{
-        "acronym":"BB",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/blaze-binder-merge",
-        "stats":[
+    "Blaze Binder": {
+        "acronym": "BB",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/blaze-binder-merge",
+        "stats": [
             0,
             3,
             0,
@@ -456,31 +442,29 @@
             4,
             0
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"1 2",
-            "fast_obtain_difficulty":"C"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "1 2",
+            "fast_obtain_difficulty": "C"
         },
-        "type":"available",
-        "location":"Rep - r10 Embersea, r10 Doomwood, Pyro",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818649996164464690/Blaze_Binder_Class_Chart.png"
+        "type": "available",
+        "location": "Rep - r10 Embersea, r10 Doomwood, Pyro",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818649996164464690/Blaze_Binder_Class_Chart.png"
     },
-    "Blood Ancient":{
-        "acronym":"BA",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "tags":[
+    "Blood Ancient": {
+        "acronym": "BA",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "tags": [
             "member_only"
         ],
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/blood-ancient-merge",
-        "stats":[
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/blood-ancient-merge",
+        "stats": [
             1,
             1,
             2,
@@ -489,28 +473,26 @@
             0,
             1
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"E",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Merge, 25 Ancient Vitae, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650001223319582/Blood_Ancient_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, 25 Ancient Vitae, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650001223319582/Blood_Ancient_Class_Chart.png"
     },
-    "Blood Sorceress":{
-        "acronym":"BS",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/blood-sorceress",
-        "stats":[
+    "Blood Sorceress": {
+        "acronym": "BS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/blood-sorceress",
+        "stats": [
             0,
             0,
             0,
@@ -519,31 +501,29 @@
             2,
             0
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"E",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Drop in /towerofmirrors",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650006575775804/Blood_Sorceress_Class_Chart.png"
+        "type": "available",
+        "location": "Drop in /towerofmirrors",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650006575775804/Blood_Sorceress_Class_Chart.png"
     },
-    "Blood Titan":{
-        "acronym":"BT",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "tags":[
+    "Blood Titan": {
+        "acronym": "BT",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "tags": [
             "member_only"
         ],
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/blood-titan-legend",
-        "stats":[
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/blood-titan-legend",
+        "stats": [
             2,
             3,
             0,
@@ -552,28 +532,26 @@
             0,
             1
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_method":"4",
-            "fast_obtain_difficulty":"E"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"available",
-        "location":"Merge, 450 Blood Titan Tokens, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650011604090900/Blood_Titan_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, 450 Blood Titan Tokens, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650011604090900/Blood_Titan_Class_Chart.png"
     },
-    "CardClasher":{
-        "acronym":"CC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/cardclasher-class",
-        "stats":[
+    "CardClasher": {
+        "acronym": "CC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/cardclasher-class",
+        "stats": [
             2,
             1,
             0,
@@ -582,29 +560,27 @@
             0,
             3
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"Heromart Reward",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650016586792960/CardClasher_Class_Chart.png"
+        "type": "rare",
+        "location": "Heromart Reward",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650016586792960/CardClasher_Class_Chart.png"
     },
-    "Chaos Shaper":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chaos-shaper-class",
-        "stats":[
+    "Chaos Shaper": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chaos-shaper-class",
+        "stats": [
             1,
             2,
             0,
@@ -613,23 +589,23 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, 15 month member bonus",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650021725339718/Chaos_Shaper_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, 15 month member bonus",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650021725339718/Chaos_Shaper_Class_Chart.png"
     },
-    "Chaos Slayer":{
-        "acronym":"CS, CSlayer",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Chaos Slayer": {
+        "acronym": "CS, CSlayer",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Chaos Champion Prime",
             "Chaos Slayer Berserker",
             "Chaos Slayer Cleric",
@@ -637,10 +613,10 @@
             "Chaos Slayer Thief",
             "Dark Chaos Berserker"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chaos-slayer-berserker-non-ac",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chaos-slayer-berserker-non-ac",
+        "stats": [
             5,
             4,
             4,
@@ -649,28 +625,26 @@
             4,
             5
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"C"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
         },
-        "type":"available",
-        "location":"Rep, r10 Chaos + Comeplete Chaos Saga",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650030406762556/Chaos_Slayer_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Chaos + Comeplete Chaos Saga",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650030406762556/Chaos_Slayer_Class_Chart.png"
     },
-    "Chronomancer":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chronomancer",
-        "stats":[
+    "Chronomancer": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chronomancer",
+        "stats": [
             1,
             1,
             0,
@@ -679,29 +653,27 @@
             0,
             3
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650064200663151/Chronomancer_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650064200663151/Chronomancer_Class_Chart.png"
     },
-    "Chrono Assassin":{
-        "acronym":"CA",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"To maximize evasion, use thief enhancements to increase Evasion to 34.05%",
-        "wiki":"http://aqwwiki.wikidot.com/chrono-assassin-merge",
-        "stats":[
+    "Chrono Assassin": {
+        "acronym": "CA",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "To maximize evasion, use thief enhancements to increase Evasion to 34.05%",
+        "wiki": "http://aqwwiki.wikidot.com/chrono-assassin-merge",
+        "stats": [
             4,
             4,
             0,
@@ -710,31 +682,29 @@
             2,
             4
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_method":"4",
-            "fast_obtain_difficulty":"C"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "C"
         },
-        "type":"available",
-        "location":"Merge, /tachyon, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650037490810920/Chrono_Assassin_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, /tachyon, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650037490810920/Chrono_Assassin_Class_Chart.png"
     },
-    "Chrono DragonKnight":{
-        "acronym":"CDK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chrono-dragonknight-class",
-        "stats":[
+    "Chrono DragonKnight": {
+        "acronym": "CDK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chrono-dragonknight-class",
+        "stats": [
             0,
             0,
             0,
@@ -743,26 +713,24 @@
             0,
             3
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650044407873556/Chrono_DragonKnight_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650044407873556/Chrono_DragonKnight_Class_Chart.png"
     },
-    "ChronoCommander":{
-        "acronym":"CC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chronocommander",
-        "stats":[
+    "ChronoCommander": {
+        "acronym": "CC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chronocommander",
+        "stats": [
             1,
             3,
             0,
@@ -771,29 +739,27 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650052095508511/ChronoCommander_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650052095508511/ChronoCommander_Class_Chart.png"
     },
-    "ChronoCorruptor":{
-        "acronym":"CC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/chronocorruptor",
-        "stats":[
+    "ChronoCorruptor": {
+        "acronym": "CC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/chronocorruptor",
+        "stats": [
             1,
             1,
             0,
@@ -802,29 +768,29 @@
             0,
             3
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650059150196766/ChronoCorruptor_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650059150196766/ChronoCorruptor_Class_Chart.png"
     },
-    "Imperial Chunin":{
-        "acronym":"IC, ImC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Imperial Chunin": {
+        "acronym": "IC, ImC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Chunin"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/imperial-chunin",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/imperial-chunin",
+        "stats": [
             3,
             4,
             2,
@@ -833,48 +799,44 @@
             3,
             2
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Rep, r10 Yokai, /dragonkoiz",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650378370547742/Imperial_Chunin_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Yokai, /dragonkoiz",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650378370547742/Imperial_Chunin_Class_Chart.png"
     },
-    "Classic Alpha Pirate":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Classic Alpha Pirate": {
+        "acronym": "",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Classic Pirate"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-alpha-pirate"
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-alpha-pirate"
     },
-    "Classic Barber":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-barber"
+    "Classic Barber": {
+        "acronym": "",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-barber"
     },
-    "Classic Defender":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-defender-1",
-        "stats":[
+    "Classic Defender": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-defender-1",
+        "stats": [
             0,
             0,
             1,
@@ -883,29 +845,27 @@
             0,
             0
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, /tower, verification",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650069300936704/Classic_Defender_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, /tower, verification",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650069300936704/Classic_Defender_Class_Chart.png"
     },
-    "Classic DoomKnight":{
-        "acronym":"Classic DmK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-doomknight-non-ac",
-        "stats":[
+    "Classic DoomKnight": {
+        "acronym": "Classic DmK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-doomknight-non-ac",
+        "stats": [
             1,
             1,
             0,
@@ -914,31 +874,29 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Quest, r10 Warrior, r10 Healer, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650076779380776/Classic_DoomKnight_Class_Chart.png"
+        "type": "available",
+        "location": "Quest, r10 Warrior, r10 Healer, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650076779380776/Classic_DoomKnight_Class_Chart.png"
     },
-    "Classic DragonLord":{
-        "acronym":"Classic DL",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-dragonlord",
-        "stats":[
+    "Classic DragonLord": {
+        "acronym": "Classic DL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-dragonlord",
+        "stats": [
             2,
             3,
             1,
@@ -947,29 +905,27 @@
             1,
             2
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, /tower, verification",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650082546548776/Classic_DragonLord_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, /tower, verification",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650082546548776/Classic_DragonLord_Class_Chart.png"
     },
-    "Classic Guardian":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-guardian",
-        "stats":[
+    "Classic Guardian": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-guardian",
+        "stats": [
             1,
             1,
             0,
@@ -978,29 +934,27 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, /tower, verification",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650093698940938/Classic_Guardian_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, /tower, verification",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650093698940938/Classic_Guardian_Class_Chart.png"
     },
-    "Classic Legion DoomKnight":{
-        "acronym":"CLDK, CLDmK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-legion-doomknight-ac",
-        "stats":[
+    "Classic Legion DoomKnight": {
+        "acronym": "CLDK, CLDmK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-legion-doomknight-ac",
+        "stats": [
             4,
             4,
             3,
@@ -1009,28 +963,26 @@
             3,
             4
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"2",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650100850753566/Classic_Legion_DoomKnight_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650100850753566/Classic_Legion_DoomKnight_Class_Chart.png"
     },
-    "Classic Paladin":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-paladin-class",
-        "stats":[
+    "Classic Paladin": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-paladin-class",
+        "stats": [
             1,
             1,
             0,
@@ -1039,31 +991,31 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Quest, r10 Warrior, r10 Healer, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650107766636544/Classic_Paladin_Class_Chart.png"
+        "type": "available",
+        "location": "Quest, r10 Warrior, r10 Healer, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650107766636544/Classic_Paladin_Class_Chart.png"
     },
-    "Classic Exalted Soul Cleaver":{
-        "acronym":"CESC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Classic Exalted Soul Cleaver": {
+        "acronym": "CESC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Classic Soul Cleaver"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/classic-soul-cleaver",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/classic-soul-cleaver",
+        "stats": [
             1,
             1,
             0,
@@ -1072,28 +1024,26 @@
             0,
             1
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"2",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650087349682196/Classic_Exalted_Soul_Cleaver_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650087349682196/Classic_Exalted_Soul_Cleaver_Class_Chart.png"
     },
-    "ClawSuit":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/clawsuit",
-        "stats":[
+    "ClawSuit": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/clawsuit",
+        "stats": [
             1,
             1,
             0,
@@ -1102,29 +1052,27 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650112589824000/ClawSuit_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650112589824000/ClawSuit_Class_Chart.png"
     },
-    "Underworld Chronomancer":{
-        "acronym":"UCM",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/underworld-chronomancer-class",
-        "stats":[
+    "Underworld Chronomancer": {
+        "acronym": "UCM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/underworld-chronomancer-class",
+        "stats": [
             5,
             5,
             2,
@@ -1133,29 +1081,27 @@
             0,
             6
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"Heromart, 2020 Calendar",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650760010661909/Underworld_Chronomancer_Class_Chart.png"
+        "type": "rare",
+        "location": "Heromart, 2020 Calendar",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650760010661909/Underworld_Chronomancer_Class_Chart.png"
     },
-    "Corrupted Chronomancer":{
-        "acronym":"CCM",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/corrupted-chronomancer-class",
-        "stats":[
+    "Corrupted Chronomancer": {
+        "acronym": "CCM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/corrupted-chronomancer-class",
+        "stats": [
             5,
             5,
             0,
@@ -1164,30 +1110,30 @@
             0,
             6
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"Heromart, 2019 Calendar",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650119788167199/Corrupted_Chronomancer_Class_Chart.png"
+        "type": "rare",
+        "location": "Heromart, 2019 Calendar",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650119788167199/Corrupted_Chronomancer_Class_Chart.png"
     },
-    "Cryomancer":{
-        "acronym":"Cryo",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Cryomancer": {
+        "acronym": "Cryo",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Dark Cryomancer",
             "Sakura Cryomancer"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/cryomancer-merge",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/cryomancer-merge",
+        "stats": [
             2,
             2,
             0,
@@ -1196,28 +1142,26 @@
             0,
             3
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"C"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
         },
-        "type":"available",
-        "location":"Merge, Daily",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650127195045908/Cryomancer_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, Daily",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650127195045908/Cryomancer_Class_Chart.png"
     },
-    "Daimon":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve or Mana Vamp",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"Use Mana Vamp if in need of Mana.",
-        "wiki":"http://aqwwiki.wikidot.com/daimon-legend",
-        "stats":[
+    "Daimon": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve or Mana Vamp",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "Use Mana Vamp if in need of Mana.",
+        "wiki": "http://aqwwiki.wikidot.com/daimon-legend",
+        "stats": [
             3,
             3,
             3,
@@ -1226,29 +1170,29 @@
             4,
             3
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Shop, 100k gold, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650134518562847/Daimon_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, 100k gold, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650134518562847/Daimon_Class_Chart.png"
     },
-    "Dark Metal Necro":{
-        "acronym":"DMN, HMN, UR, SR",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Dark Metal Necro": {
+        "acronym": "DMN, HMN, UR, SR",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Heavy Metal Necro",
             "Heavy Metal Rockstar",
             "Shadow Ripper",
             "Unchained Rockstar"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dark-metal-necro",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dark-metal-necro",
+        "stats": [
             5,
             4,
             0,
@@ -1257,28 +1201,26 @@
             0,
             5
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"seasonal",
-        "location":"Merge",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650147152068628/Dark_Metal_Necro_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Merge",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650147152068628/Dark_Metal_Necro_Class_Chart.png"
     },
-    "Darkblood StormKing":{
-        "acronym":"DBSK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/darkblood-stormking-non-ac",
-        "stats":[
+    "Darkblood StormKing": {
+        "acronym": "DBSK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/darkblood-stormking-non-ac",
+        "stats": [
             2,
             2,
             0,
@@ -1287,28 +1229,26 @@
             3,
             2
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_method":"1 4",
-            "fast_obtain_difficulty":"E"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1 4",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"available",
-        "location":"Rep, r10 Thunderforge",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650157310279731/Darkblood_StormKing_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Thunderforge",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650157310279731/Darkblood_StormKing_Class_Chart.png"
     },
-    "Darkside":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/darkside",
-        "stats":[
+    "Darkside": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/darkside",
+        "stats": [
             0,
             0,
             0,
@@ -1317,26 +1257,24 @@
             2,
             0
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650162258771998/Darkside_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650162258771998/Darkside_Class_Chart.png"
     },
-    "DeathKnight":{
-        "acronym":"DK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"fighter",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/deathknight-class-non-ac",
-        "stats":[
+    "DeathKnight": {
+        "acronym": "DK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "fighter",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/deathknight-class-non-ac",
+        "stats": [
             4,
             4,
             0,
@@ -1345,31 +1283,29 @@
             0,
             4
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_method":"4",
-            "fast_obtain_difficulty":"E"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"available",
-        "location":"Rep, r10 Doomwood, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650169523699712/DeathKnight_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Doomwood, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650169523699712/DeathKnight_Class_Chart.png"
     },
-    "DeathKnight Lord":{
-        "acronym":"DKL",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/deathknight-lord-class-ac-1",
-        "stats":[
+    "DeathKnight Lord": {
+        "acronym": "DKL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/deathknight-lord-class-ac-1",
+        "stats": [
             2,
             3,
             0,
@@ -1378,31 +1314,29 @@
             1,
             0
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"B",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "B",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Merge, Daily, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650177203077141/DeathKnight_Lord_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, Daily, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650177203077141/DeathKnight_Lord_Class_Chart.png"
     },
-    "Defender":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/defender-1",
-        "stats":[
+    "Defender": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/defender-1",
+        "stats": [
             3,
             3,
             3,
@@ -1411,29 +1345,27 @@
             0,
             3
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":false,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": false,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, /tower, verification",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650182387761172/Defender_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, /tower, verification",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650182387761172/Defender_Class_Chart.png"
     },
-    "DoomKnight Overlord":{
-        "acronym":"DKO",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/doomknight-overlord",
-        "stats":[
+    "DoomKnight Overlord": {
+        "acronym": "DKO",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/doomknight-overlord",
+        "stats": [
             3,
             3,
             2,
@@ -1442,29 +1374,27 @@
             4,
             4
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650197097054218/DoomKnight_Overlord_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650197097054218/DoomKnight_Overlord_Class_Chart.png"
     },
-    "Doomknight":{
-        "acronym":"DmK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/doomknight-non-ac",
-        "stats":[
+    "Doomknight": {
+        "acronym": "DmK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/doomknight-non-ac",
+        "stats": [
             3,
             2,
             3,
@@ -1473,31 +1403,29 @@
             0,
             4
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Quest, r10 Warrior, r10 Healer, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650189958873158/Doomknight_Class_Chart.png"
+        "type": "available",
+        "location": "Quest, r10 Warrior, r10 Healer, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650189958873158/Doomknight_Class_Chart.png"
     },
-    "Dragon Knight":{
-        "acronym":"DK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragon-knight-class",
-        "stats":[
+    "Dragon Knight": {
+        "acronym": "DK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragon-knight-class",
+        "stats": [
             2,
             2,
             3,
@@ -1506,30 +1434,30 @@
             0,
             3
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650203162673212/Dragon_Knight_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650203162673212/Dragon_Knight_Class_Chart.png"
     },
-    "DragonSoul Shinobi":{
-        "acronym":"DS, DShinobi, SDS, DSS",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "DragonSoul Shinobi": {
+        "acronym": "DS, DShinobi, SDS, DSS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Dragon Shinobi",
             "Shadow Dragon Shinobi"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragonsoul-shinobi-class",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragonsoul-shinobi-class",
+        "stats": [
             4,
             5,
             0,
@@ -1538,31 +1466,27 @@
             0,
             4
         ],
-        "tags":[
-            
-        ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_method":"4",
-            "fast_obtain_difficulty":"D"
+        "tags": [],
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Merge, r10 Yokai, completion of Shadow Shogun saga",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650235559608331/DragonSoul_Shinobi_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, r10 Yokai, completion of Shadow Shogun saga",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650235559608331/DragonSoul_Shinobi_Class_Chart.png"
     },
-    "Dragon of Time":{
-        "acronym":"EDoT, DT, DoT",
-        "awe_enh":"Health Vamp",
-        "duplicates":[
-            
-        ],
-        "enh":"healer",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragon-of-time-class",
-        "stats":[
+    "Dragon of Time": {
+        "acronym": "EDoT, DT, DoT",
+        "awe_enh": "Health Vamp",
+        "duplicates": [],
+        "enh": "healer",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragon-of-time-class",
+        "stats": [
             5,
             5,
             2,
@@ -1571,28 +1495,26 @@
             4,
             5
         ],
-        "bludrut":4,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"S",
-            "fast_obtain_method":"3 4",
-            "fast_obtain_difficulty":"B"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "S",
+            "fast_obtain_method": "3 4",
+            "fast_obtain_difficulty": "B"
         },
-        "type":"available",
-        "location":"Quest, /classhall",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/819758283777638410/Dragon_of_Time_Class_Chart.png"
+        "type": "available",
+        "location": "Quest, /classhall",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/819758283777638410/Dragon_of_Time_Class_Chart.png"
     },
-    "DragonLord":{
-        "acronym":"DL",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragonlord-class",
-        "stats":[
+    "DragonLord": {
+        "acronym": "DL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragonlord-class",
+        "stats": [
             2,
             4,
             2,
@@ -1601,29 +1523,27 @@
             4,
             2
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, /tower, verification",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650213630869519/DragonLord_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, /tower, verification",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650213630869519/DragonLord_Class_Chart.png"
     },
-    "Dragonslayer":{
-        "acronym":"DS",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragonslayer-class",
-        "stats":[
+    "Dragonslayer": {
+        "acronym": "DS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragonslayer-class",
+        "stats": [
             1,
             1,
             0,
@@ -1632,28 +1552,28 @@
             0,
             1
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"E",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Quest in /lair",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650221034471464/Dragonslayer_Class_Chart.png"
+        "type": "available",
+        "location": "Quest in /lair",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650221034471464/Dragonslayer_Class_Chart.png"
     },
-    "Dragonslayer General":{
-        "acronym":"DSG",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Dragonslayer General": {
+        "acronym": "DSG",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "ShadowFlame DragonLord"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/dragonslayer-general-class-merge",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/dragonslayer-general-class-merge",
+        "stats": [
             3,
             3,
             0,
@@ -1662,28 +1582,26 @@
             0,
             3
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Merge, /dragontown and r10 Dragonslayer",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650228030701649/Dragonslayer_General_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, /dragontown and r10 Dragonslayer",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650228030701649/Dragonslayer_General_Class_Chart.png"
     },
-    "Drakel Warlord":{
-        "acronym":"DW",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/drakel-warlord-legend",
-        "stats":[
+    "Drakel Warlord": {
+        "acronym": "DW",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/drakel-warlord-legend",
+        "stats": [
             2,
             4,
             0,
@@ -1692,29 +1610,29 @@
             0,
             2
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Shop, 100k gold, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650243109355540/Drakel_Warlord_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, 100k gold, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650243109355540/Drakel_Warlord_Class_Chart.png"
     },
-    "Elemental Dracomancer":{
-        "acronym":"ED",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Elemental Dracomancer": {
+        "acronym": "ED",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Love Caster"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/elemental-dracomancer-non-ac",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/elemental-dracomancer-non-ac",
+        "stats": [
             3,
             4,
             2,
@@ -1723,28 +1641,26 @@
             0,
             2
         ],
-        "bludrut":6,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 6,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Rep, r10 Etherstorm",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650250251337768/Elemental_Dracomancer_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Etherstorm",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650250251337768/Elemental_Dracomancer_Class_Chart.png"
     },
-    "Eternal Inversionist":{
-        "acronym":"EI",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/eternal-inversionist-class-non-ac",
-        "stats":[
+    "Eternal Inversionist": {
+        "acronym": "EI",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/eternal-inversionist-class-non-ac",
+        "stats": [
             0,
             2,
             2,
@@ -1753,28 +1669,28 @@
             2,
             0
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Rep, r10 Eternal",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650269251534868/Eternal_Inversionist_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Eternal",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650269251534868/Eternal_Inversionist_Class_Chart.png"
     },
-    "Prismatic ClawSuit":{
-        "acronym":"PCS",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Prismatic ClawSuit": {
+        "acronym": "PCS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Evolved ClawSuit"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/evolved-clawsuit",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/evolved-clawsuit",
+        "stats": [
             2,
             2,
             0,
@@ -1783,29 +1699,27 @@
             0,
             3
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":true,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"seasonal",
-        "location":"Shop, Seasonal, Free, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650597657018398/Prismatic_ClawSuit_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Shop, Seasonal, Free, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650597657018398/Prismatic_ClawSuit_Class_Chart.png"
     },
-    "Evolved Leprechaun":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/evolved-leprechaun-merge",
-        "stats":[
+    "Evolved Leprechaun": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/evolved-leprechaun-merge",
+        "stats": [
             1,
             1,
             0,
@@ -1814,28 +1728,26 @@
             0,
             1
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"D",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"seasonal",
-        "location":"Merge, Seasonal, Daily quest",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650277220843550/Evolved_Leprechaun_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Merge, Seasonal, Daily quest",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650277220843550/Evolved_Leprechaun_Class_Chart.png"
     },
-    "Evolved Pumpkin Lord":{
-        "acronym":"EPL",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend",
-        "stats":[
+    "Evolved Pumpkin Lord": {
+        "acronym": "EPL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/evolved-pumpkin-lord-non-legend",
+        "stats": [
             3,
             2,
             0,
@@ -1844,28 +1756,26 @@
             0,
             4
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Merge (Seasonal) / Drop, Mogloween",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650282904649759/Evolved_Pumpkin_Lord_Class_Chart.png"
+        "type": "available",
+        "location": "Merge (Seasonal) / Drop, Mogloween",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650282904649759/Evolved_Pumpkin_Lord_Class_Chart.png"
     },
-    "Evolved Shaman":{
-        "acronym":"ES, EShaman",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/evolved-shaman-non-ac",
-        "stats":[
+    "Evolved Shaman": {
+        "acronym": "ES, EShaman",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/evolved-shaman-non-ac",
+        "stats": [
             2,
             3,
             2,
@@ -1874,30 +1784,30 @@
             3,
             2
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Rep, r10 Arcangrove",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650290382569494/Evolved_Shaman_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Arcangrove",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650290382569494/Evolved_Shaman_Class_Chart.png"
     },
-    "Soul Cleaver":{
-        "acronym":"SC, ESC, Harb",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Soul Cleaver": {
+        "acronym": "SC, ESC, Harb",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Exalted Harbinger",
             "Exalted Soul Cleaver",
             "Dark Harbinger"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/exalted-harbinger",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/exalted-harbinger",
+        "stats": [
             3,
             2,
             2,
@@ -1906,28 +1816,26 @@
             0,
             3
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"2",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Merge, Legion, 2k LT",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650671296806932/Soul_Cleaver_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, Legion, 2k LT",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650671296806932/Soul_Cleaver_Class_Chart.png"
     },
-    "Flame Dragon Warrior":{
-        "acronym":"FDW",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/flame-dragon-warrior-class",
-        "stats":[
+    "Flame Dragon Warrior": {
+        "acronym": "FDW",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/flame-dragon-warrior-class",
+        "stats": [
             1,
             1,
             0,
@@ -1936,29 +1844,27 @@
             1,
             1
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, AQ:Dragons package, $10",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650295160668160/Flame_Dragon_Warrior_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, AQ:Dragons package, $10",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650295160668160/Flame_Dragon_Warrior_Class_Chart.png"
     },
-    "Frostval Barbarian":{
-        "acronym":"FB, Barb",
-        "awe_enh":"Spiral Carve or Awe Blast",
-        "duplicates":[
-            
-        ],
-        "enh":"fighter",
-        "note":"Use Awe Blast for Supporting",
-        "wiki":"http://aqwwiki.wikidot.com/frostval-barbarian-0-ac",
-        "stats":[
+    "Frostval Barbarian": {
+        "acronym": "FB, Barb",
+        "awe_enh": "Spiral Carve or Awe Blast",
+        "duplicates": [],
+        "enh": "fighter",
+        "note": "Use Awe Blast for Supporting",
+        "wiki": "http://aqwwiki.wikidot.com/frostval-barbarian-0-ac",
+        "stats": [
             0,
             4,
             4,
@@ -1967,28 +1873,28 @@
             3,
             0
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"seasonal",
-        "location":"Quest, 5 dailies, complete Frostvale storylines",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650309580030012/Frostval_Barbarian_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Quest, 5 dailies, complete Frostvale storylines",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650309580030012/Frostval_Barbarian_Class_Chart.png"
     },
-    "Glacial Berserker":{
-        "acronym":"GB",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Glacial Berserker": {
+        "acronym": "GB",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Glacial Berserker Test"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/glacial-berserker-class-non-ac",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/glacial-berserker-class-non-ac",
+        "stats": [
             4,
             4,
             3,
@@ -1997,28 +1903,26 @@
             0,
             4
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"seasonal",
-        "location":"Rep, r10 Glacial",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650317028720720/Glacial_Berserker_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Rep, r10 Glacial",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650317028720720/Glacial_Berserker_Class_Chart.png"
     },
-    "Glacial Warlord":{
-        "acronym":"GW",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/glacial-warlord-class",
-        "stats":[
+    "Glacial Warlord": {
+        "acronym": "GW",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/glacial-warlord-class",
+        "stats": [
             2,
             3,
             1,
@@ -2027,29 +1931,27 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650323681411092/Glacial_Warlord_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650323681411092/Glacial_Warlord_Class_Chart.png"
     },
-    "Great Thief":{
-        "acronym":"GT",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/great-thief",
-        "stats":[
+    "Great Thief": {
+        "acronym": "GT",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/great-thief",
+        "stats": [
             6,
             6,
             2,
@@ -2058,29 +1960,27 @@
             0,
             4
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":6,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 6,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650331180433449/Great_Thief_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650331180433449/Great_Thief_Class_Chart.png"
     },
-    "Grim Necromancer":{
-        "acronym":"GN",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/grim-necromancer-class",
-        "stats":[
+    "Grim Necromancer": {
+        "acronym": "GN",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/grim-necromancer-class",
+        "stats": [
             4,
             4,
             0,
@@ -2089,29 +1989,27 @@
             0,
             4
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, 600k AC purchased badge",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650336767639582/Grim_Necromancer_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, 600k AC purchased badge",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650336767639582/Grim_Necromancer_Class_Chart.png"
     },
-    "Guardian":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve or Awe Blast",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"Use Awe Blast for Soloing",
-        "wiki":"http://aqwwiki.wikidot.com/guardian-class",
-        "stats":[
+    "Guardian": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve or Awe Blast",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "Use Awe Blast for Soloing",
+        "wiki": "http://aqwwiki.wikidot.com/guardian-class",
+        "stats": [
             3,
             3,
             0,
@@ -2120,31 +2018,31 @@
             0,
             4
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, /tower, verification",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650344287633428/Guardian_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, /tower, verification",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650344287633428/Guardian_Class_Chart.png"
     },
-    "Healer":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Healer": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Acolyte",
             "Healer (Rare)",
             "Witch"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/healer",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/healer",
+        "stats": [
             0,
             4,
             3,
@@ -2153,26 +2051,24 @@
             0,
             0
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Starter / Shop",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650351728590868/Healer_Class_Chart.png"
+        "type": "available",
+        "location": "Starter / Shop",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650351728590868/Healer_Class_Chart.png"
     },
-    "HighSeas Commander":{
-        "acronym":"HSC, Highseas",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/highseas-commander",
-        "stats":[
+    "HighSeas Commander": {
+        "acronym": "HSC, Highseas",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/highseas-commander",
+        "stats": [
             4,
             4,
             0,
@@ -2181,26 +2077,24 @@
             2,
             4
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Shop, 10 years played badge",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650357034123274/HighSeas_Commander_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, 10 years played badge",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650357034123274/HighSeas_Commander_Class_Chart.png"
     },
-    "Horc Evader":{
-        "acronym":"HE, Horc",
-        "awe_enh":"Mana Vamp",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"To maximize evasion, use thief enhancements to increase Evasion to 31.05%",
-        "wiki":"http://aqwwiki.wikidot.com/horc-evader-non-ac",
-        "stats":[
+    "Horc Evader": {
+        "acronym": "HE, Horc",
+        "awe_enh": "Mana Vamp",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "To maximize evasion, use thief enhancements to increase Evasion to 31.05%",
+        "wiki": "http://aqwwiki.wikidot.com/horc-evader-non-ac",
+        "stats": [
             3,
             5,
             0,
@@ -2209,28 +2103,28 @@
             0,
             3
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Rep, r10 Horc",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650364521086976/Horc_Evader_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Horc",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650364521086976/Horc_Evader_Class_Chart.png"
     },
-    "Immortal Chronomancer":{
-        "acronym":"EC, IC, ECM, ICM",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Immortal Chronomancer": {
+        "acronym": "EC, IC, ECM, ICM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Immortal Chronomancer"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/immortal-chronomancer-class-ac",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/immortal-chronomancer-class-ac",
+        "stats": [
             5,
             4,
             0,
@@ -2239,30 +2133,30 @@
             0,
             6
         ],
-        "tags":[
+        "tags": [
             "acs_only",
             "heromart"
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"/curio, 6k AC, Speak to Chronis",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/819732546052030464/Immortal_Chronomancer_Class_Chart.png"
+        "type": "available",
+        "location": "/curio, 6k AC, Speak to Chronis",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/819732546052030464/Immortal_Chronomancer_Class_Chart.png"
     },
-    "Immortal Dark Caster":{
-        "acronym":"IDC, Immo DC, DC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Immortal Dark Caster": {
+        "acronym": "IDC, Immo DC, DC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Dark Caster"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/immortal-dark-caster-class-0-ac",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/immortal-dark-caster-class-0-ac",
+        "stats": [
             4,
             5,
             2,
@@ -2271,31 +2165,31 @@
             4,
             4
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"seasonal",
-        "location":"Shop, Seasonal, 2k AC",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650370422079518/Immortal_Dark_Caster_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 2k AC",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650370422079518/Immortal_Dark_Caster_Class_Chart.png"
     },
-    "Infinite Legion Dark Caster":{
-        "acronym":"IDC, ILDC, EDC, ELDC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Infinite Legion Dark Caster": {
+        "acronym": "IDC, ILDC, EDC, ELDC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Evolved Dark Caster",
             "Infinite Legion Dark Caster",
             "Legion Evolved Dark Caster"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/infinite-dark-caster-ac",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/infinite-dark-caster-ac",
+        "stats": [
             3,
             3,
             2,
@@ -2304,31 +2198,29 @@
             3,
             3
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":4,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"2",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Merge, Legion, 2k LT",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/819758291109412874/Infinite_Legion_Dark_Caster_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, Legion, 2k LT",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/819758291109412874/Infinite_Legion_Dark_Caster_Class_Chart.png"
     },
-    "Infinity Knight":{
-        "acronym":"IK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/infinity-knight",
-        "stats":[
+    "Infinity Knight": {
+        "acronym": "IK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/infinity-knight",
+        "stats": [
             2,
             2,
             0,
@@ -2337,29 +2229,29 @@
             0,
             3
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"Heromart, 2016 Calendar",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650393420234792/Infinity_Knight_Class_Chart.png"
+        "type": "rare",
+        "location": "Heromart, 2016 Calendar",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650393420234792/Infinity_Knight_Class_Chart.png"
     },
-    "Legendary Hero":{
-        "acronym":"LH",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Legendary Hero": {
+        "acronym": "LH",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Dark Legendary Hero"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/legendary-hero-class",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/legendary-hero-class",
+        "stats": [
             0,
             0,
             2,
@@ -2368,29 +2260,29 @@
             0,
             0
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650416396369920/Legendary_Hero_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650416396369920/Legendary_Hero_Class_Chart.png"
     },
-    "Legion SwordMaster Assassin":{
-        "acronym":"LBMA, LSMA",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Legion SwordMaster Assassin": {
+        "acronym": "LBMA, LSMA",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Legion BladeMaster Assassin"
         ],
-        "enh":"luck",
-        "note":"To reach full Evasion, use Thief and a Potion of Evasion.",
-        "wiki":"http://aqwwiki.wikidot.com/legion-blademaster-assassin",
-        "stats":[
+        "enh": "luck",
+        "note": "To reach full Evasion, use Thief and a Potion of Evasion.",
+        "wiki": "http://aqwwiki.wikidot.com/legion-blademaster-assassin",
+        "stats": [
             3,
             3,
             0,
@@ -2399,28 +2291,26 @@
             3,
             3
         ],
-        "bludrut":5,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":true,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"2",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"seasonal",
-        "location":"Merge, Seasonal, Legion, 5k LT + 300 rocks",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650444469502002/Legion_SwordMaster_Assassin_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Merge, Seasonal, Legion, 5k LT + 300 rocks",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650444469502002/Legion_SwordMaster_Assassin_Class_Chart.png"
     },
-    "Legion DoomKnight":{
-        "acronym":"LDK, LDmK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/legion-doomknight-class-ac",
-        "stats":[
+    "Legion DoomKnight": {
+        "acronym": "LDK, LDmK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/legion-doomknight-class-ac",
+        "stats": [
             5,
             4,
             3,
@@ -2429,28 +2319,26 @@
             3,
             5
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"2",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "2",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"seasonal",
-        "location":"Merge, Seasonal, Legion, 2k LT",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650423916363786/Legion_DoomKnight_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Merge, Seasonal, Legion, 2k LT",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650423916363786/Legion_DoomKnight_Class_Chart.png"
     },
-    "Legion Paladin":{
-        "acronym":"LP",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/legion-paladin-class",
-        "stats":[
+    "Legion Paladin": {
+        "acronym": "LP",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/legion-paladin-class",
+        "stats": [
             2,
             1,
             0,
@@ -2459,29 +2347,29 @@
             0,
             2
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650430259068958/Legion_Paladin_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650430259068958/Legion_Paladin_Class_Chart.png"
     },
-    "Legion Revenant":{
-        "acronym":"LR",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Legion Revenant": {
+        "acronym": "LR",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Legion Revenant Member Test"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/legion-revenant-class",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/legion-revenant-class",
+        "stats": [
             5,
             5,
             6,
@@ -2490,31 +2378,29 @@
             5,
             5
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":6,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":true,
-            "obtain_difficulty":"S",
-            "fast_obtain_method":"2 4",
-            "fast_obtain_difficulty":"S"
+        "bludrut": 6,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "S",
+            "fast_obtain_method": "2 4",
+            "fast_obtain_difficulty": "S"
         },
-        "type":"available",
-        "location":"Insane Quest, /revenant, needs one dark caster class",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/819761985909817364/Legion_Revenant_Class_Chart.png"
+        "type": "available",
+        "location": "Insane Quest, /revenant, needs one dark caster class",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/819761985909817364/Legion_Revenant_Class_Chart.png"
     },
-    "Leprechaun":{
-        "acronym":"Lep, Leppy",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/leprechaun",
-        "stats":[
+    "Leprechaun": {
+        "acronym": "Lep, Leppy",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/leprechaun",
+        "stats": [
             3,
             4,
             0,
@@ -2523,28 +2409,26 @@
             0,
             2
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":false,
-            "obtain_difficulty":"E",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650455823351818/Leprechaun_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650455823351818/Leprechaun_Class_Chart.png"
     },
-    "LightCaster":{
-        "acronym":"LC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/lightcaster-class",
-        "stats":[
+    "LightCaster": {
+        "acronym": "LC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/lightcaster-class",
+        "stats": [
             5,
             4,
             6,
@@ -2553,31 +2437,29 @@
             3,
             5
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":5,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":true,
-            "obtain_difficulty":"A",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": true,
+            "obtain_difficulty": "A",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Quest - need LightMage",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650463293538344/LightCaster_Class_Chart.png"
+        "type": "available",
+        "location": "Quest - need LightMage",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650463293538344/LightCaster_Class_Chart.png"
     },
-    "LightMage":{
-        "acronym":"LM",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/lightmage",
-        "stats":[
+    "LightMage": {
+        "acronym": "LM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/lightmage",
+        "stats": [
             3,
             3,
             4,
@@ -2586,29 +2468,27 @@
             3,
             3
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, Buy 1k AC armor",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650468568924201/LightMage_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, Buy 1k AC armor",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650468568924201/LightMage_Class_Chart.png"
     },
-    "Lord of Order":{
-        "acronym":"LoO, Lorder",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/lord-of-order-quest",
-        "stats":[
+    "Lord of Order": {
+        "acronym": "LoO, Lorder",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/lord-of-order-quest",
+        "stats": [
             4,
             5,
             6,
@@ -2617,28 +2497,26 @@
             0,
             3
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":false,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"3 4",
-            "fast_obtain_difficulty":"A"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "3 4",
+            "fast_obtain_difficulty": "A"
         },
-        "type":"available",
-        "location":"Questline - from /Battleoff",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650475988516874/Lord_of_Order_Class_Chart.png"
+        "type": "available",
+        "location": "Questline - from /Battleoff",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650475988516874/Lord_of_Order_Class_Chart.png"
     },
-    "Lycan":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/lycan-class-non-ac",
-        "stats":[
+    "Lycan": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/lycan-class-non-ac",
+        "stats": [
             4,
             4,
             0,
@@ -2647,30 +2525,30 @@
             1,
             4
         ],
-        "bludrut":5,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Rep, r10 Lycan",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650483441795093/Lycan_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Lycan",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650483441795093/Lycan_Class_Chart.png"
     },
-    "Mage":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Mage": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Mage (Rare)",
             "LightCaster Test",
             "Sorcerer"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/mage",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/mage",
+        "stats": [
             0,
             0,
             0,
@@ -2679,26 +2557,26 @@
             2,
             2
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Starter / Shop",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650487959715890/Mage_Class_Chart.png"
+        "type": "available",
+        "location": "Starter / Shop",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650487959715890/Mage_Class_Chart.png"
     },
-    "Master Ranger":{
-        "acronym":"MR",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Master Ranger": {
+        "acronym": "MR",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Ranger"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/master-ranger",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/master-ranger",
+        "stats": [
             2,
             3,
             0,
@@ -2707,28 +2585,28 @@
             3,
             2
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"E",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"E"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"available",
-        "location":"Rep, r10 Sandsea rep",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650497488519168/Master_Ranger_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Sandsea rep",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650497488519168/Master_Ranger_Class_Chart.png"
     },
-    "Dark Master of Moglins":{
-        "acronym":"MoM, DMoM",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Dark Master of Moglins": {
+        "acronym": "MoM, DMoM",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Master of Moglins"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/master-of-moglins-class-2",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/master-of-moglins-class-2",
+        "stats": [
             3,
             4,
             4,
@@ -2737,29 +2615,27 @@
             5,
             3
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Heromart or Kickstarter reward",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650139266646016/Dark_Master_of_Moglins_Class_Chart.png"
+        "type": "available",
+        "location": "Heromart or Kickstarter reward",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650139266646016/Dark_Master_of_Moglins_Class_Chart.png"
     },
-    "MechaJouster":{
-        "acronym":"MJ, Jouster",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/mechajouster",
-        "stats":[
+    "MechaJouster": {
+        "acronym": "MJ, Jouster",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/mechajouster",
+        "stats": [
             2,
             2,
             2,
@@ -2768,28 +2644,26 @@
             0,
             2
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"S",
-            "fast_obtain_method":"1 2",
-            "fast_obtain_difficulty":"E"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "S",
+            "fast_obtain_method": "1 2",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"available",
-        "location":"Merge",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650504951234581/MechaJouster_Class_Chart.png"
+        "type": "available",
+        "location": "Merge",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650504951234581/MechaJouster_Class_Chart.png"
     },
-    "MindBreaker":{
-        "acronym":"MB",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/mindbreaker",
-        "stats":[
+    "MindBreaker": {
+        "acronym": "MB",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/mindbreaker",
+        "stats": [
             3,
             3,
             1,
@@ -2798,29 +2672,27 @@
             3,
             3
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, 12k AC bonus shop",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650509883736114/MindBreaker_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, 12k AC bonus shop",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650509883736114/MindBreaker_Class_Chart.png"
     },
-    "NOT A MOD":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/not-a-mod",
-        "stats":[
+    "NOT A MOD": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/not-a-mod",
+        "stats": [
             1,
             1,
             0,
@@ -2829,30 +2701,30 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650552866701332/NOT_A_MOD_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650552866701332/NOT_A_MOD_Class_Chart.png"
     },
-    "Naval Commander":{
-        "acronym":"NC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Naval Commander": {
+        "acronym": "NC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Heroic Naval Commander",
             "Legendary Naval Commander"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/naval-commander-class",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/naval-commander-class",
+        "stats": [
             0,
             3,
             2,
@@ -2861,26 +2733,26 @@
             4,
             0
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"seasonal",
-        "location":"Shop, Seasonal, 100k gold, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650516866859010/Naval_Commander_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 100k gold, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650516866859010/Naval_Commander_Class_Chart.png"
     },
-    "Necromancer":{
-        "acronym":"Necro",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Necromancer": {
+        "acronym": "Necro",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Pinkomancer"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/necromancer-merge",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/necromancer-merge",
+        "stats": [
             3,
             3,
             0,
@@ -2889,29 +2761,29 @@
             0,
             3
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"D",
-            "fast_obtain_method":"1 4",
-            "fast_obtain_difficulty":"E"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "1 4",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"available",
-        "location":"Rep, r10 Doomwood",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650522382368858/Necromancer_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Doomwood",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650522382368858/Necromancer_Class_Chart.png"
     },
-    "Ninja":{
-        "acronym":"Sin",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Ninja": {
+        "acronym": "Sin",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Assassin",
             "Ninja Warrior"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/ninja-class",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/ninja-class",
+        "stats": [
             1,
             1,
             2,
@@ -2920,27 +2792,27 @@
             0,
             1
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Shop, 15k gold",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650529773256714/Ninja_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, 15k gold",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650529773256714/Ninja_Class_Chart.png"
     },
-    "No Class":{
-        "acronym":"HHL",
-        "awe_enh":"Powerword Die",
-        "duplicates":[
+    "No Class": {
+        "acronym": "HHL",
+        "awe_enh": "Powerword Die",
+        "duplicates": [
             "Obsidian No Class",
             "Hobo Highlord"
         ],
-        "enh":"Spitfire",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/no-class",
-        "stats":[
+        "enh": "Spitfire",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/no-class",
+        "stats": [
             0,
             0,
             0,
@@ -2949,26 +2821,24 @@
             0,
             0
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"seasonal",
-        "location":"Shop, Seasonal, 1 gold",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650538060283944/No_Class_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 1 gold",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650538060283944/No_Class_Class_Chart.png"
     },
-    "Northlands Monk":{
-        "acronym":"NM, Monk",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/northlands-monk-class-free-player",
-        "stats":[
+    "Northlands Monk": {
+        "acronym": "NM, Monk",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/northlands-monk-class-free-player",
+        "stats": [
             3,
             3,
             3,
@@ -2977,30 +2847,30 @@
             0,
             3
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"E",
-            "fast_obtain_method":"4",
-            "fast_obtain_difficulty":"E"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"seasonal",
-        "location":"Drop from /frozensoul",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650545786978304/Northlands_Monk_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Drop from /frozensoul",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650545786978304/Northlands_Monk_Class_Chart.png"
     },
-    "Nu Metal Necro":{
-        "acronym":"NMN",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Nu Metal Necro": {
+        "acronym": "NMN",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Grunge Rocker",
             "Shadow Rocker",
             "Unchained Rocker"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/nu-metal-necro-1",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/nu-metal-necro-1",
+        "stats": [
             2,
             2,
             0,
@@ -3009,28 +2879,26 @@
             0,
             3
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":false,
-            "obtain_difficulty":"E",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"seasonal",
-        "location":"Merge",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650558155063356/Nu_Metal_Necro_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Merge",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650558155063356/Nu_Metal_Necro_Class_Chart.png"
     },
-    "Oracle":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/oracle",
-        "stats":[
+    "Oracle": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/oracle",
+        "stats": [
             2,
             4,
             3,
@@ -3039,26 +2907,26 @@
             0,
             0
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Shop- Class shop, free",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650563192815646/Oracle_Class_Chart.png"
+        "type": "available",
+        "location": "Shop- Class shop, free",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650563192815646/Oracle_Class_Chart.png"
     },
-    "Paladin":{
-        "acronym":"Pal",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Paladin": {
+        "acronym": "Pal",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Silver Paladin"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/paladin-class",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/paladin-class",
+        "stats": [
             4,
             5,
             2,
@@ -3067,31 +2935,29 @@
             3,
             3
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"r10 Warrior, r10 Healer, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650570356817980/Paladin_Class_Chart.png"
+        "type": "available",
+        "location": "r10 Warrior, r10 Healer, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650570356817980/Paladin_Class_Chart.png"
     },
-    "Paladin High Lord":{
-        "acronym":"PHL",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/paladin-high-lord",
-        "stats":[
+    "Paladin High Lord": {
+        "acronym": "PHL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/paladin-high-lord",
+        "stats": [
             3,
             4,
             3,
@@ -3100,26 +2966,24 @@
             3,
             3
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650577973542912/Paladin_High_Lord_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650577973542912/Paladin_High_Lord_Class_Chart.png"
     },
-    "PaladinSlayer":{
-        "acronym":"PS",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/paladinslayer",
-        "stats":[
+    "PaladinSlayer": {
+        "acronym": "PS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/paladinslayer",
+        "stats": [
             1,
             0,
             2,
@@ -3128,29 +2992,27 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650582750330890/PaladinSlayer_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650582750330890/PaladinSlayer_Class_Chart.png"
     },
-    "Pirate":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/pirate",
-        "stats":[
+    "Pirate": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/pirate",
+        "stats": [
             2,
             2,
             0,
@@ -3159,38 +3021,36 @@
             0,
             2
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"E",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"seasonal",
-        "location":"Quest, Seasonal, TLaPD, Classic Pirate",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650590141743124/Pirate_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Quest, Seasonal, TLaPD, Classic Pirate",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650590141743124/Pirate_Class_Chart.png"
     },
-    "Pumpkin Lord":{
-        "acronym":"",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/pumpkin-lord"
+    "Pumpkin Lord": {
+        "acronym": "",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/pumpkin-lord"
     },
-    "Pyromancer":{
-        "acronym":"Pyro",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Pyromancer": {
+        "acronym": "Pyro",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Pink Romancer"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/pyromancer-class-ac",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/pyromancer-class-ac",
+        "stats": [
             1,
             1,
             0,
@@ -3199,29 +3059,29 @@
             1,
             1
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"C"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
         },
-        "type":"available",
-        "location":"Merge, Daily",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650604515229726/Pyromancer_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, Daily",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650604515229726/Pyromancer_Class_Chart.png"
     },
-    "Rogue":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Rogue": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Renegade",
             "Rogue (Rare)"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/rogue",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/rogue",
+        "stats": [
             2,
             2,
             0,
@@ -3230,27 +3090,27 @@
             0,
             2
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Starter / Shop",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650609825218610/Rogue_Class_Chart.png"
+        "type": "available",
+        "location": "Starter / Shop",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650609825218610/Rogue_Class_Chart.png"
     },
-    "Rustbucket":{
-        "acronym":"RB, Proto",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Rustbucket": {
+        "acronym": "RB, Proto",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Enforcer",
             "ProtoSartorium"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/rustbucket",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/rustbucket",
+        "stats": [
             1,
             1,
             0,
@@ -3259,28 +3119,26 @@
             1,
             1
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"E",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Quest in /crashsite",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650624316407838/Rustbucket_Class_Chart.png"
+        "type": "available",
+        "location": "Quest in /crashsite",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650624316407838/Rustbucket_Class_Chart.png"
     },
-    "Scarlet Sorceress":{
-        "acronym":"SS",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/scarlet-sorceress-class-ac",
-        "stats":[
+    "Scarlet Sorceress": {
+        "acronym": "SS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/scarlet-sorceress-class-ac",
+        "stats": [
             3,
             5,
             0,
@@ -3289,28 +3147,26 @@
             4,
             2
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Quest, Level 50, Blood Sorc, and /towerofmirrors",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650632428191784/Scarlet_Sorceress_Class_Chart.png"
+        "type": "available",
+        "location": "Quest, Level 50, Blood Sorc, and /towerofmirrors",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650632428191784/Scarlet_Sorceress_Class_Chart.png"
     },
-    "Sentinel":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/sentinel",
-        "stats":[
+    "Sentinel": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/sentinel",
+        "stats": [
             4,
             4,
             0,
@@ -3319,29 +3175,27 @@
             0,
             3
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"seasonal",
-        "location":"Shop, Upholder",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650638028111872/Sentinel_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Shop, Upholder",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650638028111872/Sentinel_Class_Chart.png"
     },
-    "ShadowScythe General":{
-        "acronym":"SSG, SG",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/shadowscythe-general-class-merge",
-        "stats":[
+    "ShadowScythe General": {
+        "acronym": "SSG, SG",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/shadowscythe-general-class-merge",
+        "stats": [
             2,
             5,
             0,
@@ -3350,28 +3204,28 @@
             3,
             0
         ],
-        "bludrut":5,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"C"
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
         },
-        "type":"available",
-        "location":"Merge, Daily",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/819732553107505192/ShadowScythe_General_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, Daily",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/819732553107505192/ShadowScythe_General_Class_Chart.png"
     },
-    "ShadowStalker of Time":{
-        "acronym":"SWoT, SSoT",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "ShadowStalker of Time": {
+        "acronym": "SWoT, SSoT",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "ShadowStalker of Time"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/shadowstalker-of-time-class",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/shadowstalker-of-time-class",
+        "stats": [
             5,
             5,
             2,
@@ -3380,30 +3234,28 @@
             3,
             6
         ],
-        "tags":[
+        "tags": [
             "acs_only",
             "heromart"
         ],
-        "bludrut":4,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"/curio, 6k AC, Speak to Chronix",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/819732559998615652/ShadowStalker_of_Time_Class_Chart.png"
+        "type": "available",
+        "location": "/curio, 6k AC, Speak to Chronix",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/819732559998615652/ShadowStalker_of_Time_Class_Chart.png"
     },
-    "Shaman":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve or Mana Vamp",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/shaman",
-        "stats":[
+    "Shaman": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve or Mana Vamp",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/shaman",
+        "stats": [
             3,
             2,
             0,
@@ -3412,28 +3264,26 @@
             4,
             3
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Rep, r10 Arcangrove",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650656130203678/Shaman_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Arcangrove",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650656130203678/Shaman_Class_Chart.png"
     },
-    "SkyCharged Grenadier":{
-        "acronym":"SCG",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/skycharged-grenadier",
-        "stats":[
+    "SkyCharged Grenadier": {
+        "acronym": "SCG",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/skycharged-grenadier",
+        "stats": [
             4,
             4,
             2,
@@ -3442,29 +3292,27 @@
             0,
             4
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop, 9 years membership badge",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650661272944670/SkyCharged_Grenadier_Class_Chart.png"
+        "type": "available",
+        "location": "Shop, 9 years membership badge",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650661272944670/SkyCharged_Grenadier_Class_Chart.png"
     },
-    "SkyGuard Grenadier":{
-        "acronym":"SGG",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/skyguard-grenadier-ac",
-        "stats":[
+    "SkyGuard Grenadier": {
+        "acronym": "SGG",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/skyguard-grenadier-ac",
+        "stats": [
             3,
             4,
             2,
@@ -3473,28 +3321,26 @@
             0,
             3
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_method":"4",
-            "fast_obtain_difficulty":"E"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"available",
-        "location":"Rep, r10 Skyguard, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650666368761906/SkyGuard_Grenadier_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Skyguard, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650666368761906/SkyGuard_Grenadier_Class_Chart.png"
     },
-    "Star Captain":{
-        "acronym":"StC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/star-captain",
-        "stats":[
+    "Star Captain": {
+        "acronym": "StC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/star-captain",
+        "stats": [
             4,
             5,
             0,
@@ -3503,29 +3349,27 @@
             0,
             4
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop/tower, verification",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650678804873226/Star_Captain_Class_Chart.png"
+        "type": "available",
+        "location": "Shop/tower, verification",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650678804873226/Star_Captain_Class_Chart.png"
     },
-    "StarLord":{
-        "acronym":"SL",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/starlord",
-        "stats":[
+    "StarLord": {
+        "acronym": "SL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/starlord",
+        "stats": [
             0,
             0,
             0,
@@ -3534,29 +3378,29 @@
             1,
             0
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"Prem",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Prem",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"available",
-        "location":"Shop/tower, verification",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650683745370172/StarLord_Class_Chart.png"
+        "type": "available",
+        "location": "Shop/tower, verification",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650683745370172/StarLord_Class_Chart.png"
     },
-    "StoneCrusher":{
-        "acronym":"SC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "StoneCrusher": {
+        "acronym": "SC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Infinity Titan"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/stonecrusher-merge",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/stonecrusher-merge",
+        "stats": [
             4,
             4,
             6,
@@ -3565,28 +3409,26 @@
             0,
             3
         ],
-        "bludrut":4,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"C"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
         },
-        "type":"available",
-        "location":"Rep, r10 Brightoak, r10 Mythsong, r10 Arcangrove",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650690615771206/StoneCrusher_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Brightoak, r10 Mythsong, r10 Arcangrove",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650690615771206/StoneCrusher_Class_Chart.png"
     },
-    "The Collector":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/the-collector-class-0-ac",
-        "stats":[
+    "The Collector": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/the-collector-class-0-ac",
+        "stats": [
             3,
             3,
             2,
@@ -3595,28 +3437,26 @@
             0,
             3
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"C"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "C"
         },
-        "type":"available",
-        "location":"Merge, Daily",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650707640844318/The_Collector_Class_Chart.png"
+        "type": "available",
+        "location": "Merge, Daily",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650707640844318/The_Collector_Class_Chart.png"
     },
-    "Thief of Hours":{
-        "acronym":"ToH",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/thief-of-hours-non-ac",
-        "stats":[
+    "Thief of Hours": {
+        "acronym": "ToH",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/thief-of-hours-non-ac",
+        "stats": [
             3,
             3,
             0,
@@ -3625,28 +3465,26 @@
             0,
             3
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"E",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"E"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "E",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"available",
-        "location":"Rep, r10 Chronospan",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650712686723103/Thief_of_Hours_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Chronospan",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650712686723103/Thief_of_Hours_Class_Chart.png"
     },
-    "TimeKiller":{
-        "acronym":"TK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/timekiller",
-        "stats":[
+    "TimeKiller": {
+        "acronym": "TK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/timekiller",
+        "stats": [
             1,
             1,
             0,
@@ -3655,30 +3493,30 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "heromart"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650719917178940/TimeKiller_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650719917178940/TimeKiller_Class_Chart.png"
     },
-    "Timeless Dark Caster":{
-        "acronym":"TDC, Timeless, ADC, MDC",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Timeless Dark Caster": {
+        "acronym": "TDC, Timeless, ADC, MDC",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Arcane Dark Caster",
             "Mystical Dark Caster"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/timeless-dark-caster-ac",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/timeless-dark-caster-ac",
+        "stats": [
             5,
             4,
             0,
@@ -3687,29 +3525,27 @@
             0,
             5
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"seasonal",
-        "location":"Shop, Seasonal, 2k AC",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650726946963476/Timeless_Dark_Caster_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 2k AC",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650726946963476/Timeless_Dark_Caster_Class_Chart.png"
     },
-    "Troll Spellsmith":{
-        "acronym":"TSS",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/troll-spellsmith-non-ac",
-        "stats":[
+    "Troll Spellsmith": {
+        "acronym": "TSS",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/troll-spellsmith-non-ac",
+        "stats": [
             3,
             3,
             1,
@@ -3718,28 +3554,28 @@
             3,
             3
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_method":"1",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"available",
-        "location":"Rep, r10 Troll",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650733213384764/Troll_Spellsmith_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Troll",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650733213384764/Troll_Spellsmith_Class_Chart.png"
     },
-    "Legendary Elemental Warrior":{
-        "acronym":"LEW, UEW, EW",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Legendary Elemental Warrior": {
+        "acronym": "LEW, UEW, EW",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Ultra Elemental Warrior"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/ultra-elemental-warrior",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/ultra-elemental-warrior",
+        "stats": [
             2,
             1,
             2,
@@ -3748,32 +3584,32 @@
             0,
             3
         ],
-        "tags":[
+        "tags": [
             "member_only",
             "acs_only"
         ],
-        "bludrut":2,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"D",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 2,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "D",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"available",
-        "location":"Rep, r6 Elemental Master, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650409207463946/Legendary_Elemental_Warrior_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r6 Elemental Master, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650409207463946/Legendary_Elemental_Warrior_Class_Chart.png"
     },
-    "Dark Ultra OmniNight":{
-        "acronym":"DUON, UOK",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Dark Ultra OmniNight": {
+        "acronym": "DUON, UOK",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Ultra OmniKnight"
         ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/ultra-omniknight-merge",
-        "stats":[
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/ultra-omniknight-merge",
+        "stats": [
             4,
             4,
             0,
@@ -3782,29 +3618,27 @@
             0,
             5
         ],
-        "tags":[
+        "tags": [
             "acs_only"
         ],
-        "bludrut":3,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"Premium"
+        "bludrut": 3,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
         },
-        "type":"seasonal",
-        "location":"Shop, Seasonal, 2k AC",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650152532705331/Dark_Ultra_OmniNight_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 2k AC",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650152532705331/Dark_Ultra_OmniNight_Class_Chart.png"
     },
-    "Undead Goat":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/undead-goat",
-        "stats":[
+    "Undead Goat": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/undead-goat",
+        "stats": [
             1,
             1,
             0,
@@ -3813,26 +3647,24 @@
             0,
             1
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650738048761866/Undead_Goat_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650738048761866/Undead_Goat_Class_Chart.png"
     },
-    "UndeadSlayer":{
-        "acronym":"US",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/undeadslayer-ac",
-        "stats":[
+    "UndeadSlayer": {
+        "acronym": "US",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/undeadslayer-ac",
+        "stats": [
             2,
             2,
             0,
@@ -3841,28 +3673,28 @@
             0,
             2
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"D",
-            "fast_obtain_method":"4",
-            "fast_obtain_difficulty":"E"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "D",
+            "fast_obtain_method": "4",
+            "fast_obtain_difficulty": "E"
         },
-        "type":"available",
-        "location":"Rep, r10 Doomwood",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650752637075476/UndeadSlayer_Class_Chart.png"
+        "type": "available",
+        "location": "Rep, r10 Doomwood",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650752637075476/UndeadSlayer_Class_Chart.png"
     },
-    "Undead Leperchaun":{
-        "acronym":"(None)",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Undead Leperchaun": {
+        "acronym": "(None)",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Unlucky Leprechaun"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/unlucky-leperchaun-ac",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/unlucky-leperchaun-ac",
+        "stats": [
             1,
             1,
             0,
@@ -3871,31 +3703,31 @@
             0,
             1
         ],
-        "tags":[
+        "tags": [
             "member_only"
         ],
-        "bludrut":0,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":true,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"seasonal",
-        "location":"Shop, Seasonal, 100k gold, mem",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650745305825354/Undead_Leperchaun_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Shop, Seasonal, 100k gold, mem",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650745305825354/Undead_Leperchaun_Class_Chart.png"
     },
-    "Vampire Lord":{
-        "acronym":"VL, RVL",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Vampire Lord": {
+        "acronym": "VL, RVL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Enchanted Vampire Lord",
             "Royal Vampire Lord",
             "Vampire"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/vampire-lord-class-ac",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/vampire-lord-class-ac",
+        "stats": [
             2,
             2,
             2,
@@ -3904,28 +3736,26 @@
             5,
             4
         ],
-        "bludrut":5,
-        "acquire":{
-            "ac_version":"Yes",
-            "irl_money":false,
-            "obtain_difficulty":"C",
-            "fast_obtain_method":"1 4",
-            "fast_obtain_difficulty":"D"
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": false,
+            "obtain_difficulty": "C",
+            "fast_obtain_method": "1 4",
+            "fast_obtain_difficulty": "D"
         },
-        "type":"seasonal",
-        "location":"Merge, Seasonal, B-day class, 300 Blood Moon Tokens",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650765094420490/Vampire_Lord_Class_Chart.png"
+        "type": "seasonal",
+        "location": "Merge, Seasonal, B-day class, 300 Blood Moon Tokens",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650765094420490/Vampire_Lord_Class_Chart.png"
     },
-    "Vindicator of They":{
-        "acronym":"VoT",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"wizard",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/vindicator-of-they-merge",
-        "stats":[
+    "Vindicator of They": {
+        "acronym": "VoT",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/vindicator-of-they-merge",
+        "stats": [
             1,
             3,
             2,
@@ -3934,28 +3764,26 @@
             0,
             1
         ],
-        "bludrut":4,
-        "acquire":{
-            "ac_version":"Rare",
-            "irl_money":false,
-            "obtain_difficulty":"B",
-            "fast_obtain_difficulty":"N/A",
-            "fast_obtain_method":"N/A"
+        "bludrut": 4,
+        "acquire": {
+            "ac_version": "Rare",
+            "irl_money": false,
+            "obtain_difficulty": "B",
+            "fast_obtain_difficulty": "N/A",
+            "fast_obtain_method": "N/A"
         },
-        "type":"rare",
-        "location":"(RARE)",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650772413743144/Vindicator_of_They_Class_Chart.png"
+        "type": "rare",
+        "location": "(RARE)",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650772413743144/Vindicator_of_They_Class_Chart.png"
     },
-    "Void Highlord":{
-        "acronym":"VHL",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/void-highlord-class-1",
-        "stats":[
+    "Void Highlord": {
+        "acronym": "VHL",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/void-highlord-class-1",
+        "stats": [
             6,
             6,
             2,
@@ -3964,22 +3792,22 @@
             4,
             5
         ],
-        "bludrut":5,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"S",
-            "fast_obtain_method":"1 2",
-            "fast_obtain_difficulty":"S"
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "S",
+            "fast_obtain_method": "1 2",
+            "fast_obtain_difficulty": "S"
         },
-        "type":"available",
-        "location":"merge, /tercessuinotlim",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/819758295992107048/Void_Highlord_Class_Chart.png"
+        "type": "available",
+        "location": "merge, /tercessuinotlim",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/819758295992107048/Void_Highlord_Class_Chart.png"
     },
-    "Warrior":{
-        "acronym":"War",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
+    "Warrior": {
+        "acronym": "War",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [
             "Warlord",
             "Warrior (Rare)",
             "Beast Warrior",
@@ -3987,10 +3815,10 @@
             "Cryomancer Mini Pet Coming Soon",
             "Void Highlord Tester"
         ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/warrior-class",
-        "stats":[
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/warrior-class",
+        "stats": [
             1,
             2,
             0,
@@ -3999,26 +3827,24 @@
             0,
             2
         ],
-        "bludrut":"00",
-        "acquire":{
-            "ac_version":"No Req",
-            "irl_money":false,
-            "obtain_difficulty":"No Requirements"
+        "bludrut": "00",
+        "acquire": {
+            "ac_version": "No Req",
+            "irl_money": false,
+            "obtain_difficulty": "No Requirements"
         },
-        "type":"available",
-        "location":"Starter / Shop",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650783419072593/Warrior_Class_Chart.png"
+        "type": "available",
+        "location": "Starter / Shop",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650783419072593/Warrior_Class_Chart.png"
     },
-    "Yami no Ronin":{
-        "acronym":"YnR",
-        "awe_enh":"Spiral Carve",
-        "duplicates":[
-            
-        ],
-        "enh":"luck",
-        "note":"",
-        "wiki":"http://aqwwiki.wikidot.com/yami-no-ronin-class",
-        "stats":[
+    "Yami no Ronin": {
+        "acronym": "YnR",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "luck",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/yami-no-ronin-class",
+        "stats": [
             5,
             5,
             0,
@@ -4027,16 +3853,16 @@
             4,
             5
         ],
-        "bludrut":5,
-        "acquire":{
-            "ac_version":"No",
-            "irl_money":false,
-            "obtain_difficulty":"A",
-            "fast_obtain_method":"1 2 3 4",
-            "fast_obtain_difficulty":"A"
+        "bludrut": 5,
+        "acquire": {
+            "ac_version": "No",
+            "irl_money": false,
+            "obtain_difficulty": "A",
+            "fast_obtain_method": "1 2 3 4",
+            "fast_obtain_difficulty": "A"
         },
-        "type":"available",
-        "location":"Quest, /darkally",
-        "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/818650788879532042/Yami_no_Ronin_Class_Chart.png"
+        "type": "available",
+        "location": "Quest, /darkally",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650788879532042/Yami_no_Ronin_Class_Chart.png"
     }
 }

@@ -3,7 +3,7 @@ import re
 from .Base import *
 from discord.ext import commands
 from io import BytesIO
-
+import textwrap
 
 class TextUploaders(commands.Cog, BaseTools):
     def __init__(self, Bot):
@@ -86,12 +86,16 @@ class TextUploaders(commands.Cog, BaseTools):
 
 
     @commands.command()
-    async def uptext(self, ctx, textfile):
+    async def uptext(self, ctx, textfile=""):
         allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_fags")
         if not allow_:
             return
 
         if BaseProgram.sqlock:
+            return
+
+        if not textfile:
+            await ctx.send("\> Please enter valid value.")
             return
 
         if textfile not in BaseProgram.texts:
@@ -101,27 +105,31 @@ class TextUploaders(commands.Cog, BaseTools):
         index = {}
 
         BaseProgram.database_updating = True
-        embedVar = discord.Embed(title="Frequently Asked Questions", color=BaseProgram.block_color,
-            description="Something's not working? Read The following.")
+        embedVar = discord.Embed(title=BaseProgram.texts[textfile]["title"], color=BaseProgram.block_color,
+            description=BaseProgram.texts[textfile]["description"])
         item_1 = await ctx.send(embed=embedVar)
         start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
         await ctx.send("\u200b")
-        for title in BaseProgram.texts[textfile]:
+        for title in BaseProgram.texts[textfile]["content"]:
+
+
             embedVar = discord.Embed(title=title, color=BaseProgram.block_color,
-                description=BaseProgram.texts[textfile][title]["text"])
-            if "image" in BaseProgram.texts[textfile][title]:
+                description=BaseProgram.texts[textfile]["content"][title]["text"])
+            if "image" in BaseProgram.texts[textfile]["content"][title]:
                 embedVar.set_image(url=BaseProgram.texts[textfile][title]["image"])
             item = await ctx.send(embed=embedVar)
             start_link = f'https://discordapp.com/channels/{item.guild.id}/{item.channel.id}/{item.id}'
             index[title] = start_link
             await ctx.send("\u200b")
 
+        chunks = textwrap.wrap(text_, 1024, break_long_words=False)
+
         desc = ""
-        count = 0
+        count = 1
         start_shit = False
-        embedVar = self.embed_single("Frequently Asked Questions", f"[Click here to go to the TOP]({start_link_1})")
+        embedVar = self.embed_single(BaseProgram.texts[textfile]["title"], BaseProgram.texts[textfile]["description"] + f"\n[Click here to go to the TOP]({start_link_1})")
         for title in index:
-            if count == 7:
+            if count == 8:
                 if not start_shit:
                     embedVar.add_field(name="Table of Contents", value=desc, inline=False)
                     start_shit = True
@@ -129,7 +137,7 @@ class TextUploaders(commands.Cog, BaseTools):
                     embedVar.add_field(name="\u200b", value=desc, inline=False)
                 desc = ""
                 count = 0
-            desc += f"🔹 [{title}]({index[title]})\n"
+            desc += f"{count} [{title}]({index[title]})\n"
             count += 1
         embedVar.add_field(name="\u200b", value=desc, inline=False)
         await ctx.send(embed=embedVar)
