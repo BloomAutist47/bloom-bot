@@ -16,7 +16,6 @@ class RedditCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
         self.bot = bot
-        self.reddit_logs = {}
         self.git_read("reddit_logs")
 
         if os.name == "nt":
@@ -50,12 +49,12 @@ class RedditCog(commands.Cog, BaseTools):
 
     # def load_reddit_log(self):
     #     with open('./Data/reddit_logs.json', 'r', encoding='utf-8') as f:
-    #         self.reddit_logs = json.load(f)
+    #         BaseProgram.reddit_logs = json.load(f)
 
 
     # def save_reddit_log(self):
     #     with open('./Data/reddit_logs.json', 'w', encoding='utf-8') as f:
-    #         json.dump(self.reddit_logs, f, ensure_ascii=False, indent=4)
+    #         json.dump(BaseProgram.reddit_logs, f, ensure_ascii=False, indent=4)
 
     async def listener(self):
         await asyncio.sleep(20)
@@ -64,10 +63,10 @@ class RedditCog(commands.Cog, BaseTools):
         async for sub in subreddit.stream.submissions():
             print("submissions")
             sub_name = str(sub.subreddit)
-            if sub_name not in self.reddit_logs:
-                self.reddit_logs[sub_name] = {}
+            if sub_name not in BaseProgram.reddit_logs:
+                BaseProgram.reddit_logs[sub_name] = {}
 
-            if str(sub.id) in self.reddit_logs[sub_name]:
+            if str(sub.id) in BaseProgram.reddit_logs[sub_name]:
                 print("Nope")
                 continue
 
@@ -86,7 +85,7 @@ class RedditCog(commands.Cog, BaseTools):
             text_ = str(sub.selftext)
             time_ = self.get_date(sub)
 
-            self.reddit_logs[sub_name][sub.id] = {
+            BaseProgram.reddit_logs[sub_name][sub.id] = {
                 "author": author_,
                 "title": title_,
                 "link": link_,
