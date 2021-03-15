@@ -33,6 +33,7 @@ class BaseProgram:
     class_acronyms = {}
     guides = {}
     tweet_call = ""
+    reddit_logs = {}
 
     if os.name == 'nt':
         loop = asyncio.ProactorEventLoop() # for subprocess' pipes on Windows
@@ -272,7 +273,7 @@ class BaseProgram:
 
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "texts" , "streams"]
+            mode = ["database", "guides", "classes", "settings", "texts" , "streams", "reddit_logs"]
 
         if "database" in mode:
             with open('./Data/database.json', 'r', encoding='utf-8') as f:
@@ -296,7 +297,9 @@ class BaseProgram:
         if "streams" in mode:
             with open('./Data/streams.json', 'r', encoding='utf-8') as f:
                 BaseProgram.streams = json.load(f)
-
+        if "reddit_logs" in mode:
+            with open('./Data/reddit_logs.json', 'r', encoding='utf-8') as f:
+                BaseProgram.reddit_logs = json.load(f)
 
         self.sort_privileged_roles()
         self.sort_author_list_lowercase()
@@ -313,7 +316,7 @@ class BaseProgram:
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "streams"]
+            mode = ["database", "guides", "classes", "settings", "streams", "reddit_logs"]
 
         if "database" in mode:
             with open('./Data/database.json', 'w', encoding='utf-8') as f:
@@ -334,7 +337,9 @@ class BaseProgram:
         if "streams" in mode:
             with open('./Data/streams.json', 'w', encoding='utf-8') as f:
                 json.dump(BaseProgram.streams, f, ensure_ascii=False, indent=4)
-
+        if "reddit_logs" in mode:
+            with open('./Data/reddit_logs.json', 'w', encoding='utf-8') as f:
+                json.dump(BaseProgram.reddit_logs, f, ensure_ascii=False, indent=4)
 
 
     def git_save(self, mode:str):
@@ -349,7 +354,7 @@ class BaseProgram:
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "streams"]
+            mode = ["database", "guides", "classes", "settings", "streams", "reddit_logs"]
 
         if "database" in mode:
             git_data = json.dumps(BaseProgram.data, indent=4).encode('utf-8')
@@ -386,6 +391,11 @@ class BaseProgram:
             contents_object = BaseProgram.repository.file_contents("./Data/streams.json")
             contents_object.update("update", git_streams)
             self.file_save("streams")
+        if "reddit_logs" in mode:
+            git_reddit_logs = json.dumps(BaseProgram.reddit_logs, indent=4).encode('utf-8')
+            contents_object = BaseProgram.repository.file_contents("./Data/reddit_logs.json")
+            contents_object.update("update", git_reddit_logs)
+            self.file_save("reddit_logs")
 
 
         return
@@ -431,6 +441,9 @@ class BaseProgram:
         if "streams" in mode:
             git_streams = BaseProgram.repository.file_contents("./Data/streams.json").decoded
             BaseProgram.streams = json.loads(git_streams.decode('utf-8'))
+        if "reddit_logs" in mode:
+            git_reddit_logs = BaseProgram.repository.file_contents("./Data/reddit_logs.json").decoded
+            BaseProgram.reddit_logs = json.loads(git_reddit_logs.decode('utf-8'))
 
 
         # Saving

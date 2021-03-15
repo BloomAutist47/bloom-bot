@@ -17,7 +17,7 @@ class RedditCog(commands.Cog, BaseTools):
         self.setup()
         self.bot = bot
         self.reddit_logs = {}
-        self.load_reddit_log()
+        self.git_read("reddit_logs")
 
         if os.name == "nt":
             from dotenv import load_dotenv
@@ -48,14 +48,14 @@ class RedditCog(commands.Cog, BaseTools):
         send_fut = asyncio.run_coroutine_threadsafe(self.listener(), BaseProgram.loop)
         # send_fut.result()
 
-    def load_reddit_log(self):
-        with open('./Data/reddit_logs.json', 'r', encoding='utf-8') as f:
-            self.reddit_logs = json.load(f)
+    # def load_reddit_log(self):
+    #     with open('./Data/reddit_logs.json', 'r', encoding='utf-8') as f:
+    #         self.reddit_logs = json.load(f)
 
 
-    def save_reddit_log(self):
-        with open('./Data/reddit_logs.json', 'w', encoding='utf-8') as f:
-            json.dump(self.reddit_logs, f, ensure_ascii=False, indent=4)
+    # def save_reddit_log(self):
+    #     with open('./Data/reddit_logs.json', 'w', encoding='utf-8') as f:
+    #         json.dump(self.reddit_logs, f, ensure_ascii=False, indent=4)
 
     async def listener(self):
         await asyncio.sleep(20)
@@ -95,7 +95,7 @@ class RedditCog(commands.Cog, BaseTools):
                 "time": time_
             }
 
-            self.save_reddit_log()
+            self.git_save("reddit_logs")
 
 
             await self.send_webhook(author_, title_, link_, image_, time_, text_)
