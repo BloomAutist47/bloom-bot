@@ -127,7 +127,7 @@ class TextUploaders(commands.Cog, BaseTools):
         desc = ""
         count = 1
         start_shit = False
-        embedVar = self.embed_single(BaseProgram.texts[textfile]["title"], BaseProgram.texts[textfile]["description"] + f"\n[Click here to go to the TOP]({start_link_1})")
+        embedVar = self.embed_single(BaseProgram.texts[textfile]["title"], BaseProgram.texts[textfile]["description"] + f"\n[Click here to go to the Top]({start_link_1})")
         for title in index:
             if count == 8:
                 if not start_shit:
@@ -137,9 +137,13 @@ class TextUploaders(commands.Cog, BaseTools):
                     embedVar.add_field(name="\u200b", value=desc, inline=False)
                 desc = ""
                 count = 0
-            desc += f"{count} [{title}]({index[title]})\n"
+            desc += f"{count} [{title.split(')')[-1].strip()}]({index[title]})\n"
             count += 1
-        embedVar.add_field(name="\u200b", value=desc, inline=False)
+        if not start_shit:
+            embedVar.add_field(name="Table of Contents", value=desc, inline=False)
+            start_shit = True
+        else:
+            embedVar.add_field(name="\u200b", value=desc, inline=False)
         await ctx.send(embed=embedVar)
         BaseProgram.database_updating = False
         return
