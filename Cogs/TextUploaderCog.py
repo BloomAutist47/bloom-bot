@@ -126,6 +126,7 @@ class TextUploaders(commands.Cog, BaseTools):
 
         desc = ""
         count = 1
+        text_count = 1
         start_shit = False
         embedVar = self.embed_single(BaseProgram.texts[textfile]["title"], BaseProgram.texts[textfile]["description"] + f"\n[Click here to go to the Top]({start_link_1})")
         for title in index:
@@ -137,8 +138,9 @@ class TextUploaders(commands.Cog, BaseTools):
                     embedVar.add_field(name="\u200b", value=desc, inline=False)
                 desc = ""
                 count = 0
-            desc += f"{count} [{title.split(')')[-1].strip()}]({index[title]})\n"
+            desc += f"{text_count} [{title.split(')')[-1].strip()}]({index[title]})\n"
             count += 1
+            text_count += 1
         if not start_shit:
             embedVar.add_field(name="Table of Contents", value=desc, inline=False)
             start_shit = True
