@@ -39,7 +39,7 @@ class TextUploaders(commands.Cog, BaseTools):
             return
 
     @commands.command()
-    async def uptext(self, ctx):
+    async def upfile(self, ctx):
         allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_quest")
         if not allow_:
             return
@@ -86,7 +86,7 @@ class TextUploaders(commands.Cog, BaseTools):
 
 
     @commands.command()
-    async def upfaq(self, ctx, textfile):
+    async def uptext(self, ctx, textfile):
         allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_fags")
         if not allow_:
             return
