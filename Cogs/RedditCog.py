@@ -99,7 +99,7 @@ class RedditCog(commands.Cog, BaseTools):
 
 
             await self.send_webhook(author_, title_, link_, image_, time_, text_)
-            await asyncio.sleep(5)
+            await asyncio.sleep(1)
 
             print(f"Title: {sub.title}\nAuthor: u/{sub.author}\nAuthor Link: https://www.reddit.com/user/{sub.author}/\nScore: {sub.score}\nID: {sub.id}\nURL: https://www.reddit.com{sub.permalink}\nImage URL: {sub.url}\n\n")
 
