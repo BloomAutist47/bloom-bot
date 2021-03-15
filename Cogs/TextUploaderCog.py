@@ -86,12 +86,16 @@ class TextUploaders(commands.Cog, BaseTools):
 
 
     @commands.command()
-    async def upfaq(self, ctx):
+    async def upfaq(self, ctx, textfile):
         allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_fags")
         if not allow_:
             return
 
         if BaseProgram.sqlock:
+            return
+
+        if textfile not in BaseProgram.texts:
+            await ctx.send("\> Text does not exists in current repository.")
             return
 
         index = {}
@@ -102,11 +106,11 @@ class TextUploaders(commands.Cog, BaseTools):
         item_1 = await ctx.send(embed=embedVar)
         start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
         await ctx.send("\u200b")
-        for title in BaseProgram.texts["faqs"]:
+        for title in BaseProgram.texts[textfile]:
             embedVar = discord.Embed(title=title, color=BaseProgram.block_color,
-                description=BaseProgram.texts["faqs"][title]["text"])
-            if "image" in BaseProgram.texts["faqs"][title]:
-                embedVar.set_image(url=BaseProgram.texts["faqs"][title]["image"])
+                description=BaseProgram.texts[textfile][title]["text"])
+            if "image" in BaseProgram.texts[textfile][title]:
+                embedVar.set_image(url=BaseProgram.texts[textfile][title]["image"])
             item = await ctx.send(embed=embedVar)
             start_link = f'https://discordapp.com/channels/{item.guild.id}/{item.channel.id}/{item.id}'
             index[title] = start_link
