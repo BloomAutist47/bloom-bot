@@ -124,7 +124,7 @@ class TweetTools(BaseTools):
             else:
                 self.save_log(5, text, link)
                 return 
-            boost = re.search("(DOUBLE|hour)(.+?)(on all servers|through|\!|\.)", text)
+            boost = re.search("(Happening now\:|DOUBLE|hour)(.+?)(on all servers|through|\!|\.)", text)
             if boost:
                 boost = boost.groups()[1].strip().capitalize()
             else:
