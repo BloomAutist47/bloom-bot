@@ -559,7 +559,7 @@ class BaseProgram:
 
     def find_class(self, class_name):
         possible_classes = []
-
+        duplicates = []
         if len(class_name) <= 4:
             if class_name.lower() in BaseProgram.class_acronyms:
                 class_name_ = BaseProgram.class_acronyms[class_name.lower()]
@@ -579,7 +579,6 @@ class BaseProgram:
                     return [("Basic", ""), (class_name, BaseProgram.classes[class_name_])]
 
             duplicates = [dn.lower() for dn in BaseProgram.classes[class_name_]["duplicates"]]
-
             # Search duplicate classes
             if class_name in duplicates:
                 ind = duplicates.index(class_name)
@@ -596,8 +595,10 @@ class BaseProgram:
             return [
                 ("Authentic", ""), (class_name_, BaseProgram.classes[class_name_]["discord_url"], BaseProgram.classes[class_name_]["wiki"])
                 ]
-
+        print("HERE")
+        print(duplicates)
         for class_name_ in BaseProgram.classes:
+
             #Search keyword likeness
             class_words = class_name.replace("  ", " ").split(" ")
             for words in class_words:
@@ -605,10 +606,12 @@ class BaseProgram:
                     continue
                 if words in class_name_.lower() and class_name_ not in possible_classes:
                     possible_classes.append(class_name_)
+                duplicates = [dn.lower() for dn in BaseProgram.classes[class_name_]["duplicates"]]
                 for duplicate in duplicates:
                     if words in duplicate:
                         ind = duplicates.index(duplicate)
                         possible_classes.append(BaseProgram.classes[class_name_]["duplicates"][ind])
+        print(possible_classes)
         if possible_classes:
             return [(False, ""), (possible_classes)]
         else:
