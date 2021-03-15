@@ -60,12 +60,15 @@
                 "text":"🔹**Description**: Your firewall or anti virus might be blocking grimoire.\n🔹**Solution**: Try the followng:\n\n1.) Allow the .exe file in firewall by going to Windows Firewall with advanced security. Then add new outbound rule with port 5588, and allow it.\n\n2.) Add exception for the grimoire folder in your Antivirus.\n\n3.) Unblock grimoire by right clicking grimoire.exe -> properties -> click unblock.\n"
             },
             "4.) Null Username fix":{
-                "text":"🔹**Description**: This occurs due to opening more than 2 instance of grim and playing using different characters.\n🔹**Symptoms**: \"Your Username is currently null meaning...\" pop-up will appear. 🔹**Solution**: Make a new copy of grimoire folder and open that separate grim to play a different character at a time.",
+                "text":"🔹**Description**: This occurs due to opening more than 2 instance of grim and playing using different characters.\n🔹**Symptoms**: \"Your Username is currently null meaning...\" pop-up will appear.\n🔹**Solution**: Make a new copy of grimoire folder and open that separate grim to play a different character at a time.",
                 "image":"https://cdn.discordapp.com/attachments/805367955923533845/820872632198627328/unknown.png"
             },
             "5.) Grim shitty UI fix":{
                 "text":"🔹**Description**: Grim looks like shit.\n🔹**Symptoms**: Grimoire is randomly changing resolution and size.\n🔹**Solution**: \n\n1.) Right click Grimoire.exe and click properties.\n2.) On compatibility, click the \"Change high DPI settings\"\n3.) Check \"Overide high DPI scaling behavior\" and select \"System (Enhanced)\"\n4.) Click Ok. Run Grimoire.\n",
                 "image":"https://media.discordapp.net/attachments/805367955923533845/814088319281135616/unknown.png?width=1440&height=527"
+            },
+            "6.) Windows Update Flash Fix":{
+                "text": "🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening.\n🔹**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n"
             }
         }
     }

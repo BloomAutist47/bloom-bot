@@ -9,7 +9,7 @@ class TextUploaders(commands.Cog, BaseTools):
     def __init__(self, Bot):
         self.setup()
         self.bot = Bot
-        # BaseProgram.sqlock = False
+        BaseProgram.sqlock = False
 
 
     @commands.command()
@@ -116,13 +116,13 @@ class TextUploaders(commands.Cog, BaseTools):
             embedVar = discord.Embed(title=title, color=BaseProgram.block_color,
                 description=BaseProgram.texts[textfile]["content"][title]["text"])
             if "image" in BaseProgram.texts[textfile]["content"][title]:
-                embedVar.set_image(url=BaseProgram.texts[textfile][title]["image"])
+                embedVar.set_image(url=BaseProgram.texts[textfile]["content"][title]["image"])
             item = await ctx.send(embed=embedVar)
             start_link = f'https://discordapp.com/channels/{item.guild.id}/{item.channel.id}/{item.id}'
             index[title] = start_link
             await ctx.send("\u200b")
 
-        chunks = textwrap.wrap(text_, 1024, break_long_words=False)
+        # chunks = textwrap.wrap(text_, 1024, break_long_words=False)
 
         desc = ""
         count = 1
