@@ -157,7 +157,6 @@ class RedditCog(commands.Cog, BaseTools):
             
             BaseProgram.settings["RedditCogSettings"]["channels"][channel_id] = str(hook_url)
             self.channel_urls = [BaseProgram.settings["RedditCogSettings"]["channels"][channel] for channel in BaseProgram.settings["RedditCogSettings"]["channels"]]
-            self.file_save("settings")
             self.git_save("settings")
             await ctx.send(f"\> Webhook `{webhook_name}` Successfully set for this channel.")
             return
@@ -167,7 +166,7 @@ class RedditCog(commands.Cog, BaseTools):
                 return
 
             BaseProgram.settings["RedditCogSettings"]["channels"].pop(channel_id, None)
-            self.file_save("settings")
+            self.channel_urls = [BaseProgram.settings["RedditCogSettings"]["channels"][channel] for channel in BaseProgram.settings["RedditCogSettings"]["channels"]]
             self.git_save("settings")
             await ctx.send(f"\> Webhook for this Channel is Successfully unregistered ")
             return
