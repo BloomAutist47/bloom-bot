@@ -4,7 +4,7 @@ from .Base import *
 from discord.ext import commands
 from io import BytesIO
 import textwrap
-
+from pprintpp import pprint
 class TextUploaders(commands.Cog, BaseTools):
     def __init__(self, Bot):
         self.setup()
@@ -122,20 +122,40 @@ class TextUploaders(commands.Cog, BaseTools):
             index[title] = start_link
             await ctx.send("\u200b")
 
-        # chunks = textwrap.wrap(text_, 1024, break_long_words=False)
+        
 
+        # desc = ""
+        # count = 1
+        # embedVar = self.embed_single(BaseProgram.texts[textfile]["title"], BaseProgram.texts[textfile]["description"] + f"\n[Click here to go to the Top]({start_link_1})")
+        
+        # for title in index:
+        #     desc += f"{count} [{title}]({index[title]})\n-" 
+        #     count += 1
+        # chunks = textwrap.wrap(desc, 1024, break_long_words=False, break_on_hyphens=True)
+        # embedVar.add_field(name="Table of Contents", value=chunks[0], inline=False)
+        # if len(chunks) > 1:
+        #     for chunk in chunks[1:]:
+        #         embedVar.add_field(name="Table of Contents", value=chunk, inline=False)
+
+        # await ctx.send(embed=embedVar)
+        # BaseProgram.database_updating = False
+        # return
+
+    
         desc = ""
-        count = 1
+        count = 0
         text_count = 1
         start_shit = False
         embedVar = self.embed_single(BaseProgram.texts[textfile]["title"], BaseProgram.texts[textfile]["description"] + f"\n[Click here to go to the Top]({start_link_1})")
         for title in index:
-            if count == 8:
+            if count == 6:
                 if not start_shit:
                     embedVar.add_field(name="Table of Contents", value=desc, inline=False)
                     start_shit = True
                 else:
                     embedVar.add_field(name="\u200b", value=desc, inline=False)
+                # pprint(desc)
+                # print()
                 desc = ""
                 count = 0
             desc += f"{text_count} [{title.split(')')[-1].strip()}]({index[title]})\n"

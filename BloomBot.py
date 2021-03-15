@@ -116,7 +116,7 @@ async def on_ready():
     if os.name == "nt":
         channel = Bot.get_channel(799238286539227136)
         await channel.send("HOLA")
-    name = "A bot Created by Bloom Autist. Currently Beta V.2.0.0.00"
+    name = "A bot Created by Bloom Autist. Currently v.4.0.0.00"
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
 

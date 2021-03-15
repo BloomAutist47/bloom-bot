@@ -42,6 +42,9 @@
             },
             "13.) <insert item name here> hasn't dropped yet? Is the drop rate really low??":{
                 "text":"It'll drop. The drop rate scales with the amount of complaining.\n\n||Unless you forgot to whitelist it <:KekU:804648765612228648>||\n\n"
+            },
+            "14.) Why is my account not relogging":{
+                "text": "Is your account not relogging?\nCheck if you changed the details to a previously saved account \nIf you had a previously saved account, put your new details in, press log in then reload your Grimoire.\nIf you do not reload Grimoire your username will be Null meaning it will not relog.\n"
             }
         }
     },
