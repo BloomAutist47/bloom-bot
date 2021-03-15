@@ -30,9 +30,19 @@ class TweetTools(BaseTools):
         ]
 
         self.double_check = [
-            "hour DOUBLE",
-            "hour Drop",
-            "DOUBLE Reputation"
+        "hour DOUBLE",
+        "hour Drop",
+        "DOUBLE Reputation",
+        "DOUBLE Gold",
+        "boost on all",
+        "boost on all servers",
+        "all servers",
+        "for 48 hours",
+        "for 72 hours",
+        "Double Exp",
+        "Double Void",
+        "Double Class point",
+        "Double Experience",
         ]
         self.black_list = [
             "Design Notes", "RT @"
