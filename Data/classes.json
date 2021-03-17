@@ -2776,8 +2776,7 @@
     "Nechronomancer": {
         "acronym": "Nechrono, ncm",
         "awe_enh": "Spiral Carve",
-        "duplicates": [
-        ],
+        "duplicates": [],
         "enh": "luck",
         "note": "",
         "wiki": "http://aqwwiki.wikidot.com/nechronomancer",
