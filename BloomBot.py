@@ -134,7 +134,7 @@ else:              # Heroku
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
 
 
-
+    
 # Bot.remove_command("help")
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
