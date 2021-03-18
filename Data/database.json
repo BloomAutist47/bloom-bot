@@ -764,9 +764,9 @@
             "url": "https://adventurequest.life/bots/JuggernautItems_Ninjatov_3.8PP.gbot",
             "author": "ninjatov"
         },
-        "Jex VoidSpartan.gbot": {
+        "KaosJex VoidSpartan.gbot": {
             "url": "https://adventurequest.life/bots/KaosJex_VoidSpartan.gbot",
-            "author": "kaos"
+            "author": "kaosjex"
         },
         "weeb NSoD RVA Synced.gbot": {
             "url": "https://adventurequest.life/bots/Kaosweeb_NSoD_RVA_Synced.gbot",
@@ -2089,10 +2089,12 @@
                 "url": "https://adventurequest.life/bots/Jex_ObonXSwindleXSales.gbot"
             }
         },
-        "kaos": {
-            "Jex VoidSpartan.gbot": {
+        "kaosjex": {
+            "KaosJex VoidSpartan.gbot": {
                 "url": "https://adventurequest.life/bots/KaosJex_VoidSpartan.gbot"
-            },
+            }
+        },
+        "kaos": {
             "weeb NSoD RVA Synced.gbot": {
                 "url": "https://adventurequest.life/bots/Kaosweeb_NSoD_RVA_Synced.gbot"
             },
