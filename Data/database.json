@@ -2,7 +2,7 @@
     "sort_by_bot_name": {
         "AnderSkrrtt StoneCrusherNoReq.gbot": {
             "url": "https://adventurequest.life/bots/AnderSkrrtt_StoneCrusherNoReq.gbot",
-            "author": "unknown"
+            "author": "anderskrrtt"
         },
         "AQW Questline Bots.zip": {
             "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip",
@@ -1402,10 +1402,12 @@
         }
     },
     "sort_by_bot_authors": {
-        "unknown": {
+        "anderskrrtt": {
             "AnderSkrrtt StoneCrusherNoReq.gbot": {
                 "url": "https://adventurequest.life/bots/AnderSkrrtt_StoneCrusherNoReq.gbot"
-            },
+            }
+        },
+        "unknown": {
             "AQW Questline Bots.zip": {
                 "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip"
             },
