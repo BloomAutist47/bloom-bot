@@ -166,6 +166,11 @@
         "z.gbot"
     ],
     "confirmed_authors": {
+        "Kaosjex": {
+            "alias": [
+                "KaosJex"
+            ]
+        },
         "Archon": {
             "alias": [
                 "Archon",
@@ -315,11 +320,6 @@
         "Prussia": {
             "alias": [
                 "Prussia"
-            ]
-        },
-        "Kaosjex": {
-            "alias": [
-                "Kaosjex"
             ]
         },
         "Anderskrrtt": {
