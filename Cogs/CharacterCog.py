@@ -250,7 +250,7 @@ class CharacterCog(commands.Cog, BaseTools):
                 f"Guild: [{char_details['Guild']}](https://www.aq.com/lore/guilds)" + guild_length,
                 ]
 
-        link_weapon = self.convert_aqurl(char_details['Armor'], mode="wiki")
+        link_weapon = self.convert_aqurl(char_details['Weapon'], mode="wiki")
         link_armor = self.convert_aqurl(char_details['Armor'], mode="wiki")
         link_helm = self.convert_aqurl(char_details['Helm'], mode="wiki")
         link_cape = self.convert_aqurl(char_details['Cape'], mode="wiki")
