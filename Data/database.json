@@ -484,6 +484,10 @@
             "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot",
             "author": "bloom"
         },
+        "Bloom TaABoatTrip ShogunParagonPet pro.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_TakingABoatTrip_ShogunParagonPet_pro.gbot",
+            "author": "archon"
+        },
         "ArcangroveIndexQL.gbot": {
             "url": "https://adventurequest.life/bots/Bluu_ArcangroveIndexQL.gbot",
             "author": "bluu"
@@ -624,6 +628,10 @@
             "url": "https://adventurequest.life/bots/Food_Fishing_Rep.gbot",
             "author": "food"
         },
+        "Mythsong.gbot": {
+            "url": "https://adventurequest.life/bots/Food_Mythsong.gbot",
+            "author": "food"
+        },
         "NWNO NulgathBirthday FB.gbot": {
             "url": "https://adventurequest.life/bots/Food_NWNO_NulgathBirthday_FB.gbot",
             "author": "food"
@@ -658,6 +666,10 @@
         },
         "Essence of Defeat Reagent DCS.gbot": {
             "url": "https://adventurequest.life/bots/Ganku_-_Essence_of_Defeat_Reagent_DCS.gbot",
+            "author": "ganku"
+        },
+        "FOTIA Legion Token v9 MORE STABLE.gbot": {
+            "url": "https://adventurequest.life/bots/Ganku_-_FOTIA_Legion_Token_v9_MORE_STABLE.gbot",
             "author": "ganku"
         },
         "M Gathering Unstable Essences.gbot": {
@@ -808,6 +820,18 @@
             "url": "https://adventurequest.life/bots/Kaos_HorsemenDailies_Synced.gbot",
             "author": "kaos"
         },
+        "IcewingAggroXP.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_IcewingAggroXP.gbot",
+            "author": "kaos"
+        },
+        "IcewingXP.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_IcewingXP.gbot",
+            "author": "kaos"
+        },
+        "Indulgence.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_Indulgence.gbot",
+            "author": "kaos"
+        },
         "SeksSlaveCoomFollower v2.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_SeksSlaveCoomFollower_v2.gbot",
             "author": "kaos"
@@ -924,6 +948,10 @@
             "url": "https://adventurequest.life/bots/Nng_Beleen_Pinkest_Dye_Ever_ONLY.gbot",
             "author": "nng"
         },
+        "NNg Circles of Fate Indulgence sevencircles class equip and skill editable pro.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Circles_of_Fate_Indulgence_sevencircles_class_equip_and_skill_editable_pro.gbot",
+            "author": "nng"
+        },
         "NNg Dance Guru Merge Harpy Drops.gbot": {
             "url": "https://adventurequest.life/bots/NNg_Dance_Guru_Merge_Harpy_Drops.gbot",
             "author": "nng"
@@ -944,8 +972,8 @@
             "url": "https://adventurequest.life/bots/NNg_Infinite_BackFlip_emote_fun_way_to_afk.zip",
             "author": "nng"
         },
-        "NNg AbyssLairShit.gbot": {
-            "url": "https://adventurequest.life/bots/NNg_Kaos_AbyssLairShit.gbot",
+        "NNg AbyssLair Abyssal merge skill class editable pro.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Kaos_AbyssLair_Abyssal_merge_skill_class_editable_pro.gbot",
             "author": "kaos"
         },
         "NNg Legion Castle Quest LT.gbot": {
@@ -1204,6 +1232,10 @@
             "url": "https://adventurequest.life/bots/Weeb_Finding_Fragments_pro.rar",
             "author": "weeb"
         },
+        "Free Player Roentgenium of Nulgath MustHaveRank3SpellCraftingAndManuallyBuyInk pro.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Free-Player_Roentgenium_of_Nulgath_MustHaveRank3SpellCraftingAndManuallyBuyInk_pro.gbot",
+            "author": "weeb"
+        },
         "Free Player Spin The Wheel of Chance Bot.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Free-Player_Spin_The_Wheel_of_Chance_Bot.gbot",
             "author": "weeb"
@@ -1456,6 +1488,9 @@
             },
             "Attac Mule Non-Mem SC P.gbot": {
                 "url": "https://adventurequest.life/bots/Attacking_Mule_Non_Mem_SC_P.gbot"
+            },
+            "Bloom TaABoatTrip ShogunParagonPet pro.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_TakingABoatTrip_ShogunParagonPet_pro.gbot"
             },
             "NecroticCollection.zip": {
                 "url": "https://adventurequest.life/bots/KingNecroticCollection.zip"
@@ -1960,6 +1995,9 @@
             "Fishing Rep.gbot": {
                 "url": "https://adventurequest.life/bots/Food_Fishing_Rep.gbot"
             },
+            "Mythsong.gbot": {
+                "url": "https://adventurequest.life/bots/Food_Mythsong.gbot"
+            },
             "NWNO NulgathBirthday FB.gbot": {
                 "url": "https://adventurequest.life/bots/Food_NWNO_NulgathBirthday_FB.gbot"
             },
@@ -1985,6 +2023,9 @@
             },
             "Essence of Defeat Reagent DCS.gbot": {
                 "url": "https://adventurequest.life/bots/Ganku_-_Essence_of_Defeat_Reagent_DCS.gbot"
+            },
+            "FOTIA Legion Token v9 MORE STABLE.gbot": {
+                "url": "https://adventurequest.life/bots/Ganku_-_FOTIA_Legion_Token_v9_MORE_STABLE.gbot"
             },
             "M Gathering Unstable Essences.gbot": {
                 "url": "https://adventurequest.life/bots/Ganku_-_M_Gathering_Unstable_Essences.gbot"
@@ -2089,6 +2130,15 @@
             "HorsemenDailies Synced.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_HorsemenDailies_Synced.gbot"
             },
+            "IcewingAggroXP.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_IcewingAggroXP.gbot"
+            },
+            "IcewingXP.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_IcewingXP.gbot"
+            },
+            "Indulgence.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_Indulgence.gbot"
+            },
             "SeksSlaveCoomFollower v2.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_SeksSlaveCoomFollower_v2.gbot"
             },
@@ -2104,8 +2154,8 @@
             "Weebluurts Uni34 NoDrone NoCrag NoOBoN.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Weebluurts_Uni34__NoDrone_NoCrag_NoOBoN.gbot"
             },
-            "NNg AbyssLairShit.gbot": {
-                "url": "https://adventurequest.life/bots/NNg_Kaos_AbyssLairShit.gbot"
+            "NNg AbyssLair Abyssal merge skill class editable pro.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Kaos_AbyssLair_Abyssal_merge_skill_class_editable_pro.gbot"
             }
         },
         "taryth": {
@@ -2122,6 +2172,9 @@
             },
             "Beleen Pinkest Dye Ever ONLY.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Beleen_Pinkest_Dye_Ever_ONLY.gbot"
+            },
+            "NNg Circles of Fate Indulgence sevencircles class equip and skill editable pro.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Circles_of_Fate_Indulgence_sevencircles_class_equip_and_skill_editable_pro.gbot"
             },
             "NNg Dance Guru Merge Harpy Drops.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Dance_Guru_Merge_Harpy_Drops.gbot"
@@ -2330,6 +2383,9 @@
             },
             "Finding Fragments pro.rar": {
                 "url": "https://adventurequest.life/bots/Weeb_Finding_Fragments_pro.rar"
+            },
+            "Free Player Roentgenium of Nulgath MustHaveRank3SpellCraftingAndManuallyBuyInk pro.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Free-Player_Roentgenium_of_Nulgath_MustHaveRank3SpellCraftingAndManuallyBuyInk_pro.gbot"
             },
             "Free Player Spin The Wheel of Chance Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Free-Player_Spin_The_Wheel_of_Chance_Bot.gbot"
