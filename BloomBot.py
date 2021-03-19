@@ -97,7 +97,7 @@ async def stream_tweet():
         tweet_user = "1349290524901998592"
     else:
         tweet_user = "16480141"
-
+    tweet_user = "1349290524901998592"
 
 
     tweets_listener = TwitterListener(Bot, api)
@@ -147,8 +147,9 @@ Bot.add_cog(ClassSearchCog(Bot))
 Bot.add_cog(GoogleSearchCog(Bot))   
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(WikiCog(Bot))
-Bot.add_cog(TwitterCog(Bot, api))
+
 Bot.add_cog(RedditCog(Bot)) 
+Bot.add_cog(TwitterCog(Bot, api))
 
 # Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
