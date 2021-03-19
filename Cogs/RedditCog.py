@@ -59,7 +59,7 @@ class RedditCog(commands.Cog, BaseTools):
     async def listener(self):
         await asyncio.sleep(20)
         print("Start Watching")
-        subreddit = await self.reddit.subreddit("AQW")
+        subreddit = await self.reddit.subreddit("AQW+FashionQuestWorlds")
         async for sub in subreddit.stream.submissions():
             print("submissions")
             sub_name = str(sub.subreddit)
@@ -97,17 +97,17 @@ class RedditCog(commands.Cog, BaseTools):
             self.git_save("reddit_logs")
 
 
-            await self.send_webhook(author_, title_, link_, image_, time_, text_)
+            await self.send_webhook(sub_name, author_, title_, link_, image_, time_, text_)
             await asyncio.sleep(1)
 
             print(f"Title: {sub.title}\nAuthor: u/{sub.author}\nAuthor Link: https://www.reddit.com/user/{sub.author}/\nScore: {sub.score}\nID: {sub.id}\nURL: https://www.reddit.com{sub.permalink}\nImage URL: {sub.url}\n\n")
 
-    async def send_webhook(self, author_, title_, link_, image_, time_, text_):
+    async def send_webhook(self, sub_name_, author_, title_, link_, image_, time_, text_):
         webhook = DiscordWebhook(url=self.channel_urls)
 
         # create embed object for webhook
         embed = DiscordEmbed(title=title_, color=BaseProgram.block_color, url=link_)
-        embed.set_author(name="r/AdventureQuestWorlds", url="https://www.reddit.com/r/AQW/", icon_url=BaseProgram.icon_aqw)
+        embed.set_author(name="r/" + sub_name_, url="https://www.reddit.com/r/AQW/", icon_url=BaseProgram.icon_aqw)
         chunks = textwrap.wrap(text_, 1024, break_long_words=False)
         if chunks:
             embed.description = chunks[0]
