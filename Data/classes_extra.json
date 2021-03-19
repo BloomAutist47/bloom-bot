@@ -13,6 +13,15 @@
         "bludrut": 6
     },
     "Sentinel": {
+        "stats": [
+            "null",
+            "null",
+            "null",
+            "null",
+            5,
+            "null",
+            "null"
+        ],
         "bludrut": 6
     },
     "Legion Revenant": {
