@@ -840,10 +840,6 @@
             "url": "https://adventurequest.life/bots/King_ShogunParagon_LegionTokens.gbot",
             "author": "archon"
         },
-        "KTV .gbot": {
-            "url": "https://adventurequest.life/bots/KTV_-_Taryth.gbot",
-            "author": "taryth"
-        },
         "LeeryContractAssistant.gbot": {
             "url": "https://adventurequest.life/bots/LeeryContractAssistant_Ninjatov.gbot",
             "author": "ninjatov"
@@ -947,10 +943,6 @@
         "Non-mem VA SkCmd.gbot": {
             "url": "https://adventurequest.life/bots/Non_mem_VA_SkCmd.gbot",
             "author": "unknown"
-        },
-        "NWNO RoomHop .gbot": {
-            "url": "https://adventurequest.life/bots/NWNO_RoomHop_-_Taryth.gbot",
-            "author": "taryth"
         },
         "dragonblade of nulgath bot.gbot": {
             "url": "https://adventurequest.life/bots/Prussia_dragonblade_of_nulgath_bot.gbot",
@@ -1982,14 +1974,6 @@
             },
             "NNg AbyssLair Abyssal merge skill class editable pro.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Kaos_AbyssLair_Abyssal_merge_skill_class_editable_pro.gbot"
-            }
-        },
-        "taryth": {
-            "KTV .gbot": {
-                "url": "https://adventurequest.life/bots/KTV_-_Taryth.gbot"
-            },
-            "NWNO RoomHop .gbot": {
-                "url": "https://adventurequest.life/bots/NWNO_RoomHop_-_Taryth.gbot"
             }
         },
         "nng": {
