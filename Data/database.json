@@ -252,14 +252,6 @@
             "url": "https://adventurequest.life/bots/Arts_NorthPointeREP_Bot_QL.gbot",
             "author": "arts"
         },
-        "NWNO HunterDrone Bot.gbot": {
-            "url": "https://adventurequest.life/bots/Arts_NWNO_HunterDrone_Bot.gbot",
-            "author": "arts"
-        },
-        "NWNO NulgathBirthday Bot.gbot": {
-            "url": "https://adventurequest.life/bots/Arts_NWNO_NulgathBirthday_Bot.gbot",
-            "author": "arts"
-        },
         "PetTamerREP Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_PetTamerREP_Bot.gbot",
             "author": "arts"
@@ -964,18 +956,6 @@
             "url": "https://adventurequest.life/bots/Qwack-Daily_Quest.gbot",
             "author": "qwack"
         },
-        "Fiend Token.gbot": {
-            "url": "https://adventurequest.life/bots/Qwack-Fiend_Token.gbot",
-            "author": "qwack"
-        },
-        "Gathering Unstable Essences.gbot": {
-            "url": "https://adventurequest.life/bots/Qwack-Gathering_Unstable_Essences.gbot",
-            "author": "qwack"
-        },
-        "The Game of Gemstones.gbot": {
-            "url": "https://adventurequest.life/bots/Qwack-The_Game_of_Gemstones.gbot",
-            "author": "qwack"
-        },
         "Rascam BlightEssence.gbot": {
             "url": "https://adventurequest.life/bots/Rascam_BlightEssence.gbot",
             "author": "unknown"
@@ -1508,12 +1488,6 @@
             },
             "NorthPointeREP Bot QL.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_NorthPointeREP_Bot_QL.gbot"
-            },
-            "NWNO HunterDrone Bot.gbot": {
-                "url": "https://adventurequest.life/bots/Arts_NWNO_HunterDrone_Bot.gbot"
-            },
-            "NWNO NulgathBirthday Bot.gbot": {
-                "url": "https://adventurequest.life/bots/Arts_NWNO_NulgathBirthday_Bot.gbot"
             },
             "PetTamerREP Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_PetTamerREP_Bot.gbot"
@@ -2060,15 +2034,6 @@
             },
             "Daily Quest.gbot": {
                 "url": "https://adventurequest.life/bots/Qwack-Daily_Quest.gbot"
-            },
-            "Fiend Token.gbot": {
-                "url": "https://adventurequest.life/bots/Qwack-Fiend_Token.gbot"
-            },
-            "Gathering Unstable Essences.gbot": {
-                "url": "https://adventurequest.life/bots/Qwack-Gathering_Unstable_Essences.gbot"
-            },
-            "The Game of Gemstones.gbot": {
-                "url": "https://adventurequest.life/bots/Qwack-The_Game_of_Gemstones.gbot"
             }
         },
         "raze": {
