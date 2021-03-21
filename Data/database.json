@@ -808,6 +808,10 @@
             "url": "https://adventurequest.life/bots/Kaos_Indulgence.gbot",
             "author": "kaos"
         },
+        "Penance BestWithArmies.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_Penance_BestWithArmies.gbot",
+            "author": "kaos"
+        },
         "SeksSlaveCoomFollower v2.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_SeksSlaveCoomFollower_v2.gbot",
             "author": "kaos"
@@ -1930,6 +1934,9 @@
             },
             "Indulgence.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Indulgence.gbot"
+            },
+            "Penance BestWithArmies.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_Penance_BestWithArmies.gbot"
             },
             "SeksSlaveCoomFollower v2.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_SeksSlaveCoomFollower_v2.gbot"
