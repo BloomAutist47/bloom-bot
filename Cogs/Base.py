@@ -35,19 +35,23 @@ class BaseProgram:
     tweet_call = ""
     reddit_logs = {}
 
-    loop = asyncio.ProactorEventLoop() # for subprocess' pipes on Windows
-    asyncio.set_event_loop(loop)
+    # loop = asyncio.ProactorEventLoop() # for subprocess' pipes on Windows
+    # asyncio.set_event_loop(loop)
+
+
 
     # if os.name == 'nt':
-    #     loop = asyncio.ProactorEventLoop() # for subprocess' pipes on Windows
+        # loop = asyncio.ProactorEventLoop() # for subprocess' pipes on Windows
     #     asyncio.set_event_loop(loop)
     # else:
-    #     loop = asyncio.get_event_loop()
+    loop = asyncio.get_event_loop()
+    # loop_2 = asyncio.new_event_loop()
 
-    # loop = asyncio.get_event_loop()
-    loop_2 = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
     nest_asyncio.apply(loop)
-    # nest_asyncio.apply(loop)
+    # nest_asyncio.apply(loop_2)
+
+    
     sqlock = True
     texts = {}
     tweet_text = ""
