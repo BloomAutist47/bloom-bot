@@ -178,11 +178,17 @@ class TweetTools(BaseTools):
                 location = "Battleontown"
             
             if not location:
-                location = re.search("\s/(.+?)(\s)|map", text)
+                location = re.search("\s/(.+?)(\s|map)", text)
+                print("Asdad")
                 if location:
                     location = "/%s"%(location[1])
+                    print("Ded")
                 else:
-                    location = re.search("(boss battle in the|\sin your\s|in\s|available now in the|battle in the\s|\sin the|Complete)(.+?)(to collect|to find|\.|\s\(|\!|for a chance|to get the|\smap|quest)", text)
+                    location = re.search("(boss battle in the|\sin your\s|\sin the\s|\sin\s|available now in the|battle in the\s|\sin the|Complete)(.+?)(to collect|to find|\.|\s\(|\!|for a chance|to get the|\smap|map|quest)", text)
+                    try:
+                        print(location.groups())
+                    except:
+                        print("FAILE")
                     if location:
                         location = location.groups()[1]
                     else:
