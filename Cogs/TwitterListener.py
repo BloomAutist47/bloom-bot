@@ -217,7 +217,7 @@ class TweetTools(BaseTools):
                     enemy_link = ""
 
             # Items
-            item = re.search("(to find our|to find the|to find|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|as we celebrate|as we head into|in her|in his shop|in her shop|as we lead up|until))", text)
+            item = re.search("(to find our|to find the|Find the|to find|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|as we celebrate|as we head into|in the|in her|in his shop|in her shop|as we lead up|until))", text)
             if item:
                 item = item.groups()[1]
                 item = re.sub(r'((?<=^\s\b)this seasonal(?=\b\s))|(((?<=^\s\b)rare(?=\b\s)))','', item).strip()
@@ -242,8 +242,9 @@ class TweetTools(BaseTools):
                 npc = self.word_cleaner(npc)
 
             # Adding /join to location
-            location = location.replace("/", "")
-            location = "/join " + location.lower()
+            location = location.replace("/", "").title()
+            if "shop" not in location.lower():
+                location = "/join " + location.lower()
 
             item = item.title()
             # Adding 0 AC to item
