@@ -724,7 +724,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650044407873556/Chrono_DragonKnight_Class_Chart.png"
     },
     "ChronoCommander": {
-        "acronym": "CC",
+        "acronym": "CC, ChronoCom, ChComm",
         "awe_enh": "Spiral Carve",
         "duplicates": [],
         "enh": "luck",
@@ -753,7 +753,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650052095508511/ChronoCommander_Class_Chart.png"
     },
     "ChronoCorruptor": {
-        "acronym": "CC",
+        "acronym": "CC, CcoR",
         "awe_enh": "Spiral Carve",
         "duplicates": [],
         "enh": "luck",
