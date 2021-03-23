@@ -49,3 +49,39 @@ from ast import literal_eval
 from pprint import pprint
 from dotenv import load_dotenv
 
+import re
+import os
+import requests
+import threading
+
+from pprintpp import pprint
+from datetime import datetime
+
+from io import BytesIO, StringIO
+from zipfile import ZipFile
+from pathlib import Path
+
+import xml.etree.ElementTree as ET
+
+from pprintpp import pprint
+from discord_webhook import DiscordWebhook, DiscordEmbed
+from datetime import datetime
+import os
+import textwrap
+import json
+import asyncpraw
+import asyncio
+
+import html2text
+
+from discord.ext import commands
+from ast import literal_eval
+from datetime import datetime
+from pprint import pprint
+from pytz import timezone
+import dictdiffer  
+from bs4 import BeautifulSoup as Soup
+from requests import get as requests_get
+from urllib.request import urlopen, Request
+import cloudscraper
+from time import sleep
