@@ -63,7 +63,7 @@ class RedditCog(commands.Cog, BaseTools):
         print("Start Watching")
         subreddit = await self.reddit.subreddit("AQW+FashionQuestWorlds")
         async for sub in subreddit.stream.submissions():
-            print("submissions")
+            # print("submissions")
             sub_name = str(sub.subreddit)
             if sub_name not in BaseProgram.reddit_logs:
                 BaseProgram.reddit_logs[sub_name] = {}

@@ -1056,6 +1056,7 @@ class BaseTools(BaseProgram):
                     if is_soup:
                         return Soup(text_.decode(encoding), parser)
                     else:
+                        # print(text_)
                         return text_.decode(encoding)
                 except:
                     print(f"> Failed Executing {name}... Trying again.")
@@ -1103,6 +1104,8 @@ class BaseCog(commands.Cog, BaseTools):
                "`;ws search` ➣ Gets list of AQW Wikidot searches.\n"\
                "`;go search` ➣ Search with google chrome.\n"\
                "`;server` ➣ Shows player count of Aqw servers.\n"\
+               "`;swf` ➣ Converts .xml file into readable format.\n"\
+               "`;swfhelp` ➣ Shows help abput ;swf command.\n"\
                "`;credits` ➣ Reveals the credits.\n"
         embedVar.description = desc
         if guild_allowed:
