@@ -111,6 +111,8 @@ class GuideCog(commands.Cog, BaseTools):
                 embedVar.description = desc
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                if "image" in guide_data:
+                    embedVar.set_image(url=guide_data["image"])
                 embedVar.set_footer(text=self.fotter)
                 embedVar.set_author(name=au_title, icon_url=au_icon)
                 await ctx.send(embed=embedVar)
