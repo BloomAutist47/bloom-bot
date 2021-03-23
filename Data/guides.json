@@ -5,12 +5,13 @@
         "title": "Grimoire Guide 101",
         "description": "Don't know how to use boats? Follow these guids.",
         "content": [
-            "1.) Grimoire Helpbook ",
-            "> **Link:** [Grim 101](https://docs.google.com/document/d/1feo9uke1qa0pzjAOTMUkasGR7Rqsz0fdOwdV0BaEzz0/edit?usp=sharing)",
-            "> Grimiore is one of the most common bot programs currently, and I’m here to teach you how to use it. This guide is for Grimoire 3.8 and 3.8+.\n",
-            "2.) **How to edit Boats  by NNg_ger**.",
+            "1. **How to edit Boats  by NNg_ger**.",
             "> **Link**: [Download](https://cdn.discordapp.com/attachments/805367955923533845/823780979264716800/Basic_tutorial_on_how_to_use_portal_bot.pdf)",
-            "> Tired of learning how to make a bot? Feeling confused on how to use our bots? Look no further, this booklet is designed to teach you all the essential basic skills for a bot user so you don't need to know all of the Grimoire functions when downloading and using our bots which can be found on our portal site."
+            "> Tired of learning how to make a bot? Feeling confused on how to use our bots? Look no further, this booklet is designed to teach you all the essential basic skills for a bot user so you don't need to know all of the Grimoire functions.",
+            "2. **Grimoire Helpbook** ",
+            "> **Link:** [Grim 101](https://docs.google.com/document/d/1feo9uke1qa0pzjAOTMUkasGR7Rqsz0fdOwdV0BaEzz0/edit?usp=sharing)",
+            "> Grimiore is one of the most common bot programs currently, and I’m here to teach you how to use it. This guide is for Grimoire 3.8 and 3.8+.\n"
+
         ],
         "image": "https://cdn.discordapp.com/attachments/805367955923533845/823781523538968576/unknown.png"
     },
