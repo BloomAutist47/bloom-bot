@@ -1,19 +1,19 @@
 {
-    "Imperial Chunin":{
-        "acronym":"ImC"
+    "Imperial Chunin": {
+        "acronym": "ImC"
     },
-    "Dragon of Time":{
-        "acronym":"DoT",
-        "location":"Quest, /classhall"
+    "Dragon of Time": {
+        "acronym": "DoT",
+        "location": "Quest, /classhall"
     },
-    "Dark Master of Moglins":{
-        "acronym":"DMoM"
+    "Dark Master of Moglins": {
+        "acronym": "DMoM"
     },
-    "ArchPaladin":{
-        "bludrut":6
+    "ArchPaladin": {
+        "bludrut": 6
     },
-    "Sentinel":{
-        "stats":[
+    "Sentinel": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -22,10 +22,10 @@
             "null",
             "null"
         ],
-        "bludrut":6
+        "bludrut": 6
     },
-    "Legion Revenant":{
-        "stats":[
+    "Legion Revenant": {
+        "stats": [
             "null",
             "null",
             6,
@@ -34,11 +34,11 @@
             "null",
             "null"
         ],
-        "bludrut":6,
-        "location":"Insane Quest, /revenant, needs one dark caster class"
+        "bludrut": 6,
+        "location": "Insane Quest, /revenant, needs one dark caster class"
     },
-    "Elemental Dracomancer":{
-        "stats":[
+    "Elemental Dracomancer": {
+        "stats": [
             3,
             4,
             2,
@@ -47,10 +47,10 @@
             "null",
             "null"
         ],
-        "bludrut":6
+        "bludrut": 6
     },
-    "Horc Evader":{
-        "stats":[
+    "Horc Evader": {
+        "stats": [
             "null",
             5,
             "null",
@@ -59,10 +59,10 @@
             "null",
             "null"
         ],
-        "bludrut":3
+        "bludrut": 3
     },
-    "Great Thief":{
-        "stats":[
+    "Great Thief": {
+        "stats": [
             6,
             "null",
             "null",
@@ -71,10 +71,10 @@
             "null",
             "null"
         ],
-        "bludrut":6
+        "bludrut": 6
     },
-    "Void Highlord":{
-        "stats":[
+    "Void Highlord": {
+        "stats": [
             6,
             "null",
             "null",
@@ -83,10 +83,10 @@
             "null",
             "null"
         ],
-        "location":"merge, /tercessuinotlim"
+        "location": "merge, /tercessuinotlim"
     },
-    "ShadowStalker of Time":{
-        "stats":[
+    "ShadowStalker of Time": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -95,11 +95,11 @@
             "null",
             "null"
         ],
-        "type":"available",
-        "location":"/curio, 6k AC, Speak to Chronix"
+        "type": "available",
+        "location": "/curio, 6k AC, Speak to Chronix"
     },
-    "Immortal Chronomancer":{
-        "stats":[
+    "Immortal Chronomancer": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -108,11 +108,11 @@
             "null",
             "null"
         ],
-        "type":"available",
-        "location":"/curio, 6k AC, Speak to Chronis"
+        "type": "available",
+        "location": "/curio, 6k AC, Speak to Chronis"
     },
-    "Corrupted Chronomancer":{
-        "stats":[
+    "Corrupted Chronomancer": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -122,12 +122,12 @@
             "null"
         ]
     },
-    "ChronoCorruptor":{
-        "acronym":"CcoR"
+    "ChronoCorruptor": {
+        "acronym": "CcoR"
     },
-    "Underworld Chronomancer":{
-        "acronym":"UC",
-        "stats":[
+    "Underworld Chronomancer": {
+        "acronym": "UC",
+        "stats": [
             "null",
             "null",
             "null",
@@ -137,8 +137,8 @@
             "null"
         ]
     },
-    "Chrono DragonKnight":{
-        "stats":[
+    "Chrono DragonKnight": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -148,9 +148,9 @@
             "null"
         ]
     },
-    "ChronoCommander":{
-        "acronym":"ChronoCom, ChComm",
-        "stats":[
+    "ChronoCommander": {
+        "acronym": "ChronoCom, ChComm",
+        "stats": [
             "null",
             "null",
             "null",
@@ -160,8 +160,8 @@
             "null"
         ]
     },
-    "Chronomancer":{
-        "stats":[
+    "Chronomancer": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -171,8 +171,8 @@
             "null"
         ]
     },
-    "Lycan":{
-        "stats":[
+    "Lycan": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -181,10 +181,10 @@
             1,
             "null"
         ],
-        "bludrut":5
+        "bludrut": 5
     },
-    "Royal BattleMage":{
-        "stats":[
+    "Royal BattleMage": {
+        "stats": [
             "null",
             "null",
             "null",
@@ -193,11 +193,11 @@
             "null",
             "null"
         ],
-        "bludrut":4
+        "bludrut": 4
     },
-    "Vampire Lord":{
-        "acronym":"RVL",
-        "stats":[
+    "Vampire Lord": {
+        "acronym": "RVL",
+        "stats": [
             2,
             2,
             2,
@@ -206,10 +206,10 @@
             5,
             4
         ],
-        "bludrut":5
+        "bludrut": 5
     },
-    "LightCaster":{
-        "stats":[
+    "LightCaster": {
+        "stats": [
             "null",
             "null",
             6,
@@ -218,12 +218,12 @@
             "null",
             "null"
         ],
-        "bludrut":5
+        "bludrut": 5
     },
-    "ShadowScythe General":{
-        "acronym":"SG"
+    "ShadowScythe General": {
+        "acronym": "SG"
     },
-    "Infinite Legion Dark Caster":{
-        "type":"available"
+    "Infinite Legion Dark Caster": {
+        "type": "available"
     }
 }
