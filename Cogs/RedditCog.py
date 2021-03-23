@@ -16,6 +16,7 @@ class RedditCog(commands.Cog, BaseTools):
     def __init__(self, bot):
         self.setup()
         self.bot = bot
+        self.loop = bot.loop
         self.git_read("reddit_logs")
 
         if os.name == "nt":
@@ -43,8 +44,9 @@ class RedditCog(commands.Cog, BaseTools):
                              password = password, 
                              user_agent = user_agent) 
 
+        self.loop.create_task(self.listener())
         
-        send_fut = asyncio.run_coroutine_threadsafe(self.listener(), BaseProgram.loop)
+        # send_fut = asyncio.run_coroutine_threadsafe(self.listener(), BaseProgram.loop)
         # send_fut.result()
 
     # def load_reddit_log(self):

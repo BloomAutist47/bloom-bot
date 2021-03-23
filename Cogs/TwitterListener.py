@@ -500,6 +500,7 @@ class TwitterCog(commands.Cog, TweetTools):
 class TwitterListener(tweepy.StreamListener, TweetTools):
     def __init__(self, bot, api,  *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.loop = bot.loop
         # self.discord = discord # this is just a function which sends a message to a channel
         # self.loop = loop # this is the loop of discord client
         self.bot = bot
@@ -509,8 +510,6 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
         self.image_url = ""
         self.tweet_tools()
         self.setup()
-
-
 
     def on_status(self, status=""):
 
@@ -550,8 +549,9 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
                 return
 
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
-            send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"), BaseProgram.loop)
-            send_fut.result()
+            self.loop.create_task(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"))
+            # send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"), BaseProgram.loop)
+            # send_fut.result()
             return
         else:
             # print(status)
@@ -565,14 +565,10 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
         print(status)
 
     def send_to_discord(self, id_, tweet_id):
-        if os.name == "nt":
-            tweet_user = "1349290524901998592"
-        else:
-            tweet_user = "16480141"
-        
-
-        if tweet_id != tweet_user:
+        if tweet_id != BaseProgram.tweet_user:
             return
-        send_fut = asyncio.run_coroutine_threadsafe(self.tweet_simple(id_), BaseProgram.loop)
-        send_fut.result()
+        self.loop.create_task(self.tweet_simple(id_))
+        # send_fut = asyncio.run_coroutine_threadsafe(self.tweet_simple(id_), BaseProgram.loop)
+        # send_fut.result()
         return
+

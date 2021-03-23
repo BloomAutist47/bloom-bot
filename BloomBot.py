@@ -84,27 +84,28 @@ async def on_command_error(ctx, error):
 BaseStuff = BaseProgram()
 BaseStuff.git_prepare()
 
-auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
-auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
+BaseProgram.auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
+BaseProgram.auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
 
-api = tweepy.API(auth)
-api.verify_credentials()
+BaseProgram.api = tweepy.API(BaseProgram.auth)
+BaseProgram.api.verify_credentials()
 
 
 async def stream_tweet():
 
     if os.name == "nt":
-        tweet_user = "1349290524901998592"
+        BaseProgram.tweet_user = "1349290524901998592"
     else:
-        tweet_user = "16480141"
+        BaseProgram.tweet_user = "16480141"
     # tweet_user = "16480141"
 
 
-    tweets_listener = TwitterListener(Bot, api)
-    stream = tweepy.Stream(auth, tweets_listener, tweet_mode='extended', is_async=True)
+    BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
+    BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, tweet_mode='extended', is_async=True)
     print("> Twitter Listener Success")
-    stream.filter(follow=[tweet_user], is_async=True, stall_warnings=True)
-
+    
+    BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
+    # BaseProgram.loop.create_task(BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True))
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141
     # Use this to get IDS: https://tweeterid.com/
@@ -120,11 +121,13 @@ async def on_ready():
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
 
+    
 
-
-    send_fut = asyncio.run_coroutine_threadsafe(stream_tweet(), BaseProgram.loop)
+    # await stream_tweet()
+    # send_fut = asyncio.run_coroutine_threadsafe(stream_tweet(), BaseProgram.loop)
     # send_fut.result()
-
+    Bot.loop.create_task(stream_tweet())
+    # BaseProgram.loop.run_forever()
 
 
 if os.name == "nt": # PC Mode
@@ -149,11 +152,13 @@ Bot.add_cog(GuideCog(Bot))
 Bot.add_cog(WikiCog(Bot))
 
 Bot.add_cog(RedditCog(Bot)) 
-Bot.add_cog(TwitterCog(Bot, api))
+Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 
 # Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
 Bot.add_cog(TextUploaders(Bot))
+
+
 
 print("> Starting Bot...")
 Bot.run(DISCORD_TOKEN)
