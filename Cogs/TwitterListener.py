@@ -157,12 +157,14 @@ class TweetTools(BaseTools):
             
             if os.name == "nt":
                 channel = await self.bot.fetch_channel(799238286539227136)
-                if BaseProgram.tweet_call == "stuff":
+                if send_ping == "automatic":
                     await channel.send("<@&814054683651342366>")
+                    print("happened!?!")
             else:
                 channel = await self.bot.fetch_channel(812318143322128384)
-                if BaseProgram.tweet_call == "stuff":
+                if send_ping == "automatic":
                     await channel.send("<@&811305081063604290>")
+                    
 
             await channel.send(embed=embedVar)
             print("Done")
