@@ -77,15 +77,18 @@ class RedditCog(commands.Cog, BaseTools):
             link_ = f"https://www.reddit.com{sub.permalink}"
             image_ = None
             footer_ = None
+            is_video_= sub.is_video
+
             if not sub.is_self:  # We only want to work with link posts
                 image_ = str(sub.url)
             print(title_)
             try:
                 image_ = sub.media_metadata[list(sub.media_metadata)[0]]["s"]["u"]
+                footer_ = "This is a gallery post."
             except:
                 pass
             if sub.is_video == True:
-                image_ = sub.preview.images[0].source.url
+                image_ = sub.preview["images"][0]["source"]["url"]
                 print(image_)
                 footer_ = "This is a video post."
             text_ = str(sub.selftext)
@@ -97,7 +100,8 @@ class RedditCog(commands.Cog, BaseTools):
                 "link": link_,
                 "image": image_,
                 "text": text_,
-                "time": time_
+                "time": time_,
+                "is_video": is_video_
             }
 
             self.git_save("reddit_logs")
