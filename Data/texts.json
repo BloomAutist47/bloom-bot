@@ -74,7 +74,7 @@
                 "text":"🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening.\n🔹**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n"
             },
             "7.) Flash Player Pro not working fix":{
-                "text":"🔹**Description**: Flash player pro wont work or you get the error below.\n🔹**Solution**: \n\n1.) Download [install_flash_player_ax.exe](https://cdn.discordapp.com/attachments/811305082377207866/812362328964202546/install_flash_player_ax.exe)\n2.) Once downloaded, right click on it and choose properties.\n3.) On Compatibility tab, tick `Run this program in compatibility mode for`, and choose `Windows 7`. 4.) Click Ok. Install install_flash_player_ax.exe.\n",
+                "text":"🔹**Description**: Flash player pro wont work or you get the error below.\n🔹**Solution**: \n\n1.) Download [install_flash_player_ax.exe](https://cdn.discordapp.com/attachments/811305082377207866/812362328964202546/install_flash_player_ax.exe)\n2.) Once downloaded, right click on it and choose properties.\n3.) On Compatibility tab, tick `Run this program in compatibility mode for`, and choose `Windows 7`.\n4.) Click Ok. Install install_flash_player_ax.exe.\n",
                 "image":"https://cdn.discordapp.com/attachments/805367955923533845/824146799916351528/unknown.png"
             }
         }
