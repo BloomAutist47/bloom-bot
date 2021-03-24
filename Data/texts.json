@@ -1,8 +1,8 @@
 {
     "faqs":{
-        "title": "Frequently Asked Questions",
-        "description": "Do you have any questions? Browse here first and see how things work.",
-        "content": {
+        "title":"Frequently Asked Questions",
+        "description":"Do you have any questions? Browse here first and see how things work.",
+        "content":{
             "1.) How do I use a boat?":{
                 "text":"You will need the **Grimoire 3.8+ PRO v1.7.8**. application to run boats. You can download the application from our portal site, https://adventurequest.life/, instructions to do so are in #how-to-find-boats if you need any help. Once you do that, simply download a boat and load it.\n\n> Bo(a)t -> Misc -> Load Boat [ NOT Load Boat (command) ]\nHow to load a boat: \n\n",
                 "image":"https://media.discordapp.net/attachments/782192890847559695/798486266013941780/oy7f3EZpWA.gif?width=930&height=587"
@@ -44,14 +44,14 @@
                 "text":"It'll drop. The drop rate scales with the amount of complaining.\n\n||Unless you forgot to whitelist it <:KekU:804648765612228648>||\n\n"
             },
             "14.) Why is my account not relogging":{
-                "text": "Is your account not relogging?\nCheck if you changed the details to a previously saved account \nIf you had a previously saved account, put your new details in, press log in then reload your Grimoire.\nIf you do not reload Grimoire your username will be Null meaning it will not relog.\n"
+                "text":"Is your account not relogging?\nCheck if you changed the details to a previously saved account \nIf you had a previously saved account, put your new details in, press log in then reload your Grimoire.\nIf you do not reload Grimoire your username will be Null meaning it will not relog.\n"
             }
         }
     },
     "grimfix":{
-        "title": "How to fix Grimoire.",
-        "description": "Does your grim have problem? Browse here and see common fixes.",
-        "content": {
+        "title":"How to fix Grimoire.",
+        "description":"Does your grim have problem? Browse here and see common fixes.",
+        "content":{
             "1.) Delete 133spider's mms.cfg fix":{
                 "text":"🔹**Description**: 133spider released a fix to enable flash player gain.\n🔹**Symptoms**: Grimoire is opening but not loading.\n🔹**Solution**: Delete mms.cfg if you did the spider fix:```CSS\nC:\\Windows\\SysWOW64\\Macromed\\Flash\\mms.cfg \nC:\\Windows\\System32\\Macromed\\Flash\\mms.cfg```\n"
             },
@@ -71,12 +71,16 @@
                 "image":"https://media.discordapp.net/attachments/805367955923533845/814088319281135616/unknown.png?width=1440&height=527"
             },
             "6.) Windows Update Flash Fix":{
-                "text": "🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening.\n🔹**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n"
+                "text":"🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening.\n🔹**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n"
+            },
+            "7.) Flash Player Pro not working fix":{
+                "text":"🔹**Description**: Flash player pro wont work or you get the error below.\n🔹**Solution**: \n\n1.) Download [install_flash_player_ax.exe]()\n2.) Once downloaded, right click on it and choose properties.\n3.) On Compatibility tab, tick `Run this program in compatibility mode for`, and choose `Windows 7`. 4.) Click Ok. Install install_flash_player_ax.exe.\n",
+                "image":"https://cdn.discordapp.com/attachments/805367955923533845/824146799916351528/unknown.png"
             }
         }
     },
     "askhelp":{
-        "content": "1. Don't ask basic questions that can be looked up on the [wikidot](http://aqwwiki.wikidot.com/)\n\n(Google aqw <item name> if wiki search is hard to use).\n\n2. Mention your problem in detail, including the name of the boat you downloaded as well as the name of the person who made the boat.\n\n3. Don't ask \"Can I ask a question?\", just ask the question directly for faster answers. This server is intended for asking questions.\n\n4. Provide a screenshot using snipping tool or go on the screen sharing voice chat to show us what problems you're facing if needed.\n\n",
-        "thumbnail": "https://images-ext-1.discordapp.net/external/XzfpshPwo1pMhUX4As5SdEIPga8EZjjybut5bx-eYPk/https/images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%253Fsize%253D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
+        "content":"1. Don't ask basic questions that can be looked up on the [wikidot](http://aqwwiki.wikidot.com/)\n\n(Google aqw <item name> if wiki search is hard to use).\n\n2. Mention your problem in detail, including the name of the boat you downloaded as well as the name of the person who made the boat.\n\n3. Don't ask \"Can I ask a question?\", just ask the question directly for faster answers. This server is intended for asking questions.\n\n4. Provide a screenshot using snipping tool or go on the screen sharing voice chat to show us what problems you're facing if needed.\n\n",
+        "thumbnail":"https://images-ext-1.discordapp.net/external/XzfpshPwo1pMhUX4As5SdEIPga8EZjjybut5bx-eYPk/https/images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%253Fsize%253D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
     }
 }
