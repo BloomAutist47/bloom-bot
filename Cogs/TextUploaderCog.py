@@ -9,7 +9,7 @@ class TextUploaders(commands.Cog, BaseTools):
     def __init__(self, Bot):
         self.setup()
         self.bot = Bot
-        # BaseProgram.sqlock = False
+        BaseProgram.sqlock = False
 # 
 
     @commands.command()
@@ -58,11 +58,16 @@ class TextUploaders(commands.Cog, BaseTools):
             await ctx.send("\> Only a .txt files are allowed with `;uptext` command.")
             return  
 
+
+
         target_url = attach.url
         print(target_url)
-        
+                
+
         data = await self.get_site_content(URL=target_url, is_soup=False, encoding="cp1252")
         text = str(data).split("\n")
+
+        await self.clear(ctx)
 
         desc = ""
         for i in text:
@@ -102,6 +107,8 @@ class TextUploaders(commands.Cog, BaseTools):
             await ctx.send("\> Text does not exists in current repository.")
             return
 
+        await self.clear(ctx)
+
         index = {}
 
         BaseProgram.database_updating = True
@@ -109,7 +116,6 @@ class TextUploaders(commands.Cog, BaseTools):
             description=BaseProgram.texts[textfile]["description"])
         item_1 = await ctx.send(embed=embedVar)
         start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
-        await ctx.send("\u200b")
         for title in BaseProgram.texts[textfile]["content"]:
 
 
@@ -117,10 +123,10 @@ class TextUploaders(commands.Cog, BaseTools):
                 description=BaseProgram.texts[textfile]["content"][title]["text"])
             if "image" in BaseProgram.texts[textfile]["content"][title]:
                 embedVar.set_image(url=BaseProgram.texts[textfile]["content"][title]["image"])
-            item = await ctx.send(embed=embedVar)
+            item = await ctx.send("\u200b", embed=embedVar)
             start_link = f'https://discordapp.com/channels/{item.guild.id}/{item.channel.id}/{item.id}'
             index[title] = start_link
-            await ctx.send("\u200b")
+            # await ctx.send("\u200b")
 
         
 
@@ -166,10 +172,22 @@ class TextUploaders(commands.Cog, BaseTools):
             start_shit = True
         else:
             embedVar.add_field(name="\u200b", value=desc, inline=False)
-        await ctx.send(embed=embedVar)
+        await ctx.send("\u200b", embed=embedVar)
         BaseProgram.database_updating = False
         return
 
+    async def clear(self, ctx):
+        print("yes?")
+        length = await ctx.message.channel.history(limit=999).flatten()
+        num = len(length)
+        div = 100
+        target = [num // div + (1 if x < num % div else 0)  for x in range (div)]
+
+        for tar in target:
+            async for message in ctx.message.channel.history(limit=tar):
+                await ctx.message.channel.delete_messages([message])
+
+        
 
     def read_text(self, path):
         f = open(path, "r", encoding='cp1252')
