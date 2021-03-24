@@ -9,7 +9,7 @@ class TextUploaders(commands.Cog, BaseTools):
     def __init__(self, Bot):
         self.setup()
         self.bot = Bot
-        BaseProgram.sqlock = False
+        # BaseProgram.sqlock = False
 # 
 
     @commands.command()
