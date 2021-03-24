@@ -76,6 +76,7 @@ class RedditCog(commands.Cog, BaseTools):
             title_ = str(sub.title)
             link_ = f"https://www.reddit.com{sub.permalink}"
             image_ = None
+            footer_ = None
             if not sub.is_self:  # We only want to work with link posts
                 image_ = str(sub.url)
             print(title_)
@@ -83,7 +84,10 @@ class RedditCog(commands.Cog, BaseTools):
                 image_ = sub.media_metadata[list(sub.media_metadata)[0]]["s"]["u"]
             except:
                 pass
-            
+            if sub.is_video == True:
+                image_ = sub.preview.images[0].source.url
+                print(image_)
+                footer_ = "This is a video post."
             text_ = str(sub.selftext)
             time_ = self.get_date(sub)
 
@@ -99,12 +103,12 @@ class RedditCog(commands.Cog, BaseTools):
             self.git_save("reddit_logs")
 
 
-            await self.send_webhook(sub_name, author_, title_, link_, image_, time_, text_)
+            await self.send_webhook(sub_name, author_, title_, link_, image_, time_, text_, footer_)
             await asyncio.sleep(1)
 
             print(f"Title: {sub.title}\nAuthor: u/{sub.author}\nAuthor Link: https://www.reddit.com/user/{sub.author}/\nScore: {sub.score}\nID: {sub.id}\nURL: https://www.reddit.com{sub.permalink}\nImage URL: {sub.url}\n\n")
 
-    async def send_webhook(self, sub_name_, author_, title_, link_, image_, time_, text_):
+    async def send_webhook(self, sub_name_, author_, title_, link_, image_, time_, text_, footer_):
         webhook = DiscordWebhook(url=self.channel_urls)
 
         # create embed object for webhook
@@ -120,6 +124,8 @@ class RedditCog(commands.Cog, BaseTools):
         embed.add_embed_field(name='Date Posted:', value=time_, inline=True)
         if image_:
             embed.set_image(url=image_.strip())
+        if footer_:
+            embed.set_footer(text=footer_)
         webhook.add_embed(embed)
         response = webhook.execute()
 
