@@ -500,7 +500,7 @@ class TwitterCog(commands.Cog, TweetTools):
     @tasks.loop(seconds=10)
     async def tweet_looker(self):
         if BaseProgram.status_list == []:
-            print("not this")
+            # print("not this")
             return
         for status in BaseProgram.status_list:
             await self.process_data(status)
