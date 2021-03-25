@@ -3404,6 +3404,15 @@
             "text": "",
             "time": "25 March 2021 | 06:27 AM ",
             "is_video": false
+        },
+        "mckq2h": {
+            "author": "vulgv",
+            "title": "LR vs NMC",
+            "link": "https://www.reddit.com/r/AQW/comments/mckq2h/lr_vs_nmc/",
+            "image": null,
+            "text": "I've done some testing in /revenant to see how does Nechronomancer compare to Legion Revenant. \n\nTesting conditions:\n\nlevel 100 with level 100 enhancements, ArchFiend DoomLord for 35% bonus dmg to all monsters, full luck with health vamp for NCM, full wizard for LR with either spiral carve or awe blast, I've tested with both\n\nAt first I've tried to see how many Forgotten Soul I could kill with each class in 1 minute and here are my logs of it:\n\nNCM - 13 kills, 2-3-4 rotation  \nLR - 13 kills, spiral carve  \nLR - 11 kills, spiral carve  \nNCM - 15 kills, 2-3-4 rotation  \nLR - 13 kills, spiral carve\n\nI expected NCM to be better at this, that's why I insisted more to see LR's potential\n\nAfter this, I switched to Awe Blast for LR and tested NCM using the full combo:\n\nLR - 13 kills, awe blast  \nNCM - 13 kills, full combo - messed up in the beginning cause I got scared I'd die  \nNCM - 14 kills, full combo - didn't mess up  \nNCM - 14 kills, full combo  \nLR - 12 kills, awe blast, started the combo with 4-5-3-2 instead of my usual 4-3-5-2\n\nSeeing these results, I presumed the 2-3-4 combo worked best for NCM and for LR I kept Awe Blast on because there wasn't a real difference between this and Spiral Carve\n\nI did one more testing round with the combos I had most success with and here are the results:\n\nNCM - 14 kills, 2-3-4 rotationLR - 12 kills, awe blast",
+            "time": "25 March 2021 | 08:05 AM ",
+            "is_video": false
         }
     },
     "FashionQuestWorlds": {
