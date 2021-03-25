@@ -1504,7 +1504,7 @@
             "fast_obtain_difficulty": "B"
         },
         "type": "available",
-        "location": "Quest, /classhall",
+        "location": "Complete multiple Questline, /classhall",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/819758283777638410/Dragon_of_Time_Class_Chart.png"
     },
     "DragonLord": {
@@ -2449,7 +2449,7 @@
             "fast_obtain_method": "N/A"
         },
         "type": "available",
-        "location": "Quest - need LightMage",
+        "location": "/celestialrealm, finish quest, needs 1k AC Light Mage",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650463293538344/LightCaster_Class_Chart.png"
     },
     "LightMage": {
@@ -3413,7 +3413,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650683745370172/StarLord_Class_Chart.png"
     },
     "StoneCrusher": {
-        "acronym": "SC",
+        "acronym": "SC, IT",
         "awe_enh": "Spiral Carve",
         "duplicates": [
             "Infinity Titan"
@@ -3443,7 +3443,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650690615771206/StoneCrusher_Class_Chart.png"
     },
     "The Collector": {
-        "acronym": "(None)",
+        "acronym": "(None), Collector",
         "awe_enh": "Spiral Carve",
         "duplicates": [],
         "enh": "wizard",
@@ -3467,7 +3467,7 @@
             "fast_obtain_difficulty": "C"
         },
         "type": "available",
-        "location": "Merge, Daily",
+        "location": "/collection, merge daily tokens",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650707640844318/The_Collector_Class_Chart.png"
     },
     "Thief of Hours": {
