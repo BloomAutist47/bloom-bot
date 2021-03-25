@@ -2,7 +2,7 @@
 import tweepy
 import re
 from .Base import *
-from discord.ext import commands
+from discord.ext import commands, tasks
 import asyncio
 from threading import Thread
 from pprint import pprint
@@ -363,6 +363,7 @@ class TwitterCog(commands.Cog, TweetTools):
         self.tweet_tools()
         self.bot = bot
         self.api = api
+        self.tweet_looker.start()
         # self.auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
         # self.auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
 
@@ -496,25 +497,17 @@ class TwitterCog(commands.Cog, TweetTools):
         pprint(tweet_)
         await self.tweet_send(tweet_["tweet"], tweet_["image_url"], tweet_["id"], tweet_["time"])
 
+    @tasks.loop(seconds=10)
+    async def tweet_looker(self):
+        if BaseProgram.status_list == []:
+            print("not this")
+            return
+        for status in BaseProgram.status_list:
+            await self.process_data(status)
 
+        BaseProgram.status_list = []
 
-
-class TwitterListener(tweepy.StreamListener, TweetTools):
-    def __init__(self, bot, api,  *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.loop = bot.loop
-        # self.discord = discord # this is just a function which sends a message to a channel
-        # self.loop = loop # this is the loop of discord client
-        self.bot = bot
-        # self.api = api
-        # self.me = api.me()
-        self.tweet_text = ""
-        self.image_url = ""
-        self.tweet_tools()
-        self.setup()
-
-    def on_status(self, status=""):
-
+    async def process_data(self, status=""):
         self.is_double = False
         got = False
 
@@ -527,7 +520,7 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
             # Checks if wrong tweet
             for i in self.black_list:
                 if i.lower() in tweet_text:
-                    self.send_to_discord(status.id, status.user.id_str)
+                    await self.send_to_discord(status.id, status.user.id_str)
                     return
 
             # Checks if double boost
@@ -547,30 +540,51 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
                         break
 
             if not got:
-                self.send_to_discord(status.id, status.user.id_str)
+                await self.send_to_discord(status.id, status.user.id_str)
                 return
 
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
-            self.loop.create_task(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"))
-            # send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"), BaseProgram.loop)
+            # self.loop.create_task(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"))
+            await self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic")
+            print("It's just the human condition to have anxieties and worries.")
+             # send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"), BaseProgram.loop)
             # send_fut.result()
             return
         else:
             # print(status)
             print('text: ' + status.text)
-            self.send_to_discord(status.id, status.user.id_str)
+            await self.send_to_discord(status.id, status.user.id_str)
             return
 
-
-
-    def on_error(self, status):
-        print(status)
-
-    def send_to_discord(self, id_, tweet_id):
+    async def send_to_discord(self, id_, tweet_id):
         if tweet_id != BaseProgram.tweet_user:
             return
-        self.loop.create_task(self.tweet_simple(id_))
+        await self.tweet_simple(id_)
+        # self.loop.create_task(self.tweet_simple(id_))
         # send_fut = asyncio.run_coroutine_threadsafe(self.tweet_simple(id_), BaseProgram.loop)
         # send_fut.result()
         return
+
+
+
+class TwitterListener(tweepy.StreamListener, TweetTools):
+    def __init__(self, bot, api,  *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.loop = bot.loop
+        # self.discord = discord # this is just a function which sends a message to a channel
+        # self.loop = loop # this is the loop of discord client
+        self.bot = bot
+        # self.api = api
+        # self.me = api.me()
+        self.tweet_text = ""
+        self.image_url = ""
+        self.tweet_tools()
+        self.setup()
+
+    def on_status(self, status=""):
+        BaseProgram.status_list.append(status)
+        return
+
+    def on_error(self, status):
+        print(status)
 

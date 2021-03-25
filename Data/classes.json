@@ -1504,8 +1504,8 @@
             "fast_obtain_difficulty": "B"
         },
         "type": "available",
-        "location": "Quest, /classhall",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/819758283777638410/Dragon_of_Time_Class_Chart.png"
+        "location": "Complete multiple Questline, /classhall",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/824627983301083136/Dragon_of_Time_Class_Chart.png"
     },
     "DragonLord": {
         "acronym": "DL",
@@ -2449,8 +2449,8 @@
             "fast_obtain_method": "N/A"
         },
         "type": "available",
-        "location": "Quest - need LightMage",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650463293538344/LightCaster_Class_Chart.png"
+        "location": "/celestialrealm, finish quest, needs 1k AC Light Mage",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/824628058081853440/LightCaster_Class_Chart.png"
     },
     "LightMage": {
         "acronym": "LM",
@@ -3413,7 +3413,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650683745370172/StarLord_Class_Chart.png"
     },
     "StoneCrusher": {
-        "acronym": "SC",
+        "acronym": "SC, IT",
         "awe_enh": "Spiral Carve",
         "duplicates": [
             "Infinity Titan"
@@ -3440,10 +3440,10 @@
         },
         "type": "available",
         "location": "Rep, r10 Brightoak, r10 Mythsong, r10 Arcangrove",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650690615771206/StoneCrusher_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/824628091493285928/StoneCrusher_Class_Chart.png"
     },
     "The Collector": {
-        "acronym": "(None)",
+        "acronym": "(None), Collector",
         "awe_enh": "Spiral Carve",
         "duplicates": [],
         "enh": "wizard",
@@ -3467,8 +3467,8 @@
             "fast_obtain_difficulty": "C"
         },
         "type": "available",
-        "location": "Merge, Daily",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650707640844318/The_Collector_Class_Chart.png"
+        "location": "/collection, merge daily tokens",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/824628133750636584/The_Collector_Class_Chart.png"
     },
     "Thief of Hours": {
         "acronym": "ToH",

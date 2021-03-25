@@ -70,7 +70,7 @@ class BaseProgram:
 
     tweets_listener = ""
     streams = []
-
+    status_list = []
     git_already = False
     
 
