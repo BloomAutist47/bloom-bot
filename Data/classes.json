@@ -2778,21 +2778,21 @@
         "awe_enh": "Health Vamp",
         "duplicates": [],
         "enh": "luck",
-        "note": "",
+        "note": "Health Vamp is an absolute necessity",
         "wiki": "http://aqwwiki.wikidot.com/nechronomancer",
         "stats": [
             3,
             5,
             2,
             3,
-            3,
+            2,
             6,
             3
         ],
         "tags": [
             "heromart"
         ],
-        "bludrut": 6,
+        "bludrut": 2,
         "acquire": {
             "ac_version": "Prem",
             "irl_money": true,
@@ -3061,14 +3061,6 @@
         "type": "seasonal",
         "location": "Quest, Seasonal, TLaPD, Classic Pirate",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/818650590141743124/Pirate_Class_Chart.png"
-    },
-    "Pumpkin Lord": {
-        "acronym": "",
-        "awe_enh": "Spiral Carve",
-        "duplicates": [],
-        "enh": "luck",
-        "note": "",
-        "wiki": "http://aqwwiki.wikidot.com/pumpkin-lord"
     },
     "Pyromancer": {
         "acronym": "Pyro",
@@ -3842,7 +3834,8 @@
             "Beast Warrior",
             "WarriorScythe General",
             "Cryomancer Mini Pet Coming Soon",
-            "Void Highlord Tester"
+            "Void Highlord Tester",
+            "Pumpkin Lord"
         ],
         "enh": "luck",
         "note": "",
