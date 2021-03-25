@@ -10,7 +10,7 @@ heroku config
 $ heroku login
 $ heroku ps:scale worker=1 -a bloom-2
 # ➣➣
-
+#EACD8A skin color
 """
 
 # Imports
