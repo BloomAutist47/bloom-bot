@@ -70,6 +70,7 @@ class BaseProgram:
     PORTAL_AGENT = ""
 
     tweets_listener = ""
+    twitter_logs = {}
     streams = []
     status_list = []
     git_already = False
@@ -330,7 +331,7 @@ class BaseProgram:
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "streams", "reddit_logs"]
+            mode = ["database", "guides", "classes", "settings", "streams", "reddit_logs", "twitter_logs"]
 
         if "database" in mode:
             with open('./Data/database.json', 'w', encoding='utf-8') as f:
@@ -371,7 +372,7 @@ class BaseProgram:
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "streams", "reddit_logs"]
+            mode = ["database", "guides", "classes", "settings", "streams", "reddit_logs", "twitter_logs"]
 
         if "database" in mode:
             git_data = json.dumps(BaseProgram.data, indent=4).encode('utf-8')
@@ -433,7 +434,7 @@ class BaseProgram:
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "streams"]
+            mode = ["database", "guides", "classes", "settings", "streams", "twitter_logs", "twitter_logs"]
 
         if "database" in mode:
             git_data = BaseProgram.repository.file_contents("./Data/database.json").decoded
@@ -467,7 +468,7 @@ class BaseProgram:
             BaseProgram.reddit_logs = json.loads(git_reddit_logs.decode('utf-8'))
         if "twitter_logs" in mode:
             git_twitter_logs = BaseProgram.repository.file_contents("./Data/twitter_logs.json").decoded
-            BaseProgram.twitter_logs = json.loads(BaseProgram.decode('utf-8'))
+            BaseProgram.twitter_logs = json.loads(git_twitter_logs.decode('utf-8'))
 
 
         # Saving
