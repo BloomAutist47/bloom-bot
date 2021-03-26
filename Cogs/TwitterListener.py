@@ -546,7 +546,7 @@ class TwitterCog(commands.Cog, TweetTools):
             await self.tweet_simple(tweet.id)
 
 
-    @tasks.loop(seconds=10)
+    @tasks.loop(seconds=60)
     async def tweet_looker(self):
         if BaseProgram.status_list == []:
             # print("not this")
