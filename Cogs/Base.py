@@ -34,6 +34,7 @@ class BaseProgram:
     guides = {}
     tweet_call = ""
     reddit_logs = {}
+    twitter_updating = False
 
     # loop = asyncio.ProactorEventLoop() # for subprocess' pipes on Windows
     # asyncio.set_event_loop(loop)
@@ -309,6 +310,11 @@ class BaseProgram:
             with open('./Data/reddit_logs.json', 'r', encoding='utf-8') as f:
                 BaseProgram.reddit_logs = json.load(f)
 
+        if "twitter_logs" in mode:
+            with open('./Data/twitter_logs.json', 'r', encoding='utf-8') as f:
+                BaseProgram.twitter_logs = json.load(f)
+
+
         self.sort_privileged_roles()
         self.sort_author_list_lowercase()
 
@@ -348,6 +354,9 @@ class BaseProgram:
         if "reddit_logs" in mode:
             with open('./Data/reddit_logs.json', 'w', encoding='utf-8') as f:
                 json.dump(BaseProgram.reddit_logs, f, ensure_ascii=False, indent=4)
+        if "twitter_logs" in mode:
+            with open('./Data/twitter_logs.json', 'w', encoding='utf-8') as f:
+                json.dump(BaseProgram.twitter_logs, f, ensure_ascii=False, indent=4)
 
 
     def git_save(self, mode:str):
@@ -404,7 +413,11 @@ class BaseProgram:
             contents_object = BaseProgram.repository.file_contents("./Data/reddit_logs.json")
             contents_object.update("update", git_reddit_logs)
             self.file_save("reddit_logs")
-
+        if "twitter_logs" in mode:
+            git_twitter_logs = json.dumps(BaseProgram.twitter_logs, indent=4).encode('utf-8')
+            contents_object = BaseProgram.repository.file_contents("./Data/twitter_logs.json")
+            contents_object.update("update", git_twitter_logs)
+            self.file_save("twitter_logs")
 
         return
 
@@ -452,6 +465,9 @@ class BaseProgram:
         if "reddit_logs" in mode:
             git_reddit_logs = BaseProgram.repository.file_contents("./Data/reddit_logs.json").decoded
             BaseProgram.reddit_logs = json.loads(git_reddit_logs.decode('utf-8'))
+        if "twitter_logs" in mode:
+            git_twitter_logs = BaseProgram.repository.file_contents("./Data/twitter_logs.json").decoded
+            BaseProgram.twitter_logs = json.loads(BaseProgram.decode('utf-8'))
 
 
         # Saving

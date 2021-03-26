@@ -103,7 +103,7 @@ class TextUploaders(commands.Cog, BaseTools):
             await ctx.send("\> Please enter valid value.")
             return
 
-        if textfile not in BaseProgram.texts:
+        if textfile not in BaseProgram.texts["Texts"]:
             await ctx.send("\> Text does not exists in current repository.")
             return
 
@@ -112,47 +112,26 @@ class TextUploaders(commands.Cog, BaseTools):
         index = {}
 
         BaseProgram.database_updating = True
-        embedVar = discord.Embed(title=BaseProgram.texts[textfile]["title"], color=BaseProgram.block_color,
-            description=BaseProgram.texts[textfile]["description"])
+        embedVar = discord.Embed(title=BaseProgram.texts["Texts"][textfile]["title"], color=BaseProgram.block_color,
+            description=BaseProgram.texts["Texts"][textfile]["description"])
         item_1 = await ctx.send(embed=embedVar)
         start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
-        for title in BaseProgram.texts[textfile]["content"]:
+        for title in BaseProgram.texts["Texts"][textfile]["content"]:
 
 
             embedVar = discord.Embed(title=title, color=BaseProgram.block_color,
-                description=BaseProgram.texts[textfile]["content"][title]["text"])
-            if "image" in BaseProgram.texts[textfile]["content"][title]:
-                embedVar.set_image(url=BaseProgram.texts[textfile]["content"][title]["image"])
+                description=BaseProgram.texts["Texts"][textfile]["content"][title]["text"])
+            if "image" in BaseProgram.texts["Texts"][textfile]["content"][title]:
+                embedVar.set_image(url=BaseProgram.texts["Texts"][textfile]["content"][title]["image"])
             item = await ctx.send("\u200b", embed=embedVar)
             start_link = f'https://discordapp.com/channels/{item.guild.id}/{item.channel.id}/{item.id}'
             index[title] = start_link
-            # await ctx.send("\u200b")
 
-        
-
-        # desc = ""
-        # count = 1
-        # embedVar = self.embed_single(BaseProgram.texts[textfile]["title"], BaseProgram.texts[textfile]["description"] + f"\n[Click here to go to the Top]({start_link_1})")
-        
-        # for title in index:
-        #     desc += f"{count} [{title}]({index[title]})\n-" 
-        #     count += 1
-        # chunks = textwrap.wrap(desc, 1024, break_long_words=False, break_on_hyphens=True)
-        # embedVar.add_field(name="Table of Contents", value=chunks[0], inline=False)
-        # if len(chunks) > 1:
-        #     for chunk in chunks[1:]:
-        #         embedVar.add_field(name="Table of Contents", value=chunk, inline=False)
-
-        # await ctx.send(embed=embedVar)
-        # BaseProgram.database_updating = False
-        # return
-
-    
         desc = ""
         count = 0
         text_count = 1
         start_shit = False
-        embedVar = self.embed_single(BaseProgram.texts[textfile]["title"], BaseProgram.texts[textfile]["description"] + f"\n[Click here to go to the Top]({start_link_1})")
+        embedVar = self.embed_single(BaseProgram.texts["Texts"][textfile]["title"], BaseProgram.texts["Texts"][textfile]["description"] + f"\n[Click here to go to the Top]({start_link_1})")
         for title in index:
             if count == 6:
                 if not start_shit:
@@ -175,6 +154,39 @@ class TextUploaders(commands.Cog, BaseTools):
         await ctx.send("\u200b", embed=embedVar)
         BaseProgram.database_updating = False
         return
+
+
+    @commands.command()
+    async def upinfo(self, ctx, textfile=""):
+        allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_fags")
+        if not allow_:
+            return
+
+        if BaseProgram.sqlock:
+            return
+
+        if not textfile:
+            await ctx.send(r"\> Please enter valid value.")
+            return
+
+        if textfile not in BaseProgram.texts["Embed"]:
+            await ctx.send(r"\> Text does not exists in current repository.")
+            return
+
+        dat = BaseProgram.texts["Embed"][textfile]
+        count = 0
+        text_count = 1
+        start_shit = False
+        embedVar = discord.Embed(title=textfile, color=BaseProgram.block_color, 
+            description=dat["description"])
+
+        for item in dat["embed_list"]:
+            embedVar.add_field(name="", value=desc, inline=False)
+
+        await ctx.send("\u200b", embed=embedVar)
+        BaseProgram.database_updating = False
+        return
+
 
     async def clear(self, ctx):
         print("yes?")

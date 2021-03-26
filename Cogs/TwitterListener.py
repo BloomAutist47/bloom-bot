@@ -453,49 +453,68 @@ class TwitterCog(commands.Cog, TweetTools):
         if not allow_:
             return
 
-        BaseProgram.tweet_call == "uponce"
+        BaseProgram.tweet_call == "updaily"
 
         # this code block is another way of doing the thing below
 
-        user = self.api.get_user("Alina_AE")
+        # user = self.api.get_user("Alina_AE")
 
         got = False
-        time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", count=10, tweet_mode='extended').items(40)
-
+        time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", tweet_mode='extended').items(10)
         tweet_list = []
-        count = 0
-
-        for tweet in time_line:
-            print("new")
+        print("appending")  
+        for tweet in (time_line):
+            print(tweet.id)
             tweet_text = tweet.full_text.lower()
-            for i in self.key_check:
-                if i in tweet_text:
+            # print("did")
+            self.is_double = False
+            got = False
+            tweet_line = tweet.full_text
+
+            # Checks if wrong tweet
+            for i in self.black_list:
+                if i.lower() in tweet_text:
+                    continue
+
+            # Checks if double boost
+            for i in  self.double_check:
+                if i.lower() in tweet_text:
+                    self.is_double = True
                     got = True
                     break
+
+            if not self.is_double:
+                # Check if Daily Gift
+                for i in self.gift_checks:
+                    if i.lower() in tweet_text:
+                        got = True
+                        for i in self.gift_checks:
+                            tweet_line = tweet.full_text.replace(i, "")
+                        break
+
             if not got:
                 continue
-            if "media" not in tweet.entities:
-                continue
 
-            med = tweet.entities['media']
-            for i in med:
-                if "media_url" in i:
-                    time_ = tweet.created_at.strftime("%d %B %Y")
-                    tweet_list.append({
-                        "tweet": tweet.full_text,
-                        "image_url": i["media_url"],
-                        "id": tweet.id,
-                        "time": time_,
-                        })
-                    count += 1
-                    print(count)
-                    got = False
-                    break
-
+            if "media" in tweet.entities:
+                med = tweet.entities['media']
+                for i in med:
+                    if "media_url" in i:
+                        # time_ = tweet.created_at.strftime("%d %B %Y")
+                        tweet_list.append({
+                            "tweet": tweet_line,
+                            "image_url": i["media_url"],
+                            "id": tweet.id,
+                            "time": tweet.created_at,
+                            "double": self.is_double
+                            })
+                        print("done tweet")
+                        got = False
+                        self.is_double = False
+                        break
         print("starting")
-        tweet_ = tweet_list[-1]
-        pprint(tweet_)
-        await self.tweet_send(tweet_["tweet"], tweet_["image_url"], tweet_["id"], tweet_["time"])
+        tweet = tweet_list[0]
+        await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"], double=tweet['double'], send_ping="automatic")
+
 
     @tasks.loop(seconds=10)
     async def tweet_looker(self):
@@ -508,6 +527,14 @@ class TwitterCog(commands.Cog, TweetTools):
         BaseProgram.status_list = []
 
     async def process_data(self, status=""):
+        while True:
+            if BaseProgram.twitter_updating == True:
+                print(BaseProgram.twitter_updating)
+                continue
+            else:
+                break
+
+
         self.is_double = False
         got = False
 
@@ -542,7 +569,7 @@ class TwitterCog(commands.Cog, TweetTools):
             if not got:
                 await self.send_to_discord(status.id, status.user.id_str)
                 return
-
+            self.check_twitter_id(status.id, status.user.id_str)
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
             # self.loop.create_task(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"))
             await self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic")
@@ -559,17 +586,26 @@ class TwitterCog(commands.Cog, TweetTools):
     async def send_to_discord(self, id_, tweet_id):
         if tweet_id != BaseProgram.tweet_user:
             return
+        self.check_twitter_id(id_, tweet_id)
         await self.tweet_simple(id_)
         # self.loop.create_task(self.tweet_simple(id_))
         # send_fut = asyncio.run_coroutine_threadsafe(self.tweet_simple(id_), BaseProgram.loop)
         # send_fut.result()
         return
 
+    def check_twitter_id(self, id_, tweet_id_):
 
+        if id_ not in BaseProgram.twitter_logs:
+            BaseProgram.twitter_logs[id_] = []
+
+        if tweet_id_ not in BaseProgram.twitter_logs[id_]:
+            BaseProgram.twitter_logs[id_].append(tweet_id_)
+        return
 
 class TwitterListener(tweepy.StreamListener, TweetTools):
     def __init__(self, bot, api,  *args, **kwargs):
         super().__init__(*args, **kwargs)
+        
         self.loop = bot.loop
         # self.discord = discord # this is just a function which sends a message to a channel
         # self.loop = loop # this is the loop of discord client
@@ -580,9 +616,13 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
         self.image_url = ""
         self.tweet_tools()
         self.setup()
+        
 
     def on_status(self, status=""):
+        BaseProgram.twitter_updating = True
         BaseProgram.status_list.append(status)
+
+        BaseProgram.twitter_updating = False
         return
 
     def on_error(self, status):
