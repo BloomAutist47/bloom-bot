@@ -66,6 +66,9 @@ class TextUploaders(commands.Cog, BaseTools):
 
         data = await self.get_site_content(URL=target_url, is_soup=False, encoding="cp1252")
         text = str(data).split("\n")
+        
+        fp = BytesIO()
+        await ctx.message.attachments[0].save(fp)
 
         await self.clear(ctx)
 
@@ -80,8 +83,7 @@ class TextUploaders(commands.Cog, BaseTools):
         BaseProgram.database_updating = False
          
         
-        fp = BytesIO()
-        await ctx.message.attachments[0].save(fp)
+
         await ctx.send(file=discord.File(fp, filename=file_n))
         return
         # await self.send_webhook(hook_link, "file", fp, file_n)

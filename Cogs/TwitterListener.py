@@ -5,7 +5,7 @@ from .Base import *
 from discord.ext import commands, tasks
 import asyncio
 from threading import Thread
-from pprint import pprint
+from pprintpp import pprint
 from discord.utils import get
 from datetime import datetime, timedelta
 
@@ -346,14 +346,14 @@ class TweetTools(BaseTools):
     #     print("Done")
     #     return
 
-    async def tweet_simple(self, link):
-        link = str(link)
+    async def tweet_simple(self, id_):
+        link = str(id_)
         if os.name == "nt":
             channel = await self.bot.fetch_channel(799238286539227136)
         else:
             channel = await self.bot.fetch_channel(811309992727937034)
 
-        await channel.send(f"@Alina_AE: https://twitter.com/twitter/statuses/{link}")
+        await channel.send(f"@Alina_AE: https://twitter.com/twitter/statuses/{id_}")
         return
 
 class TwitterCog(commands.Cog, TweetTools):
@@ -515,15 +515,51 @@ class TwitterCog(commands.Cog, TweetTools):
         tweet = tweet_list[0]
         await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"], double=tweet['double'], send_ping="automatic")
 
+    @commands.command()
+    async def uppage(self, ctx):
+        allow_ = await self.allow_evaluator(ctx, mode="role_privilege", command_name="uppage")
+        if not allow_:
+            return
+
+        BaseProgram.tweet_call == "updaily"
+
+        # this code block is another way of doing the thing below
+
+        # user = self.api.get_user("Alina_AE")
+
+        got = False
+        time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", tweet_mode='extended').items(30)
+        tweet_list = []
+
+        for tweet in (time_line):
+                tweet_list.append(tweet)
+                pprint(vars(tweet))
+                print("helooooooooo")
+                # asd
+
+
+        for tweet in reversed(tweet_list):
+            if str(tweet.user.id_str) != BaseProgram.tweet_user:
+                print("not this", tweet.user.id_str, " and ", BaseProgram.tweet_user)
+                continue
+            self.check_twitter_id(tweet.id, tweet.user.id_str)
+            await self.tweet_simple(tweet.id)
+
 
     @tasks.loop(seconds=10)
     async def tweet_looker(self):
         if BaseProgram.status_list == []:
             # print("not this")
             return
-        for status in BaseProgram.status_list:
-            await self.process_data(status)
 
+        while True:
+            for status in BaseProgram.status_list:
+                await self.process_data(status)
+            BaseProgram.status_list = []
+            if BaseProgram.status_list:
+                continue
+            else:
+                break
         BaseProgram.status_list = []
 
     async def process_data(self, status=""):
@@ -583,23 +619,24 @@ class TwitterCog(commands.Cog, TweetTools):
             await self.send_to_discord(status.id, status.user.id_str)
             return
 
-    async def send_to_discord(self, id_, tweet_id):
-        if tweet_id != BaseProgram.tweet_user:
+    async def send_to_discord(self, id_, user_id):
+        if user_id != BaseProgram.tweet_user:
             return
-        self.check_twitter_id(id_, tweet_id)
+        self.check_twitter_id(id_, user_id)
         await self.tweet_simple(id_)
         # self.loop.create_task(self.tweet_simple(id_))
         # send_fut = asyncio.run_coroutine_threadsafe(self.tweet_simple(id_), BaseProgram.loop)
         # send_fut.result()
         return
 
-    def check_twitter_id(self, id_, tweet_id_):
+    def check_twitter_id(self, tweet_id_, user_id_):
 
-        if id_ not in BaseProgram.twitter_logs:
-            BaseProgram.twitter_logs[id_] = []
+        if user_id_ not in BaseProgram.twitter_logs:
+            BaseProgram.twitter_logs[user_id_] = []
 
-        if tweet_id_ not in BaseProgram.twitter_logs[id_]:
-            BaseProgram.twitter_logs[id_].append(tweet_id_)
+        if tweet_id_ not in BaseProgram.twitter_logs[user_id_]:
+            BaseProgram.twitter_logs[user_id_].append(tweet_id_)
+        self.git_save("twitter_logs")
         return
 
 class TwitterListener(tweepy.StreamListener, TweetTools):

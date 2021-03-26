@@ -97,7 +97,7 @@ async def stream_tweet():
         BaseProgram.tweet_user = "1349290524901998592"
     else:
         BaseProgram.tweet_user = "16480141"
-    # tweet_user = "16480141"
+    BaseProgram.tweet_user = "16480141"
 
 
     BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
