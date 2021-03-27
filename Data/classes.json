@@ -2364,7 +2364,7 @@
         "acronym": "LR",
         "awe_enh": "Spiral Carve",
         "duplicates": [
-            "Legion Revenant Member Test"
+            
         ],
         "enh": "wizard",
         "note": "",
@@ -3190,7 +3190,7 @@
         "stats": [
             4,
             4,
-            0,
+            2,
             0,
             5,
             0,
@@ -3207,7 +3207,7 @@
         },
         "type": "seasonal",
         "location": "Shop, Upholder",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/822471836267708426/Sentinel_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/825247323721433109/Sentinel_Class_Chart.png"
     },
     "ShadowScythe General": {
         "acronym": "SSG, SG",
@@ -3835,7 +3835,8 @@
             "WarriorScythe General",
             "Cryomancer Mini Pet Coming Soon",
             "Void Highlord Tester",
-            "Pumpkin Lord"
+            "Pumpkin Lord",
+            "Legion Revenant Member Test"
         ],
         "enh": "luck",
         "note": "",
