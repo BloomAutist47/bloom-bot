@@ -2363,9 +2363,7 @@
     "Legion Revenant": {
         "acronym": "LR",
         "awe_enh": "Spiral Carve",
-        "duplicates": [
-            
-        ],
+        "duplicates": [],
         "enh": "wizard",
         "note": "",
         "wiki": "http://aqwwiki.wikidot.com/legion-revenant-class",
