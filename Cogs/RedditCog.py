@@ -1,7 +1,7 @@
 
 from .Base import *
 from discord.ext import commands
-from threading import Thread
+
 from pprintpp import pprint
 from discord_webhook import DiscordWebhook, DiscordEmbed
 from datetime import datetime
@@ -35,6 +35,8 @@ class RedditCog(commands.Cog, BaseTools):
             password = os.environ.get('REDDIT_PASSWORD')
             user_agent = os.environ.get('REDDIT_USER_AGENT')
 
+
+
         self.channel_urls = [BaseProgram.settings["RedditCogSettings"]["channels"][channel] for channel in BaseProgram.settings["RedditCogSettings"]["channels"]]
         print(self.channel_urls)
 
@@ -43,25 +45,23 @@ class RedditCog(commands.Cog, BaseTools):
                              username = username,  
                              password = password, 
                              user_agent = user_agent) 
-
+        send_fut = asyncio.run_coroutine_threadsafe(self.get_channel(), BaseProgram.loop)
+        # send_fut.result()
         self.loop.create_task(self.listener())
         
-        # send_fut = asyncio.run_coroutine_threadsafe(self.listener(), BaseProgram.loop)
-        # send_fut.result()
-
-    # def load_reddit_log(self):
-    #     with open('./Data/reddit_logs.json', 'r', encoding='utf-8') as f:
-    #         BaseProgram.reddit_logs = json.load(f)
-
-
-    # def save_reddit_log(self):
-    #     with open('./Data/reddit_logs.json', 'w', encoding='utf-8') as f:
-    #         json.dump(BaseProgram.reddit_logs, f, ensure_ascii=False, indent=4)
+    async def get_channel(self):
+        if os.name == "nt":
+            self.channel = await self.bot.fetch_channel(799238286539227136)
+        else:
+            self.channel = await self.bot.fetch_channel(811305082758758434)
+        return
 
     async def listener(self):
+
+
         await asyncio.sleep(10)
         print("Start Watching")
-        subreddit = await self.reddit.subreddit("AQW+FashionQuestWorlds")
+        subreddit = await self.reddit.subreddit("AQW+FashionQuestWorlds+AutoQuestWorlds")
         async for sub in subreddit.stream.submissions():
             # print("submissions")
             sub_name = str(sub.subreddit)
@@ -104,10 +104,39 @@ class RedditCog(commands.Cog, BaseTools):
                 "is_video": is_video_
             }
 
-            self.git_save("reddit_logs")
+            # self.git_save("reddit_logs")
 
 
-            await self.send_webhook(sub_name, author_, title_, link_, image_, time_, text_, footer_)
+
+            embedVar = discord.Embed(title=title_, url=link_, color=BaseProgram.block_color)
+            embed.set_author(name="r/" + sub_name_, url="https://www.reddit.com/r/AQW/", icon_url=BaseProgram.icon_dict[sub_name_])
+            chunks = textwrap.wrap(text_, 1024, break_long_words=False)
+            if chunks:
+                embed.description = chunks[0]
+            if len(chunks) > 0:
+                for chunk in chunks[1:]:
+                    embed.addField(name="\u200b", value=chunk, inline=False)
+
+            embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
+            embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
+
+            print("here")
+            embedVar.add_field(name='Author:', value=f"[u/{author_}](https://www.reddit.com/user/{author_}/)", inline=True)
+            embedVar.add_field(name='Date Posted:', value=time_, inline=True)
+            print("here1")
+            if image_:
+                embedVar.set_image(url=image_.strip())
+                print("here34")
+            if footer_:
+                embedVar.set_footer(text=footer_)
+                print("hereaaa")
+            print("here3")
+                    
+            print("barr")
+            await self.channel.send(embed=embedVar)
+            print("nah")
+
+            # await self.send_webhook(sub_name, author_, title_, link_, image_, time_, text_, footer_)
             await asyncio.sleep(1)
 
             print(f"Title: {sub.title}\nAuthor: u/{sub.author}\nAuthor Link: https://www.reddit.com/user/{sub.author}/\nScore: {sub.score}\nID: {sub.id}\nURL: https://www.reddit.com{sub.permalink}\nImage URL: {sub.url}\n\n")
@@ -117,7 +146,7 @@ class RedditCog(commands.Cog, BaseTools):
 
         # create embed object for webhook
         embed = DiscordEmbed(title=title_, color=BaseProgram.block_color, url=link_)
-        embed.set_author(name="r/" + sub_name_, url="https://www.reddit.com/r/AQW/", icon_url=BaseProgram.icon_aqw)
+        embed.set_author(name="r/" + sub_name_, url="https://www.reddit.com/r/AQW/", icon_url=BaseProgram.icon_dict[sub_name_])
         chunks = textwrap.wrap(text_, 1024, break_long_words=False)
         if chunks:
             embed.description = chunks[0]

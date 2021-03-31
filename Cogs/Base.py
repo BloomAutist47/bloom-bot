@@ -81,7 +81,11 @@ class BaseProgram:
     icon_auqw = "https://images-ext-2.discordapp.net/external/HYh_FWKYc_DqZZAmoIg1ZR0sMSB34aDf0YAFGGLFGSE/%3Fsize%3D1024/https/cdn.discordapp.com/icons/782192889723748362/a_d4c8307eb1dc364f207183a2ee144b4d.gif"
     icon_aqw_g = "https://cdn.discordapp.com/attachments/805367955923533845/813015948256608256/aqw.png"
     icon_google = "https://cdn.discordapp.com/attachments/805367955923533845/813340480330137650/google_chrome_new_logo-512.png"
-
+    icon_dict = {
+        "AutoQuestWorlds":icon_auqw,
+        "FashionQuestWorlds":icon_aqw,
+        "AQW":icon_aqw,
+    }
     icons = {
                 "auqw": {
                     "title": "AutoQuest Worlds",
@@ -115,7 +119,7 @@ class BaseProgram:
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
         os.chdir('..')
         self.file_read("all")
-        self.git_read("all")
+        # self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -923,7 +927,7 @@ class BaseTools(BaseProgram):
                 counts["item"] = 0
                 counts["field"]+=1
 
-            text_item += text + "\n"
+            text_item += "> "+text + "\n"
             counts["item"] += 1
         if two_collumn:
             if counts["field"] == 2:

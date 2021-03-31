@@ -109,7 +109,7 @@ class ClassSearchCog(BaseTools, commands.Cog):
             return
         if not found_class[0] and found_data:
             desc = f'Sorry, nothing came up with your search word {class_name}.\nMaybe one of these?'
-            embedVar = self.embed_multi_text(cmd_title, "Classes", desc, found_data, 10, False)
+            embedVar = self.embed_multi_text(cmd_title, "Classes", desc, found_data, 10, True)
             embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
             await ctx.send(embed=embedVar)
             return
