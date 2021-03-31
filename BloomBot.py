@@ -11,6 +11,9 @@ $ heroku login
 $ heroku ps:scale worker=1 -a bloom-2
 # ➣➣
 #EACD8A skin color
+
+heroku logs --tail --app bloom-1
+
 """
 
 # Imports
@@ -97,14 +100,21 @@ async def stream_tweet():
         BaseProgram.tweet_user = "1349290524901998592"
     else:
         BaseProgram.tweet_user = "16480141"
-    BaseProgram.tweet_user = "16480141"
+    # BaseProgram.tweet_user = "16480141"
 
 
     BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
-    BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, tweet_mode='extended', is_async=True)
+    BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, is_async=True,tweet_mode='extended')
     print("> Twitter Listener Success")
-    
-    BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
+    # BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
+    try:
+        BaseProgram.stream.filter(track=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
+
+    except Exception as e: 
+        print("> Error shit filter", e)
+        Bot.loop.create_task(stream_tweet())
+        
+    # BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
     # BaseProgram.loop.create_task(BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True))
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141

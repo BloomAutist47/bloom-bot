@@ -284,6 +284,11 @@ class BaseProgram:
         mode = mode.split("-")
         if mode == ["all"]:
             mode = ["database", "guides", "classes", "settings", "texts" , "streams", "reddit_logs"]
+        #     for mode in modes:
+
+        
+        # with open('./Data/database.json', 'r', encoding='utf-8') as f:
+        #     BaseProgram.data = json.load(f)
 
         if "database" in mode:
             with open('./Data/database.json', 'r', encoding='utf-8') as f:
@@ -307,6 +312,7 @@ class BaseProgram:
         if "streams" in mode:
             with open('./Data/streams.json', 'r', encoding='utf-8') as f:
                 BaseProgram.streams = json.load(f)
+                
         if "reddit_logs" in mode:
             with open('./Data/reddit_logs.json', 'r', encoding='utf-8') as f:
                 BaseProgram.reddit_logs = json.load(f)

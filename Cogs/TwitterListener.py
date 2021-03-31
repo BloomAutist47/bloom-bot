@@ -8,7 +8,7 @@ from threading import Thread
 from pprintpp import pprint
 from discord.utils import get
 from datetime import datetime, timedelta
-
+import copy
 class TweetTools(BaseTools):
     
 
@@ -546,19 +546,21 @@ class TwitterCog(commands.Cog, TweetTools):
             await self.tweet_simple(tweet.id)
 
 
-    @tasks.loop(seconds=60)
+    @tasks.loop(seconds=10)
     async def tweet_looker(self):
         if BaseProgram.status_list == []:
             # print("not this")
             return
-
+        lenx = copy.deepcopy(len(BaseProgram.status_list))
         while True:
             for status in BaseProgram.status_list:
+                # self.check_twitter_id(status.id, status.user.id_str)
                 await self.process_data(status)
-            BaseProgram.status_list = []
-            if BaseProgram.status_list:
+            if lenx != len(BaseProgram.status_list):
+                print("it changed?!!")
                 continue
             else:
+                BaseProgram.status_list = []
                 break
         BaseProgram.status_list = []
 
@@ -569,7 +571,9 @@ class TwitterCog(commands.Cog, TweetTools):
                 continue
             else:
                 break
-
+        if status.id in BaseProgram.twitter_logs[status.user.id_str]:
+            print("> Already got this")
+            return
 
         self.is_double = False
         got = False
