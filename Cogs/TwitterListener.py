@@ -549,13 +549,14 @@ class TwitterCog(commands.Cog, TweetTools):
     @tasks.loop(seconds=10)
     async def tweet_looker(self):
         if BaseProgram.status_list == []:
-            # print("not this")
+            print("not this")
             return
-        lenx = copy.deepcopy(len(BaseProgram.status_list))
+        lenx = len(BaseProgram.status_list)
         while True:
             for status in BaseProgram.status_list:
                 # self.check_twitter_id(status.id, status.user.id_str)
                 await self.process_data(status)
+                print("whut")
             if lenx != len(BaseProgram.status_list):
                 print("it changed?!!")
                 continue
@@ -565,6 +566,7 @@ class TwitterCog(commands.Cog, TweetTools):
         BaseProgram.status_list = []
 
     async def process_data(self, status=""):
+        print("came")
         while True:
             if BaseProgram.twitter_updating == True:
                 print(BaseProgram.twitter_updating)
@@ -647,7 +649,7 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
     def __init__(self, bot, api,  *args, **kwargs):
         super().__init__(*args, **kwargs)
         
-        self.loop = bot.loop
+        
         # self.discord = discord # this is just a function which sends a message to a channel
         # self.loop = loop # this is the loop of discord client
         self.bot = bot
@@ -657,12 +659,19 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
         self.image_url = ""
         self.tweet_tools()
         self.setup()
+        # self.loop = bot.loop.create_task(self.on_status())
+        
+        print("asdhashdsh")
         
 
     def on_status(self, status=""):
+        if status == "":
+            return
+        print("YES")
         BaseProgram.twitter_updating = True
         BaseProgram.status_list.append(status)
-
+        print("YES")
+        print(status)
         BaseProgram.twitter_updating = False
         return
 

@@ -15,8 +15,9 @@ class RedditCog(commands.Cog, BaseTools):
 
     def __init__(self, bot):
         self.setup()
-        self.bot = bot
+        
         self.loop = bot.loop
+        self.bot = bot
         self.git_read("reddit_logs")
 
         if os.name == "nt":
@@ -45,21 +46,28 @@ class RedditCog(commands.Cog, BaseTools):
                              username = username,  
                              password = password, 
                              user_agent = user_agent) 
-        send_fut = asyncio.run_coroutine_threadsafe(self.get_channel(), BaseProgram.loop)
+        # send_fut = asyncio.run_coroutine_threadsafe(self.get_channel(), BaseProgram.loop)
         # send_fut.result()
+
         self.loop.create_task(self.listener())
-        
-    async def get_channel(self):
+
+    # async def get_channel(self):
+    #     if os.name == "nt":
+    #         self.channel = await self.bot.fetch_channel(799238286539227136)
+    #     else:
+    #         self.channel = await self.bot.fetch_channel(811305082758758434)
+    #     print(self.channel)
+
+
+
+    async def listener(self):
+        await self.bot.wait_until_ready()
         if os.name == "nt":
             self.channel = await self.bot.fetch_channel(799238286539227136)
         else:
             self.channel = await self.bot.fetch_channel(811305082758758434)
-        return
 
-    async def listener(self):
-
-
-        await asyncio.sleep(10)
+        # await asyncio.sleep(10)
         print("Start Watching")
         subreddit = await self.reddit.subreddit("AQW+FashionQuestWorlds+AutoQuestWorlds")
         async for sub in subreddit.stream.submissions():
@@ -89,7 +97,6 @@ class RedditCog(commands.Cog, BaseTools):
                 pass
             if sub.is_video == True:
                 image_ = sub.preview["images"][0]["source"]["url"]
-                print(image_)
                 footer_ = "This is a video post."
             text_ = str(sub.selftext)
             time_ = self.get_date(sub)
@@ -103,44 +110,36 @@ class RedditCog(commands.Cog, BaseTools):
                 "time": time_,
                 "is_video": is_video_
             }
-
-            # self.git_save("reddit_logs")
-
-
+            self.git_save("reddit_logs")
 
             embedVar = discord.Embed(title=title_, url=link_, color=BaseProgram.block_color)
-            embed.set_author(name="r/" + sub_name_, url="https://www.reddit.com/r/AQW/", icon_url=BaseProgram.icon_dict[sub_name_])
-            chunks = textwrap.wrap(text_, 1024, break_long_words=False)
+            embedVar.set_author(name="r/" + sub_name, url=f"https://www.reddit.com/r/{sub_name}/", icon_url=BaseProgram.icon_dict[sub_name])
+            text_ = re.sub(r"(https://preview.redd.it/.+?\n)|(&#x200B;)", "", sub.selftext)
+            text_ = re.sub(r"(\n\n\n)", "\n", text_)
+            chunks = textwrap.wrap(text_, 1024, break_long_words=False, replace_whitespace=False)
+
             if chunks:
-                embed.description = chunks[0]
+                embedVar.description = chunks[0]
             if len(chunks) > 0:
                 for chunk in chunks[1:]:
-                    embed.addField(name="\u200b", value=chunk, inline=False)
+                    embedVar.addField(name="\u200b", value=chunk, inline=False)
 
-            embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
-            embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
-
-            print("here")
             embedVar.add_field(name='Author:', value=f"[u/{author_}](https://www.reddit.com/user/{author_}/)", inline=True)
             embedVar.add_field(name='Date Posted:', value=time_, inline=True)
-            print("here1")
+
             if image_:
                 embedVar.set_image(url=image_.strip())
-                print("here34")
             if footer_:
                 embedVar.set_footer(text=footer_)
-                print("hereaaa")
-            print("here3")
-                    
-            print("barr")
-            await self.channel.send(embed=embedVar)
-            print("nah")
 
-            # await self.send_webhook(sub_name, author_, title_, link_, image_, time_, text_, footer_)
+            await self.channel.send(embed=embedVar)
             await asyncio.sleep(1)
 
-            print(f"Title: {sub.title}\nAuthor: u/{sub.author}\nAuthor Link: https://www.reddit.com/user/{sub.author}/\nScore: {sub.score}\nID: {sub.id}\nURL: https://www.reddit.com{sub.permalink}\nImage URL: {sub.url}\n\n")
+            # await self.send_webhook(sub_name, author_, title_, link_, image_, time_, text_, footer_)
+            
 
+            print(f"Title: {sub.title}\nAuthor: u/{sub.author}\nAuthor Link: https://www.reddit.com/user/{sub.author}/\nScore: {sub.score}\nID: {sub.id}\nURL: https://www.reddit.com{sub.permalink}\nImage URL: {sub.url}\n\n")
+            # print("\n"*5)
     async def send_webhook(self, sub_name_, author_, title_, link_, image_, time_, text_, footer_):
         webhook = DiscordWebhook(url=self.channel_urls)
 

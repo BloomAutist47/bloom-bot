@@ -119,7 +119,7 @@ class BaseProgram:
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
         os.chdir('..')
         self.file_read("all")
-        # self.git_read("all")
+        self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -287,7 +287,7 @@ class BaseProgram:
 
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "texts" , "streams", "reddit_logs"]
+            mode = ["database", "guides", "classes", "settings", "texts" , "streams", "reddit_logs", "twitter_logs"]
         #     for mode in modes:
 
         
@@ -423,6 +423,7 @@ class BaseProgram:
             git_reddit_logs = json.dumps(BaseProgram.reddit_logs, indent=4).encode('utf-8')
             contents_object = BaseProgram.repository.file_contents("./Data/reddit_logs.json")
             contents_object.update("update", git_reddit_logs)
+            print("what")
             self.file_save("reddit_logs")
         if "twitter_logs" in mode:
             git_twitter_logs = json.dumps(BaseProgram.twitter_logs, indent=4).encode('utf-8')
@@ -444,7 +445,7 @@ class BaseProgram:
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "streams", "twitter_logs", "twitter_logs"]
+            mode = ["database", "guides", "classes", "settings", "streams", "twitter_logs", "reddit_logs"]
 
         if "database" in mode:
             git_data = BaseProgram.repository.file_contents("./Data/database.json").decoded
