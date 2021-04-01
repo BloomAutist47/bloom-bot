@@ -26,11 +26,14 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         
         self.file = ""
         self.target = {}
+        self.target_type = ""
         self.semiList = ["Description", "Cost", "Shop item ID", "ID"]
         self.changingShops = ["Featured Gear Shop", "Nulgath's Birthday Shop"]
         self.threads = []
         self.validMode = ["all", "semi", "link"]
         self.mode = ""
+
+
 
 
     @commands.command()
@@ -138,7 +141,8 @@ class SWFProcessorCog(commands.Cog, BaseTools):
             self.shop_data[shopName] = {
                 "ID": shopID,
                 "Location": shopLocation,
-                "Items": {}
+                "Items": {},
+                "Type": "Shop"
             }
 
             for item in shopItems:
@@ -169,6 +173,8 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                     itemDataHolder["Url"] = linkHolder
 
                 self.shop_data[shopName]["Items"][itemName] = itemDataHolder
+
+        self.target_type = "Shop"
         self.target = self.shop_data
         
         # pprint(self.shop_data)
@@ -191,7 +197,8 @@ class SWFProcessorCog(commands.Cog, BaseTools):
 
             self.quest_data[quest_name] = {
                 "ID": quest_id,
-                "Items": {}
+                "Items": {},
+                "Type": "Quest"
             }
             # Requirement items
             '''
@@ -231,10 +238,10 @@ class SWFProcessorCog(commands.Cog, BaseTools):
 
                 self.quest_data[quest_name]["Items"][itemName] = itemDataHolder
 
+        self.target_type = "Quest"
+        self.target = self.quest_data
 
 
-            print("=============================================")
-        pprint(self.quest_data)
     def swfGetter(self, shop, items, start, end):
         # print("Target Shop>>>: ", shop)
         for link in items[start:end]:
@@ -288,14 +295,28 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                 t.join()
 
     def addToDatabase(self):
+        type_ = self.target
         pprint(self.target)
-        for shop in self.target:
-            for item in self.target[shop]["Items"]:
-                item_data = self.target[shop]["Items"][item]
-                item_data["Shop Name"] = shop
-                item_data["Shop ID"] = self.target[shop]["ID"]
-                item_data["Location"] = self.target[shop]["Location"]
-                BaseProgram.swf[item] = item_data
+
+        if self.target_type == "Shop":
+            for shop in self.target:
+                for item in self.target[shop]["Items"]:
+                    item_data = self.target[shop]["Items"][item]
+                    item_data["Shop Name"] = shop
+                    item_data["Shop ID"] = self.target[shop]["ID"]
+                    item_data["Location"] = self.target[shop]["Location"]
+                    item_data["Type"] = "Shop"
+                    BaseProgram.swf[item] = item_data
+        if self.target_type == "Quest":
+            for quest in self.target:
+                for item in self.target[quest]["Items"]:
+                    item_data = self.target[quest]["Items"][item]
+                    item_data["Quest Name"] = quest
+                    item_data["Quest ID"] = self.target[quest]["ID"]
+                    item_data["Type"] = "Quest"
+                    BaseProgram.swf[item] = item_data
+
+
         self.git_save("swf")
         # for items in self.target:
         #     result += f"Shop Name: {items}\n"
