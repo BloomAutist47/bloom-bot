@@ -100,19 +100,11 @@ async def stream_tweet():
         BaseProgram.tweet_user = "1349290524901998592"
     else:
         BaseProgram.tweet_user = "16480141"
-    # BaseProgram.tweet_user = "1349290524901998592"
 
 
     BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
     BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, is_async=True,  tweet_mode='extended')
     print("> Twitter Listener Success")
-
-    # while True:
-    #     try:
-    #         await stream_tweeteter()
-    #     except:
-    #         continue
-
     BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
 
 
@@ -131,14 +123,8 @@ async def on_ready():
     name = "A bot Created by Bloom Autist. Currently v.4.0.0.00"
     await Bot.change_presence(status=discord.Status.idle,
         activity=discord.Game(name=name, type=3))
-
     
-
-    # await stream_tweet()
-    # send_fut = asyncio.run_coroutine_threadsafe(stream_tweet(), BaseProgram.loop)
-    # send_fut.result()
     Bot.loop.create_task(stream_tweet())
-    # BaseProgram.loop.run_forever()
 
 
 if os.name == "nt": # PC Mode
@@ -149,7 +135,6 @@ else:              # Heroku
 
 
     
-# Bot.remove_command("help")
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
 # Bot.add_cog(TestCog(Bot))

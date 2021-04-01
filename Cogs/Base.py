@@ -16,45 +16,57 @@ from discord.ext import commands
 from bs4 import BeautifulSoup as Soup
 from dotenv import load_dotenv
 
+from pprint import pprint
+
 
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 os.chdir('..')
 
 class BaseProgram:
-    # Dynamic attributes
-    data = {}
+    # Base
     settings = {}
-    database_updating = False
-    classes = {}
     priveleged_roles = []
-    mode = ""
+
+    # BoatCog Vars
+    database = {}
     author_list_lowercase = []
+    
+    # ClassCog Vars
+    classes = {}
     class_acronyms = {}
+    
+    # GuideCog Vars
     guides = {}
-    tweet_call = ""
+    
+    # ListenerCog Vars
     reddit_logs = {}
+    twitter_logs = {}
+
+    # FarmCog Vars
+    streams = []
+    status_list = []
+
+    # TextCog Vars
+    texts = {}
+
+    # SWFCog Vars
+    swf = {}
+
+    mode = ""
+    tweet_call = ""
+    sqlock = True
+    git_already = False
+    database_updating = False
     twitter_updating = False
 
-    # loop = asyncio.ProactorEventLoop() # for subprocess' pipes on Windows
-    # asyncio.set_event_loop(loop)
 
-
-
-    # if os.name == 'nt':
-        # loop = asyncio.ProactorEventLoop() # for subprocess' pipes on Windows
-    #     asyncio.set_event_loop(loop)
-    # else:
     loop = asyncio.get_event_loop()
-    # loop_2 = asyncio.new_event_loop()
 
     asyncio.set_event_loop(loop)
     nest_asyncio.apply(loop)
-    # nest_asyncio.apply(loop_2)
-
     
-    sqlock = True
-    texts = {}
+    
     tweet_text = ""
     block_color = 3066993
 
@@ -70,11 +82,7 @@ class BaseProgram:
     PORTAL_AGENT = ""
 
     tweets_listener = ""
-    twitter_logs = {}
-    streams = []
-    status_list = []
-    git_already = False
-    
+
 
     icon_bloom = "https://cdn.discordapp.com/attachments/805367955923533845/813066459281489981/icon3.png"
     icon_aqw = "https://cdn.discordapp.com/attachments/805367955923533845/812991601714397194/logo_member.png"
@@ -102,11 +110,23 @@ class BaseProgram:
                           'Chrome/61.0.3163.100 Safari/537.36'}
 
     def git_prepare(self):
+        # self.mode_list = {
+        #     "database": BaseProgram.database, 
+        #     "guides": BaseProgram.guides, 
+        #     "classes": BaseProgram.classes, 
+        #     "settings": BaseProgram.settings, 
+        #     "texts" : BaseProgram.texts, 
+        #     "streams": BaseProgram.streams, 
+        #     "reddit_logs": BaseProgram.reddit_logs, 
+        #     "twitter_logs": BaseProgram.twitter_logs
+        # }
+        self.mode_list = ["database", "guides", "classes", "settings", "texts", 
+                    "streams", "reddit_logs", "twitter_logs", "swf"]
+
         self.env_variables()
         
         while True:
             try:
-                # BaseProgram.block_color = 4521077
                 BaseProgram.github = github3.login(token=BaseProgram.GIT_BLOOM_TOKEN)
                 BaseProgram.repository = BaseProgram.github.repository(BaseProgram.GIT_USER, BaseProgram.GIT_REPOS)
                 print("> Github Connection...Success!")
@@ -162,8 +182,8 @@ class BaseProgram:
 
         self.git_read("settings")
         self.file_clear_database()
-        BaseProgram.data["sort_by_bot_name"] = {}
-        BaseProgram.data["sort_by_bot_authors"] = {}
+        BaseProgram.database["sort_by_bot_name"] = {}
+        BaseProgram.database["sort_by_bot_authors"] = {}
 
         if mode == "web":
             # try:
@@ -249,16 +269,16 @@ class BaseProgram:
             bot_name = re.sub("Non\s|NON\s", "Non-", bot_name)  # replaces "non mem" to "non-mem"
             bot_name = bot_name.lstrip().rstrip()
             bot_author = bot_author.lower()
-            BaseProgram.data["sort_by_bot_name"][bot_name] = {}
-            BaseProgram.data["sort_by_bot_name"][bot_name]["url"] = link
-            BaseProgram.data["sort_by_bot_name"][bot_name]["author"] = bot_author
+            BaseProgram.database["sort_by_bot_name"][bot_name] = {}
+            BaseProgram.database["sort_by_bot_name"][bot_name]["url"] = link
+            BaseProgram.database["sort_by_bot_name"][bot_name]["author"] = bot_author
 
             # Sort by Author
-            if bot_author not in BaseProgram.data["sort_by_bot_authors"]:
-                BaseProgram.data["sort_by_bot_authors"][bot_author] = {}
+            if bot_author not in BaseProgram.database["sort_by_bot_authors"]:
+                BaseProgram.database["sort_by_bot_authors"][bot_author] = {}
                 
-            BaseProgram.data["sort_by_bot_authors"][bot_author][bot_name] = {}
-            BaseProgram.data["sort_by_bot_authors"][bot_author][bot_name]["url"] = link
+            BaseProgram.database["sort_by_bot_authors"][bot_author][bot_name] = {}
+            BaseProgram.database["sort_by_bot_authors"][bot_author][bot_name]["url"] = link
 
 
         # Saving
@@ -279,7 +299,7 @@ class BaseProgram:
             Arguments:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
-                    - 'database'> BaseProgram.data
+                    - 'database'> BaseProgram.database
                     - 'guides'> BaseProgram.guides
                     - 'settings'> BaseProgram.settings
                     - 'classes'> BaseProgram.classes
@@ -287,87 +307,36 @@ class BaseProgram:
 
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "texts" , "streams", "reddit_logs", "twitter_logs"]
-        #     for mode in modes:
+            mode = self.mode_list
 
-        
-        # with open('./Data/database.json', 'r', encoding='utf-8') as f:
-        #     BaseProgram.data = json.load(f)
-
-        if "database" in mode:
-            with open('./Data/database.json', 'r', encoding='utf-8') as f:
-                BaseProgram.data = json.load(f)
-        if "guides" in mode:
-            with open('./Data/guides.json', 'r', encoding='utf-8') as f:
-                BaseProgram.guides = json.load(f)
-        if "classes" in mode:   
-            with open('./Data/classes.json', 'r', encoding='utf-8') as f:
-                BaseProgram.classes = json.load(f)
-            self.sort_classes_acronym()
-
-        if "settings" in mode:
-            with open('./Data/settings.json', 'r', encoding='utf-8') as f:
-                BaseProgram.settings = json.load(f)
-
-        if "texts" in mode:
-            with open('./Data/texts.json', 'r', encoding='utf-8') as f:
-                BaseProgram.texts = json.load(f)
-
-        if "streams" in mode:
-            with open('./Data/streams.json', 'r', encoding='utf-8') as f:
-                BaseProgram.streams = json.load(f)
-                
-        if "reddit_logs" in mode:
-            with open('./Data/reddit_logs.json', 'r', encoding='utf-8') as f:
-                BaseProgram.reddit_logs = json.load(f)
-
-        if "twitter_logs" in mode:
-            with open('./Data/twitter_logs.json', 'r', encoding='utf-8') as f:
-                BaseProgram.twitter_logs = json.load(f)
-
-
-        self.sort_privileged_roles()
-        self.sort_author_list_lowercase()
+        for file in mode:
+            with open(f'./Data/{file}.json', 'r', encoding='utf-8') as f:
+                setattr(BaseProgram, file, json.load(f))
+            if file == "classes":
+                self.sort_classes_acronym()
+            if file == "data" or file == "settings":
+                self.sort_privileged_roles()
+                self.sort_author_list_lowercase()
 
     def file_save(self, mode:str):
         """ Description: Saves data to local .json files
             Arguments:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
-                    - 'database'> BaseProgram.data
+                    - 'database'> BaseProgram.database
                     - 'guides'> BaseProgram.guides
                     - 'settings'> BaseProgram.settings
                     - 'classes'> BaseProgram.classes
         """
+
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "streams", "reddit_logs", "twitter_logs"]
+            mode = self.mode_list
 
-        if "database" in mode:
-            with open('./Data/database.json', 'w', encoding='utf-8') as f:
-                json.dump(BaseProgram.data, f, ensure_ascii=False, indent=4)
-        if "guides" in mode:
-            with open('./Data/guides.json', 'w', encoding='utf-8') as f:
-                json.dump(BaseProgram.guides, f, ensure_ascii=False, indent=4)
-        if "classes" in mode:
-            with open('./Data/classes.json', 'w', encoding='utf-8') as f:
-                json.dump(BaseProgram.classes, f, ensure_ascii=False, indent=4)
-            self.sort_classes_acronym()
-        if "settings" in mode:
-            with open('./Data/settings.json', 'w', encoding='utf-8') as f:
-                json.dump(BaseProgram.settings, f, ensure_ascii=False, indent=4)
-        if "texts" in mode:
-            with open('./Data/texts.json', 'w', encoding='utf-8') as f:
-                json.dump(BaseProgram.texts, f, ensure_ascii=False, indent=4)
-        if "streams" in mode:
-            with open('./Data/streams.json', 'w', encoding='utf-8') as f:
-                json.dump(BaseProgram.streams, f, ensure_ascii=False, indent=4)
-        if "reddit_logs" in mode:
-            with open('./Data/reddit_logs.json', 'w', encoding='utf-8') as f:
-                json.dump(BaseProgram.reddit_logs, f, ensure_ascii=False, indent=4)
-        if "twitter_logs" in mode:
-            with open('./Data/twitter_logs.json', 'w', encoding='utf-8') as f:
-                json.dump(BaseProgram.twitter_logs, f, ensure_ascii=False, indent=4)
+        for file in mode:
+            print(file)
+            with open(f'./Data/{file}.json', 'w', encoding='utf-8') as f:
+                json.dump(getattr(BaseProgram, file), f, ensure_ascii=False, indent=4)
 
 
     def git_save(self, mode:str):
@@ -375,62 +344,20 @@ class BaseProgram:
             Arguments:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
-                    - 'database'> BaseProgram.data
+                    - 'database'> BaseProgram.database
                     - 'guides'> BaseProgram.guides
                     - 'settings'> BaseProgram.settings
                     - 'classes'> BaseProgram.classes
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "streams", "reddit_logs", "twitter_logs"]
+            mode = self.mode_list
 
-        if "database" in mode:
-            git_data = json.dumps(BaseProgram.data, indent=4).encode('utf-8')
-            contents_object = BaseProgram.repository.file_contents("./Data/database.json")
-            contents_object.update("update", git_data)
-            self.file_save("database")
-
-        if "guides" in mode:
-            git_guides = json.dumps(BaseProgram.guides, indent=4).encode('utf-8')
-            contents_object = BaseProgram.repository.file_contents("./Data/guides.json")
-            contents_object.update("update", git_guides)
-            self.file_save("guides")
-
-        if "settings" in mode:
-            git_settings = json.dumps(BaseProgram.settings, indent=4).encode('utf-8')
-            contents_object = BaseProgram.repository.file_contents("./Data/settings.json")
-            contents_object.update("update", git_settings)
-            self.file_save("settings")
-
-        if "classes" in mode:
-            git_classes = json.dumps(BaseProgram.classes, indent=4).encode('utf-8')
-            contents_object = BaseProgram.repository.file_contents("./Data/classes.json")
-            contents_object.update("update", git_classes)
-            self.file_save("classes")
-
-        if "texts" in mode:
-            git_texts = json.dumps(BaseProgram.texts, indent=4).encode('utf-8')
-            contents_object = BaseProgram.repository.file_contents("./Data/texts.json")
-            contents_object.update("update", git_texts)
-            self.file_save("texts")
-
-        if "streams" in mode:
-            git_streams = json.dumps(BaseProgram.streams, indent=4).encode('utf-8')
-            contents_object = BaseProgram.repository.file_contents("./Data/streams.json")
-            contents_object.update("update", git_streams)
-            self.file_save("streams")
-        if "reddit_logs" in mode:
-            git_reddit_logs = json.dumps(BaseProgram.reddit_logs, indent=4).encode('utf-8')
-            contents_object = BaseProgram.repository.file_contents("./Data/reddit_logs.json")
-            contents_object.update("update", git_reddit_logs)
-            print("what")
-            self.file_save("reddit_logs")
-        if "twitter_logs" in mode:
-            git_twitter_logs = json.dumps(BaseProgram.twitter_logs, indent=4).encode('utf-8')
-            contents_object = BaseProgram.repository.file_contents("./Data/twitter_logs.json")
-            contents_object.update("update", git_twitter_logs)
-            self.file_save("twitter_logs")
-
+        for file in mode:
+            git_data = json.dumps(getattr(BaseProgram, file), indent=4).encode('utf-8')
+            contents_object = BaseProgram.repository.file_contents(f"./Data/{file}.json")
+            contents_object.update(f"{file} updated", git_data)
+            self.file_save(file)
         return
 
     def git_read(self, mode:str):
@@ -438,52 +365,24 @@ class BaseProgram:
             Arguments:
                 [mode] - checks to do. accepts: database, guides, settings, classes
                          or any of the their combination delimited by "-"
-                    - 'database'> BaseProgram.data
+                    - 'database'> BaseProgram.database
                     - 'guides'> BaseProgram.guides
                     - 'settings'> BaseProgram.settings
                     - 'classes'> BaseProgram.classes
         """
         mode = mode.split("-")
         if mode == ["all"]:
-            mode = ["database", "guides", "classes", "settings", "streams", "twitter_logs", "reddit_logs"]
+            mode = self.mode_list
 
-        if "database" in mode:
-            git_data = BaseProgram.repository.file_contents("./Data/database.json").decoded
-            BaseProgram.data = json.loads(git_data.decode('utf-8'))
-
-        if "guides" in mode:
-            git_guides = BaseProgram.repository.file_contents("./Data/guides.json").decoded
-            BaseProgram.guides = json.loads(git_guides.decode('utf-8'))
-
-        if "classes" in mode:
-            git_classes = BaseProgram.repository.file_contents("./Data/classes.json").decoded
-            BaseProgram.classes = json.loads(git_classes.decode('utf-8'))
-            self.sort_classes_acronym()
-
-        if "settings" in mode:
-            git_settings = BaseProgram.repository.file_contents("./Data/settings.json").decoded
-            BaseProgram.settings = json.loads(git_settings.decode('utf-8'))
-
-            self.sort_privileged_roles()
-            self.sort_author_list_lowercase()
-
-        if "texts" in mode:
-            git_texts = BaseProgram.repository.file_contents("./Data/texts.json").decoded
-            BaseProgram.texts = json.loads(git_texts.decode('utf-8'))
-
-        if "streams" in mode:
-            git_streams = BaseProgram.repository.file_contents("./Data/streams.json").decoded
-            BaseProgram.streams = json.loads(git_streams.decode('utf-8'))
-        if "reddit_logs" in mode:
-            git_reddit_logs = BaseProgram.repository.file_contents("./Data/reddit_logs.json").decoded
-            BaseProgram.reddit_logs = json.loads(git_reddit_logs.decode('utf-8'))
-        if "twitter_logs" in mode:
-            git_twitter_logs = BaseProgram.repository.file_contents("./Data/twitter_logs.json").decoded
-            BaseProgram.twitter_logs = json.loads(git_twitter_logs.decode('utf-8'))
-
-
-        # Saving
-        self.file_save("all")
+        for file in mode:
+            git_data = BaseProgram.repository.file_contents(f"./Data/{file}.json").decoded
+            setattr(BaseProgram, file, json.loads(git_data.decode('utf-8')))
+            if file == "classes":
+                self.sort_classes_acronym()
+            if file == "data" or file == "settings":
+                self.sort_privileged_roles()
+                self.sort_author_list_lowercase()
+            self.file_save(file)
         return
 
     def sort_classes_acronym(self):
@@ -528,9 +427,9 @@ class BaseProgram:
            Arguments:
                [bot_name_value] - search word
         """
-        if bot_name_value in BaseProgram.data["sort_by_bot_name"]:
-            link = BaseProgram.data["sort_by_bot_name"][bot_name_value]["url"]
-            author = BaseProgram.data["sort_by_bot_name"][bot_name_value]["author"]
+        if bot_name_value in BaseProgram.database["sort_by_bot_name"]:
+            link = BaseProgram.database["sort_by_bot_name"][bot_name_value]["url"]
+            author = BaseProgram.database["sort_by_bot_name"][bot_name_value]["author"]
             return {author: [bot_name_value.capitalize(), link]}
 
         # Else, divides the bot between words and searches 
@@ -546,10 +445,10 @@ class BaseProgram:
 
     def find_bot_by_author(self, author):
         author = author.lower()
-        if author in BaseProgram.data["sort_by_bot_authors"]:
+        if author in BaseProgram.database["sort_by_bot_authors"]:
             list_of_bots = []
-            for bot in BaseProgram.data["sort_by_bot_authors"][author]:
-                link = BaseProgram.data["sort_by_bot_authors"][author][bot]["url"]
+            for bot in BaseProgram.database["sort_by_bot_authors"][author]:
+                link = BaseProgram.database["sort_by_bot_authors"][author][bot]["url"]
                 list_of_bots.append([bot, author, link])
             return (True, list_of_bots)
         else:
@@ -565,18 +464,18 @@ class BaseProgram:
     def bot_searching_algorithm(self, bot_name_value):
         list_of_possible_bots = {}
         done_searching = []
-        for author in BaseProgram.data["sort_by_bot_authors"]:
-            for bot in BaseProgram.data["sort_by_bot_authors"][author]:
+        for author in BaseProgram.database["sort_by_bot_authors"]:
+            for bot in BaseProgram.database["sort_by_bot_authors"][author]:
                 search_name = bot_name_value.lower()
                 bot_by_author = bot.lower()
 
                 if search_name == bot_by_author:
-                    link = BaseProgram.data["sort_by_bot_authors"][author][bot]["url"]
+                    link = BaseProgram.database["sort_by_bot_authors"][author][bot]["url"]
                     return {author:[(bot_name_value, link)]}
 
                 if (search_name in bot_by_author) and ((bot_by_author, author) not in done_searching):
                     done_searching.append((bot_by_author, author))
-                    link = BaseProgram.data["sort_by_bot_authors"][author][bot]["url"]
+                    link = BaseProgram.database["sort_by_bot_authors"][author][bot]["url"]
                     if author not in list_of_possible_bots:
                         list_of_possible_bots[author] = []
                     list_of_possible_bots[author].append([bot, link])
@@ -1189,7 +1088,7 @@ class BaseCog(commands.Cog, BaseTools):
                 [ctx] - discord context
                 [mode]  accepts: all, database, guides, settings, classes
                     - 'all'> updates all of the variables
-                    - 'database'> BaseProgram.data
+                    - 'database'> BaseProgram.database
                     - 'guides'> BaseProgram.guides
                     - 'settings'> BaseProgram.settings
                     - 'classes'> BaseProgram.classes

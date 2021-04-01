@@ -522,11 +522,6 @@ class TwitterCog(commands.Cog, TweetTools):
             return
 
         BaseProgram.tweet_call == "updaily"
-
-        # this code block is another way of doing the thing below
-
-        # user = self.api.get_user("Alina_AE")
-
         got = False
         time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", tweet_mode='extended').items(30)
         tweet_list = []

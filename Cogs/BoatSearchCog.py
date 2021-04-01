@@ -203,7 +203,7 @@ class BoatSearchCog(commands.Cog, BaseTools):
         if not found_author:
             # if author has no boats
             if len(bot_list) == 1:
-                if bot_list[0] not in BaseProgram.data["sort_by_bot_authors"].keys():
+                if bot_list[0] not in BaseProgram.database["sort_by_bot_authors"].keys():
                     desc = f"Author `{bot_list[0]}` has not created any boats yet. "
                     await ctx.send(embed=self.embed_single(cmd_title, desc, BaseProgram.icon_auqw))
                     return

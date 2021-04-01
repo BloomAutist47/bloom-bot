@@ -97,7 +97,7 @@ class RedditCog(commands.Cog, BaseTools):
             if sub.is_video == True:
                 image_ = sub.preview["images"][0]["source"]["url"]
                 footer_ = "This is a video post."
-            text_ = str(sub.selftext)
+            text_ = str(sub.selftext) + "\n"
             time_ = self.get_date(sub)
 
             BaseProgram.reddit_logs[sub_name][sub.id] = {
@@ -113,8 +113,9 @@ class RedditCog(commands.Cog, BaseTools):
 
             embedVar = discord.Embed(title=title_, url=link_, color=BaseProgram.block_color)
             embedVar.set_author(name="r/" + sub_name, url=f"https://www.reddit.com/r/{sub_name}/", icon_url=BaseProgram.icon_dict[sub_name])
-            text_ = re.sub(r"(https://preview.redd.it/.+?\n)|(&#x200B;)", "", sub.selftext)
-            text_ = re.sub(r"(\n\n\n)", "\n", text_)
+            text_ = re.sub(r"(https://preview.redd.it/.+?\n)", "", text_)
+            text_ = re.sub(r"(&#x200B;)", "", text_)
+            text_ = re.sub(r"(\n\n\n)", "\n", text_).strip()
             chunks = textwrap.wrap(text_, 1024, break_long_words=False, replace_whitespace=False)
 
             if chunks:
@@ -137,7 +138,7 @@ class RedditCog(commands.Cog, BaseTools):
             # await self.send_webhook(sub_name, author_, title_, link_, image_, time_, text_, footer_)
             
 
-            print(f"Title: {sub.title}\nAuthor: u/{sub.author}\nAuthor Link: https://www.reddit.com/user/{sub.author}/\nScore: {sub.score}\nID: {sub.id}\nURL: https://www.reddit.com{sub.permalink}\nImage URL: {sub.url}\n\n")
+            # print(f"Title: {sub.title}\nAuthor: u/{sub.author}\nAuthor Link: https://www.reddit.com/user/{sub.author}/\nScore: {sub.score}\nID: {sub.id}\nURL: https://www.reddit.com{sub.permalink}\nImage URL: {sub.url}\n\n")
             # print("\n"*5)
     async def send_webhook(self, sub_name_, author_, title_, link_, image_, time_, text_, footer_):
         webhook = DiscordWebhook(url=self.channel_urls)
