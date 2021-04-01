@@ -23187,5 +23187,70 @@
         "Shop Name": "DoomFire Warrior",
         "Shop ID": "1306",
         "Location": "Menu"
+    },
+    "Crownsreach Dandy": {
+        "Shop item ID": "5117",
+        "ID": "38191",
+        "Cost": "13333 Gold",
+        "Category": "Armor",
+        "Description": "A stylish, textile coat that is fit for a sophisticated party.",
+        "sFile": "DapperChaos.swf",
+        "sLink": "DapperChaos",
+        "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DapperChaos.swf",
+        "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DapperChaos.swf",
+        "Shop Name": "Crownsreach FXIII Merge Shop",
+        "Shop ID": "1354",
+        "Location": "crownsreachfxiii"
+    },
+    "Crownsreach Fascinator": {
+        "Shop item ID": "5118",
+        "ID": "38192",
+        "Cost": "3333 Gold",
+        "Category": "Helm",
+        "Description": "Is your favorite hat too small to wear? No problem. Palm-sized hats are currently in style today.",
+        "sFile": "items/helms/DapperChaosLocks.swf",
+        "sLink": "DapperChaosLocks",
+        "Url": "https://www.aq.com/game/gamefiles/items/helms/DapperChaosLocks.swf",
+        "Shop Name": "Crownsreach FXIII Merge Shop",
+        "Shop ID": "1354",
+        "Location": "crownsreachfxiii"
+    },
+    "Dapper Dandy Hair": {
+        "Shop item ID": "5119",
+        "ID": "38193",
+        "Cost": "3333 Gold",
+        "Category": "Helm",
+        "Description": "Is your favorite hat too small to wear? No problem. Palm-sized hats are currently in style today.",
+        "sFile": "items/helms/DapperChaosHelmM.swf",
+        "sLink": "DapperChaosHelmM",
+        "Url": "https://www.aq.com/game/gamefiles/items/helms/DapperChaosHelmM.swf",
+        "Shop Name": "Crownsreach FXIII Merge Shop",
+        "Shop ID": "1354",
+        "Location": "crownsreachfxiii"
+    },
+    "Gilded Tentacle Wings": {
+        "Shop item ID": "5120",
+        "ID": "38194",
+        "Cost": "333 Gold",
+        "Category": "Cape",
+        "Description": "Don't be late. These heavy wings of pure gold were not forged to fly, but to stand out at dinner parties.",
+        "sFile": "items/capes/DapperChaosWings.swf",
+        "sLink": "DapperChaosWings",
+        "Url": "https://www.aq.com/game/gamefiles/items/capes/DapperChaosWings.swf",
+        "Shop Name": "Crownsreach FXIII Merge Shop",
+        "Shop ID": "1354",
+        "Location": "crownsreachfxiii"
+    },
+    "Dapper Gilded Cane": {
+        "Shop item ID": "5121",
+        "ID": "38195",
+        "Cost": "3333 Gold",
+        "Category": "Polearm",
+        "Description": "To be a bright citizen in a shaded city, sometimes a golden cane can enhance your smile and dignity.",
+        "sFile": "items/polearms/DapperChaosCane.swf",
+        "Url": "https://www.aq.com/game/gamefiles/items/polearms/DapperChaosCane.swf",
+        "Shop Name": "Crownsreach FXIII Merge Shop",
+        "Shop ID": "1354",
+        "Location": "crownsreachfxiii"
     }
 }
