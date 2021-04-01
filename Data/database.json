@@ -8,10 +8,6 @@
             "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip",
             "author": "unknown"
         },
-        "ArchPaladin MEMBER ONLY.rar": {
-            "url": "https://adventurequest.life/bots/Weeb_ArchPaladin_MEMBER-ONLY.rar",
-            "author": "weeb"
-        },
         "AegisREP QL P Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_AegisREP_QL_P_Bot.gbot",
             "author": "arts"
@@ -38,6 +34,10 @@
         },
         "AspiringNecromancer Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_AspiringNecromancer_Bot.gbot",
+            "author": "arts"
+        },
+        "AstraviaMerge Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_AstraviaMerge_Bot.gbot",
             "author": "arts"
         },
         "BaconCatREP QL Bot.gbot": {
@@ -126,10 +126,6 @@
         },
         "DwarfHoldREP QL Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_DwarfHoldREP_QL_Bot.gbot",
-            "author": "arts"
-        },
-        "DwoboCoins Bot.gbot": {
-            "url": "https://adventurequest.life/bots/Arts_DwoboCoins_Bot.gbot",
             "author": "arts"
         },
         "DwoboCoins Bot MEM.gbot": {
@@ -444,6 +440,10 @@
             "url": "https://adventurequest.life/bots/Bloom_FuchsiaDye_MagentaDye_MEMBER_ONLY_DyeingForAChallenge.gbot",
             "author": "bloom"
         },
+        "PookaMergeIngredients GoldenCloverOakLeaf EnchantedLeaf.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_PookaMergeIngredients_GoldenCloverOakLeaf_EnchantedLeaf.gbot",
+            "author": "bloom"
+        },
         "Punt.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Punt.gbot",
             "author": "bloom"
@@ -471,6 +471,10 @@
         "Bloom TaABoatTrip ShogunParagonPet pro.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_TakingABoatTrip_ShogunParagonPet_pro.gbot",
             "author": "archon"
+        },
+        "Yokai Rep pro.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_Yokai_Rep_pro.gbot",
+            "author": "bloom"
         },
         "ArcangroveIndexQL.gbot": {
             "url": "https://adventurequest.life/bots/Bluu_ArcangroveIndexQL.gbot",
@@ -526,10 +530,6 @@
         },
         "WinterHorrorMergeShop GriefMedal All in one pro.zip": {
             "url": "https://adventurequest.life/bots/Bluu_WinterHorrorMergeShop_GriefMedal_All_in_one_pro.zip",
-            "author": "bluu"
-        },
-        "YokaiRep Bot.gbot": {
-            "url": "https://adventurequest.life/bots/Bluu_YokaiRep_Bot.gbot",
             "author": "bluu"
         },
         "BrightParagon 3.8PP.gbot": {
@@ -760,6 +760,10 @@
             "url": "https://adventurequest.life/bots/Kaosweeb_NSoD_RVA_Synced.gbot",
             "author": "kaos"
         },
+        "AstraviaSpeedrunHelper.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_AstraviaSpeedrunHelper.gbot",
+            "author": "kaos"
+        },
         "BattleunderABCAccept.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_BattleunderABCAccept.gbot",
             "author": "kaos"
@@ -792,6 +796,10 @@
             "url": "https://adventurequest.life/bots/Kaos_DragonShinobi_Token.gbot",
             "author": "kaos"
         },
+        "EridaniSpeedrunHelper.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_EridaniSpeedrunHelper.gbot",
+            "author": "kaos"
+        },
         "FaerieCourt REP.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_FaerieCourt_REP.gbot",
             "author": "kaos"
@@ -802,6 +810,10 @@
         },
         "FiendEmblem pro.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_FiendEmblem_pro.gbot",
+            "author": "kaos"
+        },
+        "GardenSpeedrunHelper.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_GardenSpeedrunHelper.gbot",
             "author": "kaos"
         },
         "HorsemenDailies Synced.gbot": {
@@ -1027,6 +1039,10 @@
         "Ultimate Legion Revenant Bot pro.zip": {
             "url": "https://adventurequest.life/bots/Weebluurts_Ultimate_Legion_Revenant_Bot_pro.zip",
             "author": "weebluurts"
+        },
+        "ArchPaladin MEMBER ONLY.rar": {
+            "url": "https://adventurequest.life/bots/Weeb_ArchPaladin_MEMBER-ONLY.rar",
+            "author": "weeb"
         },
         "Astral Orb Quest MEM.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Astral_Orb_Quest_MEM.gbot",
@@ -1267,10 +1283,6 @@
         "YokaiSwordScrollBot 28NEW29.gbot": {
             "url": "https://adventurequest.life/bots/YokaiSwordScrollBot_Ninjatov%28NEW%29.gbot",
             "author": "ninjatov"
-        },
-        "YokaiSwordScrollBot.gbot": {
-            "url": "https://adventurequest.life/bots/YokaiSwordScrollBot_Ninjatov.gbot",
-            "author": "ninjatov"
         }
     },
     "sort_by_bot_authors": {
@@ -1282,9 +1294,6 @@
         "unknown": {
             "AQW Questline Bots.zip": {
                 "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip"
-            },
-            "ArchPaladin MEMBER ONLY.rar": {
-                "url": "https://adventurequest.life/bots/ArchPaladin_MEMBER-ONLY.rar"
             },
             "Battlegrounde X Assistant.gbot": {
                 "url": "https://adventurequest.life/bots/Battlegrounde_X_Assistant.gbot"
@@ -1360,6 +1369,9 @@
             "AspiringNecromancer Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_AspiringNecromancer_Bot.gbot"
             },
+            "AstraviaMerge Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_AstraviaMerge_Bot.gbot"
+            },
             "BaconCatREP QL Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_BaconCatREP_QL_Bot.gbot"
             },
@@ -1425,9 +1437,6 @@
             },
             "DwarfHoldREP QL Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_DwarfHoldREP_QL_Bot.gbot"
-            },
-            "DwoboCoins Bot.gbot": {
-                "url": "https://adventurequest.life/bots/Arts_DwoboCoins_Bot.gbot"
             },
             "DwoboCoins Bot MEM.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_DwoboCoins_Bot_MEM.gbot"
@@ -1669,9 +1678,6 @@
             },
             "YokaiSwordScrollBot 28NEW29.gbot": {
                 "url": "https://adventurequest.life/bots/YokaiSwordScrollBot_Ninjatov%28NEW%29.gbot"
-            },
-            "YokaiSwordScrollBot.gbot": {
-                "url": "https://adventurequest.life/bots/YokaiSwordScrollBot_Ninjatov.gbot"
             }
         },
         "beneficence": {
@@ -1724,9 +1730,6 @@
             },
             "WinterHorrorMergeShop GriefMedal All in one pro.zip": {
                 "url": "https://adventurequest.life/bots/Bluu_WinterHorrorMergeShop_GriefMedal_All_in_one_pro.zip"
-            },
-            "YokaiRep Bot.gbot": {
-                "url": "https://adventurequest.life/bots/Bluu_YokaiRep_Bot.gbot"
             }
         },
         "bloom": {
@@ -1754,6 +1757,9 @@
             "FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_FuchsiaDye_MagentaDye_MEMBER_ONLY_DyeingForAChallenge.gbot"
             },
+            "PookaMergeIngredients GoldenCloverOakLeaf EnchantedLeaf.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_PookaMergeIngredients_GoldenCloverOakLeaf_EnchantedLeaf.gbot"
+            },
             "Punt.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Punt.gbot"
             },
@@ -1771,6 +1777,9 @@
             },
             "SpoiledDragonQuest EliteVoidSet.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
+            },
+            "Yokai Rep pro.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Yokai_Rep_pro.gbot"
             }
         },
         "desolates": {
@@ -1919,6 +1928,9 @@
             "weeb NSoD RVA Synced.gbot": {
                 "url": "https://adventurequest.life/bots/Kaosweeb_NSoD_RVA_Synced.gbot"
             },
+            "AstraviaSpeedrunHelper.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_AstraviaSpeedrunHelper.gbot"
+            },
             "BattleunderABCAccept.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_BattleunderABCAccept.gbot"
             },
@@ -1943,6 +1955,9 @@
             "DragonShinobi Token.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_DragonShinobi_Token.gbot"
             },
+            "EridaniSpeedrunHelper.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_EridaniSpeedrunHelper.gbot"
+            },
             "FaerieCourt REP.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_FaerieCourt_REP.gbot"
             },
@@ -1951,6 +1966,9 @@
             },
             "FiendEmblem pro.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_FiendEmblem_pro.gbot"
+            },
+            "GardenSpeedrunHelper.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_GardenSpeedrunHelper.gbot"
             },
             "HorsemenDailies Synced.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_HorsemenDailies_Synced.gbot"

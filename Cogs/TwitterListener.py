@@ -546,24 +546,36 @@ class TwitterCog(commands.Cog, TweetTools):
             await self.tweet_simple(tweet.id)
 
 
-    @tasks.loop(seconds=10)
+    @tasks.loop(seconds=60)
     async def tweet_looker(self):
         if BaseProgram.status_list == []:
             print("not this")
             return
         lenx = len(BaseProgram.status_list)
+
+        prev_set = copy.deepcopy(BaseProgram.status_list)
+        
         while True:
             for status in BaseProgram.status_list:
-                # self.check_twitter_id(status.id, status.user.id_str)
-                await self.process_data(status)
+                await self.process_data(status[0])
                 print("whut")
             if lenx != len(BaseProgram.status_list):
                 print("it changed?!!")
+                new_set = self.DiffList(BaseProgram.status_list, prev_set)
+                BaseProgram.status_list = new_set
                 continue
             else:
                 BaseProgram.status_list = []
                 break
         BaseProgram.status_list = []
+
+    def DiffList(self, li1, li2):
+        new_list = []
+        for item in li2:
+            if item not in li1:
+                new_list.append(item)
+        return new_list
+
 
     async def process_data(self, status=""):
         print("came")
@@ -573,6 +585,8 @@ class TwitterCog(commands.Cog, TweetTools):
                 continue
             else:
                 break
+        if status.user.id_str not in BaseProgram.twitter_logs:
+            BaseProgram.twitter_logs[status.user.id_str] = []
         if status.id in BaseProgram.twitter_logs[status.user.id_str]:
             print("> Already got this")
             return
@@ -667,11 +681,8 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
     def on_status(self, status=""):
         if status == "":
             return
-        print("YES")
         BaseProgram.twitter_updating = True
-        BaseProgram.status_list.append(status)
-        print("YES")
-        print(status)
+        BaseProgram.status_list.append([status])
         BaseProgram.twitter_updating = False
         return
 

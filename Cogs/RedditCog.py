@@ -18,7 +18,6 @@ class RedditCog(commands.Cog, BaseTools):
         
         self.loop = bot.loop
         self.bot = bot
-        self.git_read("reddit_logs")
 
         if os.name == "nt":
             from dotenv import load_dotenv
@@ -77,9 +76,9 @@ class RedditCog(commands.Cog, BaseTools):
                 BaseProgram.reddit_logs[sub_name] = {}
 
             if str(sub.id) in BaseProgram.reddit_logs[sub_name]:
-                print("Nope")
+                print("Nope: ", sub.id)
                 continue
-
+            print(sub.id)
             author_ = str(sub.author)
             title_ = str(sub.title)
             link_ = f"https://www.reddit.com{sub.permalink}"
