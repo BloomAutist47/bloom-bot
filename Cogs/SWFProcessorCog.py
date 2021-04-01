@@ -27,6 +27,8 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         self.file = ""
         self.target = {}
         self.target_type = ""
+        self.added_count = 0
+        self.got_it=False
         self.semiList = ["Description", "Cost", "Shop item ID", "ID"]
         self.changingShops = ["Featured Gear Shop", "Nulgath's Birthday Shop"]
         self.threads = []
@@ -89,16 +91,31 @@ class SWFProcessorCog(commands.Cog, BaseTools):
             return  
 
         target_url = attach.url
-
+        got = False
         self.file = await self.get_site_content(URL=target_url, is_soup=False, encoding="utf8")
         test = ET.fromstring(str(self.file))
         self.file = ET.tostring(test, encoding='unicode')
 
-        BaseProgram.database_updating = False
-        self.shopProcess()
+        try:
+            self.shopProcess()
+        except Exception as e:
+            print("First e: ", e)
+        try:
+            self.questProcess()
+            print("yikes")
+        except Exception as e:
+            print("Second e: ", e)
+            pass
+        # self.questProcess()
+        print("go: ", self.got_it)
+        if not self.got_it:
+            await ctx.send(warn)
+            return
         self.addToDatabase()
 
-        await ctx.send(file=discord.File(fp[1], filename=mode + " " + fp[0]))
+        await ctx.send(f"\> Added {self.added_count} items to the Database!")
+        self.added_count = 0
+        self.got_it=False
         return
 
     @commands.command()
@@ -176,6 +193,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
 
         self.target_type = "Shop"
         self.target = self.shop_data
+        self.got_it=True
         
         # pprint(self.shop_data)
     def questProcess(self):
@@ -206,6 +224,10 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                 quest_reward = quest_reward.split("</n>")
                 for i in quest_reward:
                     print(i)'''
+            try:
+                x = quest[1]
+            except:
+                continue
 
             reward_item = quest[1].replace("Rewards>", "").split("</n>")
             category_holder = ""
@@ -240,7 +262,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
 
         self.target_type = "Quest"
         self.target = self.quest_data
-
+        self.got_it=True
 
     def swfGetter(self, shop, items, start, end):
         # print("Target Shop>>>: ", shop)
@@ -306,7 +328,9 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                     item_data["Shop ID"] = self.target[shop]["ID"]
                     item_data["Location"] = self.target[shop]["Location"]
                     item_data["Type"] = "Shop"
+                    print(item)
                     BaseProgram.swf[item] = item_data
+                    self.added_count +=1
         if self.target_type == "Quest":
             for quest in self.target:
                 for item in self.target[quest]["Items"]:
@@ -315,8 +339,9 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                     item_data["Quest ID"] = self.target[quest]["ID"]
                     item_data["Type"] = "Quest"
                     BaseProgram.swf[item] = item_data
+                    self.added_count += 1
 
-
+        BaseProgram.swf = sorted(BaseProgram.swf)
         self.git_save("swf")
         # for items in self.target:
         #     result += f"Shop Name: {items}\n"

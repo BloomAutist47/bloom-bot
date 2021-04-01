@@ -375,7 +375,6 @@ class BaseProgram:
         for file in mode:
             if file == "update":
                 continue
-            print(f"./Data/{file}.json")
             git_data = BaseProgram.repository.file_contents(f"./Data/{file}.json").decoded
             setattr(BaseProgram, file, json.loads(git_data.decode('utf-8')))
             if file == "classes":
