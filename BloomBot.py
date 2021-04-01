@@ -156,7 +156,7 @@ Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
 Bot.add_cog(TextUploaders(Bot))
-Bot.add_cog(SWFProcessorCog(Bot)) 
+# Bot.add_cog(SWFProcessorCog(Bot)) 
 
 
 print("> Starting Bot...")
