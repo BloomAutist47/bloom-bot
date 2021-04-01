@@ -57,7 +57,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         self.file = await self.get_site_content(URL=target_url, is_soup=False, encoding="utf8")
         test = ET.fromstring(str(self.file))
         self.file = ET.tostring(test, encoding='unicode')
-        # print(test)
+
         BaseProgram.database_updating = False
         try:
             # self.openFile()
@@ -70,6 +70,41 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         # await ctx.message.attachments[0].save(fp)
         await ctx.send(file=discord.File(fp[1], filename=mode + " " + fp[0]))
         return
+
+    # @commands.command()
+    # async def swfadd(self, ctx):
+    #     warn = r"\> Please upload a valid .xml file"
+    #     try:
+    #         attach = ctx.message.attachments[0]
+    #     except:
+    #         await ctx.send(warn)
+    #         return
+
+    #     file_n = attach.filename
+    #     if file_n.split(".")[-1] != "xml":
+    #         await ctx.send(warn)
+    #         return  
+
+    #     target_url = attach.url
+
+    #     self.file = await self.get_site_content(URL=target_url, is_soup=False, encoding="utf8")
+    #     test = ET.fromstring(str(self.file))
+    #     self.file = ET.tostring(test, encoding='unicode')
+
+    #     BaseProgram.database_updating = False
+    #     self.shopProcess()
+    #     self.addToDatabase()
+
+    #     # try:
+    #     #     # self.openFile()
+
+    #     # except:
+    #     #     await ctx.send(r"\> Please enter only .xml files from the Shop Items.")
+    #     #     return
+
+    #     # await ctx.message.attachments[0].save(fp)
+    #     await ctx.send(file=discord.File(fp[1], filename=mode + " " + fp[0]))
+    #     return
 
     @commands.command()
     async def swfhelp(self, ctx):
@@ -197,6 +232,32 @@ class SWFProcessorCog(commands.Cog, BaseTools):
             # wait for all threads to finish
             for t in self.threads:
                 t.join()
+
+    def addToDatabase(self):
+        pprint(self.target)
+        for shop in self.target:
+            for item in self.target[shop]["Items"]:
+                item_data = self.target[shop]["Items"][item]
+                item_data["Shop Name"] = shop
+                item_data["Shop ID"] = self.target[shop]["ID"]
+                item_data["Location"] = self.target[shop]["Location"]
+                BaseProgram.swf[item] = 
+
+        for items in self.target:
+            result += f"Shop Name: {items}\n"
+            result += f"ID: {self.target[items]['ID']}\n"
+            result += f"Location: {self.target[items]['Location']}\n\n\n"
+
+            for item in self.target[items]["Items"]:
+                result += f"Name: {item}\n"
+                ref = self.target[items]["Items"][item]
+                for part in ref:
+                    result += f"{part}: {ref[part]}\n"
+                result += "\n"
+            result_list[items] = {}
+            result_list[items]["ID"] = self.target[items]['ID']
+            result_list[items]["Items"] = result.strip()
+            result = ""
 
 
     def printFile(self, mode):

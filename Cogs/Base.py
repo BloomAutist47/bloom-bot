@@ -332,9 +332,7 @@ class BaseProgram:
         mode = mode.split("-")
         if mode == ["all"]:
             mode = self.mode_list
-
         for file in mode:
-            print(file)
             with open(f'./Data/{file}.json', 'w', encoding='utf-8') as f:
                 json.dump(getattr(BaseProgram, file), f, ensure_ascii=False, indent=4)
 
