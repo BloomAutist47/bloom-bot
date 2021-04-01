@@ -373,6 +373,9 @@ class BaseProgram:
             mode = self.mode_list
 
         for file in mode:
+            if file == "update":
+                continue
+            print(f"./Data/{file}.json")
             git_data = BaseProgram.repository.file_contents(f"./Data/{file}.json").decoded
             setattr(BaseProgram, file, json.loads(git_data.decode('utf-8')))
             if file == "classes":
@@ -1124,7 +1127,7 @@ class BaseCog(commands.Cog, BaseTools):
         if mode == "settings":
             BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `setting.json`")
-            self.git_read("settings-update")
+            self.git_read("settings")
             await ctx.send(r"\>Bloom Bot `setting.json` updated!")
             BaseProgram.database_updating = False
             return
@@ -1132,7 +1135,7 @@ class BaseCog(commands.Cog, BaseTools):
         if mode == "classes":
             BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `classes.json`")
-            self.git_read("classes-update")
+            self.git_read("classes")
             await ctx.send(r"\>Bloom Bot `classes.json` updated!")
             BaseProgram.database_updating = False
             return
@@ -1140,7 +1143,7 @@ class BaseCog(commands.Cog, BaseTools):
         if mode == "guides":
             BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `guides.json`")
-            self.git_read("guides-update")
+            self.git_read("guides")
             await ctx.send(r"\>Bloom Bot `guides.json` updated!")
             BaseProgram.database_updating = False
             return
@@ -1148,7 +1151,7 @@ class BaseCog(commands.Cog, BaseTools):
         if mode == "texts":
             BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `texts.json`")
-            self.git_read("texts-update")
+            self.git_read("texts")
             await ctx.send(r"\>Bloom Bot `texts.json` updated!")
             BaseProgram.database_updating = False
             return
@@ -1156,7 +1159,7 @@ class BaseCog(commands.Cog, BaseTools):
         if mode == "streams":
             BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `streams.jsons`")
-            self.git_read("streams-update")
+            self.git_read("streams")
             await ctx.send(r"\>Bloom Bot `streams.jsons` updated!")
             BaseProgram.database_updating = False
             return
@@ -1164,7 +1167,7 @@ class BaseCog(commands.Cog, BaseTools):
         if mode == "all":
             BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `all .jsons`")
-            self.git_read("all-update")
+            self.git_read("all")
             await ctx.send(r"\>Bloom Bot `all .jsons` updated!")
             BaseProgram.database_updating = False
             return
