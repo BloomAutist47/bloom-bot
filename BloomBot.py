@@ -108,11 +108,7 @@ async def stream_tweet():
     while True:
         try:
             BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
-            print("YEP 1")
-            await asyncio.sleep(9999)
-            print("YEP 2")
         except:
-            print("> Listener Broke")
             continue
 
     # BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
@@ -160,7 +156,7 @@ Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
 Bot.add_cog(TextUploaders(Bot))
-# Bot.add_cog(SWFProcessorCog(Bot)) 
+Bot.add_cog(SWFProcessorCog(Bot)) 
 
 
 print("> Starting Bot...")
