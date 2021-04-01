@@ -19,6 +19,18 @@
     "ArchPaladin": {
         "bludrut": 6
     },
+    "MindBreaker": {
+        "stats": [
+            4,
+            "null",
+            "null",
+            "null",
+            "null",
+            "null",
+            "null"
+        ],
+        "bludrut":2
+    },
     "Sentinel": {
         "stats": [
             "null",
