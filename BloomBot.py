@@ -93,6 +93,8 @@ BaseProgram.auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_T
 BaseProgram.api = tweepy.API(BaseProgram.auth)
 BaseProgram.api.verify_credentials()
 
+async def stream_tweet_go():
+    BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
 
 async def stream_tweet():
 
@@ -105,14 +107,12 @@ async def stream_tweet():
     BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
     BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, is_async=True,  tweet_mode='extended')
     print("> Twitter Listener Success")
-    while True:
-        try:
-            BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
-        except:
-            continue
+    
 
-    # BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
-    # BaseProgram.loop.create_task(BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True))
+    # Bot.loop.create_task(stream_tweet_go())
+
+    BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
+
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141
     # Use this to get IDS: https://tweeterid.com/
