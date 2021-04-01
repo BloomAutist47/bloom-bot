@@ -105,8 +105,15 @@ async def stream_tweet():
     BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
     BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, is_async=True,  tweet_mode='extended')
     print("> Twitter Listener Success")
-    BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
-
+    while True:
+        try:
+            BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
+            print("YEP 1")
+            await asyncio.sleep(9999)
+            print("YEP 2")
+        except:
+            print("> Listener Broke")
+            continue
 
     # BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
     # BaseProgram.loop.create_task(BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True))
