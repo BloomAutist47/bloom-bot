@@ -39,7 +39,7 @@ from Cogs.TwitterListener import TwitterCog
 from Cogs.TextUploaderCog import TextUploaders
 from Cogs.UtilsCog import UtilsCog
 from Cogs.RedditCog import RedditCog
-# from Cogs.SWFProcessorCog import SWFProcessorCog
+from Cogs.SWFProcessorCog import SWFProcessorCog
 
 # from Cogs.StreamCog import StreamCog
 # from Cogs.TestCog import TestCog
@@ -156,7 +156,7 @@ Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
 Bot.add_cog(TextUploaders(Bot))
-# Bot.add_cog(SWFProcessorCog(Bot)) 
+Bot.add_cog(SWFProcessorCog(Bot)) 
 
 
 print("> Starting Bot...")

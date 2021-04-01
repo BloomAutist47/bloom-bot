@@ -1167,7 +1167,7 @@ class BaseCog(commands.Cog, BaseTools):
         if mode == "all":
             BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `all .jsons`")
-            self.git_read("all")
+            self.git_read("all")    
             await ctx.send(r"\>Bloom Bot `all .jsons` updated!")
             BaseProgram.database_updating = False
             return

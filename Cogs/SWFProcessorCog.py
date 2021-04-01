@@ -71,40 +71,32 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         await ctx.send(file=discord.File(fp[1], filename=mode + " " + fp[0]))
         return
 
-    # @commands.command()
-    # async def swfadd(self, ctx):
-    #     warn = r"\> Please upload a valid .xml file"
-    #     try:
-    #         attach = ctx.message.attachments[0]
-    #     except:
-    #         await ctx.send(warn)
-    #         return
+    @commands.command()
+    async def swfadd(self, ctx):
+        warn = r"\> Please upload a valid .xml file"
+        try:
+            attach = ctx.message.attachments[0]
+        except:
+            await ctx.send(warn)
+            return
 
-    #     file_n = attach.filename
-    #     if file_n.split(".")[-1] != "xml":
-    #         await ctx.send(warn)
-    #         return  
+        file_n = attach.filename
+        if file_n.split(".")[-1] != "xml":
+            await ctx.send(warn)
+            return  
 
-    #     target_url = attach.url
+        target_url = attach.url
 
-    #     self.file = await self.get_site_content(URL=target_url, is_soup=False, encoding="utf8")
-    #     test = ET.fromstring(str(self.file))
-    #     self.file = ET.tostring(test, encoding='unicode')
+        self.file = await self.get_site_content(URL=target_url, is_soup=False, encoding="utf8")
+        test = ET.fromstring(str(self.file))
+        self.file = ET.tostring(test, encoding='unicode')
 
-    #     BaseProgram.database_updating = False
-    #     self.shopProcess()
-    #     self.addToDatabase()
+        BaseProgram.database_updating = False
+        self.shopProcess()
+        self.addToDatabase()
 
-    #     # try:
-    #     #     # self.openFile()
-
-    #     # except:
-    #     #     await ctx.send(r"\> Please enter only .xml files from the Shop Items.")
-    #     #     return
-
-    #     # await ctx.message.attachments[0].save(fp)
-    #     await ctx.send(file=discord.File(fp[1], filename=mode + " " + fp[0]))
-    #     return
+        await ctx.send(file=discord.File(fp[1], filename=mode + " " + fp[0]))
+        return
 
     @commands.command()
     async def swfhelp(self, ctx):
@@ -180,7 +172,69 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         self.target = self.shop_data
         
         # pprint(self.shop_data)
+    def questProcess(self):
+        self.file = re.sub('(<n t=)|(/>)|(<TreeView>)|(</TreeView>)|\"', "", self.file)
+        self.file = re.sub("(  )", " ", self.file)
+        self.file = self.file.replace('<?xml version=1.0 encoding=us-ascii?>', "")
+        self.file = self.file.split("   </n>\n  </n>\n </n>")
+        self.quest_data = {}
+        for quest in self.file:
+            quest = quest.strip().split("   </n>\n  </n>")
+            quest_header = quest[0].split("Required items>")
 
+            if quest_header[0].strip() == "":
+                continue
+            quest_name = quest_header[0].split(">")[0].split("-", 1)[1].strip()
+            quest_id = quest_header[0].split("\n")[1].split(":")[-1].strip()
+            # print(quest_name)
+            # print(quest_id)
+
+            self.quest_data[quest_name] = {
+                "ID": quest_id,
+                "Items": {}
+            }
+            # Requirement items
+            '''
+            for quest_reward in quest_header[1:]:
+                quest_reward = quest_reward.split("</n>")
+                for i in quest_reward:
+                    print(i)'''
+
+            reward_item = quest[1].replace("Rewards>", "").split("</n>")
+            category_holder = ""
+            linkHolder = ""
+            itemDataHolder = {}
+
+            for reward in reward_item:
+                reward_dat = reward.strip().split("\n")
+                itemName = reward_dat[0]
+                details = reward_dat[1:]
+                for data in details:
+                    x = data.split(":")[:]
+                    if x == ['']:
+                        continue
+                    key = x[0].strip()
+                    value = x[1].strip().replace("&quot;", "\"")
+                    if "category" in key.lower():
+                        category_holder = value
+                    if "sfile" in key.lower():
+                        linkHolder = self.URLMaker(category_holder, value)
+                    itemDataHolder[key] = value.replace("&#xD;&#xA", "")
+
+                if isinstance(linkHolder, tuple):
+                    itemDataHolder["UrlMale"] = linkHolder[0]
+                    itemDataHolder["UrlFemale"] = linkHolder[1]
+                elif linkHolder == "":
+                    pass
+                else:
+                    itemDataHolder["Url"] = linkHolder
+
+                self.quest_data[quest_name]["Items"][itemName] = itemDataHolder
+
+
+
+            print("=============================================")
+        pprint(self.quest_data)
     def swfGetter(self, shop, items, start, end):
         # print("Target Shop>>>: ", shop)
         for link in items[start:end]:
@@ -241,23 +295,23 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                 item_data["Shop Name"] = shop
                 item_data["Shop ID"] = self.target[shop]["ID"]
                 item_data["Location"] = self.target[shop]["Location"]
-                BaseProgram.swf[item] = 
+                BaseProgram.swf[item] = item_data
+        self.git_save("swf")
+        # for items in self.target:
+        #     result += f"Shop Name: {items}\n"
+        #     result += f"ID: {self.target[items]['ID']}\n"
+        #     result += f"Location: {self.target[items]['Location']}\n\n\n"
 
-        for items in self.target:
-            result += f"Shop Name: {items}\n"
-            result += f"ID: {self.target[items]['ID']}\n"
-            result += f"Location: {self.target[items]['Location']}\n\n\n"
-
-            for item in self.target[items]["Items"]:
-                result += f"Name: {item}\n"
-                ref = self.target[items]["Items"][item]
-                for part in ref:
-                    result += f"{part}: {ref[part]}\n"
-                result += "\n"
-            result_list[items] = {}
-            result_list[items]["ID"] = self.target[items]['ID']
-            result_list[items]["Items"] = result.strip()
-            result = ""
+        #     for item in self.target[items]["Items"]:
+        #         result += f"Name: {item}\n"
+        #         ref = self.target[items]["Items"][item]
+        #         for part in ref:
+        #             result += f"{part}: {ref[part]}\n"
+        #         result += "\n"
+        #     result_list[items] = {}
+        #     result_list[items]["ID"] = self.target[items]['ID']
+        #     result_list[items]["Items"] = result.strip()
+        #     result = ""
 
 
     def printFile(self, mode):
