@@ -23,7 +23,8 @@ import tweepy
 
 from discord.ext import tasks
 from discord import Intents
-from discord.ext.commands import CommandNotFound    
+from discord.ext.commands import CommandNotFound
+# import pypresence
 from pprint import pprint
 from time import sleep  
 
@@ -50,39 +51,26 @@ class BreakProgram(Exception):
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
-intents = Intents.all()
 if os.name == "nt":
-    Bot = commands.Bot(command_prefix=["'"], description='Bloom Bot Revamped', intents=intents, help_command=None)
+    load_dotenv()
+    BaseProgram.tweet_user = "1349290524901998592"
+    DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN2') # test bot token
+    CLIEND_ID = os.getenv("DISCORD_CLIENT_ID2")
+    cmd = "'"
 else:
-    Bot = commands.Bot(command_prefix=[";"], description='Bloom Bot Revamped', intents=intents, help_command=None)
+    BaseProgram.tweet_user = "16480141"
+    DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
+    CLIEND_ID = os.environ.get("DISCORD_CLIENT_ID")
+    cmd = ";"
+
+# RPC = pypresence.Presence(client_id=CLIEND_ID, pipe=0) 
+# RPC.connect()
+# RPC.update(state="Rich Presence using pypresence!", details="A test of qwertyquerty's Python Discord RPC wrapper, pypresence!")
+
+intents = Intents.all()
+Bot = commands.Bot(command_prefix=[cmd], description='Bloom Bot Revamped', intents=intents, help_command=None)
 
 
-
-
-
-@Bot.event
-async def on_command_error(ctx, error):
-    if isinstance(error, CommandNotFound):
-        print("System: lmao a nigger used", error)
-        return
-    BaseProgram.database_updating = False
-    raise error
-
-# @Bot.event
-# async def on_member_update(before, after):
-#     satanId = 212913871466266624
-#     if os.name == "nt":
-#         satanRoleId = 808657429784035338
-#         guild_id = 761956630606250005
-#     else:
-#         satanRoleId = 775824347222245426
-#         guild_id = 766627412179550228
-    
-#     guild = Bot.get_guild(guild_id)
-#     role = dis_get(guild.roles, name='satan', id=satanRoleId)
-#     role_ids = [x.id for x in after.roles]
-#     if after.id != satanId and satanRoleId in role_ids:
-#         await after.remove_roles(role)
 
 BaseStuff = BaseProgram()
 BaseStuff.git_prepare()
@@ -93,29 +81,29 @@ BaseProgram.auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_T
 BaseProgram.api = tweepy.API(BaseProgram.auth)
 BaseProgram.api.verify_credentials()
 
-async def stream_tweet_go():
-    BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
+
 
 async def stream_tweet():
-
-    if os.name == "nt":
-        BaseProgram.tweet_user = "1349290524901998592"
-    else:
-        BaseProgram.tweet_user = "16480141"
-
-
     BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
     BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, is_async=True,  tweet_mode='extended')
     print("> Twitter Listener Success")
-    
 
-    # Bot.loop.create_task(stream_tweet_go())
 
-    BaseProgram.stream.filter(follow=[BaseProgram.tweet_user], is_async=True, stall_warnings=True)
+    BaseProgram.stream.filter(follow=[BaseProgram.tweet_user,
+        "135864340", # @Kotaro_AE
+        "200782641", # @notdarkon
+        "2435624982", # @asukaae
+        "2615674874", # @yo_lae
+        "989324890204327936", # @arletteaqw
+        "69666805", # @dagetheevil
+        ], is_async=True, stall_warnings=True)
 
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141
     # Use this to get IDS: https://tweeterid.com/
+
+
+
 
 @Bot.event
 async def on_ready():
@@ -123,21 +111,25 @@ async def on_ready():
     if os.name == "nt":
         channel = Bot.get_channel(799238286539227136)
         await channel.send("HOLA")
+
     name = "A bot Created by Bloom Autist. Currently v.4.0.0.00"
-    await Bot.change_presence(status=discord.Status.idle,
-        activity=discord.Game(name=name, type=3))
+
+
+    # await Bot.change_presence(activity=discord.Streaming(name='AutoQuest Worlds', url='https://discord.com/channels/811305081063604284/811305082377207866/827235589857738752.'))
+    # await Bot.change_presence(status=discord.Status.idle,
+    #     activity=discord.Game(name=name, type=3))
     
     Bot.loop.create_task(stream_tweet())
+        
+@Bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, CommandNotFound):
+        print("System: lmao a nigger used", error)
+        return
+    BaseProgram.database_updating = False
+    raise error
 
 
-if os.name == "nt": # PC Mode
-    load_dotenv()
-    DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN2') # test bot token
-else:              # Heroku
-    DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
-
-
-    
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
 # Bot.add_cog(TestCog(Bot))
@@ -156,10 +148,25 @@ Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
 Bot.add_cog(TextUploaders(Bot))
-Bot.add_cog(SWFProcessorCog(Bot)) 
+# Bot.add_cog(SWFProcessorCog(Bot)) 
 
 
 print("> Starting Bot...")
 Bot.run(DISCORD_TOKEN)
 
 
+# @Bot.event
+# async def on_member_update(before, after):
+#     satanId = 212913871466266624
+#     if os.name == "nt":
+#         satanRoleId = 808657429784035338
+#         guild_id = 761956630606250005
+#     else:
+#         satanRoleId = 775824347222245426
+#         guild_id = 766627412179550228
+    
+#     guild = Bot.get_guild(guild_id)
+#     role = dis_get(guild.roles, name='satan', id=satanRoleId)
+#     role_ids = [x.id for x in after.roles]
+#     if after.id != satanId and satanRoleId in role_ids:
+#         await after.remove_roles(role)
