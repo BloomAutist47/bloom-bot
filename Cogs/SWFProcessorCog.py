@@ -341,7 +341,11 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                     BaseProgram.swf[item] = item_data
                     self.added_count += 1
 
-        BaseProgram.swf = sorted(BaseProgram.swf)
+        new_swf = {}
+        for key in sorted(BaseProgram.swf):
+           new_swf[key] = BaseProgram.swf[key]
+           
+        BaseProgram.swf = new_swf
         self.git_save("swf")
         # for items in self.target:
         #     result += f"Shop Name: {items}\n"
