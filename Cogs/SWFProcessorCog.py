@@ -28,6 +28,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         self.target = {}
         self.target_type = ""
         self.added_count = 0
+        self.already_exist = 0
         self.got_it=False
         self.semiList = ["Description", "Cost", "Shop item ID", "ID"]
         self.changingShops = ["Featured Gear Shop", "Nulgath's Birthday Shop"]
@@ -90,30 +91,42 @@ class SWFProcessorCog(commands.Cog, BaseTools):
             await ctx.send(warn)
             return  
 
+        await ctx.send(r"\> Analysing .xml file. Please wait....")
+
         target_url = attach.url
-        got = False
-        self.file = await self.get_site_content(URL=target_url, is_soup=False, encoding="utf8")
-        test = ET.fromstring(str(self.file))
-        self.file = ET.tostring(test, encoding='unicode')
+
+        self.got_it = False
+        
+        file_ = await self.get_site_content(URL=target_url, is_soup=False, encoding="utf8")
+        file_ = ET.fromstring(str(file_))
+        file_ = ET.tostring(file_, encoding='unicode')
 
         try:
+            self.file =file_
             self.shopProcess()
-        except Exception as e:
-            print("First e: ", e)
+            self.got_it = True
+        except: pass
+
         try:
-            self.questProcess(self.file)
-            print("yikes")
-        except Exception as e:
-            print("Second e: ", e)
-            pass
-        # self.questProcess()
-        print("go: ", self.got_it)
+            self.file = file_
+            self.questProcess()
+            self.got_it = True
+        except: pass
+
         if not self.got_it:
             await ctx.send(warn)
             return
         self.addToDatabase()
 
-        await ctx.send(f"\> Added {self.added_count} items to the Database!")
+        if self.added_count:
+            await ctx.send(f"\> Added {self.added_count} items to the Database!")
+        if self.already_exist:
+            await ctx.send(f"\> These {self.already_exist} items already exists in the Database.")
+
+        if not self.added_count and not self.already_exist:
+            await ctx.send(f"\> No items were added. :sadge:.")
+
+        self.already_exist = 0
         self.added_count = 0
         self.got_it=False
         return
@@ -196,8 +209,8 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         self.got_it=True
         
         # pprint(self.shop_data)
-    def questProcess(self, file):
-        self.file = file
+    def questProcess(self):
+        # self.file = BaseProgram.file_quest
         self.file = re.sub('(<n t=)|(/>)|(<TreeView>)|(</TreeView>)|\"', "", self.file)
         self.file = re.sub("(  )", " ", self.file)
         self.file = self.file.replace('<?xml version=1.0 encoding=us-ascii?>', "")
@@ -209,7 +222,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
 
             if quest_header[0].strip() == "":
                 continue
-            quest_name = quest_header[0].split(">")[0].split("-", 1)[1].strip()
+            quest_name = quest_header[0].split(">")[0].split("-", 1)[1].strip().replace(">", "")
             quest_id = quest_header[0].split("\n")[1].split(":")[-1].strip()
             # print(quest_name)
             # print(quest_id)
@@ -319,11 +332,13 @@ class SWFProcessorCog(commands.Cog, BaseTools):
 
     def addToDatabase(self):
         type_ = self.target
-        pprint(self.target)
 
         if self.target_type == "Shop":
             for shop in self.target:
                 for item in self.target[shop]["Items"]:
+                    if item in BaseProgram.swf:
+                        self.already_exist +=1
+                        continue
                     item_data = self.target[shop]["Items"][item]
                     item_data["Shop Name"] = shop
                     item_data["Shop ID"] = self.target[shop]["ID"]
@@ -335,6 +350,9 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         if self.target_type == "Quest":
             for quest in self.target:
                 for item in self.target[quest]["Items"]:
+                    if item in BaseProgram.swf:
+                        self.already_exist +=1
+                        continue
                     item_data = self.target[quest]["Items"][item]
                     item_data["Quest Name"] = quest
                     item_data["Quest ID"] = self.target[quest]["ID"]
@@ -346,8 +364,14 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         # for key in sorted(BaseProgram.swf):
         #    new_swf[key] = BaseProgram.swf[key]
            
-        BaseProgram.swf = new_swf
-        self.git_save("swf")
+        # BaseProgram.swf = new_swf
+        while True:
+            try:
+                self.git_save("swf")
+                break
+            except:
+                print("> Github `swf` save failed. Trying again...")
+                continue
         # for items in self.target:
         #     result += f"Shop Name: {items}\n"
         #     result += f"ID: {self.target[items]['ID']}\n"

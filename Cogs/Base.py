@@ -122,7 +122,7 @@ class BaseProgram:
         #     "twitter_logs": BaseProgram.twitter_logs
         # }
         self.mode_list = ["database", "guides", "classes", "settings", "texts", 
-                    "streams", "reddit_logs", "twitter_logs", "swf"]
+                    "streams", "reddit_logs", "twitter_logs"]
 
         self.env_variables()
         

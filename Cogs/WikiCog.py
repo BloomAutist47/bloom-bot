@@ -17,7 +17,7 @@ class WikiCog(commands.Cog, BaseTools):
             embedVar = self.embed_single("Wiki Search", "Please enter a value.")
             await ctx.send(embed=embedVar)
             return
-        item = item.lower().replace(".", "").replace("+", "")
+        item = item.lower().replace(".", "").replace("+", "").replace("'", "")
 
         straight = self.convert_aqurl(item, "wiki")
         print(straight)
