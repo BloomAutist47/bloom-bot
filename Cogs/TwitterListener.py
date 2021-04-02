@@ -460,7 +460,7 @@ class TwitterCog(commands.Cog, TweetTools):
         # user = self.api.get_user("Alina_AE")
 
         got = False
-        time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", tweet_mode='extended').items(10)
+        time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", tweet_mode='extended').items(100)
         tweet_list = []
         print("appending")  
         for tweet in (time_line):
@@ -512,9 +512,12 @@ class TwitterCog(commands.Cog, TweetTools):
                         self.is_double = False
                         break
         print("starting")
-        tweet = tweet_list[0]
-        await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"], double=tweet['double'], send_ping="automatic")
-
+        if tweet_list:
+            tweet = tweet_list[0]
+            await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"], double=tweet['double'], send_ping="automatic")
+        else:
+            print("> No Daily Gift Found")
+        return
     @commands.command()
     async def uppage(self, ctx):
         allow_ = await self.allow_evaluator(ctx, mode="role_privilege", command_name="uppage")
