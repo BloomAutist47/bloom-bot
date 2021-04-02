@@ -591,7 +591,7 @@ class TwitterCog(commands.Cog, TweetTools):
 
         self.is_double = False
         got = False
-
+        user_screen = status._json["user"]["screen_name"]
         if status == "":
             return
         if hasattr(status, 'extended_tweet'):
@@ -601,7 +601,7 @@ class TwitterCog(commands.Cog, TweetTools):
             # Checks if wrong tweet
             for i in self.black_list:
                 if i.lower() in tweet_text:
-                    await self.send_to_discord(status.id, status.user.id_str)
+                    await self.send_to_discord(status.id, status.user.id_str, user_screen)
                     return
 
             # Checks if double boost
@@ -621,7 +621,8 @@ class TwitterCog(commands.Cog, TweetTools):
                         break
 
             if not got:
-                await self.send_to_discord(status.id, status.user.id_str)
+                
+                await self.send_to_discord(status.id, status.user.id_str, user_screen)
                 return
             self.check_twitter_id(status.id, status.user.id_str)
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
