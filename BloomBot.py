@@ -24,7 +24,7 @@ import tweepy
 from discord.ext import tasks
 from discord import Intents
 from discord.ext.commands import CommandNotFound
-import pypresence
+# import pypresence
 from pprint import pprint
 from time import sleep  
 
