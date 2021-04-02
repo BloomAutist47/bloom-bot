@@ -37,9 +37,6 @@ class RedditCog(commands.Cog, BaseTools):
 
 
 
-        self.channel_urls = [BaseProgram.settings["RedditCogSettings"]["channels"][channel] for channel in BaseProgram.settings["RedditCogSettings"]["channels"]]
-        print(self.channel_urls)
-
         self.reddit = asyncpraw.Reddit(client_id = client_id,  
                              client_secret = client_secret,  
                              username = username,  
@@ -98,11 +95,13 @@ class RedditCog(commands.Cog, BaseTools):
                 "time": time_,
                 "is_video": is_video_
             }
-            self.git_save("reddit_logs")
+            if not BaseProgram.lock_read:
+                self.git_save("reddit_logs")
 
             embedVar = discord.Embed(title=title_, url=link_, color=BaseProgram.block_color)
             embedVar.set_author(name="r/" + sub_name, url=f"https://www.reddit.com/r/{sub_name}/", icon_url=BaseProgram.icon_dict[sub_name])
-            text_ = re.sub(r"(https://preview.redd.it/.+?\n)", "", text_)
+            print(text_)
+            text_ = re.sub(r"[^(](https://preview.redd.it/.+?\n)", "", text_)
             text_ = re.sub(r"(&#x200B;)", "", text_)
             text_ = re.sub(r"(\n\n\n)", "\n", text_).strip()
             chunks = textwrap.wrap(text_, 1024, break_long_words=False, replace_whitespace=False)

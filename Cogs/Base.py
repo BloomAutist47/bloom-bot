@@ -83,6 +83,7 @@ class BaseProgram:
 
     tweets_listener = ""
 
+    lock_read = False
 
     icon_bloom = "https://cdn.discordapp.com/attachments/805367955923533845/813066459281489981/icon3.png"
     icon_aqw = "https://cdn.discordapp.com/attachments/805367955923533845/812991601714397194/logo_member.png"
@@ -139,7 +140,8 @@ class BaseProgram:
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
         os.chdir('..')
         self.file_read("all")
-        self.git_read("all")
+        if not BaseProgram.lock_read:
+            self.git_read("all")
 
     def env_variables(self):
         if os.name == "nt": # PC Mode

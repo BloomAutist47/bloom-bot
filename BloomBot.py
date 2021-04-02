@@ -24,7 +24,7 @@ import tweepy
 from discord.ext import tasks
 from discord import Intents
 from discord.ext.commands import CommandNotFound
-# import pypresence
+import pypresence
 from pprint import pprint
 from time import sleep  
 
@@ -63,11 +63,9 @@ else:
     CLIEND_ID = os.environ.get("DISCORD_CLIENT_ID")
     cmd = ";"
 
-# RPC = pypresence.Presence(client_id=CLIEND_ID, pipe=0) 
-# RPC.connect()
-# RPC.update(state="Rich Presence using pypresence!", details="A test of qwertyquerty's Python Discord RPC wrapper, pypresence!")
 
 intents = Intents.all()
+intents.presences = True
 Bot = commands.Bot(command_prefix=[cmd], description='Bloom Bot Revamped', intents=intents, help_command=None)
 
 
@@ -103,7 +101,12 @@ async def stream_tweet():
     # Use this to get IDS: https://tweeterid.com/
 
 
-
+def rich_presence():
+    RPC = pypresence.Presence(client_id=CLIEND_ID, pipe=0, loop=BaseProgram.loop) 
+    y = RPC.connect()
+    x = RPC.update(state="Rich Presence using pypresence!", details="A test of qwertyquerty's Python Discord RPC wrapper, pypresence!")
+    print(x)
+    print(y)
 
 @Bot.event
 async def on_ready():
@@ -112,14 +115,18 @@ async def on_ready():
         channel = Bot.get_channel(799238286539227136)
         await channel.send("HOLA")
 
-    name = "A bot Created by Bloom Autist. Currently v.4.0.0.00"
+    # name = "A bot Created by Bloom Autist. Currently v.4.0.0.00"
 
+    # game = discord.Activity(state="with the API",name="AdventureQuest Worlds", details="suck madasdasd", type=discord.ActivityType.playing,
+    #      url="https://www.youtube.com/channel/UCfiSbTjgVesx8wllBz4aIxw",
+    #             assets={"large_image": "nigmoirehd_x1024", "small_image":"nigmoirehd_x512", "large_text":"test", "small_text":"Asdasd"},
+    # await Bot.change_presence(status=discord.Status.online, activity=game)
 
-    # await Bot.change_presence(activity=discord.Streaming(name='AutoQuest Worlds', url='https://discord.com/channels/811305081063604284/811305082377207866/827235589857738752.'))
     # await Bot.change_presence(status=discord.Status.idle,
     #     activity=discord.Game(name=name, type=3))
     
     Bot.loop.create_task(stream_tweet())
+    # Bot.loop.create_task(rich_presence())
         
 @Bot.event
 async def on_command_error(ctx, error):

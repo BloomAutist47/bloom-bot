@@ -101,7 +101,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         except Exception as e:
             print("First e: ", e)
         try:
-            self.questProcess()
+            self.questProcess(self.file)
             print("yikes")
         except Exception as e:
             print("Second e: ", e)
@@ -196,7 +196,8 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         self.got_it=True
         
         # pprint(self.shop_data)
-    def questProcess(self):
+    def questProcess(self, file):
+        self.file = file
         self.file = re.sub('(<n t=)|(/>)|(<TreeView>)|(</TreeView>)|\"', "", self.file)
         self.file = re.sub("(  )", " ", self.file)
         self.file = self.file.replace('<?xml version=1.0 encoding=us-ascii?>', "")

@@ -212,7 +212,7 @@ class TweetTools(BaseTools):
             else:
                 text = text.replace("Battleontown", "").replace("battleontown", "")
                 if "Defeat the" in text:
-                    enemy = re.search("(Defeat the)(.+?)(for reward gear|in the)", text)
+                    enemy = re.search("(Defeat the)(.+?)(for reward gear|in the|\sin\s)", text)
                 else:
                     enemy = re.search("(battle the|battle|Battle\sthe|Battle|Battle the|Defeat)(.+?)(for reward gear|in the\s/|in\s/|the\s|/|\sin\s)", text)
                 if enemy:
@@ -678,6 +678,7 @@ class TwitterListener(tweepy.StreamListener, TweetTools):
             return
         BaseProgram.twitter_updating = True
         BaseProgram.status_list.append([status])
+        # pprint(vars(status))
         BaseProgram.twitter_updating = False
         return
 
