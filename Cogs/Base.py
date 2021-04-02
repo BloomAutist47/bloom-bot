@@ -60,7 +60,7 @@ class BaseProgram:
     database_updating = False
     twitter_updating = False
 
-
+    tweet_user_list = []
     loop = asyncio.get_event_loop()
 
     asyncio.set_event_loop(loop)

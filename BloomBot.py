@@ -85,16 +85,17 @@ async def stream_tweet():
     BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
     BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, is_async=True,  tweet_mode='extended')
     print("> Twitter Listener Success")
+    BaseProgram.tweet_user_list = [
+            BaseProgram.tweet_user,
+            "135864340", # @Kotaro_AE
+            "200782641", # @notdarkon
+            "2435624982", # @asukaae
+            "2615674874", # @yo_lae
+            "989324890204327936", # @arletteaqw
+            "69666805", # @dagetheevil]
+        ]
 
-
-    BaseProgram.stream.filter(follow=[BaseProgram.tweet_user,
-        "135864340", # @Kotaro_AE
-        "200782641", # @notdarkon
-        "2435624982", # @asukaae
-        "2615674874", # @yo_lae
-        "989324890204327936", # @arletteaqw
-        "69666805", # @dagetheevil
-        ], is_async=True, stall_warnings=True)
+    BaseProgram.stream.filter(follow=BaseProgram.tweet_user_list, is_async=True, stall_warnings=True)
 
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141

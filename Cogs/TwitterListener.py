@@ -346,14 +346,14 @@ class TweetTools(BaseTools):
     #     print("Done")
     #     return
 
-    async def tweet_simple(self, id_):
+    async def tweet_simple(self, id_, user_screen):
         link = str(id_)
         if os.name == "nt":
             channel = await self.bot.fetch_channel(799238286539227136)
         else:
             channel = await self.bot.fetch_channel(811309992727937034)
 
-        await channel.send(f"@Alina_AE: https://twitter.com/twitter/statuses/{id_}")
+        await channel.send(f"@{user_screen}: https://twitter.com/twitter/statuses/{id_}")
         return
 
 class TwitterCog(commands.Cog, TweetTools):
@@ -630,15 +630,17 @@ class TwitterCog(commands.Cog, TweetTools):
             return
         else:
             # print(status)
+            # print("user: ", )
             print('text: ' + status.text)
-            await self.send_to_discord(status.id, status.user.id_str)
+            user_screen = status._json["user"]["screen_name"]
+            await self.send_to_discord(status.id, status.user.id_str, user_screen)
             return
 
-    async def send_to_discord(self, id_, user_id):
-        if user_id != BaseProgram.tweet_user:
+    async def send_to_discord(self, id_, user_id, user_screen):
+        if user_id not in BaseProgram.tweet_user_list:
             return
         self.check_twitter_id(id_, user_id)
-        await self.tweet_simple(id_)
+        await self.tweet_simple(id_, user_screen)
         # self.loop.create_task(self.tweet_simple(id_))
         # send_fut = asyncio.run_coroutine_threadsafe(self.tweet_simple(id_), BaseProgram.loop)
         # send_fut.result()
