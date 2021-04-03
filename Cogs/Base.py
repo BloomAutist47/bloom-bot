@@ -3,6 +3,7 @@ import os
 import re
 import json
 import github3
+from github_contents import GithubContents
 import requests
 import asyncio
 import aiosonic
@@ -125,7 +126,10 @@ class BaseProgram:
                     "streams", "reddit_logs", "twitter_logs"]
 
         self.env_variables()
-        
+        # self.og_git()
+        self.new_git()
+
+    def og_git(self):
         while True:
             try:
                 BaseProgram.github = github3.login(token=BaseProgram.GIT_BLOOM_TOKEN)
@@ -143,6 +147,14 @@ class BaseProgram:
         if not BaseProgram.lock_read:
             self.git_read("all")
 
+    def new_git(self):
+        github = GithubContents(
+            BaseProgram.GIT_USER,
+            "Bloom-Bot",
+            token=BaseProgram.GIT_BLOOM_TOKEN,
+            branch="master"
+        )
+
     def env_variables(self):
         if os.name == "nt": # PC Mode
 
@@ -152,6 +164,7 @@ class BaseProgram:
             BaseProgram.GIT_REPOS = os.getenv('GITHUB_REPOS')
             BaseProgram.GIT_USER = os.getenv('GITHUB_USERNAME')
             BaseProgram.GIT_BLOOM_TOKEN = os.getenv('GITHUB_BLOOMBOT_TOKEN')
+            BaseProgram.GITHUB_EMAIL = os.getenv('GITHUB_EMAIL')
             BaseProgram.PERMISSIONS = os.getenv("PRIVILEGED_ROLE").split(',')
             BaseProgram.PORTAL_AGENT = os.getenv('PORTAL_AGENT')
 
@@ -164,6 +177,7 @@ class BaseProgram:
             BaseProgram.DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
             BaseProgram.GIT_REPOS = os.environ.get('GITHUB_REPOS')
             BaseProgram.GIT_USER = os.environ.get('GITHUB_USERNAME')
+            BaseProgram.GITHUB_EMAIL = os.environ.get('GITHUB_EMAIL')
             BaseProgram.GIT_BLOOM_TOKEN = os.environ.get('GITHUB_BLOOMBOT_TOKEN')
             BaseProgram.PERMISSIONS = os.environ.get("PRIVILEGED_ROLE").split(',')
             BaseProgram.PORTAL_AGENT = os.environ.get("PORTAL_AGENT")
@@ -355,8 +369,21 @@ class BaseProgram:
 
         for file in mode:
             git_data = json.dumps(getattr(BaseProgram, file), indent=4).encode('utf-8')
-            contents_object = BaseProgram.repository.file_contents(f"./Data/{file}.json")
-            contents_object.update(f"{file} updated", git_data)
+            # contents_object = BaseProgram.repository.file_contents(f"./Data/{file}.json")
+            # contents_object.update(f"{file} updated", git_data)
+
+
+            content_sha, commit_sha = github.write(
+                filepath=f"./Data/{file}.json",
+                content_bytes=git_data,
+                commit_message=f"{file} updated",
+                committer={
+                    "name": BaseProgram.GIT_USER,
+                    "email": BaseProgram.GITHUB_EMAIL,
+                },
+            )
+
+
             self.file_save(file)
         return
 
@@ -377,8 +404,14 @@ class BaseProgram:
         for file in mode:
             if file == "update":
                 continue
-            git_data = BaseProgram.repository.file_contents(f"./Data/{file}.json").decoded
-            setattr(BaseProgram, file, json.loads(git_data.decode('utf-8')))
+            # git_data = BaseProgram.repository.file_contents(f"./Data/{file}.json").decoded
+            # setattr(BaseProgram, file, json.loads(git_data.decode('utf-8')))
+
+            content_in_bytes, sha = github.read(f"./Data/{file}.json")
+            print(content_in_bytes)
+            setattr(BaseProgram, file, json.loads(content_in_bytes.decode('utf-8')))
+
+
             if file == "classes":
                 self.sort_classes_acronym()
             if file == "data" or file == "settings":
