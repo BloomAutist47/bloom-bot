@@ -57,72 +57,74 @@ class RedditCog(commands.Cog, BaseTools):
         # await asyncio.sleep(10)
         print("Start Watching")
         subreddit = await self.reddit.subreddit("AQW+FashionQuestWorlds+AutoQuestWorlds")
-        async for sub in subreddit.stream.submissions():
-            sub_name = str(sub.subreddit)
-            if sub_name not in BaseProgram.reddit_logs:
-                BaseProgram.reddit_logs[sub_name] = {}
-
-            if str(sub.id) in BaseProgram.reddit_logs[sub_name]:
-                print("NOPE")
-                continue
-            author_ = str(sub.author)
-            title_ = str(sub.title)
-            link_ = f"https://www.reddit.com{sub.permalink}"
-            image_ = None
-            footer_ = None
-            is_video_= sub.is_video
-
-            if not sub.is_self:  # We only want to work with link posts
-                image_ = str(sub.url)
-            print(title_)
+        while True:
             try:
-                image_ = sub.media_metadata[list(sub.media_metadata)[0]]["s"]["u"]
-                footer_ = "This is a gallery post."
-            except:
-                pass
-            if sub.is_video == True:
-                image_ = sub.preview["images"][0]["source"]["url"]
-                footer_ = "This is a video post."
-            text_ = str(sub.selftext) + "\n"
-            time_ = self.get_date(sub)
+                async for sub in subreddit.stream.submissions():
+                    sub_name = str(sub.subreddit)
+                    if sub_name not in BaseProgram.reddit_logs:
+                        BaseProgram.reddit_logs[sub_name] = {}
 
-            BaseProgram.reddit_logs[sub_name][sub.id] = {
-                "author": author_,
-                "title": title_,
-                "link": link_,
-                "image": image_,
-                "text": text_,
-                "time": time_,
-                "is_video": is_video_
-            }
-            if not BaseProgram.lock_read:
-                self.git_save("reddit_logs")
+                    if str(sub.id) in BaseProgram.reddit_logs[sub_name]:
+                        print("NOPE")
+                        continue
+                    author_ = str(sub.author)
+                    title_ = str(sub.title)
+                    link_ = f"https://www.reddit.com{sub.permalink}"
+                    image_ = None
+                    footer_ = None
+                    is_video_= sub.is_video
 
-            embedVar = discord.Embed(title=title_, url=link_, color=BaseProgram.block_color)
-            embedVar.set_author(name="r/" + sub_name, url=f"https://www.reddit.com/r/{sub_name}/", icon_url=BaseProgram.icon_dict[sub_name])
-            print(text_)
-            text_ = re.sub(r"[^(](https://preview.redd.it/.+?\n)", "", text_)
-            text_ = re.sub(r"(&#x200B;)", "", text_)
-            text_ = re.sub(r"(\n\n\n)", "\n", text_).strip()
-            chunks = textwrap.wrap(text_, 1020, break_long_words=False, replace_whitespace=False)
+                    if not sub.is_self:  # We only want to work with link posts
+                        image_ = str(sub.url)
+                    print(title_)
+                    try:
+                        image_ = sub.media_metadata[list(sub.media_metadata)[0]]["s"]["u"]
+                        footer_ = "This is a gallery post."
+                    except:
+                        pass
+                    if sub.is_video == True:
+                        image_ = sub.preview["images"][0]["source"]["url"]
+                        footer_ = "This is a video post."
+                    text_ = str(sub.selftext) + "\n"
+                    time_ = self.get_date(sub)
 
-            if chunks:
-                embedVar.description = chunks[0]
-            if len(chunks) > 0:
-                for chunk in chunks[1:]:
-                    embedVar.addField(name="\u200b", value=chunk, inline=False)
+                    BaseProgram.reddit_logs[sub_name][sub.id] = {
+                        "author": author_,
+                        "title": title_,
+                        "link": link_,
+                        "image": image_,
+                        "text": text_,
+                        "time": time_,
+                        "is_video": is_video_
+                    }
+                    if not BaseProgram.lock_read:
+                        self.git_save("reddit_logs")
 
-            embedVar.add_field(name='Author:', value=f"[u/{author_}](https://www.reddit.com/user/{author_}/)", inline=True)
-            embedVar.add_field(name='Date Posted:', value=time_, inline=True)
+                    embedVar = discord.Embed(title=title_, url=link_, color=BaseProgram.block_color)
+                    embedVar.set_author(name="r/" + sub_name, url=f"https://www.reddit.com/r/{sub_name}/", icon_url=BaseProgram.icon_dict[sub_name])
+                    
+                    text_ = re.sub(r"[^(](https://preview.redd.it/.+?\n)", "", text_)
+                    text_ = re.sub(r"(&#x200B;)", "", text_)
+                    text_ = re.sub(r"(\n\n\n)", "\n", text_).strip()
+                    chunks = textwrap.wrap(text_, 1024, break_long_words=False, replace_whitespace=False)
+                    pprint(text_)
+                    if chunks:
+                        embedVar.description = chunks[0]
+                    if len(chunks) > 0:
+                        for chunk in chunks[1:]:
+                            embedVar.add_field(name="\u200b", value=chunk, inline=False)
 
-            if image_:
-                embedVar.set_image(url=image_.strip())
-            if footer_:
-                embedVar.set_footer(text=footer_)
-
-            await self.channel.send(embed=embedVar)
-            await asyncio.sleep(1)
-
+                    embedVar.add_field(name='Author:', value=f"[u/{author_}](https://www.reddit.com/user/{author_}/)", inline=True)
+                    embedVar.add_field(name='Date Posted:', value=time_, inline=True)
+                    if image_:
+                        embedVar.set_image(url=image_.strip())
+                    if footer_:
+                        embedVar.set_footer(text=footer_)
+                    await self.channel.send(embed=embedVar)
+                    await asyncio.sleep(1)
+            except Exception as e:
+                print("Dead: ", e)
+                continue
             # await self.send_webhook(sub_name, author_, title_, link_, image_, time_, text_, footer_)
             
 
