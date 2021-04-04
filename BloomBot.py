@@ -97,6 +97,7 @@ async def stream_tweet():
             "1240767852321390592", # @aqwclass
             "2150245009", # @CaptRhubarb
             "360095665", # @ae_root
+            "17190195", # @ArtixKrieger
         ]
 
     BaseProgram.stream.filter(follow=BaseProgram.tweet_user_list, is_async=True, stall_warnings=True)
