@@ -123,11 +123,18 @@ class BaseProgram:
         #     "twitter_logs": BaseProgram.twitter_logs
         # }
         self.mode_list = ["database", "guides", "classes", "settings", "texts", 
-                    "streams", "reddit_logs", "twitter_logs"]
+                    "streams", "reddit_logs", "twitter_logs", "swf"]
 
         self.env_variables()
         # self.og_git()
         self.new_git()
+
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
+        os.chdir('..')
+        self.file_read("all")
+        if not BaseProgram.lock_read:
+            self.git_read("all")
+
 
     def og_git(self):
         while True:
@@ -141,19 +148,22 @@ class BaseProgram:
                 print("> Reconnecting...")
                 continue
 
-        os.chdir(os.path.dirname(os.path.abspath(__file__)))
-        os.chdir('..')
-        self.file_read("all")
-        if not BaseProgram.lock_read:
-            self.git_read("all")
 
     def new_git(self):
-        github = GithubContents(
-            BaseProgram.GIT_USER,
-            "Bloom-Bot",
-            token=BaseProgram.GIT_BLOOM_TOKEN,
-            branch="master"
-        )
+
+        while True:
+            try:
+                BaseProgram.github = GithubContents(
+                    BaseProgram.GIT_USER,
+                    "Bloom-Bot",
+                    token=BaseProgram.GIT_BLOOM_TOKEN,
+                    branch="master"
+                )
+                break
+            except:
+                print("> Failed Connecting to Github... Trying again.")
+                print("> Reconnecting...")
+                continue
 
     def env_variables(self):
         if os.name == "nt": # PC Mode
@@ -373,8 +383,8 @@ class BaseProgram:
             # contents_object.update(f"{file} updated", git_data)
 
 
-            content_sha, commit_sha = github.write(
-                filepath=f"./Data/{file}.json",
+            content_sha, commit_sha = BaseProgram.github.write(
+                filepath=f"Data/{file}.json",
                 content_bytes=git_data,
                 commit_message=f"{file} updated",
                 committer={
@@ -407,9 +417,11 @@ class BaseProgram:
             # git_data = BaseProgram.repository.file_contents(f"./Data/{file}.json").decoded
             # setattr(BaseProgram, file, json.loads(git_data.decode('utf-8')))
 
-            content_in_bytes, sha = github.read(f"./Data/{file}.json")
-            print(content_in_bytes)
-            setattr(BaseProgram, file, json.loads(content_in_bytes.decode('utf-8')))
+            content_in_bytes = BaseProgram.github.read(f"Data/{file}.json")[0]
+            content_in_dict = json.loads(content_in_bytes.decode('utf-8'))
+            print(file)
+            # print(content_in_dict)
+            setattr(BaseProgram, file, content_in_dict)
 
 
             if file == "classes":

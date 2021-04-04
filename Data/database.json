@@ -188,6 +188,10 @@
             "url": "https://adventurequest.life/bots/Arts_IceStormArena_Agro.gbot",
             "author": "arts"
         },
+        "IceStormArena Agro HealerSkill.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_IceStormArena_Agro_HealerSkill.gbot",
+            "author": "arts"
+        },
         "InfernalArmyREP Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_InfernalArmyREP_Bot.gbot",
             "author": "arts"
@@ -908,10 +912,6 @@
             "url": "https://adventurequest.life/bots/NNg_Faerie_Court_reputation.gbot",
             "author": "nng"
         },
-        "IceStormArena XP All Version.gbot": {
-            "url": "https://adventurequest.life/bots/Nng_IceStormArena_XP_All_Version.gbot",
-            "author": "nng"
-        },
         "Icy Token I II III IV.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot",
             "author": "nng"
@@ -966,6 +966,10 @@
         },
         "Ultimate Blinding Weapons  Techfortress War Merge  Stellaria.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Ultimate_Blinding_Weapons_-_Techfortress_War_Merge_-_Stellaria.gbot",
+            "author": "nng"
+        },
+        "NNg Vegetable Token GardenQuest all quests method.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Vegetable_Token_GardenQuest_all_quests_method.gbot",
             "author": "nng"
         },
         "Wheel of Love 5694.gbot": {
@@ -1482,6 +1486,9 @@
             },
             "IceStormArena Agro.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_IceStormArena_Agro.gbot"
+            },
+            "IceStormArena Agro HealerSkill.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_IceStormArena_Agro_HealerSkill.gbot"
             },
             "InfernalArmyREP Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_InfernalArmyREP_Bot.gbot"
@@ -2029,9 +2036,6 @@
             "Hollowborn Rep Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Hollowborn_Rep_Bot.gbot"
             },
-            "IceStormArena XP All Version.gbot": {
-                "url": "https://adventurequest.life/bots/Nng_IceStormArena_XP_All_Version.gbot"
-            },
             "Icy Token I II III IV.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Icy_Token_I_II_III_IV.gbot"
             },
@@ -2070,6 +2074,9 @@
             },
             "Ultimate Blinding Weapons  Techfortress War Merge  Stellaria.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Ultimate_Blinding_Weapons_-_Techfortress_War_Merge_-_Stellaria.gbot"
+            },
+            "NNg Vegetable Token GardenQuest all quests method.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Vegetable_Token_GardenQuest_all_quests_method.gbot"
             },
             "Wheel of Love 5694.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Wheel_of_Love_5694.gbot"

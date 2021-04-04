@@ -20,3 +20,4 @@ discord==1.0.1
 Pillow==8.1.2
 python-dotenv==0.15.0
 python_dateutil==2.8.1
+github-contents==0.2

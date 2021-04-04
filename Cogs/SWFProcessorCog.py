@@ -30,6 +30,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         self.added_count = 0
         self.already_exist = 0
         self.got_it=False
+        self.swf_adding = False
         self.semiList = ["Description", "Cost", "Shop item ID", "ID"]
         self.changingShops = ["Featured Gear Shop", "Nulgath's Birthday Shop"]
         self.threads = []
@@ -96,7 +97,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         target_url = attach.url
 
         self.got_it = False
-        
+        self.swf_adding = True
         file_ = await self.get_site_content(URL=target_url, is_soup=False, encoding="utf8")
         file_ = ET.fromstring(str(file_))
         file_ = ET.tostring(file_, encoding='unicode')
@@ -129,6 +130,10 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         self.already_exist = 0
         self.added_count = 0
         self.got_it=False
+        self.swf_adding = False
+
+        await ctx.send(f"\> Done Analysing.")
+
         return
 
     @commands.command()
@@ -181,6 +186,11 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                 itemDataHolder = {}
 
                 itemName = re.search(r"(.+\>?)", item)[0].replace(">", "").strip()
+                if self.swf_adding:
+                    if itemName in BaseProgram.swf:
+                        self.already_exist +=1
+                        continue
+
                 itemData = item.split(">")[1].split("\n")[1:-1]
                 for data in itemData:
                     x = data.split(":")[:]
@@ -251,6 +261,11 @@ class SWFProcessorCog(commands.Cog, BaseTools):
             for reward in reward_item:
                 reward_dat = reward.strip().split("\n")
                 itemName = reward_dat[0]
+                if self.swf_adding:
+                    if itemName in BaseProgram.swf:
+                        self.already_exist +=1
+                        continue
+
                 details = reward_dat[1:]
                 for data in details:
                     x = data.split(":")[:]
@@ -336,9 +351,9 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         if self.target_type == "Shop":
             for shop in self.target:
                 for item in self.target[shop]["Items"]:
-                    if item in BaseProgram.swf:
-                        self.already_exist +=1
-                        continue
+                    # if item in BaseProgram.swf:
+                    #     self.already_exist +=1
+                    #     continue
                     item_data = self.target[shop]["Items"][item]
                     item_data["Shop Name"] = shop
                     item_data["Shop ID"] = self.target[shop]["ID"]
@@ -350,9 +365,9 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         if self.target_type == "Quest":
             for quest in self.target:
                 for item in self.target[quest]["Items"]:
-                    if item in BaseProgram.swf:
-                        self.already_exist +=1
-                        continue
+                    # if item in BaseProgram.swf:
+                    #     self.already_exist +=1
+                    #     continue
                     item_data = self.target[quest]["Items"][item]
                     item_data["Quest Name"] = quest
                     item_data["Quest ID"] = self.target[quest]["ID"]

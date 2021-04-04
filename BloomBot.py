@@ -25,7 +25,7 @@ from discord.ext import tasks
 from discord import Intents
 from discord.ext.commands import CommandNotFound
 # import pypresence
-from pprint import pprint
+from pprint import pprint   
 from time import sleep  
 
 from Cogs.Base import *
@@ -40,7 +40,7 @@ from Cogs.TwitterListener import TwitterCog
 from Cogs.TextUploaderCog import TextUploaders
 from Cogs.UtilsCog import UtilsCog
 from Cogs.RedditCog import RedditCog
-from Cogs.SWFProcessorCog import SWFProcessorCog
+# from Cogs.SWFProcessorCog import SWFProcessorCog
 
 # from Cogs.StreamCog import StreamCog
 # from Cogs.TestCog import TestCog

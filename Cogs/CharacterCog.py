@@ -287,7 +287,7 @@ class CharacterCog(commands.Cog, BaseTools):
 
     @commands.command()
     async def server(self, ctx):
-        self.est_dt = datetime.now(timezone('est'))
+        self.est_dt = datetime.now(timezone('edt'))
         current_time = self.est_dt.strftime("Server Time: %d %B %Y, %I:%M %p")
 
         url = "https://game.aq.com/game/cf-serverlist.asp"

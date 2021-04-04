@@ -104,7 +104,7 @@ class RedditCog(commands.Cog, BaseTools):
             text_ = re.sub(r"[^(](https://preview.redd.it/.+?\n)", "", text_)
             text_ = re.sub(r"(&#x200B;)", "", text_)
             text_ = re.sub(r"(\n\n\n)", "\n", text_).strip()
-            chunks = textwrap.wrap(text_, 1024, break_long_words=False, replace_whitespace=False)
+            chunks = textwrap.wrap(text_, 1020, break_long_words=False, replace_whitespace=False)
 
             if chunks:
                 embedVar.description = chunks[0]
