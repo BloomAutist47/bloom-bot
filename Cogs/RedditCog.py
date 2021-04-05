@@ -35,8 +35,18 @@ class RedditCog(commands.Cog, BaseTools):
             password = os.environ.get('REDDIT_PASSWORD')
             user_agent = os.environ.get('REDDIT_USER_AGENT')
 
-
-
+        print("yes")
+        BaseProgram.reddit_network = {
+            "4chan":{
+                "key": 822037903790047233,
+                "obj": "",
+            },
+            "maids": {
+                "key": 824636610481881157,
+                "obj": "",
+            }
+        }
+        print("nope")
         self.reddit = asyncpraw.Reddit(client_id = client_id,  
                              client_secret = client_secret,  
                              username = username,  
@@ -54,9 +64,15 @@ class RedditCog(commands.Cog, BaseTools):
         else:
             self.channel = await self.bot.fetch_channel(811305082758758434)
 
+            for subred in BaseProgram.reddit_network:
+                print(BaseProgram.reddit_network[subred]["key"])
+                try:
+                    BaseProgram.reddit_network[subred]["obj"] = await self.bot.fetch_channel(BaseProgram.reddit_network[subred]["key"])
+                except Exception as e:
+                    print(e)
         # await asyncio.sleep(10)
-        print("Start Watching")
-        subreddit = await self.reddit.subreddit("AQW+FashionQuestWorlds+AutoQuestWorlds+133sAppreciationClub")
+        print("> Start Watching")
+        subreddit = await self.reddit.subreddit("AQW+FashionQuestWorlds+AutoQuestWorlds+133sAppreciationClub+4chan")
         while True:
             try:
                 async for sub in subreddit.stream.submissions():
@@ -120,7 +136,14 @@ class RedditCog(commands.Cog, BaseTools):
                         embedVar.set_image(url=image_.strip())
                     if footer_:
                         embedVar.set_footer(text=footer_)
-                    await self.channel.send(embed=embedVar)
+
+                    if os.name == "nt":
+                        await self.channel.send(embed=embedVar)
+                    else:
+                        if sub_name.lower() in BaseProgram.reddit_network:
+                            await BaseProgram.reddit_network[sub_name.lower()]["obj"].send(embed=embedVar)
+                        else:
+                            await self.channel.send(embed=embedVar)
                     await asyncio.sleep(1)
             except Exception as e:
                 print("Dead: ", e)

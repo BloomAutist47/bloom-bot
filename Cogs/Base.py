@@ -92,13 +92,18 @@ class BaseProgram:
     icon_aqw_g = "https://cdn.discordapp.com/attachments/805367955923533845/813015948256608256/aqw.png"
     icon_google = "https://cdn.discordapp.com/attachments/805367955923533845/813340480330137650/google_chrome_new_logo-512.png"
     icon_spider = "https://cdn.discordapp.com/attachments/805367955923533845/828604515602399262/unknown.png"
-
+    icon_4chan = "https://cdn.discordapp.com/attachments/805367955923533845/828655255821484072/J06iq9EtwExfgF05DQMlokwKnPnFnQRzEpFozGJWT2U.png"
+    icon_maids = "https://cdn.discordapp.com/attachments/805367955923533845/828655455705890846/unknown.png"
     icon_dict = {
         "AutoQuestWorlds":icon_auqw,
         "FashionQuestWorlds":icon_aqw,
         "AQW":icon_aqw,
         "133sAppreciationClub":icon_spider,
+        "maids": icon_maids,
+        "4chan": icon_4chan,
     }
+
+
     icons = {
                 "auqw": {
                     "title": "AutoQuest Worlds",
@@ -128,7 +133,7 @@ class BaseProgram:
             "360095665", # @ae_root
             "17190195", # @ArtixKrieger
         ]
-
+    reddit_network = {}
     def git_prepare(self):
         self.mode_list = ["database", "guides", "classes", "settings", "texts", 
                     "streams", "reddit_logs", "twitter_logs", "swf"]
@@ -161,12 +166,14 @@ class BaseProgram:
 
         while True:
             try:
+                print("> Starting Github Connection...")
                 BaseProgram.github = GithubContents(
                     BaseProgram.GIT_USER,
                     "Bloom-Bot",
                     token=BaseProgram.GIT_BLOOM_TOKEN,
                     branch="master"
                 )
+                print("> Github Connection...Success!")
                 break
             except:
                 print("> Failed Connecting to Github... Trying again.")
