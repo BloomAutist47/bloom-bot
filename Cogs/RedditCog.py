@@ -72,7 +72,7 @@ class RedditCog(commands.Cog, BaseTools):
                     print(e)
         # await asyncio.sleep(10)
         print("> Start Watching")
-        subreddit = await self.reddit.subreddit("AQW+FashionQuestWorlds+AutoQuestWorlds+133sAppreciationClub+4chan")
+        subreddit = await self.reddit.subreddit("AQW+FashionQuestWorlds+AutoQuestWorlds+133sAppreciationClub")
         while True:
             try:
                 async for sub in subreddit.stream.submissions():
