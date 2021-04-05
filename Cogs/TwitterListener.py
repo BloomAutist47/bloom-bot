@@ -425,7 +425,7 @@ class TwitterCog(commands.Cog, BaseTools):
         return
 
 
-    @tasks.loop(minutes=10)
+    @tasks.loop(minutes=5)
     async def tweet_looper(self):
         await self.bot.wait_until_ready()
         BaseProgram.tweet_call == "updaily"
