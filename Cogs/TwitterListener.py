@@ -533,7 +533,7 @@ class TwitterCog(commands.Cog, BaseTools):
             self.git_save("twitter_logs")
 
         print("> Done Tweeter hunting")
-        return
+        # return
 
     def check_twitter_id(self, tweet_id_, user_id_):
 
