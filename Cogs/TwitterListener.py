@@ -530,6 +530,10 @@ class TwitterCog(commands.Cog, BaseTools):
                 for tweet in daily_list:
                     await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"], double=tweet['double'], send_ping="automatic")
 
+            if user_name.lower() != "alina_ae":
+                if not tweet_list:
+                    print("> No Tweets")
+
             self.git_save("twitter_logs")
 
         print("> Done Tweeter hunting")
