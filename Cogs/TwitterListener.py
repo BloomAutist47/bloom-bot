@@ -9,10 +9,26 @@ from pprintpp import pprint
 from discord.utils import get
 from datetime import datetime, timedelta
 import copy
-class TweetTools(BaseTools):
+class TwitterCog(commands.Cog, BaseTools):
     
+    def __init__(self, bot, api):
+        self.setup()
+        self.bot = bot
+        self.api = api
 
-    def tweet_tools(self):
+        self.twitter_user_list = [
+            "Kotaro_AE",
+            "notdarkon",
+            "asukaae",
+            "yo_lae",
+            "arletteaqw",
+            "Psi_AE",
+            "aqwclass",
+            "CaptRhubarb",
+            "ae_root",
+            "ArtixKrieger",
+            "Alina_AE"
+        ]
 
         self.gift_checks = [
             "BONUS daily login gift",
@@ -30,24 +46,29 @@ class TweetTools(BaseTools):
         ]
 
         self.double_check = [
-        "hour DOUBLE",
-        "hour Drop",
-        "DOUBLE Reputation",
-        "DOUBLE Gold",
-        "boost on all",
-        "boost on all servers",
-        "all servers",
-        "for 48 hours",
-        "for 72 hours",
-        "Double Exp",
-        "Double Void",
-        "Double Class point",
-        "Double Experience",
+            "hour DOUBLE",
+            "hour Drop",
+            "DOUBLE Reputation",
+            "DOUBLE Gold",
+            "boost on all",
+            "boost on all servers",
+            "all servers",
+            "for 48 hours",
+            "for 72 hours",
+            "Double Exp",
+            "Double Void",
+            "Double Class point",
+            "Double Experience",
         ]
         self.black_list = [
             "Design Notes", "RT @"
             ]
         self.is_double = False
+
+        # self.tweet_looker.start()
+        self.tweet_looper.start()
+
+
 
     def save_log(self, m, text, link, is_success=False):
         """
@@ -77,37 +98,13 @@ class TweetTools(BaseTools):
             item = f"[None at {error_name}] \nTweet: {text} Link: {link}"
         else:
             item = f"[Error at {error_name}] \nTweet: {text} Link: {link}"
-        print(item)
+
         self.settings["TwitterListenerCogSettings"]["Logs"].append(item)
         self.file_save("settings")
         self.git_save("settings")
 
     def word_cleaner(self, word):
         return word.strip().capitalize()
-
-    async def check_website_integrity(self, item):
-
-        x = re.sub("[']", "-", item).replace(" ", "-")
-        x = re.sub("[^A-Za-z0-9\-]+", "", x)
-        straight = "http://aqwwiki.wikidot.com/" + x.lower()
-        
-        # wiki = "http://aqwwiki.wikidot.com/search:site/q/" + x.replace("-", "%20")
-        wiki = self.convert_aqurl(item, "wikisearch")
-
-        sites_soup = await self.get_site_content(straight)
-        try:
-            page_content = sites_soup.find("div", {"id":"page-content"})
-            page_check = page_content.find("p").text.strip()
-            if page_check == "This page doesn't exist yet!":
-                result = wiki
-            elif "usually refers to:" in page_check:
-                result = straight
-            else:
-                result = straight
-        except:
-            result = wiki
-
-        return result
 
     async def tweet_send(self, text, link, id_, time, double, send_ping="not_automatic"):
         tweet_link = "https://twitter.com/twitter/statuses/"+str(id_)
@@ -159,7 +156,6 @@ class TweetTools(BaseTools):
                 channel = await self.bot.fetch_channel(799238286539227136)
                 if send_ping == "automatic":
                     await channel.send("<@&814054683651342366>")
-                    print("happened!?!")
             else:
                 channel = await self.bot.fetch_channel(812318143322128384)
                 if send_ping == "automatic":
@@ -167,7 +163,6 @@ class TweetTools(BaseTools):
                     
 
             await channel.send(embed=embedVar)
-            print("Done")
             self.is_double = False
             return
             
@@ -181,16 +176,10 @@ class TweetTools(BaseTools):
             
             if not location:
                 location = re.search("\s/(.+?)(\s|map)", text)
-                print("Asdad")
                 if location:
                     location = "/%s"%(location[1])
-                    print("Ded")
                 else:
                     location = re.search("(boss battle in the|\sin your\s|\sin the\s|\sin\s|available now in the|battle in the\s|\sin the|Complete)(.+?)(to collect|to find|\.|\s\(|\!|for a chance|to get the|\smap|map|quest)", text)
-                    try:
-                        print(location.groups())
-                    except:
-                        print("FAILE")
                     if location:
                         location = location.groups()[1]
                     else:
@@ -279,7 +268,6 @@ class TweetTools(BaseTools):
                 channel = await self.bot.fetch_channel(799238286539227136)
                 if send_ping == "automatic":
                     await channel.send("<@&814054683651342366>")
-                    print("happened!?!")
             else:
                 channel = await self.bot.fetch_channel(812318143322128384)
                 if send_ping == "automatic":
@@ -287,64 +275,7 @@ class TweetTools(BaseTools):
                     
             await channel.send(embed=embedVar)
             BaseProgram.tweet_call = ""
-            print("Done")
             return
-
-
-    # async def tweet_send(self, text, link, id_, time):
-    #     tweet_link = "https://twitter.com/twitter/statuses/"+str(id_)
-
-    #     # Enemy
-    #     enemy = re.search("(battle the|battle|Battle\sthe|Battle)(.*)(in the|in|the)\s/", text)
-    #     if enemy != None:
-    #         enemy = enemy.groups()[1].strip()
-    #         enemy_link = await self.check_website_integrity(enemy)
-    #     else:
-    #         self.save_log(1, text, link)
-    #         return 
-
-    #     # Location
-    #     location = re.search("\s/(.+?)(map|\s)", text)
-    #     if location !=  None:
-    #         location = "/join %s"%(location[1])
-    #     else:
-    #         self.save_log(2, text, link)
-    #         return 
-    #     print("Or fucking here?")
-    #     # Items
-    #     item = re.search("(for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal)(.+?)((!)|(\.)|(as we celebrate))", text)
-    #     if item !=  None:
-    #         item = item.groups()[1]
-    #     else:
-    #         self.save_log(3, text, link)
-    #         return 
-
-    #     item = re.sub(r'((?<=^\s\b)this seasonal(?=\b\s))|(((?<=^\s\b)rare(?=\b\s)))','', item).strip()
-    #     if "0 AC" not in item:
-    #         item = "0 AC " + item
-
-
-    #     embedVar = discord.Embed(title="New Daily Gift!", url=tweet_link, color=BaseProgram.block_color)
-    #     embedVar.description = f"**Location**: {location}\n"\
-    #                            f"**Enemy**: [{enemy}]({enemy_link})\n"\
-    #                            f"**Item**: {item}\n"\
-    #                            f"**Posted**: {time}"
-    #     embedVar.set_image(url=link)
-    #     embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
-    #     embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
-        
-    #     if os.name == "nt":
-    #         channel = await self.bot.fetch_channel(799238286539227136)
-    #         if BaseProgram.tweet_call == "updaily":
-    #             await channel.send("<@&814054683651342366>")
-    #     else:
-    #         channel = await self.bot.fetch_channel(812318143322128384)
-    #         if BaseProgram.tweet_call == "updaily":
-    #             await channel.send("<@&811305081063604290>")
-
-    #     await channel.send(embed=embedVar)
-    #     print("Done")
-    #     return
 
     async def tweet_simple(self, id_, user_screen):
         link = str(id_)
@@ -356,23 +287,6 @@ class TweetTools(BaseTools):
         await channel.send(f"@{user_screen}: https://twitter.com/twitter/statuses/{id_}")
         return
 
-class TwitterCog(commands.Cog, TweetTools):
-
-    def __init__(self, bot, api):
-        self.setup()
-        self.tweet_tools()
-        self.bot = bot
-        self.api = api
-        self.tweet_looker.start()
-        # self.auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
-        # self.auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
-
-        # self.api = tweepy.API(self.auth)
-
-        # self.tweets_listener = TwitterListener(bot, self.api)
-        # self.stream = tweepy.Stream(self.auth, self.tweets_listener, tweet_mode='extended', is_async=True)
-        # print("> Twitter Listener Success")
-        # self.stream.filter(follow=["1349290524901998592"], is_async=True)
 
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141
@@ -387,14 +301,11 @@ class TwitterCog(commands.Cog, TweetTools):
 
         BaseProgram.tweet_call == "updaily"
 
-        # this code block is another way of doing the thing below
-
-        # user = self.api.get_user("Alina_AE")
 
         got = False
         time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", count=100, tweet_mode='extended').items()
         tweet_list = []
-        print("appending")
+        print("> appending")
         for tweet in (time_line):
             tweet_text = tweet.full_text.lower()
             # print("did")
@@ -430,7 +341,6 @@ class TwitterCog(commands.Cog, TweetTools):
                 med = tweet.entities['media']
                 for i in med:
                     if "media_url" in i:
-                        # time_ = tweet.created_at.strftime("%d %B %Y")
                         tweet_list.append({
                             "tweet": tweet_line,
                             "image_url": i["media_url"],
@@ -455,14 +365,10 @@ class TwitterCog(commands.Cog, TweetTools):
 
         BaseProgram.tweet_call == "updaily"
 
-        # this code block is another way of doing the thing below
-
-        # user = self.api.get_user("Alina_AE")
-
         got = False
         time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", tweet_mode='extended').items(100)
         tweet_list = []
-        print("appending")  
+
         for tweet in (time_line):
             print(tweet.id)
             tweet_text = tweet.full_text.lower()
@@ -499,7 +405,6 @@ class TwitterCog(commands.Cog, TweetTools):
                 med = tweet.entities['media']
                 for i in med:
                     if "media_url" in i:
-                        # time_ = tweet.created_at.strftime("%d %B %Y")
                         tweet_list.append({
                             "tweet": tweet_line,
                             "image_url": i["media_url"],
@@ -511,39 +416,154 @@ class TwitterCog(commands.Cog, TweetTools):
                         got = False
                         self.is_double = False
                         break
-        print("starting")
+        print("> starting")
         if tweet_list:
             tweet = tweet_list[0]
             await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"], double=tweet['double'], send_ping="automatic")
         else:
             print("> No Daily Gift Found")
         return
-    @commands.command()
-    async def uppage(self, ctx):
-        allow_ = await self.allow_evaluator(ctx, mode="role_privilege", command_name="uppage")
-        if not allow_:
-            return
 
+
+    @tasks.loop(minutes=10)
+    async def tweet_looper(self):
+        await self.bot.wait_until_ready()
         BaseProgram.tweet_call == "updaily"
-        got = False
-        time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", tweet_mode='extended').items(30)
-        tweet_list = []
 
-        for tweet in (time_line):
-                tweet_list.append(tweet)
-                pprint(vars(tweet))
-                print("helooooooooo")
-                # asd
+        for user_name in self.twitter_user_list:
+            print(f"\n\n> Targeting @{user_name}")
+            got = False
+            tweet_list = []
+            daily_list = []
+            while True:
+                try:
+                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(30)
+
+                    print("> Tweets appending")  
+                    for tweet in time_line:
+
+                        # check if the tweet alread exists
+                        if tweet.user.id_str not in BaseProgram.twitter_logs:
+                            BaseProgram.twitter_logs[tweet.user.id_str] = []
+
+                        if tweet.id in BaseProgram.twitter_logs[tweet.user.id_str]:
+                            print("> nope tweet", end=" ")
+                            continue
+                        else:
+                            BaseProgram.twitter_logs[tweet.user.id_str].append(tweet.id)
 
 
-        for tweet in reversed(tweet_list):
-            if str(tweet.user.id_str) != BaseProgram.tweet_user:
-                print("not this", tweet.user.id_str, " and ", BaseProgram.tweet_user)
-                continue
-            self.check_twitter_id(tweet.id, tweet.user.id_str)
-            await self.tweet_simple(tweet.id)
+                        # Checks if it isn't alina then don't do any daily gift analysis
+                        if user_name.lower() != "alina_ae":
+                            tweet_list.append([tweet.id, tweet.user.id_str, user_name])
+                            print("> nil", end=" ")
+                            continue
+                        else:
+                            pass
+
+                        tweet_text = tweet.full_text.lower()
+
+                        self.is_double = False
+                        got = False
+                        tweet_line = tweet.full_text
+
+                        # Checks if wrong tweet
+                        for i in self.black_list:
+                            if i.lower() in tweet_text:
+                                tweet_list.append([tweet.id, tweet.user.id_str, user_name])
+                                continue
+
+                        # Checks if double boost
+                        for i in  self.double_check:
+                            if i.lower() in tweet_text:
+                                self.is_double = True
+                                got = True
+                                break
+
+                        if not self.is_double:
+                            # Check if Daily Gift
+                            for i in self.gift_checks:
+                                if i.lower() in tweet_text:
+                                    got = True
+                                    for i in self.gift_checks:
+                                        tweet_line = tweet.full_text.replace(i, "")
+                                    break
+
+                        if not got:
+                            tweet_list.append([tweet.id, tweet.user.id_str, user_name])
+                            continue
 
 
+                        if "media" in tweet.entities:
+                            med = tweet.entities['media']
+                            for i in med:
+                                if "media_url" in i:
+                                    # time_ = tweet.created_at.strftime("%d %B %Y")
+                                    daily_list.append({
+                                        "tweet": tweet_line,
+                                        "image_url": i["media_url"],
+                                        "id": tweet.id,
+                                        "time": tweet.created_at,
+                                        "double": self.is_double
+                                        })
+                                    print("done tweet")
+                                    got = False
+                                    self.is_double = False
+                                    break
+                
+                    break
+                except Exception as e:
+                    print("\n> Failed, retry again. Error: ", e)
+                    continue
+
+            
+            print("> Starting tweet sending.\n")
+            if tweet_list:
+                tweet_list = reversed(tweet_list)
+                for tweet in tweet_list:
+                    await self.tweet_simple(tweet[0], tweet[2])
+                    print("> This tweet alright.", end =" ")
+                    await asyncio.sleep(1)
+
+            if daily_list:
+                daily_list = reversed(daily_list)
+                for tweet in daily_list:
+                    await self.tweet_send(tweet["tweet"], tweet["image_url"], tweet["id"], tweet["time"], double=tweet['double'], send_ping="automatic")
+
+            self.git_save("twitter_logs")
+
+        print("> Done Tweeter hunting")
+        return
+
+    def check_twitter_id(self, tweet_id_, user_id_):
+
+        if user_id_ not in BaseProgram.twitter_logs:
+            BaseProgram.twitter_logs[user_id_] = []
+
+        if tweet_id_ not in BaseProgram.twitter_logs[user_id_]:
+            BaseProgram.twitter_logs[user_id_].append(tweet_id_)
+        
+        return
+
+
+
+    async def send_to_discord(self, id_, user_id, user_screen):
+        if user_id not in BaseProgram.twitter_logs:
+            BaseProgram.twitter_logs[user_id] = []
+
+        if id_ in BaseProgram.twitter_logs[user_id]:
+            print("> not this tweet" , end =" ")
+            return
+        else:
+            BaseProgram.twitter_logs[user_id].append(id_)
+        # self.check_twitter_id(id_, user_id)
+        await self.tweet_simple(id_, user_screen)
+        print("> This tweet alright.", end =" ")
+        await asyncio.sleep(1)
+        return
+
+
+"""
     @tasks.loop(seconds=60)
     async def tweet_looker(self):
         if BaseProgram.status_list == []:
@@ -626,68 +646,40 @@ class TwitterCog(commands.Cog, TweetTools):
                 return
             self.check_twitter_id(status.id, status.user.id_str)
             link = status.extended_tweet['entities']['media'][0]["media_url_https"]
-            # self.loop.create_task(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"))
+
             await self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic")
-            print("It's just the human condition to have anxieties and worries.")
-             # send_fut = asyncio.run_coroutine_threadsafe(self.tweet_send(tweet, link, status.id, status.created_at, None, send_ping="automatic"), BaseProgram.loop)
-            # send_fut.result()
+            self.git_save("twitter_logs")
             return
         else:
-            # print(status)
-            # print("user: ", )
             print('text: ' + status.text)
             user_screen = status._json["user"]["screen_name"]
             await self.send_to_discord(status.id, status.user.id_str, user_screen)
+            self.git_save("twitter_logs")
             return
 
-    async def send_to_discord(self, id_, user_id, user_screen):
-        if user_id not in BaseProgram.tweet_user_list:
-            return
-        self.check_twitter_id(id_, user_id)
-        await self.tweet_simple(id_, user_screen)
-        # self.loop.create_task(self.tweet_simple(id_))
-        # send_fut = asyncio.run_coroutine_threadsafe(self.tweet_simple(id_), BaseProgram.loop)
-        # send_fut.result()
-        return
 
-    def check_twitter_id(self, tweet_id_, user_id_):
 
-        if user_id_ not in BaseProgram.twitter_logs:
-            BaseProgram.twitter_logs[user_id_] = []
 
-        if tweet_id_ not in BaseProgram.twitter_logs[user_id_]:
-            BaseProgram.twitter_logs[user_id_].append(tweet_id_)
-        self.git_save("twitter_logs")
-        return
+"""
 
-class TwitterListener(tweepy.StreamListener, TweetTools):
-    def __init__(self, bot, api,  *args, **kwargs):
-        super().__init__(*args, **kwargs)
+
+
+# class TwitterListener(tweepy.StreamListener):
+#     def __init__(self, bot, api,  *args, **kwargs):
+#         super().__init__(*args, **kwargs)
         
-        
-        # self.discord = discord # this is just a function which sends a message to a channel
-        # self.loop = loop # this is the loop of discord client
-        self.bot = bot
-        # self.api = api
-        # self.me = api.me()
-        self.tweet_text = ""
-        self.image_url = ""
-        self.tweet_tools()
-        self.setup()
-        # self.loop = bot.loop.create_task(self.on_status())
-        
-        print("asdhashdsh")
-        
+#         self.bot = bot
+#         self.setup()
 
-    def on_status(self, status=""):
-        if status == "":
-            return
-        BaseProgram.twitter_updating = True
-        BaseProgram.status_list.append([status])
-        # pprint(vars(status))
-        BaseProgram.twitter_updating = False
-        return
 
-    def on_error(self, status):
-        print(status)
+#     def on_status(self, status=""):
+#         if status == "":
+#             return
+#         BaseProgram.twitter_updating = True
+#         BaseProgram.status_list.append([status])
+#         BaseProgram.twitter_updating = False
+#         return
+
+#     def on_error(self, status):
+#         print(status)
 

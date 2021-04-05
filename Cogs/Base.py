@@ -111,17 +111,22 @@ class BaseProgram:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                           'Chrome/61.0.3163.100 Safari/537.36'}
 
+
+    tweet_user_list = [
+            "16480141", # @Alina
+            "135864340", # @Kotaro_AE
+            "200782641", # @notdarkon
+            "2435624982", # @asukaae
+            "2615674874", # @yo_lae
+            "989324890204327936", # @arletteaqw
+            "1589628840", # @Psi_AE
+            "1240767852321390592", # @aqwclass
+            "2150245009", # @CaptRhubarb
+            "360095665", # @ae_root
+            "17190195", # @ArtixKrieger
+        ]
+
     def git_prepare(self):
-        # self.mode_list = {
-        #     "database": BaseProgram.database, 
-        #     "guides": BaseProgram.guides, 
-        #     "classes": BaseProgram.classes, 
-        #     "settings": BaseProgram.settings, 
-        #     "texts" : BaseProgram.texts, 
-        #     "streams": BaseProgram.streams, 
-        #     "reddit_logs": BaseProgram.reddit_logs, 
-        #     "twitter_logs": BaseProgram.twitter_logs
-        # }
         self.mode_list = ["database", "guides", "classes", "settings", "texts", 
                     "streams", "reddit_logs", "twitter_logs", "swf"]
 
@@ -419,7 +424,7 @@ class BaseProgram:
 
             content_in_bytes = BaseProgram.github.read(f"Data/{file}.json")[0]
             content_in_dict = json.loads(content_in_bytes.decode('utf-8'))
-            print(file)
+            
             # print(content_in_dict)
             setattr(BaseProgram, file, content_in_dict)
 
@@ -430,6 +435,7 @@ class BaseProgram:
                 self.sort_privileged_roles()
                 self.sort_author_list_lowercase()
             self.file_save(file)
+            print(f"> Finished reading {file}.json")
         return
 
     def sort_classes_acronym(self):

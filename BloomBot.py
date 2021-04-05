@@ -35,7 +35,7 @@ from Cogs.ClassSearchCog import ClassSearchCog
 from Cogs.GoogleSearchCog import GoogleSearchCog
 from Cogs.GuideCog import GuideCog
 from Cogs.WikiCog import WikiCog
-from Cogs.TwitterListener import TwitterListener
+# from Cogs.TwitterListener import TwitterListener
 from Cogs.TwitterListener import TwitterCog
 from Cogs.TextUploaderCog import TextUploaders
 from Cogs.UtilsCog import UtilsCog
@@ -81,26 +81,12 @@ BaseProgram.api.verify_credentials()
 
 
 
-async def stream_tweet():
-    BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
-    BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, is_async=True,  tweet_mode='extended')
-    print("> Twitter Listener Success")
-    BaseProgram.tweet_user_list = [
-            BaseProgram.tweet_user,
-            "135864340", # @Kotaro_AE
-            "200782641", # @notdarkon
-            "2435624982", # @asukaae
-            "2615674874", # @yo_lae
-            "989324890204327936", # @arletteaqw
-            "69666805", # @dagetheevil],
-            "1589628840", # @Psi_AE
-            "1240767852321390592", # @aqwclass
-            "2150245009", # @CaptRhubarb
-            "360095665", # @ae_root
-            "17190195", # @ArtixKrieger
-        ]
+# async def stream_tweet():
+#     BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
+#     BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, is_async=True,  tweet_mode='extended')
+#     print("> Twitter Listener Success")
 
-    BaseProgram.stream.filter(follow=BaseProgram.tweet_user_list, is_async=True, stall_warnings=True)
+#     BaseProgram.stream.filter(follow=BaseProgram.tweet_user_list, is_async=True, stall_warnings=True)
 
     # Bloom Autist ID: 1349290524901998592
     # Alina ID: 16480141
@@ -131,8 +117,8 @@ async def on_ready():
     # await Bot.change_presence(status=discord.Status.idle,
     #     activity=discord.Game(name=name, type=3))
     
-    Bot.loop.create_task(stream_tweet())
-    # Bot.loop.create_task(rich_presence())
+    # Bot.loop.create_task(stream_tweet())
+    # Bot.loop.create_task(stre())
         
 @Bot.event
 async def on_command_error(ctx, error):
