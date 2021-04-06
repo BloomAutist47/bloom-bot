@@ -27,7 +27,9 @@ class TwitterCog(commands.Cog, BaseTools):
             "CaptRhubarb",
             "ae_root",
             "ArtixKrieger",
-            "Alina_AE"
+            "Alina_AE",
+            "Aelious_AE",
+            "Cemaros_AE",
         ]
 
         self.gift_checks = [
