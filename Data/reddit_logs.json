@@ -6356,6 +6356,15 @@
             "text": "Is there a recent change on nulgath resources farming?\n",
             "time": "06 April 2021 | 02:07 PM ",
             "is_video": false
+        },
+        "ml889k": {
+            "author": "xslite",
+            "title": "Guild motd is driving me insane",
+            "link": "https://www.reddit.com/r/AQW/comments/ml889k/guild_motd_is_driving_me_insane/",
+            "image": null,
+            "text": "I'm trying to make a guild message of the day while making it fit in letter count but it simply wont let me write the word \"artix\", I write this: \n\n/motd msg hi welcome, a normal guild where you can chat and help eachother, we usually play yorumi, or artix, but free to use any\n\nIt does not let me say artix server, but when I remove or replace the \"x\" in artix with a \"z\" or anything else it works. What is forbidden with the word artix, its a part of your game.... Your chat filters are fucked.\n",
+            "time": "06 April 2021 | 06:03 PM ",
+            "is_video": false
         }
     },
     "FashionQuestWorlds": {
