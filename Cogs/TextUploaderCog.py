@@ -11,6 +11,8 @@ class TextUploaders(commands.Cog, BaseTools):
         self.bot = Bot
         self.server_inv = ""
         self.server_guild = ""
+        if BaseProgram.texts["Data"]["Server ON"]:
+            self.server_invite.start()
         # BaseProgram.sqlock = False
 # 
 
@@ -135,22 +137,34 @@ class TextUploaders(commands.Cog, BaseTools):
             if not start_link_1:
                 start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
             if embed == "Pearl Harbor: The AQW Sailor's Paradise":
-                self.server_inv = item_1
-                self.server_guild = ctx.guild
+                BaseProgram.texts["Data"]["Server Invite"] = item_1.id
+                BaseProgram.texts["Data"]["Server Channel"] = ctx.channel.id
+                self.git_save("texts")
                 self.server_invite.start()
+                
 
 
-    @tasks.loop(minutes=10)
+    @tasks.loop(minutes=1)
     async def server_invite(self):
+        if os.name == "nt":
+            self.server_guild = self.bot.get_guild(761956630606250005)
+        else:
+            self.server_guild = self.bot.get_guild(811305081063604284)
+
+        print("> channel: ", BaseProgram.texts["Data"]["Server Channel"])
+        self.server_channel = await self.bot.fetch_channel(BaseProgram.texts["Data"]["Server Channel"])
+        self.server_inv = await self.server_channel.fetch_message(BaseProgram.texts["Data"]["Server Invite"])
+
         online_mem = sum(member.status!=discord.Status.offline and not member.bot for member in self.server_guild.members)
         total_mem = len([m for m in self.server_guild.members if not m.bot])
         
         embedVar = embedVar = discord.Embed(title="Pearl Harbor: The AQW Sailor's Paradise", color=BaseProgram.block_color,
-            url="https://discord.io/AQWBots", description=f"​🟢 {online_mem} Online\u200b\u200b\u200b\u200b⚪ {total_mem} Members")
+            url="https://discord.io/AQWBots", description=f"​\n🟢 {online_mem} Online⚪ {total_mem} Members")
         embedVar.set_author(name="Server Invite")
         embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/829203599292366869/i.png")
 
-        self.server_inv = await self.server_inv.edit(embed=embedVar)
+        await self.server_inv.edit(embed=embedVar)
+        print("> did")
 
     @commands.command()
     async def uptext(self, ctx, textfile=""):
