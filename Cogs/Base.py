@@ -56,7 +56,7 @@ class BaseProgram:
 
     mode = ""
     tweet_call = ""
-    sqlock = False
+    sqlock = True
     git_already = False
     database_updating = False
     twitter_updating = False
