@@ -86,35 +86,39 @@
         }
     },
     "Embed": {
-        "Skidson Mafia - The best AQW private server": {
-            "message": "https://discord.gg/Dsg9BsKJXH",
-            "description": "Skidson is an online AQW private server we're partnered with that has several experienced staff members, 800+ quests for you to play through, and over 9000+ items for you to collect! Come over to our server and find people to play with, and talk about your discoveries in-game! \n\nWebsite Link: https://skidson.online/\nServer Link: https://discord.gg/Dsg9BsKJXH\n",
-            "image": "https://cdn.discordapp.com/attachments/805367955923533845/826434988051398656/11111111111.png"
-        },
-        "Pearl Harbor Ports": {
-            "description": "We also have other platforms, or should we say, Harbor Ports! Make sure to join at least one of them to stay in touch with the server should you ever get kicked for inactivity or this server gets nuked to the Shadow Realm.",
-            "embed_list": {
-                "Portal Site": "http://adventurequest.life/",
-                "Subreddit": "https://www.reddit.com/r/AutoQuestWorlds/",
-                "Official Forum": "https://aqwbots.site/",
-                "Matrix": "https://matrix.to/#/#autoquestworlds:matrix.org?via=matrix.org"
+        "server_info":{
+            "Pearl Harbor Ports": {
+                "description": "We also have other platforms, or should we say, Harbor Ports! Make sure to join at least one of them to stay in touch with the server should you ever get kicked for inactivity or this server gets nuked to the Shadow Realm.",
+                "embed_list": {
+                    "Portal Site": "http://adventurequest.life/",
+                    "Subreddit": "https://www.reddit.com/r/AutoQuestWorlds/",
+                    "Official Forum": "https://aqwbots.site/",
+                    "Matrix": "https://matrix.to/#/#autoquestworlds:matrix.org?via=matrix.org"
+                },
+                "image": "https://cdn.discordapp.com/attachments/805367955923533845/826437152330088518/unknown.png"
             },
-            "image": "https://cdn.discordapp.com/attachments/805367955923533845/826437152330088518/unknown.png"
+            "Welcome": {
+                "description": "Welcome to __**Pearl Harbor** -The AQW Sailor's Paradise__! We are here to help you sail the Imbalanced and Nightmarish Landscape that is, AutisticQuest Worlds!  We will help you come out on top like the enjoying human you are supposed to be! \n\nThe following below are our Channel Guides. Please do read them carefully. :)\n",
+                "embed_list": {
+                    "Grimoire Help \u2753": "\ud83d\udccc<#811305082002866233>  Get the Bots and the Latest Grimoire 1.7.8 here.\n\ud83d\udccc<#817998750697521183> If Grimoire is not working, follow the guides here.\n\ud83d\udccc<#820934479677358080> It has all the most common questions.\n\ud83d\udccc<#811305082377207865> Head over here if you want to report an issue with our products.\n",
+                    "News and Updates \ud83d\udcdc": "\ud83d\udccc<#811305082002866235> Be notified by the  latest uploaded Grimoire Bots!\n\ud83d\udccc<#811309992727937034> Watch AQW news from here.\n\ud83d\udccc<#812318143322128384> Subscribe here for the latest Daily Gifts or Server Boosts!\n",
+                    "Chat \ud83d\udcac": "\ud83d\udccc<#811305082377207866> Come here to ask for help or questions.\n\ud83d\udccc<#822037903790047233> if you just wanna hang out, chat with us!\n\ud83d\udccc<#811305082377207858> Use **Bloom Bot** here to search for Class Datas, Wiki, Guides, etc...\n",
+                    "Community \ud83c\udfdb": "\ud83d\udccc<#824904312501174312> Watch out for Giveaways here (APs or Nitros) from our Users!\n\ud83d\udccc<#811965198411235359> The Board of Shame. You absolutely want to be starred here.\n\ud83d\udccc<#811305082758758434> Reddit feed from [r/AutoQuestWorlds](https://www.reddit.com/r/autoquestworlds/) and [r/AQW](https://www.reddit.com/r/AQW/).\n\ud83d\udccc<#824243579617935390> Watch the staff's Gazillion Crit. damage go brr!\n\ud83d\udccc<#825670606099578882> Get advice for your set. Please be polite and patient.\n\ud83d\udccc<#811305082758758435> Want to load cosmetics? Ask here!\n"
+                }
+            },
+            "Pearl Harbor: The AQW Sailor's Paradise": {
+                "title_url": "https://discord.io/AQWBots",
+                "author": "Server Invite",
+                "description": "\u200b Powered by Discord.io",
+                "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/829203599292366869/i.png"
+            },
         },
-        "Welcome": {
-            "description": "Welcome to __**Pearl Harbor** -The AQW Sailor's Paradise__! We are here to help you sail the Imbalanced and Nightmarish Landscape that is, AutisticQuest Worlds!  We will help you come out on top like the enjoying human you are supposed to be! \n\nThe following below are our Channel Guides. Please do read them carefully. :)\n",
-            "embed_list": {
-                "Grimoire Help \u2753": "\ud83d\udccc<#811305082002866233>  Get the Bots and the Latest Grimoire 1.7.8 here.\n\ud83d\udccc<#817998750697521183> If Grimoire is not working, follow the guides here.\n\ud83d\udccc<#820934479677358080> It has all the most common questions.\n\ud83d\udccc<#811305082377207865> Head over here if you want to report an issue with our products.\n",
-                "News and Updates \ud83d\udcdc": "\ud83d\udccc<#811305082002866235> Be notified by the  latest uploaded Grimoire Bots!\n\ud83d\udccc<#811309992727937034> Watch AQW news from here.\n\ud83d\udccc<#812318143322128384> Subscribe here for the latest Daily Gifts or Server Boosts!\n",
-                "Chat \ud83d\udcac": "\ud83d\udccc<#811305082377207866> Come here to ask for help or questions.\n\ud83d\udccc<#822037903790047233> if you just wanna hang out, chat with us!\n\ud83d\udccc<#811305082377207858> Use **Bloom Bot** here to search for Class Datas, Wiki, Guides, etc...\n",
-                "Community \ud83c\udfdb": "\ud83d\udccc<#824904312501174312> Watch out for Giveaways here (APs or Nitros) from our Users!\n\ud83d\udccc<#811965198411235359> The Board of Shame. You absolutely want to be starred here.\n\ud83d\udccc<#811305082758758434> Reddit feed from [r/AutoQuestWorlds](https://www.reddit.com/r/autoquestworlds/) and [r/AQW](https://www.reddit.com/r/AQW/).\n\ud83d\udccc<#824243579617935390> Watch the staff's Gazillion Crit. damage go brr!\n\ud83d\udccc<#825670606099578882> Get advice for your set. Please be polite and patient.\n\ud83d\udccc<#811305082758758435> Want to load cosmetics? Ask here!\n"
+        "partners": {
+            "Skidson Mafia - The best AQW private server": {
+                "message": "https://discord.gg/Dsg9BsKJXH",
+                "description": "Skidson is an online AQW private server we're partnered with that has several experienced staff members, 800+ quests for you to play through, and over 9000+ items for you to collect! Come over to our server and find people to play with, and talk about your discoveries in-game! \n\nWebsite Link: https://skidson.online/\nServer Link: https://discord.gg/Dsg9BsKJXH\n",
+                "image": "https://cdn.discordapp.com/attachments/805367955923533845/826434988051398656/11111111111.png"
             }
-        },
-        "Pearl Harbor: The AQW Sailor's Paradise": {
-            "title_url": "https://discord.io/AQWBots",
-            "author": "Server Invite",
-            "description": "\u200b Powered by Discord.io",
-            "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/829203599292366869/i.png"
         }
     },
     "Data": {
