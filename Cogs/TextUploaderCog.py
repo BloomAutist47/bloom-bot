@@ -1,7 +1,7 @@
 
 import re
 from .Base import *
-from discord.ext import commands
+from discord.ext import commands, tasks
 from io import BytesIO
 import textwrap
 from pprintpp import pprint
@@ -9,6 +9,8 @@ class TextUploaders(commands.Cog, BaseTools):
     def __init__(self, Bot):
         self.setup()
         self.bot = Bot
+        self.server_inv = ""
+        self.server_guild = ""
         # BaseProgram.sqlock = False
 # 
 
@@ -132,8 +134,23 @@ class TextUploaders(commands.Cog, BaseTools):
             item_1 = await ctx.send("\n\u200b" + msg, embed=embedVar)
             if not start_link_1:
                 start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
-            
+            if embed == "Pearl Harbor: The AQW Sailor's Paradise":
+                self.server_inv = item_1
+                self.server_guild = ctx.guild
+                self.server_invite.start()
 
+
+    @tasks.loop(minutes=10)
+    async def server_invite(self):
+        online_mem = sum(member.status!=discord.Status.offline and not member.bot for member in self.server_guild.members)
+        total_mem = len([m for m in self.server_guild.members if not m.bot])
+        
+        embedVar = embedVar = discord.Embed(title="Pearl Harbor: The AQW Sailor's Paradise", color=BaseProgram.block_color,
+            url="https://discord.io/AQWBots", description=f"​🟢 {online_mem} Online\u200b\u200b\u200b\u200b⚪ {total_mem} Members")
+        embedVar.set_author(name="Server Invite")
+        embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/829203599292366869/i.png")
+
+        self.server_inv = await self.server_inv.edit(embed=embedVar)
 
     @commands.command()
     async def uptext(self, ctx, textfile=""):

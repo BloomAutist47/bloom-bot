@@ -113,8 +113,11 @@
         "Pearl Harbor: The AQW Sailor's Paradise": {
             "title_url": "https://discord.io/AQWBots",
             "author": "Server Invite",
-            "description": "\u200b Powered by Discord.io",
+            "description": "​ Powered by Discord.io",
             "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/829203599292366869/i.png"
         }
+    },
+    "Data": {
+        
     }
 }
