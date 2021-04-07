@@ -19,6 +19,18 @@
     "ArchPaladin": {
         "bludrut": 6
     },
+    "Blaze Binder": {
+        "stats": [
+            "null",
+            "null",
+            "null",
+            "null",
+            "null",
+            "null",
+            2
+        ]
+
+    },
     "MindBreaker": {
         "stats": [
             4,
