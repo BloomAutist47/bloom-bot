@@ -3737,7 +3737,7 @@
     },
     "Vampire Lord": {
         "acronym": "VL, RVL",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Health Vamp",
         "duplicates": [
             "Enchanted Vampire Lord",
             "Royal Vampire Lord",
