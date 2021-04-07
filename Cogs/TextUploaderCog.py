@@ -139,6 +139,7 @@ class TextUploaders(commands.Cog, BaseTools):
             if embed == "Pearl Harbor: The AQW Sailor's Paradise":
                 BaseProgram.texts["Data"]["Server Invite"] = item_1.id
                 BaseProgram.texts["Data"]["Server Channel"] = ctx.channel.id
+                BaseProgram.texts["Data"]["Server ON"] = True
                 self.git_save("texts")
                 self.server_invite.start()
                 
@@ -159,7 +160,7 @@ class TextUploaders(commands.Cog, BaseTools):
         total_mem = len([m for m in self.server_guild.members if not m.bot])
         
         embedVar = embedVar = discord.Embed(title="Pearl Harbor: The AQW Sailor's Paradise", color=BaseProgram.block_color,
-            url="https://discord.io/AQWBots", description=f"​\n🟢 {online_mem} Online⚪ {total_mem} Members")
+            url="https://discord.io/AQWBots", description=f"🟢 {online_mem} Online⚪ {total_mem} Members")
         embedVar.set_author(name="Server Invite")
         embedVar.set_thumbnail(url="https://cdn.discordapp.com/attachments/805367955923533845/829203599292366869/i.png")
 

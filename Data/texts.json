@@ -54,28 +54,28 @@
             "description": "Does your grim have problem? Browse here and see common fixes.",
             "content": {
                 "1.) Delete 133spider's mms.cfg fix": {
-                    "text": "\ud83d\udd39**Description**: 133spider released a fix to enable flash player gain.\n\ud83d\udd39**Symptoms**: Grimoire is opening but not loading.\n\ud83d\udd39**Solution**: Delete mms.cfg if you did the spider fix:```CSS\nC:\\Windows\\SysWOW64\\Macromed\\Flash\\mms.cfg \nC:\\Windows\\System32\\Macromed\\Flash\\mms.cfg```\n"
+                    "text": "🔹**Description**: 133spider released a fix to enable flash player gain.\n🔹**Symptoms**: Grimoire is opening but not loading.\n🔹**Solution**: Delete mms.cfg if you did the spider fix:```CSS\nC:\\Windows\\SysWOW64\\Macromed\\Flash\\mms.cfg \nC:\\Windows\\System32\\Macromed\\Flash\\mms.cfg```\n"
                 },
                 "2.) Clear Local Storage": {
                     "text": "1.) Open grimoire and right click on it.\n2.) Click on Global Setting.\n3.) On the Storage tab, click \"Delete All\"\n4.) On the Advanced tab, click \"Delete All\"\n",
                     "image": "https://cdn.discordapp.com/attachments/805367955923533845/818003852896501770/unknown.png"
                 },
                 "3.) Grimoire Blocked Fix": {
-                    "text": "\ud83d\udd39**Description**: Your firewall or anti virus might be blocking grimoire.\n\ud83d\udd39**Solution**: Try the followng:\n\n1.) Allow the .exe file in firewall by going to Windows Firewall with advanced security. Then add new outbound rule with port 5588, and allow it.\n\n2.) Add exception for the grimoire folder in your Antivirus.\n\n3.) Unblock grimoire by right clicking grimoire.exe -> properties -> click unblock.\n"
+                    "text": "🔹**Description**: Your firewall or anti virus might be blocking grimoire.\n🔹**Solution**: Try the followng:\n\n1.) Allow the .exe file in firewall by going to Windows Firewall with advanced security. Then add new outbound rule with port 5588, and allow it.\n\n2.) Add exception for the grimoire folder in your Antivirus.\n\n3.) Unblock grimoire by right clicking grimoire.exe -> properties -> click unblock.\n"
                 },
                 "4.) Null Username fix": {
-                    "text": "\ud83d\udd39**Description**: This occurs due to opening more than 2 instance of grim and playing using different characters.\n\ud83d\udd39**Symptoms**: \"Your Username is currently null meaning...\" pop-up will appear.\n\ud83d\udd39**Solution**: Make a new copy of grimoire folder and open that separate grim to play a different character at a time.",
+                    "text": "🔹**Description**: This occurs due to opening more than 2 instance of grim and playing using different characters.\n🔹**Symptoms**: \"Your Username is currently null meaning...\" pop-up will appear.\n🔹**Solution**: Make a new copy of grimoire folder and open that separate grim to play a different character at a time.",
                     "image": "https://cdn.discordapp.com/attachments/805367955923533845/820872632198627328/unknown.png"
                 },
                 "5.) Grim shitty UI fix": {
-                    "text": "\ud83d\udd39**Description**: Grim looks like shit.\n\ud83d\udd39**Symptoms**: Grimoire is randomly changing resolution and size.\n\ud83d\udd39**Solution**: \n\n1.) Right click Grimoire.exe and click properties.\n2.) On compatibility, click the \"Change high DPI settings\"\n3.) Check \"Overide high DPI scaling behavior\" and select \"System (Enhanced)\"\n4.) Click Ok. Run Grimoire.\n",
+                    "text": "🔹**Description**: Grim looks like shit.\n🔹**Symptoms**: Grimoire is randomly changing resolution and size.\n🔹**Solution**: \n\n1.) Right click Grimoire.exe and click properties.\n2.) On compatibility, click the \"Change high DPI settings\"\n3.) Check \"Overide high DPI scaling behavior\" and select \"System (Enhanced)\"\n4.) Click Ok. Run Grimoire.\n",
                     "image": "https://media.discordapp.net/attachments/805367955923533845/814088319281135616/unknown.png?width=1440&height=527"
                 },
                 "6.) Windows Update Flash Fix": {
-                    "text": "\ud83d\udd39**Description**: Windows update killed flash player.\n\ud83d\udd39**Symptoms**: Grimoire is not opening.\n\ud83d\udd39**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n"
+                    "text": "🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening.\n🔹**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n"
                 },
                 "7.) Flash Player Pro not working fix": {
-                    "text": "\ud83d\udd39**Description**: Flash player pro wont work or you get the error below.\n\ud83d\udd39**Solution**: \n\n1.) Download [install_flash_player_ax.exe](https://cdn.discordapp.com/attachments/811305082377207866/812362328964202546/install_flash_player_ax.exe)\n2.) Once downloaded, right click on it and choose properties.\n3.) On Compatibility tab, tick `Run this program in compatibility mode for`, and choose `Windows 7`.\n4.) Click Ok. Install install_flash_player_ax.exe.\n",
+                    "text": "🔹**Description**: Flash player pro wont work or you get the error below.\n🔹**Solution**: \n\n1.) Download [install_flash_player_ax.exe](https://cdn.discordapp.com/attachments/811305082377207866/812362328964202546/install_flash_player_ax.exe)\n2.) Once downloaded, right click on it and choose properties.\n3.) On Compatibility tab, tick `Run this program in compatibility mode for`, and choose `Windows 7`.\n4.) Click Ok. Install install_flash_player_ax.exe.\n",
                     "image": "https://cdn.discordapp.com/attachments/805367955923533845/824146799916351528/unknown.png"
                 }
             }
@@ -104,21 +104,21 @@
         "Welcome": {
             "description": "Welcome to __**Pearl Harbor** -The AQW Sailor's Paradise__! We are here to help you sail the Imbalanced and Nightmarish Landscape that is, AutisticQuest Worlds!  We will help you come out on top like the enjoying human you are supposed to be! \n\nThe following below are our Channel Guides. Please do read them carefully. :)\n",
             "embed_list": {
-                "Grimoire Help \u2753": "\ud83d\udccc<#811305082002866233>  Get the Bots and the Latest Grimoire 1.7.8 here.\n\ud83d\udccc<#817998750697521183> If Grimoire is not working, follow the guides here.\n\ud83d\udccc<#820934479677358080> It has all the most common questions.\n\ud83d\udccc<#811305082377207865> Head over here if you want to report an issue with our products.\n",
-                "News and Updates \ud83d\udcdc": "\ud83d\udccc<#811305082002866235> Be notified by the  latest uploaded Grimoire Bots!\n\ud83d\udccc<#811309992727937034> Watch AQW news from here.\n\ud83d\udccc<#812318143322128384> Subscribe here for the latest Daily Gifts or Server Boosts!\n",
-                "Chat \ud83d\udcac": "\ud83d\udccc<#811305082377207866> Come here to ask for help or questions.\n\ud83d\udccc<#822037903790047233> if you just wanna hang out, chat with us!\n\ud83d\udccc<#811305082377207858> Use **Bloom Bot** here to search for Class Datas, Wiki, Guides, etc...\n",
-                "Community \ud83c\udfdb": "\ud83d\udccc<#824904312501174312> Watch out for Giveaways here (APs or Nitros) from our Users!\n\ud83d\udccc<#811965198411235359> The Board of Shame. You absolutely want to be starred here.\n\ud83d\udccc<#811305082758758434> Reddit feed from [r/AutoQuestWorlds](https://www.reddit.com/r/autoquestworlds/) and [r/AQW](https://www.reddit.com/r/AQW/).\n\ud83d\udccc<#824243579617935390> Watch the staff's Gazillion Crit. damage go brr!\n\ud83d\udccc<#825670606099578882> Get advice for your set. Please be polite and patient.\n\ud83d\udccc<#811305082758758435> Want to load cosmetics? Ask here!\n"
+                "Grimoire Help ❓": "📌<#811305082002866233>  Get the Bots and the Latest Grimoire 1.7.8 here.\n📌<#817998750697521183> If Grimoire is not working, follow the guides here.\n📌<#820934479677358080> It has all the most common questions.\n📌<#811305082377207865> Head over here if you want to report an issue with our products.\n",
+                "News and Updates 📜": "📌<#811305082002866235> Be notified by the  latest uploaded Grimoire Bots!\n📌<#811309992727937034> Watch AQW news from here.\n📌<#812318143322128384> Subscribe here for the latest Daily Gifts or Server Boosts!\n",
+                "Chat 💬": "📌<#811305082377207866> Come here to ask for help or questions.\n📌<#822037903790047233> if you just wanna hang out, chat with us!\n📌<#811305082377207858> Use **Bloom Bot** here to search for Class Datas, Wiki, Guides, etc...\n",
+                "Community 🏛": "📌<#824904312501174312> Watch out for Giveaways here (APs or Nitros) from our Users!\n📌<#811965198411235359> The Board of Shame. You absolutely want to be starred here.\n📌<#811305082758758434> Reddit feed from [r/AutoQuestWorlds](https://www.reddit.com/r/autoquestworlds/) and [r/AQW](https://www.reddit.com/r/AQW/).\n📌<#824243579617935390> Watch the staff's Gazillion Crit. damage go brr!\n📌<#825670606099578882> Get advice for your set. Please be polite and patient.\n📌<#811305082758758435> Want to load cosmetics? Ask here!\n"
             }
         },
         "Pearl Harbor: The AQW Sailor's Paradise": {
             "title_url": "https://discord.io/AQWBots",
             "author": "Server Invite",
-            "description": "\u200b Powered by Discord.io",
+            "description": "​ Powered by Discord.io",
             "thumbnail": "https://cdn.discordapp.com/attachments/805367955923533845/829203599292366869/i.png"
         }
     },
     "Data": {
-        "Server Invite": 829215726304493608,
+        "Server Invite": 829216910662434837,
         "Server Channel": 799238286539227136,
         "Server ON": false
     }
