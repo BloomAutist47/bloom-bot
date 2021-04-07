@@ -100,7 +100,7 @@ class TextUploaders(commands.Cog, BaseTools):
 
         embed_list = BaseProgram.texts["Embed"]
         for embed in embed_list:
-
+            msg = ""
             embedVar = discord.Embed(title=embed, color=BaseProgram.block_color,
                 description=embed_list[embed]["description"])
 
@@ -112,7 +112,10 @@ class TextUploaders(commands.Cog, BaseTools):
             if "image" in embed_list[embed]:
                 embedVar.set_image(url=embed_list[embed]["image"])
 
-            await ctx.send("\n\u200b", embed=embedVar)
+            if "message" in embed_list[embed]:
+                msg = embed_list[embed]["message"]
+
+            await ctx.send(msg + "\n\u200b", embed=embedVar)
 
     @commands.command()
     async def uptext(self, ctx, textfile=""):
