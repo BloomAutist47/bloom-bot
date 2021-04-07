@@ -97,25 +97,43 @@ class TextUploaders(commands.Cog, BaseTools):
         if BaseProgram.sqlock:
             return
 
+        start_link_1 = ""
 
         embed_list = BaseProgram.texts["Embed"]
         for embed in embed_list:
+            
             msg = ""
-            embedVar = discord.Embed(title=embed, color=BaseProgram.block_color,
-                description=embed_list[embed]["description"])
+            embedVar = discord.Embed(title=embed, color=BaseProgram.block_color)
+            if "description" in embed_list[embed]:
+                embedVar.description = embed_list[embed]["description"]
+
+            if "title_url" in embed_list[embed]:
+                embedVar.url = embed_list[embed]["title_url"]
+
+            if "author" in embed_list[embed]:
+                embedVar.set_author(name=embed_list[embed]["author"])
 
             if "embed_list" in embed_list[embed]:
                 for field in embed_list[embed]["embed_list"]:
                     embedVar.add_field(name=field, value=embed_list[embed]["embed_list"][field], inline=False)
 
-
             if "image" in embed_list[embed]:
                 embedVar.set_image(url=embed_list[embed]["image"])
+
+            if "thumbnail" in embed_list[embed]:
+                embedVar.set_thumbnail(url=embed_list[embed]["thumbnail"])
 
             if "message" in embed_list[embed]:
                 msg = embed_list[embed]["message"]
 
-            await ctx.send(msg + "\n\u200b", embed=embedVar)
+            if embed == "Welcome":
+                embedVar.add_field(name="\u200b", value=f"[Click here to go to the Top]({start_link_1})", inline=False)
+
+            item_1 = await ctx.send("\n\u200b" + msg, embed=embedVar)
+            if not start_link_1:
+                start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
+            
+
 
     @commands.command()
     async def uptext(self, ctx, textfile=""):
