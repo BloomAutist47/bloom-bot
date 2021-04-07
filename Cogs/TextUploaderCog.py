@@ -145,7 +145,7 @@ class TextUploaders(commands.Cog, BaseTools):
                 
 
 
-    @tasks.loop(minutes=1)
+    @tasks.loop(minutes=10)
     async def server_invite(self):
         if os.name == "nt":
             self.server_guild = self.bot.get_guild(761956630606250005)
