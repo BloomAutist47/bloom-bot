@@ -110,7 +110,7 @@ class TextUploaders(commands.Cog, BaseTools):
 
 
             if "image" in embed_list[embed]:
-                embedVar.set_image(embed_list[embed]["image"])
+                embedVar.set_image(url=embed_list[embed]["image"])
 
             await ctx.send("\n\u200b", embed=embedVar)
 
