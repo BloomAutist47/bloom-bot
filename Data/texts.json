@@ -4,6 +4,9 @@
             "title":"Frequently Asked Questions",
             "description":"Do you have any questions? Browse here first and see how things work.",
             "content":{
+                "0.) My grimoire is not working?":{
+                    "text":"Go here <#817998750697521183>.\n\n"
+                },
                 "1.) How do I use a boat?":{
                     "text":"You will need the **Grimoire 3.8+ PRO v1.7.8**. application to run boats. You can download the application from our portal site, https://adventurequest.life/, instructions to do so are in #how-to-find-boats if you need any help. Once you do that, simply download a boat and load it.\n\n> Bo(a)t -> Misc -> Load Boat [ NOT Load Boat (command) ]\nHow to load a boat: \n\n",
                     "image":"https://media.discordapp.net/attachments/782192890847559695/798486266013941780/oy7f3EZpWA.gif?width=930&height=587"
@@ -14,38 +17,32 @@
                 "3.) I downloaded a bot and it isn't loading! What do I do?":{
                     "text":"If you downloaded a bot and tried loading it, but nothing happened once you loaded the .gbot file, chances are, you're on an outdated version of Grimoire. Download **Grimoire 3.8+ PRO v1.7.7** from #how-to-download-bots and try again. If it still doesn't work, head over to #boating-help-chat and describe your issue in detail.\n\n"
                 },
-                "4.) My screen became black! What happened?":{
+                "4.) My screen became black when I started the boat.":{
                     "text":"If a boat turns black, chances are, it has the lag killer feature enabled, which reduces lag significantly. Don't worry, the boat is still running in the background, this is just done to increase farming efficiency by killing lag.\n\n> To turn it off while the bot is running:\n> Boat -> Options -> Untick Lag Killer\n> To turn it off while the bot is not running:\n> Boat -> Options -> Untick Lag Killer -> Tick Enable Options Without Starting Boat\n\nIt is highly recommended to leave it on whilst boating, as it enhances the speed of the boat.\n"
                 },
-                "5.) My bot keeps disconnecting? How do I fix it?":{
-                    "text":"Most good bots will have a `Set Bot Delay: <number>` command at the top. If it's `Set Bot Delay: 0`, delete it, and add a `Set Bot Delay: 10` command in its place.\n> Boat -> Misc -> Boat Delay -> Type in 10 -> Set Boat Delay\nIf it's another number, double click the command and increase that number by 5 or 10. \n\nIncreasing the Boat Delay will make the boat very slightly slower, but will also prevent disconnections from occurring as frequently, so keep increasing the Boat Delay by 5 or 10 until you hit that sweet spot where you stop disconnecting. This usually happens at 10 for most people, but some have to go up to 25.\n"
+                "5.) My name got changed when I started the boat.":{
+                    "text":"It is Client Sided meaning you can only see it\n\n"
                 },
-                "6.) This bot isn't working properly... what happened...?":{
+                "6.) TMy boat doesn't seem to be working properly/":{
                     "text":"If the bot you downloaded isn't doing what you think it should be doing, check its instruction manual if applicable. Also reference the wiki and try to find out what it's doing. If neither of these work (or there's simply too much to look up on the wiki), feel free to ask in #boating-help-chat.\n"
                 },
-                "7.) Why is this item not dropping? What is the drop rate of the item?":{
+                "7.) My boat keeps disconnecting.":{
+                    "text":"Most good bots will have a `Set Bot Delay: <number>` command at the top. If it's `Set Bot Delay: 0`, delete it, and add a `Set Bot Delay: 10` command in its place.\n> Boat -> Misc -> Boat Delay -> Type in 10 -> Set Boat Delay\nIf it's another number, double click the command and increase that number by 5 or 10. \n\nIncreasing the Boat Delay will make the boat very slightly slower, but will also prevent disconnections from occurring as frequently, so keep increasing the Boat Delay by 5 or 10 until you hit that sweet spot where you stop disconnecting. This usually happens at 10 for most people, but some have to go up to 25.\n"
+                },
+                "8.) My boat isn't relogging.":{
+                    "text":"Is your account not relogging?\nCheck if you changed the details to a previously saved account \nIf you had a previously saved account, put your new details in, press log in then reload your Grimoire.\nIf you do not reload Grimoire your username will be Null meaning it will not relog.\n"
+                },
+                "9.) Why is this item not dropping? What is the drop rate of the item?":{
                     "text":"Oftentimes when this question is asked, the item has a high drop rate, however, certain external factors prevent it from dropping. In order to remedy this, use any or all of the following golden rules:\n\n **1)** Log out and log back in.\n**2)** Change your server, preferably to a less popular one like Twig or Twilly.\n**3)** Change your map, preferably to a private room if you're in a public room.\n**4)** Clear your browser cache. A cluttered cache may prevent items from dropping.\n**5)** Change your game. This one works the best. Trust me.\n\n"
                 },
-                "8.) Why is my \"_pro\" boat using Potions? Will it get me banned?":{
+                "10.) Why is my \"_pro\" boat using Potions? Will it get me banned?":{
                     "text":"The skillsets used by the _pro boats have a provision for potions should you need them for a certain grind. The same boats often use potions such as Felicitous Philtre to greatly increase soloing speed or Potion of Evasion to allow you to consistently solo hard hitting monsters wherever applicable and also, feasible. You won't get kicked or banned for spamming Skill 5: Potions because the game treats it as a player spamming potions despite not having them; the error warning is just there to alert players that using Skill 5 does nothing when a potion is not equipped. Please do not remove Skill 5: Potions on these boats or you will mess up its flow and cause bugs. Just leave it as it is.\n\n"
-                },
-                "9.) My grimoire is not working even though it is latest version? Wat do?? HELP???":{
-                    "text":"Ask yourself if you have uninstalled Flash from your computer at any point. If you have, then gee gee ecks dee, you might as well reinstall Windows at that point.\n\n"
-                },
-                "10.) My grimoire is not working ~~even though it is latest version~~? Wat do?? HELP???":{
-                    "text":"Get the latest version."
                 },
                 "11.) What is the shop id for <insert shop name here>?":{
                     "text":"First, wiki the shop and find out whether it comes from the game menu or not.\n\n**If it does:** Nice, try loading it and hope you don't get banned.\n\n**If it does not:** then find out which map it is in. Then ask yourself can I join this map?\n\n**If you can join the map:** Then nice, join that map and load the shop. YOU HAVE TO JOIN THE SAME MAP A SHOP IS IN FOR IT TO LOAD!!!\n\n**If you can't join the map for any reason:** Then don't bother loading it cause it won't load.\n\n"
                 },
-                "12.) My name got changed, Can other people see it?":{
-                    "text":"It is Client Sided meaning you can only see it\n\n"
-                },
-                "13.) <insert item name here> hasn't dropped yet? Is the drop rate really low??":{
+                "12.) <insert item name here> hasn't dropped yet? Is the drop rate really low??":{
                     "text":"It'll drop. The drop rate scales with the amount of complaining.\n\n||Unless you forgot to whitelist it <:KekU:804648765612228648>||\n\n"
-                },
-                "14.) Why is my account not relogging":{
-                    "text":"Is your account not relogging?\nCheck if you changed the details to a previously saved account \nIf you had a previously saved account, put your new details in, press log in then reload your Grimoire.\nIf you do not reload Grimoire your username will be Null meaning it will not relog.\n"
                 }
             }
         },
@@ -54,28 +51,28 @@
             "description":"Does your grim have problem? Browse here and see common fixes.",
             "content":{
                 "1.) Delete 133spider's mms.cfg fix":{
-                    "text":"\ud83d\udd39**Description**: 133spider released a fix to enable flash player gain.\n\ud83d\udd39**Symptoms**: Grimoire is opening but not loading.\n\ud83d\udd39**Solution**: Delete mms.cfg if you did the spider fix:```CSS\nC:\\Windows\\SysWOW64\\Macromed\\Flash\\mms.cfg \nC:\\Windows\\System32\\Macromed\\Flash\\mms.cfg```\n"
+                    "text":"🔹**Description**: 133spider released a fix to enable flash player gain.\n🔹**Symptoms**: Grimoire is opening but not loading.\n🔹**Solution**: Delete mms.cfg if you did the spider fix:```CSS\nC:\\Windows\\SysWOW64\\Macromed\\Flash\\mms.cfg \nC:\\Windows\\System32\\Macromed\\Flash\\mms.cfg```\n"
                 },
                 "2.) Clear Local Storage":{
                     "text":"1.) Open grimoire and right click on it.\n2.) Click on Global Setting.\n3.) On the Storage tab, click \"Delete All\"\n4.) On the Advanced tab, click \"Delete All\"\n",
                     "image":"https://cdn.discordapp.com/attachments/805367955923533845/818003852896501770/unknown.png"
                 },
                 "3.) Grimoire Blocked Fix":{
-                    "text":"\ud83d\udd39**Description**: Your firewall or anti virus might be blocking grimoire.\n\ud83d\udd39**Solution**: Try the followng:\n\n1.) Allow the .exe file in firewall by going to Windows Firewall with advanced security. Then add new outbound rule with port 5588, and allow it.\n\n2.) Add exception for the grimoire folder in your Antivirus.\n\n3.) Unblock grimoire by right clicking grimoire.exe -> properties -> click unblock.\n"
+                    "text":"🔹**Description**: Your firewall or anti virus might be blocking grimoire.\n🔹**Solution**: Try the followng:\n\n1.) Allow the .exe file in firewall by going to Windows Firewall with advanced security. Then add new outbound rule with port 5588, and allow it.\n\n2.) Add exception for the grimoire folder in your Antivirus.\n\n3.) Unblock grimoire by right clicking grimoire.exe -> properties -> click unblock.\n"
                 },
                 "4.) Null Username fix":{
-                    "text":"\ud83d\udd39**Description**: This occurs due to opening more than 2 instance of grim and playing using different characters.\n\ud83d\udd39**Symptoms**: \"Your Username is currently null meaning...\" pop-up will appear.\n\ud83d\udd39**Solution**: Make a new copy of grimoire folder and open that separate grim to play a different character at a time.",
+                    "text":"🔹**Description**: This occurs due to opening more than 2 instance of grim and playing using different characters.\n🔹**Symptoms**: \"Your Username is currently null meaning...\" pop-up will appear.\n🔹**Solution**: Make a new copy of grimoire folder and open that separate grim to play a different character at a time.",
                     "image":"https://cdn.discordapp.com/attachments/805367955923533845/820872632198627328/unknown.png"
                 },
                 "5.) Grim shitty UI fix":{
-                    "text":"\ud83d\udd39**Description**: Grim looks like shit.\n\ud83d\udd39**Symptoms**: Grimoire is randomly changing resolution and size.\n\ud83d\udd39**Solution**: \n\n1.) Right click Grimoire.exe and click properties.\n2.) On compatibility, click the \"Change high DPI settings\"\n3.) Check \"Overide high DPI scaling behavior\" and select \"System (Enhanced)\"\n4.) Click Ok. Run Grimoire.\n",
+                    "text":"🔹**Description**: Grim looks like shit.\n🔹**Symptoms**: Grimoire is randomly changing resolution and size.\n🔹**Solution**: \n\n1.) Right click Grimoire.exe and click properties.\n2.) On compatibility, click the \"Change high DPI settings\"\n3.) Check \"Overide high DPI scaling behavior\" and select \"System (Enhanced)\"\n4.) Click Ok. Run Grimoire.\n",
                     "image":"https://media.discordapp.net/attachments/805367955923533845/814088319281135616/unknown.png?width=1440&height=527"
                 },
                 "6.) Windows Update Flash Fix":{
-                    "text":"\ud83d\udd39**Description**: Windows update killed flash player.\n\ud83d\udd39**Symptoms**: Grimoire is not opening.\n\ud83d\udd39**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n"
+                    "text":"🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening.\n🔹**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n"
                 },
                 "7.) Flash Player Pro not working fix":{
-                    "text":"\ud83d\udd39**Description**: Flash player pro wont work or you get the error below.\n\ud83d\udd39**Solution**: \n\n1.) Download [install_flash_player_ax.exe](https://cdn.discordapp.com/attachments/811305082377207866/812362328964202546/install_flash_player_ax.exe)\n2.) Once downloaded, right click on it and choose properties.\n3.) On Compatibility tab, tick `Run this program in compatibility mode for`, and choose `Windows 7`.\n4.) Click Ok. Install install_flash_player_ax.exe.\n",
+                    "text":"🔹**Description**: Flash player pro wont work or you get the error below.\n🔹**Solution**: \n\n1.) Download [install_flash_player_ax.exe](https://cdn.discordapp.com/attachments/811305082377207866/812362328964202546/install_flash_player_ax.exe)\n2.) Once downloaded, right click on it and choose properties.\n3.) On Compatibility tab, tick `Run this program in compatibility mode for`, and choose `Windows 7`.\n4.) Click Ok. Install install_flash_player_ax.exe.\n",
                     "image":"https://cdn.discordapp.com/attachments/805367955923533845/824146799916351528/unknown.png"
                 }
             }
@@ -100,16 +97,16 @@
             "Welcome":{
                 "description":"Welcome to __**Pearl Harbor** -The AQW Sailor's Paradise__! We are here to help you sail the Imbalanced and Nightmarish Landscape that is, AutisticQuest Worlds!  We will help you come out on top like the enjoying human you are supposed to be! \n\nThe following below are our Channel Guides. Please do read them carefully. :)\n",
                 "embed_list":{
-                    "Grimoire Help \u2753":"\ud83d\udccc<#811305082002866233>  Get the Bots and the Latest Grimoire 1.7.8 here.\n\ud83d\udccc<#817998750697521183> If Grimoire is not working, follow the guides here.\n\ud83d\udccc<#820934479677358080> It has all the most common questions.\n\ud83d\udccc<#811305082377207865> Head over here if you want to report an issue with our products.\n",
-                    "News and Updates \ud83d\udcdc":"\ud83d\udccc<#811305082002866235> Be notified by the  latest uploaded Grimoire Bots!\n\ud83d\udccc<#811309992727937034> Watch AQW news from here.\n\ud83d\udccc<#812318143322128384> Subscribe here for the latest Daily Gifts or Server Boosts!\n",
-                    "Chat \ud83d\udcac":"\ud83d\udccc<#811305082377207866> Come here to ask for help or questions.\n\ud83d\udccc<#822037903790047233> if you just wanna hang out, chat with us!\n\ud83d\udccc<#811305082377207858> Use **Bloom Bot** here to search for Class Datas, Wiki, Guides, etc...\n",
-                    "Community \ud83c\udfdb":"\ud83d\udccc<#824904312501174312> Watch out for Giveaways here (APs or Nitros) from our Users!\n\ud83d\udccc<#811965198411235359> The Board of Shame. You absolutely want to be starred here.\n\ud83d\udccc<#811305082758758434> Reddit feed from [r/AutoQuestWorlds](https://www.reddit.com/r/autoquestworlds/) and [r/AQW](https://www.reddit.com/r/AQW/).\n\ud83d\udccc<#824243579617935390> Watch the staff's Gazillion Crit. damage go brr!\n\ud83d\udccc<#825670606099578882> Get advice for your set. Please be polite and patient.\n\ud83d\udccc<#811305082758758435> Want to load cosmetics? Ask here!\n"
+                    "Grimoire Help ❓":"📌<#811305082002866233>  Get the Bots and the Latest Grimoire 1.7.8 here.\n📌<#817998750697521183> If Grimoire is not working, follow the guides here.\n📌<#820934479677358080> It has all the most common questions.\n📌<#811305082377207865> Head over here if you want to report an issue with our products.\n",
+                    "News and Updates 📜":"📌<#811305082002866235> Be notified by the  latest uploaded Grimoire Bots!\n📌<#811309992727937034> Watch AQW news from here.\n📌<#812318143322128384> Subscribe here for the latest Daily Gifts or Server Boosts!\n",
+                    "Chat 💬":"📌<#811305082377207866> Come here to ask for help or questions.\n📌<#822037903790047233> if you just wanna hang out, chat with us!\n📌<#811305082377207858> Use **Bloom Bot** here to search for Class Datas, Wiki, Guides, etc...\n",
+                    "Community 🏛":"📌<#824904312501174312> Watch out for Giveaways here (APs or Nitros) from our Users!\n📌<#811965198411235359> The Board of Shame. You absolutely want to be starred here.\n📌<#811305082758758434> Reddit feed from [r/AutoQuestWorlds](https://www.reddit.com/r/autoquestworlds/) and [r/AQW](https://www.reddit.com/r/AQW/).\n📌<#824243579617935390> Watch the staff's Gazillion Crit. damage go brr!\n📌<#825670606099578882> Get advice for your set. Please be polite and patient.\n📌<#811305082758758435> Want to load cosmetics? Ask here!\n"
                 }
             },
             "Pearl Harbor: The AQW Sailor's Paradise":{
                 "title_url":"https://discord.io/AQWBots",
                 "author":"Server Invite",
-                "description":"\u200b Powered by Discord.io",
+                "description":"​ Powered by Discord.io",
                 "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/829203599292366869/i.png"
             }
         },

@@ -11,8 +11,9 @@ class TextUploaders(commands.Cog, BaseTools):
         self.bot = Bot
         self.server_inv = ""
         self.server_guild = ""
-        if BaseProgram.texts["Data"]["Server ON"]:
-            self.server_invite.start()
+        # if BaseProgram.texts["Data"]["Server ON"]:
+        #     self.server_invite.start()
+        #     pass
         # BaseProgram.sqlock = False
 # 
 
@@ -93,42 +94,46 @@ class TextUploaders(commands.Cog, BaseTools):
         # await self.send_webhook(hook_link, "file", fp, file_n)
 
     @commands.command()
-    async def upembed(self, ctx):
+    async def upembed(self, ctx, type_=""):
         allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_fags")
         if not allow_:
             return
 
         if BaseProgram.sqlock:
             return
+        type_ = type_.lower()
+        if not type_ or type_ not in BaseProgram.texts["Embed"]:
+            await ctx.send("\> Please enter valid text name.")
+            return
 
         start_link_1 = ""
 
-        embed_list = BaseProgram.texts["Embed"]
-        for embed in embed_list:
-            
+        embed_lis_all = BaseProgram.texts["Embed"][type_]
+        for embed in embed_lis_all:
+            embed_list = BaseProgram.texts["Embed"][type_][embed]
             msg = ""
             embedVar = discord.Embed(title=embed, color=BaseProgram.block_color)
-            if "description" in embed_list[embed]:
-                embedVar.description = embed_list[embed]["description"]
+            if "description" in embed_list:
+                embedVar.description = embed_list["description"]
 
-            if "title_url" in embed_list[embed]:
-                embedVar.url = embed_list[embed]["title_url"]
+            if "title_url" in embed_list:
+                embedVar.url = embed_list["title_url"]
 
-            if "author" in embed_list[embed]:
-                embedVar.set_author(name=embed_list[embed]["author"])
+            if "author" in embed_list:
+                embedVar.set_author(name=embed_list["author"])
 
-            if "embed_list" in embed_list[embed]:
-                for field in embed_list[embed]["embed_list"]:
-                    embedVar.add_field(name=field, value=embed_list[embed]["embed_list"][field], inline=False)
+            if "embed_list" in embed_list:
+                for field in embed_list["embed_list"]:
+                    embedVar.add_field(name=field, value=embed_list["embed_list"][field], inline=False)
 
-            if "image" in embed_list[embed]:
-                embedVar.set_image(url=embed_list[embed]["image"])
+            if "image" in embed_list:
+                embedVar.set_image(url=embed_list["image"])
 
-            if "thumbnail" in embed_list[embed]:
-                embedVar.set_thumbnail(url=embed_list[embed]["thumbnail"])
+            if "thumbnail" in embed_list:
+                embedVar.set_thumbnail(url=embed_list["thumbnail"])
 
-            if "message" in embed_list[embed]:
-                msg = embed_list[embed]["message"]
+            if "message" in embed_list:
+                msg = embed_list["message"]
 
             if embed == "Welcome":
                 embedVar.add_field(name="\u200b", value=f"[Click here to go to the Top]({start_link_1})", inline=False)
@@ -136,12 +141,14 @@ class TextUploaders(commands.Cog, BaseTools):
             item_1 = await ctx.send("\n\u200b" + msg, embed=embedVar)
             if not start_link_1:
                 start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
-            if embed == "Pearl Harbor: The AQW Sailor's Paradise":
-                BaseProgram.texts["Data"]["Server Invite"] = item_1.id
-                BaseProgram.texts["Data"]["Server Channel"] = ctx.channel.id
-                BaseProgram.texts["Data"]["Server ON"] = True
-                self.git_save("texts")
-                self.server_invite.start()
+            
+            if os.name != "nt":
+                if embed == "Pearl Harbor: The AQW Sailor's Paradise":
+                    BaseProgram.texts["Data"]["Server Invite"] = item_1.id
+                    BaseProgram.texts["Data"]["Server Channel"] = ctx.channel.id
+                    BaseProgram.texts["Data"]["Server ON"] = True
+                    self.git_save("texts")
+                    self.server_invite.start()
                 
 
 
