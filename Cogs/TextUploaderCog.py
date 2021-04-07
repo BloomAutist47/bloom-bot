@@ -88,9 +88,31 @@ class TextUploaders(commands.Cog, BaseTools):
         return
         # await self.send_webhook(hook_link, "file", fp, file_n)
 
+    @commands.command()
+    async def upembed(self, ctx):
+        allow_ = await self.allow_evaluator(ctx, mode="role_privilege-update", command_name="up_fags")
+        if not allow_:
+            return
+
+        if BaseProgram.sqlock:
+            return
 
 
+        embed_list = BaseProgram.texts["Embed"]
+        for embed in embed_list:
 
+            embedVar = discord.Embed(title=embed, color=BaseProgram.block_color,
+                description=embed_list[embed]["description"])
+
+            if "embed_list" in embed_list[embed]:
+                for field in embed_list[embed]["embed_list"]:
+                    embedVar.add_field(name=field, value=embed_list[embed]["embed_list"][field], inline=False)
+
+
+            if "image" in embed_list[embed]:
+                embedVar.set_image(embed_list[embed]["image"])
+
+            await ctx.send("\n\u200b", embed=embedVar)
 
     @commands.command()
     async def uptext(self, ctx, textfile=""):
