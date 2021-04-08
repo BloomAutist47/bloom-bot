@@ -1,7 +1,7 @@
 {
     "Abyssal Angel's Shadow": {
         "acronym": "Aba, AAS, AA",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Awe Blast",
         "duplicates": [
             "Abyssal Angel"
         ],
@@ -100,7 +100,7 @@
     },
     "Arachnomancer": {
         "acronym": "Arach",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Spiral Carve or Mana Vamp",
         "duplicates": [],
         "enh": "luck",
         "note": "",
@@ -243,7 +243,7 @@
     },
     "Bard": {
         "acronym": "(None)",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Awe Blast",
         "duplicates": [
             "Troubador of Love"
         ],
@@ -604,7 +604,7 @@
     },
     "Chaos Slayer": {
         "acronym": "CS, CSlayer",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Health Vamp (Survivability), Spiral Carve (High DPS), Awe Blast (Support)",
         "duplicates": [
             "Chaos Champion Prime",
             "Chaos Slayer Berserker",
@@ -1509,7 +1509,7 @@
     },
     "DragonLord": {
         "acronym": "DL",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Health Vamp",
         "duplicates": [],
         "enh": "luck",
         "note": "",
@@ -1859,7 +1859,7 @@
     },
     "Frostval Barbarian": {
         "acronym": "FB, Barb",
-        "awe_enh": "Spiral Carve or Awe Blast",
+        "awe_enh": "Awe Blast",
         "duplicates": [],
         "enh": "fighter",
         "note": "Use Awe Blast for Supporting",
@@ -1887,9 +1887,9 @@
     },
     "Glacial Berserker": {
         "acronym": "GB",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Awe Blast",
         "duplicates": [
-            "Glacial Berserker Test"
+            
         ],
         "enh": "luck",
         "note": "",
@@ -1946,7 +1946,7 @@
     },
     "Great Thief": {
         "acronym": "GT",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Spiral Carve or Mana Vamp",
         "duplicates": [],
         "enh": "luck",
         "note": "",
@@ -2186,7 +2186,7 @@
             "Infinite Legion Dark Caster",
             "Legion Evolved Dark Caster"
         ],
-        "enh": "luck",
+        "enh": "wizard",
         "note": "",
         "wiki": "http://aqwwiki.wikidot.com/infinite-dark-caster-ac",
         "stats": [
@@ -2215,7 +2215,7 @@
     },
     "Infinity Knight": {
         "acronym": "IK",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Mana Vamp",
         "duplicates": [],
         "enh": "wizard",
         "note": "",
@@ -2362,7 +2362,7 @@
     },
     "Legion Revenant": {
         "acronym": "LR",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Awe Blast",
         "duplicates": [],
         "enh": "wizard",
         "note": "",
@@ -2421,7 +2421,7 @@
     },
     "LightCaster": {
         "acronym": "LC",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Spiral Carve or Awe Blast",
         "duplicates": [],
         "enh": "wizard",
         "note": "",
@@ -2481,7 +2481,7 @@
     },
     "Lord of Order": {
         "acronym": "LoO, Lorder",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Awe Blast",
         "duplicates": [],
         "enh": "luck",
         "note": "",
@@ -2597,11 +2597,11 @@
     },
     "Dark Master of Moglins": {
         "acronym": "MoM, DMoM",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Awe Blast",
         "duplicates": [
             "Master of Moglins"
         ],
-        "enh": "wizard",
+        "enh": "luck",
         "note": "",
         "wiki": "http://aqwwiki.wikidot.com/master-of-moglins-class-2",
         "stats": [
@@ -2628,7 +2628,7 @@
     },
     "MechaJouster": {
         "acronym": "MJ, Jouster",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Mana Vamp or Awe Blast",
         "duplicates": [],
         "enh": "luck",
         "note": "",
@@ -3237,7 +3237,7 @@
     },
     "ShadowStalker of Time": {
         "acronym": "SWoT, SSoT",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Mana Vamp",
         "duplicates": [
             "ShadowWalker of Time"
         ],
@@ -3269,7 +3269,7 @@
     },
     "Shaman": {
         "acronym": "(None)",
-        "awe_enh": "Spiral Carve or Mana Vamp",
+        "awe_enh": "Mana Vamp",
         "duplicates": [],
         "enh": "wizard",
         "note": "",
@@ -3412,7 +3412,7 @@
     },
     "StoneCrusher": {
         "acronym": "SC, IT",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Awe Blast",
         "duplicates": [
             "Infinity Titan"
         ],
@@ -3797,7 +3797,7 @@
     },
     "Void Highlord": {
         "acronym": "VHL",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Awe Blast",
         "duplicates": [],
         "enh": "luck",
         "note": "",
@@ -3834,7 +3834,8 @@
             "Cryomancer Mini Pet Coming Soon",
             "Void Highlord Tester",
             "Pumpkin Lord",
-            "Legion Revenant Member Test"
+            "Legion Revenant Member Test",
+            "Glacial Berserker Test"
         ],
         "enh": "luck",
         "note": "",
@@ -3860,7 +3861,7 @@
     },
     "Yami no Ronin": {
         "acronym": "YnR",
-        "awe_enh": "Spiral Carve",
+        "awe_enh": "Mana Vamp or Spiral Carve",
         "duplicates": [],
         "enh": "luck",
         "note": "",
