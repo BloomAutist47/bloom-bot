@@ -1888,9 +1888,7 @@
     "Glacial Berserker": {
         "acronym": "GB",
         "awe_enh": "Awe Blast",
-        "duplicates": [
-            
-        ],
+        "duplicates": [],
         "enh": "luck",
         "note": "",
         "wiki": "http://aqwwiki.wikidot.com/glacial-berserker-class-non-ac",
