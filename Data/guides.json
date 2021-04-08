@@ -208,8 +208,8 @@
         "type": "image",
         "auth": "aqw",
         "title": "Enhancement guide.",
-        "description": "Alternatively, you can use `;c class_name` to find the class data chart which also contains the Class and Awe Enchancements.",
-        "content": "https://cdn.discordapp.com/attachments/805367955923533845/821785090501115964/class_enhancements_3.png"
+        "description": "Alternatively, you can use `;c class_name` to find the class data chart which also contains the Class and Awe Enchancements.\n**Note**: I'll update the awe enhancement later. Use the `;c class_name` command for the time being.",
+        "content": "https://cdn.discordapp.com/attachments/805367955923533845/829732118073573396/class_enhancements_4.png"
     },
     "alchem": {
         "type": "text",
