@@ -456,24 +456,30 @@ class TwitterCog(commands.Cog, BaseTools):
 
 
                         # Checks if it isn't alina then don't do any daily gift analysis
-                        if user_name.lower() != "alina_ae":
+                        if user_name != "Alina_AE":
                             tweet_list.append([tweet.id, tweet.user.id_str, user_name])
                             print("> nil", end=" ")
                             continue
                         else:
+                            print(">>>>>>>>>>> Passed")
                             pass
 
                         tweet_text = tweet.full_text.lower()
 
                         self.is_double = False
                         got = False
+                        got_2 = True
                         tweet_line = tweet.full_text
 
                         # Checks if wrong tweet
                         for i in self.black_list:
                             if i.lower() in tweet_text:
                                 tweet_list.append([tweet.id, tweet.user.id_str, user_name])
-                                continue
+                                got_2 = False
+                                break
+
+                        if not got_2:
+                            continue
 
                         # Checks if double boost
                         for i in  self.double_check:
@@ -536,7 +542,8 @@ class TwitterCog(commands.Cog, BaseTools):
                 if not tweet_list:
                     print("> No Tweets")
 
-            self.git_save("twitter_logs")
+            if not BaseProgram.lock_read:
+                self.git_save("twitter_logs")
 
         print("> Done Tweeter hunting")
         # return
