@@ -45,7 +45,7 @@ class UtilsCog(commands.Cog, BaseTools):
         current_time = est_dt.strftime("%I:%M %p")
         # print(current_time)
         if os.name == "nt":
-            channel = await self.bot.fetch_channel(825251496727805973)
+            channel = await self.bot.fetch_channel(830706429765746718)
         else:
             channel = await self.bot.fetch_channel(811305082758758437)
 

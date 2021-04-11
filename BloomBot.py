@@ -27,6 +27,8 @@ from discord.ext.commands import CommandNotFound
 # import pypresence
 from pprint import pprint   
 from time import sleep  
+from datetime import datetime
+
 
 from Cogs.Base import *
 from Cogs.BoatSearchCog import BoatSearchCog
@@ -56,11 +58,13 @@ if os.name == "nt":
     BaseProgram.tweet_user = "1349290524901998592"
     DISCORD_TOKEN = os.getenv('DISCORD_BOT_TOKEN2') # test bot token
     CLIEND_ID = os.getenv("DISCORD_CLIENT_ID2")
+    DEPLOY_NAME = os.getenv("DEPLOY_NAME")
     cmd = "'"
 else:
     BaseProgram.tweet_user = "16480141"
     DISCORD_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
     CLIEND_ID = os.environ.get("DISCORD_CLIENT_ID")
+    DEPLOY_NAME = os.environ.get("DEPLOY_NAME")
     cmd = ";"
 
 
@@ -107,6 +111,14 @@ async def on_ready():
         channel = Bot.get_channel(799238286539227136)
         await channel.send("HOLA")
 
+    await Bot.wait_until_ready()
+    deploy_notif = await Bot.fetch_channel(830702959679373352)
+    now = datetime.now()
+
+    current_time = now.strftime("%d %B %Y, %a | %I:%M:%S %p")
+
+    await deploy_notif.send(f"**Deployed**: {DEPLOY_NAME} at {current_time}")
+
     # name = "A bot Created by Bloom Autist. Currently v.4.0.0.00"
 
     # game = discord.Activity(state="with the API",name="AdventureQuest Worlds", details="suck madasdasd", type=discord.ActivityType.playing,
@@ -142,7 +154,7 @@ Bot.add_cog(GuideCog(Bot))
 Bot.add_cog(WikiCog(Bot))
 
 Bot.add_cog(RedditCog(Bot)) 
-Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
+# Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 
 Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
