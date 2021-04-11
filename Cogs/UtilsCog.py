@@ -39,7 +39,7 @@ class UtilsCog(commands.Cog, BaseTools):
     @tasks.loop(minutes=5)
     async def serverTime(self):
         eastern = timezone('US/Eastern')
-
+        
         est_dt = datetime.now(eastern)
 
         current_time = est_dt.strftime("%I:%M %p")

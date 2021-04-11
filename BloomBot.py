@@ -28,7 +28,7 @@ from discord.ext.commands import CommandNotFound
 from pprint import pprint   
 from time import sleep  
 from datetime import datetime
-
+from pytz import timezone
 
 from Cogs.Base import *
 from Cogs.BoatSearchCog import BoatSearchCog
@@ -101,8 +101,6 @@ def rich_presence():
     RPC = pypresence.Presence(client_id=CLIEND_ID, pipe=0, loop=BaseProgram.loop) 
     y = RPC.connect()
     x = RPC.update(state="Rich Presence using pypresence!", details="A test of qwertyquerty's Python Discord RPC wrapper, pypresence!")
-    print(x)
-    print(y)
 
 @Bot.event
 async def on_ready():
@@ -113,8 +111,9 @@ async def on_ready():
 
     await Bot.wait_until_ready()
     deploy_notif = await Bot.fetch_channel(830702959679373352)
-    now = datetime.now()
 
+    manila = timezone('Asia/Manila')
+    now = datetime.now(manila)
     current_time = now.strftime("%d %B %Y, %a | %I:%M:%S %p")
 
     await deploy_notif.send(f"**Deployed**: {DEPLOY_NAME} at {current_time}")
