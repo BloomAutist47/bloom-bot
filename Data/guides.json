@@ -129,7 +129,7 @@
             "• `Non-race-tagged`: NSoD (×1.51 or 51%)",
             "• `Chaos`: CU + AFDL armor (×2.025 or 102.5%)",
             "• `Dragon`: CPC + NSoD (×1.963 or 96.3%)",
-            "• `Elemental`: CPC + NSoD (×1.963 or 96.3%)",
+            "• `Elemental`: CPC + LDoN (×2.275)",
             "• `Human`: SDKA + NSoD (×2.2801 or 128.01%)",
             "• `Undead`: AFDL armor + BLoD (×2.3625 or 136.25%)",
             "",
@@ -138,8 +138,9 @@
             "\\> **CPC** = Celestial Pirate Commander and all its items; ArchFiend DeathLord (AFDL2) and its items can be used instead, they're exactly the same.",
             "\\> **SDKA** = Sepulchure's DoomKnight Armor; Arch DoomKnight can be used instead if you don't have it, though it's slightly weaker.",
             "\\> **AFDL** =  Archfiend Doomlord, armor only; its other items can be used instead if you don't have the armor, though they're weaker.",
-            "\\> **BLoD** = Blinding Light of Destiny and its variants. Nothing can be used instead. How do you not fucking have this."
-        ]
+            "\\> **BLoD** = Blinding Light of Destiny and its variants. Nothing can be used instead. How do you not fucking have this.",
+            "\\> **LDoN** = Legion DragonBlade of Nulgath; You need membership to get it though. Does 75% more damage against dragons. Use NSoD if you don't have it."
+        ]   
     },
     "ioda": {
         "type": "text",
@@ -259,7 +260,7 @@
         "type": "image",
         "auth": "aqw",
         "title": "Best Army Composition",
-        "description": "> Only a true Sailor of the Seven Eldtritch Seas deserve the title, `Primordial of War`.",
+        "description": "> Only a true Sailor of the Seven Eldtritch Seas deserve the title, `Primordial of War`.\n\nCheck out [WoodenChessMan’s In Depth Guide to Armies](https://docs.google.com/document/d/1ef3vifE9WUWZcEMFb8m__LklbwTq-eWABYeO2b62yf4/edit).",
         "content": "https://cdn.discordapp.com/attachments/805367955923533845/830454581489827890/unknown.png"
     },
     "Others": {
