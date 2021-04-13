@@ -256,6 +256,10 @@
             "url": "https://adventurequest.life/bots/Arts_NWNO_HunterDrone_Bot.gbot",
             "author": "arts"
         },
+        "NWNO NulgathBirthdayFB Bot.gbot": {
+            "url": "https://adventurequest.life/bots/Arts_NWNO_NulgathBirthdayFB_Bot.gbot",
+            "author": "arts"
+        },
         "NWNO NulgathBirthday Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_NWNO_NulgathBirthday_Bot.gbot",
             "author": "arts"
@@ -426,6 +430,10 @@
         },
         "Dragonslayer General ClassBot PRO.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot",
+            "author": "bloom"
+        },
+        "Dreadrock LT FB Packet Kill.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_Dreadrock_LT_FB_Packet_Kill.gbot",
             "author": "bloom"
         },
         "EtherStorm Rep Balmblossom.gbot": {
@@ -776,8 +784,16 @@
             "url": "https://adventurequest.life/bots/Kaos_Brightoak_Rep_PacketSpam.gbot",
             "author": "kaos"
         },
+        "CelestialArenaHelper.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_CelestialArenaHelper.gbot",
+            "author": "kaos"
+        },
         "Cragglerock Voidstone Bot.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_Cragglerock_Voidstone_Bot.gbot",
+            "author": "kaos"
+        },
+        "CragXOBoN Gold ReturnPolicy DrudgentheSalesman VoucherItem COMBO.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_CragXOBoN_Gold_ReturnPolicy_DrudgentheSalesman_VoucherItem_COMBO.gbot",
             "author": "kaos"
         },
         "Crag Deals.gbot": {
@@ -836,6 +852,10 @@
             "url": "https://adventurequest.life/bots/Kaos_MEM_SwagTokens_FIX_IT_IF_IT_BREAKS.gbot",
             "author": "kaos"
         },
+        "OBoN Gold ReturnPolicy DrudgentheSalesman VoucherItem COMBO.gbot": {
+            "url": "https://adventurequest.life/bots/Kaos_OBoN_Gold_ReturnPolicy_DrudgentheSalesman_VoucherItem_COMBO.gbot",
+            "author": "kaos"
+        },
         "Penance BestWithArmies.gbot": {
             "url": "https://adventurequest.life/bots/Kaos_Penance_BestWithArmies.gbot",
             "author": "kaos"
@@ -890,6 +910,10 @@
         },
         "Beleen Pinkest Dye Ever ONLY.gbot": {
             "url": "https://adventurequest.life/bots/Nng_Beleen_Pinkest_Dye_Ever_ONLY.gbot",
+            "author": "nng"
+        },
+        "NNg Candyshell Merge skill class equip editable.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Candyshell_Merge_skill_class_equip_editable.gbot",
             "author": "nng"
         },
         "NNg Circles of Fate Indulgence sevencircles class equip and skill editable pro.gbot": {
@@ -1528,6 +1552,9 @@
             "NWNO HunterDrone Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_NWNO_HunterDrone_Bot.gbot"
             },
+            "NWNO NulgathBirthdayFB Bot.gbot": {
+                "url": "https://adventurequest.life/bots/Arts_NWNO_NulgathBirthdayFB_Bot.gbot"
+            },
             "NWNO NulgathBirthday Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_NWNO_NulgathBirthday_Bot.gbot"
             },
@@ -1748,6 +1775,9 @@
             "Dragonslayer General ClassBot PRO.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Dragonslayer_General_ClassBot_PRO.gbot"
             },
+            "Dreadrock LT FB Packet Kill.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_Dreadrock_LT_FB_Packet_Kill.gbot"
+            },
             "EtherStorm Rep Balmblossom.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_EtherStorm_Rep_Balmblossom.gbot"
             },
@@ -1940,8 +1970,14 @@
             "Brightoak Rep PacketSpam.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Brightoak_Rep_PacketSpam.gbot"
             },
+            "CelestialArenaHelper.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_CelestialArenaHelper.gbot"
+            },
             "Cragglerock Voidstone Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Cragglerock_Voidstone_Bot.gbot"
+            },
+            "CragXOBoN Gold ReturnPolicy DrudgentheSalesman VoucherItem COMBO.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_CragXOBoN_Gold_ReturnPolicy_DrudgentheSalesman_VoucherItem_COMBO.gbot"
             },
             "Crag Deals.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Crag_Deals.gbot"
@@ -1985,6 +2021,9 @@
             "MEM SwagTokens FIX IT IF IT BREAKS.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_MEM_SwagTokens_FIX_IT_IF_IT_BREAKS.gbot"
             },
+            "OBoN Gold ReturnPolicy DrudgentheSalesman VoucherItem COMBO.gbot": {
+                "url": "https://adventurequest.life/bots/Kaos_OBoN_Gold_ReturnPolicy_DrudgentheSalesman_VoucherItem_COMBO.gbot"
+            },
             "Penance BestWithArmies.gbot": {
                 "url": "https://adventurequest.life/bots/Kaos_Penance_BestWithArmies.gbot"
             },
@@ -2013,6 +2052,9 @@
             },
             "Beleen Pinkest Dye Ever ONLY.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Beleen_Pinkest_Dye_Ever_ONLY.gbot"
+            },
+            "NNg Candyshell Merge skill class equip editable.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Candyshell_Merge_skill_class_equip_editable.gbot"
             },
             "NNg Circles of Fate Indulgence sevencircles class equip and skill editable pro.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Circles_of_Fate_Indulgence_sevencircles_class_equip_and_skill_editable_pro.gbot"
