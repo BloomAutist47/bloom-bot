@@ -13,37 +13,37 @@ class WikiCog(commands.Cog, BaseTools):
         self.field_count = 0
         self.black_listed = "Tercessuinotlim"
 
-    @commands.command()
-    async def ws(self, ctx, *, item=""):
-        if item == "":
-            embedVar = self.embed_single("Wiki Search", "Please enter a value.")
-            await ctx.send(embed=embedVar)
-            return
+    # @commands.command()
+    # async def ws(self, ctx, *, item=""):
+    #     if item == "":
+    #         embedVar = self.embed_single("Wiki Search", "Please enter a value.")
+    #         await ctx.send(embed=embedVar)
+    #         return
 
 
 
-        wiki = self.convert_aqurl(item, "wikisearch")
+    #     wiki = self.convert_aqurl(item, "wikisearch")
 
 
-        result_desc = ""
-        wiki_soup = await self.get_wiki_search_content(wiki)
+    #     result_desc = ""
+    #     wiki_soup = await self.get_wiki_search_content(wiki)
         
 
-        if wiki_soup == "shit":
-            result_desc = "Timeout error. The wikidot fucked up. Not me."
-        elif not wiki_soup:
-            result_desc = "None"
-        else:
-            for item in wiki_soup:
-                re_name = item.find("div", {"class":"title"}).find("a").text.strip()
-                link = item.find("div", {"class":"title"}).find("a")["href"]
-                result_desc += f"➣ [{re_name}]({link})\n"
+    #     if wiki_soup == "shit":
+    #         result_desc = "Timeout error. The wikidot fucked up. Not me."
+    #     elif not wiki_soup:
+    #         result_desc = "None"
+    #     else:
+    #         for item in wiki_soup:
+    #             re_name = item.find("div", {"class":"title"}).find("a").text.strip()
+    #             link = item.find("div", {"class":"title"}).find("a")["href"]
+    #             result_desc += f"➣ [{re_name}]({link})\n"
 
-        embedVar = self.embed_single("Wiki Search", wiki)
-        embedVar.add_field(name="Top Result", value=result_desc, inline=False)
-        embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
-        await ctx.send(embed=embedVar)
-        return
+    #     embedVar = self.embed_single("Wiki Search", wiki)
+    #     embedVar.add_field(name="Top Result", value=result_desc, inline=False)
+    #     embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
+    #     await ctx.send(embed=embedVar)
+    #     return
 
 
 
@@ -54,6 +54,9 @@ class WikiCog(commands.Cog, BaseTools):
             await ctx.send(embed=embedVar)
             return
 
+        self.loop.create_task(self.basic_search(ctx, item))
+
+    async def basic_search(self, ctx, item):
         # convert item into something useful
         item =  re.sub(' +', ' ', item)
         item = re.sub(r"(\`)|(\))|(\()|(\+)|(\.)", "", item)
@@ -136,7 +139,7 @@ class WikiCog(commands.Cog, BaseTools):
 
         if "Description:" in data and data["Description:"]:
             embedVar.add_field(name="Description:", value=self.combine_str(data["Description:"]), inline=False)
-            
+
         if "Price:" in data and data["Price:"]:
             
             res = self.combine_lst_str(data["Price:"])
@@ -228,7 +231,7 @@ class WikiCog(commands.Cog, BaseTools):
 
         await ctx.send(embed=embedVar)
         # return {"title": title, "data": data, "breadcrumbs": breadcrumbs, "tags": tags, "image": image}
-
+        return
 
 
     def get_wiki_page(self, sites_soup, page_content):
