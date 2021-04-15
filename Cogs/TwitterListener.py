@@ -427,13 +427,13 @@ class TwitterCog(commands.Cog, BaseTools):
         return
 
 
-    @tasks.loop(minutes=5)
+    @tasks.loop(minutes=10)
     async def tweet_looper(self):
         await self.bot.wait_until_ready()
         BaseProgram.tweet_call == "updaily"
 
         self.loop.create_task(self.loop_object())
-        
+
     async def loop_object(self):
         for user_name in self.twitter_user_list:
             print(f"\n\n> Targeting @{user_name}")
