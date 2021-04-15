@@ -161,7 +161,10 @@ class WikiCog(commands.Cog, BaseTools):
         if "Locations:" in data and data["Locations:"]:
             res = self.combine_lst_str(data["Locations:"])
             for item in res:
-                embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=False)
+                if len(item) <= 5:
+                    embedVar.add_field(name="Price:", value='\n '.join(item), inline=True)
+                else:
+                    embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=False)
         if "Location:" in data and data["Location:"]:
             res = self.combine_lst_str(data["Location:"])
             for item in res:
