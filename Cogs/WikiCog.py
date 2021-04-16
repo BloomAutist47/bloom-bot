@@ -117,7 +117,7 @@ class WikiCog(commands.Cog, BaseTools):
 
         embedVar.add_field(name="All Result:", value=f"[Click here for all Results]({wikid})", inline=True)
         # result["breadcrumbs"] = [f"[{x}](http://aqwwiki.wikidot.com/{x})" for x in result["breadcrumbs"]]
-        embedVar.add_field(name="Section:", value=f" » ".join(result["breadcrumbs"]), inline=False)
+        # embedVar.add_field(name="Section:", value=f" » ".join(result["breadcrumbs"]), inline=True)
         # embedVar.add_field(name="\u200b", value="\u200b", inline=False)
         if refer_list:
             embedVar.add_field(name="Search Usually refer to:", value=refer_list, inline=False)
@@ -146,7 +146,7 @@ class WikiCog(commands.Cog, BaseTools):
         # Data
         fc = 0
         if "Description:" in data and data["Description:"]:
-            embedVar.add_field(name="Description:", value=self.combine_str(data["Description:"]), inline=False)
+            embedVar.add_field(name="Description:", value=f" » ".join(result["breadcrumbs"]) + "\n" +self.combine_str(data["Description:"]), inline=False)
 
         if "Price:" in data and data["Price:"]:
             
@@ -158,31 +158,47 @@ class WikiCog(commands.Cog, BaseTools):
                 else:
                     embedVar.add_field(name="Price:", value=self.combine_list(item, "➣"), inline=False)
 
+
+
         if "Sellback:" in data and data["Sellback:"]:
-            embedVar.add_field(name="Sellback:", value='\n'.join(data["Sellback:"]), inline=False)
+            embedVar.add_field(name="Sellback:", value='\n'.join(data["Sellback:"]), inline=True)
         if "Weapon Damage:" in data and data["Weapon Damage:"]:
-            embedVar.add_field(name="Weapon Damage:", value='\n'.join(data["Weapon Damage:"]), inline=False)
+            embedVar.add_field(name="Weapon Damage:", value='\n'.join(data["Weapon Damage:"]), inline=True)
         if "Base Level:" in data and data["Base Level:"]:
-            embedVar.add_field(name="Base Level:", value='\n'.join(data["Base Level:"]), inline=False)
+            embedVar.add_field(name="Base Level:", value='\n'.join(data["Base Level:"]), inline=True)
         if "Rarity:" in data and data["Rarity:"]:
-            embedVar.add_field(name="Rarity:", value='\n'.join(data["Rarity:"]), inline=False)
+            embedVar.add_field(name="Rarity:", value='\n'.join(data["Rarity:"]), inline=True)
+        if "Rooms:" in data and data["Rooms:"]:
+            embedVar.add_field(name="Rooms:", value='\n'.join(data["Rooms:"]), inline=True)
+        if "Level:" in data and data["Level:"]:
+            embedVar.add_field(name="Level:", value='\n'.join(data["Level:"]), inline=True)
+        if "Difficulty:" in data and data["Difficulty:"]:
+            embedVar.add_field(name="Difficulty:", value='\n'.join(data["Difficulty:"]), inline=True)
+        if "Total HP:" in data and data["Total HP:"]:
+            embedVar.add_field(name="Total HP:", value='\n'.join(data["Total HP:"]), inline=True)
+        if "Attacks:" in data and data["Attacks:"]:
+            embedVar.add_field(name="Attacks:", value='\n'.join(data["Attacks:"]), inline=True)
 
         if "Locations:" in data and data["Locations:"]:
             res = self.combine_lst_str(data["Locations:"])
             for item in res:
-                if len(item) <= 5:
-                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=False)
-                else:
-                    embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=False)
+                embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=False)
         if "Location:" in data and data["Location:"]:
             res = self.combine_lst_str(data["Location:"])
             for item in res:
-                if len(item) <= 5:
-                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=False)
-                else:
-                    embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=False)
-        if "Rooms:" in data and data["Rooms:"]:
-            embedVar.add_field(name="Rooms:", value='\n'.join(data["Rooms:"]), inline=False)
+                embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=False)
+        if "Items Dropped:" in data and data["Items Dropped:"]:
+            res = self.combine_lst_str(data["Items Dropped:"])
+            for item in res:
+                embedVar.add_field(name="Items Dropped:", value=self.combine_list(item, "➣"), inline=False)
+
+        if "Temporary Items Dropped:" in data and data["Temporary Items Dropped:"]:
+            res = self.combine_lst_str(data["Temporary Items Dropped:"])
+            for item in res:
+                embedVar.add_field(name="Temporary Items Dropped:", value=self.combine_list(item, "➣"), inline=False)
+
+
+
 
         if "SpecialEffects:" in data and data["SpecialEffects:"]:
             embedVar.add_field(name="Special Effects:", value=''.join(data["SpecialEffects:"]), inline=False)
@@ -218,7 +234,11 @@ class WikiCog(commands.Cog, BaseTools):
 
 
 
-        list_ = ["SpecialEffects:","Special Effects:", "Access Points:", "AI:", "Rooms:", "Base Level:","Monsters:", "NPCs:", "Rarity:", "Quests:", "Shops:", "Locations:", "Location:", "Description:", "Price:", "Sellback:", "Weapon Damage:", "Note:", "Also see:"]
+        list_ = ["Level:", "Difficulty:", "Total HP:", "Attacks:","Rooms:", "Base Level:","Rarity:", "Price:", "Sellback:",
+                "Temporary Items Dropped:", "Items Dropped:",
+                "Access Points:", "AI:", "Monsters:", "NPCs:",
+                "Quests:", "Shops:",  "SpecialEffects:","Special Effects:", 
+                "Locations:", "Location:", "Description:",  "Weapon Damage:", "Note:", "Also see:"]
         for key in list_:
             data.pop(key, None)
 
