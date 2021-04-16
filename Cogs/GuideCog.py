@@ -153,7 +153,7 @@ class GuideCog(commands.Cog, BaseTools):
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
                 if "image" in guide_data:
-                    embedVar.set_image(url=guide_data["thumbnail"])
+                    embedVar.set_image(url=guide_data["image"])
                 embedVar.set_footer(text=self.fotter)
                 embedVar.set_author(name=au_title, icon_url=au_icon)
                 await ctx.send(embed=embedVar)
@@ -186,18 +186,29 @@ class GuideCog(commands.Cog, BaseTools):
                 await ctx.send(embed=embedVar)
                 return
         else:
+            rec = ""
             for guide in BaseProgram.guides:
-                rec = ""
-                if g_name in guide:
-                    rec += f"➣ `;g {guide}`\n"
-                if rec:
-                    embedVar = discord.Embed(title="Guides", color=BaseProgram.block_color,
-                        description="No guide name came up. Maybe one of these?")
-                    embedVar.add_field(name="Suggestions:", value=rec, inline=False)
-                    await ctx.send(embed=embedVar)
-                    return
-                else:
-                    embedVar = discord.Embed(title="Guides", color=BaseProgram.block_color,
-                        description=f"No guide name came up with your search term `g {g_name}`")
-                    await ctx.send(embed=embedVar)
-                    return   
+                if " " in guide or "/" in guide:
+                    continue
+                listed = []
+                print(f"➣ `;g {guide}` - {BaseProgram.guides[guide]['title']}")
+                if g_name in guide.lower() and guide not in listed:
+                    rec += f"➣ `;g {guide}` - {BaseProgram.guides[guide]['title']}\n"
+                    listed.append(guide)
+                if guide.lower() in g_name and guide not in listed:
+                    rec += f"➣ `;g {guide}` - {BaseProgram.guides[guide]['title']}\n"
+                    listed.append(guide)
+            if rec:
+                embedVar = discord.Embed(title="Guides", color=BaseProgram.block_color,
+                    description="No specific guide name came up. Maybe one of these?")
+                embedVar.add_field(name="Suggestions:", value=rec, inline=False)
+                await ctx.send(embed=embedVar)
+                return
+            else:
+
+
+
+                embedVar = discord.Embed(title="Guides", color=BaseProgram.block_color,
+                    description=f"No guide name came up with your search term `;g {g_name}`.")
+                await ctx.send(embed=embedVar)
+                return   
