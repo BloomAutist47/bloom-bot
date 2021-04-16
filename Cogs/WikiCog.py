@@ -78,6 +78,13 @@ class WikiCog(commands.Cog, BaseTools):
         if "This page doesn't exist yet" in page_check:
             print("page doesn't exists")
             result = await self.get_wiki_search(wikid)
+
+            if not result:
+                embedVar = discord.Embed(title="Wiki Search", color=BaseProgram.block_color,
+                    description="Sorry, nothing came up with your search.")
+                await ctx.send(embed=embedVar)
+                return
+
             embedVar = discord.Embed(title="Wiki Search", color=BaseProgram.block_color,
                 description="Sorry, no result came up. Maybe one of these?")
             desc = ""
@@ -136,7 +143,7 @@ class WikiCog(commands.Cog, BaseTools):
                 embedVar.title = embedVar.title + f" {ac}"
 
         # Data
-
+        fc = 0
         if "Description:" in data and data["Description:"]:
             embedVar.add_field(name="Description:", value=self.combine_str(data["Description:"]), inline=False)
 
@@ -144,35 +151,59 @@ class WikiCog(commands.Cog, BaseTools):
             
             res = self.combine_lst_str(data["Price:"])
             for item in res:
+                if fc == 2:
+                    fc = 0
+                    embedVar.add_field(name="\u200b", value="\u200b", inline=True)
                 if len(item) <= 5:
                     print(len(item))
-                    embedVar.add_field(name="Price:", value='\n '.join(item), inline=False)
+                    embedVar.add_field(name="Price:", value='\n '.join(item), inline=True)
                 else:
-                    embedVar.add_field(name="Price:", value=self.combine_list(item, "➣"), inline=False)
-
+                    embedVar.add_field(name="Price:", value=self.combine_list(item, "➣"), inline=True)
+                fc += 1
 
         if "Sellback:" in data and data["Sellback:"]:
-            embedVar.add_field(name="Sellback:", value='\n'.join(data["Sellback:"]), inline=False)
+            if fc == 2:
+                fc = 0
+                embedVar.add_field(name="\u200b", value="\u200b", inline=True)
+            embedVar.add_field(name="Sellback:", value='\n'.join(data["Sellback:"]), inline=True)
+            fc += 1
         if "Weapon Damage:" in data and data["Weapon Damage:"]:
-            embedVar.add_field(name="Weapon Damage:", value='\n'.join(data["Weapon Damage:"]), inline=False)
-        if "Rarity:" in data and data["Rarity:"]:
-            embedVar.add_field(name="Rarity:", value='\n'.join(data["Rarity:"]), inline=False)
+            if fc == 2:
+                fc = 0
+                embedVar.add_field(name="\u200b", value="\u200b", inline=True)
+            embedVar.add_field(name="Weapon Damage:", value='\n'.join(data["Weapon Damage:"]), inline=True)
+            fc += 1
 
+        if "Rarity:" in data and data["Rarity:"]:
+            if fc == 2:
+                fc = 0
+                embedVar.add_field(name="\u200b", value="\u200b", inline=True)
+            embedVar.add_field(name="Rarity:", value='\n'.join(data["Rarity:"]), inline=True)
+            fc += 1
         if "Locations:" in data and data["Locations:"]:
             res = self.combine_lst_str(data["Locations:"])
             for item in res:
+                if fc == 2:
+                    fc = 0
+                    embedVar.add_field(name="\u200b", value="\u200b", inline=True)
+
                 if len(item) <= 5:
-                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=False)
+                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=True)
                 else:
-                    embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=False)
+                    embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=True)
+                fc += 1
         if "Location:" in data and data["Location:"]:
             res = self.combine_lst_str(data["Location:"])
             for item in res:
-                if len(item) <= 5:
-                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=False)
-                else:
-                    embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=False)
+                if fc == 2:
+                    fc = 0
+                    embedVar.add_field(name="\u200b", value="\u200b", inline=True)
 
+                if len(item) <= 5:
+                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=True)
+                else:
+                    embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=True)
+                fc += 1
         if "SpecialEffects:" in data and data["SpecialEffects:"]:
             embedVar.add_field(name="Special Effects:", value=''.join(data["SpecialEffects:"]), inline=False)
         if "Special Effects:" in data and data["Special Effects:"]:
@@ -321,6 +352,11 @@ class WikiCog(commands.Cog, BaseTools):
         wiki_soup = await self.get_site_content(wikid)
         sites_soup = wiki_soup.find("div", {"id":"page-content"})
         wiki_box = sites_soup.find("div", {"class":"search-box"})
+
+        page_check = wiki_box.text.strip()
+        if "Sorry, no results found for your query." in page_check:
+            return None
+        
         
         if not wiki_box:
             return "shit"

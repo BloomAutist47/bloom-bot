@@ -142,10 +142,18 @@ class GuideCog(commands.Cog, BaseTools):
             if guide_data["type"] == "text-field":
                 embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=BaseProgram.block_color,
                 description=guide_data["description"] + "\n\n")
+                count = 0
                 for item in guide_data["content"]:
-                    embedVar.add_field(name=item, value=guide_data["content"][item], inline=False)
+                    if count == 2:
+                        embedVar.add_field(name="\u200b", value="\u200b", inline=True)
+                        count = 0
+                    embedVar.add_field(name=item, value=guide_data["content"][item], inline=True)
+                    count += 1
+
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                if "image" in guide_data:
+                    embedVar.set_image(url=guide_data["thumbnail"])
                 embedVar.set_footer(text=self.fotter)
                 embedVar.set_author(name=au_title, icon_url=au_icon)
                 await ctx.send(embed=embedVar)
