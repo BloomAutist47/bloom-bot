@@ -170,6 +170,13 @@ class WikiCog(commands.Cog, BaseTools):
             embedVar.add_field(name="Rarity:", value='\n'.join(data["Rarity:"]), inline=True)
         if "Rooms:" in data and data["Rooms:"]:
             embedVar.add_field(name="Rooms:", value='\n'.join(data["Rooms:"]), inline=True)
+        if "Map Name:" in data and data["Map Name:"]:
+            embedVar.add_field(name="Map Name:", value=('\n'.join(data["Map Name:"])), inline=True)
+        if "Room Limit:" in data and data["Room Limit:"]:
+            embedVar.add_field(name="Room Limit:", value='\n'.join(data["Room Limit:"]), inline=True)
+
+
+
         if "Level:" in data and data["Level:"]:
             embedVar.add_field(name="Level:", value='\n'.join(data["Level:"]), inline=True)
         if "Difficulty:" in data and data["Difficulty:"]:
@@ -235,6 +242,8 @@ class WikiCog(commands.Cog, BaseTools):
 
 
         list_ = ["Level:", "Difficulty:", "Total HP:", "Attacks:","Rooms:", "Base Level:","Rarity:", "Price:", "Sellback:",
+                "Map Name:", "Room Limit:",
+
                 "Temporary Items Dropped:", "Items Dropped:",
                 "Access Points:", "AI:", "Monsters:", "NPCs:",
                 "Quests:", "Shops:",  "SpecialEffects:","Special Effects:", 
