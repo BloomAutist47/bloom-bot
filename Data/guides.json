@@ -453,15 +453,12 @@
     },
     "ucmskills": {
         "common_key": "ucmskills/ccmskills/tcmskills",
-        "title": "Underworld Chronomancer Skills"
     },
     "ccmskills": {
         "common_key": "ucmskills/ccmskills/tcmskills",
-        "title": "Corrupted Chronomancer Skills"
     },
     "tcmskills": {
         "common_key": "ucmskills/ccmskills/tcmskills",
-        "title": "Timeless Chronomancer Skills"
     },
     "ucmskills/ccmskills/tcmskills": {
         "type": "single_link",
@@ -477,11 +474,9 @@
     },
     "ecskills": {
         "common_key": "ecskills/icskills",
-        "title": "Eternal Chronomancer Skills"
     },
     "icskills": {
         "common_key": "ecskills/icskills",
-        "title": "Immortal Chronomancer Skills"
     },
     "ecskills/icskills": {
         "type": "text",

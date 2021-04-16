@@ -188,7 +188,9 @@ class GuideCog(commands.Cog, BaseTools):
         else:
             rec = ""
             for guide in BaseProgram.guides:
-                if " " in guide or "/" in guide:
+                if "type" in BaseProgram.guides[guide] and BaseProgram.guides[guide]["type"] == "header":
+                    continue
+                if "common_key" in BaseProgram.guides[guide]:
                     continue
                 listed = []
                 print(f"➣ `;g {guide}` - {BaseProgram.guides[guide]['title']}")
