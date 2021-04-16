@@ -171,7 +171,7 @@ class WikiCog(commands.Cog, BaseTools):
         if "Rooms:" in data and data["Rooms:"]:
             embedVar.add_field(name="Rooms:", value='\n'.join(data["Rooms:"]), inline=True)
         if "Map Name:" in data and data["Map Name:"]:
-            embedVar.add_field(name="Map Name:", value=('\n'.join(data["Map Name:"])), inline=True)
+            embedVar.add_field(name="Map Name:", value='\n'.join(data["Map Name:"]), inline=True)
         if "Room Limit:" in data and data["Room Limit:"]:
             embedVar.add_field(name="Room Limit:", value='\n'.join(data["Room Limit:"]), inline=True)
 
