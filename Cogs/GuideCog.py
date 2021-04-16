@@ -118,15 +118,32 @@ class GuideCog(commands.Cog, BaseTools):
                 await ctx.send(embed=embedVar)
                 return
 
-            if guide_data["type"] == "text_dict":
+            if guide_data["type"] == "text":
+                embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=BaseProgram.block_color)
+                desc = guide_data["description"] + "\n\n"
+                bullet = ""
+                if "bullet" in guide_data:
+                    bullet = "%s "%(guide_data["bullet"])
+                if type(guide_data["content"]) is list:
+                    for sentence in guide_data["content"]:
+                        desc += bullet + sentence + "\n"
+                else:
+                    desc = guide_data["content"]
+                embedVar.description = desc
+                if "thumbnail" in guide_data:
+                    embedVar.set_thumbnail(url=guide_data["thumbnail"])
+                if "image" in guide_data:
+                    embedVar.set_image(url=guide_data["image"])
+                embedVar.set_footer(text=self.fotter)
+                embedVar.set_author(name=au_title, icon_url=au_icon)
+                await ctx.send(embed=embedVar)
+                return
+
+            if guide_data["type"] == "text-field":
                 embedVar = discord.Embed(title="🔹 " + guide_data["title"] + " 🔹", color=BaseProgram.block_color,
                 description=guide_data["description"] + "\n\n")
                 for item in guide_data["content"]:
-                    desc = ""
-                    for sentence in guide_data["content"][item]:
-                        desc += sentence + "\n"
-                    embedVar.add_field(name=item, value=desc, inline=False)
-                    # embedVar.add_field(name=, value="\u200b", inline=False)
+                    embedVar.add_field(name=item, value=guide_data["content"][item], inline=False)
                 if "thumbnail" in guide_data:
                     embedVar.set_thumbnail(url=guide_data["thumbnail"])
                 embedVar.set_footer(text=self.fotter)
