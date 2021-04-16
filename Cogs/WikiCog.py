@@ -146,30 +146,30 @@ class WikiCog(commands.Cog, BaseTools):
             for item in res:
                 if len(item) <= 5:
                     print(len(item))
-                    embedVar.add_field(name="Price:", value='\n '.join(item), inline=True)
+                    embedVar.add_field(name="Price:", value='\n '.join(item), inline=False)
                 else:
                     embedVar.add_field(name="Price:", value=self.combine_list(item, "➣"), inline=False)
 
 
         if "Sellback:" in data and data["Sellback:"]:
-            embedVar.add_field(name="Sellback:", value='\n'.join(data["Sellback:"]), inline=True)
+            embedVar.add_field(name="Sellback:", value='\n'.join(data["Sellback:"]), inline=False)
         if "Weapon Damage:" in data and data["Weapon Damage:"]:
-            embedVar.add_field(name="Weapon Damage:", value='\n'.join(data["Weapon Damage:"]), inline=True)
+            embedVar.add_field(name="Weapon Damage:", value='\n'.join(data["Weapon Damage:"]), inline=False)
         if "Rarity:" in data and data["Rarity:"]:
-            embedVar.add_field(name="Rarity:", value='\n'.join(data["Rarity:"]), inline=True)
+            embedVar.add_field(name="Rarity:", value='\n'.join(data["Rarity:"]), inline=False)
 
         if "Locations:" in data and data["Locations:"]:
             res = self.combine_lst_str(data["Locations:"])
             for item in res:
                 if len(item) <= 5:
-                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=True)
+                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=False)
                 else:
                     embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=False)
         if "Location:" in data and data["Location:"]:
             res = self.combine_lst_str(data["Location:"])
             for item in res:
                 if len(item) <= 5:
-                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=True)
+                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=False)
                 else:
                     embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=False)
 
