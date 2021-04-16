@@ -296,8 +296,8 @@ class WikiCog(commands.Cog, BaseTools):
     def get_wiki_page(self, sites_soup, page_content):
         title = sites_soup.find("div", {"id":"main-content"}).find("div", {"id": "page-title"}).text.strip()
         main_page = sites_soup.find("div", {"id":"main-content"})
-        breadcrumbs = [f"[{x.text.strip()}](http://aqwwiki.wikidot.com{x['href']})" for x in main_page.find("div", {"id":"breadcrumbs"}).find_all("a")][1:]
-
+        breadcrumbs_ = [f"[{x.text.strip()}](http://aqwwiki.wikidot.com{x['href']})" for x in main_page.find("div", {"id":"breadcrumbs"}).find_all("a")][1:]
+        breadcrumbs = [x.text.strip() for x in main_page.find("div", {"id":"breadcrumbs"}).find_all("a")][1:]
 
         tags = [x.text.strip() for x in main_page.find("div", {"class":"page-tags"}).find("span").find_all("a")]
         # legend specialoffer rare ac pseudo-rare seasonal
@@ -368,7 +368,7 @@ class WikiCog(commands.Cog, BaseTools):
                 data["Also see:"] = also_see
 
 
-        return {"title": title, "data": data, "breadcrumbs": breadcrumbs, "tags": tags, "image": image}
+        return {"title": title, "data": data, "breadcrumbs": breadcrumbs_, "tags": tags, "image": image}
 
 
     async def get_wiki_search(self, wikid):

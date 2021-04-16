@@ -152,8 +152,9 @@ Bot.add_cog(GoogleSearchCog(Bot))
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(WikiCog(Bot))
 
-Bot.add_cog(RedditCog(Bot)) 
-Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
+if os.name != "nt":
+    Bot.add_cog(RedditCog(Bot)) 
+    Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 
 Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
