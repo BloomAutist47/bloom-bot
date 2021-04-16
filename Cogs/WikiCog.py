@@ -116,7 +116,8 @@ class WikiCog(commands.Cog, BaseTools):
             url=paged)
 
         embedVar.add_field(name="All Result:", value=f"[Click here for all Results]({wikid})", inline=True)
-        embedVar.add_field(name="Section:", value=f" > ".join(result["breadcrumbs"]), inline=True)
+        result["breadcrumbs"] = [f"[{x}](http://aqwwiki.wikidot.com/{x})" for x in result["breadcrumbs"]]
+        embedVar.add_field(name="Section:", value=f" » ".join(result["breadcrumbs"]), inline=True)
         # embedVar.add_field(name="\u200b", value="\u200b", inline=False)
         if refer_list:
             embedVar.add_field(name="Search Usually refer to:", value=refer_list, inline=False)
@@ -267,7 +268,7 @@ class WikiCog(commands.Cog, BaseTools):
                 embedVar.add_field(name="Also See:", value=self.combine_list(item, "➣"), inline=False)
 
         if result["image"]:
-            embedVar.set_thumbnail(url=result["image"])
+            embedVar.set_image(url=result["image"])
         if "tags" in result:
             tag_str = ", ".join(result["tags"])
             embedVar.set_footer(text="Tags: " + tag_str)
@@ -279,6 +280,19 @@ class WikiCog(commands.Cog, BaseTools):
         # return {"title": title, "data": data, "breadcrumbs": breadcrumbs, "tags": tags, "image": image}
         return
 
+    def add_category(self, category):
+        if "Locations:" in data and data["Locations:"]:
+            res = self.combine_lst_str(data["Locations:"])
+            for item in res:
+                if fc == 2:
+                    fc = 0
+                    embedVar.add_field(name="\u200b", value="\u200b", inline=True)
+
+                if len(item) <= 5:
+                    embedVar.add_field(name="Locations:", value='\n '.join(item), inline=True)
+                else:
+                    embedVar.add_field(name="Locations:", value=self.combine_list(item, "➣"), inline=True)
+                fc += 1
 
     def get_wiki_page(self, sites_soup, page_content):
         title = sites_soup.find("div", {"id":"main-content"}).find("div", {"id": "page-title"}).text.strip()
