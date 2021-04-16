@@ -144,9 +144,9 @@ class GuideCog(commands.Cog, BaseTools):
                 description=guide_data["description"] + "\n\n")
                 count = 0
                 for item in guide_data["content"]:
-                    if count == 2:
+                    if count == 1:
                         embedVar.add_field(name="\u200b", value="\u200b", inline=True)
-                        count = 0
+                    if count == 2: count = 0
                     embedVar.add_field(name=item, value=guide_data["content"][item], inline=True)
                     count += 1
 
@@ -185,3 +185,19 @@ class GuideCog(commands.Cog, BaseTools):
                 embedVar.set_author(name=au_title, icon_url=au_icon)
                 await ctx.send(embed=embedVar)
                 return
+        else:
+            for guide in BaseProgram.guides:
+                rec = ""
+                if g_name in guide:
+                    rec += f"➣ `;g {guide}`\n"
+                if rec:
+                    embedVar = discord.Embed(title="Guides", color=BaseProgram.block_color,
+                        description="No guide name came up. Maybe one of these?")
+                    embedVar.add_field(name="Suggestions:", value=rec, inline=False)
+                    await ctx.send(embed=embedVar)
+                    return
+                else:
+                    embedVar = discord.Embed(title="Guides", color=BaseProgram.block_color,
+                        description=f"No guide name came up with your search term `g {g_name}`")
+                    await ctx.send(embed=embedVar)
+                    return   
