@@ -17,7 +17,7 @@ class WikiCog(commands.Cog, BaseTools):
     # async def ws(self, ctx, *, item=""):
     #     if item == "":
     #         embedVar = self.embed_single("Wiki Search", "Please enter a value.")
-    #         await ctx.send(embed=embedVar)
+    #         await ctx.send(embed=embedVar)F
     #         return
 
 
@@ -173,7 +173,12 @@ class WikiCog(commands.Cog, BaseTools):
                 embedVar.add_field(name="\u200b", value="\u200b", inline=True)
             embedVar.add_field(name="Weapon Damage:", value='\n'.join(data["Weapon Damage:"]), inline=True)
             fc += 1
-
+        if "Base Level:" in data and data["Base Level:"]:
+            if fc == 2:
+                fc = 0
+                embedVar.add_field(name="\u200b", value="\u200b", inline=True)
+            embedVar.add_field(name="Base Level:", value='\n'.join(data["Base Level:"]), inline=True)
+            fc += 1
         if "Rarity:" in data and data["Rarity:"]:
             if fc == 2:
                 fc = 0
@@ -238,7 +243,7 @@ class WikiCog(commands.Cog, BaseTools):
 
 
 
-        list_ = ["SpecialEffects:","Special Effects:", "Access Points:", "AI:", "Monsters:", "NPCs:", "Rarity:", "Quests:", "Shops:", "Locations:", "Location:", "Description:", "Price:", "Sellback:", "Weapon Damage:", "Note:", "Also see:"]
+        list_ = ["SpecialEffects:","Special Effects:", "Access Points:", "AI:", "Base Level:","Monsters:", "NPCs:", "Rarity:", "Quests:", "Shops:", "Locations:", "Location:", "Description:", "Price:", "Sellback:", "Weapon Damage:", "Note:", "Also see:"]
         for key in list_:
             data.pop(key, None)
 
@@ -246,8 +251,12 @@ class WikiCog(commands.Cog, BaseTools):
         for item_name in data:
             if data[item_name] == []:
                 continue
+            if fc == 2:
+                fc = 0
+                embedVar.add_field(name="\u200b", value="\u200b", inline=True)
             embedVar.add_field(name=item_name, value='\n'.join(data[item_name]), inline=True)
-        
+            fc += 1
+
         if note_storage and result["title"] not in self.black_listed:
             res = self.combine_lst_str(note_storage)
             for item in res:

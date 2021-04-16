@@ -7,7 +7,7 @@ class GuideCog(commands.Cog, BaseTools):
         self.setup()
         self.bot = bot
         # self.bot.remove_command("help")
-        self.fotter = "Tip: Use \";g\" to summon a list of all guides."
+        self.fotter = "Tip: Use \";g\" to summon a list of all guides. Type `;bhelp` to summon a list of all commands."
 
 
 
