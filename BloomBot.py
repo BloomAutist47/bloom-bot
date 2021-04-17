@@ -13,7 +13,7 @@ $ heroku ps:scale worker=1 -a bloom-2
 #EACD8A skin color
 
 heroku logs --tail --app bloom-1
-
+https://raw.githubusercontent.com/BloomAutist47/bloom-bot/master/Data/reddit_logs.json
 """
 
 # Imports
