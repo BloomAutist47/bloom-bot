@@ -699,3 +699,14 @@ class TwitterCog(commands.Cog, BaseTools):
 #     def on_error(self, status):
 #         print(status)
 
+
+# async def stream_tweet():
+#     BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
+#     BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, is_async=True,  tweet_mode='extended')
+#     print("> Twitter Listener Success")
+
+#     BaseProgram.stream.filter(follow=BaseProgram.tweet_user_list, is_async=True, stall_warnings=True)
+
+    # Bloom Autist ID: 1349290524901998592
+    # Alina ID: 16480141
+    # Use this to get IDS: https://tweeterid.com/

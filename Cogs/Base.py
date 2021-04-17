@@ -1068,16 +1068,64 @@ class BaseTools(BaseProgram):
                     continue
 
 
+class Help(commands.Cog):
+    """
+    Sends this help message
+    """
+
+    def __init__(self, bot):
+        self.bot = bot
+
+    @commands.command()
+    async def help(self, ctx):
+        """Shows all modules of that bot"""
+        guild_allowed = await self.allow_evaluator(ctx, "guild_privilege")
+
+        embedVar = discord.Embed(title="Bloom Help", color=BaseProgram.block_color)
+        desc = "`;bhelp` ➣ Shows all Bloom commands.\n"\
+               "`;g` ➣ Summons a list of all guides commands.\n"\
+               "`;g guide_name` ➣ Returns a specific guide.\n"\
+               "`;c class_name` ➣ Shows Class data chart. Can use acronyms.\n"\
+               "`;legends` ➣ Shows the legends for the class data charts.\n"\
+               "`;char character_name` ➣ Shows player info from the Char page. \n"\
+               "`;ioda character_name` ➣ IoDA date calculations.\n"\
+               "`;w search` ➣ Search AQW Wikidot.\n"\
+               "`;ws search` ➣ Gets list of AQW Wikidot searches.\n"\
+               "`;go search` ➣ Search with google chrome.\n"\
+               "`;server` ➣ Shows player count of Aqw servers.\n"\
+               "`;swf` ➣ Converts .xml file into readable format.\n"\
+               "`;swfhelp` ➣ Shows help abput ;swf command.\n"\
+               "`;credits` ➣ Reveals the credits.\n"
+        embedVar.description = desc
+        if guild_allowed:
+            embedVar.add_field(name="Shadow Commands", inline=False, 
+                value="`;b bot_name` ➣ Search a boat.\n"\
+                      "`;a author` ➣ Search a boat author.\n"\
+                      "`;a` ➣ Returns list of boat authors.\n"\
+                      "`;a u` ➣ Returns list of boats with no authors.\n"\
+                      "`;bverify u` ➣ Verifies an author name. Case sensitive.\n"\
+                      "`;buverify u` ➣ Unverifies an author name. \n"\
+                      "`;update database` ➣ Updates boat database.\n"\
+
+                )
+        # embedVar.add_field(name="Privileged Commands", inline=False, 
+        #     value="`;update all` ➣ Updates all .jsons.\n"\
+        #           "`;update settings` ➣ Updates the settings.\n"\
+        #           "`;update guides` ➣ Update the guides.\n"\
+        #           "`;update classes` ➣ Update the classes. Not the charts.\n"\
+        #           )
+
+        embedVar.set_author(name="An AdventureQuest World General Discord Bot", icon_url=BaseProgram.icon_aqw)
+        embedVar.set_thumbnail(url=BaseProgram.icon_bloom)
+        await ctx.send(embed=embedVar)
+        return
 
 
 
 class BaseCog(commands.Cog, BaseTools):
     def __init__(self, bot):
-        self.setup()
         self.bot = bot
-
-
-
+        
     @commands.command()
     async def bhelp(self, ctx):
         guild_allowed = await self.allow_evaluator(ctx, "guild_privilege")
@@ -1109,31 +1157,16 @@ class BaseCog(commands.Cog, BaseTools):
                       "`;update database` ➣ Updates boat database.\n"\
 
                 )
-        embedVar.add_field(name="Privileged Commands", inline=False, 
-            value="`;update all` ➣ Updates all .jsons.\n"\
-                  "`;update settings` ➣ Updates the settings.\n"\
-                  "`;update guides` ➣ Update the guides.\n"\
-                  "`;update classes` ➣ Update the classes. Not the charts.\n"\
-                  )
+        # embedVar.add_field(name="Privileged Commands", inline=False, 
+        #     value="`;update all` ➣ Updates all .jsons.\n"\
+        #           "`;update settings` ➣ Updates the settings.\n"\
+        #           "`;update guides` ➣ Update the guides.\n"\
+        #           "`;update classes` ➣ Update the classes. Not the charts.\n"\
+        #           )
 
         embedVar.set_author(name="An AdventureQuest World General Discord Bot", icon_url=BaseProgram.icon_aqw)
         embedVar.set_thumbnail(url=BaseProgram.icon_bloom)
         await ctx.send(embed=embedVar)
-        return
-
-    @commands.command()
-    async def git(self, ctx):
-        """ Description: shows the git link
-            Arguments:
-                [ctx] - context
-                [author_name] - author to be unverified
-            Return: None
-        """
-        allow_ = await self.allow_evaluator(ctx, mode="all", command_name="git")
-        if not allow_:
-            return
-
-        await ctx.send("https://github.com/BloomAutist47/bloom-bot/")
         return
 
     @commands.command()

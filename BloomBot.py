@@ -24,7 +24,6 @@ import tweepy
 from discord.ext import tasks
 from discord import Intents
 from discord.ext.commands import CommandNotFound
-# import pypresence
 from pprint import pprint   
 from time import sleep  
 from datetime import datetime
@@ -37,7 +36,6 @@ from Cogs.ClassSearchCog import ClassSearchCog
 from Cogs.GoogleSearchCog import GoogleSearchCog
 from Cogs.GuideCog import GuideCog
 from Cogs.WikiCog import WikiCog
-# from Cogs.TwitterListener import TwitterListener
 from Cogs.TwitterListener import TwitterCog
 from Cogs.TextUploaderCog import TextUploaders
 from Cogs.UtilsCog import UtilsCog
@@ -70,37 +68,24 @@ else:
 
 intents = Intents.all()
 intents.presences = True
-Bot = commands.Bot(command_prefix=[cmd], description='Bloom Bot Revamped', intents=intents, help_command=None)
-
-
+Bot = commands.Bot(command_prefix=[cmd], description='Bloom Bot Revamped', intents=intents)
+Bot.remove_command('help')
 
 BaseStuff = BaseProgram()
 BaseStuff.git_prepare()
+while True:
+    try:
+        BaseProgram.auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
+        BaseProgram.auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
 
-BaseProgram.auth = tweepy.OAuthHandler(BaseProgram.CONSUMER_KEY, BaseProgram.CONSUMER_SECRET)
-BaseProgram.auth.set_access_token(BaseProgram.ACCESS_TOKEN, BaseProgram.ACCESS_TOKEN_SECRET)
+        BaseProgram.api = tweepy.API(BaseProgram.auth)
+        BaseProgram.api.verify_credentials()
+        print("> Twitter Succeed.")
+        break
+    except:
+        print("> Twitter Failed... Trying again")
+        continue
 
-BaseProgram.api = tweepy.API(BaseProgram.auth)
-BaseProgram.api.verify_credentials()
-
-
-
-# async def stream_tweet():
-#     BaseProgram.tweets_listener = TwitterListener(Bot, BaseProgram.api)
-#     BaseProgram.stream = tweepy.Stream(BaseProgram.auth, BaseProgram.tweets_listener, is_async=True,  tweet_mode='extended')
-#     print("> Twitter Listener Success")
-
-#     BaseProgram.stream.filter(follow=BaseProgram.tweet_user_list, is_async=True, stall_warnings=True)
-
-    # Bloom Autist ID: 1349290524901998592
-    # Alina ID: 16480141
-    # Use this to get IDS: https://tweeterid.com/
-
-
-def rich_presence():
-    RPC = pypresence.Presence(client_id=CLIEND_ID, pipe=0, loop=BaseProgram.loop) 
-    y = RPC.connect()
-    x = RPC.update(state="Rich Presence using pypresence!", details="A test of qwertyquerty's Python Discord RPC wrapper, pypresence!")
 
 @Bot.event
 async def on_ready():
@@ -118,18 +103,27 @@ async def on_ready():
 
     await deploy_notif.send(f"**Deployed**: {DEPLOY_NAME} at {current_time}")
 
-    # name = "A bot Created by Bloom Autist. Currently v.4.0.0.00"
+    name = "A bot Created by Bloom Autist."
 
-    # game = discord.Activity(state="with the API",name="AdventureQuest Worlds", details="suck madasdasd", type=discord.ActivityType.playing,
-    #      url="https://www.youtube.com/channel/UCfiSbTjgVesx8wllBz4aIxw",
-    #             assets={"large_image": "nigmoirehd_x1024", "small_image":"nigmoirehd_x512", "large_text":"test", "small_text":"Asdasd"},
-    # await Bot.change_presence(status=discord.Status.online, activity=game)
+    game = discord.Activity(
+                name="Bloom Autist",
+                details="Please work madasdasd",
+                game="AdventureQuest Worlds", 
+                state="with the API",
+                url="https://www.youtube.com/watch?v=ivXw9VO89jw",
+
+                
+                assets={
+                    "large_image": "nigmoirehd_x1024.png",
+                    "small_image":"nigmoirehd_x512.png",
+                    "large_text":"Trtyyyyy",
+                    "small_text":"Asdasd"}
+                    )
+    await Bot.change_presence(status=discord.Status.online, activity=game)
 
     # await Bot.change_presence(status=discord.Status.idle,
     #     activity=discord.Game(name=name, type=3))
     
-    # Bot.loop.create_task(stream_tweet())
-    # Bot.loop.create_task(stre())
         
 @Bot.event
 async def on_command_error(ctx, error):
@@ -143,6 +137,7 @@ async def on_command_error(ctx, error):
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
 # Bot.add_cog(TestCog(Bot))
+Bot.add_cog(Help(Bot))
 
 # Feature Cogs
 Bot.add_cog(BoatSearchCog(Bot))
@@ -164,20 +159,3 @@ Bot.add_cog(TextUploaders(Bot))
 
 print("> Starting Bot...")
 Bot.run(DISCORD_TOKEN)
-
-
-# @Bot.event
-# async def on_member_update(before, after):
-#     satanId = 212913871466266624
-#     if os.name == "nt":
-#         satanRoleId = 808657429784035338
-#         guild_id = 761956630606250005
-#     else:
-#         satanRoleId = 775824347222245426
-#         guild_id = 766627412179550228
-    
-#     guild = Bot.get_guild(guild_id)
-#     role = dis_get(guild.roles, name='satan', id=satanRoleId)
-#     role_ids = [x.id for x in after.roles]
-#     if after.id != satanId and satanRoleId in role_ids:
-#         await after.remove_roles(role)
