@@ -234,10 +234,10 @@
     "General Guides": {
         "type": "header"
     },
-    "difficulty": {
+    "farmlist": {
         "type": "text_dict",
         "auth": "aqw",
-        "title": "Difficulty Farming list",
+        "title": "Farming list sorted by Difficulty",
         "description": "These items are ranked by estimated times that assume you're an endgame player with strong classes and damage-boosting weapons.  Nation farms are ranked assuming you're using Nulgath's Birthday Gift pet. To see the original list, [click here](https://aqwg.weebly.com/farming-list.html)\n\nThis list was created with legitting in mind. Take it with a grain of salt.",
         "content": {
             "📌 1000+ Hours": [
