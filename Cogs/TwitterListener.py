@@ -22,14 +22,15 @@ class TwitterCog(commands.Cog, BaseTools):
             "asukaae",
             "yo_lae",
             "arletteaqw",
-            "Psi_AE",
+            # "Psi_AE",
             "aqwclass",
             "CaptRhubarb",
-            "ae_root",
+            # "ae_root",
             "ArtixKrieger",
             "Alina_AE",
             "Aelious_AE",
-            "Cemaros_AE",
+            # "Cemaros_AE",
+            "AQW_News_Reddit"
         ]
 
         self.gift_checks = [
