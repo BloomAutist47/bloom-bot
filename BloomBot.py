@@ -28,6 +28,7 @@ from pprint import pprint
 from time import sleep  
 from datetime import datetime
 from pytz import timezone
+from pypresence import Presence
 
 from Cogs.Base import *
 from Cogs.BoatSearchCog import BoatSearchCog
@@ -103,28 +104,52 @@ async def on_ready():
 
     await deploy_notif.send(f"**Deployed**: {DEPLOY_NAME} at {current_time}")
 
-    name = "A bot Created by Bloom Autist."
-
     game = discord.Activity(
-                name="Bloom Autist",
-                details="Please work madasdasd",
-                game="AdventureQuest Worlds", 
-                state="with the API",
-                url="https://www.youtube.com/watch?v=ivXw9VO89jw",
-
-                
+                application_id=123,
                 assets={
-                    "large_image": "nigmoirehd_x1024.png",
-                    "small_image":"nigmoirehd_x512.png",
+                    "large_image": "nigmoirehd_x1024",
                     "large_text":"Trtyyyyy",
-                    "small_text":"Asdasd"}
+                    "small_image":"nigmoirehd_x512",
+                    "small_text":"Asdasd"},
+                details="Competitive",
+                name="Initializing Bloom Bot Autism",
+                game="AdventureQuest Worlds", 
+                state="Playing Solo",
+                url="https://www.youtube.com/watch?v=ivXw9VO89jw",
+                timestamps={
+                    "start": 1507665886,
+                    "end": 1621191372000
+                },
+                type=discord.ActivityType.playing
                     )
-    await Bot.change_presence(status=discord.Status.online, activity=game)
 
-    # await Bot.change_presence(status=discord.Status.idle,
-    #     activity=discord.Game(name=name, type=3))
+    await Bot.change_presence(status=discord.Status.online, activity=game)
     
+    CLIEND_ID = 761955273342320691
+    RPC = Presence(CLIEND_ID)
+    RPC.connect()
+    RPC.update(
+        state="Playing Solo",
+        details="Competitive",
+        start=1507665886,
+        end=1621191372000,
+        large_image="nigmoirehd_x1024",
+        large_text ="tet",
+        small_image="nigmoirehd_x512",
+        small_text="Asdasd",
+        party_id="ae488379-351d-4a4f-ad32-2b9b01c91657",
+        party_size=[1,4],
+        join="MTI4NzM0OjFpMmhuZToxMjMxMjM=",
+
         
+        # name="Initializing Bloom Bot Autism",
+        # game="AdventureQuest Worlds", 
+        
+        # url="https://www.youtube.com/watch?v=ivXw9VO89jw",
+
+        # type=discord.ActivityType.playing
+    )
+
 @Bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, CommandNotFound):
