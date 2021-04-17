@@ -234,11 +234,85 @@
     "General Guides":{
         "type":"header"
     },
+    "difficulty":{
+        "type":"text_dict",
+        "auth":"aqw",
+        "title":"Difficulty Farming list",
+        "description":"These items are ranked by estimated times that assume you're an endgame player with strong classes and damage-boosting weapons. The time it takes to complete each grind will drastically differ depending on what classes you use, what level you are, whether you use farming pets, are in a group, play in glitched rooms, use damage-boosting weapons, room-hop, and more. Nation farms are ranked assuming you're using Nulgath's Birthday Gift pet. To see the original list, [click here](https://aqwg.weebly.com/farming-list.html)",
+        "content":{
+            "📌 1000+ Hours":[
+                "[Necrotic Sword of Doom](https://aqwg.weebly.com/necrotic-sword-of-doom.html) (non-member)"
+            ],
+            "📌 100-150 Hours":[
+                "[Void Warlock](https://aqwg.weebly.com/void-warlock.html) (full set)",
+                "​​[Necrotic Sword of Doom](https://aqwg.weebly.com/necrotic-sword-of-doom.html) (SDKA method)",
+                "[ArchFiend DoomLord](https://aqwg.weebly.com/archfiend-doomlord.html) (full set)"
+            ],
+            "📌 80-99 Hours":[
+                "[Sepulchure's DoomKnight Armour](https://aqwg.weebly.com/sepulchures-doomknight-armour.html)",
+                "[Legion Revenant](https://aqwg.weebly.com/legion-revenant.html)",
+                "[Void Highlord](https://aqwg.weebly.com/void-highlord.html)",
+                "[Enchanted Nulgath Nation House](https://aqwg.weebly.com/enchanted-nulgath-nation-house.html)"
+            ],
+            "📌 25-49 Hours":[
+                "[Void Shogun](https://aqwg.weebly.com/void-shogun.html) (full set)",
+                "[Void Spartan](https://aqwg.weebly.com/void-spartan.html) (full set)",
+                "[​Void Paladin](https://aqwg.weebly.com/void-paladin.html) (full set)",
+                "[Evolved Hex Orb + cosmetics](https://aqwg.weebly.com/evolved-hex-orb--quests.html)",
+                "[Evolved Blood Orb + cosmetics](https://aqwg.weebly.com/evolved-blood-orb--quests.html)",
+                "[Evolved Shadow Orb +  cosmetics](https://aqwg.weebly.com/evolved-shadow-orb--quests.html)",
+                "[Blinding Light of Destiny](https://aqwg.weebly.com/blinding-light-of-destiny.html)"
+            ],
+            "📌 10-24 Hours":[
+                "[Void Avenger Scythe​](http://aqwwiki.wikidot.com/void-avenger-scythe)",
+                "[Armour of Awe](https://aqwg.weebly.com/armour-of-awe.html)",
+                "[ArchPaladin](https://aqwg.weebly.com/archpaladin.html) (non-member)",
+                "[Cyber Crystal Phoenix Blade](http://aqwwiki.wikidot.com/cyber-crystal-phoenix-blade)",
+                "[Juggernaut Items of Nulgath](https://aqwg.weebly.com/juggernaut-items.html)",
+                "[Original Drakath Armour](https://aqwg.weebly.com/drakath-armour.html)",
+                "[Legion Castle​​](http://aqwwiki.wikidot.com/legion-castle)",
+                "[Void Light of Destiny](https://aqwg.weebly.com/void-paladin.html)",
+                "[Unidentified Gemstone of Nulgath](http://aqwwiki.wikidot.com/unidentified-gemstone-of-nulgath)",
+                "[Elemental DragonSlayer](l-dragonslayer)"
+            ],
+            "📌 5-9 Hours":[
+                "[DragonBlade of Nulgath](https://aqwg.weebly.com/dragonblade-of-nulgath.html)",
+                "[Lord of Order](https://aqwg.weebly.com/lord-of-order.html)",
+                "[Helm of Awe](https://aqwg.weebly.com/helm-of-awe.html)",
+                "[Dual Tachyon Blades](http://aqwwiki.wikidot.com/dual-tachyon-blades)",
+                "[Golden Hanzo Void](http://aqwwiki.wikidot.com/golden-hanzo-void)",
+                "[ArchPaladin](https://aqwg.weebly.com/archpaladin.html) (member)",
+                "[Laken's Personal Armour](http://aqwwiki.wikidot.com/laken-s-personal-armor)",
+                "[Ultimate Lich King​​](http://aqwwiki.wikidot.com/ultimate-lich-king-permanent)",
+                "[Chrono Assassin](https://aqwg.weebly.com/chrono-assassin.html)",
+                "[Arch DoomKnight](https://aqwg.weebly.com/arch-doomknight.html) (full set)",
+                "[Legendary Archfiend](https://aqwg.weebly.com/archfiend.html)"
+            ],
+            "📌 1-4 Hours":[
+                "[​LightCaster](https://aqwg.weebly.com/lightcaster.html)",
+                "[Frostval Barbarian​](https://aqwg.weebly.com/frostval-barbarian.html)",
+                "[Blade of Awe](https://aqwg.weebly.com/blade-of-awe.html)",
+                "[Sepulchure's Original Helm](http://aqwwiki.wikidot.com/sepulchure-s-original-helm)",
+                "[General of Cerberus​​​​​​](http://aqwwiki.wikidot.com/general-of-cerberus)",
+                "[Valen and Lynaria Armour](http://aqwwiki.wikidot.com/valen-and-lynaria-armor)",
+                "[Void Monk of Nulgath](http://aqwwiki.wikidot.com/void-monk-of-nulgath)",
+                "[Vampire Lord](https://aqwg.weebly.com/vampire-lord.html)",
+                "[Legion Titan](http://aqwwiki.wikidot.com/legion-titan)",
+                "[DOOMFire of Gravelyn](http://aqwwiki.wikidot.com/doomfire-of-gravelyn)",
+                "[Undead Paladin](http://aqwwiki.wikidot.com/undead-paladin-armor)",
+                "[Burning Blade of Abezeth](https://aqwg.weebly.com/burning-blade-of-abezeth.html)",
+                "[Burning Blade](https://aqwg.weebly.com/burning-blade.html)",
+                "[Dragonslayer General](https://aqwg.weebly.com/dragonslayer-general.html)",
+                "[Legion & Nation Soulstealer](http://aqwwiki.wikidot.com/nation-soulstealer)"
+            ]
+        },
+        "image":"https://cdn.discordapp.com/attachments/805367955923533845/832859104401293322/unknown.png"
+    },
     "dailies":{
         "type":"text_dict",
         "auth":"aqw",
         "title":"Daily Farming list",
-        "description":"These items should be worked towards daily. They may take a while but some of these things are very useful.\nTo see the original list, [click here](https://aqwg.weebly.com/farming-list.html)",
+        "description":"These items should be worked towards daily. They may take a while but some of these things are very useful. To see the original list, [click here](https://aqwg.weebly.com/farming-list.html)",
         "content":{
             "📌 **Classes Farm**":[
                 "➣ [Lord of Order](https://aqwg.weebly.com/lord-of-order.html) - ​10 days",
@@ -283,8 +357,8 @@
     "seasonal":{
         "type":"text",
         "auth":"aqw",
-        "title":"Daily Farming list",
-        "description":"TThese are the notable items that you should obtain throughout the year as you play. They are seasonal so you'll always have a chance to get them, as long as you don't mind waiting.\nTo see the original list, [click here](https://aqwg.weebly.com/farming-list.html)",
+        "title":"Seasonal Farming list",
+        "description":"TThese are the notable items that you should obtain throughout the year as you play. They are seasonal so you'll always have a chance to get them, as long as you don't mind waiting. To see the original list, [click here](https://aqwg.weebly.com/farming-list.html)",
         "content":[
             "**January - February**",
             "➣ [Nulgath's Birthday Gift](http://aqwwiki.wikidot.com/nulgath-s-birthday-gift)",
