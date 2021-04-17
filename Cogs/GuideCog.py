@@ -7,7 +7,7 @@ class GuideCog(commands.Cog, BaseTools):
         self.setup()
         self.bot = bot
         # self.bot.remove_command("help")
-        self.fotter = "Tip: Use \";g\" to summon a list of all guides. Type `;bhelp` to summon a list of all commands."
+        self.fotter = "Tip: Use \";g\" to summon a list of all guides.\nType `;bhelp` to summon a list of all commands."
 
 
 
@@ -18,7 +18,7 @@ class GuideCog(commands.Cog, BaseTools):
 
         if guide == "":
             embedVar = discord.Embed(title="🔹 List of Guide Commands 🔹", color=BaseProgram.block_color,
-                description="To summon this list, use `;g`. Please read the following carefully.\n To know all Bloom Bot commands, use `;bhelp`.\n\n")
+                description="To summon this list, use `;g`. \n To know all Bloom Bot commands, use `;bhelp`.\n\n")
             # embedVar.set_author()
             desc = ""
             guild_id = str(ctx.guild.id)
