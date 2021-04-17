@@ -8309,6 +8309,15 @@
             "text": "\n",
             "time": "18 April 2021 | 06:14 AM ",
             "is_video": false
+        },
+        "mt1oe8": {
+            "author": "gulag1337",
+            "title": "How to view char page images on main browsers",
+            "link": "https://www.reddit.com/r/AQW/comments/mt1oe8/how_to_view_char_page_images_on_main_browsers/",
+            "image": null,
+            "text": "**THIS ONLY WORKS IF THE BROWSER VERSION YOU HAVE STILL SUPPORTS FLASH!** \n\n**Follow the video tutorial!**  \nBrowser extension needed : **Modify Header Value** (or whatever extension works for you).\n\nExtension links for different browsers : [Firefox](https://addons.mozilla.org/en-US/firefox/addon/modify-header-value/), [Google Chrome](https://chrome.google.com/webstore/detail/modify-header-value-http/cbdibdfhahmknbkkojljfncpnhmacdek?hl=en) and [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/modify-header-value-http/khookejbpglhmckogkfmbhdiholmdigi?hl=en-US).  \nThese are the details needed to add to the header (in order).   \nJust copy-paste these into their respective fields.  \n`URL           :  https://account.aq.com/`   \n`Header Name   :  User-Agent`  \n`Header Value  :  Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ArtixGameLauncher/2.0.4 Chrome/73.0.3683.121 Electron/5.0.11 Safari/537.36`  \nI can't guarantee this will work for you, but generally, it should.  \nMake sure the extension is toggled : ON.  \nModifying the request header works for just about anything; it will load the character's swf.  \nWhether it plays or not, is up to your browser still being able to support Flash. Enjoy! \n\nhttps://reddit.com/link/mt1oe8/video/dqab2rjijtt61/player\n",
+            "time": "18 April 2021 | 07:33 AM ",
+            "is_video": false
         }
     },
     "FashionQuestWorlds": {
