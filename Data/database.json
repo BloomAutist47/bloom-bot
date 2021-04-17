@@ -4,6 +4,10 @@
             "url": "https://adventurequest.life/bots/AnderSkrrtt_StoneCrusherNoReq.gbot",
             "author": "anderskrrtt"
         },
+        "AnderSkrrtt StoneCrusherNoReq completed improvement.gbot": {
+            "url": "https://adventurequest.life/bots/AnderSkrrtt_StoneCrusherNoReq_completed_improvement.gbot",
+            "author": "anderskrrtt"
+        },
         "AQW Questline Bots.zip": {
             "url": "https://adventurequest.life/bots/AQW_Questline_Bots.zip",
             "author": "unknown"
@@ -182,10 +186,6 @@
         },
         "HypeFiend Bot.gbot": {
             "url": "https://adventurequest.life/bots/Arts_HypeFiend_Bot.gbot",
-            "author": "arts"
-        },
-        "IceStormArena Agro.gbot": {
-            "url": "https://adventurequest.life/bots/Arts_IceStormArena_Agro.gbot",
             "author": "arts"
         },
         "IceStormArena Agro HealerSkill.gbot": {
@@ -444,8 +444,8 @@
             "url": "https://adventurequest.life/bots/Bloom_EvolvedLeprechaun.gbot",
             "author": "bloom"
         },
-        "FreshSoul Uni36.gbot": {
-            "url": "https://adventurequest.life/bots/Bloom_FreshSoul_Uni36.gbot",
+        "FreshSoul Uni36 Updated.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_FreshSoul_Uni36_Updated.gbot",
             "author": "bloom"
         },
         "FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
@@ -1112,6 +1112,10 @@
             "url": "https://adventurequest.life/bots/Weeb_Crag_X_OBoN_Spin_The_Wheel_of_Chance_Bot.gbot",
             "author": "weeb"
         },
+        "CruxShip HELPER BOT.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_CruxShip_HELPER_BOT.gbot",
+            "author": "weeb"
+        },
         "Cube Reagent.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Cube_Reagent.gbot",
             "author": "weeb"
@@ -1198,6 +1202,10 @@
         },
         "MythsongREP.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_MythsongREP.gbot",
+            "author": "weeb"
+        },
+        "Necrodungeon HELPER BOT.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_Necrodungeon_HELPER_BOT.gbot",
             "author": "weeb"
         },
         "Ninja Challenge.gbot": {
@@ -1300,6 +1308,10 @@
             "url": "https://adventurequest.life/bots/Weeb_Void_Spartan.gbot",
             "author": "weeb"
         },
+        "WorldSoul HELPER BOT.gbot": {
+            "url": "https://adventurequest.life/bots/Weeb_WorldSoul_HELPER_BOT.gbot",
+            "author": "weeb"
+        },
         "Youthanize.gbot": {
             "url": "https://adventurequest.life/bots/Weeb_Youthanize.gbot",
             "author": "weeb"
@@ -1313,6 +1325,9 @@
         "anderskrrtt": {
             "AnderSkrrtt StoneCrusherNoReq.gbot": {
                 "url": "https://adventurequest.life/bots/AnderSkrrtt_StoneCrusherNoReq.gbot"
+            },
+            "AnderSkrrtt StoneCrusherNoReq completed improvement.gbot": {
+                "url": "https://adventurequest.life/bots/AnderSkrrtt_StoneCrusherNoReq_completed_improvement.gbot"
             }
         },
         "unknown": {
@@ -1503,9 +1518,6 @@
             },
             "HypeFiend Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_HypeFiend_Bot.gbot"
-            },
-            "IceStormArena Agro.gbot": {
-                "url": "https://adventurequest.life/bots/Arts_IceStormArena_Agro.gbot"
             },
             "IceStormArena Agro HealerSkill.gbot": {
                 "url": "https://adventurequest.life/bots/Arts_IceStormArena_Agro_HealerSkill.gbot"
@@ -1784,8 +1796,8 @@
             "EvolvedLeprechaun.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_EvolvedLeprechaun.gbot"
             },
-            "FreshSoul Uni36.gbot": {
-                "url": "https://adventurequest.life/bots/Bloom_FreshSoul_Uni36.gbot"
+            "FreshSoul Uni36 Updated.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_FreshSoul_Uni36_Updated.gbot"
             },
             "FuchsiaDye MagentaDye MEMBER ONLY DyeingForAChallenge.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_FuchsiaDye_MagentaDye_MEMBER_ONLY_DyeingForAChallenge.gbot"
@@ -2191,6 +2203,9 @@
             "Crag X OBoN Spin The Wheel of Chance Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Crag_X_OBoN_Spin_The_Wheel_of_Chance_Bot.gbot"
             },
+            "CruxShip HELPER BOT.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_CruxShip_HELPER_BOT.gbot"
+            },
             "Cube Reagent.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Cube_Reagent.gbot"
             },
@@ -2259,6 +2274,9 @@
             },
             "MythsongREP.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_MythsongREP.gbot"
+            },
+            "Necrodungeon HELPER BOT.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_Necrodungeon_HELPER_BOT.gbot"
             },
             "Ninja Challenge.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Ninja_Challenge.gbot"
@@ -2337,6 +2355,9 @@
             },
             "Void Spartan.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Void_Spartan.gbot"
+            },
+            "WorldSoul HELPER BOT.gbot": {
+                "url": "https://adventurequest.life/bots/Weeb_WorldSoul_HELPER_BOT.gbot"
             },
             "Youthanize.gbot": {
                 "url": "https://adventurequest.life/bots/Weeb_Youthanize.gbot"
