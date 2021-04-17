@@ -162,7 +162,7 @@ async def on_command_error(ctx, error):
 # Essential Cog
 Bot.add_cog(BaseCog(Bot))
 # Bot.add_cog(TestCog(Bot))
-Bot.add_cog(Help(Bot))
+# Bot.add_cog(Help(Bot))
 
 # Feature Cogs
 Bot.add_cog(BoatSearchCog(Bot))
@@ -172,9 +172,9 @@ Bot.add_cog(GoogleSearchCog(Bot))
 Bot.add_cog(GuideCog(Bot)) 
 Bot.add_cog(WikiCog(Bot))
 
-if os.name != "nt":
-    Bot.add_cog(RedditCog(Bot)) 
-    Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
+# if os.name != "nt":
+Bot.add_cog(RedditCog(Bot)) 
+Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 
 Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))

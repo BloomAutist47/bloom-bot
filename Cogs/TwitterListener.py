@@ -17,23 +17,31 @@ class TwitterCog(commands.Cog, BaseTools):
         self.api = api
 
         self.twitter_user_list = [
+            "Alina_AE",
+
             "Kotaro_AE",
             "notdarkon",
             "asukaae",
             "yo_lae",
             "arletteaqw",
-            # "Psi_AE",
+            
             "aqwclass",
             "CaptRhubarb",
-            # "ae_root",
+                       
             "ArtixKrieger",
-            "Alina_AE",
+            "AQW_News_Reddit",
+            
             "Aelious_AE",
-            # "Cemaros_AE",
-            "AQW_News_Reddit"
+                        
+            
+             # "ae_root",
+             # "Cemaros_AE",
+             # "Psi_AE",
         ]
 
         self.gift_checks = [
+            "BONUS gift!",
+            "bonus gift",
             "BONUS daily login gift",
             "New daily login gift",
             "daily login",
@@ -45,7 +53,9 @@ class TwitterCog(commands.Cog, BaseTools):
             "daily gifts",
             "hour DOUBLE",
             "hour Drop",
-            "DOUBLE Reputation"
+            "DOUBLE Reputation",
+            "BONUS gift",
+
         ]
 
         self.double_check = [
@@ -67,8 +77,9 @@ class TwitterCog(commands.Cog, BaseTools):
             "Design Notes", "RT @"
             ]
         self.is_double = False
-
-        # self.tweet_looker.start()
+        self.first = False
+        # self.tweet_looker.start(
+        
         self.tweet_looper.start()
 
 
@@ -171,6 +182,7 @@ class TwitterCog(commands.Cog, BaseTools):
             
 
         if not self.is_double:
+            
             time = time.strftime("%d %B %Y")
             lowered_text = text.lower()
             # Location
@@ -206,13 +218,13 @@ class TwitterCog(commands.Cog, BaseTools):
                 if "Defeat the" in text:
                     enemy = re.search("(Defeat the)(.+?)(for reward gear|in the|\sin\s)", text)
                 else:
-                    enemy = re.search("(battle the|battle|Battle\sthe|Battle|Battle the|Defeat)(.+?)(for reward gear|in the\s/|in\s/|the\s|/|\sin\s)", text)
+                    enemy = re.search("(battle the|battle|Battle\sthe|Battle|Battle the|Defeat|fight)(.+?)(for reward gear|in the\s/|in\s/|the\s|/|\sin\s)", text)
                 if enemy:
                     enemy = enemy.groups()[1]
                     enemy_link = self.convert_aqurl(enemy, "wiki")
                     # enemy_link = await self.check_website_integrity(enemy)
                 else:
-                    self.save_log(1, text, link)
+                    self.save_log(1, "[Its got a shop]"+text, link)
                     enemy = "<none>"
                     enemy_link = ""
 
@@ -430,12 +442,12 @@ class TwitterCog(commands.Cog, BaseTools):
 
     @tasks.loop(minutes=10)
     async def tweet_looper(self):
+        if not self.first:
+            await asyncio.sleep(10)
+            self.first = True
         await self.bot.wait_until_ready()
         BaseProgram.tweet_call == "updaily"
 
-        self.loop.create_task(self.loop_object())
-
-    async def loop_object(self):
         for user_name in self.twitter_user_list:
             print(f"\n\n> Targeting @{user_name}")
             got = False
@@ -458,7 +470,7 @@ class TwitterCog(commands.Cog, BaseTools):
                         else:
                             BaseProgram.twitter_logs[tweet.user.id_str].append(tweet.id)
 
-
+                        
                         # Checks if it isn't alina then don't do any daily gift analysis
                         if user_name != "Alina_AE":
                             tweet_list.append([tweet.id, tweet.user.id_str, user_name])
@@ -474,7 +486,7 @@ class TwitterCog(commands.Cog, BaseTools):
                         got = False
                         got_2 = True
                         tweet_line = tweet.full_text
-
+                        print("tweet_line")
                         # Checks if wrong tweet
                         for i in self.black_list:
                             if i.lower() in tweet_text:
@@ -519,6 +531,7 @@ class TwitterCog(commands.Cog, BaseTools):
                                         "double": self.is_double
                                         })
                                     print("done tweet")
+                                    
                                     got = False
                                     self.is_double = False
                                     break
@@ -535,7 +548,7 @@ class TwitterCog(commands.Cog, BaseTools):
                 for tweet in tweet_list:
                     await self.tweet_simple(tweet[0], tweet[2])
                     print("> This tweet alright.", end =" ")
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(0.5)
 
             if daily_list:
                 daily_list = reversed(daily_list)
@@ -576,7 +589,7 @@ class TwitterCog(commands.Cog, BaseTools):
         # self.check_twitter_id(id_, user_id)
         await self.tweet_simple(id_, user_screen)
         print("> This tweet alright.", end =" ")
-        await asyncio.sleep(1)
+        await asyncio.sleep(0.5)
         return
 
 
