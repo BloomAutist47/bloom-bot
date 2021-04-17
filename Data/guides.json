@@ -237,10 +237,10 @@
     "dailies": {
         "type": "text_dict",
         "auth": "aqw",
-        "title": "Item booster lists",
-        "description": "Daily Farming list. These items should be worked towards daily. They may take a while but some of these things are very useful. To see the original list, [click here](https://aqwg.weebly.com/farming-list.html)",
+        "title": "Daily Farming list",
+        "description": "These items should be worked towards daily. They may take a while but some of these things are very useful. To see the original list, [click here](https://aqwg.weebly.com/farming-list.html)",
         "content": {
-            "📌 **Classes**": [
+            "📌 **Classes Farm**": [
                 "➣ [Lord of Order](https://aqwg.weebly.com/lord-of-order.html) - ​10 days",
                 "➣ [Pyromancer](https://aqwg.weebly.com/pyromancer.html) - ​28 days mem, 42 days non-mem",
                 "➣ [Cryomancer](https://aqwg.weebly.com/cryomancer.html) - 28 days mem, 42 days non-mem",
@@ -250,7 +250,7 @@
                 "",
                 "​"
             ],
-            "📌 **Cosmetics**": [
+            "📌 **Cosmetics Farm**": [
                 "➣ [Mad Weaponsmith](https://aqwg.weebly.com/mad-weaponsmith.html) - 30 days mem, 90 days non-mem\n",
                 "➣ [​Cysero's SUPER Hammer](https://aqwg.weebly.com/cyseros-super-hammer.html) - 30 days mem, 90 days non-mem\n",
                 "➣ [​Bright Armour](http://aqwwiki.wikidot.com/bright-knight-armor)  - 50 days mem and non-mem - Complete Lady Celestia's \"Seal of Light\" quest in /Alteonbattle and \"Seal of Darkness\" quest in /Sepulchurebattle. You must have walked through the entire /Falcontower map and then have completed Falconreach Tower's quests.\n",
@@ -258,7 +258,7 @@
                 "",
                 "​"
             ],
-            "📌 **Misc**": [
+            "📌 **Misc Farm**": [
                 "➣ [Treasure Chest Keys](http://aqwwiki.wikidot.com/magic-treasure-chest-key) <:tagMember:832844261435244594> - Monthly - ​Each month as a member, go to Valencia in /Battleon. She offers 2 free Treasure Chest Keys that you can then use to open up treasure chests with or sell for ACs.\n",
                 "➣ [Boosts & Wheel of Doom](https://aqwg.weebly.com/wheel-of-doom.html) - Daily/Weekly - Members get 2 free boosts per day; one from Ragnar in /Battleon and one from their Legend Spin of the Wheel of Doom in /Doom. Everyone gets a free weekly Wheel of Doom spin, using the 3 Gears of Doom. You can trade your XP Boost from the Wheel of Doom for another type in the Merge Shop.\n",
                 "➣ [​Elders' Blood](http://aqwwiki.wikidot.com/elders-blood) - Complete Reens' \"Experiment 107: Elders' Blood Potion\" quest in /Arcangrove. You can also obtain these from Tendurrr's \"Assisting Crag & Bamboozle\" quest. These are mostly used in the Void Highlord grind."
