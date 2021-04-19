@@ -480,6 +480,10 @@
             "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot",
             "author": "bloom"
         },
+        "SuperDeath Questline pro.gbot": {
+            "url": "https://adventurequest.life/bots/Bloom_SuperDeath_Questline_pro.gbot",
+            "author": "bloom"
+        },
         "Bloom TaABoatTrip ShogunParagonPet pro.gbot": {
             "url": "https://adventurequest.life/bots/Bloom_TakingABoatTrip_ShogunParagonPet_pro.gbot",
             "author": "archon"
@@ -930,6 +934,10 @@
         },
         "NNg Faerie Court reputation.gbot": {
             "url": "https://adventurequest.life/bots/NNg_Faerie_Court_reputation.gbot",
+            "author": "nng"
+        },
+        "NNg Fame Token max stack.gbot": {
+            "url": "https://adventurequest.life/bots/NNg_Fame_Token_max_stack.gbot",
             "author": "nng"
         },
         "Icy Token I II III IV.gbot": {
@@ -1823,6 +1831,9 @@
             "SpoiledDragonQuest EliteVoidSet.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_SpoiledDragonQuest_EliteVoidSet.gbot"
             },
+            "SuperDeath Questline pro.gbot": {
+                "url": "https://adventurequest.life/bots/Bloom_SuperDeath_Questline_pro.gbot"
+            },
             "Yokai Rep pro.gbot": {
                 "url": "https://adventurequest.life/bots/Bloom_Yokai_Rep_pro.gbot"
             }
@@ -2079,6 +2090,9 @@
             },
             "NNg Faerie Court reputation.gbot": {
                 "url": "https://adventurequest.life/bots/NNg_Faerie_Court_reputation.gbot"
+            },
+            "NNg Fame Token max stack.gbot": {
+                "url": "https://adventurequest.life/bots/NNg_Fame_Token_max_stack.gbot"
             },
             "Hollowborn Rep Bot.gbot": {
                 "url": "https://adventurequest.life/bots/Nng_Hollowborn_Rep_Bot.gbot"
