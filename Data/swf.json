@@ -46660,5 +46660,4075 @@
             "sFile": "items/helms/WheelMJPHelm1.swf",
             "Url": "https://www.aq.com/game/gamefiles/items/helms/WheelMJPHelm1.swf"
         }
+    },
+    "Amethyst Faerie Wings": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Bright New Hero Blade": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Daily Login Class Boost": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Daily XP Boost! (1 hr)": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Dark Void Monk": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Defeated Makai": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Emerald Earth Mage": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Enchanted Justice Blade": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Faerie Queen's Advice": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "GOLD Boost! (20 min)": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Golden Oak Leaf": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Lucky Day Staff": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Makai Token": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Punadin Badge": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Rainbow Coin": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "REP Boost! (20 min)": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Seedspitter Lore Scroll": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Shadow Shroud": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Treasure Chest": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Void Knight's Blade": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "Void Monk's Flame": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
+    },
+    "XP Boost! (20 min)": {
+        "Amethyst Faerie Wings": {
+            "ID": "49844",
+            "Char item id": "1838032275",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Cape",
+            "Description": "May the luck of the faeries be ever with you!",
+            "sFile": "items/capes/FaerieAmethystWings.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/capes/FaerieAmethystWings.swf"
+        },
+        "Bright New Hero Blade": {
+            "ID": "29428",
+            "Char item id": "1838289022",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Congratulations! You are one of the brightest new heroes this world has ever seen! You will do great things!",
+            "sFile": "items/swords/SwordOfBrightness2r1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/SwordOfBrightness2r1.swf"
+        },
+        "Daily Login Class Boost": {
+            "ID": "22447",
+            "Char item id": "1838250541",
+            "Quantity": "3/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Daily XP Boost! (1 hr)": {
+            "ID": "19189",
+            "Char item id": "1840041341",
+            "Quantity": "2/5000",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Dark Void Monk": {
+            "ID": "43097",
+            "Char item id": "1838283197",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "Let's hope you don't find one of these guys at the end of the rainbow.",
+            "sFile": "DarkVoidMonk.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/DarkVoidMonk.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/DarkVoidMonk.swf"
+        },
+        "Defeated Makai": {
+            "ID": "1528",
+            "Char item id": "1840040129",
+            "Quantity": "50/50",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Emerald Earth Mage": {
+            "ID": "38546",
+            "Char item id": "1838347404",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Armor",
+            "Description": "These magi are one with the natural surroundings, gaining their magic from every living creature.",
+            "sFile": "LuckyEarthMage.swf",
+            "UrlMale": "https://www.aq.com/game/gamefiles/classes/M/LuckyEarthMage.swf",
+            "UrlFemale": "https://www.aq.com/game/gamefiles/classes/F/LuckyEarthMage.swf"
+        },
+        "Enchanted Justice Blade": {
+            "ID": "38655",
+            "Char item id": "1838339146",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "Wielders of this blade became members of the Justice Squad after completing Nythera's Scroll of Laws quest.",
+            "sFile": "items/swords/Bido-Sword.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/Bido-Sword.swf"
+        },
+        "Faerie Queen's Advice": {
+            "ID": "47741",
+            "Char item id": "1838912665",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Note"
+        },
+        "GOLD Boost! (20 min)": {
+            "ID": "22450",
+            "Char item id": "1838250544",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Golden Oak Leaf": {
+            "ID": "59745",
+            "Char item id": "1838032300",
+            "Quantity": "4/100",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Lucky Day Staff": {
+            "ID": "38547",
+            "Char item id": "1838346535",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "Hopefully this staff will bring you luck and tokens!",
+            "sFile": "items/staves/LuckyDayStaffr1.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/staves/LuckyDayStaffr1.swf"
+        },
+        "Makai Token": {
+            "ID": "43127",
+            "Char item id": "1838279869",
+            "Quantity": "200/2000",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Punadin Badge": {
+            "ID": "48065",
+            "Char item id": "1840804996",
+            "Quantity": "70/600",
+            "AC tagged": "True",
+            "Category": "Resource"
+        },
+        "Rainbow Coin": {
+            "ID": "38839",
+            "Char item id": "1838347668",
+            "Quantity": "6/8",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "REP Boost! (20 min)": {
+            "ID": "22449",
+            "Char item id": "1838250543",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        },
+        "Seedspitter Lore Scroll": {
+            "ID": "39241",
+            "Char item id": "1838430779",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Staff",
+            "Description": "This scroll dropped off a Seedspitter. Take it to Loremaster Maya in the Librarium and she'll tell you more about the monster.",
+            "sFile": "items/maces/ParchmentScrollLore.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/ParchmentScrollLore.swf"
+        },
+        "Shadow Shroud": {
+            "ID": "34142",
+            "Char item id": "1839241415",
+            "Quantity": "1/15",
+            "AC tagged": "True",
+            "Category": "Item"
+        },
+        "Treasure Chest": {
+            "ID": "8940",
+            "Char item id": "1838006389",
+            "Quantity": "45/250",
+            "AC tagged": "True",
+            "Category": "Quest Item"
+        },
+        "Void Knight's Blade": {
+            "ID": "43194",
+            "Char item id": "1838285822",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Sword",
+            "Description": "The blade of the void has become your weapon!",
+            "sFile": "items/swords/VoidKnightBlade.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/swords/VoidKnightBlade.swf"
+        },
+        "Void Monk's Flame": {
+            "ID": "43193",
+            "Char item id": "1838286019",
+            "Quantity": "1/1",
+            "AC tagged": "True",
+            "Category": "Mace",
+            "Description": "The fire of the void has become your weapon!",
+            "sFile": "items/maces/VoidMonkFlame.swf",
+            "Url": "https://www.aq.com/game/gamefiles/items/maces/VoidMonkFlame.swf"
+        },
+        "XP Boost! (20 min)": {
+            "ID": "22448",
+            "Char item id": "1838250542",
+            "Quantity": "3/30",
+            "AC tagged": "True",
+            "Category": "ServerUse"
+        }
     }
 }
