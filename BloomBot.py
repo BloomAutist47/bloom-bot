@@ -41,7 +41,7 @@ from Cogs.TwitterListener import TwitterCog
 from Cogs.TextUploaderCog import TextUploaders
 from Cogs.UtilsCog import UtilsCog
 from Cogs.RedditCog import RedditCog
-# from Cogs.SWFProcessorCog import SWFProcessorCog
+from Cogs.SWFProcessorCog import SWFProcessorCog
 
 # from Cogs.StreamCog import StreamCog
 # from Cogs.TestCog import TestCog
@@ -125,7 +125,7 @@ async def on_ready():
 
     # await Bot.change_presence(status=discord.Status.online, activity=game)
     await Bot.change_presence(activity=discord.Game(name="Playing AutoQuest Worlds! An AQW bot developed for the community. Smyess."))
-    RPC = Presence(CLIEND_ID)
+    RPC = Presence(CLIEND_ID, pipe=0    )
     RPC.connect()
     RPC.update(
         state="Studying the Art of War",
@@ -165,13 +165,13 @@ Bot.add_cog(GuideCog(Bot))
 Bot.add_cog(WikiCog(Bot))
 
 # if os.name != "nt":
-Bot.add_cog(RedditCog(Bot)) 
-Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
+# Bot.add_cog(RedditCog(Bot)) 
+# Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 
 Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
 Bot.add_cog(TextUploaders(Bot))
-# Bot.add_cog(SWFProcessorCog(Bot)) 
+Bot.add_cog(SWFProcessorCog(Bot)) 
 
 
 print("> Starting Bot...")

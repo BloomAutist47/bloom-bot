@@ -102,23 +102,32 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         file_ = ET.fromstring(str(file_))
         file_ = ET.tostring(file_, encoding='unicode')
 
-        try:
-            self.file =file_
-            self.shopProcess()
-            self.got_it = True
-        except: pass
+        if '<n t="Location:' in file_:
+            try:
+                self.file =file_
+                self.shopProcess()
+                self.got_it = True
+            except: pass
+        else:
+            try:
+                self.file = file_
+                self.questProcess()
+                self.got_it = True
+            except: pass
 
         try:
             self.file = file_
-            self.questProcess()
+            self.itemProcess()
             self.got_it = True
         except: pass
-
+        
+        print("> ==================== Here")
         if not self.got_it:
             await ctx.send(warn)
             return
+        print("> Addinfff")
         self.addToDatabase()
-
+        print("> kek")
         if self.added_count:
             await ctx.send(f"\> Added {self.added_count} items to the Database!")
         if self.already_exist:
@@ -158,6 +167,53 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         text = open(self.fileName, "r")
         self.file = text.read()
 
+    def itemProcess(self):
+        self.file = re.sub('(<n t=)|(/>)|(<TreeView>)|(</TreeView>)|\"', "", self.file)
+        self.file = re.sub("(  )", " ", self.file)
+        self.file = self.file.replace('<?xml version=1.0 encoding=us-ascii?>', "")
+        self.file = self.file.split(" </n>")
+        self.item_data = {}
+
+        for i in self.file:
+            item = i.strip()
+            if not item:
+                continue
+            category_holder = ""
+            linkHolder = ""
+            itemDataHolder = {}
+            # try:
+            itemName = re.search(r"(.+\>?)", item)[0].replace(">", "").strip()
+            if self.swf_adding:
+                if itemName in BaseProgram.swf:
+                    self.already_exist +=1
+                    continue
+            print(f"> {itemName}", end=" ")
+            itemData = item.split(">")[1].split("\n")[1:-1]
+            # print(itemData)
+            for data in itemData:
+                x = data.split(":")[:]
+                if x == ['']:
+                    continue
+                key = x[0].strip()
+                value = x[1].strip().replace("&quot;", "\"")
+                if "category" in key.lower():
+                    category_holder = value
+                if "sfile" in key.lower():
+                    linkHolder = self.URLMaker(category_holder, value)
+                itemDataHolder[key] = value
+
+            if isinstance(linkHolder, tuple):
+                itemDataHolder["UrlMale"] = linkHolder[0]
+                itemDataHolder["UrlFemale"] = linkHolder[1]
+            elif linkHolder == "":
+                pass
+            else:
+                itemDataHolder["Url"] = linkHolder
+            self.item_data[itemName] = itemDataHolder
+        # pprint(self.item_data)
+        self.target_type = "Item"
+        self.target = self.item_data
+
     def shopProcess(self):
         self.file = re.sub('(<n t=)|(/>)|(<TreeView>)|(</TreeView>)|\"', "", self.file)
         self.file = re.sub("(  )", " ", self.file)
@@ -187,7 +243,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
 
                 itemName = re.search(r"(.+\>?)", item)[0].replace(">", "").strip()
                 if self.swf_adding:
-                    if itemName in BaseProgram.swf:
+                    if itemName in BaseProgram.swf and ("Shop ID" in BaseProgram.swf[itemName] or "Quest ID" in BaseProgram.swf[itemName]):
                         self.already_exist +=1
                         continue
 
@@ -216,7 +272,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
 
         self.target_type = "Shop"
         self.target = self.shop_data
-        self.got_it=True
+
         
         # pprint(self.shop_data)
     def questProcess(self):
@@ -262,7 +318,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                 reward_dat = reward.strip().split("\n")
                 itemName = reward_dat[0]
                 if self.swf_adding:
-                    if itemName in BaseProgram.swf:
+                     if itemName in BaseProgram.swf and ("Shop ID" in BaseProgram.swf[itemName] or "Quest ID" in BaseProgram.swf[itemName]):
                         self.already_exist +=1
                         continue
 
@@ -291,7 +347,6 @@ class SWFProcessorCog(commands.Cog, BaseTools):
 
         self.target_type = "Quest"
         self.target = self.quest_data
-        self.got_it=True
 
     def swfGetter(self, shop, items, start, end):
         # print("Target Shop>>>: ", shop)
@@ -347,6 +402,11 @@ class SWFProcessorCog(commands.Cog, BaseTools):
 
     def addToDatabase(self):
         type_ = self.target
+        if self.target_type == "Item":
+                for item in self.target:
+                    BaseProgram.swf[item] = self.target
+                    self.added_count +=1
+                    print(f"> ADDED: {item}", end=" ")
 
         if self.target_type == "Shop":
             for shop in self.target:
@@ -359,9 +419,9 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                     item_data["Shop ID"] = self.target[shop]["ID"]
                     item_data["Location"] = self.target[shop]["Location"]
                     item_data["Type"] = "Shop"
-                    print(item)
                     BaseProgram.swf[item] = item_data
                     self.added_count +=1
+
         if self.target_type == "Quest":
             for quest in self.target:
                 for item in self.target[quest]["Items"]:
@@ -378,11 +438,11 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         # new_swf = {}
         # for key in sorted(BaseProgram.swf):
         #    new_swf[key] = BaseProgram.swf[key]
-           
+        print("\n\n\ngonna save")
         # BaseProgram.swf = new_swf
         while True:
             try:
-                self.git_save("swf")
+                self.loop.create_task(self.git_save("swf"))
                 break
             except:
                 print("> Github `swf` save failed. Trying again...")

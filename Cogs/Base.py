@@ -396,19 +396,21 @@ class BaseProgram:
             git_data = json.dumps(getattr(BaseProgram, file), indent=4).encode('utf-8')
             # contents_object = BaseProgram.repository.file_contents(f"./Data/{file}.json")
             # contents_object.update(f"{file} updated", git_data)
+            print("yeah")
+            try:
+                content_sha, commit_sha = BaseProgram.github.write(
+                    filepath=f"Data/{file}.json",
+                    content_bytes=git_data,
+                    commit_message=f"{file} updated",
+                    committer={
+                        "name": BaseProgram.GIT_USER,
+                        "email": BaseProgram.GITHUB_EMAIL,
+                    },
+                )
+            except Exception as e:
+                print(f"> {e}")
 
-
-            content_sha, commit_sha = BaseProgram.github.write(
-                filepath=f"Data/{file}.json",
-                content_bytes=git_data,
-                commit_message=f"{file} updated",
-                committer={
-                    "name": BaseProgram.GIT_USER,
-                    "email": BaseProgram.GITHUB_EMAIL,
-                },
-            )
-
-
+            
             self.file_save(file)
         return
 
