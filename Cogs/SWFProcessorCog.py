@@ -125,7 +125,7 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         if not self.got_it:
             await ctx.send(warn)
             return
-        print("> Addinfff")
+        await ctx.send(r"\> Saving to database. Please wait....")
         self.addToDatabase()
         print("> kek")
         if self.added_count:
@@ -187,7 +187,6 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                 if itemName in BaseProgram.swf:
                     self.already_exist +=1
                     continue
-            print(f"> {itemName}", end=" ")
             itemData = item.split(">")[1].split("\n")[1:-1]
             # print(itemData)
             for data in itemData:
@@ -406,7 +405,6 @@ class SWFProcessorCog(commands.Cog, BaseTools):
                 for item in self.target:
                     BaseProgram.swf[item] = self.target
                     self.added_count +=1
-                    print(f"> ADDED: {item}", end=" ")
 
         if self.target_type == "Shop":
             for shop in self.target:
@@ -438,30 +436,18 @@ class SWFProcessorCog(commands.Cog, BaseTools):
         # new_swf = {}
         # for key in sorted(BaseProgram.swf):
         #    new_swf[key] = BaseProgram.swf[key]
-        print("\n\n\ngonna save")
         # BaseProgram.swf = new_swf
-        while True:
-            try:
-                self.loop.create_task(self.git_save("swf"))
-                break
-            except:
-                print("> Github `swf` save failed. Trying again...")
-                continue
-        # for items in self.target:
-        #     result += f"Shop Name: {items}\n"
-        #     result += f"ID: {self.target[items]['ID']}\n"
-        #     result += f"Location: {self.target[items]['Location']}\n\n\n"
 
-        #     for item in self.target[items]["Items"]:
-        #         result += f"Name: {item}\n"
-        #         ref = self.target[items]["Items"][item]
-        #         for part in ref:
-        #             result += f"{part}: {ref[part]}\n"
-        #         result += "\n"
-        #     result_list[items] = {}
-        #     result_list[items]["ID"] = self.target[items]['ID']
-        #     result_list[items]["Items"] = result.strip()
-        #     result = ""
+        print("\n\n\ngonna save")
+
+        self.git_save_swf()
+        # while True:
+        #     try:
+                # self.loop.create_task(self.git_save("swf"))
+            #     break
+            # except Exception e:
+            #     print(f"> Github `swf` save failed. Trying again... {e}")
+            #     continue
 
 
     def printFile(self, mode):

@@ -396,6 +396,7 @@ class BaseProgram:
             git_data = json.dumps(getattr(BaseProgram, file), indent=4).encode('utf-8')
             # contents_object = BaseProgram.repository.file_contents(f"./Data/{file}.json")
             # contents_object.update(f"{file} updated", git_data)
+            self.file_save(file)
             print("yeah")
             try:
                 content_sha, commit_sha = BaseProgram.github.write(
@@ -409,10 +410,42 @@ class BaseProgram:
                 )
             except Exception as e:
                 print(f"> {e}")
-
             
-            self.file_save(file)
         return
+
+    def git_save_swf(self):
+        """ Description: Saves data to github .json files
+            Arguments:
+                [mode] - checks to do. accepts: database, guides, settings, classes
+                         or any of the their combination delimited by "-"
+                    - 'database'> BaseProgram.database
+                    - 'guides'> BaseProgram.guides
+                    - 'settings'> BaseProgram.settings
+                    - 'classes'> BaseProgram.classes
+        """
+        # with open(f'./Data/swf.json', 'r', encoding='utf-8') as f:
+        #     json.dumps(BaseProgram.swf)
+        #     print(f)
+        #     print(type(f))
+        git_data = bytearray(BaseProgram.swf)
+        self.file_save("swf")
+        print("yeah")
+        try:
+            content_sha, commit_sha = BaseProgram.github.write(
+                filepath=f"Data/{file}.json",
+                content_bytes=git_data,
+                commit_message=f"{file} updated",
+                committer={
+                    "name": BaseProgram.GIT_USER,
+                    "email": BaseProgram.GITHUB_EMAIL,
+                },
+            )
+        except Exception as e:
+            print(f"> {e}")
+
+        
+            
+        # return
 
     def git_read(self, mode:str):
         """ Description: Reads data from github .json files
