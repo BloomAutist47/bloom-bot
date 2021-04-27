@@ -239,42 +239,42 @@
         "type":"image",
         "auth":"aqw",
         "title":"Best Boosted Set for Dragon Type Monsters",
-        "description":"1) Make sure to equip Polly Roger Pet first\n2) Then equip Head of the Legion Beast afterwards\n3) Then equip AFDL1 (Archfiend Doomlord)\n4) Lastly, equip Legion DragonBlade for maximum damage output against Dragon Type Mobs\nAll of this in total is equal to a ×2.3625 multiplier against Dragon Type Mobs\n.",
+        "description":"1) Make sure to equip Polly Roger Pet first\n2) Then equip Head of the Legion Beast afterwards\n3) Then equip AFDL1 (Archfiend Doomlord)\n4) Lastly, equip Legion DragonBlade for maximum damage output against Dragon Type Mobs\n`All of this in total is equal to a ×2.3625 multiplier against Dragon Type Mobs`.",
         "content":"https://cdn.discordapp.com/attachments/805367955923533845/836436992970719232/unknown.png"
     },
     "setundead":{
         "type":"image",
         "auth":"aqw",
         "title":"Best Boosted Set for Undead Type Monsters",
-        "description":"1) Equip Polly Roger Pet first\n2) Then equip AFDL1 (Archfiend Doomlord) afterwards\n3) Lastly, equip the Blinding Light of Destiny to have maximum damage output against Undead Type Mobs\nAll of this is equal to a ×2.3625 multiplier in damage against Undead Type Mobs\n",
+        "description":"1) Equip Polly Roger Pet first\n2) Then equip AFDL1 (Archfiend Doomlord) afterwards\n3) Lastly, equip the Blinding Light of Destiny to have maximum damage output against Undead Type Mobs\n`All of this is equal to a ×2.3625 multiplier in damage against Undead Type Mobs`",
         "content":"https://cdn.discordapp.com/attachments/805367955923533845/836438332401516564/unknown.png"
     },
     "setelemental":{
         "type":"image",
         "auth":"aqw",
         "title":"Best Boosted Set for Elemental Type Monsters",
-        "description":"1) Firstly, equip the Polly Roger Pet\n2) Secondly, equip the Dual/Necrotic Sword(s) of Doom for maximum damage output when against Elemental Type Mobs\nAll of this is equal to a ×1.963 multiplier in damage when against Elemental Type Mobs\n",
+        "description":"1) Firstly, equip the Polly Roger Pet\n2) Secondly, equip the Dual/Necrotic Sword(s) of Doom for maximum damage output when against Elemental Type Mobs\n`All of this is equal to a ×1.963 multiplier in damage when against Elemental Type Mobs`",
         "content":"https://cdn.discordapp.com/attachments/805367955923533845/836439387822096424/unknown.png"
     },
     "setgeneral":{
         "type":"image",
         "auth":"aqw",
         "title":"Best Boosted Set for Maximum Efficiency all around:",
-        "description":"1) Firstly, equip the Dual/Necrotic Sword(s) of Doom\n2) Secondly, equip the Polly Roger Pet\n3) Thirdly, equip the Head of the Legion Beast Helm\n4) Fourthly, equip Sepulchure's DoomKnight Armor\n5) Lastly, equip the Awescended Omni Wings for maximum efficiency all around\nAll of this is equal to these multipliers in all races + boosts for Class/Reputation Points, Gold and Experience:\n```dmgAll: ×1.51\nUndead: ×1.40\nChaos: ×1.30\nElemental: ×1.30\nDragonkin: ×1.30\nHuman: ×1.51\ncp: ×1.50\ngold: ×1.30\nrep: ×1.50\nexp: ×1.30```\n",
+        "description":"1) Firstly, equip the Dual/Necrotic Sword(s) of Doom\n2) Secondly, equip the Polly Roger Pet\n3) Thirdly, equip the Head of the Legion Beast Helm\n4) Fourthly, equip Sepulchure's DoomKnight Armor\n5) Lastly, equip the Awescended Omni Wings for maximum efficiency all around\n`All of this is equal to these multipliers in all races + boosts for Class/Reputation Points, Gold and Experience:`\n```dmgAll: ×1.51\nUndead: ×1.40\nChaos: ×1.30\nElemental: ×1.30\nDragonkin: ×1.30\nHuman: ×1.51\ncp: ×1.50\ngold: ×1.30\nrep: ×1.50\nexp: ×1.30```\n",
         "content":"https://cdn.discordapp.com/attachments/805367955923533845/836439841095942195/unknown.png"
     },
     "sethuman":{
         "type":"image",
         "auth":"aqw",
         "title":"Best Boosted Set for Humans Type Mobs:",
-        "description":"1) Firstly, equip the Polly Roger Pet\n2) Secondly, equip Sepulchure's DoomKnight Armor\n3) Lastly, equip the Dual/Necrotic Sword(s) of Doom for the maximum damage output against Human Type Mobs\nAll of this in total is equal to a ×2.2801 multiplier in damage against Human Type Mobs\n",
+        "description":"1) Firstly, equip the Polly Roger Pet\n2) Secondly, equip Sepulchure's DoomKnight Armor\n3) Lastly, equip the Dual/Necrotic Sword(s) of Doom for the maximum damage output against Human Type Mobs\n`All of this in total is equal to a ×2.2801 multiplier in damage against Human Type Mobs`",
         "content":"https://cdn.discordapp.com/attachments/805367955923533845/836440187231797268/unknown.png"
     },
     "setchaos":{
         "type":"image",
         "auth":"aqw",
         "title":"Best Booster Set for Chaos Type Mobs:",
-        "description":"1) Firstly, equip the Polly Roger Pet\n2) Secondly, equip the Archfiend Doomlord (AFDL1) Armor\n3) Lastly, equip the Chaorrupter Unlocked weapon for the maximum damage output against Chaos Type Mobs\nAll of this in total is equal to a ×2.025 multiplier in damage against Chaos Type Mobs\n",
+        "description":"1) Firstly, equip the Polly Roger Pet\n2) Secondly, equip the Archfiend Doomlord (AFDL1) Armor\n3) Lastly, equip the Chaorrupter Unlocked weapon for the maximum damage output against Chaos Type Mobs\n`All of this in total is equal to a ×2.025 multiplier in damage against Chaos Type Mobs`",
         "content":"https://cdn.discordapp.com/attachments/805367955923533845/836440494337949711/unknown.png"
     },
     "Optimization Guides":{
