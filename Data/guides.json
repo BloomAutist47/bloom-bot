@@ -232,7 +232,15 @@
             "\\> **SDKA** = Sepulchure's DoomKnight Armor; Arch DoomKnight can be used instead if you don't have it, though it's slightly weaker.",
             "\\> **AFDL** =  Archfiend Doomlord, armor only; its other items can be used instead if you don't have the armor, though they're weaker.",
             "\\> **BLoD** = Blinding Light of Destiny and its variants. Nothing can be used instead. How do you not fucking have this.",
-            "\\> **LDoN** = Legion DragonBlade of Nulgath; You need membership to get it though. Does 75% more damage against dragons. Use NSoD if you don't have it."
+            "\\> **LDoN** = Legion DragonBlade of Nulgath; You need membership to get it though. Does 75% more damage against dragons. Use NSoD if you don't have it.",
+            "",
+            "For more details on each set, use the following cmds."
+            ";g setdragon - Best Boosted Set for Dragon Type Monsters.",
+            ";g setundead - Best Boosted Set for Undead Type Monsters.",
+            ";g setelemental - Best Boosted Set for Elemental Type Monsters.",
+            ";g setgeneral - Best Boosted Set for Maximum Efficiency all around:.",
+            ";g sethuman - Best Boosted Set for Humans Type Mobs:.",
+            ";g setchaos - Best Booster Set for Chaos Type Mobs:."
         ]
     },
     "setdragon":{
@@ -267,7 +275,7 @@
         "type":"image",
         "auth":"aqw",
         "title":"Best Boosted Set for Humans Type Mobs:",
-        "description":"**1.)** Firstly, equip the Polly Roger Pet\n**2.)** Secondly, equip Sepulchure's DoomKnight Armor\n**3.)** Lastly, equip the Dual/Necrotic Sword(s) of Doom for the maximum damage output against Human Type Mobs\n\n`All of this in total is equal to a ×2.2801 multiplier in damage against Human Type Mobs`",
+        "description":"**Note:** If you don't have SDKA, you may use AFDL.\n**1.)** Firstly, equip the Polly Roger Pet\n**2.)** Secondly, equip Sepulchure's DoomKnight Armor\n**3.)** Lastly, equip the Dual/Necrotic Sword(s) of Doom for the maximum damage output against Human Type Mobs\n\n`All of this in total is equal to a ×2.2801 multiplier in damage against Human Type Mobs`",
         "content":"https://cdn.discordapp.com/attachments/805367955923533845/836440187231797268/unknown.png"
     },
     "setchaos":{
