@@ -235,12 +235,12 @@
             "\\> **LDoN** = Legion DragonBlade of Nulgath; You need membership to get it though. Does 75% more damage against dragons. Use NSoD if you don't have it.",
             "",
             "For more details on each set, use the following cmds.",
-            ";g setdragon - Best Boosted Set for Dragon Type Monsters.",
-            ";g setundead - Best Boosted Set for Undead Type Monsters.",
-            ";g setelemental - Best Boosted Set for Elemental Type Monsters.",
-            ";g setgeneral - Best Boosted Set for Maximum Efficiency all around:.",
-            ";g sethuman - Best Boosted Set for Humans Type Mobs:.",
-            ";g setchaos - Best Booster Set for Chaos Type Mobs:."
+            "`;g setdragon` - Best Boosted Set for Dragon Type Monsters.",
+            "`;g setundead` - Best Boosted Set for Undead Type Monsters.",
+            "`;g setelemental` - Best Boosted Set for Elemental Type Monsters.",
+            "`;g setgeneral` - Best Boosted Set for Maximum Efficiency all around:.",
+            "`;g sethuman` - Best Boosted Set for Humans Type Mobs:.",
+            "`;g setchaos` - Best Booster Set for Chaos Type Mobs:."
         ]
     },
     "setdragon":{
