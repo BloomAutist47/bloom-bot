@@ -210,6 +210,17 @@
     "General Guides":{
         "type":"header"
     },
+    "j6":{
+        "type":"single_link",
+        "auth":"aqw",
+        "title":"The J6 Saga Guide",
+        "description":"This comprehensive guide provides everything you need in order to progress through the storylines in J6 Saga:",
+        "content":"https://forums2.battleon.com/f/tm.asp?m=22270401",
+        "thumbnail":"https://cdn.discordapp.com/attachments/805367955923533845/837875722789191680/C4fWB5J.png"
+    },
+    "Story Guides":{
+        "type":"header"
+    },
     "op":{
         "type":"text",
         "auth":"aqw",
