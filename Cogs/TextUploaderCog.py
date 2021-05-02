@@ -144,13 +144,13 @@ class TextUploaders(commands.Cog, BaseTools):
             if not start_link_1:
                 start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
             
-            if os.name != "nt":
-                if embed == "Pearl Harbor: The AQW Sailor's Paradise":
-                    BaseProgram.texts["Data"]["Server Invite"] = item_1.id
-                    BaseProgram.texts["Data"]["Server Channel"] = ctx.channel.id
-                    BaseProgram.texts["Data"]["Server ON"] = True
-                    self.git_save("texts")
-                    self.server_invite.start()
+            # if os.name != "nt":
+            #     if embed == "Pearl Harbor: The AQW Sailor's Paradise":
+            #         BaseProgram.texts["Data"]["Server Invite"] = item_1.id
+            #         BaseProgram.texts["Data"]["Server Channel"] = ctx.channel.id
+            #         BaseProgram.texts["Data"]["Server ON"] = True
+            #         self.git_save("texts")
+            #         self.server_invite.start()
                 
 
 
