@@ -106,6 +106,8 @@ class TextUploaders(commands.Cog, BaseTools):
             await ctx.send("\> Please enter valid text name.")
             return
 
+        await self.clear(ctx)
+        
         start_link_1 = ""
 
         embed_lis_all = BaseProgram.texts["Embed"][type_]
