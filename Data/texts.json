@@ -97,6 +97,7 @@
             "Welcome":{
                 "description":"Welcome to __**Pearl Harbor** -The AQW Sailor's Paradise__! We are here to help you sail the Imbalanced and Nightmarish Landscape that is, AutisticQuest Worlds!  We will help you come out on top like the enjoying human you are supposed to be! \n\nThe following below are our Channel Guides. Please do read them carefully. :)\n",
                 "embed_list":{
+                    "📌 Bulletin Board 📌": "📌<#811310403790962778> This is where you are right now!\n📌<#811305082002866229> The welcome page containing the Rules and agreement.\n📌<#825044553454452796> Get server roles here such as update notifs or Verified Boat roles! \n📌<#829264114047778837> Check our our partnered servers. Come play Skidson!\n📌<#811305082002866231> We place important server updates here!\n",
                     "Grimoire Help ❓":"📌<#811305082002866233>  Get the Bots and the Latest Grimoire 1.7.8 here.\n📌<#817998750697521183> If Grimoire is not working, follow the guides here.\n📌<#820934479677358080> It has all the most common questions.\n📌<#834097420350521384> Have a suggestion for GrimLite?.\n📌<#811305082377207865> Head over here if you want to report an issue.\n📌<#825035407766978570> Check AQW Quest IDs here. \n📌<#825035407766978570> Check AQW shop ids here. Read instructions before loading.\n📌<#836466454034776064> For the latest GrimLite, download from here.\n",
                     "News and Updates 📜":"📌<#811305082002866235> Be notified by the  latest uploaded Grimoire Bots!\n📌<#811309992727937034> Watch AQW news from here.\n📌<#812318143322128384> Subscribe here for the latest Daily Gifts or Server Boosts!\n",
                     "Chat 💬":"📌<#811305082377207866> Come here to ask for help or questions.\n📌<#822037903790047233> if you just wanna hang out, chat with us!\n📌<#811305082377207858> Use **Bloom Bot** here to search for Class Datas, Wiki, Guides, etc...\n",
@@ -115,6 +116,11 @@
                 "message":"https://discord.gg/Dsg9BsKJXH",
                 "description":"Skidson is an online AQW private server we're partnered with that has several experienced staff members, 800+ quests for you to play through, and over 9000+ items for you to collect! Come over to our server and find people to play with, and talk about your discoveries in-game! \n\nWebsite Link: https://skidson.online/\nServer Link: https://discord.gg/Dsg9BsKJXH\n",
                 "image":"https://cdn.discordapp.com/attachments/805367955923533845/826434988051398656/11111111111.png"
+            },
+            "AQW / AQ3D - The Wiki Team":{
+                "message":"https://discord.gg/stMbcMr",
+                "description":"Hey all, ever wanted to contribute to the ever-growing AQW Wiki? This server was created for wiki editors to use as a form of communication between themselves and any non wiki editors and/or new wiki editors looking for assistance. Feel free to join if you wish to help out! ",
+                "image":"https://cdn.discordapp.com/attachments/805367955923533845/838372488823177246/BannerMain.png"
             }
         }
     },
