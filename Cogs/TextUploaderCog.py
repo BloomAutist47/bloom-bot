@@ -107,13 +107,13 @@ class TextUploaders(commands.Cog, BaseTools):
             return
 
         await self.clear(ctx)
-        
+
         start_link_1 = ""
 
         embed_lis_all = BaseProgram.texts["Embed"][type_]
         for embed in embed_lis_all:
             embed_list = BaseProgram.texts["Embed"][type_][embed]
-            msg = ""
+            msg = "\n\u200b"
             embedVar = discord.Embed(title=embed, color=BaseProgram.block_color)
             if "description" in embed_list:
                 embedVar.description = embed_list["description"]
@@ -135,12 +135,12 @@ class TextUploaders(commands.Cog, BaseTools):
                 embedVar.set_thumbnail(url=embed_list["thumbnail"])
 
             if "message" in embed_list:
-                msg = embed_list["message"]
+                msg += embed_list["message"]
 
             if embed == "Welcome":
                 embedVar.add_field(name="\u200b", value=f"[Click here to go to the Top]({start_link_1})", inline=False)
 
-            item_1 = await ctx.send("\n\u200b" + msg, embed=embedVar)
+            item_1 = await ctx.send(msg, embed=embedVar)
             if not start_link_1:
                 start_link_1 = f'https://discordapp.com/channels/{item_1.guild.id}/{item_1.channel.id}/{item_1.id}'
             
