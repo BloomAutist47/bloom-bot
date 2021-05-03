@@ -99,8 +99,12 @@ class RedditCog(commands.Cog, BaseTools):
                     except:
                         pass
                     if sub.is_video == True:
-                        image_ = sub.preview["images"][0]["source"]["url"]
-                        footer_ = "This is a video post."
+                        try:
+                            image_ = sub.preview["images"][0]["source"]["url"]
+                            footer_ = "This is a video post."
+                        except:
+                            pass
+                        
                     text_ = str(sub.selftext) + "\n"
                     time_ = self.get_date(sub)
 
