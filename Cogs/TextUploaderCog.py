@@ -230,9 +230,16 @@ class TextUploaders(commands.Cog, BaseTools):
                 # print()
                 desc = ""
                 count = 0
-            desc += f"{text_count} [{title.split(')')[-1].strip()}]({index[title]})\n"
+            if "numbering" in BaseProgram.texts["Texts"][textfile] and BaseProgram.texts["Texts"][textfile]["numbering"] == False:
+                desc += f"[{title}]({index[title]})\n"
+            else:
+                text_count += 1
+                desc += f"{text_count} [{title.split(')')[-1].strip()}]({index[title]})\n"
+
+            
             count += 1
-            text_count += 1
+
+
         if not start_shit:
             embedVar.add_field(name="Table of Contents", value=desc, inline=False)
             start_shit = True
