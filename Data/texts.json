@@ -88,7 +88,7 @@
                 "📌 1.1. How to Extract Updater.exe": {
                     "text": "-> If you already know how to extract a file, skip this step.\n-> To extract a file, you will need the WinRAR or the 7zip application\n> WinRAR Download Link: [Click here](https://www.win-rar.com/postdownload.html?&L=0)\n> 7zip Download Links: [Click here](https://www.7-zip.org/download.html)\n> Download whichever one you want.\n\n-> Find the updater.rar in your Downloads folder.\n-> Double click to open it with WinRAR/7zip.\n-> Right click `..` and select Extract to a specified folder.\n-> Select a new empty folder on your computer and click Ok.\n​"
                 },
-                "📌 2. Using Grimoire": {
+                "📌 2. How to run Bots": {
                     "text": "->Open Grimoire.exe.\n> If it's not opening, you may have to unblock it.\n> Right Click Grimoire.exe -> Properties -> Unblock -> Apply.\n-> To install a boat\n> On Grimoire folder, place the boats on the `./Grimoire Folder/Bots`.\n-> To run a boat;\n> On Grimoire toolbar -> Bot -> Misc -> Load Bot -> Select whichever bot you just downloaded from your Downloads folder.\n​"
                 },
                 "📌 3. Things to Remember": {
