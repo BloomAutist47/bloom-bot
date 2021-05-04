@@ -80,6 +80,7 @@
         "getgrim": {
             "title": "How to Find Boats.",
             "description": "Looking for AQW Boats or the Latest Grim? Look no further. Visit our portal site where we distribute the Grimoire application and various boats for it.\n\n**📕 Download Boats here**: https://adventurequest.life/\n**📕 Download GrimLite**: [Grimlite_Updater.rar](https://cdn.discordapp.com/attachments/838377515252842496/838388190221041664/GrimLite_Updater.rar)\n​",
+            "numbering": false,
             "content": {
                 "📌 1. Download GrimLite": {
                     "text": "-> Get `GrimLite_Updater.rar` from above. \n -> Extract with winrar/winzip to empty folder.\n-> Run `updater.exe`. It will download the latest GrimLite for you.\n-> Once finished downloadingm, run `Grimoire.exe`.\n​"

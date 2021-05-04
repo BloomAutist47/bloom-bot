@@ -232,6 +232,7 @@ class TextUploaders(commands.Cog, BaseTools):
                 count = 0
             if "numbering" in BaseProgram.texts["Texts"][textfile] and BaseProgram.texts["Texts"][textfile]["numbering"] == False:
                 desc += f"[{title}]({index[title]})\n"
+                print(f"jereee: {title}")
             else:
                 text_count += 1
                 desc += f"{text_count} [{title.split(')')[-1].strip()}]({index[title]})\n"
