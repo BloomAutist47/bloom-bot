@@ -4268,6 +4268,15 @@
             "text": "With the game pretty much completed, the only thing I really have left is to go for one of these 2 classes.\n\nWhich one is easier to farm having a non member account and no pets or anything of the likes.\n",
             "time": "18 May 2021 | 09:46 PM ",
             "is_video": false
+        },
+        "nfbjpk": {
+            "author": "Yuri_FFCC",
+            "title": "Regarding how damage boosts work",
+            "link": "https://www.reddit.com/r/AQW/comments/nfbjpk/regarding_how_damage_boosts_work/",
+            "image": null,
+            "text": "Most of you will know how it works, **specific race damage boost** or **multiple races damage boost** ***stack*** with **damage boost to all monsters**, so NSoD, Awescended Omni Blades, BBoA or such **will stack** with other sources like SDKA, Polly Roger (since is **damage to all tagged monsters**, not damage to all monsters) or Head of the Legion Beast (40% more damage to Humans/Undeads and 30% more damage to Dragons).\n\nI'm ok with this bit, it's fine if they don't stack, however, something that many people may not realize is that **equipping** an item with **lower boosts** ***after*** will overwrite the higher ones, so equipping NSoD first and equipping AFDL after, **will decrease your damage** vs all monsters from 51% to 35%, since the latest one equipped is the one used. This also affects if you are using specific damage boosts, for example, Blinding Light of Destiny has a 75% extra damage vs Undeads, so **equipping** something with **a lower boost** to that race after (even if it grants damage boosts against multiple races, like what happens with Polly Roger), it **will decrease your damage boost**.\n\nAE already stated multiple times that this is **not a bug**, however, it's still incredibly annoying, since it forces you to **re-equip your whole set**, which paired with enhancements makes the game way less interactive, and goes against the idea of being able to change your outfit at any given time. That's why I really think they should change it **so the highest damage boost is always applied**, even if they still doesn't stack, or at least a \"Boost checker\" that makes you able to check which boosts are active at any time.\n\nI'd love to see other's opinion about this topic, and hopefully AE changes something to make it less awkward than what it is now.\n",
+            "time": "18 May 2021 | 10:04 PM ",
+            "is_video": false
         }
     }
 }
