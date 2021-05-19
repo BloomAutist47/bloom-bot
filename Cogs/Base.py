@@ -770,6 +770,21 @@ class BaseTools(BaseProgram):
             await ctx.send(desc)
             return False
 
+    async def check_verified_botter(self, ctx, command_name:str):
+        """ Description: Checks if the user is allowed to use privileged commands.
+            Arguments:
+                [ctx] - context
+                [command_name] - command name that is being evaluated
+        """
+        try:
+            for role in [role.name for role in ctx.author.roles]:
+                if role == "Verified Boat Maker 🤖":
+                    return True
+        except:
+            desc = f"\> User {ctx.author} does not have permissions for `;{command_name}` command.\n"
+            await ctx.send(desc)
+            return False
+
     async def check_user_permissions(self, ctx, command_name:str):
         """ Description: Checks if the user has permissions to use certain functionalities
                          niglist.
@@ -942,7 +957,55 @@ class BaseTools(BaseProgram):
             embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
         return embedVar
 
+    def embed_multi_types(self, title, field_name:str, description:str,
+            value_list, block_count:int, two_collumn:bool, icon=""):
+        """ Description: Embeds multiple links not sorted by anything.
+            Arguments:
+                [title] - title
+                [field_name] - title of the fields
+                [description] - embed description
+                [value_list] - the info chunk of text
+                [block_count] - how may items per fields
+                [two_collumn] - if the chunks are presented in two column or three column
+            Return: Discord embed object
+        """
+        st = "\u200b"
+        counts = {"field": 0, "item": 0}
+        text_item = "```css\n"
+        print("CC: ", BaseProgram.block_color)
 
+        if icon:
+            embedVar = discord.Embed(description=description, color=BaseProgram.block_color)
+            embedVar.set_author(name=title, icon_url=BaseProgram.icon_auqw)
+        else:
+            embedVar = discord.Embed(title=title, description=description, color=BaseProgram.block_color)
+        for text in value_list:
+            if counts["field"] == 2 and two_collumn:
+                embedVar.add_field(name=st, value=st, inline=True)
+                counts["field"] = 0
+
+            if counts["item"] == block_count:
+                embedVar.add_field(name=field_name, value=text_item+ "```", inline=True)
+                text_item = "```css\n"
+                counts["item"] = 0
+                counts["field"]+=1
+
+            text_item += "> "+text + "\n"
+            counts["item"] += 1
+        if two_collumn:
+            if counts["field"] == 2:
+                embedVar.add_field(name=st, value=st, inline=True)
+                embedVar.add_field(name=st, value=st, inline=True)
+            embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
+
+            if counts["field"] == 0:
+                embedVar.add_field(name=st, value=st, inline=True)
+                embedVar.add_field(name=st, value=st, inline=True)
+            if counts["field"] == 1:
+                embedVar.add_field(name=st, value=st, inline=True)
+        if not two_collumn:
+            embedVar.add_field(name=field_name, value=text_item + "```", inline=True)
+        return embedVar
 
     def embed_multi_text_indiv(self, title,description:str,
             value_list, block_count:int, icon=""):

@@ -83,6 +83,7 @@ class ClassSearchCog(BaseTools, commands.Cog):
         result = self.find_class(class_name.lower())
         found_class = result[0]
         found_data = result[1]
+        pprint(found_data)
         if found_class[0] == "Authentic":
             await self.embed_image(ctx, found_data[1], found_data[2], found_data[0])
             return

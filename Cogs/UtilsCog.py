@@ -37,9 +37,75 @@ class UtilsCog(commands.Cog, BaseTools):
     #     await self.change_profile()
 
 
-    # @commands.command()
-    # async def wip(self, ctx, *, work=""):
-    #     if not 
+    @commands.command()
+    async def board(self, ctx, *, work=""):
+
+        if work:
+            allowed = await self.check_verified_botter(ctx, "WIP")
+            if not allowed:
+                await ctx.send("\> Apologies. But only verified Boat Makers can add to the Boatyard board..")
+                return
+            author = ctx.author.name
+            if author not in self.boaters["works"]:
+                self.boaters["works"][author] = []
+            for i in work.split(","):
+                if i not in self.boaters["works"][author]:
+                    self.boaters["works"][author].append(i)
+
+            self.git_save("boaters")
+            print("> Saved")
+
+
+        if work == "":
+            if not self.boaters["works"]:
+                await ctx.send("\> There are currently no work in progress at the Bulletin board.")
+            st = "\u200b"
+            inline = 0
+            there_is_work = False
+            embedVar = discord.Embed(title="Pearl Harbor's Bulletin Board",description="This is the Work-in-progress list. To add your currently WIP boat, use `;board botname, botname, etcc..`.", color=BaseProgram.block_color)
+            embedVar.set_author(name="AutoQuest Worlds", icon_url=BaseProgram.icon_auqw)
+            for author in self.boaters["works"]:
+                if not self.boaters["works"]:
+                    continue
+                if inline == 2:
+                    inline = 0
+                    embedVar.add_field(name=st, value=st, inline=True)
+                item_list = self.boaters["works"][author]
+                value = '\n'.join([f"[{item_list.index(i)}] " + i for i in item_list])
+                embedVar.add_field(name=author, value="```" + value + "```", inline=True)
+                inline += 1
+                there_is_work = True
+            if not there_is_work:
+                await ctx.send("\> There are currently no work in progress at the Bulletin board.")
+            await ctx.send(embed=embedVar)
+
+    @commands.command()
+    async def unboard(self, ctx, *, index=""):
+        allowed = await self.check_verified_botter(ctx, "WIP")
+        if not allowed:
+            await ctx.send("\> Apologies. But only verified Boat Makers can use this command.")
+            return
+
+        if not index.isnumeric():
+            await ctx.send("\> Please enter the index number of the item you wish to delete. For example: `;unboard 3` will remove item no.3 from the board. To see the index number, use `;board`")
+            return
+
+        author = ctx.author.name
+        ind = int(index)
+
+        if author not in self.boaters["works"]:
+            await ctx.send("\> You have no registered Work-in-progress boat.")
+            return
+
+        if ind not in self.boaters["works"][author]:
+            await ctx.send(f"\> Item index [{ind}] does not exists for you.")
+            return
+        del self.boaters["works"][author][ind]
+
+        self.git_save("boaters")
+        await ctx.send(f"\> Item index [{ind}] successfully removed.")
+        return
+
 
     @tasks.loop(minutes=5)
     async def serverTime(self):
