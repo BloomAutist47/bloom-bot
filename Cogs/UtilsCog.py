@@ -38,22 +38,28 @@ class UtilsCog(commands.Cog, BaseTools):
 
 
     @commands.command()
-    async def board(self, ctx, *, work=""):
+    async def board(self, ctx, mode="", *, work=""):
         true_save = False
         second_save = False
         author = str(ctx.author.id)
         author_name = str(ctx.author.name)
+        allowed = await self.check_verified_botter(ctx, "WIP")
+
         if author in self.boaters["works"] and author_name != self.boaters["works"][author]["name"]:
             self.boaters["works"][author]["name"] = author_name
             true_save = True
+        mode = mode.lower()
+        if mode not in ["", "add", "rem"]:
+            await ctx.send("\> `;board cmd value` Please use the follwing for `<cmd>` -> `add` | `rem`| or blank to show the list of boards.")
+            return
+        if mode=="add":
             
-
-        if work:
-            allowed = await self.check_verified_botter(ctx, "WIP")
             if not allowed:
                 await ctx.send("\> Apologies. But only verified Boat Makers can add to the Boatyard board..")
                 return
-            
+            if not work:
+                await ctx.send("\> Please add proper value. Use the commad `;board add boat_name, boat_name, etc...`. Ex. `;board add LR Revamp, Bloom Questline`")
+                return
             if author not in self.boaters["works"]:
                 self.boaters["works"][author] = {"name":author_name, "items":[]}
 
@@ -68,15 +74,44 @@ class UtilsCog(commands.Cog, BaseTools):
             self.git_save("boaters")
             print("> Saved")
 
+        if mode == "rem":
+            if not allowed:
+                await ctx.send("\> Apologies. But only verified Boat Makers can use this command.")
+                return
 
-        if work == "":
+            if not work:
+                await ctx.send("\> Please use `;board rem index` and input proper index value. Ex. `;board rem 3`")
+                return
+
+            if not work.isnumeric():
+                await ctx.send("\> Please use `;board rem index` and input proper index value. Ex. `;board rem 3`")
+                return
+
+            author = str(ctx.author.id)
+            ind = int(work)
+
+            if author not in self.boaters["works"]:
+                await ctx.send("\> You have no registered Work-in-progress boat.")
+                return
+
+            try:
+                del self.boaters["works"][author]["items"][ind]
+            except:
+                await ctx.send(f"\> Item index [{ind}] does not exists for you.")
+                return
+
+            self.git_save("boaters")
+            await ctx.send(f"\> Item index [{ind}] successfully removed.")
+            return
+
+        if mode == "":
             if not self.boaters["works"]:
                 await ctx.send("\> There are currently no work in progress at the Bulletin board.")
                 return
             st = "\u200b"
             inline = 0
             there_is_work = False
-            embedVar = discord.Embed(title="Pearl Harbor's Bulletin Board",description="This is the Work-in-progress list. To add your currently WIP boat, use `;board botname, botname, etcc..`.", color=BaseProgram.block_color)
+            embedVar = discord.Embed(title="Pearl Harbor's Bulletin Board",description="This is the Work-in-progress list. Made to ensure no duplicate boats are made and to increase cooperation between boat makers. \n➣ To add your currently WIP boat, use `;board add botname, botname, etcc..`.\n➣ To remove a WIP boat, use `board rem index`.\n➣ For details, use `;bhelp`.", color=BaseProgram.block_color)
             embedVar.set_author(name="AutoQuest Worlds", icon_url=BaseProgram.icon_auqw)
             for author in self.boaters["works"]:
                 if not self.boaters["works"]:
@@ -97,32 +132,8 @@ class UtilsCog(commands.Cog, BaseTools):
                 self.git_save("boaters")
             await ctx.send(embed=embedVar)
 
-    @commands.command()
-    async def unboard(self, ctx, *, index=""):
-        allowed = await self.check_verified_botter(ctx, "WIP")
-        if not allowed:
-            await ctx.send("\> Apologies. But only verified Boat Makers can use this command.")
-            return
 
-        if not index.isnumeric():
-            await ctx.send("\> Please enter the index number of the item you wish to delete. For example: `;unboard 3` will remove item no.3 from the board. To see the index number, use `;board`")
-            return
 
-        author = str(ctx.author.id)
-        ind = int(index)
-
-        if author not in self.boaters["works"]:
-            await ctx.send("\> You have no registered Work-in-progress boat.")
-            return
-
-        if 0 <= x < len(self.boaters["works"][author]["items"]):
-            await ctx.send(f"\> Item index [{ind}] does not exists for you.")
-            return
-        del self.boaters["works"][author]["items"][ind]
-
-        self.git_save("boaters")
-        await ctx.send(f"\> Item index [{ind}] successfully removed.")
-        return
 
 
     @tasks.loop(minutes=5)

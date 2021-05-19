@@ -1243,6 +1243,14 @@ class BaseCog(commands.Cog, BaseTools):
                "`;swf` ➣ Converts .xml file into readable format.\n"\
                "`;swfhelp` ➣ Shows help abput ;swf command.\n"\
                "`;credits` ➣ Reveals the credits.\n"
+        embedVar.add_field(name="Verified Boat Maker Commands", inline=False, 
+            value="`;board` ➣ Shows boat work in-progress list. Everyone can use this even non-verified people..\n\n"\
+                  "`;board add boat_name, boat_name, etc...` ➣ Adds WIP to the Bulletin board. Ex. \";board add Legion Revenant Bot\"\n\n"\
+                  "`;board rem index` ➣ Deletes the WIP item from the board. Ex: \";board rem 1\". Removes item index 1."
+
+            )
+
+
         embedVar.description = desc
         if guild_allowed:
             embedVar.add_field(name="Shadow Commands", inline=False, 
