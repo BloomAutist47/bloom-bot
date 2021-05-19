@@ -1292,8 +1292,8 @@
             "fast_obtain_difficulty": "E"
         },
         "type": "seasonal",
-        "location": "Merge at  /murdermoon. Darkside owners gets free at /curio",
-        "discord_url": ""
+        "location": "Merge at /murdermoon. Free at /curio with Darkside",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/844472080552820766/Dark_Lord_Class_Chart.png"
     },
     "DeathKnight": {
         "acronym": "DK",
