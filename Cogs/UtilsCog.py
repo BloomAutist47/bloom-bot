@@ -36,6 +36,11 @@ class UtilsCog(commands.Cog, BaseTools):
     # async def change(self, ctx):
     #     await self.change_profile()
 
+
+    # @commands.command()
+    # async def wip(self, ctx, *, work=""):
+    #     if not 
+
     @tasks.loop(minutes=5)
     async def serverTime(self):
         eastern = timezone('US/Eastern')
@@ -51,6 +56,7 @@ class UtilsCog(commands.Cog, BaseTools):
 
         await channel.edit(name=f"Server Time: {current_time.upper()}")
         return
+
 
 
     # async def change_profile(self):
