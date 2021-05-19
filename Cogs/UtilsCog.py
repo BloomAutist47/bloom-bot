@@ -39,19 +39,29 @@ class UtilsCog(commands.Cog, BaseTools):
 
     @commands.command()
     async def board(self, ctx, *, work=""):
+        true_save = False
+        second_save = False
+        if ctx.author.id in self.boaters["works"] and ctx.author.name != self.boaters["works"][author]["name"]:
+            self.boaters["works"][author]["name"] = ctx.author.name
+            true_save = True
+            
 
         if work:
             allowed = await self.check_verified_botter(ctx, "WIP")
             if not allowed:
                 await ctx.send("\> Apologies. But only verified Boat Makers can add to the Boatyard board..")
                 return
-            author = ctx.author.name
+            author = ctx.author.id
             if author not in self.boaters["works"]:
-                self.boaters["works"][author] = []
-            for i in work.split(","):
-                if i not in self.boaters["works"][author]:
-                    self.boaters["works"][author].append(i)
+                self.boaters["works"][author] = {"name":ctx.author.name, "items":[]}
 
+
+
+            for i in work.split(","):
+                if i not in self.boaters["works"][author]["items"]:
+                    self.boaters["works"][author]["items"].append(i)
+
+            second_save = True
             self.git_save("boaters")
             print("> Saved")
 
@@ -70,13 +80,16 @@ class UtilsCog(commands.Cog, BaseTools):
                 if inline == 2:
                     inline = 0
                     embedVar.add_field(name=st, value=st, inline=True)
-                item_list = self.boaters["works"][author]
+                item_list = self.boaters["works"][author]["items"]
                 value = '\n'.join([f"[{item_list.index(i)}] " + i for i in item_list])
                 embedVar.add_field(name=author, value="```" + value + "```", inline=True)
                 inline += 1
                 there_is_work = True
             if not there_is_work:
                 await ctx.send("\> There are currently no work in progress at the Bulletin board.")
+
+            if true_save and not second_save:
+                self.git_save("boaters")
             await ctx.send(embed=embedVar)
 
     @commands.command()
@@ -97,10 +110,10 @@ class UtilsCog(commands.Cog, BaseTools):
             await ctx.send("\> You have no registered Work-in-progress boat.")
             return
 
-        if ind not in self.boaters["works"][author]:
+        if 0 <= x < len(self.boaters["works"][author]["items"]):
             await ctx.send(f"\> Item index [{ind}] does not exists for you.")
             return
-        del self.boaters["works"][author][ind]
+        del self.boaters["works"][author]["items"][ind]
 
         self.git_save("boaters")
         await ctx.send(f"\> Item index [{ind}] successfully removed.")
