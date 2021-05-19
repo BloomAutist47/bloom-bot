@@ -61,7 +61,7 @@ class UtilsCog(commands.Cog, BaseTools):
 
             for i in work.split(","):
                 if i not in self.boaters["works"][author]["items"]:
-                    self.boaters["works"][author]["items"].append(i)
+                    self.boaters["works"][author]["items"].append(i.strip())
 
             second_save = True
             await ctx.send(f"\> WIP `{work}` successfully added.")
