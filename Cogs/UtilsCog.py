@@ -124,6 +124,7 @@ class UtilsCog(commands.Cog, BaseTools):
                 embedVar.add_field(name=self.boaters["works"][author]["name"], value="```" + value + "```", inline=True)
                 inline += 1
                 there_is_work = True
+            embedVar.set_footer(text="Add/Rem commands are <@811305081097814073> privilege.")
             if not there_is_work:
                 await ctx.send("\> There are currently no work in progress at the Bulletin board.")
                 return
