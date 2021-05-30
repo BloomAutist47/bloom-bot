@@ -18,7 +18,7 @@ class TwitterCog(commands.Cog, BaseTools):
 
         self.twitter_user_list = [
             "Alina_AE",
-
+            # "BloomAutist47"
             "Kotaro_AE",
             "notdarkon",
             "asukaae",
@@ -40,6 +40,7 @@ class TwitterCog(commands.Cog, BaseTools):
         ]
 
         self.gift_checks = [
+            "Now available",
             "BONUS gift!",
             "bonus gift",
             "BONUS daily login gift",
@@ -55,6 +56,7 @@ class TwitterCog(commands.Cog, BaseTools):
             "hour Drop",
             "DOUBLE Reputation",
             "BONUS gift",
+            "birthday gifts",
 
         ]
 
@@ -455,24 +457,24 @@ class TwitterCog(commands.Cog, BaseTools):
             daily_list = []
             while True:
                 try:
-                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(30)
+                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(1)
 
                     print("> Tweets appending")  
                     for tweet in time_line:
-
+                        print("11111")
                         # check if the tweet alread exists
                         if tweet.user.id_str not in BaseProgram.twitter_logs:
                             BaseProgram.twitter_logs[tweet.user.id_str] = []
-
+                        print("fuckcks")
                         if tweet.id in BaseProgram.twitter_logs[tweet.user.id_str]:
                             print("> nope tweet", end=" ")
                             continue
                         else:
                             BaseProgram.twitter_logs[tweet.user.id_str].append(tweet.id)
 
-                        
+                        print("in here?!")
                         # Checks if it isn't alina then don't do any daily gift analysis
-                        if user_name != "Alina_AE":
+                        if user_name != "Alina_AE" or user_name != "BloomAutist47":
                             tweet_list.append([tweet.id, tweet.user.id_str, user_name])
                             print("> nil", end=" ")
                             continue
@@ -481,7 +483,7 @@ class TwitterCog(commands.Cog, BaseTools):
                             pass
 
                         tweet_text = tweet.full_text.lower()
-
+                        print("ait lad")
                         self.is_double = False
                         got = False
                         got_2 = True
@@ -492,9 +494,11 @@ class TwitterCog(commands.Cog, BaseTools):
                             if i.lower() in tweet_text:
                                 tweet_list.append([tweet.id, tweet.user.id_str, user_name])
                                 got_2 = False
+                                print(">nottttt got")
                                 break
 
                         if not got_2:
+                            print("> Not got")
                             continue
 
                         # Checks if double boost
@@ -515,6 +519,7 @@ class TwitterCog(commands.Cog, BaseTools):
 
                         if not got:
                             tweet_list.append([tweet.id, tweet.user.id_str, user_name])
+                            print(" not again?@@@")
                             continue
 
 

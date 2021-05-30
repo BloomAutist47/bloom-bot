@@ -166,7 +166,7 @@ Bot.add_cog(WikiCog(Bot))
     
 if os.name != "nt":
     Bot.add_cog(RedditCog(Bot)) 
-    Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
+Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 
 Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))
