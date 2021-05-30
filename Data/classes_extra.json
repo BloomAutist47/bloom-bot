@@ -156,6 +156,7 @@
         "acronym": "CcoR"
     },
     "Underworld Chronomancer": {
+        "type": "available",
         "acronym": "UC",
         "stats": [
             "null",
