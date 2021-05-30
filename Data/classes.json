@@ -1090,7 +1090,7 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "Heromart, 2020 Calendar",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/830004811255513099/Underworld_Chronomancer_Class_Chart.png"
     },
