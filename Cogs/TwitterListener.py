@@ -457,7 +457,7 @@ class TwitterCog(commands.Cog, BaseTools):
             daily_list = []
             while True:
                 try:
-                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(30)
+                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(30g)
 
                     print("> Tweets appending")  
                     for tweet in time_line:
@@ -474,7 +474,7 @@ class TwitterCog(commands.Cog, BaseTools):
 
                         print("in here?!")
                         # Checks if it isn't alina then don't do any daily gift analysis
-                        if user_name != "Alina_AE" or user_name != "BloomAutist47":
+                        if user_name != "Alina_AE":
                             tweet_list.append([tweet.id, tweet.user.id_str, user_name])
                             print("> nil", end=" ")
                             continue
