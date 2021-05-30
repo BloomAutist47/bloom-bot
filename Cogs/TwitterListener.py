@@ -18,7 +18,7 @@ class TwitterCog(commands.Cog, BaseTools):
 
         self.twitter_user_list = [
             "Alina_AE",
-            # "BloomAutist47"
+            # "BloomAutist47",
             "Kotaro_AE",
             "notdarkon",
             "asukaae",
@@ -40,7 +40,8 @@ class TwitterCog(commands.Cog, BaseTools):
         ]
 
         self.gift_checks = [
-            "birthday"
+            "celebrating",
+            "birthday",
             "Now available",
             "BONUS gift!",
             "bonus gift",
@@ -474,14 +475,15 @@ class TwitterCog(commands.Cog, BaseTools):
                             BaseProgram.twitter_logs[tweet.user.id_str].append(tweet.id)
 
                         print("in here?!")
-                        # Checks if it isn't alina then don't do any daily gift analysis
-                        if user_name != "Alina_AE":
-                            tweet_list.append([tweet.id, tweet.user.id_str, user_name])
-                            print("> nil", end=" ")
-                            continue
-                        else:
-                            print(">>>>>>>>>>> Passed")
-                            pass
+                        if BaseProgram.lock_read == False:
+                            # Checks if it isn't alina then don't do any daily gift analysis
+                            if user_name != "Alina_AE":
+                                tweet_list.append([tweet.id, tweet.user.id_str, user_name])
+                                print("> nil", end=" ")
+                                continue
+                            else:
+                                print(">>>>>>>>>>> Passed")
+                                pass
 
                         tweet_text = tweet.full_text.lower()
                         print("ait lad")
