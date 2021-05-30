@@ -457,7 +457,7 @@ class TwitterCog(commands.Cog, BaseTools):
             daily_list = []
             while True:
                 try:
-                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(30g)
+                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(30)
 
                     print("> Tweets appending")  
                     for tweet in time_line:
