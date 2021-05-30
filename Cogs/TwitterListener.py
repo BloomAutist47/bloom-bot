@@ -40,6 +40,7 @@ class TwitterCog(commands.Cog, BaseTools):
         ]
 
         self.gift_checks = [
+            "birthday"
             "Now available",
             "BONUS gift!",
             "bonus gift",
