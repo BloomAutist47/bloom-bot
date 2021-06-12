@@ -8777,6 +8777,15 @@
             "text": "\n",
             "time": "12 June 2021 | 07:30 PM ",
             "is_video": false
+        },
+        "ny4pzq": {
+            "author": "TheKelseyOfKells",
+            "title": "AQW CPU taxing??",
+            "link": "https://www.reddit.com/r/AQW/comments/ny4pzq/aqw_cpu_taxing/",
+            "image": null,
+            "text": "I\u2019ve recently installed AQW on my pc to relive a blast of 2010 nostalgia and noticed that the game lags. A lot. Gameplay gets slowed down, my abilities don\u2019t fire, cutscenes run at a mind blowing 5 FPS.\n\nI checked task manager during one of these frequent lag spikes and found that AQW is using close to 60%-70% of my CPU. Surely a 2D flash game from 2009 can\u2019t be more CPU taxing than Destiny 2 or Black Desert.\n\nIs this a common issue?\nI\u2019m using the Artix Launcher version of the game (I don\u2019t think there\u2019s another version) and I\u2019m running an R7 3750H CPU\n",
+            "time": "12 June 2021 | 07:31 PM ",
+            "is_video": false
         }
     }
 }
