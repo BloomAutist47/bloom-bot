@@ -10496,6 +10496,15 @@
             "text": "Hi, Me and a Friend developed an AQLite Launcher called AquaStar, and we use the same .swf from Spider and we added a bunch of quality of life improvements on the browser side. There is support for screenshot key (also for char pages), keybindings for usefull pages like the Wiki, design notes, account settings and char pages, and even support for playing in multiple windows, for alt accounts, or opening the original game (the non-aqlite, pure version) in another window. \n\nOur original goal was to bring Aqlite for linux, as browser support died, but we achieved so much more... We can now bring AQLite to Linux, the 32 bit variations of windows and linux, and even ARM! As we dont have a Mac for compiling, we cant provide a mac download, but **if you desire a mac version, we show how to compile one for yourself!** so dont give your hopes up!\n\nWe recently achieved version 1.0, and its all open sourced in github. Any problems or suggestions, just open an Issue there or send a message to me or u/askelam. We hope to save someone from having to go back to windows for aqlite or from staying in the artix game launcher (no aqlite) in their native platform.  \n\n\n**TL.DR -** Aquastar tries to bring AQLite and more QoL outside of the game to windows and other platforms. Links to download bellow.\n\n[Aquastar Download page](https://github.com/aquaspy/AquaStar/releases), exe files for windows, appimages for linux. Exe is an installer, so it can show up in windows menu later and AppImages are a local executable, just run it. Also, i386 versions are the same as 32 bits, if needed.\n",
             "time": "23 June 2021 | 12:56 AM ",
             "is_video": false
+        },
+        "o5sb6y": {
+            "author": "cacodaemoon",
+            "title": "HELP ME TO PICK SOMETHING FOR MY IODA",
+            "link": "https://www.reddit.com/r/AQW/comments/o5sb6y/help_me_to_pick_something_for_my_ioda/",
+            "image": null,
+            "text": "I'm torn between these four items. Can you please vote which is a wiser choice?\n\n[View Poll](https://www.reddit.com/poll/o5sb6y)\n",
+            "time": "23 June 2021 | 01:21 AM ",
+            "is_video": false
         }
     }
 }
