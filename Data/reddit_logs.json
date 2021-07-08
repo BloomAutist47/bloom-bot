@@ -13304,6 +13304,15 @@
             "text": "Okay, so it's really just a work in progress which I started tonight.\n\nThe temporary link is https://aqwwiki.tumblr.com/, but it will soon become https://aqwwiki.net\n\nEverything is basic so far, but I have been adding the links manually.  You guys can help me out, too, I have a discord for it, if this is allowed. https://discord.gg/AzVKwmCs\n\nAnyway, I have just been using basic html since I haven't coded anything in ages. The format for items is as followed:\n\n\n\n\t\t<li><a href=\"http://aqwwiki.wikidot.com/1-dimensional-armor\">1 Dimensional Armor</a>\n\t\t</li>\nThe images for tagging, such as rare, ac, legend, etc are hosted on imgur and you can add them in like this: \n\n<li><a href=\"http://aqwwiki.wikidot.com/13th-claws-suit-ac\">13th Claws Suit (AC)</a>\n\t\t\t<img src=\"https://i.imgur.com/gViUiDt.png\">\n\t\t\t<img src=\"https://i.imgur.com/UDvSYtn.png\">\n\t\t</li>\n\n<img src=\"https://i.imgur.com/q31HQGa.png\"> [PSEUDO TAG LINK]\n <img src=\"https://i.imgur.com/gViUiDt.png\"> [AC TAG LINK]\n <img src=\"https://i.imgur.com/QmVNWPz.png\"> [LEGEND TAG LINK]\n <img src=\"https://i.imgur.com/UDvSYtn.png\"> [RARE TAG LINK]\n  <img src=\"https://i.imgur.com/zorAJ7l.png\"> [SPECIAL TAG LINK]\n\nI have yet to make one for temporary, but will in the future. \n\nIf anyone wishes to help help me out and send me items lists to add, feel free to do so. I am currently making my way through the armors. Also, if anyone knows a better way to do this, feel free to let me know, so I don't spend way too many hours on this. ^^\n",
             "time": "08 July 2021 | 05:15 PM ",
             "is_video": false
+        },
+        "og48hr": {
+            "author": "KingStaal",
+            "title": "Dream team did the 3 new ultras in 8 mins. New record?",
+            "link": "https://www.reddit.com/r/AQW/comments/og48hr/dream_team_did_the_3_new_ultras_in_8_mins_new/",
+            "image": "https://i.redd.it/gvd8navvqy971.png",
+            "text": "\n",
+            "time": "08 July 2021 | 06:08 PM ",
+            "is_video": false
         }
     }
 }
