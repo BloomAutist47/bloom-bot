@@ -527,6 +527,15 @@
             "text": "Yo I have a concern.\n\nI'm a Mac user, I can't just run .exe files just like that, and in my case I have to run them through Wine which is used mainly for .exe files that would otherwise not even be recognizable in my device.   \nThe thing is, when I try running that through wine it won't even start, and it won't even work through a media player I've been using to run Cetera, that old aqw botter no one's using now.\n\nNow this next thing might sound like I'm asking too much n stuff, and maybe I am, but I see two options:  \n1. I've noticed one difference between the two, and it's that Cetera, old as it is, is one compact .exe file, rather than one entire folder with the client and other stuff like Grimoire/Grimlite (as I said, I tried running them so I kinda remember that), and with that being said, maybe Cetera works for me because it's one file with all the content to be run, and maybe Grimoire/Grimlite won't work because the client file needs all the other files to be present in order to run but somehow Mac can't do that, starting with the fact that's an .exe file we're talking about and that a media player can only run one file at a time in one session and won't access multiple ones like you'd expect. Basically my suggestion here is **tryna turn the entire Grimoire/Grimlite folder into one .exe file with everything inside**, if that's possible though. And I think that's the easier one of the two because my next suggestion is\n\n2. **Directly trying to make Grimoire/Grimlite compatible with Mac, maybe as a .dmg or something**. It would be really nice but I really don't know how this would work, since to my understanding Apple in general has always been really like \"official\", and maybe there'd be licence stuff going on and such, however if this turned out ok it'd be the best out of the two.\n\nI'm talking on behalf of all Mac users who been tryna bot but can't due to all bots being mostly .exes, yeah we exist, sorry.\n",
             "time": "09 July 2021 | 01:15 AM ",
             "is_video": false
+        },
+        "ogm2g4": {
+            "author": "SULT4K1LL3R",
+            "title": "Is adventurequest.life website crashed?",
+            "link": "https://www.reddit.com/r/AutoQuestWorlds/comments/ogm2g4/is_adventurequestlife_website_crashed/",
+            "image": null,
+            "text": " For me the site is giving 404 errors, and what is your disagreement?\n",
+            "time": "09 July 2021 | 02:22 AM ",
+            "is_video": false
         }
     },
     "133sAppreciationClub": {
