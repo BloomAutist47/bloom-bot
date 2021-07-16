@@ -667,7 +667,7 @@
             "obtain_difficulty": "Premium"
         },
         "type": "available",
-        "location": "(RARE)",
+        "location": "Merge HeroPoint in /heromart",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622665065529354/Chronomancer_Class_Chart.png"
     },
     "Chrono Assassin": {
@@ -726,7 +726,7 @@
             "obtain_difficulty": "Premium"
         },
         "type": "available",
-        "location": "(RARE)",
+        "location": "Merge HeroPoint in /heromart",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622096440852530/Chrono_DragonKnight_Class_Chart.png"
     },
     "ChronoCommander": {
@@ -757,7 +757,7 @@
             "obtain_difficulty": "Premium"
         },
         "type": "available",
-        "location": "(RARE)",
+        "location": "Merge HeroPoint in /heromart",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615953994711080/ChronoCommander_Class_Chart.png"
     },
     "ChronoCorruptor": {
@@ -2282,7 +2282,7 @@
             "obtain_difficulty": "Premium"
         },
         "type": "available",
-        "location": "Heromart, 2016 Calendar",
+        "location": "Merge HeroPoint in /heromart",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622111951388722/Infinity_Knight_Class_Chart.png"
     },
     "Legendary Hero": {
@@ -3570,7 +3570,7 @@
             "obtain_difficulty": "Premium"
         },
         "type": "available",
-        "location": "(RARE)",
+        "location": "Merge HeroPoint in /heromart",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622119022460968/TimeKiller_Class_Chart.png"
     },
     "Timeless Dark Caster": {
