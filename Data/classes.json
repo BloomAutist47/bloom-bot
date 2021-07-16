@@ -98,6 +98,32 @@
         "location": "Quest, /icedungeon",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865616211383681054/Frost_SpiritReaver_Class_Chart.png"
     },
+    "Psionic MindBreaker": {
+        "acronym": "PMB",
+        "awe_enh": "Spiral Carve",
+        "duplicates": [],
+        "enh": "wizard",
+        "note": "",
+        "wiki": "http://aqwwiki.wikidot.com/psionic-mindbreaker",
+        "stats": [
+            4,
+            4,
+            2,
+            5,
+            null,
+            3,
+            4
+        ],
+        "bludrut": 0,
+        "acquire": {
+            "ac_version": "Yes",
+            "irl_money": true,
+            "obtain_difficulty": "Premium"
+        },
+        "type": "available",
+        "location": "12k AC, Bonus Package",
+        "discord_url": ""
+    },
     "Arachnomancer": {
         "acronym": "Arach",
         "awe_enh": "Spiral Carve or Mana Vamp",
@@ -667,8 +693,8 @@
             "obtain_difficulty": "Premium"
         },
         "type": "available",
-        "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622665065529354/Chronomancer_Class_Chart.png"
+        "location": "Merge HeroPoint in /heromart",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865624561278255134/Chronomancer_Class_Chart.png"
     },
     "Chrono Assassin": {
         "acronym": "CA",
@@ -726,8 +752,8 @@
             "obtain_difficulty": "Premium"
         },
         "type": "available",
-        "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622096440852530/Chrono_DragonKnight_Class_Chart.png"
+        "location": "Merge HeroPoint in /heromart",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865624547168616448/Chrono_DragonKnight_Class_Chart.png"
     },
     "ChronoCommander": {
         "acronym": "CC, ChronoCom, ChComm, CCmd",
@@ -757,7 +783,7 @@
             "obtain_difficulty": "Premium"
         },
         "type": "available",
-        "location": "(RARE)",
+        "location": "Merge HeroPoint in /heromart",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615953994711080/ChronoCommander_Class_Chart.png"
     },
     "ChronoCorruptor": {
@@ -789,7 +815,7 @@
         },
         "type": "available",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622101788459018/ChronoCorruptor_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865624554185031721/ChronoCorruptor_Class_Chart.png"
     },
     "Imperial Chunin": {
         "acronym": "IC, ImC",
@@ -2282,8 +2308,8 @@
             "obtain_difficulty": "Premium"
         },
         "type": "available",
-        "location": "Heromart, 2016 Calendar",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622111951388722/Infinity_Knight_Class_Chart.png"
+        "location": "Merge HeroPoint in /heromart",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865624566328328222/Infinity_Knight_Class_Chart.png"
     },
     "Legendary Hero": {
         "acronym": "LH",
@@ -3570,8 +3596,8 @@
             "obtain_difficulty": "Premium"
         },
         "type": "available",
-        "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622119022460968/TimeKiller_Class_Chart.png"
+        "location": "Merge HeroPoint in /heromart",
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865624573712924722/TimeKiller_Class_Chart.png"
     },
     "Timeless Dark Caster": {
         "acronym": "TDC, Timeless, ADC, MDC",
