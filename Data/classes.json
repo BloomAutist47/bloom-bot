@@ -640,7 +640,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615932894609428/Chaos_Slayer_Class_Chart.png"
     },
     "Chronomancer": {
-        "acronym": "(None), CP",
+        "acronym": "CP",
         "awe_enh": "Spiral Carve",
         "duplicates": [
             "Chronomancer Prime"
@@ -668,7 +668,7 @@
         },
         "type": "rare",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615966879875072/Chronomancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865620586704535552/Chronomancer_Class_Chart.png"
     },
     "Chrono Assassin": {
         "acronym": "CA",
@@ -3487,7 +3487,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865616665819217920/StoneCrusher_Class_Chart.png"
     },
     "The Collector": {
-        "acronym": "(None), Collector",
+        "acronym": "Collector",
         "awe_enh": "Spiral Carve",
         "duplicates": [],
         "enh": "wizard",
