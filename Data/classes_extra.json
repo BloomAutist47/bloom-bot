@@ -20,6 +20,7 @@
         "bludrut": 6
     },
     "Blaze Binder": {
+        "acronym": "FLS",
         "stats": [
             "null",
             "null",
@@ -29,6 +30,9 @@
             "null",
             2
         ]
+    },
+    "Nechronomancer": {
+        "acronym": "NeC"
     },
     "MindBreaker": {
         "stats": [
@@ -142,6 +146,7 @@
         "location": "/curio, 6k AC, Speak to Chronis"
     },
     "Corrupted Chronomancer": {
+        "acronym": "TCM",
         "stats": [
             "null",
             "null",
@@ -153,11 +158,11 @@
         ]
     },
     "ChronoCorruptor": {
-        "acronym": "CcoR"
+        "acronym": "CcoR, CCP"
     },
     "Underworld Chronomancer": {
         "type": "available",
-        "acronym": "UC",
+        "acronym": "UC, OCM",
         "stats": [
             "null",
             "null",
@@ -180,7 +185,7 @@
         ]
     },
     "ChronoCommander": {
-        "acronym": "ChronoCom, ChComm",
+        "acronym": "ChronoCom, ChComm, CCmd",
         "stats": [
             "null",
             "null",
@@ -192,6 +197,7 @@
         ]
     },
     "Chronomancer": {
+        "acronym": "CP",
         "stats": [
             "null",
             "null",

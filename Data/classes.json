@@ -442,7 +442,7 @@
       "acronym":"BB",
       "awe_enh":"Spiral Carve",
       "duplicates":[
-         
+         "FireLord Summoner"
       ],
       "enh":"wizard",
       "note":"",
@@ -662,7 +662,7 @@
       "discord_url":"https://cdn.discordapp.com/attachments/806920895934365766/830003199440191537/Chaos_Slayer_Class_Chart.png"
    },
    "Chronomancer":{
-      "acronym":"(None)",
+      "acronym":"",
       "awe_enh":"Spiral Carve",
       "duplicates":[
          "Chronomancer Prime"
