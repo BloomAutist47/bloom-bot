@@ -206,7 +206,7 @@
         ]
     },
     "Chronomancer": {
-        "acronym": "CP",
+        "acronym": "CP, CMP",
         "type": "available",
         "stats": [
             "null",

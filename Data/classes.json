@@ -666,9 +666,9 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865620586704535552/Chronomancer_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622106934083645/Chronomancer_Class_Chart.png"
     },
     "Chrono Assassin": {
         "acronym": "CA",
@@ -725,9 +725,9 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615946622173204/Chrono_DragonKnight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622096440852530/Chrono_DragonKnight_Class_Chart.png"
     },
     "ChronoCommander": {
         "acronym": "CC, ChronoCom, ChComm, CCmd",
@@ -756,7 +756,7 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "(RARE)",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615953994711080/ChronoCommander_Class_Chart.png"
     },
@@ -787,9 +787,9 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615959783505950/ChronoCorruptor_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622101788459018/ChronoCorruptor_Class_Chart.png"
     },
     "Imperial Chunin": {
         "acronym": "IC, ImC",
@@ -2281,9 +2281,9 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "Heromart, 2016 Calendar",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865616315356413982/Infinity_Knight_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622111951388722/Infinity_Knight_Class_Chart.png"
     },
     "Legendary Hero": {
         "acronym": "LH",
@@ -3569,9 +3569,9 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "(RARE)",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865616696135385138/TimeKiller_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865622119022460968/TimeKiller_Class_Chart.png"
     },
     "Timeless Dark Caster": {
         "acronym": "TDC, Timeless, ADC, MDC",
