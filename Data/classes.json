@@ -666,7 +666,7 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "(RARE)",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865620586704535552/Chronomancer_Class_Chart.png"
     },
@@ -725,7 +725,7 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "(RARE)",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615946622173204/Chrono_DragonKnight_Class_Chart.png"
     },
@@ -756,7 +756,7 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "(RARE)",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615953994711080/ChronoCommander_Class_Chart.png"
     },
@@ -787,7 +787,7 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "(RARE)",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615959783505950/ChronoCorruptor_Class_Chart.png"
     },
@@ -2281,7 +2281,7 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "Heromart, 2016 Calendar",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865616315356413982/Infinity_Knight_Class_Chart.png"
     },
@@ -3569,7 +3569,7 @@
             "irl_money": true,
             "obtain_difficulty": "Premium"
         },
-        "type": "rare",
+        "type": "available",
         "location": "(RARE)",
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865616696135385138/TimeKiller_Class_Chart.png"
     },
