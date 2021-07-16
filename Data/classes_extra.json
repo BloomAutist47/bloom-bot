@@ -10,10 +10,12 @@
         "acronym": "DMoM"
     },
     "TimeKiller": {
-        "type": "available"
+        "type": "available",
+        "location": "Merge HeroPoint in /heromart"
     },
     "Infinity Knight": {
-        "type": "available"
+        "type": "available",
+        "location": "Merge HeroPoint in /heromart"
     },
     "StoneCrusher": {
         "acronym": "IT"
@@ -190,7 +192,8 @@
             "null",
             "null",
             "null"
-        ]
+        ],
+        "location": "Merge HeroPoint in /heromart"
     },
     "ChronoCommander": {
         "acronym": "ChronoCom, ChComm, CCmd",
@@ -203,7 +206,8 @@
             "null",
             "null",
             "null"
-        ]
+        ],
+        "location": "Merge HeroPoint in /heromart"
     },
     "Chronomancer": {
         "acronym": "CP, CMP",
@@ -216,7 +220,8 @@
             "null",
             "null",
             "null"
-        ]
+        ],
+        "location": "Merge HeroPoint in /heromart"
     },
     "Lycan": {
         "stats": [
