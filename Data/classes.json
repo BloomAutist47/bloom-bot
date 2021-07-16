@@ -640,7 +640,7 @@
         "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/865615932894609428/Chaos_Slayer_Class_Chart.png"
     },
     "Chronomancer": {
-        "acronym": "CP",
+        "acronym": "CP, CMP",
         "awe_enh": "Spiral Carve",
         "duplicates": [
             "Chronomancer Prime"
