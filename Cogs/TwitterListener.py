@@ -444,7 +444,7 @@ class TwitterCog(commands.Cog, BaseTools):
         return
 
 
-    @tasks.loop(minutes=10)
+    @tasks.loop(minutes=30)
     async def tweet_looper(self):
         if not self.first:
             await asyncio.sleep(10)

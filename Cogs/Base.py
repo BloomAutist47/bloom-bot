@@ -727,6 +727,11 @@ class BaseTools(BaseProgram):
             if not guild_allowed:
                 return False
 
+        if "auqw_privilege" in mode:
+            guild_allowed = await self.auqw_guild_privilege(ctx)
+            if not guild_allowed:
+                return False
+
         if "role_privilege" in mode:
             priveleged = await self.check_role_privilege(ctx, command_name)
             if not priveleged:
@@ -749,6 +754,20 @@ class BaseTools(BaseProgram):
         except:
             return False
         if int(guild_id) in BaseProgram.settings["EvaluatorSettings"]["guild_privilege"]:
+            return True
+        else:
+            return False
+
+    async def auqw_guild_privilege(self, ctx):
+        """ Description: Checks if guild is the server is auqw
+            Arguments:
+                [ctx] - context
+        """
+        try:
+            guild_id = ctx.guild.id
+        except:
+            return False
+        if int(guild_id) == 811305081063604284:
             return True
         else:
             return False
@@ -1243,12 +1262,14 @@ class BaseCog(commands.Cog, BaseTools):
                "`;swf` ➣ Converts .xml file into readable format.\n"\
                "`;swfhelp` ➣ Shows help abput ;swf command.\n"\
                "`;credits` ➣ Reveals the credits.\n"
-        embedVar.add_field(name="Verified Boat Maker Commands", inline=False, 
-            value="`;board` ➣ Shows boat work in-progress list. Everyone can use this even non-verified people..\n\n"\
-                  "`;board add boat_name, boat_name, etc...` ➣ Adds WIP to the Bulletin board. Ex. \";board add Legion Revenant Bot\"\n\n"\
-                  "`;board rem index` ➣ Deletes the WIP item from the board. Ex: \";board rem 1\". Removes item index 1."
+        auqw2 = await self.allow_evaluator(ctx, "auqw_privilege")
+        if auqw2:
+            embedVar.add_field(name="Verified Boat Maker Commands", inline=False, 
+                value="`;board` ➣ Shows boat work in-progress list. Everyone can use this even non-verified people..\n\n"\
+                      "`;board add boat_name, boat_name, etc...` ➣ Adds WIP to the Bulletin board. Ex. \";board add Legion Revenant Bot\"\n\n"\
+                      "`;board rem index` ➣ Deletes the WIP item from the board. Ex: \";board rem 1\". Removes item index 1."
 
-            )
+                )
 
 
         embedVar.description = desc
