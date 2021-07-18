@@ -104,6 +104,10 @@
             "server_noice_role": 807586780324954123,
             "event_channel_id": 811309992727937034
         },
+        "862736428256854056": {
+            "server_name": "Cetera",
+            "server_privilage": "Homie",
+        },
         "766627412179550228": {
             "server_name": "Buildyard",
             "server_privilage": "Homie",
