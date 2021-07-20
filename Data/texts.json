@@ -48,7 +48,7 @@
       },
       "grimfix":{
          "title":"How to fix Grimoire.",
-         "description":"Does your grim have problem? Browse here and see common fixes.",
+         "description":"Does your grim have problems? Browse here and see common fixes.",
          "content":{
             "1.) Delete 133spider's mms.cfg fix":{
                "text":"🔹**Description**: 133spider released a fix to enable flash player gain.\n🔹**Symptoms**: Grimoire is opening but not loading.\n🔹**Solution**: Delete mms.cfg if you did the spider fix:```CSS\nC:\\Windows\\SysWOW64\\Macromed\\Flash\\mms.cfg \nC:\\Windows\\System32\\Macromed\\Flash\\mms.cfg```\n"
@@ -76,7 +76,7 @@
                "image":"https://cdn.discordapp.com/attachments/805367955923533845/824146799916351528/unknown.png"
             },
             "8.) Load bot error fix": {
-               "text":"🔹**Description**: Grim died or an error appears when you use `Load Bot` on Grimlite and clicked `Start`.\n🔹**Solution**: Open the Bot Manager once before using `Load Bot` and clicking `Start`.\n"
+               "text":"🔹**Description**: An error appears when you use `Load Bot` on Grimlite and clicked `Start`.\n🔹**Solution**: Open the Bot Manager once before using `Load Bot` and clicking `Start`.\n"
             }
          }
       },
