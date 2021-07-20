@@ -216,7 +216,7 @@ class TextUploaders(commands.Cog, BaseTools):
 
         desc = ""
         count = 0
-        text_count = 1
+        text_count = 0
         start_shit = False
         embedVar = self.embed_single(BaseProgram.texts["Texts"][textfile]["title"], BaseProgram.texts["Texts"][textfile]["description"] + f"\n[Click here to go to the Top]({start_link_1})")
         for title in index:
