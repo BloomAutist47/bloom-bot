@@ -76,7 +76,7 @@
                "image":"https://cdn.discordapp.com/attachments/805367955923533845/824146799916351528/unknown.png"
             },
             "8.) Load bot error fix": {
-               "text":"🔹**Description**: Grim died or an error appears when you use `Load Bot` on Grimlite.\n🔹**Solution**: Run `updater.exe` and update your grim. If that won't work, don't use `Load Bot` until you opened the Bot Manager once.\n"
+               "text":"🔹**Description**: Grim died or an error appears when you use `Load Bot` on Grimlite and clicked `Start`.\n🔹**Solution**: Open the Bot Manager once before using `Load Bot` and clicking `Start`.\n"
             }
          }
       },
