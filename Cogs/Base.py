@@ -1386,6 +1386,15 @@ class BaseCog(commands.Cog, BaseTools):
             BaseProgram.database_updating = False
             return
 
+        if mode == "boaters":
+            BaseProgram.database_updating = True
+            await ctx.send(r"\>Updating `boaters.jsons`")
+            self.git_read("boaters")
+            await ctx.send(r"\>Bloom Bot `boaters.jsons` updated!")
+            BaseProgram.database_updating = False
+            return
+
+
         if mode == "all":
             BaseProgram.database_updating = True
             await ctx.send(r"\>Updating `all .jsons`")
