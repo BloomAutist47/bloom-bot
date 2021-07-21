@@ -19100,6 +19100,15 @@
             "text": "Hey guys i just got Yami no ronin class today im so happy!!!!\n",
             "time": "22 July 2021 | 05:19 AM ",
             "is_video": false
+        },
+        "op1b2i": {
+            "author": "Elfranxios",
+            "title": "Does damage boost stack?",
+            "link": "https://www.reddit.com/r/AQW/comments/op1b2i/does_damage_boost_stack/",
+            "image": null,
+            "text": "I always believe that damage boost stack like with all damage boost and the specific one like BLoD (75% only for undead) stacks. \nSo thinking maybe AFDL and BLoD stacks the damage boost. But the thing is just found this thing out from the patch note.\n\nDo passive boosts from gear stack?  \n\nNo, You will only benefit from the last item of each type of boost you equip. So for example if you equip a +5% damage item first, then equip a +3% damage item, you're only going to benefit from the +3% bonus and not any damage boost from before. \n\nHowever, different boosts can be used together (ex: reputation boost from cape, damage boost from weapon, gold boost from helm) and active timed boosts will stack with gear boosts.\n\nhttps://www.aq.com/lore/Guides/AQWBoosts\n",
+            "time": "22 July 2021 | 07:04 AM ",
+            "is_video": false
         }
     }
 }
