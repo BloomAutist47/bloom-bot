@@ -96,6 +96,9 @@ class UtilsCog(commands.Cog, BaseTools):
 
             try:
                 del self.boaters["works"][author]["items"][ind]
+                if self.boaters["works"][author]["items"] == []:
+                    del self.boaters["works"][author]
+
             except:
                 await ctx.send(f"\> Item index [{ind}] does not exists for you.")
                 return
