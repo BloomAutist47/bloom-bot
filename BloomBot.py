@@ -124,7 +124,7 @@ async def on_ready():
     #                 )
 
     # await Bot.change_presence(status=discord.Status.online, activity=game)
-    await Bot.change_presence(activity=discord.Game(name="Playing AutoQuest Worlds! An AQW bot developed for the community. Smyess."))
+    await Bot.change_presence(activity=discord.Game(name="Get Bots here -> https://auqw.tk \nNo longer will you have to use shitty coomlight bots."))
     RPC = Presence(CLIEND_ID)
     RPC.connect()
     RPC.update(
