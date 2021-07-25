@@ -20135,6 +20135,15 @@
             "text": " \n\n \n\n### Calendar Class Updates + Bug Fixes for July 23, 2021\n\n**Corrupted/Underworld Chronomancer Class bug fixes**\n\n* **Fixed a bug on Underworld Chronomancer that caused Hourglass of Paradise to not work properly**\n* Fixed a bug on Hourglass of Power that caused Dodge to be lowered instead of increased\n* Removed an aura block on Foresee Corruption, increased cooldown to 60 seconds\n* Updated several consumable descriptions\\*\n\n**For those who did not know:**\n\nUnderworld Chronomancer had a bug in which when Hourglass of Paradise was used it couldn't deactivate it and could thus always keep the paradise buffs without removing them. Now you can no longer loop and you're forced to remove the buffs unless you want your DPS to be garbage for garbage compared to . CTT skill would negate some of the damage loss from the paradise self drawbacks since Its loopable and Timepiece of madness would almost guarantee a critical hit despite the crit chance reduction.\n\nHourglass of Paradise is 99% worthless on CCM and now 99% for UCM too (unless PvP but Idk who uses UCM for that lol). \n\n&#x200B;\n\n**All hail Hourglass of Transience!**\n",
             "time": "25 July 2021 | 07:19 AM ",
             "is_video": false
+        },
+        "or1pd9": {
+            "author": "Chibichibichibiko",
+            "title": "Returning player",
+            "link": "https://www.reddit.com/r/AQW/comments/or1pd9/returning_player/",
+            "image": null,
+            "text": "So I recently got back onto AQW (pain to get account back)\n\nI basically have no clue what I'm doing. \n\nI played back in 2007, and have a lot of stuff; I was wondering if the items I have are still rare.\n\n[https://account.aq.com/CharPage?id=sarahdohmin](https://account.aq.com/CharPage?id=sarahdohmin)\n",
+            "time": "25 July 2021 | 08:43 AM ",
+            "is_video": false
         }
     }
 }
