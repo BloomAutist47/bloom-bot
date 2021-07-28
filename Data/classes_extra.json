@@ -11,7 +11,16 @@
     },
     "TimeKiller": {
         "type": "available",
-        "location": "Merge HeroPoint in /heromart"
+        "location": "Merge HeroPoint in /heromart",
+        "stats": [
+            4,
+            3,
+            4,
+            6,
+            5,
+            2,
+            5
+        ]
     },
     "Infinity Knight": {
         "type": "available",
