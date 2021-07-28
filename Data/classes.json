@@ -3578,13 +3578,13 @@
         "note": "",
         "wiki": "http://aqwwiki.wikidot.com/timekiller",
         "stats": [
+            4,
             3,
-            3,
-            0,
-            0,
+            4,
+            6,
+            5,
             2,
-            0,
-            3
+            5
         ],
         "tags": [
             "heromart"
@@ -3597,7 +3597,7 @@
         },
         "type": "available",
         "location": "Merge HeroPoint in /heromart",
-        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/869793559568584714/TimeKeeper_Class_Chart.png"
+        "discord_url": "https://cdn.discordapp.com/attachments/806920895934365766/869800850380431370/TimeKeeper_Class_Chart.png"
     },
     "Timeless Dark Caster": {
         "acronym": "TDC, Timeless, ADC, MDC",
