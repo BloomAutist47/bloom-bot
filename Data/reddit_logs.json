@@ -23420,6 +23420,15 @@
             "text": "\n",
             "time": "04 August 2021 | 04:15 AM ",
             "is_video": false
+        },
+        "oxl06v": {
+            "author": "VirucS",
+            "title": "How do I loop SWoT Nuke?",
+            "link": "https://www.reddit.com/r/AQW/comments/oxl06v/how_do_i_loop_swot_nuke/",
+            "image": null,
+            "text": "I'm still confused as to why I'm not able to loop the damage. Idk if It's still possible to loop it or not present day.\n\n&#x200B;\n\nWhat I know: The principle is that you build up your damage with the combo and by the time you hit the nuke, there is a delay before the Dot comes. At that time, you can reapply the rift which when the Dot Nuke arrives, it would be counted for the next nuke. Theoretically, if you pull this right, your nuke would exponentially increase in damage. However, I'll I'm getting is a constant 20 - 40k damage\n\n&#x200B;\n\nWhat I'm doing and combo I'm using: Starter (2-3-5-2-4-3) then alternate between Single Nuke(5-4-3-2)  and double (5-3-4-2-3)\n\n&#x200B;\n\nI can see the Rift apply before the Dot however it isn't increasing. I'm attempting this solo so Idk if I need support or anything.\n",
+            "time": "04 August 2021 | 04:32 AM ",
+            "is_video": false
         }
     }
 }
