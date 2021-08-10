@@ -119,13 +119,11 @@ class UtilsCog(commands.Cog, BaseTools):
             for author in self.boaters["works"]:
                 if not self.boaters["works"]:
                     continue
-                if inline == 2:
-                    inline = 0
-                    embedVar.add_field(name=st, value=st, inline=True)
+
                 item_list = self.boaters["works"][author]["items"]
                 value = '\n'.join([f"[{item_list.index(i)}] " + i for i in item_list])
-                embedVar.add_field(name=self.boaters["works"][author]["name"], value="```" + value + "```", inline=True)
-                inline += 1
+                embedVar.add_field(name=self.boaters["works"][author]["name"], value="```" + value + "```", inline=False)
+
                 there_is_work = True
             embedVar.set_footer(text="Add/Rem commands are <@811305081097814073> privilege.")
             if not there_is_work:
