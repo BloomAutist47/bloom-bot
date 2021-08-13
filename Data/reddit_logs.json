@@ -27659,6 +27659,15 @@
             "text": "Is there any bank pets that i can get for cheap ?\n",
             "time": "13 August 2021 | 10:23 PM ",
             "is_video": false
+        },
+        "p3vz8t": {
+            "author": "-Aura_Knight-",
+            "title": "SSoT/SWoT Changes",
+            "link": "https://www.reddit.com/r/AQW/comments/p3vz8t/ssotswot_changes/",
+            "image": null,
+            "text": "**Class Changes for August 13, 2021**\n\n**ShadowWalker/Stalker/Weaver of Time**\n\n*ShadowWalker greatly undershot our balance goals last week so we\u2019re giving it a bit more love. These changes should bring scaling back to its Umbral Stigma DoT while also keeping its power level under control in groups. We\u2019ve also made some adjustments to allow for better ease of use.*\n\nPassive \n\n- Shadows of Time:\n\n- Now increases outgoing damage by 100%\n\n- Now unlocks at rank 4 \n\nPassive - Harbinger of Shadows:\n\n- Now unlocks at rank 10\n\nRift of Shadows:\n\n- Base damage decreased\n\n- Cooldown: 1.5 seconds > 1.2 seconds\n\n- Chaos Rift duration: 4 seconds > 8 seconds\n\nExude/Devour:\n\n- Base damage decreased\n\n- Exude DoT damage decreased\n\n- Devour HoT amount decreased\n\nVendetta/Umbral Stigma\n\n- Base damage increased\n\n- Umbral Stigma DoT damage reduced\n\n- Mana Cost: 20 > 30\n\nSilhouette/Shadow Warp\n\n- Base damage decreased\n\n- Health Cost self DoT damage decreased\n\nTemporal Eclipse:\n\n- Turbulent Rift no longer increases damage taken\n",
+            "time": "13 August 2021 | 10:41 PM ",
+            "is_video": false
         }
     }
 }
