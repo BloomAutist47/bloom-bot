@@ -30116,6 +30116,15 @@
             "text": "Apologies if this kind of guide is not acceptable, but I have reported this bug to Artix Entertainment so they are already aware.  \n\n\nIt is possible to break the maximum stack count on a resource. Exactly how this works is unknown, but can be recreated fairly easily.  \n\n\nIn order to break the maximum stack of an item, all you have to do is the following:  \n\\- Have a pre-farmed stack that is BELOW the item cap count, and place it into your bank.  \n\\- Farm out enough of this resource so that if accepted, the total count of the item would exceed said stack.  \n\\- Once you have farmed enough to your liking, simply click accept.  \n\\- You will be faced with an unholy amount of \"This item couldn't be accepted because of it existing in the bank\" (or whatever it says, you know the drill).  \n\\- Simply keep a BUNCH of these windows open.  \n\\- Pull the already farmed stack out into your inventory ensuring you are not at the full count.  \n\\- Click accept again.  \n\\- Profit  ???  \n\n\nI found this while farming for Legion Rev. I hadn't accepted any of the Empowered Essence, and figured why not as I don't have NSoD. It flung over 50 warnings at me, so while they were open, I pulled 9 of them out of my bank. As I'd farmed past the x50 stack, it accepted the entire stack and added it to my already existing 9. At first I didn't think anything of it, as I didn't know that 50 was the max. After wiki'ing it to find out how to do the NSoD, I noticed it said the maximum was 50, which I immediately thought \"Holy paladins, that's an exploit and a half\".  \n\n\nHave fun, and if you exploit this, that's on you. I won't be, probably a ban-able behaviour.\n",
             "time": "19 August 2021 | 10:59 PM ",
             "is_video": false
+        },
+        "p7q8h7": {
+            "author": "RafieHazim",
+            "title": "I was bored so I decided to re-farm NSoD, I already have one about a year ago",
+            "link": "https://www.reddit.com/r/AQW/comments/p7q8h7/i_was_bored_so_i_decided_to_refarm_nsod_i_already/",
+            "image": "https://i.redd.it/69wkrxbgfei71.jpg",
+            "text": "\n",
+            "time": "19 August 2021 | 11:25 PM ",
+            "is_video": false
         }
     }
 }
