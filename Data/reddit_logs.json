@@ -30602,6 +30602,15 @@
             "text": "\n",
             "time": "20 August 2021 | 07:03 PM ",
             "is_video": false
+        },
+        "p8bwpp": {
+            "author": "LemonKeis",
+            "title": "Healing Potential/Healing Received Type Elixirs",
+            "link": "https://www.reddit.com/r/AQW/comments/p8bwpp/healing_potentialhealing_received_type_elixirs/",
+            "image": "https://preview.redd.it/brsft9qiaki71.png?width=346&format=png&auto=webp&s=e7c2cfb14839ebadec1324a4a9d4bf3f1a269b76",
+            "text": "I just noticed that whenever I use elixirs that boosts healing potential and/or healing received, they somehow don't appear on the spot for elixirs in the Character Overview. Character Overview the window that appears when you click \"c\" if you're not aware of it.  \n\n\n[This is how it looks like when I activated Might Tonic and Revitalize Elixir.](https://preview.redd.it/e2bb1p97aki71.png?width=347&format=png&auto=webp&s=1019669e94205c19ef9dc3739affb35ba1589709)\n\n&#x200B;\n\n[This is when I used Might Tonic and Angelic Elixir.](https://preview.redd.it/brsft9qiaki71.png?width=346&format=png&auto=webp&s=e7c2cfb14839ebadec1324a4a9d4bf3f1a269b76)\n\nRevitalize Elixir is one that does heal over time for 9 minutes. Angelic Elixir increases healing potential for 10 minutes. I relogged for both instances so I can actually check. I tried it on my other accounts too to see if it's just a visual bug on my main account, but the results were all the same. Since the healing potential/received type elixirs don't appear on the elixir spot, does that mean they don't actually work?\n",
+            "time": "20 August 2021 | 07:15 PM ",
+            "is_video": false
         }
     }
 }
