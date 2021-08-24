@@ -88,13 +88,10 @@
          "description":"Looking for AQW Boats or the Latest Grim? Look no further. Visit our portal site where we distribute the Grimoire application and various boats for it.\n\n**📕 Download Boats and Client here**: https://auqw.tk/",
          "numbering":false,
          "content":{
-            "📌 1.1 Download & Install GrimLite":{
-               "text":"-> Get `GrimLite_Updater.rar` from above. \n -> Extract with winrar/winzip to empty folder.\n-> Run `updater.exe`. It will download the latest GrimLite for you.\n-> Once finished downloading, run `Grimoire.exe`."
+            "📌 1. Download & Install Grimlite":{
+               "text":"-> Get `Grimlite Rev` from the portal. \n -> Extract with winrar/winzip to empty folder.\n-> Run `Grimoire.exe`."
             },
-            "📌 1.2 Download & Install Grimoire 1.7.8":{
-               "text":"-> Get `grim-3.8-pro-1.7.8-eol-patched.zip.rar` from above. \n -> Extract with winrar/winzip to empty folder.\n-> Run `Grimoire.exe`"
-            },
-            "📌 1.3. How to Extract rar files.":{
+            "📌 1.2. How to Extract rar files.":{
                "text":"-> If you already know how to extract a file, skip this step.\n-> To extract a file, you will need the WinRAR or the 7zip application\n> WinRAR Download Link: [Click here](https://www.win-rar.com/postdownload.html?&L=0)\n> 7zip Download Links: [Click here](https://www.7-zip.org/download.html)\n> Download whichever one you want.\n\n-> Find the `.rar` file in your Downloads folder.\n-> Double click to open it with WinRAR/7zip.\n-> Right click `..` and select Extract to a specified folder.\n-> Select a new empty folder on your computer and click Ok."
             },
             "📌 2. How to run Bots":{
