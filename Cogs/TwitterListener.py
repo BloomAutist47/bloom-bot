@@ -79,7 +79,8 @@ class TwitterCog(commands.Cog, BaseTools):
             "Void Auras",
             "5/10/20",
             "Spirit Orbs",
-            "Void Aura"
+            "Void Aura",
+            "Double quest rewards"
         ]
         self.black_list = [
             "Design Notes", "RT @"
@@ -467,18 +468,15 @@ class TwitterCog(commands.Cog, BaseTools):
 
                     print("> Tweets appending")  
                     for tweet in time_line:
-                        print("11111")
                         # check if the tweet alread exists
                         if tweet.user.id_str not in BaseProgram.twitter_logs:
                             BaseProgram.twitter_logs[tweet.user.id_str] = []
-                        print("fuckcks")
                         if tweet.id in BaseProgram.twitter_logs[tweet.user.id_str]:
                             print("> nope tweet", end=" ")
                             continue
                         else:
                             BaseProgram.twitter_logs[tweet.user.id_str].append(tweet.id)
 
-                        print("in here?!")
                         if BaseProgram.lock_read == False:
                             # Checks if it isn't alina then don't do any daily gift analysis
                             if user_name != "Alina_AE" or user_name != "BloomAutist47":
@@ -490,12 +488,10 @@ class TwitterCog(commands.Cog, BaseTools):
                                 pass
 
                         tweet_text = tweet.full_text.lower()
-                        print("ait lad")
                         self.is_double = False
                         got = False
                         got_2 = True
                         tweet_line = tweet.full_text
-                        print("tweet_line")
                         # Checks if wrong tweet
                         for i in self.black_list:
                             if i.lower() in tweet_text:
@@ -513,8 +509,9 @@ class TwitterCog(commands.Cog, BaseTools):
                             if i.lower() in tweet_text:
                                 self.is_double = True
                                 got = True
+                                print("DOUBLE YESS")
                                 break
-
+                        print(">NOT DOUBLE?!!")
                         if not self.is_double:
                             # Check if Daily Gift
                             for i in self.gift_checks:
