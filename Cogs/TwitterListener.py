@@ -63,6 +63,7 @@ class TwitterCog(commands.Cog, BaseTools):
         ]
 
         self.double_check = [
+            "Double quest rewards",
             "hour DOUBLE",
             "hour Drop",
             "DOUBLE Reputation",
@@ -80,7 +81,7 @@ class TwitterCog(commands.Cog, BaseTools):
             "5/10/20",
             "Spirit Orbs",
             "Void Aura",
-            "Double quest rewards"
+            
         ]
         self.black_list = [
             "Design Notes", "RT @"
@@ -481,7 +482,7 @@ class TwitterCog(commands.Cog, BaseTools):
                             # Checks if it isn't alina then don't do any daily gift analysis
                             if user_name != "Alina_AE" or user_name != "BloomAutist47":
                                 tweet_list.append([tweet.id, tweet.user.id_str, user_name])
-                                print("> nil", end=" ")
+                                print("> simple tweet", end=" ")
                                 continue
                             else:
                                 print(">>>>>>>>>>> Passed")
