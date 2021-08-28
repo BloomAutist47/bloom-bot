@@ -61,7 +61,9 @@ class TwitterCog(commands.Cog, BaseTools):
             "birthday gifts",
 
         ]
-
+        if BaseProgram.lock_read == True:
+            self.twitter_user_list = ["BloomAutist47"]
+            
         self.double_check = [
             "Double quest rewards",
             "hour DOUBLE",
