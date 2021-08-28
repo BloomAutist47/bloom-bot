@@ -17,26 +17,26 @@ class TwitterCog(commands.Cog, BaseTools):
         self.api = api
 
         self.twitter_user_list = [
-            "Alina_AE",
-            # "BloomAutist47",
-            "Kotaro_AE",
-            "notdarkon",
-            "asukaae",
-            "yo_lae",
-            "arletteaqw",
+            # "Alina_AE",
+            "BloomAutist47",
+            # "Kotaro_AE",
+            # "notdarkon",
+            # "asukaae",
+            # "yo_lae",
+            # "arletteaqw",
             
-            "aqwclass",
-            "CaptRhubarb",
+            # "aqwclass",
+            # "CaptRhubarb",
                        
-            "ArtixKrieger",
-            "AQW_News_Reddit",
+            # "ArtixKrieger",
+            # "AQW_News_Reddit",
             
-            "Aelious_AE",
+            # "Aelious_AE",
                         
             
-             "ae_root",
-             "Cemaros_AE",
-             "Psi_AE",
+             # "ae_root",
+             # "Cemaros_AE",
+             # "Psi_AE",
         ]
 
         self.gift_checks = [
@@ -76,6 +76,10 @@ class TwitterCog(commands.Cog, BaseTools):
             "Double Void",
             "Double Class point",
             "Double Experience",
+            "Void Auras",
+            "5/10/20",
+            "Spirit Orbs",
+            "Void Aura"
         ]
         self.black_list = [
             "Design Notes", "RT @"
@@ -149,7 +153,7 @@ class TwitterCog(commands.Cog, BaseTools):
             else:
                 self.save_log(5, text, link)
                 return 
-            boost = re.search("(Happening now\:|DOUBLE|hour)(.+?)(on all servers|through|\!|\.)", text)
+            boost = re.search("(Happening now\:|DOUBLE|hour)(.+?)(on all servers|until|through|\!|\.)", text)
             if boost:
                 boost = boost.groups()[1].strip().capitalize()
             else:
