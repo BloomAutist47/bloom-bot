@@ -28,7 +28,6 @@ from pprint import pprint
 from time import sleep  
 from datetime import datetime
 from pytz import timezone
-from pypresence import Presence
 
 from Cogs.Base import *
 from Cogs.BoatSearchCog import BoatSearchCog
