@@ -84,7 +84,7 @@ class BaseProgram:
 
     tweets_listener = ""
 
-    lock_read = True
+    lock_read = False
 
     icon_bloom = "https://cdn.discordapp.com/attachments/805367955923533845/813066459281489981/icon3.png"
     icon_aqw = "https://cdn.discordapp.com/attachments/805367955923533845/812991601714397194/logo_member.png"
