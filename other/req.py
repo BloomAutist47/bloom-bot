@@ -85,3 +85,17 @@ from requests import get as requests_get
 from urllib.request import urlopen, Request
 import cloudscraper
 from time import sleep
+
+import os
+import re
+import json
+import github3
+from github_contents import GithubContents
+import requests
+import asyncio
+import aiosonic
+from aiosonic.timeout import Timeouts
+import aiohttp
+import discord
+import nest_asyncio
+import html5lib
