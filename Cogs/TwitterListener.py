@@ -17,21 +17,21 @@ class TwitterCog(commands.Cog, BaseTools):
         self.api = api
 
         self.twitter_user_list = [
-            # "Alina_AE",
-            "BloomAutist47",
-            # "Kotaro_AE",
-            # "notdarkon",
-            # "asukaae",
-            # "yo_lae",
-            # "arletteaqw",
+            "Alina_AE",
+            # "BloomAutist47",
+            "Kotaro_AE",
+            "notdarkon",
+            "asukaae",
+            "yo_lae",
+            "arletteaqw",
             
-            # "aqwclass",
-            # "CaptRhubarb",
+            "aqwclass",
+            "CaptRhubarb",
                        
-            # "ArtixKrieger",
-            # "AQW_News_Reddit",
+            "ArtixKrieger",
+            "AQW_News_Reddit",
             
-            # "Aelious_AE",
+            "Aelious_AE",
                         
             
              # "ae_root",
