@@ -104,43 +104,7 @@ async def on_ready():
 
     await deploy_notif.send(f"**Deployed**: {DEPLOY_NAME} at {current_time}")
 
-    # game = discord.Activity(
-    #             application_id=123,
-    #             assets={
-    #                 "large_image": "nigmoirehd_x1024",
-    #                 "large_text":"Trtyyyyy",
-    #                 "small_image":"nigmoirehd_x512",
-    #                 "small_text":"Asdasd"},
-    #             details="Competitive",
-    #             name="Initializing Bloom Bot Autism",
-    #             game="AdventureQuest Worlds", 
-    #             state="Playing Solo",
-    #             url="https://www.youtube.com/watch?v=ivXw9VO89jw",
-    #             timestamps={
-    #                 "start": 1507665886,
-    #                 "end": 1621191372000
-    #             },
-    #             type=discord.ActivityType.playing
-    #                 )
-
-    # await Bot.change_presence(status=discord.Status.online, activity=game)
     await Bot.change_presence(activity=discord.Game(name="Get Bots here -> https://auqw.tk \nNo longer will you have to use shitty coomlight bots."))
-    RPC = Presence(CLIEND_ID)
-    RPC.connect()
-    RPC.update(
-        state="Studying the Art of War",
-        details="Bot Developer",
-        start=1507665886,
-        end=1621191372000,
-        large_image="bloom_logo",
-        large_text ="An AdventureQuest Worlds Bot - Search Class Stats, Look up Chars, Use Wiki, and more!",
-        small_image="aqw_logo",
-        small_text="Play AQW with us!",
-        buttons=[{"label": "Join Discord", "url": "https://discord.gg/ZPURWDSGGQ"},
-            {"label": "Portal Site", "url": "https://adventurequest.life/"},
-        ],
-        instance=True
-    )
 
 @Bot.event
 async def on_command_error(ctx, error):
@@ -166,7 +130,7 @@ Bot.add_cog(WikiCog(Bot))
     
 if os.name != "nt":
     Bot.add_cog(RedditCog(Bot)) 
-    Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
+Bot.add_cog(TwitterCog(Bot, BaseProgram.api))
 
 Bot.add_cog(UtilsCog(Bot))
 # Bot.add_cog(StreamCog(Bot))

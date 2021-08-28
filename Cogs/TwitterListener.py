@@ -17,21 +17,21 @@ class TwitterCog(commands.Cog, BaseTools):
         self.api = api
 
         self.twitter_user_list = [
-            "Alina_AE",
-            # "BloomAutist47",
-            "Kotaro_AE",
-            "notdarkon",
-            "asukaae",
-            "yo_lae",
-            "arletteaqw",
+            # "Alina_AE",
+            "BloomAutist47",
+            # "Kotaro_AE",
+            # "notdarkon",
+            # "asukaae",
+            # "yo_lae",
+            # "arletteaqw",
             
-            "aqwclass",
-            "CaptRhubarb",
+            # "aqwclass",
+            # "CaptRhubarb",
                        
-            "ArtixKrieger",
-            "AQW_News_Reddit",
+            # "ArtixKrieger",
+            # "AQW_News_Reddit",
             
-            "Aelious_AE",
+            # "Aelious_AE",
                         
             
              # "ae_root",
@@ -233,7 +233,7 @@ class TwitterCog(commands.Cog, BaseTools):
                     enemy_link = ""
 
             # Items
-            item = re.search("(to find our|to find the|Find the|to find|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|as we celebrate|as we head into|in the|in her|in his shop|in her shop|as we lead up|until))", text)
+            item = re.search("(to find our|to find the|Find the|to find|Find her|find her|for a chance to get the|for a chance to get our|for a chance to get|0 AC|this seasonal|to get the)(.+?)((!)|(\.)|(dropping from his|dropping in|as we celebrate|as we head into|in the|in her|in his shop|in her shop|as we lead up|until))", text)
             if item:
                 item = item.groups()[1]
                 item = re.sub(r'((?<=^\s\b)this seasonal(?=\b\s))|(((?<=^\s\b)rare(?=\b\s)))','', item).strip()
@@ -477,7 +477,7 @@ class TwitterCog(commands.Cog, BaseTools):
                         print("in here?!")
                         if BaseProgram.lock_read == False:
                             # Checks if it isn't alina then don't do any daily gift analysis
-                            if user_name != "Alina_AE":
+                            if user_name != "Alina_AE" or user_name != "BloomAutist47":
                                 tweet_list.append([tweet.id, tweet.user.id_str, user_name])
                                 print("> nil", end=" ")
                                 continue
