@@ -23,6 +23,11 @@ from requests import get as requests_get
 from urllib.request import urlopen, Request
 import cloudscraper
 
+
+from urllib.request import urlopen, Request, urlretrieve
+from urllib.parse import urlencode
+from base64 import standard_b64encode
+
 from time import sleep
 from io import BytesIO
 

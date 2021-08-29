@@ -1,14 +1,20 @@
-
-import tweepy
 import re
+import copy
+import asyncio
+import tweepy
+
 from .Base import *
 from discord.ext import commands, tasks
-import asyncio
+
 from threading import Thread
 from pprintpp import pprint
 from discord.utils import get
 from datetime import datetime, timedelta
-import copy
+
+from urllib.request import urlopen, Request, urlretrieve
+from urllib.parse import urlencode
+from base64 import standard_b64encode
+
 class TwitterCog(commands.Cog, BaseTools):
     
     def __init__(self, bot, api):
@@ -149,7 +155,7 @@ class TwitterCog(commands.Cog, BaseTools):
         npc = None
 
         if self.is_double:
-            time_ = time.strftime("%d %B %Y")
+            time_ = time.strftime("%B %d, %Y")
 
             hour = re.search("(\d\d)", text)
             if hour:
@@ -203,7 +209,7 @@ class TwitterCog(commands.Cog, BaseTools):
 
         if not self.is_double:
             
-            time = time.strftime("%d %B %Y")
+            time = time.strftime("%B %d, %Y")
             lowered_text = text.lower()
             # Location
             if "battleontown" in lowered_text:
@@ -298,6 +304,8 @@ class TwitterCog(commands.Cog, BaseTools):
             embedVar.set_image(url=link)
             embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
             embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
+
+            image_link = await self.get_image(link)
             
             BaseProgram.auqw["daily"] = {
                 "location": location,
@@ -628,6 +636,22 @@ class TwitterCog(commands.Cog, BaseTools):
         await asyncio.sleep(0.5)
         return
 
+
+
+    async def get_image(self, url) -> str:
+
+        urlretrieve(url, "daily.jpg")
+
+        b64_image = standard_b64encode(open("./daily.jpg", "rb") .read())
+
+        headers = {'Authorization': 'Client-ID ' + "4d8b88de7160b18"}
+        data = {'image': b64_image, 'title': 'test'} 
+
+        request = Request(url="https://api.imgur.com/3/upload.json", data=urlencode(data).encode("utf-8"),headers=headers)
+        response = loads(urlopen(request).read())
+
+        print(response)
+        return response['data']['link']
 
 """
     @tasks.loop(seconds=60)

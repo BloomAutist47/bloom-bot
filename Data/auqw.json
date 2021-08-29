@@ -1,14 +1,15 @@
 {
 	"daily": {
-		"location": "",
-		"enemy": "",
-		"item": "",
-		"date": "",
-		"image": "",
-		"link": ""
+		"location": "/join crownsreach",
+		"enemy": " <None>",
+		"item": "0 AC Pet And Mace",
+		"date": "28 August 2021",
+		"image": "https://i.ibb.co/h7Y24n9/image.png",
+		"link": "https://twitter.com/twitter/statuses/1431456362748317698"
 	},
 	"boost": {
-		"item": "",
-		"endsin": ""
+		"item": "Double quest rewards boost on Void Auras until Tuesday! (Chance to get 5/10/20 (Instead of 2/5/10) ",
+		"startsin": "August 28, 2021",
+		"endsin": "August 31, 2021"
 	}
 }
