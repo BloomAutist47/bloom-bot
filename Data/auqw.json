@@ -1,7 +1,7 @@
 {
 	"daily": {
 		"location": "/join crownsreach",
-		"enemy": " <None>",
+		"enemy": ["<None>", ""],
 		"quest": "",
 		"item": "0 AC Pet And Mace",
 		"date": "28 August 2021",
