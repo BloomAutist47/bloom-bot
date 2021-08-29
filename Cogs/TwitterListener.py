@@ -177,7 +177,15 @@ class TwitterCog(commands.Cog, BaseTools):
             embedVar.set_image(url=link)
             embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
             embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
-            
+
+            BaseProgram.auqw["boost"] = {
+                "item": boost.title(),
+                "startsin": time_,
+                "endsin": end_date
+            }
+
+            self.git_save("auqw")
+
             if os.name == "nt":
                 channel = await self.bot.fetch_channel(799238286539227136)
                 if send_ping == "automatic":
@@ -291,6 +299,22 @@ class TwitterCog(commands.Cog, BaseTools):
             embedVar.set_author(name="AdventureQuest Worlds", icon_url=BaseProgram.icon_aqw)
             embedVar.set_footer(text="Check this chat's pinned message to get daily gift notifications.")
             
+            BaseProgram.auqw["daily"] = {
+                "location": location,
+                "item": item,
+                "date": time,
+                "image": link,
+                "link": tweet_link
+            }
+            if quest:
+                BaseProgram.auqw["daily"]["quest"] = quest.title()
+                BaseProgram.auqw["daily"]["enemy"] = ""
+            else:
+                BaseProgram.auqw["daily"]["quest"] = ""
+                BaseProgram.auqw["daily"]["enemy"] = [enemy.title(), enemy_link]
+
+            self.git_save("auqw")
+
             if os.name == "nt":
                 channel = await self.bot.fetch_channel(799238286539227136)
                 if send_ping == "automatic":

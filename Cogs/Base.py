@@ -136,7 +136,7 @@ class BaseProgram:
     reddit_network = {}
     def git_prepare(self):
         self.mode_list = ["database", "guides", "classes", "settings", "texts", "boaters",
-                    "streams", "reddit_logs", "twitter_logs"]
+                    "streams", "reddit_logs", "twitter_logs", "auqw"]
 
         self.env_variables()
         # self.og_git()
