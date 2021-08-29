@@ -1,0 +1,14 @@
+{
+	"daily": {
+		"location": "",
+		"enemy": "",
+		"item": "",
+		"date": "",
+		"image": "",
+		"link": ""
+	},
+	"boost": {
+		"item": "",
+		"endsin": ""
+	}
+}
