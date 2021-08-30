@@ -46,6 +46,7 @@ class TwitterCog(commands.Cog, BaseTools):
         ]
 
         self.gift_checks = [
+            "New login gifts!",
             "celebrating",
             "birthday",
             "Now available",
@@ -65,10 +66,14 @@ class TwitterCog(commands.Cog, BaseTools):
             "DOUBLE Reputation",
             "BONUS gift",
             "birthday gifts",
+            
 
         ]
         if BaseProgram.lock_read == True:
-            self.twitter_user_list = ["BloomAutist47"]
+            self.twitter_user_list = [
+                # "BloomAutist47",
+                "Alina_AE",
+                ]
             
         self.double_check = [
             "Double quest rewards",
@@ -484,7 +489,7 @@ class TwitterCog(commands.Cog, BaseTools):
         return
 
 
-    @tasks.loop(minutes=30)
+    @tasks.loop(minutes=20)
     async def tweet_looper(self):
         if not self.first:
             await asyncio.sleep(10)
@@ -499,7 +504,7 @@ class TwitterCog(commands.Cog, BaseTools):
             daily_list = []
             while True:
                 try:
-                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(30)
+                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(50)
 
                     print("> Tweets appending")  
                     for tweet in time_line:
