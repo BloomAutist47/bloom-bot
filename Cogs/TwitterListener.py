@@ -521,7 +521,7 @@ class TwitterCog(commands.Cog, BaseTools):
 
                         if BaseProgram.lock_read == False:
                             # Checks if it isn't alina then don't do any daily gift analysis
-                            if user_name != "Alina_AE" or user_name != "BloomAutist47":
+                            if user_name != "Alina_AE":
                                 tweet_list.append([tweet.id, tweet.user.id_str, user_name])
                                 print("> simple tweet", end=" ")
                                 continue
