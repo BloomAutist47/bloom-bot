@@ -1,15 +1,15 @@
 {
     "daily": {
-        "location": "/join crownsreach",
-        "enemy": [
-            "<None>",
-            ""
-        ],
+        "location": "/join doomkitten",
+        "item": "0 AC Seasonal Plushies",
+        "date": "May 30, 2021",
+        "image": "http://pbs.twimg.com/media/E2pD4TdVoAAKLNU.png",
+        "link": "https://twitter.com/twitter/statuses/1399005278050217985",
         "quest": "",
-        "item": "0 AC Pet And Mace",
-        "date": "28 August 2021",
-        "image": "https://i.ibb.co/h7Y24n9/image.png",
-        "link": "https://twitter.com/twitter/statuses/1431456362748317698"
+        "enemy": [
+            "Doomkitten",
+            "http://aqwwiki.wikidot.com/DoomKitten"
+        ]
     },
     "boost": {
         "item": "Double Quest Rewards Boost On Void Auras",
