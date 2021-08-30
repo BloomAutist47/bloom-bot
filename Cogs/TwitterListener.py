@@ -72,8 +72,8 @@ class TwitterCog(commands.Cog, BaseTools):
         ]
         if BaseProgram.lock_read == True:
             self.twitter_user_list = [
-                "BloomAutist47",
-                # "Alina_AE",
+                # "BloomAutist47",
+                "Alina_AE",
                 ]
             
         self.double_check = [
