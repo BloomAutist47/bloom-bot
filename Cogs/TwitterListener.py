@@ -317,7 +317,7 @@ class TwitterCog(commands.Cog, BaseTools):
                 "location": location,
                 "item": item,
                 "date": time,
-                "image": link,
+                "image": image_link,
                 "link": tweet_link
             }
             if quest:
