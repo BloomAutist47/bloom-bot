@@ -14,6 +14,7 @@ from datetime import datetime, timedelta
 from urllib.request import urlopen, Request, urlretrieve
 from urllib.parse import urlencode
 from base64 import standard_b64encode
+from json import loads
 
 class TwitterCog(commands.Cog, BaseTools):
     
@@ -71,8 +72,8 @@ class TwitterCog(commands.Cog, BaseTools):
         ]
         if BaseProgram.lock_read == True:
             self.twitter_user_list = [
-                # "BloomAutist47",
-                "Alina_AE",
+                "BloomAutist47",
+                # "Alina_AE",
                 ]
             
         self.double_check = [
@@ -326,7 +327,7 @@ class TwitterCog(commands.Cog, BaseTools):
                 BaseProgram.auqw["daily"]["quest"] = ""
                 BaseProgram.auqw["daily"]["enemy"] = [enemy.title(), enemy_link]
 
-            self.git_save("auqw")
+            
 
             if os.name == "nt":
                 channel = await self.bot.fetch_channel(799238286539227136)
@@ -336,6 +337,7 @@ class TwitterCog(commands.Cog, BaseTools):
                 channel = await self.bot.fetch_channel(812318143322128384)
                 if send_ping == "automatic":
                     await channel.send("<@&811305081063604290>")
+                self.git_save("auqw")
                     
             await channel.send(embed=embedVar)
             BaseProgram.tweet_call = ""
@@ -430,7 +432,7 @@ class TwitterCog(commands.Cog, BaseTools):
         BaseProgram.tweet_call == "updaily"
 
         got = False
-        time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", tweet_mode='extended').items(100)
+        time_line = tweepy.Cursor(self.api.user_timeline, screen_name="Alina_AE", tweet_mode='extended').items(30)
         tweet_list = []
 
         for tweet in (time_line):
@@ -504,7 +506,7 @@ class TwitterCog(commands.Cog, BaseTools):
             daily_list = []
             while True:
                 try:
-                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(50)
+                    time_line = tweepy.Cursor(self.api.user_timeline, screen_name=user_name, tweet_mode='extended').items(100)
 
                     print("> Tweets appending")  
                     for tweet in time_line:
