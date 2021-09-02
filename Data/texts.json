@@ -65,7 +65,7 @@
                     "text": "🔹**Description**: Grim looks like shit.\n🔹**Symptoms**: Grimoire is randomly changing resolution and size.\n🔹**Solution**: \n\n1.) Right click Grimoire.exe and click properties.\n2.) On compatibility, click the \"Change high DPI settings\"\n3.) Check \"Overide high DPI scaling behavior\" and select \"System (Enhanced)\"\n4.) Click Ok. Run Grimoire.\n",
                     "image": "https://media.discordapp.net/attachments/805367955923533845/814088319281135616/unknown.png?width=1440&height=527"
                 },
-                "5.) Windows Update Flash Fix": {
+                "5.) Grimoire not opening Fix": {
                     "text": "🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening and stays on the system tray.\n🔹**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n\n**Note**: If this does not work, do fix no.7 below."
                 },
                 "6.) Flash Player Pro not working fix": {
