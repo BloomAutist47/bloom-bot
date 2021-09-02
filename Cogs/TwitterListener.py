@@ -647,7 +647,7 @@ class TwitterCog(commands.Cog, BaseTools):
 
     async def get_image(self, url) -> str:
 
-        urlretrieve(url, "daily.jpg")
+        urlretrieve(url, "./daily.jpg")
 
         b64_image = standard_b64encode(open("./daily.jpg", "rb") .read())
 
