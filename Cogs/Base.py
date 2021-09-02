@@ -1302,7 +1302,7 @@ class BaseCog(commands.Cog, BaseTools):
         credit_text = "Bloom Bot and Class Charts made by Bloom Autist.\n"\
             "Thanks to [Shiminuki](https://www.youtube.com/channel/UCyQ5AocDVVDznIslRuGUS3g) and [Molevolent](https://twitter.com/molevolent) for "\
             "creating the [Class Tier List](https://docs.google.com/spreadsheets/d/1Ywl9GcfySXodGA_MtqU4YMEQaGmr4eMAozrM4r00KwI/edit?usp=sharing)."\
-            "\nLastly, thanks to the @Satan and to the AutoQuest Worlds Community!"
+            "\nLastly, thanks to the @Satan and to the [AutoQuest Worlds Community](https://auqw.tk/)!"
         await ctx.send(embed=self.embed_single("Credits", credit_text))
 
     @commands.command()
