@@ -50,36 +50,30 @@
             "title": "How to fix Grimoire.",
             "description": "Does your grim have problems? Browse here and see common fixes.",
             "content": {
-                "1.) Delete 133spider's mms.cfg fix": {
-                    "text": "🔹**Description**: 133spider released a fix to enable flash player gain.\n🔹**Symptoms**: Grimoire is opening but not loading.\n🔹**Solution**: Delete mms.cfg if you did the spider fix:```CSS\nC:\\Windows\\SysWOW64\\Macromed\\Flash\\mms.cfg \nC:\\Windows\\System32\\Macromed\\Flash\\mms.cfg```\n"
-                },
-                "2.) Clear Local Storage": {
+                "1.) Clear Local Storage": {
                     "text": "1.) Open grimoire and right click on it.\n2.) Click on Global Setting.\n3.) On the Storage tab, click \"Delete All\"\n4.) On the Advanced tab, click \"Delete All\"\n",
                     "image": "https://cdn.discordapp.com/attachments/805367955923533845/818003852896501770/unknown.png"
                 },
-                "3.) Grimoire Blocked Fix": {
+                "2.) Grimoire Blocked Fix": {
                     "text": "🔹**Description**: Your firewall or anti virus might be blocking grimoire.\n🔹**Solution**: Try the followng:\n\n1.) Allow the .exe file in firewall by going to Windows Firewall with advanced security. Then add new outbound rule with port 5588, and allow it.\n\n2.) Add exception for the grimoire folder in your Antivirus.\n\n3.) Unblock grimoire by right clicking grimoire.exe -> properties -> click unblock.\n"
                 },
-                "4.) Null Username fix": {
+                "3.) Null Username fix": {
                     "text": "🔹**Description**: This occurs due to opening more than 2 instance of grim and playing using different characters.\n🔹**Symptoms**: \"Your Username is currently null meaning...\" pop-up will appear.\n🔹**Solution**: Restart current grim instance twice.",
                     "image": "https://cdn.discordapp.com/attachments/805367955923533845/820872632198627328/unknown.png"
                 },
-                "5.) Grim shitty UI fix": {
+                "4.) Grim shitty UI fix": {
                     "text": "🔹**Description**: Grim looks like shit.\n🔹**Symptoms**: Grimoire is randomly changing resolution and size.\n🔹**Solution**: \n\n1.) Right click Grimoire.exe and click properties.\n2.) On compatibility, click the \"Change high DPI settings\"\n3.) Check \"Overide high DPI scaling behavior\" and select \"System (Enhanced)\"\n4.) Click Ok. Run Grimoire.\n",
                     "image": "https://media.discordapp.net/attachments/805367955923533845/814088319281135616/unknown.png?width=1440&height=527"
                 },
-                "6.) Windows Update Flash Fix": {
+                "5.) Windows Update Flash Fix": {
                     "text": "🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening and stays on the system tray.\n🔹**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n\n**Note**: If this does not work, do fix no.7 below."
                 },
-                "7.) Flash Player Pro not working fix": {
+                "6.) Flash Player Pro not working fix": {
                     "text": "🔹**Description**: Flash player pro wont work or you get the error below.\n🔹**Solution**: \n\n1.) Download [install_flash_player_ax.exe](https://cdn.discordapp.com/attachments/811305082377207866/812362328964202546/install_flash_player_ax.exe)\n2.) Once downloaded, right click on it and choose properties.\n3.) On Compatibility tab, tick `Run this program in compatibility mode for`, and choose `Windows 7`.\n4.) Click Ok. Install install_flash_player_ax.exe.\n\n**Note**: If this does not work, do fix no. 8 down below.",
                     "image": "https://cdn.discordapp.com/attachments/805367955923533845/824146799916351528/unknown.png"
                 },
-                "8.) Corrupted System files fix": {
+                "7.) Corrupted System files fix": {
                     "text": "🔹**Description**: \nDid everything else and nothing worked? Perhaps some system fils are corrupted. Try this.\n\n🔹**Solution**: \n1.) Open `CMD` in `administrator mode`.\n2.) Type `sfc /scannow`\n3.) Wait for it to finish.\n4.) Once done, **open Grimoire**, test and see if things are fixed. If not **restart your PC** and then open Grimoire.\n"
-                },
-                "9.) Load bot error fix": {
-                    "text": "🔹**Description**: \nAn error appears when you use `Load Bot` on Grimlite and clicked `Start`.\n🔹**Solution**: \nOpen the Bot Manager once before using `Load Bot` and clicking `Start`.\n"
                 }
             }
         },
