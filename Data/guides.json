@@ -279,8 +279,8 @@
         "type": "image",
         "auth": "aqw",
         "title": "Best Boosted Set for Maximum Efficiency all around:",
-        "description": "**1.)** Firstly, equip the Dual/Necrotic Sword(s) of Doom\n**2.)** Secondly, equip the Polly Roger Pet\n**3.)** Thirdly, equip the Head of the Legion Beast Helm\n**4.)** Fourthly, equip Sepulchure's DoomKnight Armor\n**5.)** Lastly, equip the Awescended Omni Wings for maximum efficiency all around\n\n`All of this is equal to these multipliers in all races + boosts for Class/Reputation Points, Gold and Experience:`\n```dmgAll: ×1.51\nUndead: ×1.40\nChaos: ×1.30\nElemental: ×1.30\nDragonkin: ×1.30\nHuman: ×1.51\ncp: ×1.50\ngold: ×1.30\nrep: ×1.50\nexp: ×1.30```\n",
-        "content": "https://cdn.discordapp.com/attachments/805367955923533845/836439841095942195/unknown.png"
+        "description": "**1.)** Firstly, equip the **Dual/Necrotic Sword(s) of Doom**.\n**2.)** Secondly, equip the **Polly Roger Pet.**\n**3.)** Thirdly, equip the **Head of the Legion Beast Helm.**\n**4.)** Fourthly, equip **Fire Champion's Armor.**\n**5.)** Lastly, equip the **Awescended Omni Wings** for maximum efficiency all around.\n\n`All of this is equal to these multipliers in all races + boosts for Class/Reputation Points, Gold and Experience:`\n```dmgAll: ×1.51\nUndead: ×1.40\nChaos: ×1.30\nElemental: ×1.30\nDragonkin: ×1.50\nHuman: ×1.40\ncp: ×1.50\ngold: ×1.30\nrep: ×1.50\nexp: ×1.30```\n",
+        "content": "https://cdn.discordapp.com/attachments/805367955923533845/882794463741767700/unknown.png"
     },
     "sethuman": {
         "type": "image",
