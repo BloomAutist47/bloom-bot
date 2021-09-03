@@ -35993,6 +35993,15 @@
             "text": "Screenshots posted of testing done in Dread Space using Blaze Binder and the skill Combustion (Dark Fire also work). Results are interesting as it shouldn't work as per how we currently understand the system. \n\n1st Shot is without damage boosting items and typically results around 600-800 damage range. \n\n2nd Shot is with the Enchanted FireDrake's Lance. Given stable weapon a constant: 1012 Damage\n\n3rd Shot is with the Enchanted FireDrake's Lance + Archmaster of Awe Battle Cowl: 1216 Damage\n\nThis is with equipping the FireDrake's Lance first for 30% and the Archmaster of Awe Battle Cowl after\\~  Damage should be lowering to 20%? But it seems... For some reason. It is stacking.\n",
             "time": "03 September 2021 | 07:34 PM ",
             "is_video": false
+        },
+        "phch6i": {
+            "author": "RiftsDrift",
+            "title": "Damage vs All... Stacking?",
+            "link": "https://www.reddit.com/r/AQW/comments/phch6i/damage_vs_all_stacking/",
+            "image": "https://preview.redd.it/743si844ecl71.png?width=1050&format=png&auto=webp&s=aae0fa974b5941d751aae3dc979fd0eb44029e74",
+            "text": "https://preview.redd.it/743si844ecl71.png?width=1050&format=png&auto=webp&s=aae0fa974b5941d751aae3dc979fd0eb44029e74\n\nI have always believed the damage against all monsters couldn't be stacked but as of recent testing with the Blaze Binder have come up with some interesting results. Test took place in Dread Space and used the Combustion Blaze ability for constant damage. It scales with with Dark Fire as well\\~ \n\n1st screen is without any damage boosting items: 600 - 800 Damage\n\n2nd screen is with Enchanted FireDrake's Lance: 1012 Damage (Stable weapon/Constant)\n\n3rd screen is with Enchanted FireDrake's Lance + Archmaster of Awe Battle Cowl: 1216 Damage\n\nIs there a different between All Monsters vs All Tagged Monsters? Shouldn't damage be reduced as I equip the Archmaster of Awe Battle Cowl after the Enchanted FireDrake's Lance? A drop from 30% to 20%? From what I have research... This shouldn't work?\n",
+            "time": "03 September 2021 | 07:50 PM ",
+            "is_video": false
         }
     }
 }
