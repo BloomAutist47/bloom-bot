@@ -35984,6 +35984,15 @@
             "text": "\n",
             "time": "03 September 2021 | 07:21 PM ",
             "is_video": false
+        },
+        "phc6eq": {
+            "author": "RiftsDrift",
+            "title": "All Damage Stacking... Working?",
+            "link": "https://www.reddit.com/r/AQW/comments/phc6eq/all_damage_stacking_working/",
+            "image": null,
+            "text": "Screenshots posted of testing done in Dread Space using Blaze Binder and the skill Combustion (Dark Fire also work). Results are interesting as it shouldn't work as per how we currently understand the system. \n\n1st Shot is without damage boosting items and typically results around 600-800 damage range. \n\n2nd Shot is with the Enchanted FireDrake's Lance. Given stable weapon a constant: 1012 Damage\n\n3rd Shot is with the Enchanted FireDrake's Lance + Archmaster of Awe Battle Cowl: 1216 Damage\n\nThis is with equipping the FireDrake's Lance first for 30% and the Archmaster of Awe Battle Cowl after\\~  Damage should be lowering to 20%? But it seems... For some reason. It is stacking.\n",
+            "time": "03 September 2021 | 07:34 PM ",
+            "is_video": false
         }
     }
 }
