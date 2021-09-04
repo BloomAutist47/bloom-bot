@@ -716,6 +716,15 @@
             "text": "This is due to the new swf updates. We are currently fixing it.\n\nFor now, please use Grimlite Rev v.1.1\n",
             "time": "03 September 2021 | 01:37 PM ",
             "is_video": false
+        },
+        "phutdj": {
+            "author": "BloomAutist47",
+            "title": "Grimlite Rev v.1.2 is now working again! Please download the fixed version in the portal.",
+            "link": "https://www.reddit.com/r/AutoQuestWorlds/comments/phutdj/grimlite_rev_v12_is_now_working_again_please/",
+            "image": "https://preview.redd.it/qiviebhgkil71.png?width=1215&format=png&auto=webp&s=10e209caf98e99b3464a1a6cbbe3c8255324f381",
+            "text": "Please Download the latest Grimlite in the [portal](https://auqw.tk/). Credits to Ganku for fixing Grimlite and to Froztt13 as shown below.\n\n&#x200B;\n\n[Discord Announcement](https://preview.redd.it/qiviebhgkil71.png?width=1215&format=png&auto=webp&s=10e209caf98e99b3464a1a6cbbe3c8255324f381)\n\n**Changelogs (4 September 2021):**\n\n* Fixed the Game Client, no longer gets stuck upon Login.\n* Fixed the Username/Password on configuration, no longer being Null upon Login with the first user data change.\n* Fixed the Immediate Login\u2019s functions, no longer fails upon Login with user data changes.\n* Fixed the Skillset\u2019s functions, now works properly.\n* Fixed the Options and its manager\u2019s functions, now works properly.\n* Refined the innate Load Bank\u2019s functions.\n* Refined Getdrop command\u2019s functions.\n* Minor UI changes\n",
+            "time": "04 September 2021 | 04:34 PM ",
+            "is_video": false
         }
     },
     "133sAppreciationClub": {
