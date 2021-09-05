@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "Featured Gear Shop Until September 30Th",
-        "item": "0 AC Seasonal Immortal Crusader Armor Set In Your Featured Gear Shop Until September 30Th",
-        "date": "September 03, 2021",
-        "image": "https://i.imgur.com/eJ2PcY4.jpg",
-        "link": "https://twitter.com/twitter/statuses/1433915283224338435",
+        "location": "/join newbie",
+        "item": "New 0 AC Back To School Battle Gear",
+        "date": "September 05, 2021",
+        "image": "https://i.imgur.com/lhBZnhu.jpg",
+        "link": "https://twitter.com/twitter/statuses/1434369447662264320",
         "quest": "",
         "enemy": [
-            "<None>",
-            ""
+            "Dogear",
+            "http://aqwwiki.wikidot.com/Dogear"
         ]
     },
     "boost": {
