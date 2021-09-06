@@ -725,6 +725,15 @@
             "text": "Please Download the latest Grimlite in the [portal](https://auqw.tk/). Credits to Ganku for fixing Grimlite and to Froztt13 as shown below.\n\n&#x200B;\n\n[Discord Announcement](https://preview.redd.it/qiviebhgkil71.png?width=1215&format=png&auto=webp&s=10e209caf98e99b3464a1a6cbbe3c8255324f381)\n\n**Changelogs (4 September 2021):**\n\n* Fixed the Game Client, no longer gets stuck upon Login.\n* Fixed the Username/Password on configuration, no longer being Null upon Login with the first user data change.\n* Fixed the Immediate Login\u2019s functions, no longer fails upon Login with user data changes.\n* Fixed the Skillset\u2019s functions, now works properly.\n* Fixed the Options and its manager\u2019s functions, now works properly.\n* Refined the innate Load Bank\u2019s functions.\n* Refined Getdrop command\u2019s functions.\n* Minor UI changes\n",
             "time": "04 September 2021 | 04:34 PM ",
             "is_video": false
+        },
+        "piszt1": {
+            "author": "Introverted_nub",
+            "title": "My GrimLite is stuck on the loading screen.",
+            "link": "https://www.reddit.com/r/AutoQuestWorlds/comments/piszt1/my_grimlite_is_stuck_on_the_loading_screen/",
+            "image": null,
+            "text": "My GrimLite won't load and I already did the FFP, CMD and installing the other Adobe Flash. I also changed my date to 1/1/2020. Can anyone tell me how to fix this? :(\n",
+            "time": "06 September 2021 | 05:20 AM ",
+            "is_video": false
         }
     },
     "133sAppreciationClub": {
