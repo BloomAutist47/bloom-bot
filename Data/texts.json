@@ -66,14 +66,15 @@
                     "image": "https://media.discordapp.net/attachments/805367955923533845/814088319281135616/unknown.png?width=1440&height=527"
                 },
                 "5.) Grimoire not opening Fix": {
-                    "text": "🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening and stays on the system tray.\n🔹**Solution**: Download and Install [FPPSetup.exe](https://cdn.discordapp.com/attachments/799959558281887775/815456909058375771/FPPSetup.exe).\n\n**Note**: If this does not work, do fix no.7 below."
+                    "text": "🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening and stays on the system tray.\n🔹**Solution**: Download and Install the latest [CleanFlash](https://github.com/CleanFlash/installer/releases).\n",
+                    "image": "https://images-ext-2.discordapp.net/external/roDS4DusLMTRprxwhTGS8Fjr8Dhd_Zy_eJyqszIje10/https/opengraph.githubassets.com/9aa07a970dbf0e9de8188bd0bd691082614713b46a86a9580f207bb585aeecfa/CleanFlash/installer?width=500&height=250"
                 },
-                "6.) Flash Player Pro not working fix": {
-                    "text": "🔹**Description**: Flash player pro wont work or you get the error below.\n🔹**Solution**: \n\n1.) Download [install_flash_player_ax.exe](https://cdn.discordapp.com/attachments/811305082377207866/812362328964202546/install_flash_player_ax.exe)\n2.) Once downloaded, right click on it and choose properties.\n3.) On Compatibility tab, tick `Run this program in compatibility mode for`, and choose `Windows 7`.\n4.) Click Ok. Install install_flash_player_ax.exe.\n\n**Note**: If this does not work, do fix no. 8 down below.",
-                    "image": "https://cdn.discordapp.com/attachments/805367955923533845/824146799916351528/unknown.png"
-                },
-                "7.) Corrupted System files fix": {
+                "6.) Corrupted System files fix": {
                     "text": "🔹**Description**: \nDid everything else and nothing worked? Perhaps some system fils are corrupted. Try this.\n\n🔹**Solution**: \n1.) Open `CMD` in `administrator mode`.\n2.) Type `sfc /scannow`\n3.) Wait for it to finish.\n4.) Once done, **open Grimoire**, test and see if things are fixed. If not **restart your PC** and then open Grimoire.\n"
+                },
+                "7.) Grimoire stuck at connecting.": {
+                    "text": "\n\n🔹**Solution**: \n1.) Type `%AppData%` on your windows search menu to open `Roaming` Folder.\n2.) Find the folder `Macromedia` inside Roaming and delete it.\n3.) Restart Grimoire.\n"
+                    
                 }
             }
         },
