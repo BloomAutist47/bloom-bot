@@ -77,6 +77,7 @@ class TwitterCog(commands.Cog, BaseTools):
                 ]
             
         self.double_check = [
+            "double drop quest"
             "Double quest rewards",
             "hour DOUBLE",
             "hour Drop",
