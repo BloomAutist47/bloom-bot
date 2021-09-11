@@ -505,6 +505,13 @@
         ],
         "thumbnail": "https://media.discordapp.net/attachments/805367955923533845/806914928224501781/tmyi_orig.png"
     },
+    "holb": {
+        "type": "image",
+        "auth": "aqw",
+        "title": "Head of the Legion Beast material guide",
+        "description": "List of items required to merge HoLB.",
+        "content": "https://cdn.discordapp.com/attachments/805367955923533845/886166859420954684/unknown.png"
+    },
     "Endgame Farming Guides": {
         "type": "header"
     },
