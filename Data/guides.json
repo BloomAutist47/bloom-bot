@@ -227,13 +227,12 @@
         "title": "Optimized Gear Combinations",
         "description": "The absolute best possible combinations of gear to equip against each monster type for maximum optimization:",
         "content": [
-            "• `Best Combination`: Equip these in order for every login session; ",
-            "> NSoD 1st, Polly Roger 2nd, Legion Beast Head 3rd, SDKA 4th",
+            "• `Best Combination`:  NSoD 1st, Polly Roger 2nd, Legion Beast Head 3rd, SDKA 4th",
             "",
             "• `Non-race-tagged`: NSoD (×1.51 or 51%)",
             "• `Chaos`: CU + AFDL armor (×2.025 or 102.5%)",
             "• `Dragon`: AFDL1  + LDoN (x2.3625) ",
-            "• `Elemental`: CPC + NSoD (×1.963 or 96.3%)",
+            "• `Elemental`: AFDL + IFK (×1.963 or 96.3%)",
             "• `Human`: SDKA + NSoD (×2.2801 or 128.01%)",
             "• `Undead`: AFDL armor + BLoD (×2.3625 or 136.25%)",
             "",
@@ -244,6 +243,7 @@
             "\\> **AFDL** =  Archfiend Doomlord, armor only; its other items can be used instead if you don't have the armor, though they're weaker.",
             "\\> **BLoD** = Blinding Light of Destiny and its variants. Nothing can be used instead. How do you not fucking have this.",
             "\\> **LDoN** = Legion DragonBlade of Nulgath; You need membership to get it though. Does 75% more damage against dragons. Use NSoD if you don't have it.",
+            "\\> **IFK** = Infernal Flame Khopesh; Does 75% more damage against elemental.",
             "",
             "For more details on each set, use the following cmds.",
             "`;g setdragon` - Best Boosted Set for Dragon Type Monsters.",
@@ -272,7 +272,7 @@
         "type": "image",
         "auth": "aqw",
         "title": "Best Boosted Set for Elemental Type Monsters",
-        "description": "\n**1.)** First, Equip **Infernal Flame Kopesh**.\n**2.)** Lastly, Equip **ArchFiend DoomLord(1)/Infernal Flame Pyromancer**.\n\n`All of this is equal to a ×2.3625 multiplier in damage against Elemental Type Mobs`",
+        "description": "\n**1.)** First, Equip **Infernal Flame Khopesh**.\n**2.)** Lastly, Equip **ArchFiend DoomLord(1)/Infernal Flame Pyromancer**.\n\n`All of this is equal to a ×2.3625 multiplier in damage against Elemental Type Mobs`",
         "content": "https://cdn.discordapp.com/attachments/805367955923533845/886469997310902352/unknown.png"
     },
     "setgeneral": {
