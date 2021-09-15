@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join  aqworlds",
-        "item": "0 AC All Upholders In The Starsword Merge Shop In /Dragonroad",
-        "date": "September 14, 2021",
-        "image": "https://i.imgur.com/NLA44Nl.jpg",
-        "link": "https://twitter.com/twitter/statuses/1437835469644042241",
+        "location": "/join newbie",
+        "item": "2 New 0 AC Rare Backpacks + 2 New Permanently Available Backpacks",
+        "date": "September 15, 2021",
+        "image": "https://i.imgur.com/LZBNGbr.jpg",
+        "link": "https://twitter.com/twitter/statuses/1437959353143726080",
         "quest": "",
         "enemy": [
-            "<None>",
-            ""
+            "Dogear",
+            "http://aqwwiki.wikidot.com/Dogear"
         ]
     },
     "boost": {
