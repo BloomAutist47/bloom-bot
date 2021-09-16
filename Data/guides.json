@@ -132,6 +132,30 @@
             "__Dark Caster__ - class + full set"
         ]
     },
+    "bioda": {
+        "type": "text",
+        "auth": "aqw",
+        "title": "Buying Ioda Guide",
+        "bullet": ":arrow_right:",
+        "description": "Redeem IoDA tokens to get even MORE bonuses.\nFor each of the first six eligible IoDA tokens you receive , you'll get a FREE Bonus IoDA. The eligible tokens are the Ultimate, Epic, Platinum, Wicked and Golden tokens. After that, you'll get a free Bonus IoDA for every 3 eligible IoDA you redeem, with no maximum stack. So if you have that dream set of gear you want to create... now you'll be able to.",
+        "content": [
+            "After you redeem your...",
+            "",
+            "1st IoDA, you'll unlock 1 free bonus IoDA",
+            "2nd IoDA, you'll unlock 1 free bonus IoDA",
+            "3rd IoDA, you'll unlock 1 free bonus IoDA",
+            "4th IoDA, you'll unlock 1 free bonus IoDA",
+            "5th IoDA, you'll unlock 1 free bonus IoDA",
+            "6th IoDA, you'll unlock 1 free bonus IoDA",
+            "Then, for every 3 IoDA you redeem, you'll unlock another free bonus IoDA.",
+            "",
+            "After you redeem your...",
+            "",
+            "7th, 8th, and 9th IoDA, you'll unlock 1 free bonus IoDA",
+            "10th, 11th, and 12th IoDA, you'll unlock 1 free bonus IoDA And so on.",
+            "The 3:1 bonus IoDA ratio starts after you get your first 6 free BIoDA, regardless of when you received them. (Example: if you've redeemed a total of 21 IoDA tokens, you'll unlock 11 BIoDA total. The first 6 BIoDA at a 1:1 ratio, and then 5 more at the 3:1 ratio.)"
+        ]
+    },
     "xp": {
         "type": "text",
         "auth": "aqw",
