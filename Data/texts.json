@@ -133,7 +133,6 @@
          }
       },
       "partners":{
-
          "AQW / AQ3D - The Wiki Team":{
             "message":"https://discord.gg/stMbcMr",
             "description":"Hey all, ever wanted to contribute to the ever-growing AQW Wiki? This server was created for wiki editors to use as a form of communication between themselves and any non wiki editors and/or new wiki editors looking for assistance. Feel free to join if you wish to help out! ",
@@ -154,6 +153,18 @@
                "📌 2. Using Grimoire":"-> Open the folder where you installed updater.exe\n-> Open Grimoire.exe.\n> If it's not opening, you may have to unblock it.\n> Right Click Grimoire.exe -> Properties -> Unblock -> Apply.\n\n-> You can now download boats from our website https://auqw.tk/. \n-> To run a boat;\n> Open Grimoire.exe -> Bot -> Misc -> Load Bot -> Select whichever bot you just downloaded from your Downloads folder.\n​",
                "📌 3. Things to Remember":"-> For now, many Boats on the portal may work on Grimoire 3.8+ PRO v1.7.8., but we will start making Boats for GrimLite only so get that.\n-> If your bot isn't loading, it's because you're using an outdated version of Grimoire.\n​",
                "📌 Credits":"-> Biney for creating the original Grimoire\n-> Satan for revamping Grimoire 3.8 to Grimoire 3.8+ PRO up until v1.7.7\n-> Rodit for creating a Flash EoL patch in v1.7.8. and for RBot\n-> 133Spider for creating AQlite\n-> Satan and Cat for creating GrimLite"
+            }
+         }
+      },
+      "welcome":{
+         "Welcome!":{
+            "description":"Welcome to Pearl Harbor, the AQW Sailor's Paradise, a place that provides you with the best boats to sail your way through the hardest grinds in AQW!\n",
+            "embed_list":{
+               "Rules":"Please carefully read the following:",
+               "📌 1.) Visit the following channels before entering the server:":"<#811305082002866233> - Instructions to download bots and the latest version of the GrimLite Application.\n<#817998750697521183> Fixes to common problems that may occur with the GrimLite Application.\n<#820934479677358080> - A list of frequently-asked-questions, so you don't have to waste time asking them yourself.",
+               "📌 2.) No stealing, griefing, or e-begging":"Do not steal bots from our portal site and upload them on your own platforms, attempt to troll or raid the server, or beg people for money or gifts. People have tried and it's never ended well.",
+               "📌 3.) Do not post stupid content":"This includes malware and trojans, scam or phishing links, unauthorized bot files, child pornography, animal pornography, grotesque imagery, hard non-medical non-surgical gore, videos depicting sexual assault, videos promoting anti-vaccination, erotic live-action role-playing, degenerative fursuiting, social justice warrior ranting, kinky femboytoys~, and fatties.",
+               "Motto":"The server's motto is GTS/GBTT; Grow Thicc Skin / Go Back To Twitter. If you are unhappy with the horrors present in this server, feel free to visit our family-friendly Twitter Page https://twitter.com/NO_BOTS_AE for some slow-paced fun for everyone!"
             }
          }
       }
