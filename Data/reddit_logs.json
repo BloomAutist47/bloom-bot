@@ -42518,6 +42518,15 @@
             "text": "\n",
             "time": "20 September 2021 | 12:51 PM ",
             "is_video": false
+        },
+        "prw0om": {
+            "author": "EmiliaSystemUser",
+            "title": "AquaStar - AQLite with even more QoL features (now on version 1.3.1)",
+            "link": "https://www.reddit.com/r/AQW/comments/prw0om/aquastar_aqlite_with_even_more_qol_features_now/",
+            "image": null,
+            "text": "It has been a while since i posted anything Aquastar related. Since that time we continued to improve the launcher the best we can, while keeping up with spider's testing releases! The current aquastar uses his test, and a new version with the new vanilla aqw will come out when its time. As for now...  \n\n\nAquastar can do so much more now. We added support for:\n\n* Custom Keybindings in a new file, with a \"How To\" on github if needed.\n* **Recording your game screen**!\n* Easy access of many usefull links, including Daily Drop page and Calendar of events, or this very subreddit or twitter to just see whats going on.\n* Custom char page Screenshot with Alt K (on a char page screen) which can go up to 4K (it does your monitor resolution by default) that shows the player's color custom list!\n* Support for Chromebooks was found out. Check out the readme.md\n* [And everything I said the last time for 1.0!](https://www.reddit.com/r/AQW/comments/o5rqj3/aquastar_aqlite_in_linux_and_other_qol/)\n\nIts free to download (and it will always be) on our github page! Any suggestions, questions and such can be posted here or an issue filled on github.\n\n[Aquastar Download Page](https://github.com/aquaspy/AquaStar/releases). Download the right version for your pc, and remember that i386 means x32 bits.  \n\n\nAnd remember, Linux users: For anything downloaded from the web, you NEED to go into the file properties and mark it as executable! Else you might not be able to run it.\n\nAnd Windows users: The windows version is an installer, and not a standalone. After install, check out your Windows menu the next times.\n",
+            "time": "20 September 2021 | 02:28 PM ",
+            "is_video": false
         }
     }
 }
