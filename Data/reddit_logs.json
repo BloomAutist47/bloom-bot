@@ -770,6 +770,15 @@
             "text": "I tried to install FPP and Cleanflash but it is still not working what should I do? I have grimoire 3.8 + Pro v 1.7.8 patched\n",
             "time": "22 September 2021 | 04:11 AM ",
             "is_video": false
+        },
+        "pvtnas": {
+            "author": "Minithorson",
+            "title": "Commanding Shadow Essences",
+            "link": "https://www.reddit.com/r/AutoQuestWorlds/comments/pvtnas/commanding_shadow_essences/",
+            "image": null,
+            "text": "Hey all I've been trying to write a script for Commanding Shadow Essences and just cannot get the bot to actually *work* correctly. I'm trying to have it farm for Empowered Essence then once it caps out it moves over to Shadow lord but it will kill the 3 enemies I have programmed in then skip the restart bot command. I was having issues with the 49/50 error so I used [The FAQ Google Doc](https://docs.google.com/document/d/1feo9uke1qa0pzjAOTMUkasGR7Rqsz0fdOwdV0BaEzz0/edit) and now it will farm out a few Empowered Essence then swap over to Shadowlord which causes the timing of quest turn in to fail and me to not get my Void Aura.\n",
+            "time": "26 September 2021 | 01:16 PM ",
+            "is_video": false
         }
     },
     "133sAppreciationClub": {
