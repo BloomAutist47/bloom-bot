@@ -779,6 +779,15 @@
             "text": "Hey all I've been trying to write a script for Commanding Shadow Essences and just cannot get the bot to actually *work* correctly. I'm trying to have it farm for Empowered Essence then once it caps out it moves over to Shadow lord but it will kill the 3 enemies I have programmed in then skip the restart bot command. I was having issues with the 49/50 error so I used [The FAQ Google Doc](https://docs.google.com/document/d/1feo9uke1qa0pzjAOTMUkasGR7Rqsz0fdOwdV0BaEzz0/edit) and now it will farm out a few Empowered Essence then swap over to Shadowlord which causes the timing of quest turn in to fail and me to not get my Void Aura.\n",
             "time": "26 September 2021 | 01:16 PM ",
             "is_video": false
+        },
+        "pwbfgm": {
+            "author": "Anwey",
+            "title": "Kill For Items/Temp Items broken",
+            "link": "https://www.reddit.com/r/AutoQuestWorlds/comments/pwbfgm/kill_for_itemstemp_items_broken/",
+            "image": null,
+            "text": "So, I was making my own bot for the new release. When I tried building it, I put a Kill for TempItems, and when I ran it, it keeps attacking even though the item is already accomplished, any repairs?\n",
+            "time": "27 September 2021 | 06:32 AM ",
+            "is_video": false
         }
     },
     "133sAppreciationClub": {
