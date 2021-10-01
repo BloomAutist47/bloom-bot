@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join shadowrealm",
-        "item": "0 AC Hollowborn Capes",
-        "date": "September 26, 2021",
-        "image": "https://i.imgur.com/3JyetE8.jpg",
-        "link": "https://twitter.com/twitter/statuses/1442006018011983875",
+        "location": "/join join",
+        "item": "0 AC Battling Alongside Us",
+        "date": "October 01, 2021",
+        "image": "https://i.imgur.com/sSJYGFk.jpg",
+        "link": "https://twitter.com/twitter/statuses/1444076998469554180",
         "quest": "",
         "enemy": [
-            "Shadowlord",
-            "http://aqwwiki.wikidot.com/ShadowLord"
+            "<None>",
+            ""
         ]
     },
     "boost": {
