@@ -51,7 +51,7 @@
          "description":"Does your grim have problems? Browse here and see common fixes.",
          "content":{
             "1.) Grimoire not opening Fix":{
-               "text":"🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening and stays on the system tray.\n🔹**Solution**: Download and Install the latest [CleanFlash](https://github.com/CleanFlash/installer/releases).\n",
+               "text":"🔹**Description**: Windows update killed flash player.\n🔹**Symptoms**: Grimoire is not opening and stays on the system tray.\n🔹**Solution**: Download and Install the latest [CleanFlash](https://drive.google.com/uc?export=download&id=1cc-muDonwOz5i8QAKY8xg5W_eXLiQsad).\n",
                "image":"https://images-ext-2.discordapp.net/external/roDS4DusLMTRprxwhTGS8Fjr8Dhd_Zy_eJyqszIje10/https/opengraph.githubassets.com/9aa07a970dbf0e9de8188bd0bd691082614713b46a86a9580f207bb585aeecfa/CleanFlash/installer?width=500&height=250"
             },
             "2.) Grimoire stuck at connecting.":{
