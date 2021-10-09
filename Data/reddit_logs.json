@@ -887,6 +887,15 @@
             "text": "Is anyone else having this problem? Im stuck on connecting to server on any server\n",
             "time": "09 October 2021 | 05:22 AM ",
             "is_video": false
+        },
+        "q4f7jn": {
+            "author": "white_dreams47",
+            "title": "Grimoire currently not connecting. Not working.",
+            "link": "https://www.reddit.com/r/AutoQuestWorlds/comments/q4f7jn/grimoire_currently_not_connecting_not_working/",
+            "image": null,
+            "text": "Due to the latest server rewrite, grimoire's Proxy is incompatible with the new updates hence you can't connect to aqw. This happens in all servers.\n\nQ&A\n\n&#x200B;\n\n>**Q:** Will there be a fix?  \n**A:** Not for now but please wait for the next few days for new developments.\n\n&#x200B;\n\n>**Q:** How to temporarily fix the issue?   \n**A:** On the server list screen, click the refresh button and then click on the server that you want to connect to. Reminder that most of the bot features won't work because of this.\n",
+            "time": "09 October 2021 | 05:51 AM ",
+            "is_video": false
         }
     },
     "133sAppreciationClub": {
