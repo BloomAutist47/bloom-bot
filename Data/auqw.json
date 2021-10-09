@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join 2021",
-        "item": "0 AC Making Our Worlds Possible",
-        "date": "October 02, 2021",
-        "image": "https://i.imgur.com/ewTs52x.jpg",
-        "link": "https://twitter.com/twitter/statuses/1444155816085499904",
+        "location": "/join dragoncapital",
+        "item": "0 AC Chaos Skull Rapier Blade",
+        "date": "October 05, 2021",
+        "image": "https://i.imgur.com/vPZxvDd.jpg",
+        "link": "https://twitter.com/twitter/statuses/1445449172270792704",
         "quest": "",
         "enemy": [
-            "<None>",
-            ""
+            "Leviathanius",
+            "http://aqwwiki.wikidot.com/Leviathanius"
         ]
     },
     "boost": {
