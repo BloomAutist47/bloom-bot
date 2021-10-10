@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join somnia",
-        "item": "0 AC Birthday Gear",
-        "date": "October 09, 2021",
-        "image": "https://i.imgur.com/bAhaDtn.jpg",
-        "link": "https://twitter.com/twitter/statuses/1446852967630458884",
+        "location": "/join each day for a new item, boost, buff, or surprise",
+        "item": "0 AC A New Item",
+        "date": "October 10, 2021",
+        "image": "https://i.imgur.com/LrCsAM3.jpg",
+        "link": "https://twitter.com/twitter/statuses/1447293711201746948",
         "quest": "",
         "enemy": [
-            "Dream Fairy",
-            "http://aqwwiki.wikidot.com/Dream-Fairy"
+            "<None>",
+            ""
         ]
     },
     "boost": {
