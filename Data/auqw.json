@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join each day for a new item, boost, buff, or surprise",
-        "item": "0 AC A New Item",
-        "date": "October 10, 2021",
-        "image": "https://i.imgur.com/LrCsAM3.jpg",
-        "link": "https://twitter.com/twitter/statuses/1447293711201746948",
+        "location": "/join new",
+        "item": "0 AC A New Reward",
+        "date": "October 12, 2021",
+        "image": "https://i.imgur.com/11MyQuY.jpg",
+        "link": "https://twitter.com/twitter/statuses/1447894829371953155",
         "quest": "",
         "enemy": [
-            "<None>",
-            ""
+            "Dogear",
+            "http://aqwwiki.wikidot.com/Dogear"
         ]
     },
     "boost": {
