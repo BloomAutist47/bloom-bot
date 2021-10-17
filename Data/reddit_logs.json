@@ -50906,6 +50906,15 @@
             "text": "\n",
             "time": "17 October 2021 | 09:21 AM ",
             "is_video": false
+        },
+        "q9vhjm": {
+            "author": "LynRyu",
+            "title": "How do you fix the double auto-attack animation bug?",
+            "link": "https://www.reddit.com/r/AQW/comments/q9vhjm/how_do_you_fix_the_double_autoattack_animation_bug/",
+            "image": null,
+            "text": "It was a thing in AQLite as well. I have two auto-attack animations (i know awe enh gives you a second animation but the second hit doesn't deal damage) and it causes lag because i'm left behind with animations and my character plays them out very fast.\n\nI want to see my animations and not disable them.\n",
+            "time": "17 October 2021 | 09:32 AM ",
+            "is_video": false
         }
     }
 }
