@@ -177,8 +177,11 @@ class TwitterCog(commands.Cog, BaseTools):
                 self.save_log(6, text, link)
 
             hour = self.word_cleaner(hour)
-            boost = self.word_cleaner(boost)
-
+            try:
+                boost = self.word_cleaner(boost)
+            except:
+                print("weird boosts.")
+                boost = ""
             end_date = time + timedelta(hours=int(hour))
             end_date = end_date.strftime('%d %B %Y')
 
