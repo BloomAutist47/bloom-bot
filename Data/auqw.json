@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join vordredboss",
-        "item": "0 AC Rare Wannabe Pally Costume Armor",
-        "date": "October 24, 2021",
-        "image": "https://i.imgur.com/uJaGuEA.jpg",
-        "link": "https://twitter.com/twitter/statuses/1452303881313079300",
+        "location": "/join cleric",
+        "item": "Pieces Of Our 0 AC Dishpan Cleric Set",
+        "date": "October 26, 2021",
+        "image": "https://i.imgur.com/M4eKhXA.jpg",
+        "link": "https://twitter.com/twitter/statuses/1452866328205803526",
         "quest": "",
         "enemy": [
-            "Any Vordred Monster",
-            "http://aqwwiki.wikidot.com/any-Vordred-monster"
+            "Chaos Dragon",
+            "http://aqwwiki.wikidot.com/Chaos-Dragon"
         ]
     },
     "boost": {
