@@ -54524,6 +54524,15 @@
             "text": "need help im at the top of mt doomskull and it says i can't pass the portal even though i already defeated the 12 chaos lords and cleared every room i also noticed that the cutscenes of othe chaos lords is not still unlocked i already try to reloggin and still i can't pass\n",
             "time": "27 October 2021 | 11:10 PM ",
             "is_video": false
+        },
+        "qhb03q": {
+            "author": "KingZask",
+            "title": "Windows 32 bit Launcher/Portable Launcher not opening AQW",
+            "link": "https://www.reddit.com/r/AQW/comments/qhb03q/windows_32_bit_launcherportable_launcher_not/",
+            "image": null,
+            "text": "My friend (Lenovo Ideapad Windows 32bit Laptop) is unable to open AQW through the Artix Launcher, consistently being met with the error code \"Couldn't Load Plugin\". We both switched to the AQLite launcher when Flash went offline, but earlier this month when 133Spider joined the AE team and began working on a new launcher we started experiencing problems with AQlite unrelated to the cache. I moved over to the launcher without any problems, but my friend is still having the same issue. \n\nWe've tried installing different types of 32bit launchers, between up to date and portable beta launchers, to no avail. AQLite no longer works for her, she gets stuck at 0% despite deleting the cache data. Any suggestions for how she might still be able to access the game? We tried to use the 32bit Flash Debug to run AQLite but that also didn't work. Please help, she won't stop crying on discord.\n",
+            "time": "28 October 2021 | 12:49 AM ",
+            "is_video": false
         }
     }
 }
