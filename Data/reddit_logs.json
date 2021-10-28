@@ -54542,6 +54542,15 @@
             "text": "My friend (Lenovo Ideapad Windows 32bit Laptop) is unable to open AQW through the Artix Launcher, consistently being met with the error code \"Couldn't Load Plugin\". We both switched to the AQLite launcher when Flash went offline, but earlier this month when 133Spider joined the AE team and began working on a new launcher we started experiencing problems with AQlite unrelated to the cache. I moved over to the launcher without any problems, but my friend is still having the same issue. \n\nWe've tried installing different types of 32bit launchers, between up to date and portable beta launchers, to no avail. AQLite no longer works for her, she gets stuck at 0% despite deleting the cache data. Any suggestions for how she might still be able to access the game? We tried to use the 32bit Flash Debug to run AQLite but that also didn't work. Please help, she won't stop crying on discord.\n",
             "time": "28 October 2021 | 12:49 AM ",
             "is_video": false
+        },
+        "qhbyz9": {
+            "author": "0ke0ke0",
+            "title": "is it possible to solo drakath from drakath confronted quest?",
+            "link": "https://www.reddit.com/r/AQW/comments/qhbyz9/is_it_possible_to_solo_drakath_from_drakath/",
+            "image": null,
+            "text": "\n",
+            "time": "28 October 2021 | 01:42 AM ",
+            "is_video": false
         }
     }
 }
