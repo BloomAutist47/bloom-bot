@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join cleric",
-        "item": "Pieces Of Our 0 AC Dishpan Cleric Set",
-        "date": "October 26, 2021",
-        "image": "https://i.imgur.com/M4eKhXA.jpg",
-        "link": "https://twitter.com/twitter/statuses/1452866328205803526",
+        "location": "/join pines",
+        "item": "0 AC Seasonal Items",
+        "date": "October 29, 2021",
+        "image": "https://i.imgur.com/qHuThvE.jpg",
+        "link": "https://twitter.com/twitter/statuses/1453927096967909378",
         "quest": "",
         "enemy": [
-            "Chaos Dragon",
-            "http://aqwwiki.wikidot.com/Chaos-Dragon"
+            "Pine Grizzly",
+            "http://aqwwiki.wikidot.com/Pine-Grizzly"
         ]
     },
     "boost": {
