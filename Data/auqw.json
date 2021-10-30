@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join pines",
-        "item": "0 AC Seasonal Items",
-        "date": "October 29, 2021",
-        "image": "https://i.imgur.com/qHuThvE.jpg",
-        "link": "https://twitter.com/twitter/statuses/1453927096967909378",
+        "location": "/join marsh",
+        "item": "0 AC Set Items",
+        "date": "October 30, 2021",
+        "image": "https://i.imgur.com/MRk78qh.jpg",
+        "link": "https://twitter.com/twitter/statuses/1454463113063911426",
         "quest": "",
         "enemy": [
-            "Pine Grizzly",
-            "http://aqwwiki.wikidot.com/Pine-Grizzly"
+            "Dreadspider",
+            "http://aqwwiki.wikidot.com/DreadSpider"
         ]
     },
     "boost": {
