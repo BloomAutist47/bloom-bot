@@ -56621,6 +56621,15 @@
             "text": "The damn class is actually Magical based, not Physical. I experimented using full Wizard lvl 100 on the class, the base dmg is 723 non-crit on auto, 714 non-crit on both full Fighter lvl 100 and full Luck lvl 100. Once the crit chance and crit dmg are at full stack, full Wiz auto deals 2941 crit dmg, full Fighter auto deals 1965 crit dmg, and this class is supposed to have 0 Intellect stat and sky high Strength stat. \nThis is why Unending Rage reduces dmg output by 20% because it reduces Intellect to 0% on a Wizard-based class (Rank 1 auto deals 881 non crit, Rank 4 auto deals 714 non crit). This class is currently underperforming its true dps. We have to add 40% extra dmg output to have the normal physical-based Chaos Avenger dmg. The class design team has failed epicly on this one.\n",
             "time": "03 November 2021 | 07:24 AM ",
             "is_video": false
+        },
+        "qlpci0": {
+            "author": "SolarisUnited",
+            "title": "Ballyhoo no longer gives AC\u2019s?",
+            "link": "https://www.reddit.com/r/AQW/comments/qlpci0/ballyhoo_no_longer_gives_acs/",
+            "image": null,
+            "text": "\n",
+            "time": "03 November 2021 | 07:33 AM ",
+            "is_video": false
         }
     }
 }
