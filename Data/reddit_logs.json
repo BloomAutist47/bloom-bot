@@ -56612,6 +56612,15 @@
             "text": "&#x200B;\n\nhttps://preview.redd.it/izx8tkayibx71.png?width=390&format=png&auto=webp&s=577f5d0f193fdfcd8024ae175d316386e8b19455\n",
             "time": "03 November 2021 | 05:42 AM ",
             "is_video": false
+        },
+        "qlp825": {
+            "author": "trumbake9999",
+            "title": "Chaos Avenger is a hot mess of a class",
+            "link": "https://www.reddit.com/r/AQW/comments/qlp825/chaos_avenger_is_a_hot_mess_of_a_class/",
+            "image": null,
+            "text": "The damn class is actually Magical based, not Physical. I experimented using full Wizard lvl 100 on the class, the base dmg is 723 non-crit on auto, 714 non-crit on both full Fighter lvl 100 and full Luck lvl 100. Once the crit chance and crit dmg are at full stack, full Wiz auto deals 2941 crit dmg, full Fighter auto deals 1965 crit dmg, and this class is supposed to have 0 Intellect stat and sky high Strength stat. \nThis is why Unending Rage reduces dmg output by 20% because it reduces Intellect to 0% on a Wizard-based class (Rank 1 auto deals 881 non crit, Rank 4 auto deals 714 non crit). This class is currently underperforming its true dps. We have to add 40% extra dmg output to have the normal physical-based Chaos Avenger dmg. The class design team has failed epicly on this one.\n",
+            "time": "03 November 2021 | 07:24 AM ",
+            "is_video": false
         }
     }
 }
