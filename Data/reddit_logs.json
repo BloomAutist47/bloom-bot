@@ -1112,6 +1112,15 @@
             "text": "is there any other way to convert dmbot to gbot since the bot disappeared on the new grimoire?\n",
             "time": "03 November 2021 | 01:33 PM ",
             "is_video": false
+        },
+        "qo1ph0": {
+            "author": "BloomAutist47",
+            "title": "Grimoire 3.8 Pro+ or basically any grim older than Grimlite Rev 1.2 are no longer working.",
+            "link": "https://www.reddit.com/r/AutoQuestWorlds/comments/qo1ph0/grimoire_38_pro_or_basically_any_grim_older_than/",
+            "image": null,
+            "text": "Since spider came, the game swf and internal structure change therefore making older botting client broken.\n\n>Ganku is still working on the latest Grimlite Rev. He has a functioning client but is busy squashing bugs since the jump from 1.2 to the new Grimlite is pretty big.\n\nYou can also use RBot if you want which is a bit complicated but quite easy once you get the hang of it It uses the C# programming language for bot making. Link is on the [portal](https://auqw.tk/).\n",
+            "time": "06 November 2021 | 02:44 PM ",
+            "is_video": false
         }
     },
     "133sAppreciationClub": {
