@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join yokaiboat",
+        "location": "/join harvest",
         "item": "0 AC A New Reward",
-        "date": "November 04, 2021",
-        "image": "https://i.imgur.com/Tce9o8e.jpg",
-        "link": "https://twitter.com/twitter/statuses/1456275060717588485",
+        "date": "November 06, 2021",
+        "image": "https://i.imgur.com/nW5D3o5.jpg",
+        "link": "https://twitter.com/twitter/statuses/1457105512571359232",
         "quest": "",
         "enemy": [
-            "Kappa",
-            "http://aqwwiki.wikidot.com/Kappa"
+            "Turdraken",
+            "http://aqwwiki.wikidot.com/Turdraken"
         ]
     },
     "boost": {
