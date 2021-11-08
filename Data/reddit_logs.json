@@ -58133,6 +58133,15 @@
             "text": "\n",
             "time": "08 November 2021 | 06:21 AM ",
             "is_video": false
+        },
+        "qpajzy": {
+            "author": "amora-is-chill",
+            "title": "PSA: Unstable Malevolence and Battle Elixir only reduce Crit Multiplier by 10%",
+            "link": "https://www.reddit.com/r/AQW/comments/qpajzy/psa_unstable_malevolence_and_battle_elixir_only/",
+            "image": null,
+            "text": "I'm ready for the obligatory no one uses potions comment, but this was a random revelation for me today, and I doubt too many people have realized yet, so I thought I'd share. These elixirs give 3% Spell/Attack Power than their stable counterparts, which should nearly always outweigh the loss of 10% Crit Multiplier. Recall that the 10% is additive/subtractive, not multiplicative. \n\nThe reason that this finding is significant is because they do not say anywhere on the skill description what the exact percent of the reduction is, so previously, I think we basically all assumed they were not worth using since Crit Multiplier is quite an important stat to be sacrificing. However, with the new stat overview in the launcher client, this information is readily discoverable.\n\nFrom now on, I will be keeping these pots when I brew and using them over the normal ones. \n\nPeace.\n",
+            "time": "08 November 2021 | 10:08 AM ",
+            "is_video": false
         }
     }
 }
