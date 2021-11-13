@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join queenbattle",
-        "item": "0 AC 1St Hero Of Balance Staff",
-        "date": "November 09, 2021",
-        "image": "https://i.imgur.com/kbxZEHh.jpg",
-        "link": "https://twitter.com/twitter/statuses/1457951085801340942",
+        "location": "/join astraviajudge",
+        "item": "0 AC Rare Juror Zorbak Pet",
+        "date": "November 13, 2021",
+        "image": "https://i.imgur.com/d3QIwie.jpg",
+        "link": "https://twitter.com/twitter/statuses/1459424737667563523",
         "quest": "",
         "enemy": [
-            "Queen",
-            "http://aqwwiki.wikidot.com/Queen"
+            "Jurors",
+            "http://aqwwiki.wikidot.com/Jurors"
         ]
     },
     "boost": {
