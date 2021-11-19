@@ -309,15 +309,15 @@
         "type": "image",
         "auth": "aqw",
         "title": "Best Boosted Set for Humans Type Mobs:",
-        "description": "Equip the following in order:\n**1.)** ArchFiend DoomLord\n**2.)** Prince Darkon's Poleaxe\n\n**Note**: If you equip polly, do this order instead;\n (1) Poly, (2) AFDL, (3) PDP\n\n`All of this in total equals to a ×2.3625 dmg multiplier`",
+        "description": "Equip the following in order:\n**OPTIONAL***: Equip the Polly Roger Pet before equipping anything else**\n1.)** ArchFiend DoomLord\n**2.)** Prince Darkon's Poleaxe**\n\n`All of this in total equals to a ×2.3625 dmg multiplier`",
         "content": "https://cdn.discordapp.com/attachments/805367955923533845/911269648811589652/unknown.png"
     },
     "setchaos": {
         "type": "image",
         "auth": "aqw",
         "title": "Best Booster Set for Chaos Type Mobs:",
-        "description": "**1.)** Firstly, equip the Polly Roger Pet\n**2.)** Secondly, equip the Archfiend Doomlord (AFDL1) Armor\n**3.)** Lastly, equip the Chaorrupter Unlocked weapon for the maximum damage output against Chaos Type Mobs\n\n`All of this in total is equal to a ×2.025 multiplier in damage against Chaos Type Mobs`",
-        "content": "https://cdn.discordapp.com/attachments/805367955923533845/836440494337949711/unknown.png"
+        "description": "Equip the following in order:\n**OPTIONAL***: Equip the Polly Roger Pet before equipping anything else\n**1.)** First, equip ***Archfiend Doomlord (AFDL1)**\n**2.)** Second, equip **Empowered Blade of Chaos**\n\n`All of this in total is equal to a ×2.3625 multiplier in damage against Chaos Type Mobs`",
+        "content": "https://cdn.discordapp.com/attachments/805367955923533845/911296383712112701/unknown.png"
     },
     "Optimization Guides": {
         "type": "header"
