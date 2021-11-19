@@ -309,7 +309,7 @@
         "type": "image",
         "auth": "aqw",
         "title": "Best Boosted Set for Humans Type Mobs:",
-        "description": "Equip the following in order:\n**1.)** ArchFiend DoomLord\n**2.)** Prince Darkon's Poleaxe\n\n**Note**: If you equip polly, do this order instead;\n (1) Poly, (2) AFDL, (3) PDP\n\n```All of this in total equals to a ×2.3625 dmg multiplier```",
+        "description": "Equip the following in order:\n**1.)** ArchFiend DoomLord\n**2.)** Prince Darkon's Poleaxe\n\n**Note**: If you equip polly, do this order instead;\n (1) Poly, (2) AFDL, (3) PDP\n\n`All of this in total equals to a ×2.3625 dmg multiplier`",
         "content": "https://cdn.discordapp.com/attachments/805367955923533845/911269648811589652/unknown.png"
     },
     "setchaos": {
