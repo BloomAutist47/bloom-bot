@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join evilmarsh",
-        "item": "0 AC Pieces Of The Dark Bone Knight",
-        "date": "November 20, 2021",
-        "image": "https://i.imgur.com/AVePj21.jpg",
-        "link": "https://twitter.com/twitter/statuses/1461937679457824772",
+        "location": "/join ebiltower",
+        "item": "0 AC House Item",
+        "date": "November 22, 2021",
+        "image": "https://i.imgur.com/v3HHBoT.jpg",
+        "link": "https://twitter.com/twitter/statuses/1462639678885085189",
         "quest": "",
         "enemy": [
-            "Evil Elementals",
-            "http://aqwwiki.wikidot.com/Evil-Elementals"
+            "Ebilcorp Goons",
+            "http://aqwwiki.wikidot.com/EbilCorp-Goons"
         ]
     },
     "boost": {
