@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join blackfridaywar.",
-        "item": "0 AC Darkest Gear Of The Year + New Drops In /Blackfridaywar",
-        "date": "November 26, 2021",
-        "image": "https://i.imgur.com/cwZABMo.jpg",
-        "link": "https://twitter.com/twitter/statuses/1464099761397669888",
+        "location": "/join finalbattle",
+        "item": "0 AC Armor",
+        "date": "November 27, 2021",
+        "image": "https://i.imgur.com/aXB3O3M.jpg",
+        "link": "https://twitter.com/twitter/statuses/1464613969365241865",
         "quest": "",
         "enemy": [
-            "<None>",
-            ""
+            "Drakath",
+            "http://aqwwiki.wikidot.com/Drakath"
         ]
     },
     "boost": {
