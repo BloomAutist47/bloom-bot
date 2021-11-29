@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join finalbattle",
-        "item": "0 AC Armor",
-        "date": "November 27, 2021",
-        "image": "https://i.imgur.com/aXB3O3M.jpg",
-        "link": "https://twitter.com/twitter/statuses/1464613969365241865",
+        "location": "/join cryostorm",
+        "item": "0 AC Black Ice Wizard Armor + Dark Billowing Scarves Cape",
+        "date": "November 28, 2021",
+        "image": "https://i.imgur.com/voZPipU.jpg",
+        "link": "https://twitter.com/twitter/statuses/1465017649721716738",
         "quest": "",
         "enemy": [
-            "Drakath",
-            "http://aqwwiki.wikidot.com/Drakath"
+            "Glacial Elemental",
+            "http://aqwwiki.wikidot.com/Glacial-Elemental"
         ]
     },
     "boost": {
