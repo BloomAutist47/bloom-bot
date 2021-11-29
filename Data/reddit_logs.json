@@ -63317,6 +63317,15 @@
             "text": "Come on, this is just stupid, SDKA is not only a powerful item by itself with the boost on humans, but also a pre-requisite for a bunch of other farms, i thought they would release the vordred set with the damage boost just so free players had equal opportunities as members but sacrificing the good looks of SDKA, but no, SDKA is actually NEEDED to farm vordred, and now i thought the new hollowborn event would finally fix this, but guess what, SDKA needed again, not to mention it makes the NSOD farm actually doable without the need to sell your soul for 5 months of nonstop farming.\n",
             "time": "28 November 2021 | 01:11 AM ",
             "is_video": false
+        },
+        "r3u54s": {
+            "author": "the___madman",
+            "title": "Does Artix Entertainment even care about AQW at all?",
+            "link": "https://www.reddit.com/r/AQW/comments/r3u54s/does_artix_entertainment_even_care_about_aqw_at/",
+            "image": null,
+            "text": "So I came back to AQW about a month ago, and have been playing since then. It honestly seems like AQW has been moving backwards in terms of bugs and stability? What exactly is going on over at AE? Some examples:\n\n**Potions**\n\n- Having a potion equipped and switching classes will unequip the potion, but still show it as equipped in the inventory\n\n- The cooldown of the first potion you use will for some reason be vastly longer than the cooldown of every subsequent potion\n\n- Equipping a potion Doesn't update the inventory until you exit and reopen it\n\n- \"consume\"ing a potion through the inventory that you already have equipped just unequips the potion and does nothing\n\n- Sometimes potions just can't be used at all unless you unequip and reequip your class\n\n**Parties**\n\n- Parties will bug out showing the same person multiple times\n\n- Bugged party members will overlap the other party members so you can't see their health/mana or click on them\n\n- If someone logs off, the game just says they \"left the area\" and then they're \"out of range\", and you can't leave the party or kick them\n\n- Sometimes people's health will go down from the left as opposed to from the right\n\n**Skills**\n\n- Sometimes skills don't respond to keyboard until you manually click the \"send\" button next to the chatbox\n\n- The game gets laggier and laggier as you use more skills, forcing you to eventually restart it\n\n\n\nAnd none of this is even mentioning that the game runs awfully, and relies on a dead game engine. If you're familiar with how MMO's usually die, this is basically a textbook example. Company does the absolute bare minimum to keep the game running, and doesn't reinvest any money the game generates back into the game. Eventually bugs and other problems/complaints start popping up, and just don't ever get addressed because there's nobody to fix them => downward spiral.\n",
+            "time": "28 November 2021 | 03:00 AM ",
+            "is_video": false
         }
     }
 }
