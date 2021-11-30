@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join technospace",
-        "item": "0 AC All Heroes",
-        "date": "November 29, 2021",
-        "image": "https://i.imgur.com/XKxLGsk.jpg",
-        "link": "https://twitter.com/twitter/statuses/1465184563378987011",
+        "location": "/join blackfridaywar",
+        "item": "0 AC Fp5 Moglin Pet",
+        "date": "November 30, 2021",
+        "image": "https://i.imgur.com/pW8KaNQ.jpg",
+        "link": "https://twitter.com/twitter/statuses/1465578866295062528",
         "quest": "",
         "enemy": [
-            "<None>",
-            ""
+            "Deal Bot 2.0",
+            "http://aqwwiki.wikidot.com/Deal-Bot-2.0"
         ]
     },
     "boost": {
