@@ -66755,6 +66755,15 @@
             "text": "Just wanna say thank you to the crew who sits in 9889. Y'all some real ones.\n",
             "time": "09 December 2021 | 05:23 PM ",
             "is_video": false
+        },
+        "rcmsny": {
+            "author": "Loksvir",
+            "title": "Overkill Bonus",
+            "link": "https://www.reddit.com/r/AQW/comments/rcmsny/overkill_bonus/",
+            "image": null,
+            "text": "I\u2019m proposing an idea for rng based farms, basically the overkill bonus is the killing blow multiplied by the item drop rate. Now there are problems with this in that it would make grinds waay too easy with calendar classes such as CDK, but I came up with this as a way of filtering out all the wasted time for 0.5% drops *cough* Undead Paladin token, because let\u2019s face it, we\u2019re all adults that have plenty more we want to do with our days than brag about \u201cfinally\u201d getting a drop that\u2019s known for being a grueling ordeal. \nSo here would be the mechanics to make sure it\u2019s fair if not balanced. \n\n- Overkill Bonuses only apply in party rooms, only members of said party can join this room and since party limits are 4 (5? can\u2019t remember) people can\u2019t stack excess buffs on each other. \n\n- Crits have their number multiplied by .0001 and base damage numbers are multiplied by .001 any class that can dish out high dps in their non crit skills can benefit from this not to mention the buffs you\u2019d be getting from allies. (DoT kills don\u2019t apply okb)\n\n- Powerword DIE still applies for this even though it guarantees the drop but still, 0.3% proc rate is pretty fair. It\u2019d be the goto awe enhancement for farming. \n\n As for the equation itself it would be \n  (ok * .0001 or .001)* drop rate) + drop rate = okb\n\nex. (100,000 crit * .0001)* .5) + .5 = 5.5%\nex.2. (50,000 nc* .001)* .5) + .5 = 25.5%\n\nAnd that concludes my rant on a new game mechanic.\nYes I came up with it after watching Inscryption\nYes I only wrote this because I was farming UP token for 4 hours.\n\nLet me know what you guys think.\n",
+            "time": "09 December 2021 | 05:40 PM ",
+            "is_video": false
         }
     }
 }
