@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join helsgrove",
-        "item": "0 AC Weapons And 2 Seasonal Member-Only Weapons",
+        "location": "/join each day for a new item, boost, buff, or surprise",
+        "item": "0 AC A New Item",
         "date": "December 09, 2021",
-        "image": "https://i.imgur.com/eQuNV07.jpg",
-        "link": "https://twitter.com/twitter/statuses/1468830269834600449",
+        "image": "https://i.imgur.com/SCnhp0w.jpg",
+        "link": "https://twitter.com/twitter/statuses/1468860469553385474",
         "quest": "",
         "enemy": [
-            "Helsdottir",
-            "http://aqwwiki.wikidot.com/Helsdottir"
+            "<None>",
+            ""
         ]
     },
     "boost": {
