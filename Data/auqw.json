@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join each day for a new item, boost, buff, or surprise",
-        "item": "0 AC A New Item",
-        "date": "December 09, 2021",
-        "image": "https://i.imgur.com/SCnhp0w.jpg",
-        "link": "https://twitter.com/twitter/statuses/1468860469553385474",
+        "location": "/join helsgrove",
+        "item": "0 AC Frostval Barbarian Blade",
+        "date": "December 11, 2021",
+        "image": "https://i.imgur.com/yCnlkVX.jpg",
+        "link": "https://twitter.com/twitter/statuses/1469534911606386689",
         "quest": "",
         "enemy": [
-            "<None>",
-            ""
+            "Helsdottir",
+            "http://aqwwiki.wikidot.com/Helsdottir"
         ]
     },
     "boost": {
