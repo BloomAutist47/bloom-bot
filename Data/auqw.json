@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join helsgrove",
-        "item": "0 AC Frostval Barbarian Blade",
-        "date": "December 11, 2021",
-        "image": "https://i.imgur.com/yCnlkVX.jpg",
-        "link": "https://twitter.com/twitter/statuses/1469534911606386689",
+        "location": "/join snowpath",
+        "item": "0 AC Angry Snowman Pet",
+        "date": "December 12, 2021",
+        "image": "https://i.imgur.com/PAbjGGO.jpg",
+        "link": "https://twitter.com/twitter/statuses/1470136377085816833",
         "quest": "",
         "enemy": [
-            "Helsdottir",
-            "http://aqwwiki.wikidot.com/Helsdottir"
+            "Frosty",
+            "http://aqwwiki.wikidot.com/Frosty"
         ]
     },
     "boost": {
