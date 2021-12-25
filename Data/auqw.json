@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join time for frostval eve, as our way of celebrating and saying \"thanks",
-        "item": "0 AC Frostval Eve",
-        "date": "December 24, 2021",
-        "image": "https://i.imgur.com/UnxyuMX.jpg",
-        "link": "https://twitter.com/twitter/statuses/1474266098044395528",
+        "location": "/join gifthulu",
+        "item": "0 AC Frostval Villager Armor Set",
+        "date": "December 25, 2021",
+        "image": "https://i.imgur.com/keBo184.jpg",
+        "link": "https://twitter.com/twitter/statuses/1474609613593063424",
         "quest": "",
         "enemy": [
-            "<None>",
-            ""
+            "Gifthulu",
+            "http://aqwwiki.wikidot.com/Gifthulu"
         ]
     },
     "boost": {
