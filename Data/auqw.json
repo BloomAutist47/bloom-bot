@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join party!",
-        "item": "0 AC S",
-        "date": "January 14, 2022",
-        "image": "https://i.imgur.com/U5uQ1vs.jpg",
-        "link": "https://twitter.com/twitter/statuses/1482123853392453637",
+        "location": "/join tercessuinotlim",
+        "item": "Two Rare 0 AC Fiendish Librarian Helms",
+        "date": "January 15, 2022",
+        "image": "https://i.imgur.com/HcmGW2j.jpg",
+        "link": "https://twitter.com/twitter/statuses/1482257493875204099",
         "quest": "",
         "enemy": [
-            "<None>",
-            ""
+            "Taro",
+            "http://aqwwiki.wikidot.com/Taro"
         ]
     },
     "boost": {
