@@ -1,14 +1,14 @@
 {
     "daily": {
-        "location": "/join newyear",
-        "item": "0 AC Frozen Aurora Gauntlets",
-        "date": "January 17, 2022",
-        "image": "https://i.imgur.com/bPnnLQm.jpg",
-        "link": "https://twitter.com/twitter/statuses/1482895452152360960",
+        "location": "/join arcangrove",
+        "item": "0 AC The Rest Of The Set",
+        "date": "January 18, 2022",
+        "image": "https://i.imgur.com/Geoy7PX.jpg",
+        "link": "https://twitter.com/twitter/statuses/1483476778064564231",
         "quest": "",
         "enemy": [
-            "2022 Ball Monster",
-            "http://aqwwiki.wikidot.com/2022-Ball-monster"
+            "Seedspitter",
+            "http://aqwwiki.wikidot.com/SeedSpitter"
         ]
     },
     "boost": {
